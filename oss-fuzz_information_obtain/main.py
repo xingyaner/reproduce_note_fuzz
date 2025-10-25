@@ -68,7 +68,7 @@ def scrape_github_commits(base_url, pages_to_scrape=10):
     all_commits_data = []
 
     # 修正后的正确路径
-    chrome_driver_path = "/root/oss-fuzz_information_obtain/chromedriver/chromedriver-linux64/chromedriver"
+    chrome_driver_path = "/root/reproduce_note_fuzz/oss-fuzz_information_obtain/chromedriver/chromedriver-linux64/chromedriver"
     
     print(f"使用 ChromeDriver 路径: {chrome_driver_path}")
     
