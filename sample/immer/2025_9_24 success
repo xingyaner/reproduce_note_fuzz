@@ -1,0 +1,1782 @@
+starting build "2e88ab0f-0fdc-4978-982c-7f988876bd4b"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637"
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Sending build context to Docker daemon   5.12kB
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Step 1/5 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": b549f31133a9: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1b3d0e2e09a6: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2af237d09d06: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": e030144f5bdc: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 142f5a2dbf08: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1c16285a1849: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1515aaa3fbbb: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 4ea1d2d1b8b8: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 37a51565b33d: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 541474f4691a: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 7a96573caa47: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2c9b79a4bc81: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": b75afec53ae7: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1c25add5762c: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 07c873137d0a: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 6389b1e68e9e: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 405530f1ac5f: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 891db846ac7a: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 0991e2d7ef33: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": c3198232e580: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": f7b77cda7d16: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": dc388553dfd7: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": cd9915f07747: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2635be149363: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": f2bc515c52af: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 61f63dedfb00: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 562cd2fbd637: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 3ceb4443184c: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 784394cee7ca: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": bc474305956e: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": cc0e1c34b384: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 5a683b8b9438: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": be7ae4c2d598: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": edafe80d7050: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": e6476ae5bb2d: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": dcbd208efcac: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 7d3d8def9d1a: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 072960598fc6: Pulling fs layer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 4ea1d2d1b8b8: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 37a51565b33d: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 541474f4691a: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 7a96573caa47: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2c9b79a4bc81: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": b75afec53ae7: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 142f5a2dbf08: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1c25add5762c: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1c16285a1849: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 07c873137d0a: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": e030144f5bdc: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 6389b1e68e9e: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 784394cee7ca: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": dcbd208efcac: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 405530f1ac5f: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 7d3d8def9d1a: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": bc474305956e: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 072960598fc6: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": f7b77cda7d16: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": cc0e1c34b384: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2635be149363: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1515aaa3fbbb: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 5a683b8b9438: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": dc388553dfd7: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": be7ae4c2d598: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 891db846ac7a: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": f2bc515c52af: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": cd9915f07747: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 562cd2fbd637: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": edafe80d7050: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 3ceb4443184c: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": e6476ae5bb2d: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 61f63dedfb00: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 0991e2d7ef33: Waiting
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2af237d09d06: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2af237d09d06: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": b549f31133a9: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": b549f31133a9: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 142f5a2dbf08: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 142f5a2dbf08: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": e030144f5bdc: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": e030144f5bdc: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1515aaa3fbbb: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1515aaa3fbbb: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1b3d0e2e09a6: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1b3d0e2e09a6: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 4ea1d2d1b8b8: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 4ea1d2d1b8b8: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": b549f31133a9: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 541474f4691a: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 541474f4691a: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 7a96573caa47: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 7a96573caa47: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2c9b79a4bc81: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2c9b79a4bc81: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": b75afec53ae7: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": b75afec53ae7: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1c25add5762c: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1c25add5762c: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 37a51565b33d: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 37a51565b33d: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 07c873137d0a: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 07c873137d0a: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 6389b1e68e9e: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 6389b1e68e9e: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 405530f1ac5f: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 405530f1ac5f: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 891db846ac7a: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 891db846ac7a: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 0991e2d7ef33: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 0991e2d7ef33: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": c3198232e580: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": c3198232e580: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": f7b77cda7d16: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": f7b77cda7d16: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": dc388553dfd7: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2635be149363: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2635be149363: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": cd9915f07747: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": cd9915f07747: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 61f63dedfb00: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": f2bc515c52af: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": f2bc515c52af: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 562cd2fbd637: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 3ceb4443184c: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 3ceb4443184c: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 784394cee7ca: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 784394cee7ca: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": bc474305956e: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": bc474305956e: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": cc0e1c34b384: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": cc0e1c34b384: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 5a683b8b9438: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1b3d0e2e09a6: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": be7ae4c2d598: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": be7ae4c2d598: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1c16285a1849: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1c16285a1849: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2af237d09d06: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": edafe80d7050: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": edafe80d7050: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": e6476ae5bb2d: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": e6476ae5bb2d: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": dcbd208efcac: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 7d3d8def9d1a: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 7d3d8def9d1a: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 072960598fc6: Verifying Checksum
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 072960598fc6: Download complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": e030144f5bdc: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 142f5a2dbf08: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1c16285a1849: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1515aaa3fbbb: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 4ea1d2d1b8b8: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 37a51565b33d: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 541474f4691a: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 7a96573caa47: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2c9b79a4bc81: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": b75afec53ae7: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 1c25add5762c: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 07c873137d0a: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 6389b1e68e9e: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 405530f1ac5f: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 891db846ac7a: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 0991e2d7ef33: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": c3198232e580: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": f7b77cda7d16: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": dc388553dfd7: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": cd9915f07747: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 2635be149363: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": f2bc515c52af: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 61f63dedfb00: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 562cd2fbd637: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 3ceb4443184c: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 784394cee7ca: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": bc474305956e: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": cc0e1c34b384: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 5a683b8b9438: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": be7ae4c2d598: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": edafe80d7050: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": e6476ae5bb2d: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": dcbd208efcac: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 7d3d8def9d1a: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 072960598fc6: Pull complete
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Digest: sha256:24ece23c6e7e4483fd49b19c31e4084992088b58a902c3c45d74d10541f3aa40
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":  ---> 6de67b545298
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Step 2/5 : RUN apt-get update && apt-get install -y cmake libgc-dev pkg-config
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":  ---> Running in b70ec5469067
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Fetched 383 kB in 1s (344 kB/s)
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Reading package lists...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Reading package lists...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Building dependency tree...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Reading state information...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": The following packages were automatically installed and are no longer required:
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":   autotools-dev libsigsegv2 m4
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Use 'apt autoremove' to remove them.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": The following additional packages will be installed:
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":   cmake-data libarchive13 libgc1c2 libglib2.0-0 libglib2.0-data libicu66
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":   libjsoncpp1 librhash0 libuv1 libxml2 shared-mime-info xdg-user-dirs
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Suggested packages:
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":   cmake-doc ninja-build lrzip
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": The following NEW packages will be installed:
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":   cmake cmake-data libarchive13 libgc-dev libgc1c2 libglib2.0-0
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":   libglib2.0-data libicu66 libjsoncpp1 librhash0 libuv1 libxml2 pkg-config
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":   shared-mime-info xdg-user-dirs
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": 0 upgraded, 15 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Need to get 17.2 MB of archives.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": After this operation, 74.1 MB of additional disk space will be used.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.5 [80.9 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake-data all 3.16.3-1ubuntu1.20.04.1 [1613 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libarchive13 amd64 3.4.0-2ubuntu1.5 [327 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 libjsoncpp1 amd64 1.7.4-3.1ubuntu2 [75.6 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 librhash0 amd64 1.3.9-1 [113 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake amd64 3.16.3-1ubuntu1.20.04.1 [3668 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libgc1c2 amd64 1:7.6.4-0.4ubuntu1 [83.9 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 libgc-dev amd64 1:7.6.4-0.4ubuntu1 [234 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 pkg-config amd64 0.29.1-0ubuntu4 [45.5 kB]
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": [0mFetched 17.2 MB in 2s (9882 kB/s)
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package libglib2.0-0:amd64.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../00-libglib2.0-0_2.64.6-1~ubuntu20.04.9_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package libglib2.0-data.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../01-libglib2.0-data_2.64.6-1~ubuntu20.04.9_all.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package libicu66:amd64.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../02-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package libxml2:amd64.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../03-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package shared-mime-info.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../04-shared-mime-info_1.15-1_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking shared-mime-info (1.15-1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package xdg-user-dirs.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../05-xdg-user-dirs_0.17-2ubuntu1_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package libuv1:amd64.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../06-libuv1_1.34.2-1ubuntu1.5_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package cmake-data.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../07-cmake-data_3.16.3-1ubuntu1.20.04.1_all.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking cmake-data (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package libarchive13:amd64.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../08-libarchive13_3.4.0-2ubuntu1.5_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package libjsoncpp1:amd64.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../09-libjsoncpp1_1.7.4-3.1ubuntu2_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package librhash0:amd64.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../10-librhash0_1.3.9-1_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking librhash0:amd64 (1.3.9-1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package cmake.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../11-cmake_3.16.3-1ubuntu1.20.04.1_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking cmake (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package libgc1c2:amd64.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../12-libgc1c2_1%3a7.6.4-0.4ubuntu1_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking libgc1c2:amd64 (1:7.6.4-0.4ubuntu1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package libgc-dev:amd64.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../13-libgc-dev_1%3a7.6.4-0.4ubuntu1_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking libgc-dev:amd64 (1:7.6.4-0.4ubuntu1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Selecting previously unselected package pkg-config.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Preparing to unpack .../14-pkg-config_0.29.1-0ubuntu4_amd64.deb ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Unpacking pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up libgc1c2:amd64 (1:7.6.4-0.4ubuntu1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": No schema files found: doing nothing.
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up librhash0:amd64 (1.3.9-1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up cmake-data (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up libgc-dev:amd64 (1:7.6.4-0.4ubuntu1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up shared-mime-info (1.15-1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Setting up cmake (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Removing intermediate container b70ec5469067
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":  ---> d6cae9d6dc16
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Step 3/5 : RUN git clone --depth 1 https://github.com/arximboldi/immer.git immer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":  ---> Running in 00102bce034a
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": [91mCloning into 'immer'...
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": [0mRemoving intermediate container 00102bce034a
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":  ---> 15f2dabfc672
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Step 4/5 : WORKDIR immer
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":  ---> Running in 02398ff16ab1
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Removing intermediate container 02398ff16ab1
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":  ---> c947d11259e8
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Step 5/5 : COPY build.sh $SRC/
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637":  ---> 4c62df4b667d
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Successfully built 4c62df4b667d
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Successfully tagged gcr.io/oss-fuzz/immer:latest
+Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/immer:latest
+Finished Step #1 - "build-259a8d75-7841-45f2-a9e6-e0176ba00637"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/immer
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/filejT55XH
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ c++ == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/immer/.git
+Step #2 - "srcmap": + GIT_DIR=/src/immer
+Step #2 - "srcmap": + cd /src/immer
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/arximboldi/immer.git
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=df6ef46d97e1fe81f397015b9aeb32505cef653b
+Step #2 - "srcmap": + jq_inplace /tmp/filejT55XH '."/src/immer" = { type: "git", url: "https://github.com/arximboldi/immer.git", rev: "df6ef46d97e1fe81f397015b9aeb32505cef653b" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileR6EL48
+Step #2 - "srcmap": + cat /tmp/filejT55XH
+Step #2 - "srcmap": + jq '."/src/immer" = { type: "git", url: "https://github.com/arximboldi/immer.git", rev: "df6ef46d97e1fe81f397015b9aeb32505cef653b" }'
+Step #2 - "srcmap": + mv /tmp/fileR6EL48 /tmp/filejT55XH
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/filejT55XH
+Step #2 - "srcmap": + rm /tmp/filejT55XH
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/immer": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/arximboldi/immer.git",
+Step #2 - "srcmap":     "rev": "df6ef46d97e1fe81f397015b9aeb32505cef653b"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-afl-address-x86_64"
+Step #3 - "compile-afl-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-afl-address-x86_64": Copying precompiled AFL++
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64": AFL++ target compilation setup:
+Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
+Step #3 - "compile-afl-address-x86_64": AFL_QUIET=1
+Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64":  done.
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": CC=/src/aflplusplus/afl-clang-fast
+Step #3 - "compile-afl-address-x86_64": CXX=/src/aflplusplus/afl-clang-fast++
+Step #3 - "compile-afl-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope 
+Step #3 - "compile-afl-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope  -stdlib=libc++
+Step #3 - "compile-afl-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": + mkdir build
+Step #3 - "compile-afl-address-x86_64": + cd build
+Step #3 - "compile-afl-address-x86_64": + cmake .. -DBOEHM_GC_INCLUDE_DIR=/usr/include -DBOEHM_GC_LIBRARIES=/usr/lib/x86_64-linux-gnu/libgc.a -Dimmer_BUILD_TESTS=OFF
+Step #3 - "compile-afl-address-x86_64": -- The C compiler identification is Clang 22.0.0
+Step #3 - "compile-afl-address-x86_64": -- The CXX compiler identification is Clang 22.0.0
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info - done
+Step #3 - "compile-afl-address-x86_64": -- Check for working C compiler: /src/aflplusplus/afl-clang-fast - skipped
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features - done
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info - done
+Step #3 - "compile-afl-address-x86_64": -- Check for working CXX compiler: /src/aflplusplus/afl-clang-fast++ - skipped
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features - done
+Step #3 - "compile-afl-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+Step #3 - "compile-afl-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+Step #3 - "compile-afl-address-x86_64": -- Found Threads: TRUE
+Step #3 - "compile-afl-address-x86_64": -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1")
+Step #3 - "compile-afl-address-x86_64": -- Found GC library: /usr/lib/x86_64-linux-gnu/libgc.a
+Step #3 - "compile-afl-address-x86_64": [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+Step #3 - "compile-afl-address-x86_64":   The package name passed to `find_package_handle_standard_args` (Boehm_GC)
+Step #3 - "compile-afl-address-x86_64":   does not match the name of the calling package (BoehmGC).  This can lead to
+Step #3 - "compile-afl-address-x86_64":   problems in calling code that expects `find_package` result variables
+Step #3 - "compile-afl-address-x86_64":   (e.g., `_FOUND`) to follow a certain pattern.
+Step #3 - "compile-afl-address-x86_64": Call Stack (most recent call first):
+Step #3 - "compile-afl-address-x86_64":   cmake/FindBoehmGC.cmake:108 (find_package_handle_standard_args)
+Step #3 - "compile-afl-address-x86_64":   CMakeLists.txt:86 (find_package)
+Step #3 - "compile-afl-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #3 - "compile-afl-address-x86_64": [0m
+Step #3 - "compile-afl-address-x86_64": -- Found Boehm_GC: /usr/lib/x86_64-linux-gnu/libgc.a
+Step #3 - "compile-afl-address-x86_64": -- Could NOT find Boost (missing: Boost_INCLUDE_DIR) (Required is at least version "1.56")
+Step #3 - "compile-afl-address-x86_64": -- Using ccache: /usr/local/bin/ccache
+Step #3 - "compile-afl-address-x86_64": [33mCMake Warning (dev) at extra/python/CMakeLists.txt:22 (find_package):
+Step #3 - "compile-afl-address-x86_64":   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+Step #3 - "compile-afl-address-x86_64":   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+Step #3 - "compile-afl-address-x86_64":   the cmake_policy command to set the policy and suppress this warning.
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #3 - "compile-afl-address-x86_64": [0m
+Step #3 - "compile-afl-address-x86_64": -- Found PythonInterp: /usr/local/bin/python (found version "3.11.13")
+Step #3 - "compile-afl-address-x86_64": [33mCMake Warning (dev) at extra/python/CMakeLists.txt:23 (find_package):
+Step #3 - "compile-afl-address-x86_64":   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+Step #3 - "compile-afl-address-x86_64":   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+Step #3 - "compile-afl-address-x86_64":   the cmake_policy command to set the policy and suppress this warning.
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #3 - "compile-afl-address-x86_64": [0m
+Step #3 - "compile-afl-address-x86_64": -- Found PythonLibs: /usr/local/lib/libpython3.11.so (found version "3.11.13")
+Step #3 - "compile-afl-address-x86_64": -- Checking for module 'guile-2.2'
+Step #3 - "compile-afl-address-x86_64": --   No package 'guile-2.2' found
+Step #3 - "compile-afl-address-x86_64": -- Disabling Guile modules
+Step #3 - "compile-afl-address-x86_64": -- Configuring done (1.4s)
+Step #3 - "compile-afl-address-x86_64": -- Generating done (0.1s)
+Step #3 - "compile-afl-address-x86_64": -- Build files have been written to: /src/immer/build
+Step #3 - "compile-afl-address-x86_64": ++ nproc
+Step #3 - "compile-afl-address-x86_64": + make -j32 fuzzers
+Step #3 - "compile-afl-address-x86_64": [  2%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-array-gc.dir/array-gc.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [  5%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector.dir/vector.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [  7%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-array.dir/array.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 10%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-bo.dir/flex-vector-bo.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 13%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-gc.dir/flex-vector-gc.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 15%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-st.dir/flex-vector-st.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 18%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector.dir/flex-vector.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 23%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-gc.dir/map-gc.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 23%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st-str.dir/map-st-str.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 28%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st.dir/map-st.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 28%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st-str-conflict.dir/map-st-str-conflict.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 31%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map.dir/map.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 34%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-gc.dir/set-gc.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 36%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st-str-conflict.dir/set-st-str-conflict.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 42%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st.dir/set-st.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 42%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st-str.dir/set-st-str.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 44%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set.dir/set.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 47%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector-st.dir/vector-st.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 50%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector-gc.dir/vector-gc.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 52%] [32m[1mLinking CXX executable array-gc[0m
+Step #3 - "compile-afl-address-x86_64": [ 52%] Built target extra-fuzzer-array-gc
+Step #3 - "compile-afl-address-x86_64": [ 55%] [32m[1mLinking CXX executable set-gc[0m
+Step #3 - "compile-afl-address-x86_64": [ 57%] [32m[1mLinking CXX executable array[0m
+Step #3 - "compile-afl-address-x86_64": [ 57%] Built target extra-fuzzer-array
+Step #3 - "compile-afl-address-x86_64": [ 57%] Built target extra-fuzzer-set-gc
+Step #3 - "compile-afl-address-x86_64": [ 60%] [32m[1mLinking CXX executable set[0m
+Step #3 - "compile-afl-address-x86_64": [ 60%] Built target extra-fuzzer-set
+Step #3 - "compile-afl-address-x86_64": [ 63%] [32m[1mLinking CXX executable set-st[0m
+Step #3 - "compile-afl-address-x86_64": [ 63%] Built target extra-fuzzer-set-st
+Step #3 - "compile-afl-address-x86_64": [ 65%] [32m[1mLinking CXX executable map-st[0m
+Step #3 - "compile-afl-address-x86_64": [ 68%] [32m[1mLinking CXX executable map-gc[0m
+Step #3 - "compile-afl-address-x86_64": [ 68%] Built target extra-fuzzer-map-st
+Step #3 - "compile-afl-address-x86_64": [ 68%] Built target extra-fuzzer-map-gc
+Step #3 - "compile-afl-address-x86_64": [ 71%] [32m[1mLinking CXX executable set-st-str[0m
+Step #3 - "compile-afl-address-x86_64": [ 73%] [32m[1mLinking CXX executable vector[0m
+Step #3 - "compile-afl-address-x86_64": [ 73%] Built target extra-fuzzer-set-st-str
+Step #3 - "compile-afl-address-x86_64": [ 73%] Built target extra-fuzzer-vector
+Step #3 - "compile-afl-address-x86_64": [ 76%] [32m[1mLinking CXX executable vector-st[0m
+Step #3 - "compile-afl-address-x86_64": [ 76%] Built target extra-fuzzer-vector-st
+Step #3 - "compile-afl-address-x86_64": [ 78%] [32m[1mLinking CXX executable vector-gc[0m
+Step #3 - "compile-afl-address-x86_64": [ 78%] Built target extra-fuzzer-vector-gc
+Step #3 - "compile-afl-address-x86_64": [ 81%] [32m[1mLinking CXX executable map[0m
+Step #3 - "compile-afl-address-x86_64": [ 84%] [32m[1mLinking CXX executable set-st-str-conflict[0m
+Step #3 - "compile-afl-address-x86_64": [ 86%] [32m[1mLinking CXX executable map-st-str[0m
+Step #3 - "compile-afl-address-x86_64": [ 86%] Built target extra-fuzzer-map
+Step #3 - "compile-afl-address-x86_64": [ 86%] Built target extra-fuzzer-set-st-str-conflict
+Step #3 - "compile-afl-address-x86_64": [ 86%] Built target extra-fuzzer-map-st-str
+Step #3 - "compile-afl-address-x86_64": [ 89%] [32m[1mLinking CXX executable map-st-str-conflict[0m
+Step #3 - "compile-afl-address-x86_64": [ 89%] Built target extra-fuzzer-map-st-str-conflict
+Step #3 - "compile-afl-address-x86_64": [ 92%] [32m[1mLinking CXX executable flex-vector-gc[0m
+Step #3 - "compile-afl-address-x86_64": [ 92%] Built target extra-fuzzer-flex-vector-gc
+Step #3 - "compile-afl-address-x86_64": [ 94%] [32m[1mLinking CXX executable flex-vector[0m
+Step #3 - "compile-afl-address-x86_64": [ 94%] Built target extra-fuzzer-flex-vector
+Step #3 - "compile-afl-address-x86_64": [ 97%] [32m[1mLinking CXX executable flex-vector-st[0m
+Step #3 - "compile-afl-address-x86_64": [100%] [32m[1mLinking CXX executable flex-vector-bo[0m
+Step #3 - "compile-afl-address-x86_64": [100%] Built target extra-fuzzer-flex-vector-st
+Step #3 - "compile-afl-address-x86_64": [100%] Built target extra-fuzzer-flex-vector-bo
+Step #3 - "compile-afl-address-x86_64": [100%] Built target fuzzers
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/CMakeFiles ]]
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/Makefile ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/Makefile ]]
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/array ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/array ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/array /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/array-gc ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/array-gc ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/array-gc /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/cmake_install.cmake ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/cmake_install.cmake ]]
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/flex-vector ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/flex-vector ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/flex-vector /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/flex-vector-bo ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/flex-vector-bo ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/flex-vector-bo /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/flex-vector-gc ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/flex-vector-gc ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/flex-vector-gc /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/flex-vector-st ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/flex-vector-st ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/flex-vector-st /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/map ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/map ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/map /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/map-gc ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/map-gc ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/map-gc /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/map-st ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/map-st ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/map-st /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/map-st-str ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/map-st-str ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/map-st-str /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/map-st-str-conflict ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/map-st-str-conflict ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/map-st-str-conflict /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/set ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/set ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/set /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/set-gc ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/set-gc ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/set-gc /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/set-st ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/set-st ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/set-st /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/set-st-str ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/set-st-str ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/set-st-str /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/set-st-str-conflict ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/set-st-str-conflict ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/set-st-str-conflict /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/vector ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/vector ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/vector /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/vector-gc ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/vector-gc ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/vector-gc /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/vector-st ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/vector-st ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/vector-st /workspace/out/afl-address-x86_64
+Finished Step #3 - "compile-afl-address-x86_64"
+Starting Step #4 - "build-check-afl-address-x86_64"
+Step #4 - "build-check-afl-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-afl-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-afl-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-afl-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-afl-address-x86_64": 1b3d0e2e09a6: Already exists
+Step #4 - "build-check-afl-address-x86_64": 2af237d09d06: Already exists
+Step #4 - "build-check-afl-address-x86_64": 4efa9c1bdd62: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": a26f86109ca5: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 97aaad12a0f7: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": ab59fd74cb42: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": c747cbfaef1d: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 26a178b1a487: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": eb41d0658cee: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 5eaea35f415c: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": ffb2217ebeb4: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": f0d1e43b9395: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": b8594bb984b6: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 47d956ecab02: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 27408b9a47e8: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": a8e6959bb852: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 1ef730b8b47a: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": ae1ff2abe40c: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 9b9fce1977ac: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 520e0a4b3b4c: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": adecd06dc687: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 48f03657f7fe: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": be43b5abfbc4: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 65e3b0136a76: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 7401ced0c502: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": eb41d0658cee: Waiting
+Step #4 - "build-check-afl-address-x86_64": 5eaea35f415c: Waiting
+Step #4 - "build-check-afl-address-x86_64": ffb2217ebeb4: Waiting
+Step #4 - "build-check-afl-address-x86_64": ab59fd74cb42: Waiting
+Step #4 - "build-check-afl-address-x86_64": c747cbfaef1d: Waiting
+Step #4 - "build-check-afl-address-x86_64": 48f03657f7fe: Waiting
+Step #4 - "build-check-afl-address-x86_64": 65e3b0136a76: Waiting
+Step #4 - "build-check-afl-address-x86_64": adecd06dc687: Waiting
+Step #4 - "build-check-afl-address-x86_64": 26a178b1a487: Waiting
+Step #4 - "build-check-afl-address-x86_64": 9b9fce1977ac: Waiting
+Step #4 - "build-check-afl-address-x86_64": 7401ced0c502: Waiting
+Step #4 - "build-check-afl-address-x86_64": a8e6959bb852: Waiting
+Step #4 - "build-check-afl-address-x86_64": 47d956ecab02: Waiting
+Step #4 - "build-check-afl-address-x86_64": 27408b9a47e8: Waiting
+Step #4 - "build-check-afl-address-x86_64": ae1ff2abe40c: Waiting
+Step #4 - "build-check-afl-address-x86_64": be43b5abfbc4: Waiting
+Step #4 - "build-check-afl-address-x86_64": 97aaad12a0f7: Download complete
+Step #4 - "build-check-afl-address-x86_64": 4efa9c1bdd62: Download complete
+Step #4 - "build-check-afl-address-x86_64": a26f86109ca5: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": a26f86109ca5: Download complete
+Step #4 - "build-check-afl-address-x86_64": c747cbfaef1d: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": c747cbfaef1d: Download complete
+Step #4 - "build-check-afl-address-x86_64": 4efa9c1bdd62: Pull complete
+Step #4 - "build-check-afl-address-x86_64": ab59fd74cb42: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": ab59fd74cb42: Download complete
+Step #4 - "build-check-afl-address-x86_64": eb41d0658cee: Download complete
+Step #4 - "build-check-afl-address-x86_64": 5eaea35f415c: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 5eaea35f415c: Download complete
+Step #4 - "build-check-afl-address-x86_64": a26f86109ca5: Pull complete
+Step #4 - "build-check-afl-address-x86_64": ffb2217ebeb4: Download complete
+Step #4 - "build-check-afl-address-x86_64": 97aaad12a0f7: Pull complete
+Step #4 - "build-check-afl-address-x86_64": b8594bb984b6: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": b8594bb984b6: Download complete
+Step #4 - "build-check-afl-address-x86_64": 26a178b1a487: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 26a178b1a487: Download complete
+Step #4 - "build-check-afl-address-x86_64": 47d956ecab02: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 47d956ecab02: Download complete
+Step #4 - "build-check-afl-address-x86_64": ab59fd74cb42: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 27408b9a47e8: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 27408b9a47e8: Download complete
+Step #4 - "build-check-afl-address-x86_64": c747cbfaef1d: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 1ef730b8b47a: Download complete
+Step #4 - "build-check-afl-address-x86_64": f0d1e43b9395: Download complete
+Step #4 - "build-check-afl-address-x86_64": 9b9fce1977ac: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 9b9fce1977ac: Download complete
+Step #4 - "build-check-afl-address-x86_64": 520e0a4b3b4c: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 520e0a4b3b4c: Download complete
+Step #4 - "build-check-afl-address-x86_64": a8e6959bb852: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": a8e6959bb852: Download complete
+Step #4 - "build-check-afl-address-x86_64": 48f03657f7fe: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 48f03657f7fe: Download complete
+Step #4 - "build-check-afl-address-x86_64": adecd06dc687: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": adecd06dc687: Download complete
+Step #4 - "build-check-afl-address-x86_64": ae1ff2abe40c: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": ae1ff2abe40c: Download complete
+Step #4 - "build-check-afl-address-x86_64": 65e3b0136a76: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 65e3b0136a76: Download complete
+Step #4 - "build-check-afl-address-x86_64": 7401ced0c502: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 7401ced0c502: Download complete
+Step #4 - "build-check-afl-address-x86_64": be43b5abfbc4: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": be43b5abfbc4: Download complete
+Step #4 - "build-check-afl-address-x86_64": 26a178b1a487: Pull complete
+Step #4 - "build-check-afl-address-x86_64": eb41d0658cee: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 5eaea35f415c: Pull complete
+Step #4 - "build-check-afl-address-x86_64": ffb2217ebeb4: Pull complete
+Step #4 - "build-check-afl-address-x86_64": f0d1e43b9395: Pull complete
+Step #4 - "build-check-afl-address-x86_64": b8594bb984b6: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 47d956ecab02: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 27408b9a47e8: Pull complete
+Step #4 - "build-check-afl-address-x86_64": a8e6959bb852: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 1ef730b8b47a: Pull complete
+Step #4 - "build-check-afl-address-x86_64": ae1ff2abe40c: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 9b9fce1977ac: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 520e0a4b3b4c: Pull complete
+Step #4 - "build-check-afl-address-x86_64": adecd06dc687: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 48f03657f7fe: Pull complete
+Step #4 - "build-check-afl-address-x86_64": be43b5abfbc4: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 65e3b0136a76: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 7401ced0c502: Pull complete
+Step #4 - "build-check-afl-address-x86_64": Digest: sha256:974a636285e21c9b9f30a0664b9854a13e5c2eefbf7d376c74067bf16cab2435
+Step #4 - "build-check-afl-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/flex-vector-st
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/set-st-str
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/map
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/array-gc
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/set-st-str-conflict
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/map-st-str
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/vector-st
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/set-st
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/set
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/map-st
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/set-gc
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/flex-vector
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/map-gc
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/array
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/flex-vector-gc
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/vector
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/flex-vector-bo
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/map-st-str-conflict
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/vector-gc
+Step #4 - "build-check-afl-address-x86_64": Retrying failed fuzz targets sequentially 2
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/flex-vector-gc
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpq696p8xn/vector-gc
+Step #4 - "build-check-afl-address-x86_64": Broken fuzz targets 1
+Step #4 - "build-check-afl-address-x86_64": ('/tmp/not-out/tmpq696p8xn/vector-gc', CompletedProcess(args=['bad_build_check', '/tmp/not-out/tmpq696p8xn/vector-gc'], returncode=1, stdout=b'BAD BUILD: fuzzing /tmp/not-out/tmpq696p8xn/vector-gc with afl-fuzz failed.\nvm.mmap_rnd_bits = 28\nafl++ setup:\nAFL_SKIP_CPUFREQ=1\nAFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1\nAFL_TRY_AFFINITY=1\nAFL_IGNORE_UNKNOWN_ENVS=1\nAFL_FUZZER_ARGS=-m none -t 5000+\nAFL_CMPLOG_ONLY_NEW=1\nAFL_FAST_CAL=1\nAFL_NO_UI=1\nAFL_IGNORE_PROBLEMS=1\nAFL_FORKSRV_INIT_TMOUT=30000\nAFL_IGNORE_UNKNOWN_ENVS=1\nAFL_QUIET=1\nAFL_IGNORE_PROBLEMS=1\n/tmp/not-out/tmpq696p8xn/afl-fuzz -m none -t 5000+ -i /tmp/vector-gc_corpus -o /tmp/vector-gc_afl_address_out -- /tmp/not-out/tmpq696p8xn/vector-gc\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_SKIP_CPUFREQ with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_TRY_AFFINITY with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_CMPLOG_ONLY_NEW with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_FAST_CAL with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_NO_UI with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_IGNORE_PROBLEMS with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_FORKSRV_INIT_TMOUT with value 30000\x1b[0m\n\x1b[0;36mafl-fuzz++4.34a\x1b[0m based on afl by Michal Zalewski and a large online community\n\x1b[1;92m[+] \x1b[0mAFL++ is maintained by Marc "van Hauser" Heuse, Dominik Maier, Andrea Fioraldi and Heiko "hexcoder" Ei\xc3\x9ffeldt\x1b[0m\n\x1b[1;92m[+] \x1b[0mAFL++ is open source, get it at https://github.com/AFLplusplus/AFLplusplus\x1b[0m\n\x1b[1;92m[+] \x1b[0mNOTE: AFL++ >= v3 has changed defaults and behaviours - see README.md\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable ASAN_OPTIONS with value alloc_dealloc_mismatch=0:allocator_may_return_null=1:allocator_release_to_os_interval_ms=500:check_malloc_usable_size=0:detect_container_overflow=1:detect_odr_violation=0:detect_leaks=1:detect_stack_use_after_return=1:fast_unwind_on_fatal=0:handle_abort=1:handle_segv=1:handle_sigill=1:max_uar_stack_size_log=16:print_scariness=1:quarantine_size_mb=10:strict_memcmp=1:strip_path_prefix=/workspace/:symbolize=1:use_sigaltstack=1:dedup_token_length=3:abort_on_error=1:symbolize=0:detect_odr_violation=0:\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable MSAN_OPTIONS with value print_stats=1:strip_path_prefix=/workspace/:symbolize=1:dedup_token_length=3:exit_code=86:symbolize=0\x1b[0m\n\x1b[1;92m[+] \x1b[0mNo -M/-S set, autoconfiguring for "-S default"\x1b[0m\n\x1b[1;94m[*] \x1b[0mGetting to work...\x1b[0m\n\x1b[1;92m[+] \x1b[0mUsing exploration-based constant power schedule (EXPLORE)\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled testcache with 50 MB\x1b[0m\n\x1b[1;92m[+] \x1b[0mGenerating fuzz data with a length of min=1 max=1048576\x1b[0m\n\x1b[1;94m[*] \x1b[0mChecking core_pattern...\x1b[0m\n\x1b[1;92m[+] \x1b[0mDisabling the UI because AFL_NO_UI is set.\x1b[0m\n\x1b[1;92m[+] \x1b[0mYou have 32 CPU cores and 19 runnable tasks (utilization: 59%).\x1b[0m\n\x1b[1;92m[+] \x1b[0mTry parallel jobs - see docs/fuzzing_in_depth.md#c-using-multiple-cores\x1b[0m\n\x1b[1;94m[*] \x1b[0mSetting up output directories...\x1b[0m\n\x1b[1;94m[*] \x1b[0mChecking CPU core loadout...\x1b[0m\n\x1b[1;92m[+] \x1b[0mFound a free CPU core, try binding to #9.\x1b[0m\n\x1b[1;94m[*] \x1b[0mValidating target binary...\x1b[0m\n\x1b[1;92m[+] \x1b[0m\x1b[1;95mPersistent mode binary detected.\x1b[0m\n\x1b[1;92m[+] \x1b[0m\x1b[1;95mDeferred forkserver binary detected.\x1b[0m\n\x1b[1;94m[*] \x1b[0mScanning \'/tmp/vector-gc_corpus\'...\x1b[0m\n\x1b[1;94m[*] \x1b[0mCreating hard links for all input files...\x1b[0m\n\x1b[1;92m[+] \x1b[0mLoaded a total of 1 seeds.\x1b[0m\n\x1b[1;94m[*] \x1b[0mSpinning up the fork server...\x1b[0m\n\x1b[1;92m[+] \x1b[0mAll right - new fork server model v1 is up.\x1b[0m\n\x1b[1;94m[*] \x1b[0mTarget map size: 1435\x1b[0m\n\x1b[1;94m[*] \x1b[0mUsing SHARED MEMORY FUZZING feature.\x1b[0m\n\x1b[1;94m[*] \x1b[0mNo auto-generated dictionary tokens to reuse.\x1b[0m\n\x1b[1;94m[*] \x1b[0mAttempting dry run with \'id:000000,time:0,execs:0,orig:input\'...\x1b[0m\n\x1b[1;93m[!] \x1b[1;97mWARNING: \x1b[0mTest case results in a timeout (skipping)\x1b[0m\n\x1b[?25h\x1b[0m\x1b[1;91m\n[-] PROGRAM ABORT : \x1b[0mAll test cases time out or crash, giving up!\x1b[1;91m\n         Location : \x1b[0mperform_dry_run(), src/afl-fuzz-init.c:1413\n\n', stderr=b''))
+Step #4 - "build-check-afl-address-x86_64": BAD BUILD: fuzzing /tmp/not-out/tmpq696p8xn/vector-gc with afl-fuzz failed.
+Step #4 - "build-check-afl-address-x86_64": vm.mmap_rnd_bits = 28
+Step #4 - "build-check-afl-address-x86_64": afl++ setup:
+Step #4 - "build-check-afl-address-x86_64": AFL_SKIP_CPUFREQ=1
+Step #4 - "build-check-afl-address-x86_64": AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
+Step #4 - "build-check-afl-address-x86_64": AFL_TRY_AFFINITY=1
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
+Step #4 - "build-check-afl-address-x86_64": AFL_FUZZER_ARGS=-m none -t 5000+
+Step #4 - "build-check-afl-address-x86_64": AFL_CMPLOG_ONLY_NEW=1
+Step #4 - "build-check-afl-address-x86_64": AFL_FAST_CAL=1
+Step #4 - "build-check-afl-address-x86_64": AFL_NO_UI=1
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
+Step #4 - "build-check-afl-address-x86_64": AFL_FORKSRV_INIT_TMOUT=30000
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
+Step #4 - "build-check-afl-address-x86_64": AFL_QUIET=1
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
+Step #4 - "build-check-afl-address-x86_64": /tmp/not-out/tmpq696p8xn/afl-fuzz -m none -t 5000+ -i /tmp/vector-gc_corpus -o /tmp/vector-gc_afl_address_out -- /tmp/not-out/tmpq696p8xn/vector-gc
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_SKIP_CPUFREQ with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_TRY_AFFINITY with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_CMPLOG_ONLY_NEW with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_FAST_CAL with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_NO_UI with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_IGNORE_PROBLEMS with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_FORKSRV_INIT_TMOUT with value 30000[0m
+Step #4 - "build-check-afl-address-x86_64": [0;36mafl-fuzz++4.34a[0m based on afl by Michal Zalewski and a large online community
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mAFL++ is maintained by Marc "van Hauser" Heuse, Dominik Maier, Andrea Fioraldi and Heiko "hexcoder" Eißfeldt[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mAFL++ is open source, get it at https://github.com/AFLplusplus/AFLplusplus[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mNOTE: AFL++ >= v3 has changed defaults and behaviours - see README.md[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable ASAN_OPTIONS with value alloc_dealloc_mismatch=0:allocator_may_return_null=1:allocator_release_to_os_interval_ms=500:check_malloc_usable_size=0:detect_container_overflow=1:detect_odr_violation=0:detect_leaks=1:detect_stack_use_after_return=1:fast_unwind_on_fatal=0:handle_abort=1:handle_segv=1:handle_sigill=1:max_uar_stack_size_log=16:print_scariness=1:quarantine_size_mb=10:strict_memcmp=1:strip_path_prefix=/workspace/:symbolize=1:use_sigaltstack=1:dedup_token_length=3:abort_on_error=1:symbolize=0:detect_odr_violation=0:[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable MSAN_OPTIONS with value print_stats=1:strip_path_prefix=/workspace/:symbolize=1:dedup_token_length=3:exit_code=86:symbolize=0[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mNo -M/-S set, autoconfiguring for "-S default"[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mGetting to work...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mUsing exploration-based constant power schedule (EXPLORE)[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled testcache with 50 MB[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mGenerating fuzz data with a length of min=1 max=1048576[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mChecking core_pattern...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mDisabling the UI because AFL_NO_UI is set.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mYou have 32 CPU cores and 1 runnable tasks (utilization: 3%).[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mTry parallel jobs - see docs/fuzzing_in_depth.md#c-using-multiple-cores[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mSetting up output directories...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mChecking CPU core loadout...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mFound a free CPU core, try binding to #0.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mValidating target binary...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0m[1;95mPersistent mode binary detected.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0m[1;95mDeferred forkserver binary detected.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mScanning '/tmp/vector-gc_corpus'...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mCreating hard links for all input files...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mLoaded a total of 1 seeds.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mSpinning up the fork server...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mAll right - new fork server model v1 is up.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mTarget map size: 1435[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mUsing SHARED MEMORY FUZZING feature.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mNo auto-generated dictionary tokens to reuse.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mAttempting dry run with 'id:000000,time:0,execs:0,orig:input'...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;93m[!] [1;97mWARNING: [0mTest case results in a timeout (skipping)[0m
+Step #4 - "build-check-afl-address-x86_64": [?25h[0m[1;91m
+Step #4 - "build-check-afl-address-x86_64": [-] PROGRAM ABORT : [0mAll test cases time out or crash, giving up![1;91m
+Step #4 - "build-check-afl-address-x86_64":          Location : [0mperform_dry_run(), src/afl-fuzz-init.c:1413
+Step #4 - "build-check-afl-address-x86_64": 
+Step #4 - "build-check-afl-address-x86_64": 
+Step #4 - "build-check-afl-address-x86_64": 19 fuzzers total, 1 seem to be broken (5.2631578947368425%).
+Finished Step #4 - "build-check-afl-address-x86_64"
+Starting Step #5
+Step #5: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #5
+Starting Step #6
+Step #6: Already have image: gcr.io/oss-fuzz/immer
+Step #6:   adding: SanitizerCoverageLTO.so (deflated 69%)
+Step #6:   adding: SanitizerCoveragePCGUARD.so (deflated 70%)
+Step #6:   adding: afl-addseeds (deflated 57%)
+Step #6:   adding: afl-analyze (deflated 55%)
+Step #6:   adding: afl-c++ (deflated 57%)
+Step #6:   adding: afl-c++.8 (deflated 55%)
+Step #6:   adding: afl-cc (deflated 57%)
+Step #6:   adding: afl-cc.8 (deflated 55%)
+Step #6:   adding: afl-clang (deflated 57%)
+Step #6:   adding: afl-clang++ (deflated 57%)
+Step #6:   adding: afl-clang-fast (deflated 57%)
+Step #6:   adding: afl-clang-fast++ (deflated 57%)
+Step #6:   adding: afl-clang-fast++.8 (deflated 55%)
+Step #6:   adding: afl-clang-fast.8 (deflated 55%)
+Step #6:   adding: afl-clang-lto (deflated 57%)
+Step #6:   adding: afl-clang-lto++ (deflated 57%)
+Step #6:   adding: afl-clang-lto++.8 (deflated 55%)
+Step #6:   adding: afl-clang-lto.8 (deflated 55%)
+Step #6:   adding: afl-cmin (deflated 70%)
+Step #6:   adding: afl-cmin.bash (deflated 65%)
+Step #6:   adding: afl-cmin.py (deflated 71%)
+Step #6:   adding: afl-compiler-rt-32.o (deflated 54%)
+Step #6:   adding: afl-compiler-rt-64.o (deflated 67%)
+Step #6:   adding: afl-compiler-rt.o (deflated 67%)
+Step #6:   adding: afl-fuzz (deflated 55%)
+Step #6:   adding: afl-g++ (deflated 57%)
+Step #6:   adding: afl-gcc (deflated 57%)
+Step #6:   adding: afl-gotcpu (deflated 62%)
+Step #6:   adding: afl-ld-lto (deflated 62%)
+Step #6:   adding: afl-llvm-dict2file.so (deflated 69%)
+Step #6:   adding: afl-llvm-lto-instrumentlist.so (deflated 71%)
+Step #6:   adding: afl-llvm-pass.so (deflated 69%)
+Step #6:   adding: afl-llvm-rt-lto-32.o (deflated 20%)
+Step #6:   adding: afl-llvm-rt-lto-64.o (deflated 20%)
+Step #6:   adding: afl-llvm-rt-lto.o (deflated 20%)
+Step #6:   adding: afl-lto (deflated 57%)
+Step #6:   adding: afl-lto++ (deflated 57%)
+Step #6:   adding: afl-lto++.8 (deflated 55%)
+Step #6:   adding: afl-lto.8 (deflated 55%)
+Step #6:   adding: afl-persistent-config (deflated 59%)
+Step #6:   adding: afl-plot (deflated 65%)
+Step #6:   adding: afl-showmap (deflated 55%)
+Step #6:   adding: afl-system-config (deflated 63%)
+Step #6:   adding: afl-tmin (deflated 55%)
+Step #6:   adding: afl-whatsup (deflated 69%)
+Step #6:   adding: afl-wine-trace (deflated 70%)
+Step #6:   adding: afl_options.txt (deflated 20%)
+Step #6:   adding: array (deflated 66%)
+Step #6:   adding: array-gc (deflated 66%)
+Step #6:   adding: cmplog-instructions-pass.so (deflated 71%)
+Step #6:   adding: cmplog-routines-pass.so (deflated 70%)
+Step #6:   adding: cmplog-switches-pass.so (deflated 70%)
+Step #6:   adding: compare-transform-pass.so (deflated 69%)
+Step #6:   adding: dynamic_list.txt (deflated 76%)
+Step #6:   adding: flex-vector (deflated 71%)
+Step #6:   adding: flex-vector-bo (deflated 70%)
+Step #6:   adding: flex-vector-gc (deflated 71%)
+Step #6:   adding: flex-vector-st (deflated 70%)
+Step #6:   adding: injection-pass.so (deflated 70%)
+Step #6:   adding: libAFLDriver.a (deflated 64%)
+Step #6:   adding: libAFLQemuDriver.a (deflated 65%)
+Step #6:   adding: llvm-symbolizer (deflated 65%)
+Step #6:   adding: map (deflated 67%)
+Step #6:   adding: map-gc (deflated 67%)
+Step #6:   adding: map-st (deflated 67%)
+Step #6:   adding: map-st-str (deflated 68%)
+Step #6:   adding: map-st-str-conflict (deflated 68%)
+Step #6:   adding: set (deflated 67%)
+Step #6:   adding: set-gc (deflated 66%)
+Step #6:   adding: set-st (deflated 67%)
+Step #6:   adding: set-st-str (deflated 67%)
+Step #6:   adding: set-st-str-conflict (deflated 67%)
+Step #6:   adding: split-compares-pass.so (deflated 69%)
+Step #6:   adding: split-switches-pass.so (deflated 70%)
+Step #6:   adding: vector (deflated 68%)
+Step #6:   adding: vector-gc (deflated 67%)
+Step #6:   adding: vector-st (deflated 68%)
+Finished Step #6
+Starting Step #7
+Step #7: Pulling image: gcr.io/oss-fuzz-base/uploader
+Step #7: Using default tag: latest
+Step #7: latest: Pulling from oss-fuzz-base/uploader
+Step #7: c62795f78da9: Pulling fs layer
+Step #7: d4fceeeb758e: Pulling fs layer
+Step #7: 5c9125a401ae: Pulling fs layer
+Step #7: 0062f774e994: Pulling fs layer
+Step #7: 6b33fd031fac: Pulling fs layer
+Step #7: 7eb39101e508: Pulling fs layer
+Step #7: 89257482f398: Pulling fs layer
+Step #7: 0062f774e994: Waiting
+Step #7: 89257482f398: Waiting
+Step #7: 6b33fd031fac: Waiting
+Step #7: d4fceeeb758e: Verifying Checksum
+Step #7: d4fceeeb758e: Download complete
+Step #7: 5c9125a401ae: Verifying Checksum
+Step #7: 5c9125a401ae: Download complete
+Step #7: 0062f774e994: Download complete
+Step #7: 6b33fd031fac: Verifying Checksum
+Step #7: 6b33fd031fac: Download complete
+Step #7: c62795f78da9: Verifying Checksum
+Step #7: c62795f78da9: Download complete
+Step #7: 89257482f398: Verifying Checksum
+Step #7: 89257482f398: Download complete
+Step #7: 7eb39101e508: Verifying Checksum
+Step #7: c62795f78da9: Pull complete
+Step #7: d4fceeeb758e: Pull complete
+Step #7: 5c9125a401ae: Pull complete
+Step #7: 0062f774e994: Pull complete
+Step #7: 6b33fd031fac: Pull complete
+Step #7: 7eb39101e508: Pull complete
+Step #7: 89257482f398: Pull complete
+Step #7: Digest: sha256:5717ba63d13b5515063e2a6ccad09fb5bf32a86c8e0798a363d81c2be522e411
+Step #7: Status: Downloaded newer image for gcr.io/oss-fuzz-base/uploader:latest
+Step #7: gcr.io/oss-fuzz-base/uploader:latest
+Step #7:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #7:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #7:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   153    0     0  100   153      0    816 --:--:-- --:--:-- --:--:--   818
+Finished Step #7
+Starting Step #8
+Step #8: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #8:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #8:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #8:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 35.6M    0     0  100 35.6M      0  88.2M --:--:-- --:--:-- --:--:-- 88.1M
+Finished Step #8
+Starting Step #9
+Step #9: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #9:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #9:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #9:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   197    0     0  100   197      0    812 --:--:-- --:--:-- --:--:--   810
+Finished Step #9
+Starting Step #10
+Step #10: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #10:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #10:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #10:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    30    0     0  100    30      0    132 --:--:-- --:--:-- --:--:--   132
+Finished Step #10
+Starting Step #11
+Step #11: Already have image: gcr.io/oss-fuzz/immer
+Finished Step #11
+Starting Step #12 - "compile-honggfuzz-address-x86_64"
+Step #12 - "compile-honggfuzz-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #12 - "compile-honggfuzz-address-x86_64": ---------------------------------------------------------------
+Step #12 - "compile-honggfuzz-address-x86_64": vm.mmap_rnd_bits = 28
+Step #12 - "compile-honggfuzz-address-x86_64": Skipping compilation; using precompiled honggfuzz
+Step #12 - "compile-honggfuzz-address-x86_64":  done.
+Step #12 - "compile-honggfuzz-address-x86_64": ---------------------------------------------------------------
+Step #12 - "compile-honggfuzz-address-x86_64": CC=clang
+Step #12 - "compile-honggfuzz-address-x86_64": CXX=clang++
+Step #12 - "compile-honggfuzz-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize-coverage=trace-pc-guard,indirect-calls,trace-cmp
+Step #12 - "compile-honggfuzz-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize-coverage=trace-pc-guard,indirect-calls,trace-cmp -stdlib=libc++
+Step #12 - "compile-honggfuzz-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #12 - "compile-honggfuzz-address-x86_64": ---------------------------------------------------------------
+Step #12 - "compile-honggfuzz-address-x86_64": + mkdir build
+Step #12 - "compile-honggfuzz-address-x86_64": + cd build
+Step #12 - "compile-honggfuzz-address-x86_64": + cmake .. -DBOEHM_GC_INCLUDE_DIR=/usr/include -DBOEHM_GC_LIBRARIES=/usr/lib/x86_64-linux-gnu/libgc.a -Dimmer_BUILD_TESTS=OFF
+Step #12 - "compile-honggfuzz-address-x86_64": -- The C compiler identification is Clang 22.0.0
+Step #12 - "compile-honggfuzz-address-x86_64": -- The CXX compiler identification is Clang 22.0.0
+Step #12 - "compile-honggfuzz-address-x86_64": -- Detecting C compiler ABI info
+Step #12 - "compile-honggfuzz-address-x86_64": -- Detecting C compiler ABI info - done
+Step #12 - "compile-honggfuzz-address-x86_64": -- Check for working C compiler: /usr/local/bin/clang - skipped
+Step #12 - "compile-honggfuzz-address-x86_64": -- Detecting C compile features
+Step #12 - "compile-honggfuzz-address-x86_64": -- Detecting C compile features - done
+Step #12 - "compile-honggfuzz-address-x86_64": -- Detecting CXX compiler ABI info
+Step #12 - "compile-honggfuzz-address-x86_64": -- Detecting CXX compiler ABI info - done
+Step #12 - "compile-honggfuzz-address-x86_64": -- Check for working CXX compiler: /usr/local/bin/clang++ - skipped
+Step #12 - "compile-honggfuzz-address-x86_64": -- Detecting CXX compile features
+Step #12 - "compile-honggfuzz-address-x86_64": -- Detecting CXX compile features - done
+Step #12 - "compile-honggfuzz-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+Step #12 - "compile-honggfuzz-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+Step #12 - "compile-honggfuzz-address-x86_64": -- Found Threads: TRUE
+Step #12 - "compile-honggfuzz-address-x86_64": -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1")
+Step #12 - "compile-honggfuzz-address-x86_64": -- Found GC library: /usr/lib/x86_64-linux-gnu/libgc.a
+Step #12 - "compile-honggfuzz-address-x86_64": [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+Step #12 - "compile-honggfuzz-address-x86_64":   The package name passed to `find_package_handle_standard_args` (Boehm_GC)
+Step #12 - "compile-honggfuzz-address-x86_64":   does not match the name of the calling package (BoehmGC).  This can lead to
+Step #12 - "compile-honggfuzz-address-x86_64":   problems in calling code that expects `find_package` result variables
+Step #12 - "compile-honggfuzz-address-x86_64":   (e.g., `_FOUND`) to follow a certain pattern.
+Step #12 - "compile-honggfuzz-address-x86_64": Call Stack (most recent call first):
+Step #12 - "compile-honggfuzz-address-x86_64":   cmake/FindBoehmGC.cmake:108 (find_package_handle_standard_args)
+Step #12 - "compile-honggfuzz-address-x86_64":   CMakeLists.txt:86 (find_package)
+Step #12 - "compile-honggfuzz-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #12 - "compile-honggfuzz-address-x86_64": [0m
+Step #12 - "compile-honggfuzz-address-x86_64": -- Found Boehm_GC: /usr/lib/x86_64-linux-gnu/libgc.a
+Step #12 - "compile-honggfuzz-address-x86_64": -- Could NOT find Boost (missing: Boost_INCLUDE_DIR) (Required is at least version "1.56")
+Step #12 - "compile-honggfuzz-address-x86_64": -- Using ccache: /usr/local/bin/ccache
+Step #12 - "compile-honggfuzz-address-x86_64": [33mCMake Warning (dev) at extra/python/CMakeLists.txt:22 (find_package):
+Step #12 - "compile-honggfuzz-address-x86_64":   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+Step #12 - "compile-honggfuzz-address-x86_64":   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+Step #12 - "compile-honggfuzz-address-x86_64":   the cmake_policy command to set the policy and suppress this warning.
+Step #12 - "compile-honggfuzz-address-x86_64": 
+Step #12 - "compile-honggfuzz-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #12 - "compile-honggfuzz-address-x86_64": [0m
+Step #12 - "compile-honggfuzz-address-x86_64": -- Found PythonInterp: /usr/local/bin/python (found version "3.11.13")
+Step #12 - "compile-honggfuzz-address-x86_64": [33mCMake Warning (dev) at extra/python/CMakeLists.txt:23 (find_package):
+Step #12 - "compile-honggfuzz-address-x86_64":   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+Step #12 - "compile-honggfuzz-address-x86_64":   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+Step #12 - "compile-honggfuzz-address-x86_64":   the cmake_policy command to set the policy and suppress this warning.
+Step #12 - "compile-honggfuzz-address-x86_64": 
+Step #12 - "compile-honggfuzz-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #12 - "compile-honggfuzz-address-x86_64": [0m
+Step #12 - "compile-honggfuzz-address-x86_64": -- Found PythonLibs: /usr/local/lib/libpython3.11.so (found version "3.11.13")
+Step #12 - "compile-honggfuzz-address-x86_64": -- Checking for module 'guile-2.2'
+Step #12 - "compile-honggfuzz-address-x86_64": --   No package 'guile-2.2' found
+Step #12 - "compile-honggfuzz-address-x86_64": -- Disabling Guile modules
+Step #12 - "compile-honggfuzz-address-x86_64": -- Configuring done (1.3s)
+Step #12 - "compile-honggfuzz-address-x86_64": -- Generating done (0.1s)
+Step #12 - "compile-honggfuzz-address-x86_64": -- Build files have been written to: /src/immer/build
+Step #12 - "compile-honggfuzz-address-x86_64": ++ nproc
+Step #12 - "compile-honggfuzz-address-x86_64": + make -j32 fuzzers
+Step #12 - "compile-honggfuzz-address-x86_64": [  2%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-array-gc.dir/array-gc.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [  7%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-bo.dir/flex-vector-bo.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [  7%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-array.dir/array.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 10%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-gc.dir/flex-vector-gc.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 13%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-st.dir/flex-vector-st.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 15%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector.dir/flex-vector.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 18%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-gc.dir/map-gc.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 21%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st.dir/map-st.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 23%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st-str-conflict.dir/map-st-str-conflict.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 26%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st-str.dir/map-st-str.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 31%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map.dir/map.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 34%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-gc.dir/set-gc.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 34%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st-str-conflict.dir/set-st-str-conflict.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 36%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st-str.dir/set-st-str.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 39%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st.dir/set-st.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 42%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set.dir/set.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 47%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector-gc.dir/vector-gc.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 47%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector-st.dir/vector-st.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 50%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector.dir/vector.cpp.o[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 52%] [32m[1mLinking CXX executable array[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 55%] [32m[1mLinking CXX executable array-gc[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 55%] Built target extra-fuzzer-array
+Step #12 - "compile-honggfuzz-address-x86_64": [ 55%] Built target extra-fuzzer-array-gc
+Step #12 - "compile-honggfuzz-address-x86_64": [ 57%] [32m[1mLinking CXX executable set-gc[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 57%] Built target extra-fuzzer-set-gc
+Step #12 - "compile-honggfuzz-address-x86_64": [ 60%] [32m[1mLinking CXX executable set[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 63%] [32m[1mLinking CXX executable map-gc[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 65%] [32m[1mLinking CXX executable set-st[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 65%] Built target extra-fuzzer-set
+Step #12 - "compile-honggfuzz-address-x86_64": [ 65%] Built target extra-fuzzer-map-gc
+Step #12 - "compile-honggfuzz-address-x86_64": [ 65%] Built target extra-fuzzer-set-st
+Step #12 - "compile-honggfuzz-address-x86_64": [ 68%] [32m[1mLinking CXX executable map[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 71%] [32m[1mLinking CXX executable map-st[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 71%] Built target extra-fuzzer-map
+Step #12 - "compile-honggfuzz-address-x86_64": [ 71%] Built target extra-fuzzer-map-st
+Step #12 - "compile-honggfuzz-address-x86_64": [ 73%] [32m[1mLinking CXX executable vector[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 73%] Built target extra-fuzzer-vector
+Step #12 - "compile-honggfuzz-address-x86_64": [ 76%] [32m[1mLinking CXX executable map-st-str-conflict[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 78%] [32m[1mLinking CXX executable vector-st[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 81%] [32m[1mLinking CXX executable set-st-str[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 84%] [32m[1mLinking CXX executable set-st-str-conflict[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 86%] [32m[1mLinking CXX executable vector-gc[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 86%] Built target extra-fuzzer-vector-st
+Step #12 - "compile-honggfuzz-address-x86_64": [ 86%] Built target extra-fuzzer-map-st-str-conflict
+Step #12 - "compile-honggfuzz-address-x86_64": [ 86%] Built target extra-fuzzer-set-st-str
+Step #12 - "compile-honggfuzz-address-x86_64": [ 86%] Built target extra-fuzzer-set-st-str-conflict
+Step #12 - "compile-honggfuzz-address-x86_64": [ 86%] Built target extra-fuzzer-vector-gc
+Step #12 - "compile-honggfuzz-address-x86_64": [ 89%] [32m[1mLinking CXX executable map-st-str[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 89%] Built target extra-fuzzer-map-st-str
+Step #12 - "compile-honggfuzz-address-x86_64": [ 92%] [32m[1mLinking CXX executable flex-vector-gc[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 92%] Built target extra-fuzzer-flex-vector-gc
+Step #12 - "compile-honggfuzz-address-x86_64": [ 94%] [32m[1mLinking CXX executable flex-vector-st[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 97%] [32m[1mLinking CXX executable flex-vector-bo[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [ 97%] Built target extra-fuzzer-flex-vector-st
+Step #12 - "compile-honggfuzz-address-x86_64": [ 97%] Built target extra-fuzzer-flex-vector-bo
+Step #12 - "compile-honggfuzz-address-x86_64": [100%] [32m[1mLinking CXX executable flex-vector[0m
+Step #12 - "compile-honggfuzz-address-x86_64": [100%] Built target extra-fuzzer-flex-vector
+Step #12 - "compile-honggfuzz-address-x86_64": [100%] Built target fuzzers
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/CMakeFiles ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/Makefile ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/Makefile ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/array ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/array ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/array /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/array-gc ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/array-gc ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/array-gc /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/cmake_install.cmake ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/cmake_install.cmake ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/flex-vector ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/flex-vector ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/flex-vector /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/flex-vector-bo ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/flex-vector-bo ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/flex-vector-bo /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/flex-vector-gc ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/flex-vector-gc ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/flex-vector-gc /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/flex-vector-st ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/flex-vector-st ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/flex-vector-st /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/map ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/map ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/map /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/map-gc ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/map-gc ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/map-gc /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/map-st ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/map-st ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/map-st /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/map-st-str ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/map-st-str ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/map-st-str /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/map-st-str-conflict ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/map-st-str-conflict ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/map-st-str-conflict /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/set ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/set ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/set /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/set-gc ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/set-gc ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/set-gc /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/set-st ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/set-st ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/set-st /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/set-st-str ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/set-st-str ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/set-st-str /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/set-st-str-conflict ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/set-st-str-conflict ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/set-st-str-conflict /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/vector ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/vector ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/vector /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/vector-gc ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/vector-gc ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/vector-gc /workspace/out/honggfuzz-address-x86_64
+Step #12 - "compile-honggfuzz-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -f extra/fuzzer/vector-st ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + [[ -x extra/fuzzer/vector-st ]]
+Step #12 - "compile-honggfuzz-address-x86_64": + cp extra/fuzzer/vector-st /workspace/out/honggfuzz-address-x86_64
+Finished Step #12 - "compile-honggfuzz-address-x86_64"
+Starting Step #13 - "build-check-honggfuzz-address-x86_64"
+Step #13 - "build-check-honggfuzz-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/flex-vector-st
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/set-st-str
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/map
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/array-gc
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/set-st-str-conflict
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/map-st-str
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/vector-st
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/set-st
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/set
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/set-gc
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/flex-vector
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/map-st
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/map-gc
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/array
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/flex-vector-gc
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/vector
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/flex-vector-bo
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/map-st-str-conflict
+Step #13 - "build-check-honggfuzz-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpofpwqxpf/vector-gc
+Finished Step #13 - "build-check-honggfuzz-address-x86_64"
+Starting Step #14
+Step #14: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #14
+Starting Step #15
+Step #15: Already have image: gcr.io/oss-fuzz/immer
+Step #15:   adding: array (deflated 67%)
+Step #15:   adding: array-gc (deflated 66%)
+Step #15:   adding: flex-vector (deflated 70%)
+Step #15:   adding: flex-vector-bo (deflated 70%)
+Step #15:   adding: flex-vector-gc (deflated 70%)
+Step #15:   adding: flex-vector-st (deflated 70%)
+Step #15:   adding: honggfuzz (deflated 66%)
+Step #15:   adding: llvm-symbolizer (deflated 65%)
+Step #15:   adding: map (deflated 67%)
+Step #15:   adding: map-gc (deflated 67%)
+Step #15:   adding: map-st (deflated 67%)
+Step #15:   adding: map-st-str (deflated 67%)
+Step #15:   adding: map-st-str-conflict (deflated 67%)
+Step #15:   adding: set (deflated 67%)
+Step #15:   adding: set-gc (deflated 66%)
+Step #15:   adding: set-st (deflated 67%)
+Step #15:   adding: set-st-str (deflated 67%)
+Step #15:   adding: set-st-str-conflict (deflated 66%)
+Step #15:   adding: vector (deflated 67%)
+Step #15:   adding: vector-gc (deflated 67%)
+Step #15:   adding: vector-st (deflated 67%)
+Finished Step #15
+Starting Step #16
+Step #16: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #16:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #16:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #16:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   153    0     0  100   153      0    519 --:--:-- --:--:-- --:--:--   520
+Finished Step #16
+Starting Step #17
+Step #17: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #17:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #17:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #17:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 27.6M    0     0  100 27.6M      0  65.4M --:--:-- --:--:-- --:--:-- 65.5M
+Finished Step #17
+Starting Step #18
+Step #18: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #18:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #18:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #18:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   197    0     0  100   197      0    688 --:--:-- --:--:-- --:--:--   688
+Finished Step #18
+Starting Step #19
+Step #19: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #19:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #19:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #19:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    30    0     0  100    30      0    108 --:--:-- --:--:-- --:--:--   108
+Finished Step #19
+Starting Step #20
+Step #20: Already have image: gcr.io/oss-fuzz/immer
+Finished Step #20
+Starting Step #21 - "compile-libfuzzer-address-x86_64"
+Step #21 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #21 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #21 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #21 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #21 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #21 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #21 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #21 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+Step #21 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+Step #21 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #21 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #21 - "compile-libfuzzer-address-x86_64": + mkdir build
+Step #21 - "compile-libfuzzer-address-x86_64": + cd build
+Step #21 - "compile-libfuzzer-address-x86_64": + cmake .. -DBOEHM_GC_INCLUDE_DIR=/usr/include -DBOEHM_GC_LIBRARIES=/usr/lib/x86_64-linux-gnu/libgc.a -Dimmer_BUILD_TESTS=OFF
+Step #21 - "compile-libfuzzer-address-x86_64": -- The C compiler identification is Clang 22.0.0
+Step #21 - "compile-libfuzzer-address-x86_64": -- The CXX compiler identification is Clang 22.0.0
+Step #21 - "compile-libfuzzer-address-x86_64": -- Detecting C compiler ABI info
+Step #21 - "compile-libfuzzer-address-x86_64": -- Detecting C compiler ABI info - done
+Step #21 - "compile-libfuzzer-address-x86_64": -- Check for working C compiler: /usr/local/bin/clang - skipped
+Step #21 - "compile-libfuzzer-address-x86_64": -- Detecting C compile features
+Step #21 - "compile-libfuzzer-address-x86_64": -- Detecting C compile features - done
+Step #21 - "compile-libfuzzer-address-x86_64": -- Detecting CXX compiler ABI info
+Step #21 - "compile-libfuzzer-address-x86_64": -- Detecting CXX compiler ABI info - done
+Step #21 - "compile-libfuzzer-address-x86_64": -- Check for working CXX compiler: /usr/local/bin/clang++ - skipped
+Step #21 - "compile-libfuzzer-address-x86_64": -- Detecting CXX compile features
+Step #21 - "compile-libfuzzer-address-x86_64": -- Detecting CXX compile features - done
+Step #21 - "compile-libfuzzer-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+Step #21 - "compile-libfuzzer-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+Step #21 - "compile-libfuzzer-address-x86_64": -- Found Threads: TRUE
+Step #21 - "compile-libfuzzer-address-x86_64": -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1")
+Step #21 - "compile-libfuzzer-address-x86_64": -- Found GC library: /usr/lib/x86_64-linux-gnu/libgc.a
+Step #21 - "compile-libfuzzer-address-x86_64": [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+Step #21 - "compile-libfuzzer-address-x86_64":   The package name passed to `find_package_handle_standard_args` (Boehm_GC)
+Step #21 - "compile-libfuzzer-address-x86_64":   does not match the name of the calling package (BoehmGC).  This can lead to
+Step #21 - "compile-libfuzzer-address-x86_64":   problems in calling code that expects `find_package` result variables
+Step #21 - "compile-libfuzzer-address-x86_64":   (e.g., `_FOUND`) to follow a certain pattern.
+Step #21 - "compile-libfuzzer-address-x86_64": Call Stack (most recent call first):
+Step #21 - "compile-libfuzzer-address-x86_64":   cmake/FindBoehmGC.cmake:108 (find_package_handle_standard_args)
+Step #21 - "compile-libfuzzer-address-x86_64":   CMakeLists.txt:86 (find_package)
+Step #21 - "compile-libfuzzer-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #21 - "compile-libfuzzer-address-x86_64": [0m
+Step #21 - "compile-libfuzzer-address-x86_64": -- Found Boehm_GC: /usr/lib/x86_64-linux-gnu/libgc.a
+Step #21 - "compile-libfuzzer-address-x86_64": -- Could NOT find Boost (missing: Boost_INCLUDE_DIR) (Required is at least version "1.56")
+Step #21 - "compile-libfuzzer-address-x86_64": -- Using ccache: /usr/local/bin/ccache
+Step #21 - "compile-libfuzzer-address-x86_64": [33mCMake Warning (dev) at extra/python/CMakeLists.txt:22 (find_package):
+Step #21 - "compile-libfuzzer-address-x86_64":   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+Step #21 - "compile-libfuzzer-address-x86_64":   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+Step #21 - "compile-libfuzzer-address-x86_64":   the cmake_policy command to set the policy and suppress this warning.
+Step #21 - "compile-libfuzzer-address-x86_64": 
+Step #21 - "compile-libfuzzer-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #21 - "compile-libfuzzer-address-x86_64": [0m
+Step #21 - "compile-libfuzzer-address-x86_64": -- Found PythonInterp: /usr/local/bin/python (found version "3.11.13")
+Step #21 - "compile-libfuzzer-address-x86_64": [33mCMake Warning (dev) at extra/python/CMakeLists.txt:23 (find_package):
+Step #21 - "compile-libfuzzer-address-x86_64":   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+Step #21 - "compile-libfuzzer-address-x86_64":   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+Step #21 - "compile-libfuzzer-address-x86_64":   the cmake_policy command to set the policy and suppress this warning.
+Step #21 - "compile-libfuzzer-address-x86_64": 
+Step #21 - "compile-libfuzzer-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #21 - "compile-libfuzzer-address-x86_64": [0m
+Step #21 - "compile-libfuzzer-address-x86_64": -- Found PythonLibs: /usr/local/lib/libpython3.11.so (found version "3.11.13")
+Step #21 - "compile-libfuzzer-address-x86_64": -- Checking for module 'guile-2.2'
+Step #21 - "compile-libfuzzer-address-x86_64": --   No package 'guile-2.2' found
+Step #21 - "compile-libfuzzer-address-x86_64": -- Disabling Guile modules
+Step #21 - "compile-libfuzzer-address-x86_64": -- Configuring done (1.3s)
+Step #21 - "compile-libfuzzer-address-x86_64": -- Generating done (0.1s)
+Step #21 - "compile-libfuzzer-address-x86_64": -- Build files have been written to: /src/immer/build
+Step #21 - "compile-libfuzzer-address-x86_64": ++ nproc
+Step #21 - "compile-libfuzzer-address-x86_64": + make -j32 fuzzers
+Step #21 - "compile-libfuzzer-address-x86_64": [  2%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-array.dir/array.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [  5%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-array-gc.dir/array-gc.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [  7%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-bo.dir/flex-vector-bo.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 10%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-gc.dir/flex-vector-gc.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 13%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-st.dir/flex-vector-st.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 15%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector.dir/flex-vector.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 21%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-gc.dir/map-gc.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 21%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st-str-conflict.dir/map-st-str-conflict.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 23%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st-str.dir/map-st-str.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 28%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map.dir/map.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 31%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-gc.dir/set-gc.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 31%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st.dir/map-st.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 34%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st-str-conflict.dir/set-st-str-conflict.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 36%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st-str.dir/set-st-str.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 39%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st.dir/set-st.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 42%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set.dir/set.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 44%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector-gc.dir/vector-gc.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 47%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector-st.dir/vector-st.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 50%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector.dir/vector.cpp.o[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 52%] [32m[1mLinking CXX executable array[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 52%] Built target extra-fuzzer-array
+Step #21 - "compile-libfuzzer-address-x86_64": [ 55%] [32m[1mLinking CXX executable array-gc[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 55%] Built target extra-fuzzer-array-gc
+Step #21 - "compile-libfuzzer-address-x86_64": [ 57%] [32m[1mLinking CXX executable map-gc[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 60%] [32m[1mLinking CXX executable set-st[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 63%] [32m[1mLinking CXX executable set-gc[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 63%] Built target extra-fuzzer-map-gc
+Step #21 - "compile-libfuzzer-address-x86_64": [ 65%] [32m[1mLinking CXX executable map-st[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 65%] Built target extra-fuzzer-set-st
+Step #21 - "compile-libfuzzer-address-x86_64": [ 68%] [32m[1mLinking CXX executable map[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 71%] [32m[1mLinking CXX executable set-st-str-conflict[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 71%] Built target extra-fuzzer-set-gc
+Step #21 - "compile-libfuzzer-address-x86_64": [ 73%] [32m[1mLinking CXX executable vector-gc[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 73%] Built target extra-fuzzer-map-st
+Step #21 - "compile-libfuzzer-address-x86_64": [ 76%] [32m[1mLinking CXX executable set-st-str[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 78%] [32m[1mLinking CXX executable vector[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 78%] Built target extra-fuzzer-map
+Step #21 - "compile-libfuzzer-address-x86_64": [ 78%] Built target extra-fuzzer-set-st-str-conflict
+Step #21 - "compile-libfuzzer-address-x86_64": [ 78%] Built target extra-fuzzer-vector-gc
+Step #21 - "compile-libfuzzer-address-x86_64": [ 78%] Built target extra-fuzzer-vector
+Step #21 - "compile-libfuzzer-address-x86_64": [ 78%] Built target extra-fuzzer-set-st-str
+Step #21 - "compile-libfuzzer-address-x86_64": [ 81%] [32m[1mLinking CXX executable set[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 81%] Built target extra-fuzzer-set
+Step #21 - "compile-libfuzzer-address-x86_64": [ 84%] [32m[1mLinking CXX executable map-st-str-conflict[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 84%] Built target extra-fuzzer-map-st-str-conflict
+Step #21 - "compile-libfuzzer-address-x86_64": [ 86%] [32m[1mLinking CXX executable vector-st[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 86%] Built target extra-fuzzer-vector-st
+Step #21 - "compile-libfuzzer-address-x86_64": [ 89%] [32m[1mLinking CXX executable map-st-str[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 89%] Built target extra-fuzzer-map-st-str
+Step #21 - "compile-libfuzzer-address-x86_64": [ 92%] [32m[1mLinking CXX executable flex-vector-gc[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 94%] [32m[1mLinking CXX executable flex-vector-bo[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 97%] [32m[1mLinking CXX executable flex-vector-st[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [ 97%] Built target extra-fuzzer-flex-vector-gc
+Step #21 - "compile-libfuzzer-address-x86_64": [ 97%] Built target extra-fuzzer-flex-vector-bo
+Step #21 - "compile-libfuzzer-address-x86_64": [ 97%] Built target extra-fuzzer-flex-vector-st
+Step #21 - "compile-libfuzzer-address-x86_64": [100%] [32m[1mLinking CXX executable flex-vector[0m
+Step #21 - "compile-libfuzzer-address-x86_64": [100%] Built target extra-fuzzer-flex-vector
+Step #21 - "compile-libfuzzer-address-x86_64": [100%] Built target fuzzers
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/CMakeFiles ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/Makefile ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/Makefile ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/array ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/array ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/array /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/array-gc ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/array-gc ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/array-gc /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/cmake_install.cmake ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/cmake_install.cmake ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/flex-vector ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/flex-vector ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/flex-vector /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/flex-vector-bo ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/flex-vector-bo ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/flex-vector-bo /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/flex-vector-gc ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/flex-vector-gc ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/flex-vector-gc /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/flex-vector-st ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/flex-vector-st ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/flex-vector-st /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/map ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/map ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/map /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/map-gc ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/map-gc ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/map-gc /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/map-st ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/map-st ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/map-st /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/map-st-str ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/map-st-str ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/map-st-str /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/map-st-str-conflict ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/map-st-str-conflict ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/map-st-str-conflict /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/set ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/set ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/set /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/set-gc ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/set-gc ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/set-gc /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/set-st ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/set-st ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/set-st /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/set-st-str ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/set-st-str ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/set-st-str /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/set-st-str-conflict ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/set-st-str-conflict ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/set-st-str-conflict /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/vector ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/vector ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/vector /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/vector-gc ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/vector-gc ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/vector-gc /workspace/out/libfuzzer-address-x86_64
+Step #21 - "compile-libfuzzer-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -f extra/fuzzer/vector-st ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + [[ -x extra/fuzzer/vector-st ]]
+Step #21 - "compile-libfuzzer-address-x86_64": + cp extra/fuzzer/vector-st /workspace/out/libfuzzer-address-x86_64
+Finished Step #21 - "compile-libfuzzer-address-x86_64"
+Starting Step #22 - "build-check-libfuzzer-address-x86_64"
+Step #22 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/flex-vector-st
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/set-st-str
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/map
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/array-gc
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/set-st-str-conflict
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/map-st-str
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/vector-st
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/set-st
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/set
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/map-st
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/set-gc
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/flex-vector
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/map-gc
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/array
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/flex-vector-gc
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/vector
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/flex-vector-bo
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/map-st-str-conflict
+Step #22 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp3sf7v3pu/vector-gc
+Finished Step #22 - "build-check-libfuzzer-address-x86_64"
+Starting Step #23
+Step #23: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #23
+Starting Step #24
+Step #24: Already have image: gcr.io/oss-fuzz/immer
+Step #24:   adding: array (deflated 66%)
+Step #24:   adding: array-gc (deflated 66%)
+Step #24:   adding: flex-vector (deflated 69%)
+Step #24:   adding: flex-vector-bo (deflated 69%)
+Step #24:   adding: flex-vector-gc (deflated 69%)
+Step #24:   adding: flex-vector-st (deflated 69%)
+Step #24:   adding: llvm-symbolizer (deflated 65%)
+Step #24:   adding: map (deflated 67%)
+Step #24:   adding: map-gc (deflated 66%)
+Step #24:   adding: map-st (deflated 67%)
+Step #24:   adding: map-st-str (deflated 67%)
+Step #24:   adding: map-st-str-conflict (deflated 67%)
+Step #24:   adding: set (deflated 66%)
+Step #24:   adding: set-gc (deflated 66%)
+Step #24:   adding: set-st (deflated 66%)
+Step #24:   adding: set-st-str (deflated 66%)
+Step #24:   adding: set-st-str-conflict (deflated 66%)
+Step #24:   adding: vector (deflated 67%)
+Step #24:   adding: vector-gc (deflated 67%)
+Step #24:   adding: vector-st (deflated 67%)
+Finished Step #24
+Starting Step #25
+Step #25: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #25:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #25:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #25:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   153    0     0  100   153      0    860 --:--:-- --:--:-- --:--:--   864
+Finished Step #25
+Starting Step #26
+Step #26: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #26:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #26:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #26:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 38.8M    0     0  100 38.8M      0  51.4M --:--:-- --:--:-- --:--:-- 51.4M
+Finished Step #26
+Starting Step #27
+Step #27: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #27:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #27:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #27:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   197    0     0  100   197      0    766 --:--:-- --:--:-- --:--:--   766
+Finished Step #27
+Starting Step #28
+Step #28: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #28:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #28:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #28:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    30    0     0  100    30      0    150 --:--:-- --:--:-- --:--:--   150
+Finished Step #28
+Starting Step #29
+Step #29: Already have image: gcr.io/oss-fuzz/immer
+Finished Step #29
+Starting Step #30 - "compile-libfuzzer-memory-x86_64"
+Step #30 - "compile-libfuzzer-memory-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #30 - "compile-libfuzzer-memory-x86_64": ---------------------------------------------------------------
+Step #30 - "compile-libfuzzer-memory-x86_64": vm.mmap_rnd_bits = 28
+Step #30 - "compile-libfuzzer-memory-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #30 - "compile-libfuzzer-memory-x86_64": Building without MSan instrumented libraries.
+Step #30 - "compile-libfuzzer-memory-x86_64": ---------------------------------------------------------------
+Step #30 - "compile-libfuzzer-memory-x86_64": CC=clang
+Step #30 - "compile-libfuzzer-memory-x86_64": CXX=clang++
+Step #30 - "compile-libfuzzer-memory-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=memory -fsanitize-memory-track-origins -fsanitize=fuzzer-no-link
+Step #30 - "compile-libfuzzer-memory-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=memory -fsanitize-memory-track-origins -fsanitize=fuzzer-no-link -stdlib=libc++
+Step #30 - "compile-libfuzzer-memory-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=memory -Cdebuginfo=1 -Cforce-frame-pointers
+Step #30 - "compile-libfuzzer-memory-x86_64": ---------------------------------------------------------------
+Step #30 - "compile-libfuzzer-memory-x86_64": + mkdir build
+Step #30 - "compile-libfuzzer-memory-x86_64": + cd build
+Step #30 - "compile-libfuzzer-memory-x86_64": + cmake .. -DBOEHM_GC_INCLUDE_DIR=/usr/include -DBOEHM_GC_LIBRARIES=/usr/lib/x86_64-linux-gnu/libgc.a -Dimmer_BUILD_TESTS=OFF
+Step #30 - "compile-libfuzzer-memory-x86_64": -- The C compiler identification is Clang 22.0.0
+Step #30 - "compile-libfuzzer-memory-x86_64": -- The CXX compiler identification is Clang 22.0.0
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Detecting C compiler ABI info
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Detecting C compiler ABI info - done
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Check for working C compiler: /usr/local/bin/clang - skipped
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Detecting C compile features
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Detecting C compile features - done
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Detecting CXX compiler ABI info
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Detecting CXX compiler ABI info - done
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Check for working CXX compiler: /usr/local/bin/clang++ - skipped
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Detecting CXX compile features
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Detecting CXX compile features - done
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Found Threads: TRUE
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1")
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Found GC library: /usr/lib/x86_64-linux-gnu/libgc.a
+Step #30 - "compile-libfuzzer-memory-x86_64": [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+Step #30 - "compile-libfuzzer-memory-x86_64":   The package name passed to `find_package_handle_standard_args` (Boehm_GC)
+Step #30 - "compile-libfuzzer-memory-x86_64":   does not match the name of the calling package (BoehmGC).  This can lead to
+Step #30 - "compile-libfuzzer-memory-x86_64":   problems in calling code that expects `find_package` result variables
+Step #30 - "compile-libfuzzer-memory-x86_64":   (e.g., `_FOUND`) to follow a certain pattern.
+Step #30 - "compile-libfuzzer-memory-x86_64": Call Stack (most recent call first):
+Step #30 - "compile-libfuzzer-memory-x86_64":   cmake/FindBoehmGC.cmake:108 (find_package_handle_standard_args)
+Step #30 - "compile-libfuzzer-memory-x86_64":   CMakeLists.txt:86 (find_package)
+Step #30 - "compile-libfuzzer-memory-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #30 - "compile-libfuzzer-memory-x86_64": [0m
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Found Boehm_GC: /usr/lib/x86_64-linux-gnu/libgc.a
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Could NOT find Boost (missing: Boost_INCLUDE_DIR) (Required is at least version "1.56")
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Using ccache: /usr/local/bin/ccache
+Step #30 - "compile-libfuzzer-memory-x86_64": [33mCMake Warning (dev) at extra/python/CMakeLists.txt:22 (find_package):
+Step #30 - "compile-libfuzzer-memory-x86_64":   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+Step #30 - "compile-libfuzzer-memory-x86_64":   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+Step #30 - "compile-libfuzzer-memory-x86_64":   the cmake_policy command to set the policy and suppress this warning.
+Step #30 - "compile-libfuzzer-memory-x86_64": 
+Step #30 - "compile-libfuzzer-memory-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #30 - "compile-libfuzzer-memory-x86_64": [0m
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Found PythonInterp: /usr/local/bin/python (found version "3.11.13")
+Step #30 - "compile-libfuzzer-memory-x86_64": [33mCMake Warning (dev) at extra/python/CMakeLists.txt:23 (find_package):
+Step #30 - "compile-libfuzzer-memory-x86_64":   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+Step #30 - "compile-libfuzzer-memory-x86_64":   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+Step #30 - "compile-libfuzzer-memory-x86_64":   the cmake_policy command to set the policy and suppress this warning.
+Step #30 - "compile-libfuzzer-memory-x86_64": 
+Step #30 - "compile-libfuzzer-memory-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #30 - "compile-libfuzzer-memory-x86_64": [0m
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Found PythonLibs: /usr/local/lib/libpython3.11.so (found version "3.11.13")
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Checking for module 'guile-2.2'
+Step #30 - "compile-libfuzzer-memory-x86_64": --   No package 'guile-2.2' found
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Disabling Guile modules
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Configuring done (1.2s)
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Generating done (0.1s)
+Step #30 - "compile-libfuzzer-memory-x86_64": -- Build files have been written to: /src/immer/build
+Step #30 - "compile-libfuzzer-memory-x86_64": ++ nproc
+Step #30 - "compile-libfuzzer-memory-x86_64": + make -j32 fuzzers
+Step #30 - "compile-libfuzzer-memory-x86_64": [  2%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector.dir/vector.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [  5%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-array-gc.dir/array-gc.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [  7%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-array.dir/array.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 10%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-bo.dir/flex-vector-bo.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 13%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-gc.dir/flex-vector-gc.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 15%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-st.dir/flex-vector-st.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 18%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector.dir/flex-vector.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 21%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-gc.dir/map-gc.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 26%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st-str.dir/map-st-str.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 26%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st-str-conflict.dir/map-st-str-conflict.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 28%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st.dir/map-st.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 31%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map.dir/map.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 34%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-gc.dir/set-gc.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 36%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st-str-conflict.dir/set-st-str-conflict.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 39%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st-str.dir/set-st-str.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 44%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set.dir/set.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 44%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st.dir/set-st.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 47%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector-gc.dir/vector-gc.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 50%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector-st.dir/vector-st.cpp.o[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 52%] [32m[1mLinking CXX executable array[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 52%] Built target extra-fuzzer-array
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 55%] [32m[1mLinking CXX executable array-gc[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 55%] Built target extra-fuzzer-array-gc
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 57%] [32m[1mLinking CXX executable set[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 57%] Built target extra-fuzzer-set
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 60%] [32m[1mLinking CXX executable set-st[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 63%] [32m[1mLinking CXX executable map[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 63%] Built target extra-fuzzer-set-st
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 65%] [32m[1mLinking CXX executable set-st-str[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 68%] [32m[1mLinking CXX executable set-st-str-conflict[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 71%] [32m[1mLinking CXX executable set-gc[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 73%] [32m[1mLinking CXX executable map-gc[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 76%] [32m[1mLinking CXX executable vector-gc[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 76%] Built target extra-fuzzer-map
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 76%] Built target extra-fuzzer-set-st-str
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 76%] Built target extra-fuzzer-set-st-str-conflict
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 76%] Built target extra-fuzzer-set-gc
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 76%] Built target extra-fuzzer-map-gc
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 78%] [32m[1mLinking CXX executable vector[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 78%] Built target extra-fuzzer-vector-gc
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 81%] [32m[1mLinking CXX executable vector-st[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 81%] Built target extra-fuzzer-vector
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 81%] Built target extra-fuzzer-vector-st
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 84%] [32m[1mLinking CXX executable map-st[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 86%] [32m[1mLinking CXX executable map-st-str-conflict[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 89%] [32m[1mLinking CXX executable map-st-str[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 89%] Built target extra-fuzzer-map-st
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 89%] Built target extra-fuzzer-map-st-str-conflict
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 89%] Built target extra-fuzzer-map-st-str
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 92%] [32m[1mLinking CXX executable flex-vector-gc[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 92%] Built target extra-fuzzer-flex-vector-gc
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 94%] [32m[1mLinking CXX executable flex-vector[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 94%] Built target extra-fuzzer-flex-vector
+Step #30 - "compile-libfuzzer-memory-x86_64": [ 97%] [32m[1mLinking CXX executable flex-vector-bo[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [100%] [32m[1mLinking CXX executable flex-vector-st[0m
+Step #30 - "compile-libfuzzer-memory-x86_64": [100%] Built target extra-fuzzer-flex-vector-bo
+Step #30 - "compile-libfuzzer-memory-x86_64": [100%] Built target extra-fuzzer-flex-vector-st
+Step #30 - "compile-libfuzzer-memory-x86_64": [100%] Built target fuzzers
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/CMakeFiles ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/Makefile ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/Makefile ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/array ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/array ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/array /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/array-gc ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/array-gc ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/array-gc /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/cmake_install.cmake ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/cmake_install.cmake ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/flex-vector ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/flex-vector ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/flex-vector /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/flex-vector-bo ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/flex-vector-bo ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/flex-vector-bo /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/flex-vector-gc ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/flex-vector-gc ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/flex-vector-gc /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/flex-vector-st ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/flex-vector-st ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/flex-vector-st /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/map ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/map ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/map /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/map-gc ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/map-gc ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/map-gc /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/map-st ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/map-st ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/map-st /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/map-st-str ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/map-st-str ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/map-st-str /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/map-st-str-conflict ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/map-st-str-conflict ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/map-st-str-conflict /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/set ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/set ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/set /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/set-gc ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/set-gc ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/set-gc /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/set-st ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/set-st ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/set-st /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/set-st-str ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/set-st-str ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/set-st-str /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/set-st-str-conflict ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/set-st-str-conflict ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/set-st-str-conflict /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/vector ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/vector ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/vector /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/vector-gc ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/vector-gc ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/vector-gc /workspace/out/libfuzzer-memory-x86_64
+Step #30 - "compile-libfuzzer-memory-x86_64": + for fuzzer in extra/fuzzer/*
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -f extra/fuzzer/vector-st ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + [[ -x extra/fuzzer/vector-st ]]
+Step #30 - "compile-libfuzzer-memory-x86_64": + cp extra/fuzzer/vector-st /workspace/out/libfuzzer-memory-x86_64
+Finished Step #30 - "compile-libfuzzer-memory-x86_64"
+Starting Step #31 - "build-check-libfuzzer-memory-x86_64"
+Step #31 - "build-check-libfuzzer-memory-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/flex-vector-st
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/set-st-str
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/map
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/array-gc
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/set-st-str-conflict
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/map-st-str
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/vector-st
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/set-st
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/set
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/map-st
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/set-gc
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/flex-vector
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/map-gc
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/array
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/flex-vector-gc
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/vector
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/flex-vector-bo
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/map-st-str-conflict
+Step #31 - "build-check-libfuzzer-memory-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpos7g6knf/vector-gc
+Finished Step #31 - "build-check-libfuzzer-memory-x86_64"
+Starting Step #32
+Step #32: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #32
+Starting Step #33
+Step #33: Already have image: gcr.io/oss-fuzz/immer
+Step #33:   adding: array (deflated 66%)
+Step #33:   adding: array-gc (deflated 65%)
+Step #33:   adding: flex-vector (deflated 67%)
+Step #33:   adding: flex-vector-bo (deflated 67%)
+Step #33:   adding: flex-vector-gc (deflated 67%)
+Step #33:   adding: flex-vector-st (deflated 67%)
+Step #33:   adding: llvm-symbolizer (deflated 65%)
+Step #33:   adding: map (deflated 66%)
+Step #33:   adding: map-gc (deflated 66%)
+Step #33:   adding: map-st (deflated 66%)
+Step #33:   adding: map-st-str (deflated 66%)
+Step #33:   adding: map-st-str-conflict (deflated 66%)
+Step #33:   adding: set (deflated 66%)
+Step #33:   adding: set-gc (deflated 65%)
+Step #33:   adding: set-st (deflated 66%)
+Step #33:   adding: set-st-str (deflated 66%)
+Step #33:   adding: set-st-str-conflict (deflated 66%)
+Step #33:   adding: vector (deflated 66%)
+Step #33:   adding: vector-gc (deflated 66%)
+Step #33:   adding: vector-st (deflated 66%)
+Finished Step #33
+Starting Step #34
+Step #34: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #34:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #34:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #34:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   153    0     0  100   153      0    804 --:--:-- --:--:-- --:--:--   805
+Finished Step #34
+Starting Step #35
+Step #35: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #35:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #35:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #35:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 40.6M    0     0  100 40.6M      0   102M --:--:-- --:--:-- --:--:--  102M
+Finished Step #35
+Starting Step #36
+Step #36: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #36:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #36:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #36:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   197    0     0  100   197      0    817 --:--:-- --:--:-- --:--:--   820
+Finished Step #36
+Starting Step #37
+Step #37: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #37:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #37:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #37:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    29    0     0  100    29      0    143 --:--:-- --:--:-- --:--:--   142100    29    0     0  100    29      0    142 --:--:-- --:--:-- --:--:--   142
+Finished Step #37
+Starting Step #38
+Step #38: Already have image: gcr.io/oss-fuzz/immer
+Finished Step #38
+PUSH
+DONE

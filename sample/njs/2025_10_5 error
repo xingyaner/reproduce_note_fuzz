@@ -1,0 +1,360 @@
+starting build "e55583ea-ca68-4271-b0d7-78ae492fd966"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed"
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Sending build context to Docker daemon  6.144kB
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Step 1/6 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b549f31133a9: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": f9108208bba7: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 6ea475a41b2d: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e5fef3e2af01: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7c2b2fa04aa8: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 85618da4b503: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": cb7b2a5fe163: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7f6a5b0379d6: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0914b70046dd: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e7da350ff694: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0de45df73449: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b7bad838c7ff: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e6b2068c9ed0: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4faaa04adad0: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e61d56928c49: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 41a899398fa6: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4d9b6833d43f: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 5fc76afe3d8e: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 24ebf1a2133e: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 91fc6ff39424: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 866e76707922: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 06f4c909ad06: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 75bd79b21fde: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": a5d339d9c9f1: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4a854cbf553b: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 1a9d1b67aa69: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 93f7318fbad4: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": c8022838a4c8: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b08567086eb7: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 36a53ee643c4: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 51a1fa50b1b7: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": fd28c05f8f09: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0c59ed322e35: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e5fef3e2af01: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7c2b2fa04aa8: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": d5fd17987c78: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7c5ef2b07b5b: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 09544f1545db: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 3f139e052803: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 687280b5a649: Pulling fs layer
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 75bd79b21fde: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": cb7b2a5fe163: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": a5d339d9c9f1: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7f6a5b0379d6: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4a854cbf553b: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0914b70046dd: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 1a9d1b67aa69: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e7da350ff694: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 93f7318fbad4: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0de45df73449: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": c8022838a4c8: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b7bad838c7ff: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b08567086eb7: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e6b2068c9ed0: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 36a53ee643c4: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 51a1fa50b1b7: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4faaa04adad0: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 85618da4b503: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": fd28c05f8f09: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e61d56928c49: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 41a899398fa6: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0c59ed322e35: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 687280b5a649: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 866e76707922: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4d9b6833d43f: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": d5fd17987c78: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 5fc76afe3d8e: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7c5ef2b07b5b: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 91fc6ff39424: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 24ebf1a2133e: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 06f4c909ad06: Waiting
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 6ea475a41b2d: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 6ea475a41b2d: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b549f31133a9: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7c2b2fa04aa8: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7c2b2fa04aa8: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e5fef3e2af01: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e5fef3e2af01: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": cb7b2a5fe163: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": cb7b2a5fe163: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": f9108208bba7: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": f9108208bba7: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7f6a5b0379d6: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7f6a5b0379d6: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b549f31133a9: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e7da350ff694: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e7da350ff694: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0de45df73449: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0de45df73449: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b7bad838c7ff: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b7bad838c7ff: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e6b2068c9ed0: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e6b2068c9ed0: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4faaa04adad0: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4faaa04adad0: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0914b70046dd: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0914b70046dd: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e61d56928c49: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e61d56928c49: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 41a899398fa6: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 41a899398fa6: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4d9b6833d43f: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 5fc76afe3d8e: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 5fc76afe3d8e: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 24ebf1a2133e: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 24ebf1a2133e: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 91fc6ff39424: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 91fc6ff39424: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 866e76707922: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 866e76707922: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 75bd79b21fde: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": a5d339d9c9f1: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": a5d339d9c9f1: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 75bd79b21fde: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4a854cbf553b: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4a854cbf553b: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 1a9d1b67aa69: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 93f7318fbad4: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": c8022838a4c8: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": c8022838a4c8: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b08567086eb7: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b08567086eb7: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": f9108208bba7: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 36a53ee643c4: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 36a53ee643c4: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 51a1fa50b1b7: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 51a1fa50b1b7: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 6ea475a41b2d: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": fd28c05f8f09: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0c59ed322e35: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0c59ed322e35: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": d5fd17987c78: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": d5fd17987c78: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7c5ef2b07b5b: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 85618da4b503: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 09544f1545db: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 687280b5a649: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 687280b5a649: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 3f139e052803: Verifying Checksum
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 3f139e052803: Download complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e5fef3e2af01: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7c2b2fa04aa8: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 85618da4b503: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": cb7b2a5fe163: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7f6a5b0379d6: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0914b70046dd: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e7da350ff694: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0de45df73449: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b7bad838c7ff: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e6b2068c9ed0: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4faaa04adad0: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": e61d56928c49: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 41a899398fa6: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4d9b6833d43f: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 5fc76afe3d8e: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 24ebf1a2133e: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 91fc6ff39424: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 866e76707922: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 06f4c909ad06: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 75bd79b21fde: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": a5d339d9c9f1: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 4a854cbf553b: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 1a9d1b67aa69: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 93f7318fbad4: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": c8022838a4c8: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": b08567086eb7: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 36a53ee643c4: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 51a1fa50b1b7: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": fd28c05f8f09: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0c59ed322e35: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": d5fd17987c78: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 7c5ef2b07b5b: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 09544f1545db: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 3f139e052803: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 687280b5a649: Pull complete
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Digest: sha256:95d5aea07f19d05e50eef7b71717da9c964b72481fff94d0a4efe3fe5284c7f2
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":  ---> ca8839069176
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Step 2/6 : RUN apt-get update && apt-get install -y make autoconf automake libtool     mercurial git libpcre2-dev
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":  ---> Running in 97f4bedb58ad
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Fetched 383 kB in 1s (349 kB/s)
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Reading package lists...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Reading package lists...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Building dependency tree...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Reading state information...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": make set to manually installed.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": git is already the newest version (1:2.25.1-1ubuntu3.14).
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": The following additional packages will be installed:
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   file libltdl-dev libltdl7 libmagic-mgc libmagic1 libpcre2-16-0 libpcre2-32-0
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   libpcre2-posix2 libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   mercurial-common mime-support python2 python2-minimal python2.7
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   python2.7-minimal ucf
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Suggested packages:
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   autoconf-archive gnu-standards autoconf-doc gettext libtool-doc gfortran
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   | fortran95-compiler gcj-jdk kdiff3 | kdiff3-qt | kompare | meld | tkcvs
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   | mgdiff qct python-mysqldb python-openssl python-pygments wish python2-doc
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   python-tk python2.7-doc binfmt-support
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": The following NEW packages will be installed:
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   autoconf automake file libltdl-dev libltdl7 libmagic-mgc libmagic1
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   libpcre2-16-0 libpcre2-32-0 libpcre2-dev libpcre2-posix2 libpython2-stdlib
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   libpython2.7-minimal libpython2.7-stdlib libtool mercurial mercurial-common
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":   mime-support python2 python2-minimal python2.7 python2.7-minimal ucf
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 0 upgraded, 23 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Need to get 9419 kB of archives.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": After this operation, 47.9 MB of additional disk space will be used.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:1 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-minimal amd64 2.7.18-1~20.04.7 [336 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:2 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7-minimal amd64 2.7.18-1~20.04.7 [1278 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:3 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2-minimal amd64 2.7.17-2ubuntu4 [27.5 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 mime-support all 3.64ubuntu1 [30.6 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-stdlib amd64 2.7.18-1~20.04.7 [1889 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7 amd64 2.7.18-1~20.04.7 [248 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:7 http://archive.ubuntu.com/ubuntu focal/universe amd64 libpython2-stdlib amd64 2.7.17-2ubuntu4 [7072 B]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:8 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2 amd64 2.7.17-2ubuntu4 [26.5 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 ucf all 3.0038+nmu1 [51.6 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpcre2-16-0 amd64 10.34-7ubuntu0.1 [181 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpcre2-32-0 amd64 10.34-7ubuntu0.1 [170 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpcre2-posix2 amd64 10.34-7ubuntu0.1 [5988 B]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpcre2-dev amd64 10.34-7ubuntu0.1 [672 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:22 http://archive.ubuntu.com/ubuntu focal/universe amd64 mercurial-common all 5.3.1-1ubuntu1 [2650 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Get:23 http://archive.ubuntu.com/ubuntu focal/universe amd64 mercurial amd64 5.3.1-1ubuntu1 [323 kB]
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": [0mFetched 9419 kB in 3s (2780 kB/s)
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libpython2.7-minimal:amd64.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../0-libpython2.7-minimal_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libpython2.7-minimal:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package python2.7-minimal.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../1-python2.7-minimal_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking python2.7-minimal (2.7.18-1~20.04.7) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package python2-minimal.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../2-python2-minimal_2.7.17-2ubuntu4_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking python2-minimal (2.7.17-2ubuntu4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package mime-support.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../3-mime-support_3.64ubuntu1_all.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking mime-support (3.64ubuntu1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libpython2.7-stdlib:amd64.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../4-libpython2.7-stdlib_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libpython2.7-stdlib:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package python2.7.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../5-python2.7_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking python2.7 (2.7.18-1~20.04.7) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libpython2-stdlib:amd64.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../6-libpython2-stdlib_2.7.17-2ubuntu4_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libpython2-stdlib:amd64 (2.7.17-2ubuntu4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libpython2.7-minimal:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up python2.7-minimal (2.7.18-1~20.04.7) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up python2-minimal (2.7.17-2ubuntu4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package python2.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18259 files and directories currently installed.)
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../00-python2_2.7.17-2ubuntu4_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking python2 (2.7.17-2ubuntu4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../01-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../02-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package file.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../03-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking file (1:5.38-4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package ucf.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../04-ucf_3.0038+nmu1_all.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Moving old data out of the way
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking ucf (3.0038+nmu1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package autoconf.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../05-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package automake.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../06-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../07-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../08-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libpcre2-16-0:amd64.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../09-libpcre2-16-0_10.34-7ubuntu0.1_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libpcre2-16-0:amd64 (10.34-7ubuntu0.1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libpcre2-32-0:amd64.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../10-libpcre2-32-0_10.34-7ubuntu0.1_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libpcre2-32-0:amd64 (10.34-7ubuntu0.1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libpcre2-posix2:amd64.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../11-libpcre2-posix2_10.34-7ubuntu0.1_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libpcre2-posix2:amd64 (10.34-7ubuntu0.1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libpcre2-dev:amd64.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../12-libpcre2-dev_10.34-7ubuntu0.1_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libpcre2-dev:amd64 (10.34-7ubuntu0.1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package libtool.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../13-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package mercurial-common.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../14-mercurial-common_5.3.1-1ubuntu1_all.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking mercurial-common (5.3.1-1ubuntu1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Selecting previously unselected package mercurial.
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Preparing to unpack .../15-mercurial_5.3.1-1ubuntu1_amd64.deb ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Unpacking mercurial (5.3.1-1ubuntu1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up mime-support (3.64ubuntu1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up file (1:5.38-4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libpcre2-16-0:amd64 (10.34-7ubuntu0.1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libpython2.7-stdlib:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libpcre2-32-0:amd64 (10.34-7ubuntu0.1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up ucf (3.0038+nmu1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libpcre2-posix2:amd64 (10.34-7ubuntu0.1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libpcre2-dev:amd64 (10.34-7ubuntu0.1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up python2.7 (2.7.18-1~20.04.7) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libpython2-stdlib:amd64 (2.7.17-2ubuntu4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up python2 (2.7.17-2ubuntu4) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up mercurial-common (5.3.1-1ubuntu1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Setting up mercurial (5.3.1-1ubuntu1) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": 
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Creating config file /etc/mercurial/hgrc.d/hgext.rc with new version
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Removing intermediate container 97f4bedb58ad
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":  ---> 629b35e74ab6
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": Step 3/6 : RUN hg clone http://hg.nginx.org/njs
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed":  ---> Running in b03c48c9c6ea
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": destination directory: njs
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": [91mabort: HTTP Error 504: Gateway Time-out
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": The command '/bin/sh -c hg clone http://hg.nginx.org/njs' returned a non-zero code: 255
+Finished Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 255
+Step #1 - "build-75f6d3f8-0bb7-4785-8c55-ad8ed67b13ed": [0m

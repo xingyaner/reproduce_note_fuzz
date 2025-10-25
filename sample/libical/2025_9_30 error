@@ -1,0 +1,1227 @@
+starting build "b542ea4a-40a0-4e69-b564-843888dcbf22"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126"
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Sending build context to Docker daemon  9.728kB
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Step 1/6 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": b549f31133a9: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 1f6d64c5d9e3: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 37910743e6c9: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 249fd738df73: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 877bc6daf7ff: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": c954e3a1628d: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 90b67e5f3d5d: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 607e5f9ff9b7: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 01b6b52ab58d: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": dc196883e826: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 39c315fa3e62: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 249fd738df73: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": b128bb74f491: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 342a47195bee: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 877bc6daf7ff: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 80b0a48a62d6: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 292fd52b5e7b: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 6e5f267ab26d: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": cb37ac0c0f76: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": c954e3a1628d: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 97510fefe804: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": c7c97ce1f4ee: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 2f785f2ba55b: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 39c315fa3e62: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": e8ccfa4bf60b: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 90b67e5f3d5d: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 18848b6b3b2d: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": b128bb74f491: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": d58603dd1459: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 09ffd541f975: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 342a47195bee: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": f3103754af8a: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 56dbf4eb0319: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 4f9dee976b6c: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 80b0a48a62d6: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": e41bf5356a29: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": abe24445fcb1: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 607e5f9ff9b7: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 2b2b1b3a3f33: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 01b6b52ab58d: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 831e926d8edb: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 55839d0a4df0: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 97510fefe804: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 11c32f7fa0a0: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 2f785f2ba55b: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 292fd52b5e7b: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": c7c97ce1f4ee: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": d843b7d23d4f: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": ab63b404ef05: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": cb37ac0c0f76: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 5807097b165b: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 870bf89a9fc6: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": a90bcc532245: Pulling fs layer
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": dc196883e826: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": e8ccfa4bf60b: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 09ffd541f975: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": f3103754af8a: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 56dbf4eb0319: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 4f9dee976b6c: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 870bf89a9fc6: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": a90bcc532245: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": e41bf5356a29: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 2b2b1b3a3f33: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": ab63b404ef05: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 831e926d8edb: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": abe24445fcb1: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 18848b6b3b2d: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": d58603dd1459: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 5807097b165b: Waiting
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 37910743e6c9: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 37910743e6c9: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": b549f31133a9: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": b549f31133a9: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 877bc6daf7ff: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 877bc6daf7ff: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 249fd738df73: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 249fd738df73: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 90b67e5f3d5d: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 90b67e5f3d5d: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 1f6d64c5d9e3: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 1f6d64c5d9e3: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 607e5f9ff9b7: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 607e5f9ff9b7: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": b549f31133a9: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": dc196883e826: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": dc196883e826: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 39c315fa3e62: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 39c315fa3e62: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": b128bb74f491: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": b128bb74f491: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 342a47195bee: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 342a47195bee: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 80b0a48a62d6: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 01b6b52ab58d: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 01b6b52ab58d: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 292fd52b5e7b: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 292fd52b5e7b: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 6e5f267ab26d: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": cb37ac0c0f76: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": c7c97ce1f4ee: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": c7c97ce1f4ee: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 97510fefe804: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 97510fefe804: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": e8ccfa4bf60b: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": e8ccfa4bf60b: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 2f785f2ba55b: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 2f785f2ba55b: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 18848b6b3b2d: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": d58603dd1459: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": d58603dd1459: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 09ffd541f975: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": f3103754af8a: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": f3103754af8a: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 1f6d64c5d9e3: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 37910743e6c9: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 56dbf4eb0319: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 4f9dee976b6c: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": c954e3a1628d: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": c954e3a1628d: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": abe24445fcb1: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": abe24445fcb1: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": e41bf5356a29: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": e41bf5356a29: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 831e926d8edb: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 55839d0a4df0: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 2b2b1b3a3f33: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 2b2b1b3a3f33: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 11c32f7fa0a0: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": d843b7d23d4f: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": d843b7d23d4f: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": ab63b404ef05: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 5807097b165b: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 5807097b165b: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 870bf89a9fc6: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 870bf89a9fc6: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": a90bcc532245: Verifying Checksum
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": a90bcc532245: Download complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 249fd738df73: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 877bc6daf7ff: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": c954e3a1628d: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 90b67e5f3d5d: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 607e5f9ff9b7: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 01b6b52ab58d: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": dc196883e826: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 39c315fa3e62: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": b128bb74f491: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 342a47195bee: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 80b0a48a62d6: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 292fd52b5e7b: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 6e5f267ab26d: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": cb37ac0c0f76: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 97510fefe804: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": c7c97ce1f4ee: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 2f785f2ba55b: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": e8ccfa4bf60b: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 18848b6b3b2d: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": d58603dd1459: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 09ffd541f975: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": f3103754af8a: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 56dbf4eb0319: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 4f9dee976b6c: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": e41bf5356a29: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": abe24445fcb1: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 2b2b1b3a3f33: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 831e926d8edb: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 55839d0a4df0: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 11c32f7fa0a0: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": d843b7d23d4f: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": ab63b404ef05: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 5807097b165b: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 870bf89a9fc6: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": a90bcc532245: Pull complete
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Digest: sha256:dd1460e1639b1b553d3081474e14ffcd5f30ef9352be1d91039831068c22bf81
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":  ---> 2238bdb69a54
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Step 2/6 : RUN apt-get update &&     apt-get install -y openjdk-11-jdk &&     rm -rf /var/lib/apt/lists/*
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":  ---> Running in 27327f2fb8da
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Fetched 128 kB in 1s (136 kB/s)
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Reading package lists...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Reading package lists...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Building dependency tree...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Reading state information...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": The following packages were automatically installed and are no longer required:
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   autotools-dev libsigsegv2 m4
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Use 'apt autoremove' to remove them.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": The following additional packages will be installed:
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   alsa-topology-conf alsa-ucm-conf at-spi2-core ca-certificates-java dbus
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   fontconfig-config fonts-dejavu-core fonts-dejavu-extra java-common
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libapparmor1 libasound2 libasound2-data libatk-bridge2.0-0
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libatk-wrapper-java libatk-wrapper-java-jni libatk1.0-0 libatk1.0-data
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libatspi2.0-0 libavahi-client3 libavahi-common-data libavahi-common3
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libcups2 libdbus-1-3 libdrm-amdgpu1 libdrm-common libdrm-intel1
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libdrm-nouveau2 libdrm-radeon1 libdrm2 libelf1 libfontconfig1 libfontenc1
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libfreetype6 libgif7 libgl1 libgl1-mesa-dri libglapi-mesa libglib2.0-0
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libglib2.0-data libglvnd0 libglx-mesa0 libglx0 libgraphite2-3 libharfbuzz0b
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libice-dev libice6 libicu66 libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm12
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libnspr4 libnss3 libpciaccess0 libpcsclite1 libpng16-16
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libpthread-stubs0-dev libsensors-config libsensors5 libsm-dev libsm6
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libvulkan1 libwayland-client0 libx11-dev libx11-xcb1 libxau-dev libxaw7
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxcb1-dev
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libxcomposite1 libxdmcp-dev libxfixes3 libxft2 libxi6 libxinerama1
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libxkbfile1 libxml2 libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libxt-dev libxt6 libxtst6 libxv1 libxxf86dga1 libxxf86vm1
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   mesa-vulkan-drivers openjdk-11-jdk-headless openjdk-11-jre
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   openjdk-11-jre-headless shared-mime-info ucf x11-common x11-utils
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   x11proto-core-dev x11proto-dev xdg-user-dirs xorg-sgml-doctools xtrans-dev
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Suggested packages:
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   default-dbus-session-bus | dbus-session-bus default-jre libasound2-plugins
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   alsa-utils cups-common libice-doc liblcms2-utils pciutils pcscd lm-sensors
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libsm-doc libx11-doc libxcb-doc libxt-doc openjdk-11-demo openjdk-11-source
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   visualvm libnss-mdns fonts-ipafont-gothic fonts-ipafont-mincho
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   fonts-wqy-microhei | fonts-wqy-zenhei fonts-indic mesa-utils
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": The following NEW packages will be installed:
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   alsa-topology-conf alsa-ucm-conf at-spi2-core ca-certificates-java dbus
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   fontconfig-config fonts-dejavu-core fonts-dejavu-extra java-common
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libapparmor1 libasound2 libasound2-data libatk-bridge2.0-0
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libatk-wrapper-java libatk-wrapper-java-jni libatk1.0-0 libatk1.0-data
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libatspi2.0-0 libavahi-client3 libavahi-common-data libavahi-common3
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libcups2 libdbus-1-3 libdrm-amdgpu1 libdrm-common libdrm-intel1
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libdrm-nouveau2 libdrm-radeon1 libdrm2 libelf1 libfontconfig1 libfontenc1
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libfreetype6 libgif7 libgl1 libgl1-mesa-dri libglapi-mesa libglib2.0-0
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libglib2.0-data libglvnd0 libglx-mesa0 libglx0 libgraphite2-3 libharfbuzz0b
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libice-dev libice6 libicu66 libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm12
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libnspr4 libnss3 libpciaccess0 libpcsclite1 libpng16-16
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libpthread-stubs0-dev libsensors-config libsensors5 libsm-dev libsm6
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libvulkan1 libwayland-client0 libx11-dev libx11-xcb1 libxau-dev libxaw7
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxcb1-dev
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libxcomposite1 libxdmcp-dev libxfixes3 libxft2 libxi6 libxinerama1
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libxkbfile1 libxml2 libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   libxt-dev libxt6 libxtst6 libxv1 libxxf86dga1 libxxf86vm1
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   mesa-vulkan-drivers openjdk-11-jdk openjdk-11-jdk-headless openjdk-11-jre
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   openjdk-11-jre-headless shared-mime-info ucf x11-common x11-utils
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":   x11proto-core-dev x11proto-dev xdg-user-dirs xorg-sgml-doctools xtrans-dev
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 0 upgraded, 110 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Need to get 173 MB of archives.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": After this operation, 865 MB of additional disk space will be used.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libapparmor1 amd64 2.13.3-7ubuntu5.4 [36.0 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdbus-1-3 amd64 1.12.16-2ubuntu2.3 [179 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 dbus amd64 1.12.16-2ubuntu2.3 [151 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libelf1 amd64 0.176-1.1ubuntu0.1 [44.2 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 ucf all 3.0038+nmu1 [51.6 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-common all 2.4.107-8ubuntu1~20.04.2 [5396 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm2 amd64 2.4.107-8ubuntu1~20.04.2 [34.1 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 libpng16-16 amd64 1.6.37-2 [179 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 alsa-topology-conf all 1.2.2-1 [7364 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 alsa-ucm-conf all 1.2.2-1ubuntu0.13 [27.0 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 libatspi2.0-0 amd64 2.36.0-2 [64.2 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 x11-common all 1:7.7+19ubuntu14 [22.3 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 libxtst6 amd64 2:1.2.3-1 [12.8 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 at-spi2-core amd64 2.36.0-2 [48.7 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 java-common all 0.72 [6816 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-common-data amd64 0.7-4ubuntu7.3 [21.4 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-common3 amd64 0.7-4ubuntu7.3 [21.9 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-client3 amd64 0.7-4ubuntu7.3 [25.5 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcups2 amd64 2.3.1-9ubuntu1.9 [234 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:26 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libfreetype6 amd64 2.10.1-2ubuntu0.4 [341 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:27 http://archive.ubuntu.com/ubuntu focal/main amd64 fonts-dejavu-core all 2.37-1 [1041 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:28 http://archive.ubuntu.com/ubuntu focal/main amd64 fontconfig-config all 2.13.1-2ubuntu3 [28.8 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:29 http://archive.ubuntu.com/ubuntu focal/main amd64 libfontconfig1 amd64 2.13.1-2ubuntu3 [114 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:30 http://archive.ubuntu.com/ubuntu focal/main amd64 liblcms2-2 amd64 2.9-4 [140 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:31 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libjpeg-turbo8 amd64 2.0.3-0ubuntu1.20.04.3 [118 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:32 http://archive.ubuntu.com/ubuntu focal/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:33 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libnspr4 amd64 2:4.35-0ubuntu0.20.04.1 [108 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:34 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libnss3 amd64 2:3.98-0ubuntu0.20.04.2 [1391 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:35 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libasound2-data all 1.2.2-2.1ubuntu2.5 [20.1 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:36 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libasound2 amd64 1.2.2-2.1ubuntu2.5 [335 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:37 http://archive.ubuntu.com/ubuntu focal/main amd64 libgraphite2-3 amd64 1.3.13-11build1 [73.5 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:38 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libharfbuzz0b amd64 2.6.4-1ubuntu4.3 [391 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:39 http://archive.ubuntu.com/ubuntu focal/main amd64 libpcsclite1 amd64 1.8.26-3 [22.0 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:40 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openjdk-11-jre-headless amd64 11.0.27+6~us1-0ubuntu1~20.04 [38.3 MB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:41 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ca-certificates-java all 20190405ubuntu1.1 [12.4 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:42 http://archive.ubuntu.com/ubuntu focal/main amd64 fonts-dejavu-extra all 2.37-1 [1953 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:43 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk1.0-data all 2.35.1-1ubuntu2 [2964 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:44 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk1.0-0 amd64 2.35.1-1ubuntu2 [45.5 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:45 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libatk-bridge2.0-0 amd64 2.34.2-0ubuntu2~20.04.1 [58.2 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:46 http://archive.ubuntu.com/ubuntu focal/main amd64 libfontenc1 amd64 1:1.1.4-0ubuntu1 [14.0 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:47 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglvnd0 amd64 1.3.2-1~ubuntu0.20.04.2 [48.1 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:48 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglapi-mesa amd64 21.2.6-0ubuntu0.1~20.04.2 [27.4 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:49 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libx11-xcb1 amd64 2:1.6.9-2ubuntu1.6 [9448 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:50 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-dri2-0 amd64 1.14-2 [6920 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:51 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-dri3-0 amd64 1.14-2 [6552 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:52 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-glx0 amd64 1.14-2 [22.1 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:53 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-present0 amd64 1.14-2 [5560 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:54 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-shm0 amd64 1.14-2 [5584 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:55 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-sync1 amd64 1.14-2 [8884 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:56 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-xfixes0 amd64 1.14-2 [9296 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:57 http://archive.ubuntu.com/ubuntu focal/main amd64 libxfixes3 amd64 1:5.0.3-2 [10.9 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:58 http://archive.ubuntu.com/ubuntu focal/main amd64 libxshmfence1 amd64 1.3-1 [5028 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:59 http://archive.ubuntu.com/ubuntu focal/main amd64 libxxf86vm1 amd64 1:1.1.4-1build1 [10.2 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:60 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-amdgpu1 amd64 2.4.107-8ubuntu1~20.04.2 [18.6 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:61 http://archive.ubuntu.com/ubuntu focal/main amd64 libpciaccess0 amd64 0.16-0ubuntu1 [17.9 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:62 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-intel1 amd64 2.4.107-8ubuntu1~20.04.2 [60.3 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:63 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-nouveau2 amd64 2.4.107-8ubuntu1~20.04.2 [16.6 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:64 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-radeon1 amd64 2.4.107-8ubuntu1~20.04.2 [19.7 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:65 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libllvm12 amd64 1:12.0.0-3ubuntu1~20.04.5 [18.8 MB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:66 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsensors-config all 1:3.6.0-2ubuntu1.1 [6052 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:67 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsensors5 amd64 1:3.6.0-2ubuntu1.1 [27.2 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:68 http://archive.ubuntu.com/ubuntu focal/main amd64 libvulkan1 amd64 1.2.131.2-1 [93.3 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:69 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgl1-mesa-dri amd64 21.2.6-0ubuntu0.1~20.04.2 [11.0 MB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:70 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglx-mesa0 amd64 21.2.6-0ubuntu0.1~20.04.2 [137 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:71 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglx0 amd64 1.3.2-1~ubuntu0.20.04.2 [32.5 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:72 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgl1 amd64 1.3.2-1~ubuntu0.20.04.2 [85.8 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:73 http://archive.ubuntu.com/ubuntu focal/main amd64 libice6 amd64 2:1.0.10-0ubuntu1 [41.0 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:74 http://archive.ubuntu.com/ubuntu focal/main amd64 libsm6 amd64 2:1.2.3-1 [16.1 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:75 http://archive.ubuntu.com/ubuntu focal/main amd64 libxt6 amd64 1:1.1.5-1 [160 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:76 http://archive.ubuntu.com/ubuntu focal/main amd64 libxmu6 amd64 2:1.1.3-0ubuntu1 [45.8 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:77 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxpm4 amd64 1:3.5.12-1ubuntu0.20.04.2 [34.9 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:78 http://archive.ubuntu.com/ubuntu focal/main amd64 libxaw7 amd64 2:1.0.13-1 [173 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:79 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-shape0 amd64 1.14-2 [5928 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:80 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcomposite1 amd64 1:0.4.5-1 [6976 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:81 http://archive.ubuntu.com/ubuntu focal/main amd64 libxrender1 amd64 1:0.9.10-1 [18.7 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:82 http://archive.ubuntu.com/ubuntu focal/main amd64 libxft2 amd64 2.3.3-0ubuntu1 [39.2 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:83 http://archive.ubuntu.com/ubuntu focal/main amd64 libxi6 amd64 2:1.7.10-0ubuntu1 [29.9 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:84 http://archive.ubuntu.com/ubuntu focal/main amd64 libxinerama1 amd64 2:1.1.4-2 [6904 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:85 http://archive.ubuntu.com/ubuntu focal/main amd64 libxkbfile1 amd64 1:1.1.0-1 [65.3 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:86 http://archive.ubuntu.com/ubuntu focal/main amd64 libxrandr2 amd64 2:1.5.2-0ubuntu1 [18.5 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:87 http://archive.ubuntu.com/ubuntu focal/main amd64 libxv1 amd64 2:1.0.11-1 [10.7 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:88 http://archive.ubuntu.com/ubuntu focal/main amd64 libxxf86dga1 amd64 2:1.1.5-0ubuntu1 [12.0 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:89 http://archive.ubuntu.com/ubuntu focal/main amd64 x11-utils amd64 7.7+5 [199 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:90 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk-wrapper-java all 0.37.1-1 [53.0 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:91 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk-wrapper-java-jni amd64 0.37.1-1 [45.1 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:92 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgif7 amd64 5.1.9-1ubuntu0.1 [32.4 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:93 http://archive.ubuntu.com/ubuntu focal/main amd64 xorg-sgml-doctools all 1:1.11-1 [12.9 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:94 http://archive.ubuntu.com/ubuntu focal/main amd64 x11proto-dev all 2019.2-1ubuntu1 [594 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:95 http://archive.ubuntu.com/ubuntu focal/main amd64 x11proto-core-dev all 2019.2-1ubuntu1 [2620 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:96 http://archive.ubuntu.com/ubuntu focal/main amd64 libice-dev amd64 2:1.0.10-0ubuntu1 [47.8 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:97 http://archive.ubuntu.com/ubuntu focal/main amd64 libpthread-stubs0-dev amd64 0.4-1 [5384 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:98 http://archive.ubuntu.com/ubuntu focal/main amd64 libsm-dev amd64 2:1.2.3-1 [17.0 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:99 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwayland-client0 amd64 1.18.0-1ubuntu0.1 [23.9 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:100 http://archive.ubuntu.com/ubuntu focal/main amd64 libxau-dev amd64 1:1.0.9-0ubuntu1 [9552 B]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:101 http://archive.ubuntu.com/ubuntu focal/main amd64 libxdmcp-dev amd64 1:1.1.3-0ubuntu1 [25.3 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:102 http://archive.ubuntu.com/ubuntu focal/main amd64 xtrans-dev all 1.4.0-1 [68.9 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:103 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb1-dev amd64 1.14-2 [80.5 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:104 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libx11-dev amd64 2:1.6.9-2ubuntu1.6 [648 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:105 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-randr0 amd64 1.14-2 [16.3 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:106 http://archive.ubuntu.com/ubuntu focal/main amd64 libxt-dev amd64 1:1.1.5-1 [395 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:107 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 mesa-vulkan-drivers amd64 21.2.6-0ubuntu0.1~20.04.2 [5788 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:108 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openjdk-11-jre amd64 11.0.27+6~us1-0ubuntu1~20.04 [194 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:109 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openjdk-11-jdk-headless amd64 11.0.27+6~us1-0ubuntu1~20.04 [73.8 MB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Get:110 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openjdk-11-jdk amd64 11.0.27+6~us1-0ubuntu1~20.04 [2876 kB]
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": [0mFetched 173 MB in 17s (10.4 MB/s)
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libapparmor1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../000-libapparmor1_2.13.3-7ubuntu5.4_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libapparmor1:amd64 (2.13.3-7ubuntu5.4) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libdbus-1-3:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../001-libdbus-1-3_1.12.16-2ubuntu2.3_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libdbus-1-3:amd64 (1.12.16-2ubuntu2.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package dbus.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../002-dbus_1.12.16-2ubuntu2.3_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking dbus (1.12.16-2ubuntu2.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libelf1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../003-libelf1_0.176-1.1ubuntu0.1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libelf1:amd64 (0.176-1.1ubuntu0.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libglib2.0-0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../004-libglib2.0-0_2.64.6-1~ubuntu20.04.9_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libglib2.0-data.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../005-libglib2.0-data_2.64.6-1~ubuntu20.04.9_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libicu66:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../006-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxml2:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../007-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package shared-mime-info.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../008-shared-mime-info_1.15-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking shared-mime-info (1.15-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package ucf.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../009-ucf_3.0038+nmu1_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Moving old data out of the way
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking ucf (3.0038+nmu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package xdg-user-dirs.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../010-xdg-user-dirs_0.17-2ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libdrm-common.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../011-libdrm-common_2.4.107-8ubuntu1~20.04.2_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libdrm-common (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libdrm2:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../012-libdrm2_2.4.107-8ubuntu1~20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libdrm2:amd64 (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libpng16-16:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../013-libpng16-16_1.6.37-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libpng16-16:amd64 (1.6.37-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package alsa-topology-conf.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../014-alsa-topology-conf_1.2.2-1_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking alsa-topology-conf (1.2.2-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package alsa-ucm-conf.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../015-alsa-ucm-conf_1.2.2-1ubuntu0.13_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking alsa-ucm-conf (1.2.2-1ubuntu0.13) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libatspi2.0-0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../016-libatspi2.0-0_2.36.0-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libatspi2.0-0:amd64 (2.36.0-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package x11-common.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../017-x11-common_1%3a7.7+19ubuntu14_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": dpkg-query: no packages found matching nux-tools
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking x11-common (1:7.7+19ubuntu14) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxtst6:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../018-libxtst6_2%3a1.2.3-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxtst6:amd64 (2:1.2.3-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package at-spi2-core.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../019-at-spi2-core_2.36.0-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking at-spi2-core (2.36.0-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package java-common.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../020-java-common_0.72_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking java-common (0.72) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libavahi-common-data:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../021-libavahi-common-data_0.7-4ubuntu7.3_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libavahi-common-data:amd64 (0.7-4ubuntu7.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libavahi-common3:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../022-libavahi-common3_0.7-4ubuntu7.3_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libavahi-common3:amd64 (0.7-4ubuntu7.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libavahi-client3:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../023-libavahi-client3_0.7-4ubuntu7.3_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libavahi-client3:amd64 (0.7-4ubuntu7.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libcups2:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../024-libcups2_2.3.1-9ubuntu1.9_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libcups2:amd64 (2.3.1-9ubuntu1.9) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libfreetype6:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../025-libfreetype6_2.10.1-2ubuntu0.4_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libfreetype6:amd64 (2.10.1-2ubuntu0.4) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package fonts-dejavu-core.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../026-fonts-dejavu-core_2.37-1_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking fonts-dejavu-core (2.37-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package fontconfig-config.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../027-fontconfig-config_2.13.1-2ubuntu3_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking fontconfig-config (2.13.1-2ubuntu3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libfontconfig1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../028-libfontconfig1_2.13.1-2ubuntu3_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libfontconfig1:amd64 (2.13.1-2ubuntu3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package liblcms2-2:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../029-liblcms2-2_2.9-4_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking liblcms2-2:amd64 (2.9-4) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libjpeg-turbo8:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../030-libjpeg-turbo8_2.0.3-0ubuntu1.20.04.3_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libjpeg8:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../031-libjpeg8_8c-2ubuntu8_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libnspr4:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../032-libnspr4_2%3a4.35-0ubuntu0.20.04.1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libnspr4:amd64 (2:4.35-0ubuntu0.20.04.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libnss3:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../033-libnss3_2%3a3.98-0ubuntu0.20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libnss3:amd64 (2:3.98-0ubuntu0.20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libasound2-data.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../034-libasound2-data_1.2.2-2.1ubuntu2.5_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libasound2-data (1.2.2-2.1ubuntu2.5) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libasound2:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../035-libasound2_1.2.2-2.1ubuntu2.5_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libasound2:amd64 (1.2.2-2.1ubuntu2.5) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libgraphite2-3:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../036-libgraphite2-3_1.3.13-11build1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libgraphite2-3:amd64 (1.3.13-11build1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libharfbuzz0b:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../037-libharfbuzz0b_2.6.4-1ubuntu4.3_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libharfbuzz0b:amd64 (2.6.4-1ubuntu4.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libpcsclite1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../038-libpcsclite1_1.8.26-3_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libpcsclite1:amd64 (1.8.26-3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package openjdk-11-jre-headless:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../039-openjdk-11-jre-headless_11.0.27+6~us1-0ubuntu1~20.04_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking openjdk-11-jre-headless:amd64 (11.0.27+6~us1-0ubuntu1~20.04) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package ca-certificates-java.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../040-ca-certificates-java_20190405ubuntu1.1_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking ca-certificates-java (20190405ubuntu1.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package fonts-dejavu-extra.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../041-fonts-dejavu-extra_2.37-1_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking fonts-dejavu-extra (2.37-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libatk1.0-data.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../042-libatk1.0-data_2.35.1-1ubuntu2_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libatk1.0-data (2.35.1-1ubuntu2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libatk1.0-0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../043-libatk1.0-0_2.35.1-1ubuntu2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libatk1.0-0:amd64 (2.35.1-1ubuntu2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libatk-bridge2.0-0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../044-libatk-bridge2.0-0_2.34.2-0ubuntu2~20.04.1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libatk-bridge2.0-0:amd64 (2.34.2-0ubuntu2~20.04.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libfontenc1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../045-libfontenc1_1%3a1.1.4-0ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libfontenc1:amd64 (1:1.1.4-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libglvnd0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../046-libglvnd0_1.3.2-1~ubuntu0.20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libglvnd0:amd64 (1.3.2-1~ubuntu0.20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libglapi-mesa:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../047-libglapi-mesa_21.2.6-0ubuntu0.1~20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libglapi-mesa:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libx11-xcb1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../048-libx11-xcb1_2%3a1.6.9-2ubuntu1.6_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libx11-xcb1:amd64 (2:1.6.9-2ubuntu1.6) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxcb-dri2-0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../049-libxcb-dri2-0_1.14-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxcb-dri2-0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxcb-dri3-0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../050-libxcb-dri3-0_1.14-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxcb-dri3-0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxcb-glx0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../051-libxcb-glx0_1.14-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxcb-glx0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxcb-present0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../052-libxcb-present0_1.14-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxcb-present0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxcb-shm0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../053-libxcb-shm0_1.14-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxcb-shm0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxcb-sync1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../054-libxcb-sync1_1.14-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxcb-sync1:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxcb-xfixes0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../055-libxcb-xfixes0_1.14-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxcb-xfixes0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxfixes3:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../056-libxfixes3_1%3a5.0.3-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxfixes3:amd64 (1:5.0.3-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxshmfence1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../057-libxshmfence1_1.3-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxshmfence1:amd64 (1.3-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxxf86vm1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../058-libxxf86vm1_1%3a1.1.4-1build1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxxf86vm1:amd64 (1:1.1.4-1build1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libdrm-amdgpu1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../059-libdrm-amdgpu1_2.4.107-8ubuntu1~20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libdrm-amdgpu1:amd64 (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libpciaccess0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../060-libpciaccess0_0.16-0ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libpciaccess0:amd64 (0.16-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libdrm-intel1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../061-libdrm-intel1_2.4.107-8ubuntu1~20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libdrm-intel1:amd64 (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libdrm-nouveau2:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../062-libdrm-nouveau2_2.4.107-8ubuntu1~20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libdrm-nouveau2:amd64 (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libdrm-radeon1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../063-libdrm-radeon1_2.4.107-8ubuntu1~20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libdrm-radeon1:amd64 (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libllvm12:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../064-libllvm12_1%3a12.0.0-3ubuntu1~20.04.5_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libllvm12:amd64 (1:12.0.0-3ubuntu1~20.04.5) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libsensors-config.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../065-libsensors-config_1%3a3.6.0-2ubuntu1.1_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libsensors-config (1:3.6.0-2ubuntu1.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libsensors5:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../066-libsensors5_1%3a3.6.0-2ubuntu1.1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libsensors5:amd64 (1:3.6.0-2ubuntu1.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libvulkan1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../067-libvulkan1_1.2.131.2-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libvulkan1:amd64 (1.2.131.2-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libgl1-mesa-dri:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../068-libgl1-mesa-dri_21.2.6-0ubuntu0.1~20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libgl1-mesa-dri:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libglx-mesa0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../069-libglx-mesa0_21.2.6-0ubuntu0.1~20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libglx-mesa0:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libglx0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../070-libglx0_1.3.2-1~ubuntu0.20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libglx0:amd64 (1.3.2-1~ubuntu0.20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libgl1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../071-libgl1_1.3.2-1~ubuntu0.20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libgl1:amd64 (1.3.2-1~ubuntu0.20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libice6:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../072-libice6_2%3a1.0.10-0ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libice6:amd64 (2:1.0.10-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libsm6:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../073-libsm6_2%3a1.2.3-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libsm6:amd64 (2:1.2.3-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxt6:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../074-libxt6_1%3a1.1.5-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxt6:amd64 (1:1.1.5-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxmu6:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../075-libxmu6_2%3a1.1.3-0ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxmu6:amd64 (2:1.1.3-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxpm4:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../076-libxpm4_1%3a3.5.12-1ubuntu0.20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxpm4:amd64 (1:3.5.12-1ubuntu0.20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxaw7:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../077-libxaw7_2%3a1.0.13-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxaw7:amd64 (2:1.0.13-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxcb-shape0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../078-libxcb-shape0_1.14-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxcb-shape0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxcomposite1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../079-libxcomposite1_1%3a0.4.5-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxcomposite1:amd64 (1:0.4.5-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxrender1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../080-libxrender1_1%3a0.9.10-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxrender1:amd64 (1:0.9.10-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxft2:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../081-libxft2_2.3.3-0ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxft2:amd64 (2.3.3-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxi6:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../082-libxi6_2%3a1.7.10-0ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxi6:amd64 (2:1.7.10-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxinerama1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../083-libxinerama1_2%3a1.1.4-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxinerama1:amd64 (2:1.1.4-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxkbfile1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../084-libxkbfile1_1%3a1.1.0-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxkbfile1:amd64 (1:1.1.0-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxrandr2:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../085-libxrandr2_2%3a1.5.2-0ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxrandr2:amd64 (2:1.5.2-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxv1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../086-libxv1_2%3a1.0.11-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxv1:amd64 (2:1.0.11-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxxf86dga1:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../087-libxxf86dga1_2%3a1.1.5-0ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxxf86dga1:amd64 (2:1.1.5-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package x11-utils.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../088-x11-utils_7.7+5_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking x11-utils (7.7+5) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libatk-wrapper-java.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../089-libatk-wrapper-java_0.37.1-1_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libatk-wrapper-java (0.37.1-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libatk-wrapper-java-jni:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../090-libatk-wrapper-java-jni_0.37.1-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libatk-wrapper-java-jni:amd64 (0.37.1-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libgif7:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../091-libgif7_5.1.9-1ubuntu0.1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libgif7:amd64 (5.1.9-1ubuntu0.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package xorg-sgml-doctools.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../092-xorg-sgml-doctools_1%3a1.11-1_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking xorg-sgml-doctools (1:1.11-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package x11proto-dev.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../093-x11proto-dev_2019.2-1ubuntu1_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking x11proto-dev (2019.2-1ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package x11proto-core-dev.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../094-x11proto-core-dev_2019.2-1ubuntu1_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking x11proto-core-dev (2019.2-1ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libice-dev:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../095-libice-dev_2%3a1.0.10-0ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libice-dev:amd64 (2:1.0.10-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libpthread-stubs0-dev:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../096-libpthread-stubs0-dev_0.4-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libpthread-stubs0-dev:amd64 (0.4-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libsm-dev:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../097-libsm-dev_2%3a1.2.3-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libsm-dev:amd64 (2:1.2.3-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libwayland-client0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../098-libwayland-client0_1.18.0-1ubuntu0.1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libwayland-client0:amd64 (1.18.0-1ubuntu0.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxau-dev:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../099-libxau-dev_1%3a1.0.9-0ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxau-dev:amd64 (1:1.0.9-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxdmcp-dev:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../100-libxdmcp-dev_1%3a1.1.3-0ubuntu1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxdmcp-dev:amd64 (1:1.1.3-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package xtrans-dev.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../101-xtrans-dev_1.4.0-1_all.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking xtrans-dev (1.4.0-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxcb1-dev:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../102-libxcb1-dev_1.14-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxcb1-dev:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libx11-dev:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../103-libx11-dev_2%3a1.6.9-2ubuntu1.6_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libx11-dev:amd64 (2:1.6.9-2ubuntu1.6) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxcb-randr0:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../104-libxcb-randr0_1.14-2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxcb-randr0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package libxt-dev:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../105-libxt-dev_1%3a1.1.5-1_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking libxt-dev:amd64 (1:1.1.5-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package mesa-vulkan-drivers:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../106-mesa-vulkan-drivers_21.2.6-0ubuntu0.1~20.04.2_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking mesa-vulkan-drivers:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package openjdk-11-jre:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../107-openjdk-11-jre_11.0.27+6~us1-0ubuntu1~20.04_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking openjdk-11-jre:amd64 (11.0.27+6~us1-0ubuntu1~20.04) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package openjdk-11-jdk-headless:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../108-openjdk-11-jdk-headless_11.0.27+6~us1-0ubuntu1~20.04_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking openjdk-11-jdk-headless:amd64 (11.0.27+6~us1-0ubuntu1~20.04) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Selecting previously unselected package openjdk-11-jdk:amd64.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Preparing to unpack .../109-openjdk-11-jdk_11.0.27+6~us1-0ubuntu1~20.04_amd64.deb ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Unpacking openjdk-11-jdk:amd64 (11.0.27+6~us1-0ubuntu1~20.04) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libgraphite2-3:amd64 (1.3.13-11build1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxcb-dri3-0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up liblcms2-2:amd64 (2.9-4) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libx11-xcb1:amd64 (2:1.6.9-2ubuntu1.6) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libpciaccess0:amd64 (0.16-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libapparmor1:amd64 (2.13.3-7ubuntu5.4) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxcb-xfixes0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxpm4:amd64 (1:3.5.12-1ubuntu0.20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxi6:amd64 (2:1.7.10-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up java-common (0.72) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxrender1:amd64 (1:0.9.10-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up alsa-ucm-conf (1.2.2-1ubuntu0.13) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": No schema files found: doing nothing.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libglvnd0:amd64 (1.3.2-1~ubuntu0.20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxcb-glx0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxcb-shape0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up x11-common (1:7.7+19ubuntu14) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": invoke-rc.d: could not determine current runlevel
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": invoke-rc.d: policy-rc.d denied execution of start.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libsensors-config (1:3.6.0-2ubuntu1.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxxf86dga1:amd64 (2:1.1.5-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxcb-shm0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libpthread-stubs0-dev:amd64 (0.4-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxxf86vm1:amd64 (1:1.1.4-1build1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxcb-present0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libasound2-data (1.2.2-2.1ubuntu2.5) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up xtrans-dev (1.4.0-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libfontenc1:amd64 (1:1.1.4-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libnspr4:amd64 (2:4.35-0ubuntu0.20.04.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxfixes3:amd64 (1:5.0.3-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxcb-sync1:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libavahi-common-data:amd64 (0.7-4ubuntu7.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libllvm12:amd64 (1:12.0.0-3ubuntu1~20.04.5) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libdbus-1-3:amd64 (1.12.16-2ubuntu2.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up dbus (1.12.16-2ubuntu2.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxinerama1:amd64 (2:1.1.4-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxv1:amd64 (2:1.0.11-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libpng16-16:amd64 (1.6.37-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxrandr2:amd64 (2:1.5.2-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up fonts-dejavu-core (2.37-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libpcsclite1:amd64 (1.8.26-3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up ucf (3.0038+nmu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libsensors5:amd64 (1:3.6.0-2ubuntu1.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libglapi-mesa:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libvulkan1:amd64 (1.2.131.2-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxcb-dri2-0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libgif7:amd64 (5.1.9-1ubuntu0.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libatk1.0-data (2.35.1-1ubuntu2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up fonts-dejavu-extra (2.37-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up alsa-topology-conf (1.2.2-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxshmfence1:amd64 (1.3-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxcb-randr0:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libasound2:amd64 (1.2.2-2.1ubuntu2.5) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up xorg-sgml-doctools (1:1.11-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libatk1.0-0:amd64 (2.35.1-1ubuntu2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxkbfile1:amd64 (1:1.1.0-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libdrm-common (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libelf1:amd64 (0.176-1.1ubuntu0.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxcomposite1:amd64 (1:0.4.5-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libwayland-client0:amd64 (1.18.0-1ubuntu0.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libjpeg8:amd64 (8c-2ubuntu8) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up x11proto-dev (2019.2-1ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libice6:amd64 (2:1.0.10-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxau-dev:amd64 (1:1.0.9-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libice-dev:amd64 (2:1.0.10-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up fontconfig-config (2.13.1-2ubuntu3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxtst6:amd64 (2:1.2.3-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libavahi-common3:amd64 (0.7-4ubuntu7.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libnss3:amd64 (2:3.98-0ubuntu0.20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libatspi2.0-0:amd64 (2.36.0-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libatk-bridge2.0-0:amd64 (2.34.2-0ubuntu2~20.04.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxdmcp-dev:amd64 (1:1.1.3-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libfreetype6:amd64 (2.10.1-2ubuntu0.4) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up x11proto-core-dev (2019.2-1ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up shared-mime-info (1.15-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libdrm2:amd64 (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up at-spi2-core (2.36.0-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libharfbuzz0b:amd64 (2.6.4-1ubuntu4.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libfontconfig1:amd64 (2.13.1-2ubuntu3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libsm6:amd64 (2:1.2.3-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libavahi-client3:amd64 (0.7-4ubuntu7.3) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libdrm-amdgpu1:amd64 (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up mesa-vulkan-drivers:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxft2:amd64 (2.3.3-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libdrm-nouveau2:amd64 (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxcb1-dev:amd64 (1.14-2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libsm-dev:amd64 (2:1.2.3-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libdrm-radeon1:amd64 (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libdrm-intel1:amd64 (2.4.107-8ubuntu1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libgl1-mesa-dri:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libx11-dev:amd64 (2:1.6.9-2ubuntu1.6) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxt6:amd64 (1:1.1.5-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libcups2:amd64 (2.3.1-9ubuntu1.9) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxmu6:amd64 (2:1.1.3-0ubuntu1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libglx-mesa0:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libglx0:amd64 (1.3.2-1~ubuntu0.20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxaw7:amd64 (2:1.0.13-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libgl1:amd64 (1.3.2-1~ubuntu0.20.04.2) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libxt-dev:amd64 (1:1.1.5-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up x11-utils (7.7+5) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libatk-wrapper-java (0.37.1-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up libatk-wrapper-java-jni:amd64 (0.37.1-1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up openjdk-11-jre-headless:amd64 (11.0.27+6~us1-0ubuntu1~20.04) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up openjdk-11-jre:amd64 (11.0.27+6~us1-0ubuntu1~20.04) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up openjdk-11-jdk-headless:amd64 (11.0.27+6~us1-0ubuntu1~20.04) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jdeprscan to provide /usr/bin/jdeprscan (jdeprscan) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jfr to provide /usr/bin/jfr (jfr) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jimage to provide /usr/bin/jimage (jimage) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jlink to provide /usr/bin/jlink (jlink) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jmod to provide /usr/bin/jmod (jmod) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jshell to provide /usr/bin/jshell (jshell) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmic to provide /usr/bin/rmic (rmic) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jaotc to provide /usr/bin/jaotc (jaotc) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jhsdb to provide /usr/bin/jhsdb (jhsdb) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up openjdk-11-jdk:amd64 (11.0.27+6~us1-0ubuntu1~20.04) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Setting up ca-certificates-java (20190405ubuntu1.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such file or directory
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:QuoVadis_Root_CA_2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:DigiCert_Global_Root_G3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:emSign_Root_CA_-_G1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Certum_Trusted_Network_CA_2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Hongkong_Post_Root_CA_3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:XRamp_Global_CA_Root.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:TWCA_Global_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:CommScope_Public_Trust_RSA_Root-01.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:USERTrust_ECC_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:QuoVadis_Root_CA_1_G3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:COMODO_ECC_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:COMODO_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Certigna_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Go_Daddy_Class_2_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:HiPKI_Root_CA_-_G1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Security_Communication_ECC_RootCA1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:UCA_Global_G2_Root.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GTS_Root_R2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:certSIGN_ROOT_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:CommScope_Public_Trust_RSA_Root-02.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:emSign_ECC_Root_CA_-_C3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:DigiCert_Trusted_Root_G4.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:vTrus_ECC_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:BJCA_Global_Root_CA1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GlobalSign_Root_CA_-_R3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Amazon_Root_CA_4.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GTS_Root_R1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:AffirmTrust_Commercial.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Sectigo_Public_Server_Authentication_Root_R46.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Starfield_Class_2_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:AffirmTrust_Networking.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Entrust_Root_Certification_Authority_-_G4.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Comodo_AAA_Services_root.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Certainly_Root_R1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:SwissSign_Gold_CA_-_G2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:CommScope_Public_Trust_ECC_Root-01.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:DigiCert_Global_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:ISRG_Root_X2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GLOBALTRUST_2020.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:ISRG_Root_X1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Amazon_Root_CA_3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Security_Communication_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:CFCA_EV_ROOT.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:DigiCert_Assured_ID_Root_G2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:DigiCert_Assured_ID_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Baltimore_CyberTrust_Root.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Secure_Global_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:SecureSign_RootCA11.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Security_Communication_RootCA2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:certSIGN_Root_CA_G2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Security_Communication_RootCA3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:BJCA_Global_Root_CA2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:QuoVadis_Root_CA_3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:AffirmTrust_Premium.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GTS_Root_R4.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:SecureTrust_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:SSL.com_TLS_ECC_Root_CA_2022.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Atos_TrustedRoot_2011.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:TunTrust_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GTS_Root_R3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:emSign_ECC_Root_CA_-_G3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:SwissSign_Silver_CA_-_G2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GlobalSign_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:DigiCert_Global_Root_G2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:QuoVadis_Root_CA_2_G3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:TWCA_Root_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Certainly_Root_E1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Buypass_Class_2_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GlobalSign_Root_E46.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Entrust_Root_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Telia_Root_CA_v2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Sectigo_Public_Server_Authentication_Root_E46.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:emSign_Root_CA_-_C1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:e-Szigno_Root_CA_2017.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:CommScope_Public_Trust_ECC_Root-02.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GlobalSign_Root_CA_-_R6.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:GlobalSign_Root_R46.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:ACCVRAIZ1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Certum_Trusted_Network_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Izenpe.com.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:NAVER_Global_Root_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:SZAFIR_ROOT_CA2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:TeliaSonera_Root_CA_v1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Buypass_Class_3_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:TrustAsia_Global_Root_CA_G4.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:CA_Disig_Root_R2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:QuoVadis_Root_CA_3_G3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:TrustAsia_Global_Root_CA_G3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:COMODO_RSA_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:UCA_Extended_Validation_Root.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:DigiCert_Assured_ID_Root_G3.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:ePKI_Root_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:vTrus_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Trustwave_Global_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:USERTrust_RSA_Certification_Authority.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Certum_Trusted_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Certigna.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Actalis_Authentication_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:ANF_Secure_Server_Root_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Certum_EC-384_CA.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Amazon_Root_CA_2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:SSL.com_TLS_RSA_Root_CA_2022.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:Amazon_Root_CA_1.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:AC_RAIZ_FNMT-RCM.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Adding debian:AffirmTrust_Premium_ECC.pem
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": done.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Processing triggers for ca-certificates (20240203~20.04.1) ...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Updating certificates in /etc/ssl/certs...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 0 added, 0 removed; done.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Running hooks in /etc/ca-certificates/update.d...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": 
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": done.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": done.
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Removing intermediate container 27327f2fb8da
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":  ---> 45a705b2b8ec
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Step 3/6 : RUN git clone --depth 1 https://github.com/libical/libical.git
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":  ---> Running in 630aafd62868
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": [91mCloning into 'libical'...
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": [0mRemoving intermediate container 630aafd62868
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":  ---> a46e9a1bcb27
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Step 4/6 : COPY build.sh $SRC
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":  ---> fedd3cfeba40
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Step 5/6 : COPY *.cc $SRC/
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":  ---> 8ed482557594
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Step 6/6 : WORKDIR libical
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":  ---> Running in 589ffff940bf
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Removing intermediate container 589ffff940bf
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126":  ---> 2325bb7cae48
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Successfully built 2325bb7cae48
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Successfully tagged gcr.io/oss-fuzz/libical:latest
+Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/libical:latest
+Finished Step #1 - "build-4d31018b-b7a7-454b-82ee-9ef7e32db126"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/libical
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/fileQvAnbL
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ c++ == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/libical/.git
+Step #2 - "srcmap": + GIT_DIR=/src/libical
+Step #2 - "srcmap": + cd /src/libical
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/libical/libical.git
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=18867b1da43ead1f5a38642e2cc4967dc737c7b1
+Step #2 - "srcmap": + jq_inplace /tmp/fileQvAnbL '."/src/libical" = { type: "git", url: "https://github.com/libical/libical.git", rev: "18867b1da43ead1f5a38642e2cc4967dc737c7b1" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/file4RQQm6
+Step #2 - "srcmap": + cat /tmp/fileQvAnbL
+Step #2 - "srcmap": + jq '."/src/libical" = { type: "git", url: "https://github.com/libical/libical.git", rev: "18867b1da43ead1f5a38642e2cc4967dc737c7b1" }'
+Step #2 - "srcmap": + mv /tmp/file4RQQm6 /tmp/fileQvAnbL
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/fileQvAnbL
+Step #2 - "srcmap": + rm /tmp/fileQvAnbL
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/libical": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/libical/libical.git",
+Step #2 - "srcmap":     "rev": "18867b1da43ead1f5a38642e2cc4967dc737c7b1"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-afl-address-x86_64"
+Step #3 - "compile-afl-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-afl-address-x86_64": Copying precompiled AFL++
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64": AFL++ target compilation setup:
+Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
+Step #3 - "compile-afl-address-x86_64": AFL_QUIET=1
+Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64":  done.
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": CC=/src/aflplusplus/afl-clang-fast
+Step #3 - "compile-afl-address-x86_64": CXX=/src/aflplusplus/afl-clang-fast++
+Step #3 - "compile-afl-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope 
+Step #3 - "compile-afl-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope  -stdlib=libc++
+Step #3 - "compile-afl-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": + cmake . -DSTATIC_ONLY=ON -DICAL_GLIB=False -DICAL_GLIB_BUILD_DOCS=False -DGOBJECT_INTROSPECTION=False
+Step #3 - "compile-afl-address-x86_64": -- The C compiler identification is Clang 22.0.0
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info - done
+Step #3 - "compile-afl-address-x86_64": -- Check for working C compiler: /src/aflplusplus/afl-clang-fast - skipped
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features - done
+Step #3 - "compile-afl-address-x86_64": -- Setting build type to Debug as none was specified.
+Step #3 - "compile-afl-address-x86_64": -- The CXX compiler identification is Clang 22.0.0
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info - done
+Step #3 - "compile-afl-address-x86_64": -- Check for working CXX compiler: /src/aflplusplus/afl-clang-fast++ - skipped
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features - done
+Step #3 - "compile-afl-address-x86_64": -- Found Java: /usr/bin/java (found version "11.0.27")
+Step #3 - "compile-afl-address-x86_64": -- Found JNI: /usr/lib/jvm/java-11-openjdk-amd64/include  found components: AWT JVM
+Step #3 - "compile-afl-address-x86_64": -- Found Perl: /usr/bin/perl (found version "5.30.0")
+Step #3 - "compile-afl-address-x86_64": -- The following ICU libraries were not found:
+Step #3 - "compile-afl-address-x86_64": --   i18n (required)
+Step #3 - "compile-afl-address-x86_64": --   uc (required)
+Step #3 - "compile-afl-address-x86_64": --   data (required)
+Step #3 - "compile-afl-address-x86_64": -- Failed to find all ICU components (missing: ICU_INCLUDE_DIR ICU_LIBRARY _ICU_REQUIRED_LIBS_FOUND) 
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file byteswap.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file byteswap.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file dirent.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file dirent.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file endian.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file endian.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file inttypes.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file inttypes.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file pthread.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file pthread.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file sys/endian.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file sys/endian.h - not found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file sys/param.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file sys/param.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file sys/utsname.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file sys/utsname.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file fcntl.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file fcntl.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file unistd.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file unistd.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file wctype.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file wctype.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file stdbool.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include file stdbool.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for access
+Step #3 - "compile-afl-address-x86_64": -- Looking for access - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for fork
+Step #3 - "compile-afl-address-x86_64": -- Looking for fork - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for getopt
+Step #3 - "compile-afl-address-x86_64": -- Looking for getopt - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for getpid
+Step #3 - "compile-afl-address-x86_64": -- Looking for getpid - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for getpwent
+Step #3 - "compile-afl-address-x86_64": -- Looking for getpwent - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for gmtime_r
+Step #3 - "compile-afl-address-x86_64": -- Looking for gmtime_r - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for localtime_r
+Step #3 - "compile-afl-address-x86_64": -- Looking for localtime_r - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for mkdir
+Step #3 - "compile-afl-address-x86_64": -- Looking for mkdir - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for open
+Step #3 - "compile-afl-address-x86_64": -- Looking for open - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for nanosleep
+Step #3 - "compile-afl-address-x86_64": -- Looking for nanosleep - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for signal
+Step #3 - "compile-afl-address-x86_64": -- Looking for signal - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for stat
+Step #3 - "compile-afl-address-x86_64": -- Looking for stat - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for fstat
+Step #3 - "compile-afl-address-x86_64": -- Looking for fstat - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for strdup
+Step #3 - "compile-afl-address-x86_64": -- Looking for strdup - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for strcasecmp
+Step #3 - "compile-afl-address-x86_64": -- Looking for strcasecmp - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for strncasecmp
+Step #3 - "compile-afl-address-x86_64": -- Looking for strncasecmp - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for read
+Step #3 - "compile-afl-address-x86_64": -- Looking for read - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for unlink
+Step #3 - "compile-afl-address-x86_64": -- Looking for unlink - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for usleep
+Step #3 - "compile-afl-address-x86_64": -- Looking for usleep - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for waitpid
+Step #3 - "compile-afl-address-x86_64": -- Looking for waitpid - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for write
+Step #3 - "compile-afl-address-x86_64": -- Looking for write - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for alarm
+Step #3 - "compile-afl-address-x86_64": -- Looking for alarm - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for backtrace
+Step #3 - "compile-afl-address-x86_64": -- Looking for backtrace - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for iswspace
+Step #3 - "compile-afl-address-x86_64": -- Looking for iswspace - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for setenv
+Step #3 - "compile-afl-address-x86_64": -- Looking for setenv - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for unsetenv
+Step #3 - "compile-afl-address-x86_64": -- Looking for unsetenv - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for snprintf
+Step #3 - "compile-afl-address-x86_64": -- Looking for snprintf - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for sys/types.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for sys/types.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for stdint.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for stdint.h - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for stddef.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for stddef.h - found
+Step #3 - "compile-afl-address-x86_64": -- Check size of intptr_t
+Step #3 - "compile-afl-address-x86_64": -- Check size of intptr_t - done
+Step #3 - "compile-afl-address-x86_64": -- Check size of pid_t
+Step #3 - "compile-afl-address-x86_64": -- Check size of pid_t - done
+Step #3 - "compile-afl-address-x86_64": -- Check size of size_t
+Step #3 - "compile-afl-address-x86_64": -- Check size of size_t - done
+Step #3 - "compile-afl-address-x86_64": -- Check size of ssize_t
+Step #3 - "compile-afl-address-x86_64": -- Check size of ssize_t - done
+Step #3 - "compile-afl-address-x86_64": -- Check size of time_t
+Step #3 - "compile-afl-address-x86_64": -- Check size of time_t - done
+Step #3 - "compile-afl-address-x86_64": -- Check size of __time64_t
+Step #3 - "compile-afl-address-x86_64": -- Check size of __time64_t - failed
+Step #3 - "compile-afl-address-x86_64": -- Check size of time_t
+Step #3 - "compile-afl-address-x86_64": -- Check size of time_t - done
+Step #3 - "compile-afl-address-x86_64": -- Check size of wint_t
+Step #3 - "compile-afl-address-x86_64": -- Check size of wint_t - failed
+Step #3 - "compile-afl-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+Step #3 - "compile-afl-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+Step #3 - "compile-afl-address-x86_64": -- Found Threads: TRUE
+Step #3 - "compile-afl-address-x86_64": -- Looking for pthread_attr_get_np in pthread
+Step #3 - "compile-afl-address-x86_64": -- Looking for pthread_attr_get_np in pthread - not found
+Step #3 - "compile-afl-address-x86_64": -- Looking for pthread_getattr_np in pthread
+Step #3 - "compile-afl-address-x86_64": -- Looking for pthread_getattr_np in pthread - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for pthread_create in pthread
+Step #3 - "compile-afl-address-x86_64": -- Looking for pthread_create in pthread - found
+Step #3 - "compile-afl-address-x86_64": -- Looking for include files pthread.h, pthread_np.h
+Step #3 - "compile-afl-address-x86_64": -- Looking for include files pthread.h, pthread_np.h - not found
+Step #3 - "compile-afl-address-x86_64": [31mCMake Error at CMakeLists.txt:578 (message):
+Step #3 - "compile-afl-address-x86_64":   You are attempting to build with GObject Introspection enabled, however
+Step #3 - "compile-afl-address-x86_64":   that option is not supported unless pkg-config can be found.  Please
+Step #3 - "compile-afl-address-x86_64":   install pkg-config and try again.  You can disable GObject Introspection by
+Step #3 - "compile-afl-address-x86_64":   passing -DLIBICAL_GOBJECT_INTROSPECTION=False to cmake.
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64": [0m
+Step #3 - "compile-afl-address-x86_64": -- Configuring incomplete, errors occurred!
+Step #3 - "compile-afl-address-x86_64": ********************************************************************************
+Step #3 - "compile-afl-address-x86_64": Failed to build.
+Step #3 - "compile-afl-address-x86_64": To reproduce, run:
+Step #3 - "compile-afl-address-x86_64": python infra/helper.py build_image libical
+Step #3 - "compile-afl-address-x86_64": python infra/helper.py build_fuzzers --sanitizer address --engine afl --architecture x86_64 libical
+Step #3 - "compile-afl-address-x86_64": ********************************************************************************
+Finished Step #3 - "compile-afl-address-x86_64"
+ERROR
+ERROR: build step 3 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

@@ -1,0 +1,233 @@
+starting build "c79f538f-eb76-4da4-a16f-4a10ae365b28"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb"
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": Sending build context to Docker daemon  33.28kB
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": Step 1/20 : FROM gcr.io/oss-fuzz-base/base-builder-jvm
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": latest: Pulling from oss-fuzz-base/base-builder-jvm
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b549f31133a9: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": cb9de8dca298: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 7b011949e673: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 4223e9366084: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": fed81cdfb6a9: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": ec63a2d0d15f: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1ae06f39b1c: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 13aa280bbb0b: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 2701ced0d7c4: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5d914f439872: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5afcacf26009: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 6a6cec21bcc6: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 96bef82d3744: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 25f8e8a4262f: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 3b38150c7777: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 261fb7ae3c42: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 626ba5c7ca97: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 483dc6c414c8: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 958337bdba45: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 85c02b013ea1: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8bd3bf18d6f8: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 705eff584c11: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 0f9fdf19bd4d: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 12a9b61083a7: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 13aa280bbb0b: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1bbffe35f41: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5a28647958ef: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 86571ad417df: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 2701ced0d7c4: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8a957f5949e1: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5d914f439872: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 78937b31eba5: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 9d67a7daaea7: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5afcacf26009: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": c382251239b2: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 87c02ad7d9b2: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 05c773eac106: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8ad94b8acb6c: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 891509538455: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": ae7c13f8e6d2: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1ff1728491b: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8887a4f06d6c: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": d36876d32069: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 9732b89661fa: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": c2425364d9bf: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 4223e9366084: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 329e956b556c: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 33da410a3982: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": fed81cdfb6a9: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": ec63a2d0d15f: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 6a6cec21bcc6: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 380547e65ba1: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 7f483b64b992: Pulling fs layer
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 96bef82d3744: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": ae7c13f8e6d2: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 25f8e8a4262f: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 626ba5c7ca97: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8bd3bf18d6f8: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 705eff584c11: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 3b38150c7777: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 85c02b013ea1: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": d36876d32069: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 483dc6c414c8: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 958337bdba45: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8a957f5949e1: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 12a9b61083a7: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 78937b31eba5: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1ff1728491b: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1bbffe35f41: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 9d67a7daaea7: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 329e956b556c: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 33da410a3982: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 380547e65ba1: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": c382251239b2: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 891509538455: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 0f9fdf19bd4d: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8887a4f06d6c: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 9732b89661fa: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1ae06f39b1c: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 261fb7ae3c42: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 7f483b64b992: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 05c773eac106: Waiting
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 7b011949e673: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 7b011949e673: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b549f31133a9: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b549f31133a9: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": fed81cdfb6a9: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 4223e9366084: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 4223e9366084: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1ae06f39b1c: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1ae06f39b1c: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": cb9de8dca298: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": cb9de8dca298: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 13aa280bbb0b: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b549f31133a9: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5d914f439872: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5d914f439872: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5afcacf26009: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5afcacf26009: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 6a6cec21bcc6: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 6a6cec21bcc6: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 96bef82d3744: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 96bef82d3744: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 25f8e8a4262f: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 25f8e8a4262f: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 3b38150c7777: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 3b38150c7777: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 261fb7ae3c42: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 2701ced0d7c4: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 483dc6c414c8: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 483dc6c414c8: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 626ba5c7ca97: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 958337bdba45: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 958337bdba45: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 85c02b013ea1: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 85c02b013ea1: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8bd3bf18d6f8: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8bd3bf18d6f8: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 705eff584c11: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 705eff584c11: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 0f9fdf19bd4d: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 0f9fdf19bd4d: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 12a9b61083a7: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1bbffe35f41: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1bbffe35f41: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5a28647958ef: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5a28647958ef: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 86571ad417df: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 86571ad417df: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8a957f5949e1: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8a957f5949e1: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 78937b31eba5: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 78937b31eba5: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": c382251239b2: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": c382251239b2: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 9d67a7daaea7: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 9d67a7daaea7: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": cb9de8dca298: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 7b011949e673: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": ec63a2d0d15f: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": ec63a2d0d15f: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 87c02ad7d9b2: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 87c02ad7d9b2: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 05c773eac106: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": ae7c13f8e6d2: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": ae7c13f8e6d2: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8ad94b8acb6c: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 891509538455: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1ff1728491b: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1ff1728491b: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8887a4f06d6c: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8887a4f06d6c: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": c2425364d9bf: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": c2425364d9bf: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 9732b89661fa: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 329e956b556c: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 33da410a3982: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 33da410a3982: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 380547e65ba1: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 380547e65ba1: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 7f483b64b992: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 7f483b64b992: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 4223e9366084: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": fed81cdfb6a9: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": d36876d32069: Verifying Checksum
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": d36876d32069: Download complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": ec63a2d0d15f: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1ae06f39b1c: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 13aa280bbb0b: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 2701ced0d7c4: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5d914f439872: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5afcacf26009: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 6a6cec21bcc6: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 96bef82d3744: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 25f8e8a4262f: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 3b38150c7777: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 261fb7ae3c42: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 626ba5c7ca97: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 483dc6c414c8: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 958337bdba45: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 85c02b013ea1: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8bd3bf18d6f8: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 705eff584c11: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 0f9fdf19bd4d: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 12a9b61083a7: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1bbffe35f41: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 5a28647958ef: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 86571ad417df: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8a957f5949e1: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 78937b31eba5: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 9d67a7daaea7: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": c382251239b2: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 87c02ad7d9b2: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 05c773eac106: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8ad94b8acb6c: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 891509538455: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": ae7c13f8e6d2: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": b1ff1728491b: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 8887a4f06d6c: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": d36876d32069: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 9732b89661fa: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": c2425364d9bf: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 329e956b556c: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 33da410a3982: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 380547e65ba1: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": 7f483b64b992: Pull complete
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": Digest: sha256:fae8460a63b3055db112e062fefdf35ddcb3c636dc267df1c66a7fdd7b135895
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-jvm:latest
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb":  ---> 9ec49afc6fa3
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": Step 2/20 : RUN curl -L https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip -o maven.zip &&     unzip maven.zip -d $SRC/maven &&     rm -f maven.zip
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb":  ---> Running in 0f23f6a747d5
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": [91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb":                                  Dload  Upload   Total   Spent    Left  Speed
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb":   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:-[0m[91m-:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:11 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:12 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:13 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:14 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:15 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:15 --:--:--     0
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": curl: (7) Failed to connect to archive.apache.org port 443: Connection refused
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": The command '/bin/sh -c curl -L https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip -o maven.zip &&     unzip maven.zip -d $SRC/maven &&     rm -f maven.zip' returned a non-zero code: 7
+Finished Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 7
+Step #1 - "build-da268193-62ae-481d-a6fe-51785afd88fb": [0m

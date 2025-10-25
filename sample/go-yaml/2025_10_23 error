@@ -1,0 +1,11 @@
+starting build "df019e0d-f8b5-4982-badc-0a65a0417956"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Step #0: fatal: unable to access 'https://github.com/google/oss-fuzz.git/': Failed to connect to github.com port 443 after 129635 ms: Connection timed out
+Finished Step #0
+ERROR
+ERROR: build step 0 "gcr.io/cloud-builders/git" failed: step exited with non-zero status: 128

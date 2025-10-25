@@ -1,0 +1,593 @@
+starting build "6f4e05ba-032e-44ab-a06e-ffcd35f1c7f6"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1
+Step #1: Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1: Sending build context to Docker daemon  18.94kB
+Step #1: Step 1/5 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1: latest: Pulling from oss-fuzz-base/base-builder
+Step #1: 61e03ba1d414: Pulling fs layer
+Step #1: 4afb39f216bd: Pulling fs layer
+Step #1: e489abdc9f90: Pulling fs layer
+Step #1: 999fff7bcc24: Pulling fs layer
+Step #1: 580a00dab4e4: Pulling fs layer
+Step #1: fa5ada5f96fc: Pulling fs layer
+Step #1: 478aa58a30ab: Pulling fs layer
+Step #1: 2858b3e4682c: Pulling fs layer
+Step #1: 0d6c6e2dba57: Pulling fs layer
+Step #1: 63613fe595ca: Pulling fs layer
+Step #1: aab73d6d9b58: Pulling fs layer
+Step #1: d048dd4598a7: Pulling fs layer
+Step #1: a5ae304bbd41: Pulling fs layer
+Step #1: 83fd1641d26a: Pulling fs layer
+Step #1: 51c7386942d9: Pulling fs layer
+Step #1: 5a45ee280b73: Pulling fs layer
+Step #1: 8317733ca36a: Pulling fs layer
+Step #1: fa5ada5f96fc: Waiting
+Step #1: a6887bdbff6d: Pulling fs layer
+Step #1: 478aa58a30ab: Waiting
+Step #1: ebe1ce1d3552: Pulling fs layer
+Step #1: 05cefc437188: Pulling fs layer
+Step #1: 2858b3e4682c: Waiting
+Step #1: 715d0f3a89a4: Pulling fs layer
+Step #1: 0d6c6e2dba57: Waiting
+Step #1: 00abee4023b1: Pulling fs layer
+Step #1: 63613fe595ca: Waiting
+Step #1: 3fac26f709aa: Pulling fs layer
+Step #1: ab7bab8715a1: Pulling fs layer
+Step #1: c045fd811cb4: Pulling fs layer
+Step #1: a0082978d8e9: Pulling fs layer
+Step #1: 1cdedcca56f1: Pulling fs layer
+Step #1: 47ee91c6f867: Pulling fs layer
+Step #1: 51c7386942d9: Waiting
+Step #1: 5a45ee280b73: Waiting
+Step #1: 8317733ca36a: Waiting
+Step #1: 3fac26f709aa: Waiting
+Step #1: a6887bdbff6d: Waiting
+Step #1: ebe1ce1d3552: Waiting
+Step #1: ab7bab8715a1: Waiting
+Step #1: 05cefc437188: Waiting
+Step #1: c045fd811cb4: Waiting
+Step #1: 715d0f3a89a4: Waiting
+Step #1: a0082978d8e9: Waiting
+Step #1: aab73d6d9b58: Waiting
+Step #1: d048dd4598a7: Waiting
+Step #1: 1cdedcca56f1: Waiting
+Step #1: 83fd1641d26a: Waiting
+Step #1: a5ae304bbd41: Waiting
+Step #1: 47ee91c6f867: Waiting
+Step #1: 00abee4023b1: Waiting
+Step #1: 999fff7bcc24: Waiting
+Step #1: 580a00dab4e4: Waiting
+Step #1: 4afb39f216bd: Verifying Checksum
+Step #1: 4afb39f216bd: Download complete
+Step #1: e489abdc9f90: Verifying Checksum
+Step #1: e489abdc9f90: Download complete
+Step #1: 999fff7bcc24: Verifying Checksum
+Step #1: 999fff7bcc24: Download complete
+Step #1: fa5ada5f96fc: Verifying Checksum
+Step #1: fa5ada5f96fc: Download complete
+Step #1: 580a00dab4e4: Verifying Checksum
+Step #1: 580a00dab4e4: Download complete
+Step #1: 61e03ba1d414: Verifying Checksum
+Step #1: 61e03ba1d414: Download complete
+Step #1: 2858b3e4682c: Verifying Checksum
+Step #1: 2858b3e4682c: Download complete
+Step #1: 63613fe595ca: Verifying Checksum
+Step #1: 63613fe595ca: Download complete
+Step #1: 478aa58a30ab: Verifying Checksum
+Step #1: 478aa58a30ab: Download complete
+Step #1: d048dd4598a7: Verifying Checksum
+Step #1: d048dd4598a7: Download complete
+Step #1: a5ae304bbd41: Verifying Checksum
+Step #1: a5ae304bbd41: Download complete
+Step #1: 0d6c6e2dba57: Verifying Checksum
+Step #1: 0d6c6e2dba57: Download complete
+Step #1: 61e03ba1d414: Pull complete
+Step #1: 4afb39f216bd: Pull complete
+Step #1: aab73d6d9b58: Verifying Checksum
+Step #1: aab73d6d9b58: Download complete
+Step #1: e489abdc9f90: Pull complete
+Step #1: 999fff7bcc24: Pull complete
+Step #1: 51c7386942d9: Verifying Checksum
+Step #1: 51c7386942d9: Download complete
+Step #1: 8317733ca36a: Verifying Checksum
+Step #1: 8317733ca36a: Download complete
+Step #1: a6887bdbff6d: Verifying Checksum
+Step #1: a6887bdbff6d: Download complete
+Step #1: ebe1ce1d3552: Verifying Checksum
+Step #1: ebe1ce1d3552: Download complete
+Step #1: 83fd1641d26a: Verifying Checksum
+Step #1: 83fd1641d26a: Download complete
+Step #1: 715d0f3a89a4: Verifying Checksum
+Step #1: 715d0f3a89a4: Download complete
+Step #1: 580a00dab4e4: Pull complete
+Step #1: fa5ada5f96fc: Pull complete
+Step #1: 5a45ee280b73: Verifying Checksum
+Step #1: 5a45ee280b73: Download complete
+Step #1: 05cefc437188: Verifying Checksum
+Step #1: 05cefc437188: Download complete
+Step #1: 00abee4023b1: Verifying Checksum
+Step #1: 00abee4023b1: Download complete
+Step #1: ab7bab8715a1: Download complete
+Step #1: 3fac26f709aa: Download complete
+Step #1: c045fd811cb4: Download complete
+Step #1: a0082978d8e9: Download complete
+Step #1: 1cdedcca56f1: Verifying Checksum
+Step #1: 1cdedcca56f1: Download complete
+Step #1: 47ee91c6f867: Verifying Checksum
+Step #1: 47ee91c6f867: Download complete
+Step #1: 478aa58a30ab: Pull complete
+Step #1: 2858b3e4682c: Pull complete
+Step #1: 0d6c6e2dba57: Pull complete
+Step #1: 63613fe595ca: Pull complete
+Step #1: aab73d6d9b58: Pull complete
+Step #1: d048dd4598a7: Pull complete
+Step #1: a5ae304bbd41: Pull complete
+Step #1: 83fd1641d26a: Pull complete
+Step #1: 51c7386942d9: Pull complete
+Step #1: 5a45ee280b73: Pull complete
+Step #1: 8317733ca36a: Pull complete
+Step #1: a6887bdbff6d: Pull complete
+Step #1: ebe1ce1d3552: Pull complete
+Step #1: 05cefc437188: Pull complete
+Step #1: 715d0f3a89a4: Pull complete
+Step #1: 00abee4023b1: Pull complete
+Step #1: 3fac26f709aa: Pull complete
+Step #1: ab7bab8715a1: Pull complete
+Step #1: c045fd811cb4: Pull complete
+Step #1: a0082978d8e9: Pull complete
+Step #1: 1cdedcca56f1: Pull complete
+Step #1: 47ee91c6f867: Pull complete
+Step #1: Digest: sha256:66c401fdd8ad972d02a72c89f56907e9b9ac2bc53c72c8f6116330e982eeb80a
+Step #1: Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1:  ---> 6d08730bd2d4
+Step #1: Step 2/5 : COPY build.sh $SRC/
+Step #1:  ---> b8d4d704e743
+Step #1: Step 3/5 : COPY ExampleFuzzerNative.h ExampleFuzzerNative.cpp $SRC/
+Step #1:  ---> 601c1540a98a
+Step #1: Step 4/5 : COPY ExampleFuzzer.java ExampleValueProfileFuzzer.java ExampleFuzzerNative.java default.options $SRC/
+Step #1:  ---> 644bbcc55337
+Step #1: Step 5/5 : WORKDIR $SRC/
+Step #1:  ---> Running in 404b07bfee4a
+Step #1: Removing intermediate container 404b07bfee4a
+Step #1:  ---> 6f5fd451fffd
+Step #1: Successfully built 6f5fd451fffd
+Step #1: Successfully tagged gcr.io/oss-fuzz/java-example:latest
+Finished Step #1
+Starting Step #2
+Step #2: Already have image: gcr.io/oss-fuzz/java-example
+Step #2: ++ tempfile
+Step #2: + SRCMAP=/tmp/filezToiEG
+Step #2: + echo '{}'
+Step #2: + PATHS_TO_SCAN=/src
+Step #2: + [[ jvm == \g\o ]]
+Step #2: ++ find /src -name .git -type d
+Step #2: + for DOT_GIT_DIR in '$(find $PATHS_TO_SCAN -name ".git" -type d)'
+Step #2: ++ dirname /src/aflplusplus/.git
+Step #2: + GIT_DIR=/src/aflplusplus
+Step #2: + cd /src/aflplusplus
+Step #2: ++ git config --get remote.origin.url
+Step #2: + GIT_URL=https://github.com/AFLplusplus/AFLplusplus.git
+Step #2: ++ git rev-parse HEAD
+Step #2: + GIT_REV=ade8cdca55951958024c86766453430f904381c5
+Step #2: + jq_inplace /tmp/filezToiEG '."/src/aflplusplus" = { type: "git", url: "https://github.com/AFLplusplus/AFLplusplus.git", rev: "ade8cdca55951958024c86766453430f904381c5" }'
+Step #2: ++ tempfile
+Step #2: + F=/tmp/file83l8kF
+Step #2: + cat /tmp/filezToiEG
+Step #2: + jq '."/src/aflplusplus" = { type: "git", url: "https://github.com/AFLplusplus/AFLplusplus.git", rev: "ade8cdca55951958024c86766453430f904381c5" }'
+Step #2: + mv /tmp/file83l8kF /tmp/filezToiEG
+Step #2: ++ find /src -name .svn -type d
+Step #2: ++ find /src -name .hg -type d
+Step #2: + '[' '' '!=' '' ']'
+Step #2: + cat /tmp/filezToiEG
+Step #2: + rm /tmp/filezToiEG
+Step #2: {
+Step #2:   "/src/aflplusplus": {
+Step #2:     "type": "git",
+Step #2:     "url": "https://github.com/AFLplusplus/AFLplusplus.git",
+Step #2:     "rev": "ade8cdca55951958024c86766453430f904381c5"
+Step #2:   }
+Step #2: }
+Finished Step #2
+Starting Step #3
+Step #3: Pulling image: gcr.io/oss-fuzz-base/msan-libs-builder
+Step #3: Using default tag: latest
+Step #3: latest: Pulling from oss-fuzz-base/msan-libs-builder
+Step #3: 61e03ba1d414: Already exists
+Step #3: 4afb39f216bd: Already exists
+Step #3: e489abdc9f90: Already exists
+Step #3: 999fff7bcc24: Already exists
+Step #3: 29f6bd1ded3c: Pulling fs layer
+Step #3: 524557860635: Pulling fs layer
+Step #3: 3b0396f741d4: Pulling fs layer
+Step #3: 20444dd72d74: Pulling fs layer
+Step #3: a2a3e932950d: Pulling fs layer
+Step #3: 18d435ecccf5: Pulling fs layer
+Step #3: 449ef7508b4f: Pulling fs layer
+Step #3: c99ada016c40: Pulling fs layer
+Step #3: 335e216c1414: Pulling fs layer
+Step #3: 5ac5d03cedd9: Pulling fs layer
+Step #3: 5f48923df305: Pulling fs layer
+Step #3: c4952bd9b3ca: Pulling fs layer
+Step #3: 7ce72616a7fd: Pulling fs layer
+Step #3: 5f48923df305: Waiting
+Step #3: 5ac5d03cedd9: Waiting
+Step #3: c4952bd9b3ca: Waiting
+Step #3: 18d435ecccf5: Waiting
+Step #3: 335e216c1414: Waiting
+Step #3: 7ce72616a7fd: Waiting
+Step #3: 449ef7508b4f: Waiting
+Step #3: 20444dd72d74: Waiting
+Step #3: a2a3e932950d: Waiting
+Step #3: 524557860635: Download complete
+Step #3: 20444dd72d74: Verifying Checksum
+Step #3: 20444dd72d74: Download complete
+Step #3: 3b0396f741d4: Verifying Checksum
+Step #3: 3b0396f741d4: Download complete
+Step #3: 18d435ecccf5: Verifying Checksum
+Step #3: 18d435ecccf5: Download complete
+Step #3: 29f6bd1ded3c: Verifying Checksum
+Step #3: 29f6bd1ded3c: Download complete
+Step #3: 449ef7508b4f: Download complete
+Step #3: 335e216c1414: Verifying Checksum
+Step #3: 335e216c1414: Download complete
+Step #3: 5ac5d03cedd9: Download complete
+Step #3: 5f48923df305: Verifying Checksum
+Step #3: 5f48923df305: Download complete
+Step #3: c4952bd9b3ca: Verifying Checksum
+Step #3: c4952bd9b3ca: Download complete
+Step #3: c99ada016c40: Verifying Checksum
+Step #3: c99ada016c40: Download complete
+Step #3: 29f6bd1ded3c: Pull complete
+Step #3: 524557860635: Pull complete
+Step #3: a2a3e932950d: Verifying Checksum
+Step #3: a2a3e932950d: Download complete
+Step #3: 3b0396f741d4: Pull complete
+Step #3: 20444dd72d74: Pull complete
+Step #3: 7ce72616a7fd: Verifying Checksum
+Step #3: 7ce72616a7fd: Download complete
+Step #3: a2a3e932950d: Pull complete
+Step #3: 18d435ecccf5: Pull complete
+Step #3: 449ef7508b4f: Pull complete
+Step #3: c99ada016c40: Pull complete
+Step #3: 335e216c1414: Pull complete
+Step #3: 5ac5d03cedd9: Pull complete
+Step #3: 5f48923df305: Pull complete
+Step #3: c4952bd9b3ca: Pull complete
+Step #3: 7ce72616a7fd: Pull complete
+Step #3: Digest: sha256:7cc465d7c5be5de2ca63443952f738dedacb3cd2c45423d1494a9dc1ec4628a7
+Step #3: Status: Downloaded newer image for gcr.io/oss-fuzz-base/msan-libs-builder:latest
+Step #3: gcr.io/oss-fuzz-base/msan-libs-builder:latest
+Finished Step #3
+Starting Step #4
+Step #4: Already have image: gcr.io/oss-fuzz/java-example
+Step #4: ---------------------------------------------------------------
+Step #4: ---------------------------------------------------------------
+Step #4: CC=clang
+Step #4: CXX=clang++
+Step #4: CFLAGS=-O1 -fno-omit-frame-pointer -gline-tables-only -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+Step #4: CXXFLAGS=-O1 -fno-omit-frame-pointer -gline-tables-only -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+Step #4: RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #4: ---------------------------------------------------------------
+Step #4: + JVM_INCLUDES='-I/usr/lib/jvm/java-15-openjdk-amd64/include -I/usr/lib/jvm/java-15-openjdk-amd64/include/linux'
+Step #4: + mkdir /workspace/out/address/native
+Step #4: + clang++ -O1 -fno-omit-frame-pointer -gline-tables-only -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -I/usr/lib/jvm/java-15-openjdk-amd64/include -I/usr/lib/jvm/java-15-openjdk-amd64/include/linux -fPIC -shared ExampleFuzzerNative.cpp -o /workspace/out/address/native/libnative.so
+Step #4: + BUILD_CLASSPATH=/usr/local/lib/jazzer_api_deploy.jar
+Step #4: + RUNTIME_CLASSPATH='$this_dir'
+Step #4: ++ find /src -name '*Fuzzer.java' -or -name '*FuzzerNative.java'
+Step #4: + for fuzzer in '$(find $SRC -name '\''*Fuzzer.java'\'' -or -name '\''*FuzzerNative.java'\'')'
+Step #4: ++ basename -s .java /src/ExampleValueProfileFuzzer.java
+Step #4: + fuzzer_basename=ExampleValueProfileFuzzer
+Step #4: + javac -cp /usr/local/lib/jazzer_api_deploy.jar /src/ExampleValueProfileFuzzer.java
+Step #4: + cp /src/ExampleValueProfileFuzzer.class /workspace/out/address/
+Step #4: + [[ ExampleValueProfileFuzzer == *FuzzerNative ]]
+Step #4: + driver=jazzer_driver
+Step #4: + cp default.options /workspace/out/address/ExampleValueProfileFuzzer.options
+Step #4: + echo '#!/bin/sh
+Step #4: # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #4: this_dir=$(dirname "$0")
+Step #4: LD_LIBRARY_PATH="/usr/lib/jvm/java-15-openjdk-amd64/lib/server":$this_dir/native ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir --target_class=ExampleValueProfileFuzzer --jvm_args="-Xmx2048m" $@'
+Step #4: + chmod +x /workspace/out/address/ExampleValueProfileFuzzer
+Step #4: + for fuzzer in '$(find $SRC -name '\''*Fuzzer.java'\'' -or -name '\''*FuzzerNative.java'\'')'
+Step #4: ++ basename -s .java /src/ExampleFuzzer.java
+Step #4: + fuzzer_basename=ExampleFuzzer
+Step #4: + javac -cp /usr/local/lib/jazzer_api_deploy.jar /src/ExampleFuzzer.java
+Step #4: + cp /src/ExampleFuzzer.class /workspace/out/address/
+Step #4: + [[ ExampleFuzzer == *FuzzerNative ]]
+Step #4: + driver=jazzer_driver
+Step #4: + cp default.options /workspace/out/address/ExampleFuzzer.options
+Step #4: + echo '#!/bin/sh
+Step #4: # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #4: this_dir=$(dirname "$0")
+Step #4: LD_LIBRARY_PATH="/usr/lib/jvm/java-15-openjdk-amd64/lib/server":$this_dir/native ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir --target_class=ExampleFuzzer --jvm_args="-Xmx2048m" $@'
+Step #4: + chmod +x /workspace/out/address/ExampleFuzzer
+Step #4: + for fuzzer in '$(find $SRC -name '\''*Fuzzer.java'\'' -or -name '\''*FuzzerNative.java'\'')'
+Step #4: ++ basename -s .java /src/ExampleFuzzerNative.java
+Step #4: + fuzzer_basename=ExampleFuzzerNative
+Step #4: + javac -cp /usr/local/lib/jazzer_api_deploy.jar /src/ExampleFuzzerNative.java
+Step #4: + cp /src/ExampleFuzzerNative.class /workspace/out/address/
+Step #4: + [[ ExampleFuzzerNative == *FuzzerNative ]]
+Step #4: + driver=jazzer_driver_with_sanitizer
+Step #4: + cp default.options /workspace/out/address/ExampleFuzzerNative.options
+Step #4: + echo '#!/bin/sh
+Step #4: # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #4: this_dir=$(dirname "$0")
+Step #4: LD_LIBRARY_PATH="/usr/lib/jvm/java-15-openjdk-amd64/lib/server":$this_dir/native ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/jazzer_driver_with_sanitizer --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir --target_class=ExampleFuzzerNative --jvm_args="-Xmx2048m" $@'
+Step #4: + chmod +x /workspace/out/address/ExampleFuzzerNative
+Finished Step #4
+Starting Step #5
+Step #5: Pulling image: gcr.io/oss-fuzz-base/base-runner
+Step #5: Using default tag: latest
+Step #5: latest: Pulling from oss-fuzz-base/base-runner
+Step #5: 61e03ba1d414: Already exists
+Step #5: 4afb39f216bd: Already exists
+Step #5: e489abdc9f90: Already exists
+Step #5: 999fff7bcc24: Already exists
+Step #5: 580a00dab4e4: Already exists
+Step #5: fa5ada5f96fc: Already exists
+Step #5: b191dbce1e3d: Pulling fs layer
+Step #5: 6ae575095cde: Pulling fs layer
+Step #5: 5f4816311a2f: Pulling fs layer
+Step #5: 3dbeb13c2966: Pulling fs layer
+Step #5: bb6360491f43: Pulling fs layer
+Step #5: 30c57c31f5d8: Pulling fs layer
+Step #5: 22d308053b93: Pulling fs layer
+Step #5: 1097342ea385: Pulling fs layer
+Step #5: bd186134b811: Pulling fs layer
+Step #5: 677e42d1b9d1: Pulling fs layer
+Step #5: 2d6ed7b17cb1: Pulling fs layer
+Step #5: e10a87bd7060: Pulling fs layer
+Step #5: 22d308053b93: Waiting
+Step #5: 30c57c31f5d8: Waiting
+Step #5: 1097342ea385: Waiting
+Step #5: bd186134b811: Waiting
+Step #5: 677e42d1b9d1: Waiting
+Step #5: 2d6ed7b17cb1: Waiting
+Step #5: e10a87bd7060: Waiting
+Step #5: 3dbeb13c2966: Waiting
+Step #5: bb6360491f43: Waiting
+Step #5: b191dbce1e3d: Verifying Checksum
+Step #5: b191dbce1e3d: Download complete
+Step #5: 6ae575095cde: Verifying Checksum
+Step #5: 6ae575095cde: Download complete
+Step #5: b191dbce1e3d: Pull complete
+Step #5: bb6360491f43: Verifying Checksum
+Step #5: bb6360491f43: Download complete
+Step #5: 3dbeb13c2966: Verifying Checksum
+Step #5: 3dbeb13c2966: Download complete
+Step #5: 6ae575095cde: Pull complete
+Step #5: 22d308053b93: Verifying Checksum
+Step #5: 22d308053b93: Download complete
+Step #5: 1097342ea385: Verifying Checksum
+Step #5: 1097342ea385: Download complete
+Step #5: 5f4816311a2f: Verifying Checksum
+Step #5: 5f4816311a2f: Download complete
+Step #5: 677e42d1b9d1: Verifying Checksum
+Step #5: 677e42d1b9d1: Download complete
+Step #5: 2d6ed7b17cb1: Verifying Checksum
+Step #5: 2d6ed7b17cb1: Download complete
+Step #5: e10a87bd7060: Verifying Checksum
+Step #5: e10a87bd7060: Download complete
+Step #5: bd186134b811: Verifying Checksum
+Step #5: bd186134b811: Download complete
+Step #5: 30c57c31f5d8: Verifying Checksum
+Step #5: 30c57c31f5d8: Download complete
+Step #5: 5f4816311a2f: Pull complete
+Step #5: 3dbeb13c2966: Pull complete
+Step #5: bb6360491f43: Pull complete
+Step #5: 30c57c31f5d8: Pull complete
+Step #5: 22d308053b93: Pull complete
+Step #5: 1097342ea385: Pull complete
+Step #5: bd186134b811: Pull complete
+Step #5: 677e42d1b9d1: Pull complete
+Step #5: 2d6ed7b17cb1: Pull complete
+Step #5: e10a87bd7060: Pull complete
+Step #5: Digest: sha256:7a509f2bf85b3befb824cfb0c2341b779450262d32894c68bd67e48caba6be2b
+Step #5: Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #5: gcr.io/oss-fuzz-base/base-runner:latest
+Step #5: INFO: performing bad build checks for /tmp/not-out/ExampleValueProfileFuzzer
+Step #5: INFO: performing bad build checks for /tmp/not-out/ExampleFuzzer
+Step #5: INFO: performing bad build checks for /tmp/not-out/ExampleFuzzerNative
+Finished Step #5
+Starting Step #6
+Step #6: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #6
+Starting Step #7
+Step #7: Already have image: gcr.io/oss-fuzz/java-example
+Step #7:   adding: ExampleFuzzer (deflated 32%)
+Step #7:   adding: ExampleFuzzer.class (deflated 43%)
+Step #7:   adding: ExampleFuzzer.options (deflated 33%)
+Step #7:   adding: ExampleFuzzerNative (deflated 32%)
+Step #7:   adding: ExampleFuzzerNative.class (deflated 37%)
+Step #7:   adding: ExampleFuzzerNative.options (deflated 33%)
+Step #7:   adding: ExampleValueProfileFuzzer (deflated 32%)
+Step #7:   adding: ExampleValueProfileFuzzer.class (deflated 36%)
+Step #7:   adding: ExampleValueProfileFuzzer.options (deflated 33%)
+Step #7:   adding: jazzer_agent_deploy.jar (deflated 11%)
+Step #7:   adding: jazzer_driver (deflated 70%)
+Step #7:   adding: jazzer_driver_with_sanitizer (deflated 70%)
+Step #7:   adding: llvm-symbolizer (deflated 65%)
+Step #7:   adding: native/ (stored 0%)
+Step #7:   adding: native/libnative.so (deflated 72%)
+Finished Step #7
+Starting Step #8
+Step #8: Pulling image: gcr.io/oss-fuzz-base/uploader
+Step #8: Using default tag: latest
+Step #8: latest: Pulling from oss-fuzz-base/uploader
+Step #8: c62795f78da9: Pulling fs layer
+Step #8: d4fceeeb758e: Pulling fs layer
+Step #8: 5c9125a401ae: Pulling fs layer
+Step #8: 0062f774e994: Pulling fs layer
+Step #8: 6b33fd031fac: Pulling fs layer
+Step #8: 7eb39101e508: Pulling fs layer
+Step #8: 89257482f398: Pulling fs layer
+Step #8: 0062f774e994: Waiting
+Step #8: 6b33fd031fac: Waiting
+Step #8: 7eb39101e508: Waiting
+Step #8: 89257482f398: Waiting
+Step #8: 5c9125a401ae: Verifying Checksum
+Step #8: 5c9125a401ae: Download complete
+Step #8: d4fceeeb758e: Verifying Checksum
+Step #8: d4fceeeb758e: Download complete
+Step #8: 0062f774e994: Verifying Checksum
+Step #8: 0062f774e994: Download complete
+Step #8: 6b33fd031fac: Download complete
+Step #8: 89257482f398: Verifying Checksum
+Step #8: 89257482f398: Download complete
+Step #8: c62795f78da9: Verifying Checksum
+Step #8: c62795f78da9: Download complete
+Step #8: 7eb39101e508: Verifying Checksum
+Step #8: 7eb39101e508: Download complete
+Step #8: c62795f78da9: Pull complete
+Step #8: d4fceeeb758e: Pull complete
+Step #8: 5c9125a401ae: Pull complete
+Step #8: 0062f774e994: Pull complete
+Step #8: 6b33fd031fac: Pull complete
+Step #8: 7eb39101e508: Pull complete
+Step #8: 89257482f398: Pull complete
+Step #8: Digest: sha256:5717ba63d13b5515063e2a6ccad09fb5bf32a86c8e0798a363d81c2be522e411
+Step #8: Status: Downloaded newer image for gcr.io/oss-fuzz-base/uploader:latest
+Step #8: gcr.io/oss-fuzz-base/uploader:latest
+Step #8:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #8:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #8:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   166    0     0  100   166      0    830 --:--:-- --:--:-- --:--:--   830100   166    0     0  100   166      0    829 --:--:-- --:--:-- --:--:--   830
+Finished Step #8
+Starting Step #9
+Step #9: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #9:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #9:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #9:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 10.5M    0     0  100 10.5M      0  27.3M --:--:-- --:--:-- --:--:-- 27.2M100 10.5M    0     0  100 10.5M      0  27.3M --:--:-- --:--:-- --:--:-- 27.2M
+Finished Step #9
+Starting Step #10
+Step #10: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #10:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #10:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #10:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    60    0     0  100    60      0    258 --:--:-- --:--:-- --:--:--   259
+Finished Step #10
+Starting Step #11
+Step #11: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #11:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #11:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #11:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    37    0     0  100    37      0     91 --:--:-- --:--:-- --:--:--    91
+Finished Step #11
+Starting Step #12
+Step #12: Already have image: gcr.io/oss-fuzz/java-example
+Finished Step #12
+Starting Step #13
+Step #13: Already have image: gcr.io/oss-fuzz/java-example
+Step #13: ---------------------------------------------------------------
+Step #13: ---------------------------------------------------------------
+Step #13: CC=clang
+Step #13: CXX=clang++
+Step #13: CFLAGS=-O1 -fno-omit-frame-pointer -gline-tables-only -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=array-bounds,bool,builtin,enum,float-divide-by-zero,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unsigned-integer-overflow,unreachable,vla-bound,vptr -fno-sanitize-recover=array-bounds,bool,builtin,enum,float-divide-by-zero,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unreachable,vla-bound,vptr -fsanitize=fuzzer-no-link
+Step #13: CXXFLAGS=-O1 -fno-omit-frame-pointer -gline-tables-only -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=array-bounds,bool,builtin,enum,float-divide-by-zero,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unsigned-integer-overflow,unreachable,vla-bound,vptr -fno-sanitize-recover=array-bounds,bool,builtin,enum,float-divide-by-zero,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unreachable,vla-bound,vptr -fsanitize=fuzzer-no-link -stdlib=libc++
+Step #13: RUSTFLAGS=--cfg fuzzing -Cdebuginfo=1 -Cforce-frame-pointers
+Step #13: ---------------------------------------------------------------
+Step #13: + JVM_INCLUDES='-I/usr/lib/jvm/java-15-openjdk-amd64/include -I/usr/lib/jvm/java-15-openjdk-amd64/include/linux'
+Step #13: + mkdir /workspace/out/undefined/native
+Step #13: + clang++ -O1 -fno-omit-frame-pointer -gline-tables-only -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=array-bounds,bool,builtin,enum,float-divide-by-zero,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unsigned-integer-overflow,unreachable,vla-bound,vptr -fno-sanitize-recover=array-bounds,bool,builtin,enum,float-divide-by-zero,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unreachable,vla-bound,vptr -fsanitize=fuzzer-no-link -stdlib=libc++ -I/usr/lib/jvm/java-15-openjdk-amd64/include -I/usr/lib/jvm/java-15-openjdk-amd64/include/linux -fPIC -shared ExampleFuzzerNative.cpp -o /workspace/out/undefined/native/libnative.so
+Step #13: + BUILD_CLASSPATH=/usr/local/lib/jazzer_api_deploy.jar
+Step #13: + RUNTIME_CLASSPATH='$this_dir'
+Step #13: ++ find /src -name '*Fuzzer.java' -or -name '*FuzzerNative.java'
+Step #13: + for fuzzer in '$(find $SRC -name '\''*Fuzzer.java'\'' -or -name '\''*FuzzerNative.java'\'')'
+Step #13: ++ basename -s .java /src/ExampleValueProfileFuzzer.java
+Step #13: + fuzzer_basename=ExampleValueProfileFuzzer
+Step #13: + javac -cp /usr/local/lib/jazzer_api_deploy.jar /src/ExampleValueProfileFuzzer.java
+Step #13: + cp /src/ExampleValueProfileFuzzer.class /workspace/out/undefined/
+Step #13: + [[ ExampleValueProfileFuzzer == *FuzzerNative ]]
+Step #13: + driver=jazzer_driver
+Step #13: + cp default.options /workspace/out/undefined/ExampleValueProfileFuzzer.options
+Step #13: + echo '#!/bin/sh
+Step #13: # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #13: this_dir=$(dirname "$0")
+Step #13: LD_LIBRARY_PATH="/usr/lib/jvm/java-15-openjdk-amd64/lib/server":$this_dir/native ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir --target_class=ExampleValueProfileFuzzer --jvm_args="-Xmx2048m" $@'
+Step #13: + chmod +x /workspace/out/undefined/ExampleValueProfileFuzzer
+Step #13: + for fuzzer in '$(find $SRC -name '\''*Fuzzer.java'\'' -or -name '\''*FuzzerNative.java'\'')'
+Step #13: ++ basename -s .java /src/ExampleFuzzer.java
+Step #13: + fuzzer_basename=ExampleFuzzer
+Step #13: + javac -cp /usr/local/lib/jazzer_api_deploy.jar /src/ExampleFuzzer.java
+Step #13: + cp /src/ExampleFuzzer.class /workspace/out/undefined/
+Step #13: + [[ ExampleFuzzer == *FuzzerNative ]]
+Step #13: + driver=jazzer_driver
+Step #13: + cp default.options /workspace/out/undefined/ExampleFuzzer.options
+Step #13: + echo '#!/bin/sh
+Step #13: # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #13: this_dir=$(dirname "$0")
+Step #13: LD_LIBRARY_PATH="/usr/lib/jvm/java-15-openjdk-amd64/lib/server":$this_dir/native ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir --target_class=ExampleFuzzer --jvm_args="-Xmx2048m" $@'
+Step #13: + chmod +x /workspace/out/undefined/ExampleFuzzer
+Step #13: + for fuzzer in '$(find $SRC -name '\''*Fuzzer.java'\'' -or -name '\''*FuzzerNative.java'\'')'
+Step #13: ++ basename -s .java /src/ExampleFuzzerNative.java
+Step #13: + fuzzer_basename=ExampleFuzzerNative
+Step #13: + javac -cp /usr/local/lib/jazzer_api_deploy.jar /src/ExampleFuzzerNative.java
+Step #13: + cp /src/ExampleFuzzerNative.class /workspace/out/undefined/
+Step #13: + [[ ExampleFuzzerNative == *FuzzerNative ]]
+Step #13: + driver=jazzer_driver_with_sanitizer
+Step #13: + cp default.options /workspace/out/undefined/ExampleFuzzerNative.options
+Step #13: + echo '#!/bin/sh
+Step #13: # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #13: this_dir=$(dirname "$0")
+Step #13: LD_LIBRARY_PATH="/usr/lib/jvm/java-15-openjdk-amd64/lib/server":$this_dir/native ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/jazzer_driver_with_sanitizer --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir --target_class=ExampleFuzzerNative --jvm_args="-Xmx2048m" $@'
+Step #13: + chmod +x /workspace/out/undefined/ExampleFuzzerNative
+Finished Step #13
+Starting Step #14
+Step #14: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Step #14: INFO: performing bad build checks for /tmp/not-out/ExampleValueProfileFuzzer
+Step #14: INFO: performing bad build checks for /tmp/not-out/ExampleFuzzerNative
+Step #14: INFO: performing bad build checks for /tmp/not-out/ExampleFuzzer
+Finished Step #14
+Starting Step #15
+Step #15: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #15
+Starting Step #16
+Step #16: Already have image: gcr.io/oss-fuzz/java-example
+Step #16:   adding: ExampleFuzzer (deflated 32%)
+Step #16:   adding: ExampleFuzzer.class (deflated 43%)
+Step #16:   adding: ExampleFuzzer.options (deflated 33%)
+Step #16:   adding: ExampleFuzzerNative (deflated 32%)
+Step #16:   adding: ExampleFuzzerNative.class (deflated 37%)
+Step #16:   adding: ExampleFuzzerNative.options (deflated 33%)
+Step #16:   adding: ExampleValueProfileFuzzer (deflated 32%)
+Step #16:   adding: ExampleValueProfileFuzzer.class (deflated 36%)
+Step #16:   adding: ExampleValueProfileFuzzer.options (deflated 33%)
+Step #16:   adding: jazzer_agent_deploy.jar (deflated 11%)
+Step #16:   adding: jazzer_driver (deflated 70%)
+Step #16:   adding: jazzer_driver_with_sanitizer (deflated 70%)
+Step #16:   adding: llvm-symbolizer (deflated 65%)
+Step #16:   adding: native/ (stored 0%)
+Step #16:   adding: native/libnative.so (deflated 72%)
+Finished Step #16
+Starting Step #17
+Step #17: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #17:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #17:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #17:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   166    0     0  100   166      0    800 --:--:-- --:--:-- --:--:--   798
+Finished Step #17
+Starting Step #18
+Step #18: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #18:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #18:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #18:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 10.0M    0     0  100 10.0M      0  48.9M --:--:-- --:--:-- --:--:-- 48.8M100 10.0M    0     0  100 10.0M      0  25.2M --:--:-- --:--:-- --:--:-- 25.2M
+Finished Step #18
+Starting Step #19
+Step #19: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #19:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #19:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #19:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    60    0     0  100    60      0    247 --:--:-- --:--:-- --:--:--   246100    60    0     0  100    60      0    247 --:--:-- --:--:-- --:--:--   246
+Finished Step #19
+Starting Step #20
+Step #20: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #20:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #20:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #20:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    39    0     0  100    39      0    175 --:--:-- --:--:-- --:--:--   175
+Finished Step #20
+Starting Step #21
+Step #21: Already have image: gcr.io/oss-fuzz/java-example
+Finished Step #21
+PUSH
+DONE

@@ -1,0 +1,1536 @@
+starting build "05022379-fdf2-4c27-82d2-03f1b738a29c"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f"
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Sending build context to Docker daemon  11.26kB
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Step 1/9 : FROM gcr.io/oss-fuzz-base/base-builder-python
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": latest: Pulling from oss-fuzz-base/base-builder-python
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": b549f31133a9: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": cd18e4a30c2a: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": b58b73ab52e9: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5f76a6ebf1bf: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c410c19de21d: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 3a07cafcfd5f: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": ede70edf103d: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": fb348cfde8ea: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 0b808471114d: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": f8434df993c2: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 1f95da7dd7ed: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c7b891ded878: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d1392738daa4: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 82f0a273a9b6: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 4b0f4899efd5: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5ee0d3c2a1f3: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 650456f64a40: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 62d60654b975: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2bcbcd0e0178: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5f76a6ebf1bf: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 0b808471114d: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2a366f1f9403: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": fdff76ca8d6c: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": f8434df993c2: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 87a33d77c44e: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c410c19de21d: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": af9cc40b9546: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 1f95da7dd7ed: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 8c7ef36dc00d: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 3a07cafcfd5f: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5b05ba1c4354: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 8c0a4d97aee8: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5e51812eca81: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": ede70edf103d: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 9cc98e6b642d: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": f8fe7269232f: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c7b891ded878: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 244fc348710a: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d3ac5db83125: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2edaf31238fc: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d1392738daa4: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d024fd452146: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 82f0a273a9b6: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 8aab5be69487: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": fb348cfde8ea: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 40ba1b2bfbbb: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": cb4068c83396: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2679f3eb2425: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c321bf99c319: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2bcbcd0e0178: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 62d60654b975: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 4b0f4899efd5: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 346aa8f53909: Pulling fs layer
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5ee0d3c2a1f3: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2a366f1f9403: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 244fc348710a: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": fdff76ca8d6c: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 650456f64a40: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 87a33d77c44e: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d3ac5db83125: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": cb4068c83396: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": af9cc40b9546: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c321bf99c319: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2edaf31238fc: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 346aa8f53909: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 40ba1b2bfbbb: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2679f3eb2425: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 8c0a4d97aee8: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d024fd452146: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": f8fe7269232f: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5e51812eca81: Waiting
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": b58b73ab52e9: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": b549f31133a9: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": b549f31133a9: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c410c19de21d: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5f76a6ebf1bf: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5f76a6ebf1bf: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c410c19de21d: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": ede70edf103d: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": ede70edf103d: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": fb348cfde8ea: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": fb348cfde8ea: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": cd18e4a30c2a: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": cd18e4a30c2a: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": b549f31133a9: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": f8434df993c2: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": f8434df993c2: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 1f95da7dd7ed: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 1f95da7dd7ed: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c7b891ded878: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c7b891ded878: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d1392738daa4: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d1392738daa4: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 0b808471114d: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 0b808471114d: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 82f0a273a9b6: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 82f0a273a9b6: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5ee0d3c2a1f3: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 4b0f4899efd5: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 4b0f4899efd5: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 650456f64a40: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 650456f64a40: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 62d60654b975: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 62d60654b975: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2a366f1f9403: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2a366f1f9403: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2bcbcd0e0178: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2bcbcd0e0178: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": fdff76ca8d6c: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": fdff76ca8d6c: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 87a33d77c44e: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 8c7ef36dc00d: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 8c7ef36dc00d: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": af9cc40b9546: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": af9cc40b9546: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5b05ba1c4354: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5b05ba1c4354: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 8c0a4d97aee8: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5e51812eca81: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 9cc98e6b642d: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 9cc98e6b642d: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": f8fe7269232f: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": f8fe7269232f: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d3ac5db83125: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 244fc348710a: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 244fc348710a: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": cd18e4a30c2a: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 3a07cafcfd5f: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 3a07cafcfd5f: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": b58b73ab52e9: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2edaf31238fc: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2edaf31238fc: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d024fd452146: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d024fd452146: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 8aab5be69487: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 40ba1b2bfbbb: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": cb4068c83396: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": cb4068c83396: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2679f3eb2425: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2679f3eb2425: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c321bf99c319: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c321bf99c319: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 346aa8f53909: Verifying Checksum
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 346aa8f53909: Download complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5f76a6ebf1bf: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c410c19de21d: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 3a07cafcfd5f: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": ede70edf103d: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": fb348cfde8ea: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 0b808471114d: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": f8434df993c2: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 1f95da7dd7ed: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c7b891ded878: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d1392738daa4: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 82f0a273a9b6: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 4b0f4899efd5: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5ee0d3c2a1f3: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 650456f64a40: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 62d60654b975: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2bcbcd0e0178: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2a366f1f9403: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": fdff76ca8d6c: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 87a33d77c44e: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": af9cc40b9546: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 8c7ef36dc00d: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5b05ba1c4354: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 8c0a4d97aee8: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 5e51812eca81: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 9cc98e6b642d: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": f8fe7269232f: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 244fc348710a: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d3ac5db83125: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2edaf31238fc: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": d024fd452146: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 8aab5be69487: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 40ba1b2bfbbb: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": cb4068c83396: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 2679f3eb2425: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": c321bf99c319: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 346aa8f53909: Pull complete
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Digest: sha256:052f0a8becca57124ae6595d25b8d81d049a171afd39ba57d087dcf90f4161bd
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-python:latest
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> 1de8463b736d
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Step 2/9 : RUN apt-get update -y && apt-get install -y wget software-properties-common
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> Running in 336f018c804e
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Fetched 383 kB in 1s (376 kB/s)
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Reading package lists...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Reading package lists...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Building dependency tree...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Reading state information...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": wget is already the newest version (1.20.3-1ubuntu2.1).
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": The following packages were automatically installed and are no longer required:
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   autotools-dev libsigsegv2 m4
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Use 'apt autoremove' to remove them.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": The following additional packages will be installed:
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   dbus dbus-user-session dconf-gsettings-backend dconf-service
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   distro-info-data dmsetup file gir1.2-glib-2.0 gir1.2-packagekitglib-1.0
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   glib-networking glib-networking-common glib-networking-services
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   gsettings-desktop-schemas iso-codes libapparmor1 libappstream4 libargon2-1
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libcap2 libcap2-bin libcryptsetup12 libdbus-1-3 libdconf1 libdevmapper1.02.1
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libelf1 libgirepository-1.0-1 libglib2.0-0 libglib2.0-bin libglib2.0-data
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libgstreamer1.0-0 libicu66 libip4tc2 libjson-c4 libkmod2 liblmdb0
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libmagic-mgc libmagic1 libmpdec2 libnss-systemd libpackagekit-glib2-18
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libpam-cap libpam-systemd libpolkit-agent-1-0 libpolkit-gobject-1-0
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libproxy1v5 libpython3-stdlib libpython3.8-minimal libpython3.8-stdlib
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libsoup2.4-1 libstemmer0d libxml2 libyaml-0-2 lsb-release mime-support
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   networkd-dispatcher packagekit packagekit-tools policykit-1
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python-apt-common python3 python3-apt python3-certifi python3-chardet
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3-dbus python3-distro-info python3-gi python3-idna python3-minimal
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3-pkg-resources python3-requests python3-requests-unixsocket
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3-six python3-software-properties python3-urllib3 python3.8
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3.8-minimal shared-mime-info systemd systemd-sysv systemd-timesyncd
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   ucf unattended-upgrades xdg-user-dirs
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Suggested packages:
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   isoquery gstreamer1.0-tools iw | wireless-tools appstream python3-doc
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3-tk python3-venv python3-apt-dbg python-apt-doc python-dbus-doc
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3-dbus-dbg python3-setuptools python3-cryptography python3-openssl
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3-socks python3.8-venv python3.8-doc binfmt-support systemd-container
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   bsd-mailx default-mta | mail-transport-agent needrestart powermgmt-base
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": The following NEW packages will be installed:
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   dbus dbus-user-session dconf-gsettings-backend dconf-service
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   distro-info-data dmsetup file gir1.2-glib-2.0 gir1.2-packagekitglib-1.0
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   glib-networking glib-networking-common glib-networking-services
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   gsettings-desktop-schemas iso-codes libapparmor1 libappstream4 libargon2-1
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libcap2 libcap2-bin libcryptsetup12 libdbus-1-3 libdconf1 libdevmapper1.02.1
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libelf1 libgirepository-1.0-1 libglib2.0-0 libglib2.0-bin libglib2.0-data
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libgstreamer1.0-0 libicu66 libip4tc2 libjson-c4 libkmod2 liblmdb0
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libmagic-mgc libmagic1 libmpdec2 libnss-systemd libpackagekit-glib2-18
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libpam-cap libpam-systemd libpolkit-agent-1-0 libpolkit-gobject-1-0
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libproxy1v5 libpython3-stdlib libpython3.8-minimal libpython3.8-stdlib
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libsoup2.4-1 libstemmer0d libxml2 libyaml-0-2 lsb-release mime-support
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   networkd-dispatcher packagekit packagekit-tools policykit-1
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python-apt-common python3 python3-apt python3-certifi python3-chardet
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3-dbus python3-distro-info python3-gi python3-idna python3-minimal
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3-pkg-resources python3-requests python3-requests-unixsocket
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3-six python3-software-properties python3-urllib3 python3.8
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3.8-minimal shared-mime-info software-properties-common systemd
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   systemd-sysv systemd-timesyncd ucf unattended-upgrades xdg-user-dirs
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 0 upgraded, 83 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Need to get 27.7 MB of archives.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": After this operation, 127 MB of additional disk space will be used.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-minimal amd64 3.8.10-0ubuntu1~20.04.18 [721 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8-minimal amd64 3.8.10-0ubuntu1~20.04.18 [1900 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-minimal amd64 3.8.2-0ubuntu2 [23.6 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 mime-support all 3.64ubuntu1 [30.6 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpdec2 amd64 2.4.2-3 [81.1 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-stdlib amd64 3.8.10-0ubuntu1~20.04.18 [1676 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8 amd64 3.8.10-0ubuntu1~20.04.18 [387 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libpython3-stdlib amd64 3.8.2-0ubuntu2 [7068 B]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 python3 amd64 3.8.2-0ubuntu2 [47.6 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libapparmor1 amd64 2.13.3-7ubuntu5.4 [36.0 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcap2 amd64 1:2.32-1ubuntu0.2 [15.7 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 libargon2-1 amd64 0~20171227-0.2 [19.2 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libdevmapper1.02.1 amd64 2:1.02.167-1ubuntu1 [127 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libjson-c4 amd64 0.13.1+dfsg-7ubuntu0.3 [29.3 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcryptsetup12 amd64 2:2.2.2-3ubuntu2.5 [166 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libip4tc2 amd64 1.8.4-3ubuntu2.1 [19.1 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkmod2 amd64 27-1ubuntu2.1 [45.3 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd-timesyncd amd64 245.4-4ubuntu3.24 [28.1 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd amd64 245.4-4ubuntu3.24 [3815 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd-sysv amd64 245.4-4ubuntu3.24 [10.3 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdbus-1-3 amd64 1.12.16-2ubuntu2.3 [179 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 dbus amd64 1.12.16-2ubuntu2.3 [151 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 distro-info-data all 0.43ubuntu1.18 [5020 B]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:24 http://archive.ubuntu.com/ubuntu focal/main amd64 dmsetup amd64 2:1.02.167-1ubuntu1 [75.6 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:26 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:27 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:28 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:29 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgirepository-1.0-1 amd64 1.64.1-1~ubuntu20.04.1 [85.7 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:30 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gir1.2-glib-2.0 amd64 1.64.1-1~ubuntu20.04.1 [134 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:31 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcap2-bin amd64 1:2.32-1ubuntu0.2 [26.2 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:32 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libelf1 amd64 0.176-1.1ubuntu0.1 [44.2 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:33 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:34 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:35 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libnss-systemd amd64 245.4-4ubuntu3.24 [95.8 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:36 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpam-cap amd64 1:2.32-1ubuntu0.2 [8376 B]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:37 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpam-systemd amd64 245.4-4ubuntu3.24 [186 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:38 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:39 http://archive.ubuntu.com/ubuntu focal/main amd64 libyaml-0-2 amd64 0.2.2-1 [48.9 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:40 http://archive.ubuntu.com/ubuntu focal/main amd64 lsb-release all 11.1.0ubuntu2 [10.6 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:41 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-dbus amd64 1.2.16-1build1 [94.0 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:42 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-gi amd64 3.36.0-1 [165 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:43 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 networkd-dispatcher all 2.1-2~ubuntu20.04.3 [15.5 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:44 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-pkg-resources all 45.2.0-1ubuntu0.3 [130 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:45 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-six all 1.14.0-2 [12.1 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:46 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:47 http://archive.ubuntu.com/ubuntu focal/main amd64 ucf all 3.0038+nmu1 [51.6 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:48 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:49 http://archive.ubuntu.com/ubuntu focal/main amd64 iso-codes all 4.4-1 [2695 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:50 http://archive.ubuntu.com/ubuntu focal/main amd64 liblmdb0 amd64 0.9.24-1 [44.6 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:51 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpolkit-gobject-1-0 amd64 0.105-26ubuntu1.3 [39.2 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:52 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python-apt-common all 2.0.1ubuntu0.20.04.1 [16.5 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:53 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-apt amd64 2.0.1ubuntu0.20.04.1 [154 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:54 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-distro-info all 0.23ubuntu1.1 [5944 B]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:55 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 dbus-user-session amd64 1.12.16-2ubuntu2.3 [9424 B]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:56 http://archive.ubuntu.com/ubuntu focal/main amd64 libdconf1 amd64 0.36.0-1 [37.4 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:57 http://archive.ubuntu.com/ubuntu focal/main amd64 dconf-service amd64 0.36.0-1 [29.8 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:58 http://archive.ubuntu.com/ubuntu focal/main amd64 dconf-gsettings-backend amd64 0.36.0-1 [22.5 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:59 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpackagekit-glib2-18 amd64 1.1.13-2ubuntu1.1 [104 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:60 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gir1.2-packagekitglib-1.0 amd64 1.1.13-2ubuntu1.1 [21.6 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:61 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libproxy1v5 amd64 0.4.15-10ubuntu1.2 [49.1 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:62 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 glib-networking-common all 2.64.2-1ubuntu0.1 [5040 B]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:63 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 glib-networking-services amd64 2.64.2-1ubuntu0.1 [10.6 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:64 http://archive.ubuntu.com/ubuntu focal/main amd64 gsettings-desktop-schemas all 3.36.0-1ubuntu1 [29.0 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:65 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 glib-networking amd64 2.64.2-1ubuntu0.1 [58.2 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:66 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsoup2.4-1 amd64 2.70.0-1ubuntu0.5 [263 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:67 http://archive.ubuntu.com/ubuntu focal/main amd64 libstemmer0d amd64 0+svn585-2 [61.7 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:68 http://archive.ubuntu.com/ubuntu focal/main amd64 libappstream4 amd64 0.12.10-2 [129 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:69 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-bin amd64 2.64.6-1~ubuntu20.04.9 [72.9 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:70 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgstreamer1.0-0 amd64 1.16.3-0ubuntu1.2 [894 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:71 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpolkit-agent-1-0 amd64 0.105-26ubuntu1.3 [15.2 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:72 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 policykit-1 amd64 0.105-26ubuntu1.3 [84.1 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:73 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 packagekit amd64 1.1.13-2ubuntu1.1 [408 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:74 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 packagekit-tools amd64 1.1.13-2ubuntu1.1 [32.8 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:75 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-certifi all 2019.11.28-1 [149 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:76 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-chardet all 3.0.4-4build1 [80.4 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:77 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-idna all 2.8-1ubuntu0.1 [36.2 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:78 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-urllib3 all 1.25.8-2ubuntu0.4 [88.7 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:79 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-requests all 2.22.0-2ubuntu1.1 [47.2 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:80 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-requests-unixsocket all 0.2.0-2 [7272 B]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:81 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-software-properties all 0.99.9.12 [21.7 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:82 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 software-properties-common all 0.99.9.12 [10.4 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:83 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 unattended-upgrades all 2.3ubuntu0.3 [48.5 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": [0mFetched 27.7 MB in 3s (9024 kB/s)
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libpython3.8-minimal:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../libpython3.8-minimal_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libpython3.8-minimal:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3.8-minimal.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../python3.8-minimal_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3.8-minimal (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libpython3.8-minimal:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3.8-minimal (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-minimal.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17766 files and directories currently installed.)
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../0-python3-minimal_3.8.2-0ubuntu2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-minimal (3.8.2-0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package mime-support.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../1-mime-support_3.64ubuntu1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking mime-support (3.64ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libmpdec2:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../2-libmpdec2_2.4.2-3_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libmpdec2:amd64 (2.4.2-3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libpython3.8-stdlib:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../3-libpython3.8-stdlib_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libpython3.8-stdlib:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3.8.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../4-python3.8_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3.8 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libpython3-stdlib:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../5-libpython3-stdlib_3.8.2-0ubuntu2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libpython3-stdlib:amd64 (3.8.2-0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-minimal (3.8.2-0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18168 files and directories currently installed.)
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../00-python3_3.8.2-0ubuntu2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3 (3.8.2-0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libapparmor1:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../01-libapparmor1_2.13.3-7ubuntu5.4_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libapparmor1:amd64 (2.13.3-7ubuntu5.4) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libcap2:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../02-libcap2_1%3a2.32-1ubuntu0.2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libcap2:amd64 (1:2.32-1ubuntu0.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libargon2-1:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../03-libargon2-1_0~20171227-0.2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libargon2-1:amd64 (0~20171227-0.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libdevmapper1.02.1:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../04-libdevmapper1.02.1_2%3a1.02.167-1ubuntu1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libdevmapper1.02.1:amd64 (2:1.02.167-1ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libjson-c4:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../05-libjson-c4_0.13.1+dfsg-7ubuntu0.3_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libjson-c4:amd64 (0.13.1+dfsg-7ubuntu0.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libcryptsetup12:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../06-libcryptsetup12_2%3a2.2.2-3ubuntu2.5_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libcryptsetup12:amd64 (2:2.2.2-3ubuntu2.5) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libip4tc2:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../07-libip4tc2_1.8.4-3ubuntu2.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libip4tc2:amd64 (1.8.4-3ubuntu2.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libkmod2:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../08-libkmod2_27-1ubuntu2.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libkmod2:amd64 (27-1ubuntu2.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package systemd-timesyncd.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../09-systemd-timesyncd_245.4-4ubuntu3.24_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking systemd-timesyncd (245.4-4ubuntu3.24) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package systemd.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../10-systemd_245.4-4ubuntu3.24_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking systemd (245.4-4ubuntu3.24) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libapparmor1:amd64 (2.13.3-7ubuntu5.4) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libcap2:amd64 (1:2.32-1ubuntu0.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libargon2-1:amd64 (0~20171227-0.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libdevmapper1.02.1:amd64 (2:1.02.167-1ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libjson-c4:amd64 (0.13.1+dfsg-7ubuntu0.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libcryptsetup12:amd64 (2:2.2.2-3ubuntu2.5) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libip4tc2:amd64 (1.8.4-3ubuntu2.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libkmod2:amd64 (27-1ubuntu2.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up systemd-timesyncd (245.4-4ubuntu3.24) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Created symlink /etc/systemd/system/dbus-org.freedesktop.timesync1.service → /lib/systemd/system/systemd-timesyncd.service.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Created symlink /etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service → /lib/systemd/system/systemd-timesyncd.service.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up systemd (245.4-4ubuntu3.24) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Created symlink /etc/systemd/system/getty.target.wants/getty@tty1.service → /lib/systemd/system/getty@.service.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Created symlink /etc/systemd/system/multi-user.target.wants/remote-fs.target → /lib/systemd/system/remote-fs.target.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Created symlink /etc/systemd/system/dbus-org.freedesktop.resolve1.service → /lib/systemd/system/systemd-resolved.service.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Created symlink /etc/systemd/system/multi-user.target.wants/systemd-resolved.service → /lib/systemd/system/systemd-resolved.service.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": ln: failed to create symbolic link '/etc/resolv.conf': Device or resource busy
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Created symlink /etc/systemd/system/multi-user.target.wants/ondemand.service → /lib/systemd/system/ondemand.service.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Created symlink /etc/systemd/system/sysinit.target.wants/systemd-pstore.service → /lib/systemd/system/systemd-pstore.service.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Initializing machine ID from random generator.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package systemd-sysv.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18998 files and directories currently installed.)
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../00-systemd-sysv_245.4-4ubuntu3.24_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking systemd-sysv (245.4-4ubuntu3.24) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libdbus-1-3:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../01-libdbus-1-3_1.12.16-2ubuntu2.3_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libdbus-1-3:amd64 (1.12.16-2ubuntu2.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package dbus.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../02-dbus_1.12.16-2ubuntu2.3_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking dbus (1.12.16-2ubuntu2.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package distro-info-data.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../03-distro-info-data_0.43ubuntu1.18_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking distro-info-data (0.43ubuntu1.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package dmsetup.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../04-dmsetup_2%3a1.02.167-1ubuntu1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking dmsetup (2:1.02.167-1ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../05-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../06-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package file.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../07-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking file (1:5.38-4) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libglib2.0-0:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../08-libglib2.0-0_2.64.6-1~ubuntu20.04.9_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libgirepository-1.0-1:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../09-libgirepository-1.0-1_1.64.1-1~ubuntu20.04.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libgirepository-1.0-1:amd64 (1.64.1-1~ubuntu20.04.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package gir1.2-glib-2.0:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../10-gir1.2-glib-2.0_1.64.1-1~ubuntu20.04.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking gir1.2-glib-2.0:amd64 (1.64.1-1~ubuntu20.04.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libcap2-bin.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../11-libcap2-bin_1%3a2.32-1ubuntu0.2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libcap2-bin (1:2.32-1ubuntu0.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libelf1:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../12-libelf1_0.176-1.1ubuntu0.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libelf1:amd64 (0.176-1.1ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libglib2.0-data.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../13-libglib2.0-data_2.64.6-1~ubuntu20.04.9_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libicu66:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../14-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libnss-systemd:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../15-libnss-systemd_245.4-4ubuntu3.24_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libnss-systemd:amd64 (245.4-4ubuntu3.24) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libpam-cap:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../16-libpam-cap_1%3a2.32-1ubuntu0.2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libpam-cap:amd64 (1:2.32-1ubuntu0.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libpam-systemd:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../17-libpam-systemd_245.4-4ubuntu3.24_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libpam-systemd:amd64 (245.4-4ubuntu3.24) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libxml2:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../18-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libyaml-0-2:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../19-libyaml-0-2_0.2.2-1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libyaml-0-2:amd64 (0.2.2-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package lsb-release.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../20-lsb-release_11.1.0ubuntu2_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking lsb-release (11.1.0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-dbus.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../21-python3-dbus_1.2.16-1build1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-dbus (1.2.16-1build1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-gi.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../22-python3-gi_3.36.0-1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-gi (3.36.0-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package networkd-dispatcher.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../23-networkd-dispatcher_2.1-2~ubuntu20.04.3_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking networkd-dispatcher (2.1-2~ubuntu20.04.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-pkg-resources.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../24-python3-pkg-resources_45.2.0-1ubuntu0.3_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-pkg-resources (45.2.0-1ubuntu0.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-six.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../25-python3-six_1.14.0-2_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-six (1.14.0-2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package shared-mime-info.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../26-shared-mime-info_1.15-1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking shared-mime-info (1.15-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package ucf.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../27-ucf_3.0038+nmu1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Moving old data out of the way
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking ucf (3.0038+nmu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package xdg-user-dirs.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../28-xdg-user-dirs_0.17-2ubuntu1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package iso-codes.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../29-iso-codes_4.4-1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking iso-codes (4.4-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package liblmdb0:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../30-liblmdb0_0.9.24-1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking liblmdb0:amd64 (0.9.24-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libpolkit-gobject-1-0:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../31-libpolkit-gobject-1-0_0.105-26ubuntu1.3_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libpolkit-gobject-1-0:amd64 (0.105-26ubuntu1.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python-apt-common.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../32-python-apt-common_2.0.1ubuntu0.20.04.1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python-apt-common (2.0.1ubuntu0.20.04.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-apt.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../33-python3-apt_2.0.1ubuntu0.20.04.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-apt (2.0.1ubuntu0.20.04.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-distro-info.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../34-python3-distro-info_0.23ubuntu1.1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-distro-info (0.23ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package dbus-user-session.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../35-dbus-user-session_1.12.16-2ubuntu2.3_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking dbus-user-session (1.12.16-2ubuntu2.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libdconf1:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../36-libdconf1_0.36.0-1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libdconf1:amd64 (0.36.0-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package dconf-service.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../37-dconf-service_0.36.0-1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking dconf-service (0.36.0-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package dconf-gsettings-backend:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../38-dconf-gsettings-backend_0.36.0-1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking dconf-gsettings-backend:amd64 (0.36.0-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libpackagekit-glib2-18:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../39-libpackagekit-glib2-18_1.1.13-2ubuntu1.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libpackagekit-glib2-18:amd64 (1.1.13-2ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package gir1.2-packagekitglib-1.0.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../40-gir1.2-packagekitglib-1.0_1.1.13-2ubuntu1.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking gir1.2-packagekitglib-1.0 (1.1.13-2ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libproxy1v5:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../41-libproxy1v5_0.4.15-10ubuntu1.2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libproxy1v5:amd64 (0.4.15-10ubuntu1.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package glib-networking-common.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../42-glib-networking-common_2.64.2-1ubuntu0.1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking glib-networking-common (2.64.2-1ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package glib-networking-services.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../43-glib-networking-services_2.64.2-1ubuntu0.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking glib-networking-services (2.64.2-1ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package gsettings-desktop-schemas.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../44-gsettings-desktop-schemas_3.36.0-1ubuntu1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking gsettings-desktop-schemas (3.36.0-1ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package glib-networking:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../45-glib-networking_2.64.2-1ubuntu0.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking glib-networking:amd64 (2.64.2-1ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libsoup2.4-1:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../46-libsoup2.4-1_2.70.0-1ubuntu0.5_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libsoup2.4-1:amd64 (2.70.0-1ubuntu0.5) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libstemmer0d:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../47-libstemmer0d_0+svn585-2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libstemmer0d:amd64 (0+svn585-2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libappstream4:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../48-libappstream4_0.12.10-2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libappstream4:amd64 (0.12.10-2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libglib2.0-bin.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../49-libglib2.0-bin_2.64.6-1~ubuntu20.04.9_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libglib2.0-bin (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libgstreamer1.0-0:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../50-libgstreamer1.0-0_1.16.3-0ubuntu1.2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libgstreamer1.0-0:amd64 (1.16.3-0ubuntu1.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libpolkit-agent-1-0:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../51-libpolkit-agent-1-0_0.105-26ubuntu1.3_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libpolkit-agent-1-0:amd64 (0.105-26ubuntu1.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package policykit-1.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../52-policykit-1_0.105-26ubuntu1.3_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking policykit-1 (0.105-26ubuntu1.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package packagekit.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../53-packagekit_1.1.13-2ubuntu1.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking packagekit (1.1.13-2ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package packagekit-tools.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../54-packagekit-tools_1.1.13-2ubuntu1.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking packagekit-tools (1.1.13-2ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-certifi.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../55-python3-certifi_2019.11.28-1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-certifi (2019.11.28-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-chardet.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../56-python3-chardet_3.0.4-4build1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-chardet (3.0.4-4build1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-idna.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../57-python3-idna_2.8-1ubuntu0.1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-idna (2.8-1ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-urllib3.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../58-python3-urllib3_1.25.8-2ubuntu0.4_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-urllib3 (1.25.8-2ubuntu0.4) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-requests.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../59-python3-requests_2.22.0-2ubuntu1.1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-requests (2.22.0-2ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-requests-unixsocket.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../60-python3-requests-unixsocket_0.2.0-2_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-requests-unixsocket (0.2.0-2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-software-properties.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../61-python3-software-properties_0.99.9.12_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-software-properties (0.99.9.12) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package software-properties-common.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../62-software-properties-common_0.99.9.12_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking software-properties-common (0.99.9.12) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package unattended-upgrades.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../63-unattended-upgrades_2.3ubuntu0.3_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking unattended-upgrades (2.3ubuntu0.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up liblmdb0:amd64 (0.9.24-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up systemd-sysv (245.4-4ubuntu3.24) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libproxy1v5:amd64 (0.4.15-10ubuntu1.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up mime-support (3.64ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libyaml-0-2:amd64 (0.2.2-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up distro-info-data (0.43ubuntu1.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libpackagekit-glib2-18:amd64 (1.1.13-2ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libnss-systemd:amd64 (245.4-4ubuntu3.24) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": First installation detected...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Checking NSS setup...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up file (1:5.38-4) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libcap2-bin (1:2.32-1ubuntu0.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libdconf1:amd64 (0.36.0-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libdbus-1-3:amd64 (1.12.16-2ubuntu2.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up dbus (1.12.16-2ubuntu2.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up ucf (3.0038+nmu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python-apt-common (2.0.1ubuntu0.20.04.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up dmsetup (2:1.02.167-1ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libpam-systemd:amd64 (245.4-4ubuntu3.24) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libgirepository-1.0-1:amd64 (1.64.1-1~ubuntu20.04.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libstemmer0d:amd64 (0+svn585-2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libmpdec2:amd64 (2.4.2-3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up glib-networking-common (2.64.2-1ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libpython3.8-stdlib:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3.8 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libelf1:amd64 (0.176-1.1ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libpam-cap:amd64 (1:2.32-1ubuntu0.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up iso-codes (4.4-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libpolkit-gobject-1-0:amd64 (0.105-26ubuntu1.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libgstreamer1.0-0:amd64 (1.16.3-0ubuntu1.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setcap worked! gst-ptp-helper is not suid!
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libpython3-stdlib:amd64 (3.8.2-0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up glib-networking-services (2.64.2-1ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libglib2.0-bin (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3 (3.8.2-0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-six (1.14.0-2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up dbus-user-session (1.12.16-2ubuntu2.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-certifi (2019.11.28-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up shared-mime-info (1.15-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-idna (2.8-1ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up gir1.2-glib-2.0:amd64 (1.64.1-1~ubuntu20.04.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-urllib3 (1.25.8-2ubuntu0.4) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libpolkit-agent-1-0:amd64 (0.105-26ubuntu1.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up lsb-release (11.1.0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-distro-info (0.23ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up policykit-1 (0.105-26ubuntu1.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-pkg-resources (45.2.0-1ubuntu0.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-dbus (1.2.16-1build1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-apt (2.0.1ubuntu0.20.04.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up dconf-service (0.36.0-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up gir1.2-packagekitglib-1.0 (1.1.13-2ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up unattended-upgrades (2.3ubuntu0.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Creating config file /etc/apt/apt.conf.d/20auto-upgrades with new version
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Creating config file /etc/apt/apt.conf.d/50unattended-upgrades with new version
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Created symlink /etc/systemd/system/multi-user.target.wants/unattended-upgrades.service → /lib/systemd/system/unattended-upgrades.service.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-chardet (3.0.4-4build1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-gi (3.36.0-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-requests (2.22.0-2ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up networkd-dispatcher (2.1-2~ubuntu20.04.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Created symlink /etc/systemd/system/multi-user.target.wants/networkd-dispatcher.service → /lib/systemd/system/networkd-dispatcher.service.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up dconf-gsettings-backend:amd64 (0.36.0-1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-requests-unixsocket (0.2.0-2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-software-properties (0.99.9.12) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up gsettings-desktop-schemas (3.36.0-1ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up glib-networking:amd64 (2.64.2-1ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libsoup2.4-1:amd64 (2.70.0-1ubuntu0.5) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libappstream4:amd64 (0.12.10-2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up packagekit (1.1.13-2ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": invoke-rc.d: could not determine current runlevel
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": invoke-rc.d: policy-rc.d denied execution of force-reload.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Failed to open connection to "system" message bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Created symlink /etc/systemd/user/sockets.target.wants/pk-debconf-helper.socket → /usr/lib/systemd/user/pk-debconf-helper.socket.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up packagekit-tools (1.1.13-2ubuntu1.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up software-properties-common (0.99.9.12) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Processing triggers for systemd (245.4-4ubuntu3.24) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Processing triggers for dbus (1.12.16-2ubuntu2.3) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Removing intermediate container 336f018c804e
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> bc28c814193f
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Step 3/9 : RUN wget -qO - https://packages.confluent.io/deb/7.0/archive.key | apt-key add -
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> Running in bff16d3c0368
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": [91mWarning: apt-key output should not be parsed (stdout is not a terminal)
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": [0mOK
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Removing intermediate container bff16d3c0368
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> d0e2aba16fd1
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Step 4/9 : RUN add-apt-repository "deb https://packages.confluent.io/clients/deb $(lsb_release -cs) main"
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> Running in 93f272414879
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:1 https://packages.confluent.io/clients/deb focal InRelease [9111 B]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Hit:3 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:4 https://packages.confluent.io/clients/deb focal/main amd64 Packages [26.3 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Hit:5 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Hit:6 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Fetched 35.4 kB in 1s (49.9 kB/s)
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Reading package lists...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Removing intermediate container 93f272414879
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> 807ee64655ae
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Step 5/9 : RUN apt-get update -y && apt-get install librdkafka-dev software-properties-common lsb-release gcc make python3-dev libsasl2-modules-gssapi-mit krb5-user -y
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> Running in 36046e1b1934
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Hit:1 https://packages.confluent.io/clients/deb focal InRelease
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Hit:3 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Hit:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Hit:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Reading package lists...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Reading package lists...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Building dependency tree...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Reading state information...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": gcc is already the newest version (4:9.3.0-1ubuntu2).
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": gcc set to manually installed.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": lsb-release is already the newest version (11.1.0ubuntu2).
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": lsb-release set to manually installed.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": make set to manually installed.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": software-properties-common is already the newest version (0.99.9.12).
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": The following packages were automatically installed and are no longer required:
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   autotools-dev libsigsegv2 m4
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Use 'apt autoremove' to remove them.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": The following additional packages will be installed:
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   bind9-host bind9-libs krb5-config libexpat1-dev libgssrpc4
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libkadm5clnt-mit11 libkadm5srv-mit11 libkdb5-9 libmaxminddb0 libpython3-dev
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libpython3.8 libpython3.8-dev librdkafka++1 librdkafka1 libuv1
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3-distutils python3-lib2to3 python3.8-dev zlib1g-dev
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Suggested packages:
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   krb5-k5tls krb5-doc mmdb-bin
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": The following NEW packages will be installed:
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   bind9-host bind9-libs krb5-config krb5-user libexpat1-dev libgssrpc4
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libkadm5clnt-mit11 libkadm5srv-mit11 libkdb5-9 libmaxminddb0 libpython3-dev
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libpython3.8 libpython3.8-dev librdkafka++1 librdkafka-dev librdkafka1
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   libsasl2-modules-gssapi-mit libuv1 python3-dev python3-distutils
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":   python3-lib2to3 python3.8-dev zlib1g-dev
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": 0 upgraded, 23 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Need to get 10.6 MB of archives.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": After this operation, 45.7 MB of additional disk space will be used.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:1 https://packages.confluent.io/clients/deb focal/main amd64 librdkafka1 amd64 2.12.0-1.cflt~ubu20 [1226 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libmaxminddb0 amd64 1.4.2-0ubuntu1.20.04.1 [26.2 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:3 https://packages.confluent.io/clients/deb focal/main amd64 librdkafka++1 amd64 2.12.0-1.cflt~ubu20 [46.7 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:4 https://packages.confluent.io/clients/deb focal/main amd64 librdkafka-dev amd64 2.12.0-1.cflt~ubu20 [1128 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.5 [80.9 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 bind9-libs amd64 1:9.18.30-0ubuntu0.20.04.2 [1155 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 bind9-host amd64 1:9.18.30-0ubuntu0.20.04.2 [47.8 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 krb5-config all 2.6ubuntu1 [21.7 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgssrpc4 amd64 1.17-6ubuntu4.11 [55.3 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkadm5clnt-mit11 amd64 1.17-6ubuntu4.11 [37.6 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkdb5-9 amd64 1.17-6ubuntu4.11 [37.4 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkadm5srv-mit11 amd64 1.17-6ubuntu4.11 [49.6 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:13 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 krb5-user amd64 1.17-6ubuntu4.11 [105 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libexpat1-dev amd64 2.2.9-1ubuntu0.8 [117 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8 amd64 3.8.10-0ubuntu1~20.04.18 [1625 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-dev amd64 3.8.10-0ubuntu1~20.04.18 [3950 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 libpython3-dev amd64 3.8.2-0ubuntu2 [7236 B]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsasl2-modules-gssapi-mit amd64 2.1.27+dfsg-2ubuntu0.1 [36.8 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.5 [155 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8-dev amd64 3.8.10-0ubuntu1~20.04.18 [514 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-lib2to3 all 3.8.10-0ubuntu1~20.04 [76.3 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-distutils all 3.8.10-0ubuntu1~20.04 [141 kB]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Get:23 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-dev amd64 3.8.2-0ubuntu2 [1212 B]
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": [0mFetched 10.6 MB in 1s (7678 kB/s)
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libmaxminddb0:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21432 files and directories currently installed.)
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../00-libmaxminddb0_1.4.2-0ubuntu1.20.04.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libmaxminddb0:amd64 (1.4.2-0ubuntu1.20.04.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libuv1:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../01-libuv1_1.34.2-1ubuntu1.5_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package bind9-libs:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../02-bind9-libs_1%3a9.18.30-0ubuntu0.20.04.2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking bind9-libs:amd64 (1:9.18.30-0ubuntu0.20.04.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package bind9-host.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../03-bind9-host_1%3a9.18.30-0ubuntu0.20.04.2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking bind9-host (1:9.18.30-0ubuntu0.20.04.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package krb5-config.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../04-krb5-config_2.6ubuntu1_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking krb5-config (2.6ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libgssrpc4:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../05-libgssrpc4_1.17-6ubuntu4.11_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libgssrpc4:amd64 (1.17-6ubuntu4.11) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libkadm5clnt-mit11:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../06-libkadm5clnt-mit11_1.17-6ubuntu4.11_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libkadm5clnt-mit11:amd64 (1.17-6ubuntu4.11) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libkdb5-9:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../07-libkdb5-9_1.17-6ubuntu4.11_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libkdb5-9:amd64 (1.17-6ubuntu4.11) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libkadm5srv-mit11:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../08-libkadm5srv-mit11_1.17-6ubuntu4.11_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libkadm5srv-mit11:amd64 (1.17-6ubuntu4.11) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package krb5-user.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../09-krb5-user_1.17-6ubuntu4.11_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking krb5-user (1.17-6ubuntu4.11) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libexpat1-dev:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../10-libexpat1-dev_2.2.9-1ubuntu0.8_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libexpat1-dev:amd64 (2.2.9-1ubuntu0.8) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libpython3.8:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../11-libpython3.8_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libpython3.8:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libpython3.8-dev:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../12-libpython3.8-dev_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libpython3.8-dev:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libpython3-dev:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../13-libpython3-dev_3.8.2-0ubuntu2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libpython3-dev:amd64 (3.8.2-0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package librdkafka1:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../14-librdkafka1_2.12.0-1.cflt~ubu20_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking librdkafka1:amd64 (2.12.0-1.cflt~ubu20) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package librdkafka++1:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../15-librdkafka++1_2.12.0-1.cflt~ubu20_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking librdkafka++1:amd64 (2.12.0-1.cflt~ubu20) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package librdkafka-dev:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../16-librdkafka-dev_2.12.0-1.cflt~ubu20_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking librdkafka-dev:amd64 (2.12.0-1.cflt~ubu20) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package libsasl2-modules-gssapi-mit:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../17-libsasl2-modules-gssapi-mit_2.1.27+dfsg-2ubuntu0.1_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking libsasl2-modules-gssapi-mit:amd64 (2.1.27+dfsg-2ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package zlib1g-dev:amd64.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../18-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu1.5_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3.8-dev.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../19-python3.8-dev_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3.8-dev (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-lib2to3.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../20-python3-lib2to3_3.8.10-0ubuntu1~20.04_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-lib2to3 (3.8.10-0ubuntu1~20.04) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-distutils.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../21-python3-distutils_3.8.10-0ubuntu1~20.04_all.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-distutils (3.8.10-0ubuntu1~20.04) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Selecting previously unselected package python3-dev.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Preparing to unpack .../22-python3-dev_3.8.2-0ubuntu2_amd64.deb ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Unpacking python3-dev (3.8.2-0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libmaxminddb0:amd64 (1.4.2-0ubuntu1.20.04.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libgssrpc4:amd64 (1.17-6ubuntu4.11) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libexpat1-dev:amd64 (2.2.9-1ubuntu0.8) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libpython3.8:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up librdkafka1:amd64 (2.12.0-1.cflt~ubu20) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libkdb5-9:amd64 (1.17-6ubuntu4.11) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libkadm5srv-mit11:amd64 (1.17-6ubuntu4.11) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-lib2to3 (3.8.10-0ubuntu1~20.04) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libsasl2-modules-gssapi-mit:amd64 (2.1.27+dfsg-2ubuntu0.1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-distutils (3.8.10-0ubuntu1~20.04) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libkadm5clnt-mit11:amd64 (1.17-6ubuntu4.11) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up bind9-libs:amd64 (1:9.18.30-0ubuntu0.20.04.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up librdkafka++1:amd64 (2.12.0-1.cflt~ubu20) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libpython3.8-dev:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3.8-dev (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up librdkafka-dev:amd64 (2.12.0-1.cflt~ubu20) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up bind9-host (1:9.18.30-0ubuntu0.20.04.2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up libpython3-dev:amd64 (3.8.2-0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up krb5-config (2.6ubuntu1) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up python3-dev (3.8.2-0ubuntu2) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Setting up krb5-user (1.17-6ubuntu4.11) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Removing intermediate container 36046e1b1934
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> 17e89565558e
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Step 6/9 : RUN pip3 install --upgrade pip
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> Running in 244bc8a03f27
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Requirement already satisfied: pip in /usr/local/lib/python3.11/site-packages (25.2)
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": [91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": [0mRemoving intermediate container 244bc8a03f27
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> 8a7f8e01ec28
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Step 7/9 : RUN git clone --depth=1 https://github.com/confluentinc/confluent-kafka-python kafka
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> Running in 0962684bb979
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": [91mCloning into 'kafka'...
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": [0mRemoving intermediate container 0962684bb979
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> 50504d3406cc
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Step 8/9 : WORKDIR kafka
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> Running in 6a14ce7076d3
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Removing intermediate container 6a14ce7076d3
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> e8cc6f52ddeb
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Step 9/9 : COPY build.sh fuzz_*.py $SRC/
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f":  ---> ff4a7ca1bc9a
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Successfully built ff4a7ca1bc9a
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Successfully tagged gcr.io/oss-fuzz/kafka:latest
+Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/kafka:latest
+Finished Step #1 - "build-64b83622-1fe1-4a8e-94af-d8afa9bc976f"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/kafka
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/filenre08L
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ python == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/kafka/.git
+Step #2 - "srcmap": + GIT_DIR=/src/kafka
+Step #2 - "srcmap": + cd /src/kafka
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/confluentinc/confluent-kafka-python
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=3a25bfae5f998e023659cb05932700663302f794
+Step #2 - "srcmap": + jq_inplace /tmp/filenre08L '."/src/kafka" = { type: "git", url: "https://github.com/confluentinc/confluent-kafka-python", rev: "3a25bfae5f998e023659cb05932700663302f794" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileMvbEAc
+Step #2 - "srcmap": + cat /tmp/filenre08L
+Step #2 - "srcmap": + jq '."/src/kafka" = { type: "git", url: "https://github.com/confluentinc/confluent-kafka-python", rev: "3a25bfae5f998e023659cb05932700663302f794" }'
+Step #2 - "srcmap": + mv /tmp/fileMvbEAc /tmp/filenre08L
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/filenre08L
+Step #2 - "srcmap": + rm /tmp/filenre08L
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/kafka": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/confluentinc/confluent-kafka-python",
+Step #2 - "srcmap":     "rev": "3a25bfae5f998e023659cb05932700663302f794"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=function,leak,vptr,
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=function,leak,vptr
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + pip3 install .
+Step #3 - "compile-libfuzzer-address-x86_64": Processing /src/kafka
+Step #3 - "compile-libfuzzer-address-x86_64":   Installing build dependencies ... [?25l- \ done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Getting requirements to build wheel ... [?25l- done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Preparing metadata (pyproject.toml) ... [?25l- done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting tomli (from confluent-kafka==2.12.0)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading tomli-2.3.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading tomli-2.3.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (242 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Building wheels for collected packages: confluent-kafka
+Step #3 - "compile-libfuzzer-address-x86_64":   Building wheel for confluent-kafka (pyproject.toml) ... [?25l- \ | / - \ | / done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Created wheel for confluent-kafka: filename=confluent_kafka-2.12.0-cp311-cp311-linux_x86_64.whl size=523335 sha256=f9edd1029883dfa42ca14c30a9587467205dd35420838145d93db09996933375
+Step #3 - "compile-libfuzzer-address-x86_64":   Stored in directory: /tmp/pip-ephem-wheel-cache-2da5ao_c/wheels/f1/8a/0b/a1e9084fd8f42547821d1b328cf5a6265c5d0abb3de6a7cb6c
+Step #3 - "compile-libfuzzer-address-x86_64": Successfully built confluent-kafka
+Step #3 - "compile-libfuzzer-address-x86_64": Installing collected packages: tomli, confluent-kafka
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l[2K   [91m━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━[0m [32m1/2[0m [confluent-kafka][2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2/2[0m [confluent-kafka]
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h[1A[2KSuccessfully installed confluent-kafka-2.12.0 tomli-2.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": [33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m++ find /src -name 'fuzz_*.py'
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -name 'fuzz_*.py')
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_python_fuzzer /src/fuzz_consumer.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_path=/src/fuzz_consumer.py
+Step #3 - "compile-libfuzzer-address-x86_64": + shift 1
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .py /src/fuzz_consumer.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=fuzz_consumer
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_package=fuzz_consumer.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_consumer
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *introspector* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ 0 != \0 ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_consumer
+Step #3 - "compile-libfuzzer-address-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-address-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_consumer --onefile --name fuzz_consumer.pkg /src/fuzz_consumer.py
+Step #3 - "compile-libfuzzer-address-x86_64": 68 INFO: PyInstaller: 6.10.0, contrib hooks: 2025.9
+Step #3 - "compile-libfuzzer-address-x86_64": 68 INFO: Python: 3.11.13
+Step #3 - "compile-libfuzzer-address-x86_64": 69 INFO: Platform: Linux-5.10.0-32-cloud-amd64-x86_64-with-glibc2.31
+Step #3 - "compile-libfuzzer-address-x86_64": 69 INFO: Python environment: /usr/local
+Step #3 - "compile-libfuzzer-address-x86_64": 70 INFO: wrote /src/kafka/fuzz_consumer.pkg.spec
+Step #3 - "compile-libfuzzer-address-x86_64": 71 INFO: Module search paths (PYTHONPATH):
+Step #3 - "compile-libfuzzer-address-x86_64": ['/usr/local/lib/python311.zip',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/lib-dynload',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages/setuptools/_vendor',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/src']
+Step #3 - "compile-libfuzzer-address-x86_64": 159 INFO: checking Analysis
+Step #3 - "compile-libfuzzer-address-x86_64": 160 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 160 INFO: Running Analysis Analysis-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 160 INFO: Target bytecode optimization level: 0
+Step #3 - "compile-libfuzzer-address-x86_64": 160 INFO: Initializing module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 160 INFO: Caching module graph hooks...
+Step #3 - "compile-libfuzzer-address-x86_64": 169 INFO: Analyzing base_library.zip ...
+Step #3 - "compile-libfuzzer-address-x86_64": 864 INFO: Processing standard module hook 'hook-heapq.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 937 INFO: Processing standard module hook 'hook-encodings.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 2240 INFO: Processing standard module hook 'hook-pickle.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 3669 INFO: Caching module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 3748 INFO: Looking for Python shared library...
+Step #3 - "compile-libfuzzer-address-x86_64": 3758 INFO: Using Python shared library: /usr/local/lib/libpython3.11.so.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": 3758 INFO: Analyzing /src/fuzz_consumer.py
+Step #3 - "compile-libfuzzer-address-x86_64": 3761 INFO: Processing standard module hook 'hook-atheris.py' from '/usr/local/lib/python3.11/site-packages/atheris'
+Step #3 - "compile-libfuzzer-address-x86_64": 3839 INFO: Processing module hooks (post-graph stage)...
+Step #3 - "compile-libfuzzer-address-x86_64": 3845 INFO: Performing binary vs. data reclassification (2 entries)
+Step #3 - "compile-libfuzzer-address-x86_64": 3848 INFO: Looking for ctypes DLLs
+Step #3 - "compile-libfuzzer-address-x86_64": 3858 INFO: Analyzing run-time hooks ...
+Step #3 - "compile-libfuzzer-address-x86_64": 3860 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 3864 INFO: Looking for dynamic libraries
+Step #3 - "compile-libfuzzer-address-x86_64": 4668 INFO: Warnings written to /src/pyfuzzworkdir/fuzz_consumer/fuzz_consumer.pkg/warn-fuzz_consumer.pkg.txt
+Step #3 - "compile-libfuzzer-address-x86_64": 4677 INFO: Graph cross-reference written to /src/pyfuzzworkdir/fuzz_consumer/fuzz_consumer.pkg/xref-fuzz_consumer.pkg.html
+Step #3 - "compile-libfuzzer-address-x86_64": 4686 INFO: checking PYZ
+Step #3 - "compile-libfuzzer-address-x86_64": 4687 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 4687 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_consumer/fuzz_consumer.pkg/PYZ-00.pyz
+Step #3 - "compile-libfuzzer-address-x86_64": 4874 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_consumer/fuzz_consumer.pkg/PYZ-00.pyz completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 4886 INFO: checking PKG
+Step #3 - "compile-libfuzzer-address-x86_64": 4886 INFO: Building PKG because PKG-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 4886 INFO: Building PKG (CArchive) fuzz_consumer.pkg.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 19210 INFO: Building PKG (CArchive) fuzz_consumer.pkg.pkg completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 19211 INFO: Bootloader /usr/local/lib/python3.11/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #3 - "compile-libfuzzer-address-x86_64": 19211 INFO: checking EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 19211 INFO: Building EXE because EXE-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 19211 INFO: Building EXE from EXE-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 19212 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-address-x86_64/fuzz_consumer.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 19212 INFO: Appending PKG archive to custom ELF section in EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 19314 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod -x /workspace/out/libfuzzer-address-x86_64/fuzz_consumer.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/sh
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": chmod +x $this_dir/fuzz_consumer.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_consumer.pkg $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/fuzz_consumer
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -name 'fuzz_*.py')
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_python_fuzzer /src/fuzz_producer.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_path=/src/fuzz_producer.py
+Step #3 - "compile-libfuzzer-address-x86_64": + shift 1
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .py /src/fuzz_producer.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=fuzz_producer
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_package=fuzz_producer.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_producer
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *introspector* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ 0 != \0 ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_producer
+Step #3 - "compile-libfuzzer-address-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-address-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_producer --onefile --name fuzz_producer.pkg /src/fuzz_producer.py
+Step #3 - "compile-libfuzzer-address-x86_64": 63 INFO: PyInstaller: 6.10.0, contrib hooks: 2025.9
+Step #3 - "compile-libfuzzer-address-x86_64": 63 INFO: Python: 3.11.13
+Step #3 - "compile-libfuzzer-address-x86_64": 64 INFO: Platform: Linux-5.10.0-32-cloud-amd64-x86_64-with-glibc2.31
+Step #3 - "compile-libfuzzer-address-x86_64": 64 INFO: Python environment: /usr/local
+Step #3 - "compile-libfuzzer-address-x86_64": 65 INFO: wrote /src/kafka/fuzz_producer.pkg.spec
+Step #3 - "compile-libfuzzer-address-x86_64": 67 INFO: Module search paths (PYTHONPATH):
+Step #3 - "compile-libfuzzer-address-x86_64": ['/usr/local/lib/python311.zip',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/lib-dynload',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages/setuptools/_vendor',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/src']
+Step #3 - "compile-libfuzzer-address-x86_64": 155 INFO: checking Analysis
+Step #3 - "compile-libfuzzer-address-x86_64": 156 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 156 INFO: Running Analysis Analysis-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 156 INFO: Target bytecode optimization level: 0
+Step #3 - "compile-libfuzzer-address-x86_64": 156 INFO: Initializing module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 156 INFO: Caching module graph hooks...
+Step #3 - "compile-libfuzzer-address-x86_64": 164 INFO: Analyzing base_library.zip ...
+Step #3 - "compile-libfuzzer-address-x86_64": 611 INFO: Processing standard module hook 'hook-encodings.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 1016 INFO: Processing standard module hook 'hook-heapq.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 2259 INFO: Processing standard module hook 'hook-pickle.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 3697 INFO: Caching module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 3770 INFO: Looking for Python shared library...
+Step #3 - "compile-libfuzzer-address-x86_64": 3780 INFO: Using Python shared library: /usr/local/lib/libpython3.11.so.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": 3780 INFO: Analyzing /src/fuzz_producer.py
+Step #3 - "compile-libfuzzer-address-x86_64": 3783 INFO: Processing standard module hook 'hook-atheris.py' from '/usr/local/lib/python3.11/site-packages/atheris'
+Step #3 - "compile-libfuzzer-address-x86_64": 3868 INFO: Processing module hooks (post-graph stage)...
+Step #3 - "compile-libfuzzer-address-x86_64": 3874 INFO: Performing binary vs. data reclassification (2 entries)
+Step #3 - "compile-libfuzzer-address-x86_64": 3877 INFO: Looking for ctypes DLLs
+Step #3 - "compile-libfuzzer-address-x86_64": 3887 INFO: Analyzing run-time hooks ...
+Step #3 - "compile-libfuzzer-address-x86_64": 3889 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 3894 INFO: Looking for dynamic libraries
+Step #3 - "compile-libfuzzer-address-x86_64": 4710 INFO: Warnings written to /src/pyfuzzworkdir/fuzz_producer/fuzz_producer.pkg/warn-fuzz_producer.pkg.txt
+Step #3 - "compile-libfuzzer-address-x86_64": 4720 INFO: Graph cross-reference written to /src/pyfuzzworkdir/fuzz_producer/fuzz_producer.pkg/xref-fuzz_producer.pkg.html
+Step #3 - "compile-libfuzzer-address-x86_64": 4729 INFO: checking PYZ
+Step #3 - "compile-libfuzzer-address-x86_64": 4729 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 4729 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_producer/fuzz_producer.pkg/PYZ-00.pyz
+Step #3 - "compile-libfuzzer-address-x86_64": 4916 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_producer/fuzz_producer.pkg/PYZ-00.pyz completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 4928 INFO: checking PKG
+Step #3 - "compile-libfuzzer-address-x86_64": 4928 INFO: Building PKG because PKG-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 4928 INFO: Building PKG (CArchive) fuzz_producer.pkg.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 19310 INFO: Building PKG (CArchive) fuzz_producer.pkg.pkg completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 19311 INFO: Bootloader /usr/local/lib/python3.11/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #3 - "compile-libfuzzer-address-x86_64": 19311 INFO: checking EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 19311 INFO: Building EXE because EXE-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 19311 INFO: Building EXE from EXE-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 19311 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-address-x86_64/fuzz_producer.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 19312 INFO: Appending PKG archive to custom ELF section in EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 19407 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod -x /workspace/out/libfuzzer-address-x86_64/fuzz_producer.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/sh
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": chmod +x $this_dir/fuzz_producer.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_producer.pkg $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/fuzz_producer
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+Starting Step #4 - "build-check-libfuzzer-address-x86_64"
+Step #4 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-libfuzzer-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-libfuzzer-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-libfuzzer-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": cd18e4a30c2a: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": b58b73ab52e9: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": aba3dbf9e15c: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 1ee48027c546: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 0acc9913f964: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 952ffac20571: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": d6b7aa942540: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 27a6e28c134a: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": bbb5d403352f: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 0792341e7c3d: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": a35e8cddaa36: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 0a8913d4865b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": bdaec486cbde: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": e425500fabe3: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": b926957c6bd1: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 55bfc759778b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": db9db873237e: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": ce758978c2fc: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a1c5dad905c: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 350f917ac142: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": d5beaa3be705: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 177f566eb548: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": fb5124c10210: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": aa637ca88496: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f14cb938c98c: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": b926957c6bd1: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 27a6e28c134a: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 177f566eb548: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": bbb5d403352f: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": fb5124c10210: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d5beaa3be705: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 0792341e7c3d: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 55bfc759778b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": aa637ca88496: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": f14cb938c98c: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": a35e8cddaa36: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 0a8913d4865b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": db9db873237e: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": ce758978c2fc: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": bdaec486cbde: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a1c5dad905c: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 350f917ac142: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": e425500fabe3: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 952ffac20571: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d6b7aa942540: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 0acc9913f964: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 0acc9913f964: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": aba3dbf9e15c: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 1ee48027c546: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 1ee48027c546: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": aba3dbf9e15c: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d6b7aa942540: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": d6b7aa942540: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 952ffac20571: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 952ffac20571: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bbb5d403352f: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": bbb5d403352f: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0792341e7c3d: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 0792341e7c3d: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1ee48027c546: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a35e8cddaa36: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": a35e8cddaa36: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0acc9913f964: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bdaec486cbde: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 27a6e28c134a: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 27a6e28c134a: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 952ffac20571: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e425500fabe3: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": e425500fabe3: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": b926957c6bd1: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": b926957c6bd1: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d6b7aa942540: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": db9db873237e: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0a8913d4865b: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 0a8913d4865b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a1c5dad905c: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a1c5dad905c: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 350f917ac142: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 350f917ac142: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 55bfc759778b: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 55bfc759778b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d5beaa3be705: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": d5beaa3be705: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 177f566eb548: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 177f566eb548: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": fb5124c10210: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": fb5124c10210: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": aa637ca88496: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": aa637ca88496: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f14cb938c98c: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ce758978c2fc: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": ce758978c2fc: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 27a6e28c134a: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bbb5d403352f: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0792341e7c3d: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a35e8cddaa36: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0a8913d4865b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bdaec486cbde: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e425500fabe3: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": b926957c6bd1: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 55bfc759778b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": db9db873237e: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ce758978c2fc: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a1c5dad905c: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 350f917ac142: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d5beaa3be705: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 177f566eb548: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": fb5124c10210: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": aa637ca88496: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f14cb938c98c: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": Digest: sha256:44aafef8c3d521ff7e2fe2b2809442199b9450a357aac75b7ce98b15302619ed
+Step #4 - "build-check-libfuzzer-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpw1j1ta_1/fuzz_producer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpw1j1ta_1/fuzz_consumer
+Finished Step #4 - "build-check-libfuzzer-address-x86_64"
+Starting Step #5
+Step #5: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #5
+Starting Step #6
+Step #6: Already have image: gcr.io/oss-fuzz/kafka
+Step #6:   adding: fuzz_consumer (deflated 32%)
+Step #6:   adding: fuzz_consumer.pkg (deflated 1%)
+Step #6:   adding: fuzz_producer (deflated 32%)
+Step #6:   adding: fuzz_producer.pkg (deflated 1%)
+Step #6:   adding: llvm-symbolizer (deflated 65%)
+Step #6:   adding: sanitizer_with_fuzzer.so (deflated 72%)
+Finished Step #6
+Starting Step #7
+Step #7: Pulling image: gcr.io/oss-fuzz-base/uploader
+Step #7: Using default tag: latest
+Step #7: latest: Pulling from oss-fuzz-base/uploader
+Step #7: c62795f78da9: Pulling fs layer
+Step #7: d4fceeeb758e: Pulling fs layer
+Step #7: 5c9125a401ae: Pulling fs layer
+Step #7: 0062f774e994: Pulling fs layer
+Step #7: 6b33fd031fac: Pulling fs layer
+Step #7: 7eb39101e508: Pulling fs layer
+Step #7: 89257482f398: Pulling fs layer
+Step #7: 6b33fd031fac: Waiting
+Step #7: 7eb39101e508: Waiting
+Step #7: 89257482f398: Waiting
+Step #7: 0062f774e994: Waiting
+Step #7: 5c9125a401ae: Verifying Checksum
+Step #7: 5c9125a401ae: Download complete
+Step #7: d4fceeeb758e: Verifying Checksum
+Step #7: d4fceeeb758e: Download complete
+Step #7: 6b33fd031fac: Verifying Checksum
+Step #7: 6b33fd031fac: Download complete
+Step #7: 0062f774e994: Verifying Checksum
+Step #7: 0062f774e994: Download complete
+Step #7: 89257482f398: Verifying Checksum
+Step #7: 89257482f398: Download complete
+Step #7: c62795f78da9: Verifying Checksum
+Step #7: c62795f78da9: Download complete
+Step #7: 7eb39101e508: Verifying Checksum
+Step #7: 7eb39101e508: Download complete
+Step #7: c62795f78da9: Pull complete
+Step #7: d4fceeeb758e: Pull complete
+Step #7: 5c9125a401ae: Pull complete
+Step #7: 0062f774e994: Pull complete
+Step #7: 6b33fd031fac: Pull complete
+Step #7: 7eb39101e508: Pull complete
+Step #7: 89257482f398: Pull complete
+Step #7: Digest: sha256:5717ba63d13b5515063e2a6ccad09fb5bf32a86c8e0798a363d81c2be522e411
+Step #7: Status: Downloaded newer image for gcr.io/oss-fuzz-base/uploader:latest
+Step #7: gcr.io/oss-fuzz-base/uploader:latest
+Step #7:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #7:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #7:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   168    0     0  100   168      0    989 --:--:-- --:--:-- --:--:--   994
+Finished Step #7
+Starting Step #8
+Step #8: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #8:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #8:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #8:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 17 74.4M    0     0   17 12.9M      0   128M --:--:-- --:--:-- --:--:--  127M100 74.4M    0     0  100 74.4M      0  77.4M --:--:-- --:--:-- --:--:-- 77.3M
+Finished Step #8
+Starting Step #9
+Step #9: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #9:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #9:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #9:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    28    0     0  100    28      0    123 --:--:-- --:--:-- --:--:--   123
+Finished Step #9
+Starting Step #10
+Step #10: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #10:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #10:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #10:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    30    0     0  100    30      0    157 --:--:-- --:--:-- --:--:--   158
+Finished Step #10
+Starting Step #11
+Step #11: Already have image: gcr.io/oss-fuzz/kafka
+Finished Step #11
+Starting Step #12 - "compile-libfuzzer-undefined-x86_64"
+Step #12 - "compile-libfuzzer-undefined-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #12 - "compile-libfuzzer-undefined-x86_64": ---------------------------------------------------------------
+Step #12 - "compile-libfuzzer-undefined-x86_64": vm.mmap_rnd_bits = 28
+Step #12 - "compile-libfuzzer-undefined-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #12 - "compile-libfuzzer-undefined-x86_64": ---------------------------------------------------------------
+Step #12 - "compile-libfuzzer-undefined-x86_64": CC=clang
+Step #12 - "compile-libfuzzer-undefined-x86_64": CXX=clang++
+Step #12 - "compile-libfuzzer-undefined-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=array-bounds,bool,builtin,enum,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unsigned-integer-overflow,unreachable,vla-bound,vptr -fno-sanitize-recover=array-bounds,bool,builtin,enum,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unreachable,vla-bound,vptr -fsanitize=fuzzer-no-link -fno-sanitize=function -fno-sanitize=function,leak,vptr,
+Step #12 - "compile-libfuzzer-undefined-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=array-bounds,bool,builtin,enum,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unsigned-integer-overflow,unreachable,vla-bound,vptr -fno-sanitize-recover=array-bounds,bool,builtin,enum,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unreachable,vla-bound,vptr -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=function,leak,vptr
+Step #12 - "compile-libfuzzer-undefined-x86_64": RUSTFLAGS=--cfg fuzzing -Cdebuginfo=1 -Cforce-frame-pointers
+Step #12 - "compile-libfuzzer-undefined-x86_64": ---------------------------------------------------------------
+Step #12 - "compile-libfuzzer-undefined-x86_64": + pip3 install .
+Step #12 - "compile-libfuzzer-undefined-x86_64": Processing /src/kafka
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Installing build dependencies ... [?25l- \ done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h  Getting requirements to build wheel ... [?25l- done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h  Preparing metadata (pyproject.toml) ... [?25l- done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25hCollecting tomli (from confluent-kafka==2.12.0)
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Downloading tomli-2.3.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Downloading tomli-2.3.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (242 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Building wheels for collected packages: confluent-kafka
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Building wheel for confluent-kafka (pyproject.toml) ... [?25l- \ | / - \ | / done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h  Created wheel for confluent-kafka: filename=confluent_kafka-2.12.0-cp311-cp311-linux_x86_64.whl size=469948 sha256=a4df1b6025f6887ae2e3108b33dbe85413e43e929e2a4dc4f53b9b2946ce8f58
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Stored in directory: /tmp/pip-ephem-wheel-cache-b09m5ct5/wheels/f1/8a/0b/a1e9084fd8f42547821d1b328cf5a6265c5d0abb3de6a7cb6c
+Step #12 - "compile-libfuzzer-undefined-x86_64": Successfully built confluent-kafka
+Step #12 - "compile-libfuzzer-undefined-x86_64": Installing collected packages: tomli, confluent-kafka
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25l[2K   [91m━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━[0m [32m1/2[0m [confluent-kafka][2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2/2[0m [confluent-kafka]
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h[1A[2KSuccessfully installed confluent-kafka-2.12.0 tomli-2.3.0
+Step #12 - "compile-libfuzzer-undefined-x86_64": [33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
+Step #12 - "compile-libfuzzer-undefined-x86_64": [0m++ find /src -name 'fuzz_*.py'
+Step #12 - "compile-libfuzzer-undefined-x86_64": + for fuzzer in $(find $SRC -name 'fuzz_*.py')
+Step #12 - "compile-libfuzzer-undefined-x86_64": + compile_python_fuzzer /src/fuzz_consumer.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": + fuzzer_path=/src/fuzz_consumer.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": + shift 1
+Step #12 - "compile-libfuzzer-undefined-x86_64": ++ basename -s .py /src/fuzz_consumer.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": + fuzzer_basename=fuzz_consumer
+Step #12 - "compile-libfuzzer-undefined-x86_64": + fuzzer_package=fuzz_consumer.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #12 - "compile-libfuzzer-undefined-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_consumer
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ undefined = *introspector* ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ undefined = *coverage* ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ 0 != \0 ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #12 - "compile-libfuzzer-undefined-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_consumer
+Step #12 - "compile-libfuzzer-undefined-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-undefined-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_consumer --onefile --name fuzz_consumer.pkg /src/fuzz_consumer.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": 64 INFO: PyInstaller: 6.10.0, contrib hooks: 2025.9
+Step #12 - "compile-libfuzzer-undefined-x86_64": 64 INFO: Python: 3.11.13
+Step #12 - "compile-libfuzzer-undefined-x86_64": 66 INFO: Platform: Linux-5.10.0-32-cloud-amd64-x86_64-with-glibc2.31
+Step #12 - "compile-libfuzzer-undefined-x86_64": 66 INFO: Python environment: /usr/local
+Step #12 - "compile-libfuzzer-undefined-x86_64": 66 INFO: wrote /src/kafka/fuzz_consumer.pkg.spec
+Step #12 - "compile-libfuzzer-undefined-x86_64": 68 INFO: Module search paths (PYTHONPATH):
+Step #12 - "compile-libfuzzer-undefined-x86_64": ['/usr/local/lib/python311.zip',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11/lib-dynload',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11/site-packages',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11/site-packages/setuptools/_vendor',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/src']
+Step #12 - "compile-libfuzzer-undefined-x86_64": 155 INFO: checking Analysis
+Step #12 - "compile-libfuzzer-undefined-x86_64": 155 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 155 INFO: Running Analysis Analysis-00.toc
+Step #12 - "compile-libfuzzer-undefined-x86_64": 155 INFO: Target bytecode optimization level: 0
+Step #12 - "compile-libfuzzer-undefined-x86_64": 155 INFO: Initializing module dependency graph...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 156 INFO: Caching module graph hooks...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 163 INFO: Analyzing base_library.zip ...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 894 INFO: Processing standard module hook 'hook-encodings.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 2301 INFO: Processing standard module hook 'hook-pickle.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 3844 INFO: Processing standard module hook 'hook-heapq.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4141 INFO: Caching module dependency graph...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4218 INFO: Looking for Python shared library...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4228 INFO: Using Python shared library: /usr/local/lib/libpython3.11.so.1.0
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4228 INFO: Analyzing /src/fuzz_consumer.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4231 INFO: Processing standard module hook 'hook-atheris.py' from '/usr/local/lib/python3.11/site-packages/atheris'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4311 INFO: Processing module hooks (post-graph stage)...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4317 INFO: Performing binary vs. data reclassification (2 entries)
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4320 INFO: Looking for ctypes DLLs
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4331 INFO: Analyzing run-time hooks ...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4332 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4336 INFO: Looking for dynamic libraries
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5152 INFO: Warnings written to /src/pyfuzzworkdir/fuzz_consumer/fuzz_consumer.pkg/warn-fuzz_consumer.pkg.txt
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5161 INFO: Graph cross-reference written to /src/pyfuzzworkdir/fuzz_consumer/fuzz_consumer.pkg/xref-fuzz_consumer.pkg.html
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5170 INFO: checking PYZ
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5170 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5170 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_consumer/fuzz_consumer.pkg/PYZ-00.pyz
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5356 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_consumer/fuzz_consumer.pkg/PYZ-00.pyz completed successfully.
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5368 INFO: checking PKG
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5369 INFO: Building PKG because PKG-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5369 INFO: Building PKG (CArchive) fuzz_consumer.pkg.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19743 INFO: Building PKG (CArchive) fuzz_consumer.pkg.pkg completed successfully.
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19745 INFO: Bootloader /usr/local/lib/python3.11/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19745 INFO: checking EXE
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19745 INFO: Building EXE because EXE-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19745 INFO: Building EXE from EXE-00.toc
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19745 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-undefined-x86_64/fuzz_consumer.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19745 INFO: Appending PKG archive to custom ELF section in EXE
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19846 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #12 - "compile-libfuzzer-undefined-x86_64": + chmod -x /workspace/out/libfuzzer-undefined-x86_64/fuzz_consumer.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ undefined = *coverage* ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + echo '#!/bin/sh
+Step #12 - "compile-libfuzzer-undefined-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #12 - "compile-libfuzzer-undefined-x86_64": this_dir=$(dirname "$0")
+Step #12 - "compile-libfuzzer-undefined-x86_64": chmod +x $this_dir/fuzz_consumer.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_consumer.pkg $@'
+Step #12 - "compile-libfuzzer-undefined-x86_64": + chmod +x /workspace/out/libfuzzer-undefined-x86_64/fuzz_consumer
+Step #12 - "compile-libfuzzer-undefined-x86_64": + for fuzzer in $(find $SRC -name 'fuzz_*.py')
+Step #12 - "compile-libfuzzer-undefined-x86_64": + compile_python_fuzzer /src/fuzz_producer.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": + fuzzer_path=/src/fuzz_producer.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": + shift 1
+Step #12 - "compile-libfuzzer-undefined-x86_64": ++ basename -s .py /src/fuzz_producer.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": + fuzzer_basename=fuzz_producer
+Step #12 - "compile-libfuzzer-undefined-x86_64": + fuzzer_package=fuzz_producer.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #12 - "compile-libfuzzer-undefined-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_producer
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ undefined = *introspector* ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ undefined = *coverage* ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ 0 != \0 ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #12 - "compile-libfuzzer-undefined-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_producer
+Step #12 - "compile-libfuzzer-undefined-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-undefined-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_producer --onefile --name fuzz_producer.pkg /src/fuzz_producer.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": 69 INFO: PyInstaller: 6.10.0, contrib hooks: 2025.9
+Step #12 - "compile-libfuzzer-undefined-x86_64": 69 INFO: Python: 3.11.13
+Step #12 - "compile-libfuzzer-undefined-x86_64": 71 INFO: Platform: Linux-5.10.0-32-cloud-amd64-x86_64-with-glibc2.31
+Step #12 - "compile-libfuzzer-undefined-x86_64": 71 INFO: Python environment: /usr/local
+Step #12 - "compile-libfuzzer-undefined-x86_64": 72 INFO: wrote /src/kafka/fuzz_producer.pkg.spec
+Step #12 - "compile-libfuzzer-undefined-x86_64": 73 INFO: Module search paths (PYTHONPATH):
+Step #12 - "compile-libfuzzer-undefined-x86_64": ['/usr/local/lib/python311.zip',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11/lib-dynload',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11/site-packages',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11/site-packages/setuptools/_vendor',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/src']
+Step #12 - "compile-libfuzzer-undefined-x86_64": 161 INFO: checking Analysis
+Step #12 - "compile-libfuzzer-undefined-x86_64": 162 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 162 INFO: Running Analysis Analysis-00.toc
+Step #12 - "compile-libfuzzer-undefined-x86_64": 162 INFO: Target bytecode optimization level: 0
+Step #12 - "compile-libfuzzer-undefined-x86_64": 162 INFO: Initializing module dependency graph...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 162 INFO: Caching module graph hooks...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 171 INFO: Analyzing base_library.zip ...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 781 INFO: Processing standard module hook 'hook-heapq.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 854 INFO: Processing standard module hook 'hook-encodings.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 2554 INFO: Processing standard module hook 'hook-pickle.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4101 INFO: Caching module dependency graph...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4187 INFO: Looking for Python shared library...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4196 INFO: Using Python shared library: /usr/local/lib/libpython3.11.so.1.0
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4196 INFO: Analyzing /src/fuzz_producer.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4199 INFO: Processing standard module hook 'hook-atheris.py' from '/usr/local/lib/python3.11/site-packages/atheris'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4276 INFO: Processing module hooks (post-graph stage)...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4282 INFO: Performing binary vs. data reclassification (2 entries)
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4285 INFO: Looking for ctypes DLLs
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4295 INFO: Analyzing run-time hooks ...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4297 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4301 INFO: Looking for dynamic libraries
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5127 INFO: Warnings written to /src/pyfuzzworkdir/fuzz_producer/fuzz_producer.pkg/warn-fuzz_producer.pkg.txt
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5136 INFO: Graph cross-reference written to /src/pyfuzzworkdir/fuzz_producer/fuzz_producer.pkg/xref-fuzz_producer.pkg.html
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5146 INFO: checking PYZ
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5146 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5146 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_producer/fuzz_producer.pkg/PYZ-00.pyz
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5333 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_producer/fuzz_producer.pkg/PYZ-00.pyz completed successfully.
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5344 INFO: checking PKG
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5344 INFO: Building PKG because PKG-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 5344 INFO: Building PKG (CArchive) fuzz_producer.pkg.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19587 INFO: Building PKG (CArchive) fuzz_producer.pkg.pkg completed successfully.
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19588 INFO: Bootloader /usr/local/lib/python3.11/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19588 INFO: checking EXE
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19588 INFO: Building EXE because EXE-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19588 INFO: Building EXE from EXE-00.toc
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19588 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-undefined-x86_64/fuzz_producer.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19589 INFO: Appending PKG archive to custom ELF section in EXE
+Step #12 - "compile-libfuzzer-undefined-x86_64": 19689 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #12 - "compile-libfuzzer-undefined-x86_64": + chmod -x /workspace/out/libfuzzer-undefined-x86_64/fuzz_producer.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ undefined = *coverage* ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + echo '#!/bin/sh
+Step #12 - "compile-libfuzzer-undefined-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #12 - "compile-libfuzzer-undefined-x86_64": this_dir=$(dirname "$0")
+Step #12 - "compile-libfuzzer-undefined-x86_64": chmod +x $this_dir/fuzz_producer.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_producer.pkg $@'
+Step #12 - "compile-libfuzzer-undefined-x86_64": + chmod +x /workspace/out/libfuzzer-undefined-x86_64/fuzz_producer
+Finished Step #12 - "compile-libfuzzer-undefined-x86_64"
+Starting Step #13 - "build-check-libfuzzer-undefined-x86_64"
+Step #13 - "build-check-libfuzzer-undefined-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #13 - "build-check-libfuzzer-undefined-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpzaluq18g/fuzz_producer
+Step #13 - "build-check-libfuzzer-undefined-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpzaluq18g/fuzz_consumer
+Finished Step #13 - "build-check-libfuzzer-undefined-x86_64"
+Starting Step #14
+Step #14: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #14
+Starting Step #15
+Step #15: Already have image: gcr.io/oss-fuzz/kafka
+Step #15:   adding: fuzz_consumer (deflated 32%)
+Step #15:   adding: fuzz_consumer.pkg (deflated 1%)
+Step #15:   adding: fuzz_producer (deflated 32%)
+Step #15:   adding: fuzz_producer.pkg (deflated 1%)
+Step #15:   adding: llvm-symbolizer (deflated 65%)
+Step #15:   adding: sanitizer_with_fuzzer.so (deflated 70%)
+Finished Step #15
+Starting Step #16
+Step #16: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #16:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #16:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #16:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   168    0     0  100   168      0    943 --:--:-- --:--:-- --:--:--   943
+Finished Step #16
+Starting Step #17
+Step #17: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #17:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #17:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #17:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 71.8M    0     0  100 71.8M      0   132M --:--:-- --:--:-- --:--:--  132M100 71.8M    0     0  100 71.8M      0   132M --:--:-- --:--:-- --:--:--  132M
+Finished Step #17
+Starting Step #18
+Step #18: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #18:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #18:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #18:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    28    0     0  100    28      0    109 --:--:-- --:--:-- --:--:--   109
+Finished Step #18
+Starting Step #19
+Step #19: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #19:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #19:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #19:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    32    0     0  100    32      0    172 --:--:-- --:--:-- --:--:--   172
+Finished Step #19
+Starting Step #20
+Step #20: Already have image: gcr.io/oss-fuzz/kafka
+Finished Step #20
+PUSH
+DONE

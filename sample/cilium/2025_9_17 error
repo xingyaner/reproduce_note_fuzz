@@ -1,0 +1,400 @@
+starting build "92574e10-edec-4d5d-a7a7-6f862b2c78b9"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c"
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Sending build context to Docker daemon  5.632kB
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Step 1/9 : FROM gcr.io/oss-fuzz-base/base-builder-go
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": latest: Pulling from oss-fuzz-base/base-builder-go
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b549f31133a9: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 34fcf66862e4: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 563e9d61df18: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 2dd5b91451bb: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 70ba9fe7f423: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 7810d12bd218: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 07c18d44b76c: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 85b8a1f68ee1: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b3591ac61c2e: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": d9fe03d643f6: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bd2771bbfe70: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4d6b082cca5b: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a365f448931f: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4017529cc304: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bd193a16c8fc: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 313660cea2ba: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 0d3beb530b76: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a5b103df4ed8: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": c8856dff6daa: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 9976ca08e65d: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 854d16331ab7: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 70ba9fe7f423: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 2dd5b91451bb: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a365f448931f: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 0d3beb530b76: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a5b103df4ed8: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 89771744ed41: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": ecf668e56a47: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 5f092c77c59a: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 8f640a88e43e: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 7ca3aac57446: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 69223543f0f9: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": e0ce080c1cb2: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4be8ff9898e4: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b62562ac0380: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 917066d9e7a1: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b752d5213abd: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 360a973f459e: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 68412e03a3f4: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b3591ac61c2e: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 28182a8f5d3c: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": dbe55fb15828: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bf35453ac387: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a71bcdade2a1: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": d342d2959134: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 737a97ef8142: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": ae61a9454b32: Pulling fs layer
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": d9fe03d643f6: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 854d16331ab7: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b62562ac0380: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": dbe55fb15828: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 917066d9e7a1: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bf35453ac387: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b752d5213abd: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a71bcdade2a1: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 360a973f459e: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": d342d2959134: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4017529cc304: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 68412e03a3f4: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 737a97ef8142: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 28182a8f5d3c: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": ae61a9454b32: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 5f092c77c59a: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": ecf668e56a47: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 7ca3aac57446: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": e0ce080c1cb2: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 8f640a88e43e: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 69223543f0f9: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4be8ff9898e4: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bd2771bbfe70: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bd193a16c8fc: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": c8856dff6daa: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4d6b082cca5b: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 313660cea2ba: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 07c18d44b76c: Waiting
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 563e9d61df18: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b549f31133a9: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b549f31133a9: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 70ba9fe7f423: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 70ba9fe7f423: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 2dd5b91451bb: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 2dd5b91451bb: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 07c18d44b76c: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 07c18d44b76c: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 85b8a1f68ee1: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 85b8a1f68ee1: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 34fcf66862e4: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 34fcf66862e4: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b549f31133a9: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": d9fe03d643f6: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": d9fe03d643f6: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bd2771bbfe70: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bd2771bbfe70: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4d6b082cca5b: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4d6b082cca5b: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a365f448931f: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a365f448931f: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4017529cc304: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4017529cc304: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b3591ac61c2e: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b3591ac61c2e: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bd193a16c8fc: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bd193a16c8fc: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 313660cea2ba: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 313660cea2ba: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 0d3beb530b76: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 0d3beb530b76: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a5b103df4ed8: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a5b103df4ed8: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": c8856dff6daa: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": c8856dff6daa: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 9976ca08e65d: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 9976ca08e65d: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 854d16331ab7: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 854d16331ab7: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 89771744ed41: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 89771744ed41: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": ecf668e56a47: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": ecf668e56a47: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 5f092c77c59a: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 8f640a88e43e: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 8f640a88e43e: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 7ca3aac57446: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 69223543f0f9: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": e0ce080c1cb2: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": e0ce080c1cb2: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4be8ff9898e4: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4be8ff9898e4: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 917066d9e7a1: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b752d5213abd: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 34fcf66862e4: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b62562ac0380: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b62562ac0380: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 563e9d61df18: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 360a973f459e: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 360a973f459e: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 68412e03a3f4: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 68412e03a3f4: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 7810d12bd218: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 7810d12bd218: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 28182a8f5d3c: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": dbe55fb15828: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": d342d2959134: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": d342d2959134: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bf35453ac387: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bf35453ac387: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a71bcdade2a1: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a71bcdade2a1: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": ae61a9454b32: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": ae61a9454b32: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 2dd5b91451bb: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 70ba9fe7f423: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 737a97ef8142: Verifying Checksum
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 737a97ef8142: Download complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 7810d12bd218: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 07c18d44b76c: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 85b8a1f68ee1: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b3591ac61c2e: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": d9fe03d643f6: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bd2771bbfe70: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4d6b082cca5b: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a365f448931f: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4017529cc304: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bd193a16c8fc: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 313660cea2ba: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 0d3beb530b76: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a5b103df4ed8: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": c8856dff6daa: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 9976ca08e65d: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 854d16331ab7: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 89771744ed41: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": ecf668e56a47: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 5f092c77c59a: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 8f640a88e43e: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 7ca3aac57446: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 69223543f0f9: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": e0ce080c1cb2: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 4be8ff9898e4: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b62562ac0380: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 917066d9e7a1: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": b752d5213abd: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 360a973f459e: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 68412e03a3f4: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 28182a8f5d3c: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": dbe55fb15828: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": bf35453ac387: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": a71bcdade2a1: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": d342d2959134: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 737a97ef8142: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": ae61a9454b32: Pull complete
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Digest: sha256:9aa9f4702d57b297bbf13d66741a951b6b30abba6a6ea74a253f76a731fded2f
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-go:latest
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> 873ecdbae3a5
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Step 2/9 : RUN apt-get update && apt-get install -y wget
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> Running in d93eb82b90b7
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Fetched 383 kB in 1s (542 kB/s)
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Reading package lists...
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Reading package lists...
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Building dependency tree...
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Reading state information...
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": wget is already the newest version (1.20.3-1ubuntu2.1).
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": The following packages were automatically installed and are no longer required:
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":   autotools-dev libsigsegv2 m4
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Use 'apt autoremove' to remove them.
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Removing intermediate container d93eb82b90b7
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> a1564fbd20b9
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Step 3/9 : RUN wget https://raw.githubusercontent.com/google/AFL/master/dictionaries/json.dict -O $OUT/fuzz.dict
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> Running in 5aee9e480082
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [91m--2025-09-17 07:09:10--  https://raw.githubusercontent.com/google/AFL/master/dictionaries/json.dict
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [0m[91mResolving raw.githubusercontent.com (raw.githubusercontent.com)... [0m[91m185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... [0m[91mconnected.
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [0m[91mHTTP request sent, awaiting response... [0m[91m200 OK
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Length: 416 [text/plain]
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Saving to: '/out/fuzz.dict'
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [0m[91m
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":      0K                          [0m[91m        [0m[91m    [0m[91m    [0m[91m     [0m[91m     [0m[91m   100% 5.31M[0m[91m=0s
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [0m[91m2025-09-17 07:09:10 (5.31 MB/s) - '/out/fuzz.dict' saved [416/416]
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": 
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [0mRemoving intermediate container 5aee9e480082
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> fdbb14f62374
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Step 4/9 : RUN git clone --depth 1 https://github.com/dvyukov/go-fuzz-corpus
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> Running in 88172899ddbe
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [91mCloning into 'go-fuzz-corpus'...
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [0m[91mUpdating files:  44% (27160/60861)[0m[91mUpdating files:  45% (27388/60861)[0m[91mUpdating files:  46% (27997/60861)[0m[91mUpdating files:  47% (28605/60861)[0m[91mUpdating files:  48% (29214/60861)[0m[91mUpdating files:  49% (29822/60861)[0m[91mUpdating files:  50% (30431/60861)[0m[91mUpdating files:  51% (31040/60861)[0m[91mUpdating files:  52% (31648/60861)[0m[91mUpdating files:  53% (32257/60861)[0m[91mUpdating files:  54% (32865/60861)[0m[91mUpdating files:  55% (33474/60861)[0m[91mUpdating files:  56% (34083/60861)[0m[91mUpdating files:  57% (34691/60861)[0m[91mUpdating files:  58% (35300/60861)[0m[91mUpdating files:  59% (35908/60861)[0m[91mUpdating files:  60% (36517/60861)[0m[91mUpdating files:  61% (37126/60861)[0m[91mUpdating files:  62% (37734/60861)[0m[91mUpdating files:  63% (38343/60861)[0m[91mUpdating files:  64% (38952/60861)[0m[91mUpdating files:  65% (39560/60861)[0m[91mUpdating files:  66% (40169/60861)[0m[91mUpdating files:  67% (40777/60861)[0m[91mUpdating files:  68% (41386/60861)[0m[91mUpdating files:  69% (41995/60861)[0m[91mUpdating files:  70% (42603/60861)[0m[91mUpdating files:  71% (43212/60861)[0m[91mUpdating files:  72% (43820/60861)[0m[91mUpdating files:  73% (44429/60861)[0m[91mUpdating files:  74% (45038/60861)[0m[91mUpdating files:  75% (45646/60861)[0m[91mUpdating files:  76% (46255/60861)[0m[91mUpdating files:  77% (46863/60861)[0m[91mUpdating files:  78% (47472/60861)[0m[91mUpdating files:  79% (48081/60861)[0m[91mUpdating files:  80% (48689/60861)[0m[91mUpdating files:  81% (49298/60861)[0m[91mUpdating files:  82% (49907/60861)[0m[91mUpdating files:  83% (50515/60861)[0m[91mUpdating files:  84% (51124/60861)[0m[91mUpdating files:  85% (51732/60861)[0m[91mUpdating files:  86% (52341/60861)[0m[91mUpdating files:  86% (52831/60861)[0m[91mUpdating files:  87% (52950/60861)[0m[91mUpdating files:  88% (53558/60861)[0m[91mUpdating files:  89% (54167/60861)[0m[91mUpdating files:  90% (54775/60861)[0m[91mUpdating files:  91% (55384/60861)[0m[91mUpdating files:  92% (55993/60861)[0m[91mUpdating files:  93% (56601/60861)[0m[91mUpdating files:  94% (57210/60861)[0m[91mUpdating files:  95% (57818/60861)[0m[91mUpdating files:  96% (58427/60861)[0m[91mUpdating files:  97% (59036/60861)[0m[91mUpdating files:  98% (59644/60861)[0m[91mUpdating files:  99% (60253/60861)[0m[91mUpdating files: 100% (60861/60861)Updating files: 100% (60861/60861), done.
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [0mRemoving intermediate container 88172899ddbe
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> 4c84742489d8
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Step 5/9 : RUN git clone --depth 1 https://github.com/cilium/cilium
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> Running in 5f98d37ff22d
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [91mCloning into 'cilium'...
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [0m[91mUpdating files:  44% (10766/24060)[0m[91mUpdating files:  45% (10827/24060)[0m[91mUpdating files:  46% (11068/24060)[0m[91mUpdating files:  47% (11309/24060)[0m[91mUpdating files:  48% (11549/24060)[0m[91mUpdating files:  49% (11790/24060)[0m[91mUpdating files:  50% (12030/24060)[0m[91mUpdating files:  51% (12271/24060)[0m[91mUpdating files:  52% (12512/24060)[0m[91mUpdating files:  53% (12752/24060)[0m[91mUpdating files:  54% (12993/24060)[0m[91mUpdating files:  55% (13233/24060)[0m[91mUpdating files:  56% (13474/24060)[0m[91mUpdating files:  57% (13715/24060)[0m[91mUpdating files:  58% (13955/24060)[0m[91mUpdating files:  59% (14196/24060)[0m[91mUpdating files:  60% (14436/24060)[0m[91mUpdating files:  61% (14677/24060)[0m[91mUpdating files:  62% (14918/24060)[0m[91mUpdating files:  63% (15158/24060)[0m[91mUpdating files:  64% (15399/24060)[0m[91mUpdating files:  65% (15639/24060)[0m[91mUpdating files:  66% (15880/24060)[0m[91mUpdating files:  67% (16121/24060)[0m[91mUpdating files:  68% (16361/24060)[0m[91mUpdating files:  69% (16602/24060)[0m[91mUpdating files:  70% (16842/24060)[0m[91mUpdating files:  71% (17083/24060)[0m[91mUpdating files:  72% (17324/24060)[0m[91mUpdating files:  73% (17564/24060)[0m[91mUpdating files:  74% (17805/24060)[0m[91mUpdating files:  75% (18045/24060)[0m[91mUpdating files:  76% (18286/24060)[0m[91mUpdating files:  77% (18527/24060)[0m[91mUpdating files:  78% (18767/24060)[0m[91mUpdating files:  79% (19008/24060)[0m[91mUpdating files:  80% (19248/24060)[0m[91mUpdating files:  81% (19489/24060)[0m[91mUpdating files:  82% (19730/24060)[0m[91mUpdating files:  83% (19970/24060)[0m[91mUpdating files:  84% (20211/24060)[0m[91mUpdating files:  85% (20451/24060)[0m[91mUpdating files:  86% (20692/24060)[0m[91mUpdating files:  87% (20933/24060)[0m[91mUpdating files:  88% (21173/24060)[0m[91mUpdating files:  88% (21200/24060)[0m[91mUpdating files:  89% (21414/24060)[0m[91mUpdating files:  90% (21654/24060)[0m[91mUpdating files:  91% (21895/24060)[0m[91mUpdating files:  92% (22136/24060)[0m[91mUpdating files:  93% (22376/24060)[0m[91mUpdating files:  94% (22617/24060)[0m[91mUpdating files:  95% (22857/24060)[0m[91mUpdating files:  96% (23098/24060)[0m[91mUpdating files:  97% (23339/24060)[0m[91mUpdating files:  98% (23579/24060)[0m[91mUpdating files:  99% (23820/24060)[0m[91mUpdating files: 100% (24060/24060)Updating files: 100% (24060/24060), done.
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [0mRemoving intermediate container 5f98d37ff22d
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> 6f323c86e913
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Step 6/9 : RUN git clone --depth 1 https://github.com/cncf/cncf-fuzzing
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> Running in 789cd3287232
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [91mCloning into 'cncf-fuzzing'...
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [0mRemoving intermediate container 789cd3287232
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> cdba59b9eeb9
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Step 7/9 : RUN git clone --depth 1 https://github.com/cilium/proxy
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> Running in 0679eaf86a83
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [91mCloning into 'proxy'...
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": [0mRemoving intermediate container 0679eaf86a83
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> 2c65ea1e5270
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Step 8/9 : COPY build.sh $SRC/
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> 08f5a2cff5a3
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Step 9/9 : WORKDIR $SRC/cilium
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> Running in 91d08d825a05
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Removing intermediate container 91d08d825a05
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c":  ---> c96e5e9aa296
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Successfully built c96e5e9aa296
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Successfully tagged gcr.io/oss-fuzz/cilium:latest
+Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/cilium:latest
+Finished Step #1 - "build-c0e12e67-d858-48af-912b-355e1a940f2c"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/cilium
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/filejMb9lP
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ go == \g\o ]]
+Step #2 - "srcmap": + PATHS_TO_SCAN='/src /root/go'
+Step #2 - "srcmap": ++ find /src /root/go -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/proxy/.git
+Step #2 - "srcmap": + GIT_DIR=/src/proxy
+Step #2 - "srcmap": + cd /src/proxy
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/cilium/proxy
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=05c51833b1409d67ea2ac05e992c4f0ba4ddbe10
+Step #2 - "srcmap": + jq_inplace /tmp/filejMb9lP '."/src/proxy" = { type: "git", url: "https://github.com/cilium/proxy", rev: "05c51833b1409d67ea2ac05e992c4f0ba4ddbe10" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/filewXI3Jb
+Step #2 - "srcmap": + cat /tmp/filejMb9lP
+Step #2 - "srcmap": + jq '."/src/proxy" = { type: "git", url: "https://github.com/cilium/proxy", rev: "05c51833b1409d67ea2ac05e992c4f0ba4ddbe10" }'
+Step #2 - "srcmap": + mv /tmp/filewXI3Jb /tmp/filejMb9lP
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/cncf-fuzzing/.git
+Step #2 - "srcmap": + GIT_DIR=/src/cncf-fuzzing
+Step #2 - "srcmap": + cd /src/cncf-fuzzing
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/cncf/cncf-fuzzing
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=faf3d0eb8584e1ee25db9c935119fa7e347e70f8
+Step #2 - "srcmap": + jq_inplace /tmp/filejMb9lP '."/src/cncf-fuzzing" = { type: "git", url: "https://github.com/cncf/cncf-fuzzing", rev: "faf3d0eb8584e1ee25db9c935119fa7e347e70f8" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/file7IhqJG
+Step #2 - "srcmap": + cat /tmp/filejMb9lP
+Step #2 - "srcmap": + jq '."/src/cncf-fuzzing" = { type: "git", url: "https://github.com/cncf/cncf-fuzzing", rev: "faf3d0eb8584e1ee25db9c935119fa7e347e70f8" }'
+Step #2 - "srcmap": + mv /tmp/file7IhqJG /tmp/filejMb9lP
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/cilium/.git
+Step #2 - "srcmap": + GIT_DIR=/src/cilium
+Step #2 - "srcmap": + cd /src/cilium
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/cilium/cilium
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=8aea63849b89f81d7e8c71edb98221eabc20ad5c
+Step #2 - "srcmap": + jq_inplace /tmp/filejMb9lP '."/src/cilium" = { type: "git", url: "https://github.com/cilium/cilium", rev: "8aea63849b89f81d7e8c71edb98221eabc20ad5c" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileyryk3f
+Step #2 - "srcmap": + cat /tmp/filejMb9lP
+Step #2 - "srcmap": + jq '."/src/cilium" = { type: "git", url: "https://github.com/cilium/cilium", rev: "8aea63849b89f81d7e8c71edb98221eabc20ad5c" }'
+Step #2 - "srcmap": + mv /tmp/fileyryk3f /tmp/filejMb9lP
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/go-fuzz-corpus/.git
+Step #2 - "srcmap": + GIT_DIR=/src/go-fuzz-corpus
+Step #2 - "srcmap": + cd /src/go-fuzz-corpus
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/dvyukov/go-fuzz-corpus
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=c42c1b2914c7503500996ee15927d3ab3d2ba968
+Step #2 - "srcmap": + jq_inplace /tmp/filejMb9lP '."/src/go-fuzz-corpus" = { type: "git", url: "https://github.com/dvyukov/go-fuzz-corpus", rev: "c42c1b2914c7503500996ee15927d3ab3d2ba968" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileRfkqKL
+Step #2 - "srcmap": + cat /tmp/filejMb9lP
+Step #2 - "srcmap": + jq '."/src/go-fuzz-corpus" = { type: "git", url: "https://github.com/dvyukov/go-fuzz-corpus", rev: "c42c1b2914c7503500996ee15927d3ab3d2ba968" }'
+Step #2 - "srcmap": + mv /tmp/fileRfkqKL /tmp/filejMb9lP
+Step #2 - "srcmap": ++ find /src /root/go -name .svn -type d
+Step #2 - "srcmap": ++ find /src /root/go -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/filejMb9lP
+Step #2 - "srcmap": + rm /tmp/filejMb9lP
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/proxy": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/cilium/proxy",
+Step #2 - "srcmap":     "rev": "05c51833b1409d67ea2ac05e992c4f0ba4ddbe10"
+Step #2 - "srcmap":   },
+Step #2 - "srcmap":   "/src/cncf-fuzzing": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/cncf/cncf-fuzzing",
+Step #2 - "srcmap":     "rev": "faf3d0eb8584e1ee25db9c935119fa7e347e70f8"
+Step #2 - "srcmap":   },
+Step #2 - "srcmap":   "/src/cilium": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/cilium/cilium",
+Step #2 - "srcmap":     "rev": "8aea63849b89f81d7e8c71edb98221eabc20ad5c"
+Step #2 - "srcmap":   },
+Step #2 - "srcmap":   "/src/go-fuzz-corpus": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/dvyukov/go-fuzz-corpus",
+Step #2 - "srcmap":     "rev": "c42c1b2914c7503500996ee15927d3ab3d2ba968"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++ -lresolv
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + /src/cilium/test/fuzzing/oss-fuzz-build.sh
+Step #3 - "compile-libfuzzer-address-x86_64": Could not find the function: func FuzzMatchpatternValidate(f *testing.F)
+Step #3 - "compile-libfuzzer-address-x86_64": # github.com/cilium/cilium/pkg/policy
+Step #3 - "compile-libfuzzer-address-x86_64": pkg/policy/l4_filter_test_fuzz.go:466:15: undefined: OriginForTest
+Step #3 - "compile-libfuzzer-address-x86_64": pkg/policy/l4_filter_test_fuzz.go:556:15: undefined: OriginForTest
+Step #3 - "compile-libfuzzer-address-x86_64": pkg/policy/l4_filter_test_fuzz.go:609:15: undefined: OriginForTest
+Step #3 - "compile-libfuzzer-address-x86_64": pkg/policy/l4_filter_test_fuzz.go:672:15: undefined: OriginForTest
+Step #3 - "compile-libfuzzer-address-x86_64": pkg/policy/l4_filter_test_fuzz.go:733:15: undefined: OriginForTest
+Step #3 - "compile-libfuzzer-address-x86_64": pkg/policy/l4_filter_test_fuzz.go:973:15: undefined: OriginForTest
+Step #3 - "compile-libfuzzer-address-x86_64": pkg/policy/l4_filter_test_fuzz.go:1057:15: undefined: OriginForTest
+Step #3 - "compile-libfuzzer-address-x86_64": pkg/policy/l4_filter_test_fuzz.go:1158:15: undefined: OriginForTest
+Step #3 - "compile-libfuzzer-address-x86_64": pkg/policy/l4_filter_test_fuzz.go:1268:15: undefined: OriginForTest
+Step #3 - "compile-libfuzzer-address-x86_64": pkg/policy/l4_filter_test_fuzz.go:1326:15: undefined: OriginForTest
+Step #3 - "compile-libfuzzer-address-x86_64": pkg/policy/l4_filter_test_fuzz.go:1326:15: too many errors
+Step #3 - "compile-libfuzzer-address-x86_64": 2025/09/17 07:11:10 failed to build packages:exit status 1
+Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
+Step #3 - "compile-libfuzzer-address-x86_64": Failed to build.
+Step #3 - "compile-libfuzzer-address-x86_64": To reproduce, run:
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_image cilium
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_fuzzers --sanitizer address --engine libfuzzer --architecture x86_64 cilium
+Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+ERROR
+ERROR: build step 3 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

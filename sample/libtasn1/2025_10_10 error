@@ -1,0 +1,285 @@
+starting build "dc85624e-e280-40a0-8f32-e90440ec156b"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9"
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Sending build context to Docker daemon  5.632kB
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Step 1/8 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": b549f31133a9: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": cd18e4a30c2a: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": b58b73ab52e9: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5f76a6ebf1bf: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c410c19de21d: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 3a07cafcfd5f: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": ede70edf103d: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": fb348cfde8ea: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 0b808471114d: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": f8434df993c2: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 1f95da7dd7ed: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c7b891ded878: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d1392738daa4: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 82f0a273a9b6: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 4b0f4899efd5: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5ee0d3c2a1f3: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 650456f64a40: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 62d60654b975: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2bcbcd0e0178: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2a366f1f9403: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": fdff76ca8d6c: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 87a33d77c44e: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": af9cc40b9546: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8c7ef36dc00d: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5b05ba1c4354: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 3a07cafcfd5f: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8c0a4d97aee8: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5e51812eca81: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 0b808471114d: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": f8434df993c2: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": ede70edf103d: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 9cc98e6b642d: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": f8fe7269232f: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 1f95da7dd7ed: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": fb348cfde8ea: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 244fc348710a: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d3ac5db83125: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2edaf31238fc: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c7b891ded878: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d1392738daa4: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2a366f1f9403: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d024fd452146: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 82f0a273a9b6: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": fdff76ca8d6c: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8aab5be69487: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 40ba1b2bfbbb: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 4b0f4899efd5: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": cb4068c83396: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8c7ef36dc00d: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2679f3eb2425: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5ee0d3c2a1f3: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c321bf99c319: Pulling fs layer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5b05ba1c4354: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 650456f64a40: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": af9cc40b9546: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 62d60654b975: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8c0a4d97aee8: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2bcbcd0e0178: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5e51812eca81: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8aab5be69487: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 9cc98e6b642d: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 87a33d77c44e: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 40ba1b2bfbbb: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": cb4068c83396: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 244fc348710a: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2679f3eb2425: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c321bf99c319: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5f76a6ebf1bf: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d3ac5db83125: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2edaf31238fc: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d024fd452146: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c410c19de21d: Waiting
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": b58b73ab52e9: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": b549f31133a9: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": b549f31133a9: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c410c19de21d: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c410c19de21d: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5f76a6ebf1bf: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5f76a6ebf1bf: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": ede70edf103d: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": ede70edf103d: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": cd18e4a30c2a: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": cd18e4a30c2a: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": fb348cfde8ea: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": fb348cfde8ea: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": b549f31133a9: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": f8434df993c2: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": f8434df993c2: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 1f95da7dd7ed: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 1f95da7dd7ed: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c7b891ded878: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c7b891ded878: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d1392738daa4: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 0b808471114d: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 0b808471114d: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 82f0a273a9b6: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 82f0a273a9b6: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5ee0d3c2a1f3: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5ee0d3c2a1f3: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 4b0f4899efd5: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 4b0f4899efd5: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 62d60654b975: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 62d60654b975: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 650456f64a40: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 650456f64a40: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2bcbcd0e0178: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2bcbcd0e0178: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2a366f1f9403: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2a366f1f9403: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": fdff76ca8d6c: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": fdff76ca8d6c: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 87a33d77c44e: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 87a33d77c44e: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8c7ef36dc00d: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8c7ef36dc00d: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": af9cc40b9546: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": af9cc40b9546: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5b05ba1c4354: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5b05ba1c4354: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8c0a4d97aee8: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": cd18e4a30c2a: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": b58b73ab52e9: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5e51812eca81: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 9cc98e6b642d: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 9cc98e6b642d: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": f8fe7269232f: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": f8fe7269232f: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 3a07cafcfd5f: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 3a07cafcfd5f: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 244fc348710a: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 244fc348710a: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d3ac5db83125: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2edaf31238fc: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2edaf31238fc: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d024fd452146: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d024fd452146: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8aab5be69487: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 40ba1b2bfbbb: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 40ba1b2bfbbb: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": cb4068c83396: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": cb4068c83396: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c321bf99c319: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c321bf99c319: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2679f3eb2425: Verifying Checksum
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2679f3eb2425: Download complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5f76a6ebf1bf: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c410c19de21d: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 3a07cafcfd5f: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": ede70edf103d: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": fb348cfde8ea: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 0b808471114d: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": f8434df993c2: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 1f95da7dd7ed: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c7b891ded878: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d1392738daa4: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 82f0a273a9b6: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 4b0f4899efd5: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5ee0d3c2a1f3: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 650456f64a40: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 62d60654b975: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2bcbcd0e0178: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2a366f1f9403: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": fdff76ca8d6c: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 87a33d77c44e: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": af9cc40b9546: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8c7ef36dc00d: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5b05ba1c4354: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8c0a4d97aee8: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 5e51812eca81: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 9cc98e6b642d: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": f8fe7269232f: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 244fc348710a: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d3ac5db83125: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2edaf31238fc: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": d024fd452146: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 8aab5be69487: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 40ba1b2bfbbb: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": cb4068c83396: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 2679f3eb2425: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": c321bf99c319: Pull complete
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Digest: sha256:b79d3707eeffb6c75a530689b5ade9038bd005628f44d30c62680f4b810c3900
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9":  ---> 6c7513e4cb7a
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Step 2/8 : RUN apt-get update && apt-get install -y make autoconf automake libtool bison
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9":  ---> Running in f4084c128f34
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Fetched 383 kB in 1s (348 kB/s)
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Reading package lists...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Reading package lists...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Building dependency tree...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Reading state information...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": make set to manually installed.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": The following additional packages will be installed:
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9":   file libltdl-dev libltdl7 libmagic-mgc libmagic1
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Suggested packages:
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9":   autoconf-archive gnu-standards autoconf-doc gettext bison-doc libtool-doc
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9":   gfortran | fortran95-compiler gcj-jdk
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": The following NEW packages will be installed:
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9":   autoconf automake bison file libltdl-dev libltdl7 libmagic-mgc libmagic1
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9":   libtool
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": 0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Need to get 2178 kB of archives.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": After this operation, 14.3 MB of additional disk space will be used.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 bison amd64 2:3.5.1+dfsg-1 [657 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": [0mFetched 2178 kB in 1s (1841 kB/s)
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Preparing to unpack .../0-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Preparing to unpack .../1-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Selecting previously unselected package file.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Preparing to unpack .../2-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Unpacking file (1:5.38-4) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Selecting previously unselected package autoconf.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Preparing to unpack .../3-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Selecting previously unselected package automake.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Preparing to unpack .../4-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Selecting previously unselected package bison.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Preparing to unpack .../5-bison_2%3a3.5.1+dfsg-1_amd64.deb ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Unpacking bison (2:3.5.1+dfsg-1) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Preparing to unpack .../6-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Preparing to unpack .../7-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Selecting previously unselected package libtool.
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Preparing to unpack .../8-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Setting up file (1:5.38-4) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Setting up bison (2:3.5.1+dfsg-1) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": update-alternatives: using /usr/bin/bison.yacc to provide /usr/bin/yacc (yacc) in auto mode
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": update-alternatives: warning: skip creation of /usr/share/man/man1/yacc.1.gz because associated file /usr/share/man/man1/bison.yacc.1.gz (of link group yacc) doesn't exist
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Removing intermediate container f4084c128f34
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9":  ---> 408b4da6f3e4
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": Step 3/8 : RUN git clone git://git.savannah.gnu.org/gnulib.git
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9":  ---> Running in ea37b5d46bd2
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": [91mCloning into 'gnulib'...
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": [0m[91mfatal: read error: Connection reset by peer
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": The command '/bin/sh -c git clone git://git.savannah.gnu.org/gnulib.git' returned a non-zero code: 128
+Finished Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 128
+Step #1 - "build-b9dfcdfc-6de1-4eab-909c-728d83dc05f9": [0m

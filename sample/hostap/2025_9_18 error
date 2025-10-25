@@ -1,0 +1,326 @@
+starting build "6461a9d2-477a-4739-8ff9-7afb9f960c2c"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e"
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Sending build context to Docker daemon  5.632kB
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Step 1/5 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b549f31133a9: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b9689470e8f0: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": ff85f635ea0a: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 469cfb54c665: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": cf84a4242a45: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 5b692a6b8a30: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": e344e255f14c: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": e0c0ad39ca6b: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 5dee9f30a206: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": f7bc4fc122d9: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 7832e8425134: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 61dc52306ced: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 760f22723ef2: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 2a8e9aa08f6f: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0e0cecaeceb6: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 4ad940e6a74f: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3ab8980b3b30: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 8f7c829786ca: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 58554b5d927e: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3cc37d885be2: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0fef44b7b0e0: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 05c6aed9bb88: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 145ccd6078f8: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0ba3c3546e4d: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 1cab194417e9: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": d60a0ce7feb5: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 469cfb54c665: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": fdfc4b1764a4: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 902b29663826: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 4997f49c2fe4: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3f992f49f4df: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b5e08f428f20: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 82b3d564b04f: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 43934c94e86e: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": f93072778ac6: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 66c5788e17f5: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": d16ffd29e225: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 61dc2cec70d9: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 95d52f685b3f: Pulling fs layer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0ba3c3546e4d: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 2a8e9aa08f6f: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 4997f49c2fe4: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3f992f49f4df: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 1cab194417e9: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": cf84a4242a45: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b5e08f428f20: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 82b3d564b04f: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": d60a0ce7feb5: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 43934c94e86e: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 5b692a6b8a30: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": f93072778ac6: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0e0cecaeceb6: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 66c5788e17f5: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3cc37d885be2: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": e344e255f14c: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": d16ffd29e225: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 8f7c829786ca: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0fef44b7b0e0: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 61dc2cec70d9: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": e0c0ad39ca6b: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 95d52f685b3f: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 4ad940e6a74f: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 05c6aed9bb88: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 58554b5d927e: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 5dee9f30a206: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 145ccd6078f8: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3ab8980b3b30: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 902b29663826: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": fdfc4b1764a4: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": f7bc4fc122d9: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 7832e8425134: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 61dc52306ced: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 760f22723ef2: Waiting
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": ff85f635ea0a: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": ff85f635ea0a: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b549f31133a9: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b549f31133a9: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": cf84a4242a45: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 469cfb54c665: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 469cfb54c665: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": e344e255f14c: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": e344e255f14c: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": e0c0ad39ca6b: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": e0c0ad39ca6b: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b9689470e8f0: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b9689470e8f0: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b549f31133a9: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": f7bc4fc122d9: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": f7bc4fc122d9: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 7832e8425134: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 7832e8425134: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 61dc52306ced: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 61dc52306ced: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 760f22723ef2: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 760f22723ef2: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 2a8e9aa08f6f: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 2a8e9aa08f6f: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0e0cecaeceb6: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0e0cecaeceb6: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 5dee9f30a206: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 5dee9f30a206: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 4ad940e6a74f: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 4ad940e6a74f: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 8f7c829786ca: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 8f7c829786ca: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3ab8980b3b30: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3ab8980b3b30: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 58554b5d927e: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3cc37d885be2: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3cc37d885be2: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0fef44b7b0e0: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0fef44b7b0e0: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 05c6aed9bb88: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 05c6aed9bb88: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0ba3c3546e4d: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 145ccd6078f8: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 145ccd6078f8: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 1cab194417e9: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 1cab194417e9: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": d60a0ce7feb5: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": fdfc4b1764a4: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 902b29663826: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 902b29663826: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 4997f49c2fe4: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 4997f49c2fe4: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3f992f49f4df: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3f992f49f4df: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b5e08f428f20: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b5e08f428f20: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 82b3d564b04f: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 43934c94e86e: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 43934c94e86e: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b9689470e8f0: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": f93072778ac6: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": f93072778ac6: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 5b692a6b8a30: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 5b692a6b8a30: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": ff85f635ea0a: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 66c5788e17f5: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 66c5788e17f5: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": d16ffd29e225: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": d16ffd29e225: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 61dc2cec70d9: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 95d52f685b3f: Verifying Checksum
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 95d52f685b3f: Download complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 469cfb54c665: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": cf84a4242a45: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 5b692a6b8a30: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": e344e255f14c: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": e0c0ad39ca6b: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 5dee9f30a206: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": f7bc4fc122d9: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 7832e8425134: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 61dc52306ced: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 760f22723ef2: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 2a8e9aa08f6f: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0e0cecaeceb6: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 4ad940e6a74f: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3ab8980b3b30: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 8f7c829786ca: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 58554b5d927e: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3cc37d885be2: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0fef44b7b0e0: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 05c6aed9bb88: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 145ccd6078f8: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0ba3c3546e4d: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 1cab194417e9: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": d60a0ce7feb5: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": fdfc4b1764a4: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 902b29663826: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 4997f49c2fe4: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 3f992f49f4df: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": b5e08f428f20: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 82b3d564b04f: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 43934c94e86e: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": f93072778ac6: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 66c5788e17f5: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": d16ffd29e225: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 61dc2cec70d9: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 95d52f685b3f: Pull complete
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Digest: sha256:46d9c92c9090b3432c8d28844f6026368a75550a4e6ec447e13f6571940e9536
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":  ---> 3d6cce8dea43
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Step 2/5 : RUN apt-get update &&     apt-get install -y make autoconf automake libtool g++ libssl-dev                        libssl-dev:i386
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":  ---> Running in c18e2a50f3ca
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Fetched 128 kB in 1s (136 kB/s)
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Reading package lists...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Reading package lists...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Building dependency tree...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Reading state information...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": g++ is already the newest version (4:9.3.0-1ubuntu2).
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": g++ set to manually installed.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": make set to manually installed.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": libssl-dev is already the newest version (1.1.1f-1ubuntu2.24).
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": The following additional packages will be installed:
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":   file gcc-10-base:i386 libc6:i386 libcrypt1:i386 libgcc-s1:i386
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":   libidn2-0:i386 libltdl-dev libltdl7 libmagic-mgc libmagic1 libssl1.1:i386
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":   libunistring2:i386
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Suggested packages:
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":   autoconf-archive gnu-standards autoconf-doc gettext glibc-doc:i386
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":   locales:i386 libtool-doc libssl-doc:i386 gfortran | fortran95-compiler
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":   gcj-jdk
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": The following NEW packages will be installed:
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":   autoconf automake file gcc-10-base:i386 libc6:i386 libcrypt1:i386
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":   libgcc-s1:i386 libidn2-0:i386 libltdl-dev libltdl7 libmagic-mgc libmagic1
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":   libssl-dev:i386 libssl1.1:i386 libtool libunistring2:i386
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": 0 upgraded, 16 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Need to get 7629 kB of archives.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": After this operation, 38.5 MB of additional disk space will be used.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main i386 gcc-10-base i386 10.5.0-1ubuntu1~20.04 [20.8 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main i386 libgcc-s1 i386 10.5.0-1ubuntu1~20.04 [49.4 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:3 http://archive.ubuntu.com/ubuntu focal/main i386 libcrypt1 i386 1:4.4.10-10ubuntu4 [90.9 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main i386 libc6 i386 2.31-0ubuntu9.18 [2581 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:8 http://archive.ubuntu.com/ubuntu focal/main i386 libunistring2 i386 0.9.10-2 [377 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:9 http://archive.ubuntu.com/ubuntu focal/main i386 libidn2-0 i386 2.2.0-2 [51.4 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main i386 libssl1.1 i386 1.1.1f-1ubuntu2.24 [1321 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main i386 libssl-dev i386 1.1.1f-1ubuntu2.24 [1616 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": [0mFetched 7629 kB in 1s (5428 kB/s)
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package gcc-10-base:i386.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../00-gcc-10-base_10.5.0-1ubuntu1~20.04_i386.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking gcc-10-base:i386 (10.5.0-1ubuntu1~20.04) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libgcc-s1:i386.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../01-libgcc-s1_10.5.0-1ubuntu1~20.04_i386.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libgcc-s1:i386 (10.5.0-1ubuntu1~20.04) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libcrypt1:i386.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../02-libcrypt1_1%3a4.4.10-10ubuntu4_i386.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libcrypt1:i386 (1:4.4.10-10ubuntu4) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libc6:i386.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../03-libc6_2.31-0ubuntu9.18_i386.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libc6:i386 (2.31-0ubuntu9.18) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Replacing files in old package libc6-i386 (2.31-0ubuntu9.18) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../04-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../05-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package file.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../06-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking file (1:5.38-4) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libunistring2:i386.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../07-libunistring2_0.9.10-2_i386.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libunistring2:i386 (0.9.10-2) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libidn2-0:i386.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../08-libidn2-0_2.2.0-2_i386.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libidn2-0:i386 (2.2.0-2) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libssl1.1:i386.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../09-libssl1.1_1.1.1f-1ubuntu2.24_i386.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libssl1.1:i386 (1.1.1f-1ubuntu2.24) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package autoconf.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../10-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package automake.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../11-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../12-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../13-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libssl-dev:i386.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../14-libssl-dev_1.1.1f-1ubuntu2.24_i386.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libssl-dev:i386 (1.1.1f-1ubuntu2.24) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Selecting previously unselected package libtool.
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Preparing to unpack .../15-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up file (1:5.38-4) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up gcc-10-base:i386 (10.5.0-1ubuntu1~20.04) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libcrypt1:i386 (1:4.4.10-10ubuntu4) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libgcc-s1:i386 (10.5.0-1ubuntu1~20.04) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libc6:i386 (2.31-0ubuntu9.18) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libssl1.1:i386 (1.1.1f-1ubuntu2.24) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libunistring2:i386 (0.9.10-2) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libidn2-0:i386 (2.2.0-2) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Setting up libssl-dev:i386 (1.1.1f-1ubuntu2.24) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Removing intermediate container c18e2a50f3ca
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":  ---> 2d817a6824f6
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": Step 3/5 : RUN git clone --depth 1 git://w1.fi/srv/git/hostap.git hostap
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e":  ---> Running in 1293a1d95983
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": [91mCloning into 'hostap'...
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": [0m[91mfatal: read error: Connection reset by peer
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": The command '/bin/sh -c git clone --depth 1 git://w1.fi/srv/git/hostap.git hostap' returned a non-zero code: 128
+Finished Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 128
+Step #1 - "build-9cfdbcc0-9e6c-460d-adeb-f04f28da767e": [0m

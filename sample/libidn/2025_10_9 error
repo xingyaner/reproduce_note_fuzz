@@ -1,0 +1,352 @@
+starting build "f2136942-586f-43b5-8ca0-c0f6e9f6e69c"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710"
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Sending build context to Docker daemon  5.632kB
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Step 1/5 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": b549f31133a9: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 73ed6ec52cba: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 56028feba470: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 24b216ebb0ad: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": a67ba1b95825: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 06e14609521e: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": d9b8116809b2: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 4bc077a64868: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 9a86ce6794b2: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 0dcf982c9e0d: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 6a9015476239: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 4427c59932ee: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": ba34e1f7df5e: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 1e4ed01f7963: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e19e114d6051: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 8b9893d4a605: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 41dd9f824e28: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 0b64ce4b095c: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": d9b8116809b2: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 833151026fec: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 20684dd9b9da: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 36313b9ee297: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": d0b1e651b877: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 4bc077a64868: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e1806c15eb1b: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": cba750fa38a7: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 9a86ce6794b2: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 0dcf982c9e0d: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 2713b3fdbb22: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 2c4d3b8e7862: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 500e568aea5e: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 86987eef9716: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": a72862ddbe88: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": f7663f4ceecf: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 6a9015476239: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e81af4861b42: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 4427c59932ee: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 19e5f439d52d: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 95196e1d01b4: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 00bbfa83dbf6: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": dcf98486c861: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": ef859fa5f240: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e12fdcad9c2d: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": b46089589082: Pulling fs layer
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": ba34e1f7df5e: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 1e4ed01f7963: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e19e114d6051: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": a72862ddbe88: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 8b9893d4a605: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": f7663f4ceecf: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": dcf98486c861: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 41dd9f824e28: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e81af4861b42: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": ef859fa5f240: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 0b64ce4b095c: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 00bbfa83dbf6: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 833151026fec: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 20684dd9b9da: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 36313b9ee297: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e12fdcad9c2d: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 19e5f439d52d: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 95196e1d01b4: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": d0b1e651b877: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": b46089589082: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 2c4d3b8e7862: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": cba750fa38a7: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 06e14609521e: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 86987eef9716: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 500e568aea5e: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e1806c15eb1b: Waiting
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 56028feba470: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": b549f31133a9: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": b549f31133a9: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": a67ba1b95825: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": a67ba1b95825: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 24b216ebb0ad: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 24b216ebb0ad: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 73ed6ec52cba: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 73ed6ec52cba: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": d9b8116809b2: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": d9b8116809b2: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 4bc077a64868: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 4bc077a64868: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": b549f31133a9: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 0dcf982c9e0d: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 0dcf982c9e0d: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 6a9015476239: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 6a9015476239: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 4427c59932ee: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 4427c59932ee: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": ba34e1f7df5e: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": ba34e1f7df5e: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 9a86ce6794b2: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 9a86ce6794b2: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 1e4ed01f7963: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 1e4ed01f7963: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 8b9893d4a605: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e19e114d6051: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e19e114d6051: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 0b64ce4b095c: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 0b64ce4b095c: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 41dd9f824e28: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 41dd9f824e28: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 833151026fec: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 20684dd9b9da: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 20684dd9b9da: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 36313b9ee297: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 36313b9ee297: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": d0b1e651b877: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e1806c15eb1b: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e1806c15eb1b: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": cba750fa38a7: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": cba750fa38a7: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 2713b3fdbb22: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 2713b3fdbb22: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 2c4d3b8e7862: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 500e568aea5e: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 86987eef9716: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 86987eef9716: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": a72862ddbe88: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": a72862ddbe88: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 73ed6ec52cba: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e81af4861b42: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": f7663f4ceecf: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": f7663f4ceecf: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 56028feba470: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 06e14609521e: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 06e14609521e: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 19e5f439d52d: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 19e5f439d52d: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 95196e1d01b4: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 95196e1d01b4: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 00bbfa83dbf6: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 00bbfa83dbf6: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": dcf98486c861: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": ef859fa5f240: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": ef859fa5f240: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e12fdcad9c2d: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e12fdcad9c2d: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": b46089589082: Verifying Checksum
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": b46089589082: Download complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 24b216ebb0ad: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": a67ba1b95825: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 06e14609521e: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": d9b8116809b2: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 4bc077a64868: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 9a86ce6794b2: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 0dcf982c9e0d: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 6a9015476239: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 4427c59932ee: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": ba34e1f7df5e: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 1e4ed01f7963: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e19e114d6051: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 8b9893d4a605: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 41dd9f824e28: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 0b64ce4b095c: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 833151026fec: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 20684dd9b9da: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 36313b9ee297: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": d0b1e651b877: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e1806c15eb1b: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": cba750fa38a7: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 2713b3fdbb22: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 2c4d3b8e7862: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 500e568aea5e: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 86987eef9716: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": a72862ddbe88: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": f7663f4ceecf: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e81af4861b42: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 19e5f439d52d: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 95196e1d01b4: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 00bbfa83dbf6: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": dcf98486c861: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": ef859fa5f240: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": e12fdcad9c2d: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": b46089589082: Pull complete
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Digest: sha256:7df365e71acaa0ab135fd30cd60f7cd7230228733a586c154f75a410782d34fd
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":  ---> 31d9ead41aa2
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Step 2/5 : RUN apt-get update && apt-get install -y  pkg-config  autopoint  autoconf  autoconf-archive  automake  libtool  gettext gengetopt curl gperf wget
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":  ---> Running in 526bfa42638b
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Fetched 383 kB in 1s (542 kB/s)
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Reading package lists...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Reading package lists...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Building dependency tree...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Reading state information...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": curl is already the newest version (7.68.0-1ubuntu2.25).
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": wget is already the newest version (1.20.3-1ubuntu2.1).
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": The following additional packages will be installed:
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":   file gettext-base libcroco3 libglib2.0-0 libglib2.0-data libicu66
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":   libltdl-dev libltdl7 libmagic-mgc libmagic1 libxml2 shared-mime-info
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":   xdg-user-dirs
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Suggested packages:
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":   gnu-standards autoconf-doc gettext-doc libasprintf-dev libgettextpo-dev
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":   libtool-doc gfortran | fortran95-compiler gcj-jdk
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": The following NEW packages will be installed:
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":   autoconf autoconf-archive automake autopoint file gengetopt gettext
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":   gettext-base gperf libcroco3 libglib2.0-0 libglib2.0-data libicu66
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":   libltdl-dev libltdl7 libmagic-mgc libmagic1 libtool libxml2 pkg-config
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":   shared-mime-info xdg-user-dirs
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": 0 upgraded, 22 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Need to get 14.9 MB of archives.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": After this operation, 67.2 MB of additional disk space will be used.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 autoconf-archive all 20190106-2.1ubuntu1 [665 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 gettext-base amd64 0.19.8.1-10build1 [50.2 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 autopoint all 0.19.8.1-10build1 [412 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:15 http://archive.ubuntu.com/ubuntu focal/universe amd64 gengetopt amd64 2.23+dfsg1-1 [159 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcroco3 amd64 0.6.13-1ubuntu0.1 [82.4 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 gettext amd64 0.19.8.1-10build1 [895 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:18 http://archive.ubuntu.com/ubuntu focal/universe amd64 gperf amd64 3.1-1build1 [103 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 pkg-config amd64 0.29.1-0ubuntu4 [45.5 kB]
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": [0mFetched 14.9 MB in 2s (8558 kB/s)
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package autoconf-archive.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../00-autoconf-archive_20190106-2.1ubuntu1_all.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking autoconf-archive (20190106-2.1ubuntu1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../01-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../02-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package file.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../03-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking file (1:5.38-4) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package libglib2.0-0:amd64.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../04-libglib2.0-0_2.64.6-1~ubuntu20.04.9_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package libglib2.0-data.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../05-libglib2.0-data_2.64.6-1~ubuntu20.04.9_all.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package libicu66:amd64.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../06-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package libxml2:amd64.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../07-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package shared-mime-info.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../08-shared-mime-info_1.15-1_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking shared-mime-info (1.15-1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package xdg-user-dirs.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../09-xdg-user-dirs_0.17-2ubuntu1_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package gettext-base.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../10-gettext-base_0.19.8.1-10build1_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking gettext-base (0.19.8.1-10build1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package autoconf.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../11-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package automake.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../12-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package autopoint.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../13-autopoint_0.19.8.1-10build1_all.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking autopoint (0.19.8.1-10build1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package gengetopt.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../14-gengetopt_2.23+dfsg1-1_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking gengetopt (2.23+dfsg1-1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package libcroco3:amd64.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../15-libcroco3_0.6.13-1ubuntu0.1_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking libcroco3:amd64 (0.6.13-1ubuntu0.1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package gettext.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../16-gettext_0.19.8.1-10build1_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking gettext (0.19.8.1-10build1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package gperf.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../17-gperf_3.1-1build1_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking gperf (3.1-1build1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../18-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../19-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package libtool.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../20-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Selecting previously unselected package pkg-config.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Preparing to unpack .../21-pkg-config_0.29.1-0ubuntu4_amd64.deb ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Unpacking pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up gengetopt (2.23+dfsg1-1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": No schema files found: doing nothing.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up gettext-base (0.19.8.1-10build1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up autoconf-archive (20190106-2.1ubuntu1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up file (1:5.38-4) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up gperf (3.1-1build1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up autopoint (0.19.8.1-10build1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up shared-mime-info (1.15-1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up libcroco3:amd64 (0.6.13-1ubuntu0.1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Setting up gettext (0.19.8.1-10build1) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Removing intermediate container 526bfa42638b
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":  ---> 53145c6f7adb
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": Step 3/5 : RUN git clone https://git.savannah.gnu.org/git/libidn.git
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710":  ---> Running in e9e68486e17e
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": [91mCloning into 'libidn'...
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": [0m[91merror: RPC failed; curl 56 GnuTLS recv error (-9): Error decoding the received TLS packet.
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": fatal: the remote end hung up unexpectedly
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": fatal: early EOF
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": [0m[91mfatal: index-pack failed
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": The command '/bin/sh -c git clone https://git.savannah.gnu.org/git/libidn.git' returned a non-zero code: 128
+Finished Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 128
+Step #1 - "build-a85cbdec-0e75-4d27-9e53-9fab147b5710": [0m

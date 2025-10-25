@@ -1,0 +1,1217 @@
+starting build "4b6caacb-c55c-4c23-b1b1-dbe925f1445e"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212"
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Sending build context to Docker daemon  8.192kB
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Step 1/7 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": b549f31133a9: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": eb02c1410fe0: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 297bdddc0bbf: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 698988fa3324: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 926221d32884: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 867ca4ff8b06: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 67267e15d1a7: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 28257711365e: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": f3fbc153c7c8: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": d92f09768937: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 7b41d9eeb0f8: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 56e24eb72777: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 60e284275f81: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 465bbcc9c5c7: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 6beec21add2c: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 02758932c09c: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 9d6437f540b3: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 7486526a30d3: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 90261fc60ebe: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": f8a53a51ec61: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 0a835365a750: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 1290ee423d2e: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 04fdc2ab98e8: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": ec50a6e5540b: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 6595f2071e63: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": d1ddd56aabcf: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 31f29bdb9e6f: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": c5e889ff8d54: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 92e1264018ec: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 2693809c62e6: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": e9afe7c09179: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": b9947e8de5ba: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": c5d703cffb01: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 4ebff852a6e8: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": aad5b3905aea: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 65926889827b: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 4a899addf909: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 27b82dc7d545: Pulling fs layer
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 7486526a30d3: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 698988fa3324: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 67267e15d1a7: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": d92f09768937: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 926221d32884: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 28257711365e: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 867ca4ff8b06: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 7b41d9eeb0f8: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": f3fbc153c7c8: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 56e24eb72777: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 6beec21add2c: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": ec50a6e5540b: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 90261fc60ebe: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 92e1264018ec: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 465bbcc9c5c7: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 6595f2071e63: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": f8a53a51ec61: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 2693809c62e6: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": d1ddd56aabcf: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": e9afe7c09179: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 31f29bdb9e6f: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 9d6437f540b3: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": b9947e8de5ba: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 02758932c09c: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 04fdc2ab98e8: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": c5e889ff8d54: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": c5d703cffb01: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 0a835365a750: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 4ebff852a6e8: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 4a899addf909: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 1290ee423d2e: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 65926889827b: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 27b82dc7d545: Waiting
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 297bdddc0bbf: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 297bdddc0bbf: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": b549f31133a9: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": b549f31133a9: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 926221d32884: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 926221d32884: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 698988fa3324: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 698988fa3324: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 67267e15d1a7: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 67267e15d1a7: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": eb02c1410fe0: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": eb02c1410fe0: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 28257711365e: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 28257711365e: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": b549f31133a9: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": d92f09768937: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": d92f09768937: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 7b41d9eeb0f8: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 7b41d9eeb0f8: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 56e24eb72777: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 56e24eb72777: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 60e284275f81: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 60e284275f81: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 465bbcc9c5c7: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 465bbcc9c5c7: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": f3fbc153c7c8: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": f3fbc153c7c8: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 02758932c09c: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 02758932c09c: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 6beec21add2c: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 6beec21add2c: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 7486526a30d3: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 7486526a30d3: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 9d6437f540b3: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 90261fc60ebe: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 90261fc60ebe: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": f8a53a51ec61: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": f8a53a51ec61: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 0a835365a750: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 0a835365a750: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 1290ee423d2e: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 04fdc2ab98e8: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 04fdc2ab98e8: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": ec50a6e5540b: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 6595f2071e63: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 6595f2071e63: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": d1ddd56aabcf: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": eb02c1410fe0: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 297bdddc0bbf: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 31f29bdb9e6f: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 31f29bdb9e6f: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": c5e889ff8d54: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": c5e889ff8d54: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 867ca4ff8b06: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 92e1264018ec: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 92e1264018ec: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": e9afe7c09179: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 2693809c62e6: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 2693809c62e6: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": b9947e8de5ba: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": b9947e8de5ba: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": c5d703cffb01: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": c5d703cffb01: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 4ebff852a6e8: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 4ebff852a6e8: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": aad5b3905aea: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": aad5b3905aea: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 65926889827b: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 65926889827b: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 4a899addf909: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 4a899addf909: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 27b82dc7d545: Verifying Checksum
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 27b82dc7d545: Download complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 698988fa3324: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 926221d32884: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 867ca4ff8b06: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 67267e15d1a7: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 28257711365e: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": f3fbc153c7c8: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": d92f09768937: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 7b41d9eeb0f8: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 56e24eb72777: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 60e284275f81: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 465bbcc9c5c7: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 6beec21add2c: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 02758932c09c: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 9d6437f540b3: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 7486526a30d3: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 90261fc60ebe: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": f8a53a51ec61: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 0a835365a750: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 1290ee423d2e: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 04fdc2ab98e8: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": ec50a6e5540b: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 6595f2071e63: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": d1ddd56aabcf: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 31f29bdb9e6f: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": c5e889ff8d54: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 92e1264018ec: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 2693809c62e6: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": e9afe7c09179: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": b9947e8de5ba: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": c5d703cffb01: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 4ebff852a6e8: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": aad5b3905aea: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 65926889827b: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 4a899addf909: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 27b82dc7d545: Pull complete
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Digest: sha256:7d4087c1264090f8dcf388740fe310ec099d2a8c9db6a5c47407325404b5f125
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212":  ---> 0fdd1cabfa3a
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Step 2/7 : RUN apt-get update && apt-get install -y make autoconf automake libtool wget dos2unix
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212":  ---> Running in 98d29f22d167
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Hit:3 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Fetched 128 kB in 1s (230 kB/s)
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Reading package lists...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Reading package lists...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Building dependency tree...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Reading state information...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": make set to manually installed.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": wget is already the newest version (1.20.3-1ubuntu2.1).
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": The following additional packages will be installed:
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212":   file libltdl-dev libltdl7 libmagic-mgc libmagic1
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Suggested packages:
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212":   autoconf-archive gnu-standards autoconf-doc gettext libtool-doc gfortran
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212":   | fortran95-compiler gcj-jdk
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": The following NEW packages will be installed:
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212":   autoconf automake dos2unix file libltdl-dev libltdl7 libmagic-mgc libmagic1
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212":   libtool
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": 0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Need to get 1895 kB of archives.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": After this operation, 13.6 MB of additional disk space will be used.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 dos2unix amd64 7.4.0-2 [374 kB]
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": [0mFetched 1895 kB in 0s (4640 kB/s)
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Preparing to unpack .../0-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Preparing to unpack .../1-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Selecting previously unselected package file.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Preparing to unpack .../2-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Unpacking file (1:5.38-4) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Selecting previously unselected package autoconf.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Preparing to unpack .../3-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Selecting previously unselected package automake.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Preparing to unpack .../4-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Preparing to unpack .../5-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Preparing to unpack .../6-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Selecting previously unselected package libtool.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Preparing to unpack .../7-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Selecting previously unselected package dos2unix.
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Preparing to unpack .../8-dos2unix_7.4.0-2_amd64.deb ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Unpacking dos2unix (7.4.0-2) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Setting up file (1:5.38-4) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Setting up dos2unix (7.4.0-2) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Removing intermediate container 98d29f22d167
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212":  ---> 44d2da98e973
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": Step 3/7 : RUN svn checkout https://svn.code.sf.net/p/freeimage/svn/ freeimage-svn
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212":  ---> Running in 9eaad26c7d52
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/branches
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Dist
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Generic
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Linux
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/OpenGL
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/OpenGL/TextureManager
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Dist/delete.me
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Generic/BatchLoad.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Generic/CloneMultiPage.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Generic/CreateAlpha.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Generic/FIFImportExport.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Plugin
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Generic/FIIO_Mem.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Generic/FIIO_Mem.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Generic/LoadFromHandle.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/ConversionRGB16.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Generic/LoadFromMemory-classified.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Generic/LoadFromMemory.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Generic/ShowMetadata.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/ConversionRGBAF.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Linux/Makefile
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/ConversionType.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Linux/linux-gtk.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Linux/linux-svgalib.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/GetType.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/OpenGL/TextureManager/TextureManager.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/OpenGL/TextureManager/TextureManager.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/OpenGL/TextureManager/readme.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Plugin/PluginCradle.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Examples/Plugin/PluginCradle.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/J2KHelper.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/FreeImage.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/FreeImageIO.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/BitmapAccess.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/MemoryIO.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/CacheFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/J2KHelper.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/ColorLookup.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PSDParser.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/Conversion.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/MNGHelper.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/Conversion16_555.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/Plugin.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/NNQuantizer.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/Conversion16_565.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginDDS.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PixelAccess.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/Conversion24.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginGIF.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/Conversion32.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginCUT.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginIFF.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/Conversion4.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginJP2.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginG3.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginKOALA.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageLib
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginICO.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/Conversion8.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginJNG.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginPCX.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/ConversionFloat.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginPNG.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/ConversionRGBA16.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginJXR.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/ConversionRGBF.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginRAS.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginPCD.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/ConversionUINT16.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/FreeImageC.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginTARGA.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginWebP.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginPICT.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/Halftoning.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/TIFFLogLuv.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginPSD.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginSGI.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/LFPQuantizer.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginWBMP.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/ZLibInterface.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginXPM.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/MultiPage.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/tmoFattal02.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PSDParser.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/WuQuantizer.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/tmoDrago03.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageLib/FreeImageLib.2013.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginBMP.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageLib/FreeImageLib.2013.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageLib/FreeImageLib.2017.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/BSplineRotate.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginEXR.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/Channels.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/CopyPaste.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/ClassicRotate.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/Display.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/Flip.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/Rescale.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/JPEGTransform.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/LibJPEG.2013.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginHDR.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/LibJPEG.2017.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginJ2K.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/Resize.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/LibJPEG.2013.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginJPEG.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/README
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/cdjpeg.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/cdjpeg.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/cjpeg.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/ckconfig.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/djpeg.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginMNG.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/example.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/install.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jaricom.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginPFM.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcapistd.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdatadst.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcarith.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginPNM.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jccolor.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcdctmgr.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdct.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginRAW.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcinit.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcmainct.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdmainct.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcomapi.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcmaster.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginTIFF.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jconfig.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcparam.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdpostct.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcsample.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/PluginXBM.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jctrans.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdapistd.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jerror.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdarith.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/ToneMapping.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jidctflt.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdcoefct.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jmemansi.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdcolor.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/tmoColorConvert.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdhuff.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jmemmgr.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdinput.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdmaster.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImage/tmoReinhard05.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdtrans.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdmerge.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageLib/FreeImageLib.2017.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jmorecfg.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jerror.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jfdctfst.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jquant1.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/Background.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jfdctint.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jinclude.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jidctint.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jmemdosa.asm
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jmemmac.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jmemnobs.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/libjpeg.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jmemsys.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/rdjpgcom.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/Colors.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jpeglib.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/Filters.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jpegtran.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/rdtarga.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jversion.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/MultigridPoissonSolver.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/usage.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/common
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/common/include
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jutils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/wrjpgcom.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/rdcolmap.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/rdgif.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/decode
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/rdswitch.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/FreeImageToolkit/Resize.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/rdrle.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/common/include/guiddef.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/transupp.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/LibJPEG.2017.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/transupp.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/wrbmp.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/wrrle.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/cderror.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/wrgif.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/common/include/wmspecstrings_strict.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/encode
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/change.log
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/common/include/wmspecstring.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/coderules.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/wrtarga.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/common/include/wmspecstrings_adt.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/decode/decode.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/decode/strPredQuantDec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/encode/encode.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/decode/JXRTranscode.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/decode/segdec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/filelist.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcapimin.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jccoefct.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/decode/decode.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/encode/strenc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/decode/strdec_x86.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/decode/strInvTransform.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/encode/encode.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/x86
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/jxrgluelib
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/encode/strPredQuantEnc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jchuff.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/common.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcmarker.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/encode/strFwdTransform.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/ansi.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/adapthuff.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/strPredQuant.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/perfTimer.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/strcodec.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/strTransform.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/xplatform_image.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/jxrgluelib/JXRGlue.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/jxrgluelib/JXRMeta.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/LibJXR.2013.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jconfig.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/AUTHORS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/perfTimerANSI.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/LibOpenJPEG.2013.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/jxrgluelib/JXRGlueJxr.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/LICENCE
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/strcodec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/x86/x86.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/README
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/jxrgluelib/JXRGluePFC.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jcprepct.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/LibJXR.2013.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdapimin.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/LibJXR.2017.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/cidx_manager.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/LICENSE
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/LibOpenJPEG.2017.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdatasrc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/README
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jddctmgr.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/dwt.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/LibOpenJPEG.2013.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/NEWS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/bio.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/bio.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/function_list.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/indexbox_manager.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdmarker.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jdsample.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jfdctflt.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jidctfst.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/cio.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jmemdos.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jmemname.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jpegint.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/cio.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/j2k.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/event.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/event.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/image.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/invert.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/image.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/jp2.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/mct.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/mqc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/jquant2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/opj_clock.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/rdbmp.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/j2k.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/mct.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/rdppm.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/openjpeg.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/openjpeg.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/opj_config.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/opj_inttypes.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/opj_codec.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/structure.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/opj_intmath.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/wizard.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/pi.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/raw.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/opj_includes.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/opj_stdint.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJPEG/wrppm.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/ppix_manager.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/phix_manager.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/common/include/wmsal.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/t1.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/t1_luts.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/t2.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/common/include/wmspecstrings_undef.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/raw.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/tgt.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/tcd.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/decode/postprocess.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/t1_generate_luts.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/tpix_manager.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/decode/strdec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/tcd.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/thix_manager.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/encode/segenc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/encode/strenc_x86.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/image.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/strTransform.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/image/sys/windowsmediaphoto.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/jxrgluelib/JXRGlue.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/jxrgluelib/JXRMeta.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibJXR/LibJXR.2017.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/CMakeLists.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/INSTALL
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/LibPNG.2013.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/LibPNG.2017.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/INSTALL
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/LibOpenJPEG.2017.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/THANKS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/CHANGES
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/LibPNG.2013.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/configure
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/TODO
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/libpngpf.3
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngconf.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/cidx_manager.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pnginfo.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/dcraw
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/README
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/libpng-manual.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngpriv.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/libpng.3
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/png.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/png.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngget.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/dwt.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/function_list.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngrutil.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngerror.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/libraw
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngtrans.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngpread.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/invert.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngrtran.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngtest.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngwutil.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngmem.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngwtran.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngrio.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/aahd_demosaic.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/dcb_demosaicing.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngstruct.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/src
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/jp2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/mqc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/opj_clock.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/opj_config_private.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/opj_malloc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/pi.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngwrite.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/defines.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/demosaic_packs.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/t1.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/t2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/dcraw/dcraw.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/libraw_x3f.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibOpenJPEG/tgt.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/dcraw_fileio.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/ANNOUNCE
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/preprocess.pl
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/LICENSE
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/LibPNG.2017.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/libraw/libraw_alloc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/libraw/libraw.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/libraw_internal_funcs.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/libraw/libraw_types.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/wf_filtering.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/libraw/libraw_datastream.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/libraw/libraw_internal.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/example.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/src/libraw_datastream.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/Changelog.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/src/libraw_c_api.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/LibRawLite.2013.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/png.5
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngdebug.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/README
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/CMakeLists.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/LibTIFF4.2017.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pnglibconf.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/src/libraw_cxx.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngread.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/COPYRIGHT
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngset.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/src/libraw_xtrans_compressed.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/LICENSE.LGPL
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/t4.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/LICENSE.CDDL
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/LibRawLite.2017.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/LibRawLite.2017.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/README.demosaic-packs
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/README.RawSpeed.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_color.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/LibTIFF4.2013.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_config.h.cmake.in
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/mkg3states.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_dir.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_close.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_config.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_config.vc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibPNG/pngwio.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_dirinfo.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/dcraw/dcraw.1.html
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_error.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/LibTIFF4.2013.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/mkspans.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_fax3sm.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_codec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_dirwrite.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_config.h-vms
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_fax3.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_config.wince.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_jpeg.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_lzw.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_getimage.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/dcraw_common.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_packbits.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_luv.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_dirread.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_print.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_ojpeg.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/dht_demosaic.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_swab.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_predict.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_extension.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/internal/var_defines.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_stream.cxx
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_tile.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_version.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/libraw/libraw_const.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/libraw/libraw_version.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_warning.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_wince.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_flush.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/src/libraw_fuji_compressed.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_zip.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/DEVELOPER-NOTES
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_jpeg_12.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiffconf.h-vms
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_next.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiff.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/LibRawLite.2013.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiffconf.wince.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibRawLite/README.DNGSDK.txt
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiffconf.h.in
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_pixarlog.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/demux
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiffvers.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/ChangeLog
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/alphai_dec.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiffio.hxx
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/LibTIFF4.2017.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_aux.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_compress.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_read.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_config.h.in
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/idec_dec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_dir.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/uvcode.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_dumpmode.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_fax3.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/vp8_dec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_jbig.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/vp8li_dec.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/common_dec.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_lzma.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_thunder.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/quant_dec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_open.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_predict.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_vms.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/vp8i_dec.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/demux/demux.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_write.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_strip.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_unix.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiffconf.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/webpi_dec.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/alpha_processing_sse2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiffconf.vc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiffiop.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_win32.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/cost.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tif_zstd.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/alpha_processing_mips_dsp_r2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/alpha_dec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/cpu.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/frame_dec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/dec_mips_dsp_r2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/tree_dec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiffconf.h.cmake.in
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/dec_sse41.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiffio.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/vp8l_dec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/enc_mips32.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/common_sse2.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/demux/anim_decode.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/enc_sse2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/cost_mips_dsp_r2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/alpha_processing_neon.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/filters_msa.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/dec_clip_tables.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/common_sse41.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/cost_sse2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/dec_neon.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/dec_mips32.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/enc_msa.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/filters.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/filters_sse2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_enc_neon.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_msa.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibTIFF4/tiffvers.h.in
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/msa_macro.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/buffer_dec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/dec_sse2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/io_dec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/rescaler_mips_dsp_r2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/ssim.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_enc_mips_dsp_r2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/enc_avx2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_enc_sse41.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/vp8_dec.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/upsampling_msa.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/enc_neon.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_sse2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dec/webp_dec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/yuv.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/filters_mips_dsp_r2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/yuv_neon.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/rescaler.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/alpha_processing.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/alpha_processing_sse41.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_enc_mips32.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/rescaler_neon.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_enc_sse2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/cost_mips32.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_neon.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/analysis_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/upsampling.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/dec.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/config_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/upsampling_sse2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/neon.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/frame_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/dec_msa.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/near_lossless_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/yuv_mips32.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/mux
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/picture_rescale_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/dsp.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/rescaler_msa.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/yuv_sse41.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/syntax_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/enc_mips_dsp_r2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/ssim_sse2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/backward_references_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/vp8l_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/cost_enc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/upsampling_neon.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/mux/animi.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/enc_sse41.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/histogram_enc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/filters_neon.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/mux/muxread.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/yuv.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/picture_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/predictor_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/tree_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/yuv_sse2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_common.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/bit_writer_utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_enc_msa.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/webp_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/endian_inl_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/mux/muxi.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/huffman_encode_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/lossless_mips_dsp_r2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/bit_reader_utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/color_cache_utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/webp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/backward_references_cost_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/cost_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/quant_levels_dec_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/filters_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/mips_macro.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/histogram_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/rescaler_mips32.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/picture_csp_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/rescaler_sse2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/upsampling_mips_dsp_r2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/random_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/upsampling_sse41.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/dsp/yuv_mips_dsp_r2.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/thread_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/alpha_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/backward_references_enc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/webp/demux.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/huffman_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/picture_tools_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/Metadata
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/webp/mux_types.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/quant_levels_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/rescaler_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/ChangeLog
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/webp/format_constants.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/filter_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/LibWebP.2017.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/token_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/AUTHORS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/vp8li_enc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/LibWebP.2013.vcxproj.filters
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/mux/muxedit.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/README.mux
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/iterator_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/bit_reader_inl_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/bit_writer_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/filters_utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/PATENTS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/picture_psnr_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/Metadata/FreeImageTag.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/huffman_utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/Metadata/FIRational.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/quant_enc.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/quant_levels_utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/rescaler_utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/enc/vp8i_enc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/mux/anim_encode.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/mux/muxinternal.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/Metadata/IPTC.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/bit_reader_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/webp/encode.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/AUTHORS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/Metadata/TagLib.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/color_cache_utils.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Half
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/webp/types.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/huffman_encode_utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/LibWebP.2013.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/LICENSE
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/quant_levels_dec_utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/NEWS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/random_utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/README.OSX
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/ChangeLog
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/utils/thread_utils.c
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/AUTHORS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/README
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/webp/decode.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/README.namespacing
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/src/webp/mux.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/ChangeLog
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/COPYING
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/PATENTS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IexMath
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/LICENSE
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/LibWebP.2017.vcxproj
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/README.git
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/README.CVS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Half/eLut.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/LibWebP/README
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/Metadata/FIRational.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Half/halfFunction.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/README.win32
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/Metadata/Exif.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex/Iex.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/Metadata/FreeImageTag.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Half/half.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex/IexExport.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex/IexNamespace.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Half/toFloat.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/Metadata/TagConversion.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IexMath/IexMathFloatExc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex/IexBaseExc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/COPYING
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/Metadata/XTIFF.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/INSTALL
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex/IexMacros.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfAcesFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex/IexThrowErrnoExc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IexMath/IexMathFpu.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/README.CVS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/NEWS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfBoxAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfChannelList.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/README.win32
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/ilmbase/README.git
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfArray.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/COPYING
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/INSTALL
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfB44Compressor.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfCheckedArithmetic.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfCRgbaFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfChromaticitiesAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfCompressionAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfChannelListAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfConvert.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfChromaticities.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/README
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfCompositeDeepScanLine.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/README.namespacing
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfCompressor.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepFrameBuffer.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Half/half.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Half/halfLimits.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepCompositing.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepImageStateAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/NEWS
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex/IexBaseExc.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Copyrights/openexr/README.OSX
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex/IexForward.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepScanLineInputPart.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepImageState.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Half/eLut.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Half/halfExport.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex/IexThrowErrnoExc.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepScanLineInputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IexMath/IexMathFpu.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepScanLineOutputPart.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfAcesFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfAutoArray.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepScanLineOutputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfBoxAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepTiledInputPart.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepTiledInputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepTiledOutputPart.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfChannelList.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfChromaticities.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDwaCompressor.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepTiledOutputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfEnvmapAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfCompositeDeepScanLine.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfCompressionAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDoubleAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfFastHuf.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfConvert.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfEnvmap.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepFrameBuffer.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfExport.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfFloatVectorAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepScanLineInputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfFloatAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfFramesPerSecond.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepScanLineOutputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfFrameBuffer.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepTiledInputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepTiledOutputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDoubleAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfGenericOutputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfGenericInputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfHuf.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDwaCompressorSimd.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfHeader.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfEnvmapAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfIO.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfFloatAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Half/toFloat.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex/IexErrnoExc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/Iex/IexMathExc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IexMath/IexMathFloatExc.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IexMath/IexMathIeeeExc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfB44Compressor.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfCRgbaFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfChannelListAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfChromaticitiesAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfForward.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfInputPart.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfFramesPerSecond.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfCompression.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfGenericOutputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfCompressor.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfInputStreamMutex.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfHuf.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepCompositing.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfInputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepImageStateAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepScanLineInputPart.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfInputPartData.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfKeyCode.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepScanLineOutputPart.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfLineOrder.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfIntAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepTiledInputPart.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfLut.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDeepTiledOutputPart.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfKeyCodeAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfMisc.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfDwaCompressor.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfMultiPartOutputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfEnvmap.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfNamespace.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfFastHuf.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfFloatVectorAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfFrameBuffer.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfInputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfInputPartData.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfIntAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfKeyCodeAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfLineOrderAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfOutputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfOutputPartData.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPartType.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPizCompressor.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfGenericInputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfMatrixAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfMultiPartInputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfMultiView.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfHeader.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfIO.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPreviewImageAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfInputPart.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfInt64.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfLut.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRational.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRgbaFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfKeyCode.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfOpaqueAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfLineOrderAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfOutputPart.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfMatrixAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRle.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfScanLineInputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfMultiPartInputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfMultiView.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfStandardAttributes.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfOpaqueAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfStringAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfOutputStreamMutex.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfOutputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPixelType.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfMisc.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfOutputPartData.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPreviewImage.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfMultiPartOutputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfName.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPartType.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPxr24Compressor.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRationalAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPreviewImage.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRgbaYca.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfOptimizedPixelReading.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfSystemSpecific.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPxr24Compressor.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfThreading.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRationalAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfOutputPart.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPartHelper.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPizCompressor.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfPreviewImageAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRgbaFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTileOffsets.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRational.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRle.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRleCompressor.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRgba.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTiledInputPart.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRgbaYca.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTiledOutputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfSimd.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTiledRgbaFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfRleCompressor.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfStandardAttributes.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmThread
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTimeCodeAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfStdIO.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfStringAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfVersion.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfStringVectorAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfSystemSpecific.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTestFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfThreading.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTileDescriptionAttribute.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTileDescriptionAttribute.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTiledInputFile.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTiledMisc.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTiledInputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTiledOutputPart.cpp
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": A    freeimage-svn/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfScanLineInputFile.h
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": [91msvn: E175002: Unexpected HTTP status 503 'Service Unavailable' on '/p/freeimage/svn/!svn/rvr/1806/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfStdIO.cpp'
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": svn: E200042: Additional errors:
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": svn: E175002: Unexpected HTTP status 503 'Service Unavailable' on '/p/freeimage/svn/!svn/rvr/1806/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfStringVectorAttribute.cpp'
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": svn: E175002: Unexpected HTTP status 503 'Service Unavailable' on '/p/freeimage/svn/!svn/rvr/1806/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTestFile.cpp'
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": svn: E175002: Unexpected HTTP status 503 'Service Unavailable' on '/p/freeimage/svn/!svn/rvr/1806/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTileDescription.h'
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": svn: E175002: Unexpected HTTP status 503 'Service Unavailable' on '/p/freeimage/svn/!svn/rvr/1806/FreeImage/tags/3.18.0/Source/OpenEXR/IlmImf/ImfTileOffsets.h'
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": The command '/bin/sh -c svn checkout https://svn.code.sf.net/p/freeimage/svn/ freeimage-svn' returned a non-zero code: 1
+Finished Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1
+Step #1 - "build-3380fb13-623b-4d7e-b950-63ac10ac1212": [0m

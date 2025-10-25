@@ -1,0 +1,611 @@
+starting build "fa484281-d4a0-4ffa-8d07-eb14a7a20514"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da"
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Sending build context to Docker daemon   5.12kB
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Step 1/4 : FROM gcr.io/oss-fuzz-base/base-builder-jvm
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": latest: Pulling from oss-fuzz-base/base-builder-jvm
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": b549f31133a9: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4cab2e9940c4: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": b2d6cb003f96: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": c5ec622c42d5: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 76a8da3bd377: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 14f53b14f02e: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 7f1353e6e254: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 52ca464d533f: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 75bdb4b0a6ee: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8ec5c0f7ce63: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": dd5488d9d92f: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": c14c4e4bf959: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 75bdb4b0a6ee: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 56d811f45d53: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": c5ec622c42d5: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 47129490b488: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": a22b9cc82a87: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f37aabbf5378: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 60885dd8685c: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 2a4eda99b39d: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 503dd44e6582: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": ffd7a4a02cd7: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 76a8da3bd377: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": c14c4e4bf959: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8ec5c0f7ce63: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 56d811f45d53: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 7f1353e6e254: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 503dd44e6582: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 47129490b488: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f37aabbf5378: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 2a4eda99b39d: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": cecb76a0eeeb: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8a98b72756b0: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 7eb7765bb32e: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 310b72b462ed: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": ebb8e741a3d1: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": dd7cddead71d: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 43ee29b25f02: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8a98b72756b0: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": dd7cddead71d: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": ebb8e741a3d1: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": ffd7a4a02cd7: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f1bc67d99a5e: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": a22b9cc82a87: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6c12abd78e9f: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4f37e418f520: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": d3c3787c69b1: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 786ba5cb8e87: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4f37e418f520: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6e870e8e2bc1: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 756c38c339b4: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f1bc67d99a5e: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f642f0edb40e: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8615c4186726: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 786ba5cb8e87: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6c12abd78e9f: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 98e3d3db37fc: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": d3c3787c69b1: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6e870e8e2bc1: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 3806054f9efe: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 756c38c339b4: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f642f0edb40e: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 10333da9950b: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8615c4186726: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6d8ab5cfb858: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 3806054f9efe: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4b472b0d2bca: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 310b72b462ed: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 7eb7765bb32e: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 43ee29b25f02: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 46863dbe0be1: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 10333da9950b: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": cecb76a0eeeb: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 37a781e92ec6: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 992400875e8d: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 37a781e92ec6: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 46863dbe0be1: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 440983c4633c: Pulling fs layer
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 992400875e8d: Waiting
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": b2d6cb003f96: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": b2d6cb003f96: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": b549f31133a9: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": b549f31133a9: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 76a8da3bd377: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 76a8da3bd377: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": c5ec622c42d5: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": c5ec622c42d5: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 7f1353e6e254: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 7f1353e6e254: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 52ca464d533f: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4cab2e9940c4: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4cab2e9940c4: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": b549f31133a9: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8ec5c0f7ce63: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8ec5c0f7ce63: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": dd5488d9d92f: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": dd5488d9d92f: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": c14c4e4bf959: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": c14c4e4bf959: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 56d811f45d53: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 56d811f45d53: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 47129490b488: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": a22b9cc82a87: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": a22b9cc82a87: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 75bdb4b0a6ee: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 75bdb4b0a6ee: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f37aabbf5378: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 60885dd8685c: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 60885dd8685c: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 2a4eda99b39d: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 2a4eda99b39d: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 503dd44e6582: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 503dd44e6582: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": ffd7a4a02cd7: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": ffd7a4a02cd7: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": cecb76a0eeeb: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": cecb76a0eeeb: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8a98b72756b0: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8a98b72756b0: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 7eb7765bb32e: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 7eb7765bb32e: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 310b72b462ed: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 310b72b462ed: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": ebb8e741a3d1: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": ebb8e741a3d1: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": dd7cddead71d: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 43ee29b25f02: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 43ee29b25f02: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f1bc67d99a5e: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f1bc67d99a5e: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4cab2e9940c4: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6c12abd78e9f: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6c12abd78e9f: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": b2d6cb003f96: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": d3c3787c69b1: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": d3c3787c69b1: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 14f53b14f02e: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 14f53b14f02e: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4f37e418f520: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4f37e418f520: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 786ba5cb8e87: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 786ba5cb8e87: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6e870e8e2bc1: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6e870e8e2bc1: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 756c38c339b4: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 756c38c339b4: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8615c4186726: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f642f0edb40e: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f642f0edb40e: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 3806054f9efe: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 3806054f9efe: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6d8ab5cfb858: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6d8ab5cfb858: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4b472b0d2bca: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4b472b0d2bca: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": c5ec622c42d5: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 76a8da3bd377: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 46863dbe0be1: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 46863dbe0be1: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 37a781e92ec6: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 992400875e8d: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 992400875e8d: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 440983c4633c: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 440983c4633c: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 10333da9950b: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 10333da9950b: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 98e3d3db37fc: Verifying Checksum
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 98e3d3db37fc: Download complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 14f53b14f02e: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 7f1353e6e254: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 52ca464d533f: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 75bdb4b0a6ee: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8ec5c0f7ce63: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": dd5488d9d92f: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": c14c4e4bf959: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 56d811f45d53: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 47129490b488: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": a22b9cc82a87: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f37aabbf5378: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 60885dd8685c: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 2a4eda99b39d: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 503dd44e6582: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": ffd7a4a02cd7: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": cecb76a0eeeb: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8a98b72756b0: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 7eb7765bb32e: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 310b72b462ed: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": ebb8e741a3d1: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": dd7cddead71d: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 43ee29b25f02: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f1bc67d99a5e: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6c12abd78e9f: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4f37e418f520: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": d3c3787c69b1: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 786ba5cb8e87: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6e870e8e2bc1: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 756c38c339b4: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": f642f0edb40e: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 8615c4186726: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 98e3d3db37fc: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 3806054f9efe: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 10333da9950b: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 6d8ab5cfb858: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 4b472b0d2bca: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 46863dbe0be1: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 37a781e92ec6: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 992400875e8d: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": 440983c4633c: Pull complete
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Digest: sha256:4592ec00d5d472f47714ae3cb8be8ab1447715dbc43a4157f6a19166e1b09822
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-jvm:latest
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da":  ---> a4d68098d4af
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Step 2/4 : RUN git clone --depth 1 https://github.com/sigstore/sigstore-java
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da":  ---> Running in 20d65af018ca
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": [91mCloning into 'sigstore-java'...
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": [0mRemoving intermediate container 20d65af018ca
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da":  ---> 379c95be64ad
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Step 3/4 : COPY build.sh $SRC/
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da":  ---> e27d45420fee
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Step 4/4 : WORKDIR $SRC/sigstore-java
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da":  ---> Running in 0d8c8e169d03
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Removing intermediate container 0d8c8e169d03
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da":  ---> 769793b5f190
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Successfully built 769793b5f190
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Successfully tagged gcr.io/oss-fuzz/sigstore-java:latest
+Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/sigstore-java:latest
+Finished Step #1 - "build-9662e233-8d51-4c99-93ef-c482b08f04da"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/sigstore-java
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/filejmHaCP
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ jvm == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/sigstore-java/.git
+Step #2 - "srcmap": + GIT_DIR=/src/sigstore-java
+Step #2 - "srcmap": + cd /src/sigstore-java
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/sigstore/sigstore-java
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=12b245fcae577479e3ae5633eafa5f00f31f0b87
+Step #2 - "srcmap": + jq_inplace /tmp/filejmHaCP '."/src/sigstore-java" = { type: "git", url: "https://github.com/sigstore/sigstore-java", rev: "12b245fcae577479e3ae5633eafa5f00f31f0b87" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/filesgUUNc
+Step #2 - "srcmap": + cat /tmp/filejmHaCP
+Step #2 - "srcmap": + jq '."/src/sigstore-java" = { type: "git", url: "https://github.com/sigstore/sigstore-java", rev: "12b245fcae577479e3ae5633eafa5f00f31f0b87" }'
+Step #2 - "srcmap": + mv /tmp/filesgUUNc /tmp/filejmHaCP
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/filejmHaCP
+Step #2 - "srcmap": + rm /tmp/filejmHaCP
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/sigstore-java": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/sigstore/sigstore-java",
+Step #2 - "srcmap":     "rev": "12b245fcae577479e3ae5633eafa5f00f31f0b87"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=leak
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=leak
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + export 'TARGET_PACKAGE_PREFIX=dev.sigstore.*'
+Step #3 - "compile-libfuzzer-address-x86_64": + TARGET_PACKAGE_PREFIX='dev.sigstore.*'
+Step #3 - "compile-libfuzzer-address-x86_64": + /src/sigstore-java/fuzzing/oss_fuzz_build.sh
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading https://services.gradle.org/distributions/gradle-8.14.3-bin.zip
+Step #3 - "compile-libfuzzer-address-x86_64": .............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%..............100%
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Welcome to Gradle 8.14.3!
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Here are the highlights of this release:
+Step #3 - "compile-libfuzzer-address-x86_64":  - Java 24 support
+Step #3 - "compile-libfuzzer-address-x86_64":  - GraalVM Native Image toolchain selection
+Step #3 - "compile-libfuzzer-address-x86_64":  - Enhancements to test reporting
+Step #3 - "compile-libfuzzer-address-x86_64":  - Build Authoring improvements
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": For more details see https://docs.gradle.org/8.14.3/release-notes.html
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Starting a Gradle Daemon (subsequent builds will be faster)
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [2A[1B[1m> Starting Daemon[m[17D[1B[1A> IDLE[0K[6D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [69ms][m[38D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [169ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [269ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [369ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [469ms][m[39D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [569ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [669ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [769ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [869ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [969ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [1s][m[0K[36D[1B[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 0%[m[72D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 7%[m[72D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 10%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 11%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 14%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [2s][m[36D[1B[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 18%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 21%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 25%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 27%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 28%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 29%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 30%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 31%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [3s][m[36D[1B[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 35%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 37%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 38%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [4s][m[36D[1B[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 40%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 43%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 46%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 47%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 48%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 52%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 53%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 56%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [5s][m[36D[2B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 57%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 59%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 60%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 62%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 66%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [6s][m[36D[1B[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 67%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 70%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 75%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 76%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 79%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 81%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 86%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 90%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 91%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [7s][m[36D[2B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 92%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 97%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 100%[m[74D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [8s][m[36D[1B[1m> Evaluating settings[m[0K[21D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [9s][m[36D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [10s][m[37D[2B[1A[1m> Evaluating settings > Compiling settings file 'settings.gradle.kts'[m[69D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [11s][m[37D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [12s][m[37D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [13s][m[37D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [14s][m[37D[1B[1m> Evaluating settings[m[0K[21D[1B[1A[1m> Evaluating settings > Compiling settings file 'build-logic-commons/settings.g[m[79D[1B[1A[1m> Evaluating settings > Compiling settings file 'build-logic/settings.gradle.kt[m[79D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [15s][m[37D[2B[1A> IDLE[0K[6D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [15s][m[0K[36D[1B[1m> :build-logic-commons[m[22D[1B[2A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [15s][m[36D[1B[1m> :build-logic-commons:gradle-plugin > Compiling build file 'build-logic-common[m[79D[1B[1A[1m> :build-logic-commons:gradle-plugin[m[0K[36D[1B[1A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of detachedConfigur[m[79D[1B[2A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [16s][m[36D[2B[1A[1m> :build-logic-commons:gradle-plugin[m[0K[36D[1B[1A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > grad[m[79D[1B
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [4A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[1B[4A> IDLE[0K[6D[4B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [17s][m[36D[2B> IDLE[0K[6D[1B> IDLE[0K[6D[2B[4A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[2B[1A> IDLE[0K[6D[1B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[2B[3A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[1B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[4A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath[m[0K[72D[4B[4A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > anno[m[79D[4B[4A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > gson[m[79D[4B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [18s][m[36D[1B[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > oss-[m[79D[4B[4A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[3B[4A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath[m[0K[72D[1B> IDLE[0K[6D[3B[4A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath > kotl[m[79D[4B[4A[1m> :build-logic-commons:gradle-plugin > Resolve dependencies of classpath[m[0K[72D[4B[4A[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [19s][m[36D[5B[1A[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[4A[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[2B[4A> IDLE[0K[6D[3B> IDLE[0K[6D[1B[2A> IDLE[0K[6D[2B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [20s][m[36D[5B[4A[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[2B[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[4A[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[3A[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[1B[1m> :build-logic-commons:gradle-plugin > Resolve files of configuration 'classpat[m[79D[2B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[2B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [21s][m[36D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [22s][m[36D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [23s][m[36D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [24s][m[36D[5B[4A[1m> :build-logic-commons:gradle-plugin[m[0K[36D[4B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [25s][m[36D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [26s][m[36D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [27s][m[36D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [28s][m[36D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [29s][m[36D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [30s][m[36D[5B[4A[1m> :build-logic-commons:gradle-plugin > Compiling build file 'build-logic-common[m[79D[4B[5A[1m<[0;32;1m=[0;39;1m------------> 8% CONFIGURING [31s][m[36D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 11% CONFIGURING [31s][m[37D[1B[1m> :build-logic > Compiling build file 'build-logic/build.gradle.kts'[m[0K[68D[4B[4A[1m> :build-logic > Resolve dependencies of detachedConfiguration1[m[0K[63D[4B[4A[1m> :build-logic > Resolve dependencies of classpath[m[0K[50D[4B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [31s][m[37D[1B[1m> :build-logic:basics > Resolve dependencies of classpath[m[57D[4B[4A[1m> :build-logic:basics[m[0K[21D[4B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [32s][m[37D[5B[4A[1m> :build-logic:basics > Resolve dependencies of :build-logic-commons:gradle-plu[m[79D[4B[3A[1m> :build-logic:basics > Resolve dependencies of :build-logic-commons:gradle-plu[m[79D[1B[1m> :build-logic:basics > Resolve dependencies of :build-logic-commons:gradle-plu[m[79D[2B[4A> IDLE[0K[6D[2B> IDLE[0K[6D[2B[2A[1m> :build-logic:basics > Resolve dependencies of :build-logic-commons:gradle-plu[m[79D[2B[3A> IDLE[0K[6D[3B[2A[1m> :build-logic:basics[m[0K[21D[2B[2A[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:generateExternalPlug[m[79D[2B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [33s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [34s][m[37D[5B[2A[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:compilePluginsBlocks[m[79D[2B[4A[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:compilePluginsBlocks[m[79D[1B[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:compilePluginsBlocks[m[79D[2B[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:compilePluginsBlocks[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[2B[4A[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:compilePluginsBlocks[m[79D[1B[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:compilePluginsBlocks[m[79D[1B[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:compilePluginsBlocks[m[79D[2B[4A> IDLE[0K[6D[2B> IDLE[0K[6D[2B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [35s][m[37D[5B[3A> IDLE[0K[6D[3B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [36s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [37s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [38s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [39s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [40s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [41s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [42s][m[37D[5B[1A[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:generatePrecompiledS[m[79D[1B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [43s][m[37D[5B[3A[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:compileKotlin > Reso[m[79D[2B[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:compileKotlin > Reso[m[79D[1B[3A> IDLE[0K[6D[2B[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:compileKotlin[m[0K[72D[1B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [44s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [45s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [46s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [47s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [48s][m[37D[5B[1A[1m> :build-logic:basics > :build-logic-commons:gradle-plugin:jar[m[0K[62D[1B[4A[1m> :build-logic:basics > Resolve files of configuration 'classpath' > MergeInstr[m[79D[1B[1m> :build-logic:basics > Resolve files of configuration 'classpath' > MergeInstr[m[79D[1B[1m> :build-logic:basics > Resolve files of configuration 'classpath' > MergeInstr[m[79D[1B[1m> :build-logic:basics > Resolve files of configuration 'classpath' > MergeInstr[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [49s][m[37D[2B[1m> :build-logic:basics[m[21D[3B[3A[1m> :build-logic:basics > Compiling build file 'build-logic/basics/build.gradle.k[m[79D[3B[5A[1m<[0;32;1m==[0;39;1m-----------> 22% CONFIGURING [49s][m[37D[2B> IDLE[0K[6D[3B[3A[1m> :build-logic:build-parameters[m[31D[3B[3A[1m> :build-logic:build-parameters > Resolve dependencies of classpath > build-par[m[79D[3B[5A[1m<[0;32;1m==[0;39;1m-----------> 22% CONFIGURING [50s][m[37D[5B[3A[1m> :build-logic:build-parameters > Resolve files of configuration 'classpath' > [m[79D[3B[4A[1m> :build-logic:build-parameters > Resolve files of configuration 'classpath' > [m[79D[4B[4A[1m> :build-logic:build-parameters[m[0K[31D[1B> IDLE[0K[6D[3B[4A[1m> :build-logic:build-parameters > Compiling build file 'build-logic/build-param[m[79D[4B[4A[1m> :build-logic:build-parameters[m[0K[31D[4B[5A[1m<[0;32;1m===[0;39;1m----------> 27% CONFIGURING [51s][m[37D[1B[1m> :build-logic:jvm > Compiling build file 'build-logic/jvm/build.gradle.kts'[m[76D[4B[5A[1m<[0;32;1m====[0;39;1m---------> 33% CONFIGURING [51s][m[37D[1B[1m> :build-logic:publishing > Compiling build file 'build-logic/publishing/build.[m[79D[4B[4A[1m> :build-logic:publishing[m[0K[25D[4B[5A[1m<[0;32;1m=====[0;39;1m--------> 44% CONFIGURING [51s][m[37D[1B[1m> root project > Compiling build file 'build.gradle.kts'[m[56D[4B[4A[1m> root project[m[0K[14D[4B[4A[1m> root project > Resolve dependencies of detachedConfiguration1 > com.gradleup.[m[79D[4B[5A[1m<[0;32;1m=====[0;39;1m--------> 44% CONFIGURING [52s][m[37D[1B[1m> root project[m[0K[14D[4B[4A[1m> root project > Resolve dependencies of classpath > nmcp-1.0.2.pom[m[67D[4B[4A[1m> root project > Resolve dependencies of classpath > nmcp-1.0.2.module[m[70D[4B[4A[1m> root project > Resolve dependencies of classpath > okio-3.8.0.pom[m[0K[67D[1B[1m> root project > Resolve dependencies of classpath > kotlinx-serialization-json[m[79D[1B[1m> root project > Resolve dependencies of classpath > gratatouille-tasks-runtime[m[79D[1B[1m> root project > Resolve dependencies of classpath > okhttp-4.12.0.pom[m[70D[1B[4A[1m> root project > Resolve dependencies of classpath > okio-3.8.0.module[m[70D[3B[1m> root project > Resolve dependencies of classpath > serialization-0.91.1.modul[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > kotlinx-serialization-json[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlin-test-2.0.0.pom[m[0K[74D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlin-test-2.0.0.module[m[77D[1B[5A[1m<[0;32;1m=====[0;39;1m--------> 44% CONFIGURING [53s][m[37D[4B[1m> root project > Resolve dependencies of classpath > kotlinx-serialization-json[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > okio-jvm-3.8.0.pom[m[0K[71D[1B[1A[1m> root project > Resolve dependencies of classpath > okio-jvm-3.8.0.module[m[74D[1B[1A[1m> root project > Resolve dependencies of classpath > serialization-jvm-0.91.1.m[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlin-stdlib-jdk7-1.9.0.p[m[79D[1B[5A[1m<[0;32;1m=====[0;39;1m--------> 44% CONFIGURING [54s][m[37D[4B[1m> root project > Resolve dependencies of classpath > kotlinx-serialization-core[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > core-0.91.1.module[m[0K[71D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlinx-serialization-core[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > core-jvmcommon-0.91.1.pom[m[0K[78D[1B[1A[1m> root project[m[0K[14D[1B[1A[1m> root project > :build-logic:root-build:compilePluginsBlocks[m[61D[1B[5A[1m<[0;32;1m=====[0;39;1m--------> 44% CONFIGURING [55s][m[37D[4B[1m> root project > :build-logic:root-build:generatePrecompiledScriptPluginAccesso[m[79D[1B[1A[1m> root project > :build-logic:root-build:compileKotlin[m[0K[54D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > kotlin-test-2.0.0[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > gratatouille-task[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > gratatouille-wiri[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > nmcp-1.0.2.jar[m[76D[1B[4A> IDLE[0K[6D[2B[1m> root project > Resolve files of configuration 'classpath' > serialization-jvm[m[79D[1B> IDLE[0K[6D[1B[5A[1m<[0;32;1m=====[0;39;1m--------> 44% CONFIGURING [56s][m[37D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[4A> IDLE[0K[6D[1B[1m> root project > Resolve files of configuration 'classpath'[m[0K[59D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[3A[1m> root project[m[0K[14D[3B[3A[1m> root project > Compiling build file 'build.gradle.kts'[m[56D[3B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [56s][m[37D[1B[1m> :fuzzing > Resolve dependencies of classpath > com.github.vlsi.gradle-extensi[m[79D[1B[1m> :fuzzing > Resolve dependencies of classpath > com.diffplug.spotless.gradle.p[m[79D[1B[1m> :fuzzing > Resolve dependencies of classpath > org.jetbrains.dokka-javadoc.gr[m[79D[1B[1m> :fuzzing > Resolve dependencies of classpath > net.ltgt.errorprone.gradle.plu[m[79D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [57s][m[37D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[3A[1m> :fuzzing > Resolve dependencies of classpath > spotless-plugin-gradle-7.2.1.p[m[79D[3B[3A[1m> :fuzzing > Resolve dependencies of classpath > spotless-plugin-gradle-7.2.1.m[m[79D[3B[3A[1m> :fuzzing > Resolve dependencies of classpath > gradle-extensions-plugin-1.90.[m[79D[3B[3A[1m> :fuzzing > Resolve dependencies of classpath > forbiddenapis-3.9.pom[m[0K[70D[3B[3A[1m> :fuzzing > Resolve dependencies of classpath > dokka-gradle-plugin-2.0.0.pom[m[78D[3B[3A[1m> :fuzzing > Resolve dependencies of classpath > kotlinx-serialization-bom-1.6.[m[79D[3B[3A[1m> :fuzzing > Resolve dependencies of classpath > dokka-gradle-plugin-2.0.0.modu[m[79D[3B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [58s][m[37D[2B[1m> :fuzzing > Resolve dependencies of classpath[m[0K[46D[3B[3A[1m> :fuzzing > Resolve dependencies of classpath > gradle-errorprone-plugin-4.2.0[m[79D[3B[4A[1m> :fuzzing > Resolve dependencies of classpath > durian-collect-1.2.0.pom[m[73D[1B[1m> :fuzzing > Resolve dependencies of classpath > durian-core-1.2.0.pom[m[0K[70D[1B[1m> :fuzzing > Resolve dependencies of classpath > durian-io-1.2.0.pom[m[68D[1B[1m> :fuzzing > Resolve dependencies of classpath > spotless-lib-extra-3.3.1.pom[m[77D[1B[3A> IDLE[0K[6D[2B[1m> :fuzzing > Resolve dependencies of classpath > spotless-lib-extra-3.3.1.modul[m[79D[1B[4A> IDLE[0K[6D[2B> IDLE[0K[6D[1B[1m> :fuzzing > Resolve dependencies of classpath > dokka-core-2.0.0.pom[m[0K[69D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > dokka-core-2.0.0.module[m[72D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > autostyle-bom-4.0.1.module[m[75D[1B[4A[1m> :fuzzing > Resolve dependencies of classpath > autostyle-lib-4.0.1.module[m[75D[2B[1m> :fuzzing > Resolve dependencies of classpath > ec4j-core-parent-0.3.0.pom[m[75D[1B[1m> :fuzzing > Resolve dependencies of classpath > autostyle-lib-extra-4.0.1.pom[m[78D[1B[4A[1m> :fuzzing > Resolve dependencies of classpath > JavaEWAH-1.2.3.pom[m[0K[67D[2B[1m> :fuzzing > Resolve dependencies of classpath > slf4j-api-1.7.36.pom[m[0K[69D[1B[1m> :fuzzing > Resolve dependencies of classpath > commons-codec-1.17.0.pom[m[0K[73D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [59s][m[37D[1B> IDLE[0K[6D[2B> IDLE[0K[6D[1B[1m> :fuzzing > Resolve dependencies of classpath > apache-31.pom[m[0K[62D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > junit-bom-5.10.2.pom[m[69D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > junit-bom-5.10.2.module[m[72D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > solstice-1.8.1.module[m[0K[70D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > kotlinx-serialization-json-1.6[m[79D[1B[4A[1m> :fuzzing > Resolve dependencies of classpath > jackson-dataformat-xml-2.12.7.[m[79D[2B[1m> :fuzzing > Resolve dependencies of classpath > jackson-module-kotlin-2.12.7.p[m[79D[1B[1m> :fuzzing > Resolve dependencies of classpath > kotlinx-coroutines-core-1.7.3.[m[79D[1B[4A[1m> :fuzzing > Resolve dependencies of classpath > jackson-base-2.12.7.pom[m[0K[72D[2B> IDLE[0K[6D[1B[1m> :fuzzing > Resolve dependencies of classpath > kotlinx-coroutines-bom-1.7.3.p[m[79D[1B[4A[1m> :fuzzing > Resolve dependencies of classpath > jackson-parent-2.12.pom[m[72D[3B[1m> :fuzzing > Resolve dependencies of classpath > kotlinx-coroutines-core-1.7.3.[m[79D[1B[4A[1m> :fuzzing > Resolve dependencies of classpath > oss-parent-41.pom[m[0K[66D[3B> IDLE[0K[6D[1B[4A[1m> :fuzzing > Resolve dependencies of classpath > jackson-dataformat-xml-2.12.7.[m[79D[3B[1m> :fuzzing > Resolve dependencies of classpath > jackson-module-kotlin-2.12.7.m[m[79D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m][m[0K[36D[1B> IDLE[0K[6D[3B[1m> :fuzzing > Resolve dependencies of classpath > durian-swt.os-4.3.0.module[m[0K[75D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > kotlinx-serialization-json-jvm[m[79D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > kotlinx-coroutines-core-jvm-1.[m[79D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath[m[0K[46D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > jackson-databind-2.12.7.1.pom[m[78D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > jackson-databind-2.12.7.1.modu[m[79D[1B[4A[1m> :fuzzing > Resolve dependencies of classpath > jackson-modules-base-2.12.7.po[m[79D[3B[1m> :fuzzing > Resolve dependencies of classpath > stax2-api-4.2.1.pom[m[0K[68D[1B[4A[1m> :fuzzing > Resolve dependencies of classpath > jackson-module-jaxb-annotation[m[79D[3B> IDLE[0K[6D[1B[4A[1m> :fuzzing > Resolve dependencies of classpath > okio-3.6.0.module[m[0K[66D[4B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 1s][m[39D[1B[1m> :fuzzing > Resolve dependencies of classpath > kotlin-stdlib-jdk8-1.8.21.pom[m[78D[4B[4A[1m> :fuzzing > Resolve dependencies of classpath > kotlinx-serialization-core-1.6[m[79D[4B[4A[1m> :fuzzing > Resolve dependencies of classpath > kotlin-stdlib-common-2.0.21.po[m[79D[4B[4A[1m> :fuzzing > Resolve dependencies of classpath > kotlin-stdlib-common-2.0.21.mo[m[79D[4B[4A[1m> :fuzzing > Resolve dependencies of classpath > jakarta.xml.bind-api-parent-2.[m[79D[3B[1m> :fuzzing > Resolve dependencies of classpath > all-1.2.1.pom[m[62D[1B[4A[1m> :fuzzing > Resolve dependencies of classpath > project-1.0.5.pom[m[0K[66D[3B[1m> :fuzzing > Resolve dependencies of classpath > project-1.0.2.pom[m[66D[1B[4A> IDLE[0K[6D[3B[1m> :fuzzing > Resolve dependencies of classpath > okio-jvm-3.6.0.module[m[70D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > kotlinx-serialization-core-jvm[m[79D[1B[1A[1m> :fuzzing > Resolve dependencies of classpath > kotlin-stdlib-jdk7-1.9.10.pom[m[0K[78D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 2s][m[39D[4B[1m> :fuzzing[m[0K[10D[1B[1A[1m> :fuzzing > Resolve dependencies of :build-logic:jvm:runtimeClasspath > kotlin[m[79D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 3s][m[39D[5B[1A[1m> :fuzzing > Resolve dependencies of :build-logic:jvm:runtimeClasspath[m[0K[70D[1B[1A[1m> :fuzzing > :build-logic:build-parameters:compileJava[m[0K[54D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 4s][m[39D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 5s][m[39D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 6s][m[39D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 7s][m[39D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 8s][m[39D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 9s][m[39D[5B[1A[1m> :fuzzing > :build-logic:basics:compilePluginsBlocks[m[0K[53D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 10s][m[40D[5B[1A[1m> :fuzzing > :build-logic:basics:compileKotlin[m[0K[46D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 11s][m[40D[5B[4A[1m> :fuzzing > :build-logic:jvm:generateExternalPluginSpecBuilders > Resolve file[m[79D[1B[1m> :fuzzing > :build-logic:jvm:generateExternalPluginSpecBuilders > Resolve file[m[79D[1B[1m> :fuzzing > :build-logic:jvm:generateExternalPluginSpecBuilders > Resolve file[m[79D[1B[1m> :fuzzing > :build-logic:jvm:generateExternalPluginSpecBuilders > Resolve file[m[79D[1B[1A> IDLE[0K[6D[1B[4A[1m> :fuzzing > :build-logic:jvm:generateExternalPluginSpecBuilders[m[0K[64D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[2B[4A[1m> :fuzzing > :build-logic:jvm:compilePluginsBlocks > Resolve files of configura[m[79D[1B[1m> :fuzzing > :build-logic:jvm:compilePluginsBlocks > Resolve files of configura[m[79D[1B[1m> :fuzzing > :build-logic:jvm:compilePluginsBlocks > Resolve files of configura[m[79D[2B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[2B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 12s][m[40D[5B[4A[1m> :fuzzing > :build-logic:jvm:compilePluginsBlocks[m[0K[50D[4B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 13s][m[40D[1B[1m> :fuzzing > :build-logic:jvm:generatePrecompiledScriptPluginAccessors > Resolv[m[79D[1B[1m> :fuzzing > :build-logic:jvm:generatePrecompiledScriptPluginAccessors > Resolv[m[79D[1B[1m> :fuzzing > :build-logic:jvm:generatePrecompiledScriptPluginAccessors > Resolv[m[79D[1B[1m> :fuzzing > :build-logic:jvm:generatePrecompiledScriptPluginAccessors > Resolv[m[79D[1B[2A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[3B[4A[1m> :fuzzing > :build-logic:jvm:generatePrecompiledScriptPluginAccessors[m[70D[4B[4A[1m> :fuzzing > :build-logic:jvm:generatePrecompiledScriptPluginAccessors > Resolv[m[79D[4B[3A[1m> :fuzzing > :build-logic:jvm:generatePrecompiledScriptPluginAccessors > Resolv[m[79D[1B[1m> :fuzzing > :build-logic:jvm:generatePrecompiledScriptPluginAccessors > Resolv[m[79D[1B[1m> :fuzzing > :build-logic:jvm:generatePrecompiledScriptPluginAccessors > Resolv[m[79D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 14s][m[40D[1B> IDLE[0K[6D[2B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[3A[1m> :fuzzing > :build-logic:jvm:generatePrecompiledScriptPluginAccessors[m[0K[70D[3B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 15s][m[40D[5B[3A[1m> :fuzzing > :build-logic:jvm:compileKotlin[m[0K[43D[3B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 16s][m[40D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 17s][m[40D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 18s][m[40D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 19s][m[40D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 20s][m[40D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 21s][m[40D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 22s][m[40D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 23s][m[40D[5B[3A[1m> :fuzzing > :build-logic:jvm:jar[m[0K[33D[3B[3A[1m> :fuzzing > Resolve files of configuration 'classpath' > MergeInstrumentationA[m[79D[2B[1m> :fuzzing > Resolve files of configuration 'classpath' > MergeInstrumentationA[m[79D[1B[3A> IDLE[0K[6D[2B[1m> :fuzzing > Resolve files of configuration 'classpath' > ProjectDependencyInst[m[79D[1B[1A[1m> :fuzzing[m[0K[10D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [1m 24s][m[40D[5B[1A[1m> :fuzzing > Compiling build file 'fuzzing/build.gradle.kts'[m[60D[1B[5A[1m<[0;32;1m=======[0;39;1m------> 55% CONFIGURING [1m 24s][m[40D[4B[1m> :sigstore-cli > Compiling build file 'sigstore-cli/build.gradle.kts'[m[70D[1B[1A[1m> :sigstore-cli[m[0K[15D[1B[1A[1m> :sigstore-cli > Resolve dependencies of classpath > shadow-gradle-plugin-9.0.[m[79D[1B[5A[1m<[0;32;1m=======[0;39;1m------> 55% CONFIGURING [1m 25s][m[40D[5B[4A[1m> :sigstore-cli > Resolve dependencies of classpath > asm-commons-9.8.pom[m[73D[1B[1m> :sigstore-cli > Resolve dependencies of classpath > plexus-utils-4.0.2.pom[m[76D[1B[1m> :sigstore-cli > Resolve dependencies of classpath > plexus-xml-4.1.0.pom[m[74D[1B[1m> :sigstore-cli > Resolve dependencies of classpath > commons-io-2.20.0.pom[m[0K[75D[1B[4A[1m> :sigstore-cli > Resolve dependencies of classpath > ow2-1.5.1.pom[m[0K[67D[1B> IDLE[0K[6D[1B[1m> :sigstore-cli > Resolve dependencies of classpath > plexus-20.pom[m[0K[67D[1B[1m> :sigstore-cli > Resolve dependencies of classpath > commons-parent-85.pom[m[75D[1B[4A[1m> :sigstore-cli > Resolve dependencies of classpath > junit-bom-5.13.1.pom[m[74D[2B[1m> :sigstore-cli > Resolve dependencies of classpath > junit-bom-5.11.4.pom[m[74D[1B> IDLE[0K[6D[1B[4A[1m> :sigstore-cli > Resolve dependencies of classpath > junit-bom-5.13.1.module[m[77D[2B[1m> :sigstore-cli > Resolve dependencies of classpath > junit-bom-5.11.4.module[m[77D[2B[4A> IDLE[0K[6D[2B[1m> :sigstore-cli > Resolve dependencies of classpath > log4j-2.25.1.pom[m[0K[70D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > log4j-bom-2.25.1.pom[m[74D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > groovy-bom-4.0.27.pom[m[75D[2B[5A[1m<[0;32;1m=======[0;39;1m------> 55% CONFIGURING [1m 26s][m[40D[3B[1m> :sigstore-cli > Resolve dependencies of classpath > jackson-bom-2.19.1.pom[m[76D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > jackson-parent-2.19.2.pom[m[79D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > jakarta.jakartaee-bom-9.1[m[79D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > project-1.0.7.pom[m[0K[71D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > junit-bom-5.13.2.pom[m[74D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > mockito-bom-4.11.0.pom[m[76D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > spring-framework-bom-5.3.[m[79D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > log4j-core-2.25.1.module[m[0K[78D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > maven-xml-4.0.0-rc-3.pom[m[78D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > ant-launcher-1.10.15.pom[m[78D[2B[5A[1m<[0;32;1m=======[0;39;1m------> 55% CONFIGURING [1m 27s][m[40D[3B[1m> :sigstore-cli > Resolve dependencies of classpath > log4j-api-2.25.1.pom[m[0K[74D[2B[2A[1m> :sigstore-cli > Resolve dependencies of classpath > log4j-api-2.25.1.module[m[77D[2B[4A[1m> :sigstore-cli > Resolve dependencies of classpath > woodstox-core-7.1.0.pom[m[77D[2B[1m> :sigstore-cli > Resolve dependencies of classpath > maven-api-xml-4.0.0-rc-3.[m[79D[1B[1m> :sigstore-cli > Resolve dependencies of classpath > stax2-api-4.2.2.pom[m[73D[1B[4A[1m> :sigstore-cli > Resolve dependencies of classpath > oss-parent-61.pom[m[0K[71D[2B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[4A[1m> :sigstore-cli > Resolve files of configuration 'classpath' > shadow-gradle-pl[m[79D[1B[1m> :sigstore-cli > Resolve files of configuration 'classpath' > asm-tree-9.8.jar[m[79D[1B[1m> :sigstore-cli > Resolve files of configuration 'classpath' > log4j-core-2.25.[m[79D[1B[1m> :sigstore-cli > Resolve files of configuration 'classpath' > asm-commons-9.8.[m[79D[1B[3A[1m> :sigstore-cli > Resolve files of configuration 'classpath' > woodstox-core-7.[m[79D[3B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[2B> IDLE[0K[6D[1B[4A[1m> :sigstore-cli > Resolve files of configuration 'classpath' > MergeInstrumenta[m[79D[1B[1m> :sigstore-cli > Resolve files of configuration 'classpath' > MergeInstrumenta[m[79D[1B[1m> :sigstore-cli > Resolve files of configuration 'classpath' > MergeInstrumenta[m[79D[1B[1m> :sigstore-cli > Resolve files of configuration 'classpath' > MergeInstrumenta[m[79D[1B[4A[1m> :sigstore-cli > Resolve files of configuration 'classpath' > ExternalDependen[m[79D[1B[1m> :sigstore-cli > Resolve files of configuration 'classpath' > ExternalDependen[m[79D[1B[1m> :sigstore-cli > Resolve files of configuration 'classpath' > ExternalDependen[m[79D[1B> IDLE[0K[6D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> :sigstore-cli[m[0K[15D[2B[5A[1m<[0;32;1m=======[0;39;1m------> 55% CONFIGURING [1m 28s][m[40D[5B[2A[1m> :sigstore-cli > Compiling build file 'sigstore-cli/build.gradle.kts'[m[70D[2B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 28s][m[40D[3B[1m> :sigstore-java > Resolve dependencies of detachedConfiguration1 > org.jsonsch[m[79D[2B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 29s][m[40D[3B[1m> :sigstore-java[m[0K[16D[2B[4A[1m> :sigstore-java > Resolve dependencies of classpath > com.gradleup.nmcp.gradle[m[79D[2B[1m> :sigstore-java > Resolve dependencies of classpath > sigstore-gradle-sign-plu[m[79D[2B[4A> IDLE[0K[6D[4B[2A[1m> :sigstore-java > Resolve dependencies of classpath > JsonSchema2DataClass-5.0[m[79D[2B[2A[1m> :sigstore-java > Resolve dependencies of classpath[m[0K[52D[2B[2A[1m> :sigstore-java > Resolve dependencies of classpath > sigstore-gradle-sign-bas[m[79D[2B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 30s][m[40D[5B[2A[1m> :sigstore-java > Resolve dependencies of classpath > plugin-publish-plugin-1.[m[79D[2B[2A[1m> :sigstore-java > Resolve dependencies of classpath > nmcp-1.0.3.module[m[0K[72D[2B[2A[1m> :sigstore-java > Resolve dependencies of classpath > jsonschema2pojo-core-1.1[m[79D[2B[2A[1m> :sigstore-java > Resolve dependencies of classpath > oss-parent-9.pom[m[0K[71D[2B[2A[1m> :sigstore-java > Resolve dependencies of classpath > maven-model-3.6.3.pom[m[76D[2B[2A[1m> :sigstore-java > Resolve dependencies of classpath > maven-3.6.3.pom[m[0K[70D[2B[2A[1m> :sigstore-java > Resolve dependencies of classpath > maven-parent-33.pom[m[74D[2B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 31s][m[40D[1B[1m> :sigstore-java > Resolve dependencies of classpath > jackson-dataformat-yaml-[m[79D[1B[1m> :sigstore-java > Resolve dependencies of classpath > codemodel-2.6.pom[m[72D[1B[1m> :sigstore-java > Resolve dependencies of classpath > jackson-databind-2.12.4.[m[79D[1B[1m> :sigstore-java > Resolve dependencies of classpath > javaparser-1.0.11.pom[m[76D[1B[4A[1m> :sigstore-java > Resolve dependencies of classpath > project-1.0.6.pom[m[0K[72D[1B[1m> :sigstore-java > Resolve dependencies of classpath > codemodel-project-2.6.po[m[79D[1B[1m> :sigstore-java > Resolve dependencies of classpath > jackson-base-2.12.4.pom[m[0K[78D[2B[4A[1m> :sigstore-java > Resolve dependencies of classpath > apache-7.pom[m[0K[67D[1B[1m> :sigstore-java > Resolve dependencies of classpath > jackson-databind-2.12.4.[m[79D[1B[1m> :sigstore-java > Resolve dependencies of classpath > apache-23.pom[m[0K[68D[1B> IDLE[0K[6D[1B[4A> IDLE[0K[6D[1B[1m> :sigstore-java > Resolve dependencies of classpath > jackson-dataformat-yaml-[m[79D[1B[1m> :sigstore-java > Resolve dependencies of classpath > junit-bom-5.7.2.module[m[77D[2B[2A> IDLE[0K[6D[2B[3A[1m> :sigstore-java > Resolve dependencies of classpath > os-maven-plugin-1.7.1.po[m[79D[3B[3A[1m> :sigstore-java > Resolve dependencies of classpath > jackson-core-2.12.4.modu[m[79D[3B[3A[1m> :sigstore-java > Resolve dependencies of classpath > jackson-dataformat-yaml-[m[79D[3B[3A[1m> :sigstore-java[m[0K[16D[3B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 32s][m[40D[5B[3A[1m> :sigstore-java > Resolve dependencies of :build-logic:publishing:runtimeClass[m[79D[3B[4A[1m> :sigstore-java > :build-logic:publishing:generateExternalPluginSpecBuilders >[m[79D[1B[1m> :sigstore-java > :build-logic:publishing:generateExternalPluginSpecBuilders >[m[79D[1B[1m> :sigstore-java > :build-logic:publishing:generateExternalPluginSpecBuilders >[m[79D[1B[1m> :sigstore-java > :build-logic:publishing:generateExternalPluginSpecBuilders >[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> :sigstore-java > :build-logic:publishing:generateExternalPluginSpecBuilders[m[0K[77D[1B[4A[1m> :sigstore-java > :build-logic:publishing:compilePluginsBlocks > Resolve files[m[79D[1B[1m> :sigstore-java > :build-logic:publishing:compilePluginsBlocks > Resolve files[m[79D[1B[1m> :sigstore-java > :build-logic:publishing:compilePluginsBlocks > Resolve files[m[79D[1B[1m> :sigstore-java > :build-logic:publishing:compilePluginsBlocks > Resolve files[m[79D[1B[4A[1m> :sigstore-java > :build-logic:publishing:compilePluginsBlocks[m[0K[63D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 33s][m[40D[5B[4A[1m> :sigstore-java > :build-logic:publishing:generatePrecompiledScriptPluginAcces[m[79D[4B[3A[1m> :sigstore-java > :build-logic:publishing:generatePrecompiledScriptPluginAcces[m[79D[3B[2A[1m> :sigstore-java > :build-logic:publishing:generatePrecompiledScriptPluginAcces[m[79D[1B[1m> :sigstore-java > :build-logic:publishing:generatePrecompiledScriptPluginAcces[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[2B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 34s][m[40D[5B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 35s][m[40D[4B[1m> :sigstore-java > :build-logic:publishing:compileKotlin[m[0K[56D[1B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 36s][m[40D[5B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 37s][m[40D[5B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 38s][m[40D[5B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 39s][m[40D[5B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 40s][m[40D[5B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 41s][m[40D[5B[1A[1m> :sigstore-java > :build-logic:publishing:jar[m[0K[46D[1B[4A[1m> :sigstore-java > Resolve files of configuration 'classpath' > JsonSchema2Data[m[79D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > protobuf-gradle[m[79D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > osdetector-grad[m[79D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > jsonschema2pojo[m[79D[1B[4A[1m> :sigstore-java > Resolve files of configuration 'classpath' > commons-io-2.11[m[79D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > commons-lang3-3[m[79D[1B> IDLE[0K[6D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > snakeyaml-1.27.[m[79D[1B[4A[1m> :sigstore-java > Resolve files of configuration 'classpath' > MergeInstrument[m[79D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > MergeInstrument[m[79D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > MergeInstrument[m[79D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > MergeInstrument[m[79D[1B[4A[1m> :sigstore-java > Resolve files of configuration 'classpath' > ExternalDepende[m[79D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > ExternalDepende[m[79D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > ExternalDepende[m[79D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > ExternalDepende[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> :sigstore-java > Resolve files of configuration 'classpath' > ProjectDependen[m[79D[1B[1A[1m> :sigstore-java[m[0K[16D[1B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [1m 42s][m[40D[5B[1A[1m> :sigstore-java > Compiling build file 'sigstore-java/build.gradle.kts'[m[72D[1B[1A[1m> :sigstore-java[m[0K[16D[1B[5A[1m<[0;32;1m=========[0;39;1m----> 72% CONFIGURING [1m 43s][m[40D[4B[1m> :sigstore-maven-plugin > Resolve dependencies of detachedConfiguration1 > org[m[79D[1B[1A[1m> :sigstore-maven-plugin[m[0K[24D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-plugin-dev[m[79D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-plugin-too[m[79D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > apache-33.pom[m[0K[76D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > junit-bom-5.10.3[m[79D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > junit-bom-5.11.3[m[79D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-plugin-dev[m[79D[1B[5A[1m<[0;32;1m=========[0;39;1m----> 72% CONFIGURING [1m 44s][m[40D[5B[3A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-plugin-api[m[79D[2B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > sisu-inject-plex[m[79D[1B[3A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-3.9.9.pom[m[0K[78D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > sisu-inject-2.6.[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > junit-bom-5.11.1[m[79D[1B[3A> IDLE[0K[6D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > sisu-parent-2.6.[m[79D[1B> IDLE[0K[6D[1B[2A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath[m[0K[60D[2B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-classworl[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-utils-3.5[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-artifact-3[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > org.eclipse.sisu[m[79D[1B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-16.pom[m[0K[76D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > junit-bom-5.10.1[m[79D[4B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-container[m[79D[4B[5A[1m<[0;32;1m=========[0;39;1m----> 72% CONFIGURING [1m 45s][m[40D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath[m[0K[60D[4B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > velocity-engine-[m[79D[4B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > velocity-master-[m[79D[4B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-plugin-ann[m[79D[4B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-17.pom[m[0K[76D[4B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-plugin-too[m[79D[4B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-component[m[79D[4B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-5.1.pom[m[0K[77D[4B[5A[1m<[0;32;1m=========[0;39;1m----> 72% CONFIGURING [1m 46s][m[40D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > org.eclipse.sisu[m[79D[3B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-xml-3.0.1[m[79D[1B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > cdi-api-1.0.pom[m[0K[78D[3B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > sisu-guice-3.2.5[m[79D[1B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > weld-api-parent-[m[79D[3B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > guice-parent-3.2[m[79D[1B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > weld-parent-6.po[m[79D[3B> IDLE[0K[6D[1B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > commons-lang3-3.[m[79D[4B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > junit-bom-5.11.0[m[79D[4B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-resolver-a[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > httpcomponents-c[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > httpcomponents-c[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-java-1.3.[m[79D[1B[4A> IDLE[0K[6D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-parent-34.[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > httpcomponents-p[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-parent-42.[m[79D[1B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > apache-32.pom[m[0K[76D[1B[5A[1m<[0;32;1m=========[0;39;1m----> 72% CONFIGURING [1m 47s][m[40D[4B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-shared-com[m[79D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > jtidy-r938.pom[m[0K[77D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > jsoup-1.18.1.pom[m[79D[1B[3A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > asm-util-9.7.1.p[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > asm-9.7.1.pom[m[76D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-archiver-[m[79D[1B[3A> IDLE[0K[6D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > javax.inject-1.p[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > jsr250-api-1.0.p[m[79D[1B[2A> IDLE[0K[6D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > guava-parent-16.[m[79D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > commons-logging-[m[79D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > apache-13.pom[m[0K[76D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-resolver-a[m[79D[1B[1A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > guava-33.2.1-jre[m[79D[1B[5A[1m<[0;32;1m=========[0;39;1m----> 72% CONFIGURING [1m 48s][m[40D[5B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-resolver-p[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-builder-su[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-resolver-i[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-settings-b[m[79D[1B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > guava-parent-26.[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-shared-com[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > guice-parent-5.1[m[79D[1B> IDLE[0K[6D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > apache-29.pom[m[0K[76D[2B[2A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > doxia-sink-api-2[m[79D[2B[2A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > doxia-2.0.0.pom[m[0K[78D[2B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > aircompressor-0.[m[79D[2B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > commons-io-2.16.[m[79D[2B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > junit-bom-5.8.0-[m[79D[2B> IDLE[0K[6D[2B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > listenablefuture[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > error_prone_anno[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > checker-qual-3.4[m[79D[2B[5A[1m<[0;32;1m=========[0;39;1m----> 72% CONFIGURING [1m 49s][m[40D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > checker-qual-3.4[m[79D[1B[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > error_prone_pare[m[79D[1B> IDLE[0K[6D[2B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-8.pom[m[0K[75D[1B> IDLE[0K[6D[3B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > maven-resolver-n[m[79D[4B[4A[1m> :sigstore-maven-plugin > Resolve dependencies of classpath > plexus-cipher-2.[m[79D[4B[4A[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > maven-p[m[79D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > maven-p[m[79D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > maven-c[m[79D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > plexus-[m[79D[1B[4A[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > org.ecl[m[79D[3B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > jsoup-1[m[79D[1B[4A[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > commons[m[79D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > cdi-api[m[79D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > plexus-[m[79D[2B[3A[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > checker[m[79D[3B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[4A[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > zstd-jn[m[79D[4B[5A[1m<[0;32;1m=========[0;39;1m----> 72% CONFIGURING [1m 50s][m[40D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > Resolve[m[79D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > Resolve[m[79D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > Resolve[m[79D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > Resolve[m[79D[1B[4A> IDLE[0K[6D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > MergeIn[m[79D[1B> IDLE[0K[6D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > MergeIn[m[79D[1B[4A[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > Externa[m[79D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > Externa[m[79D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > Externa[m[79D[1B[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath' > Externa[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[2B[1A[1m> :sigstore-maven-plugin > Resolve files of configuration 'classpath'[m[0K[69D[1B[1A[1m> :sigstore-maven-plugin[m[0K[24D[1B[5A[1m<[0;32;1m=========[0;39;1m----> 72% CONFIGURING [1m 51s][m[40D[5B[1A[1m> :sigstore-maven-plugin > Compiling build file 'sigstore-maven-plugin/build.gr[m[79D[1B[1A[1m> :sigstore-maven-plugin[m[0K[24D[1B[5A[1m<[0;32;1m==========[0;39;1m---> 77% CONFIGURING [1m 51s][m[40D[4B[1m> :sigstore-testkit[m[0K[19D[1B[5A[1m<[0;32;1m==========[0;39;1m---> 77% CONFIGURING [1m 52s][m[40D[4B[1m> :sigstore-testkit > Compiling build file 'sigstore-testkit/build.gradle.kts'[m[78D[1B[1A[1m> :sigstore-testkit[m[0K[19D[1B[5A[1m<[0;32;1m==========[0;39;1m---> 83% CONFIGURING [1m 52s][m[40D[4B[1m> :tuf-cli > Compiling build file 'tuf-cli/build.gradle.kts'[m[60D[1B[5A[1m<[0;32;1m===========[0;39;1m--> 88% CONFIGURING [1m 52s][m[40D[1B[1m> :sigstore-gradle:sigstore-gradle-sign-base-plugin > Resolve files of configur[m[79D[1B[1m> :sigstore-gradle:sigstore-gradle-sign-base-plugin > Resolve files of configur[m[79D[1B[1m> :sigstore-gradle:sigstore-gradle-sign-base-plugin > Resolve files of configur[m[79D[1B[1m> :sigstore-gradle:sigstore-gradle-sign-base-plugin > Resolve files of configur[m[79D[1B[4A[1m> :sigstore-gradle:sigstore-gradle-sign-base-plugin[m[0K[51D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[5A[1m<[0;32;1m===========[0;39;1m--> 88% CONFIGURING [1m 53s][m[40D[1B[1m> :sigstore-gradle:sigstore-gradle-sign-base-plugin > Compiling build file 'sig[m[79D[4B[5A[1m<[0;32;1m============[0;39;1m-> 94% CONFIGURING [1m 53s][m[40D[1B[1m> :sigstore-gradle:sigstore-gradle-sign-plugin > Resolve files of configuration[m[79D[2B[1m> :sigstore-gradle:sigstore-gradle-sign-plugin > Resolve files of configuration[m[79D[2B[4A> IDLE[0K[6D[2B[1m> :sigstore-gradle:sigstore-gradle-sign-plugin[m[0K[46D[2B[2A[1m> :sigstore-gradle:sigstore-gradle-sign-plugin > Compiling build file 'sigstore[m[79D[2B[5A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1m 54s][m[41D[1B[1m> Resolve dependencies of :fuzzing:runtimeClasspath > guava-33.5.0-jre.pom[m[74D[2B[1m> Resolve dependencies of :fuzzing:runtimeClasspath > jazzer-api-0.26.0.pom[m[0K[75D[2B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > guava-parent-33.5.0-jre.p[m[79D[2B> IDLE[0K[6D[2B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > grpc-bom-1.71.0.pom[m[0K[73D[2B[1m> Resolve dependencies of :fuzzing:runtimeClasspath > google-oauth-client-bom-1[m[79D[2B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > bcutil-jdk18on-1.82.pom[m[77D[2B[1m> Resolve dependencies of :fuzzing:runtimeClasspath > gson-parent-2.13.2.pom[m[0K[76D[2B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath[m[0K[51D[2B> IDLE[0K[6D[2B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > guava-parent-33.4.0-andro[m[79D[4B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > native-image-shared-confi[m[79D[4B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > protobuf-parent-4.30.2.po[m[79D[4B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > grpc-protobuf-1.71.0.pom[m[0K[78D[4B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > google-oauth-client-paren[m[79D[4B[5A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1m 55s][m[41D[1B[1m> Resolve dependencies of :fuzzing:runtimeClasspath > google-oauth-client-java6[m[79D[4B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > bcprov-jdk18on-1.82.pom[m[0K[77D[4B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath[m[0K[51D[4B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > protobuf-java-4.30.2.pom[m[78D[4B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > mojo-parent-84.pom[m[0K[72D[4B[4A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > grpc-core-1.71.0.pom[m[74D[1B[1m> Resolve dependencies of :fuzzing:runtimeClasspath > grpc-api-1.71.0.pom[m[73D[1B[1m> Resolve dependencies of :fuzzing:runtimeClasspath > grpc-util-1.71.0.pom[m[74D[2B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> Resolve dependencies of :fuzzing:runtimeClasspath > grpc-protobuf-lite-1.71.0[m[79D[2B[2A[1m> Resolve dependencies of :fuzzing:runtimeClasspath[m[0K[51D[2B[2A[1m> Resolve dependencies of :fuzzing:runtimeClasspath > annotations-4.1.1.4.pom[m[77D[2B[5A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1m 56s][m[41D[3B[1m> Resolve dependencies of :sigstore-java:annotationProcessor > value-2.10.1.pom[m[79D[2B[2A[1m> Resolve dependencies of :sigstore-java:annotationProcessor > immutables-2.10.[m[79D[2B[2A[1m> Resolve dependencies of :sigstore-java:compileClasspath > guava-33.3.1-androi[m[79D[2B[2A[1m> Resolve dependencies of :sigstore-java:compileClasspath > j2objc-annotations-[m[79D[2B[2A[1m> Resolve dependencies of :sigstore-java:compileClasspath > checker-qual-3.43.0[m[79D[2B[2A[1m> Resolve dependencies of :sigstore-java:protobuf > protobuf-specs-0.4.3.pom[m[0K[76D[2B[3A[1m> Resolve dependencies of :sigstore-java:compileProtoPath > j2objc-annotations-[m[79D[1B[1m> Resolve dependencies of :sigstore-java:compileProtoPath > guava-32.0.1-jre.po[m[79D[2B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[2B[5A[1m<[0;32;1m=[0;39;1m------------> 11% EXECUTING [1m 56s][m[0K[38D[2B[1m> :sigstore-java:extractProto > Resolve files of configuration ':sigstore-java:[m[79D[1B[1m> :spotlessInternalRegisterDependencies[m[39D[2B[5A[1m<[0;32;1m==[0;39;1m-----------> 22% EXECUTING [1m 56s][m[38D[2B[1m> :sigstore-java:processTestResources[m[0K[37D[1B[1m> :fuzzing:spotlessJava[m[0K[23D[2B[5A[1m<[0;32;1m==[0;39;1m-----------> 22% EXECUTING [1m 57s][m[38D[3B[1m> :fuzzing:spotlessJava > Resolve dependencies of :fuzzing:spotless865484172 > [m[79D[2B[5A[1m<[0;32;1m===[0;39;1m----------> 25% EXECUTING [1m 57s][m[38D[2B[1m> :sigstore-java:generateJsonSchema2DataClassConfigRekor[m[56D[3B[4A[1m> :fuzzing:spotlessJava > Resolve dependencies of :fuzzing:spotless865484172 > [m[79D[4B[5A[1m<[0;32;1m====[0;39;1m---------> 31% EXECUTING [1m 57s][m[38D[1B[1m> :fuzzing:spotlessJava > Resolve files of configuration ':fuzzing:spotless8654[m[79D[1B[1m> :sigstore-java:extractIncludeProto > Resolve files of configuration ':sigstor[m[79D[1B[1m> :fuzzing:spotlessJava > Resolve files of configuration ':fuzzing:spotless8654[m[79D[1B[1m> :fuzzing:spotlessJava > Resolve files of configuration ':fuzzing:spotless8654[m[79D[1B[4A[1m> :sigstore-java:extractIncludeProto > Resolve files of configuration ':sigstor[m[79D[3B[1m> :sigstore-java:extractIncludeProto > Resolve files of configuration ':sigstor[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> :fuzzing:spotlessJava[m[0K[23D[1B[1m> :sigstore-java:extractIncludeProto[m[0K[36D[1B[5A[1m<[0;32;1m=====[0;39;1m--------> 40% EXECUTING [1m 57s][m[38D[3B[1m> :fuzzing:spotlessKotlinGradle > Resolve dependencies of :fuzzing:spotless9961[m[79D[1B[1m> :sigstore-java:generateProto > Resolve dependencies of :sigstore-java:protobu[m[79D[1B[4A[1m> :fuzzing:spotlessKotlinGradle > Resolve dependencies of :fuzzing:spotless9961[m[79D[1B[1m> :fuzzing:spotlessKotlinGradle > Resolve dependencies of :fuzzing:spotless9961[m[79D[2B[1m> :sigstore-java:generateProto > Resolve files of configuration ':sigstore-java[m[79D[1B[5A[1m<[0;32;1m=====[0;39;1m--------> 40% EXECUTING [1m 58s][m[38D[2B> IDLE[0K[6D[1B> IDLE[0K[6D[2B[1A[1m> :sigstore-java:generateProto[m[0K[30D[1B[5A[1m<[0;32;1m=====[0;39;1m--------> 42% EXECUTING [1m 58s][m[38D[4B[1m> :sigstore-java:compileJava[m[0K[28D[1B[3A[1m> :fuzzing:spotlessKotlinGradle > Resolve dependencies of :fuzzing:spotless9961[m[79D[3B[4A> IDLE[0K[6D[4B[5A[1m<[0;32;1m=====[0;39;1m--------> 42% EXECUTING [1m 59s][m[38D[5B[1A[1m> :sigstore-java:compileJava > Resolve files of configuration ':sigstore-java:a[m[79D[1B[1A[1m> :sigstore-java:compileJava[m[0K[28D[1B[5A[1m<[0;32;1m=====[0;39;1m--------> 42% EXECUTING [2m][m[0K[34D[5B[4A[1m> :fuzzing:spotlessKotlinGradle > Resolve files of configuration ':fuzzing:spot[m[79D[1B[1m> :fuzzing:spotlessKotlinGradle > Resolve files of configuration ':fuzzing:spot[m[79D[1B[1m> :fuzzing:spotlessKotlinGradle > Resolve files of configuration ':fuzzing:spot[m[79D[2B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[2B[4A[1m> :fuzzing:spotlessKotlinGradle[m[31D[4B[5A[1m<[0;32;1m=====[0;39;1m--------> 42% EXECUTING [2m 1s][m[37D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 57% EXECUTING [2m 1s][m[37D[1B> IDLE[0K[6D[4B[5A[1m<[0;32;1m=======[0;39;1m------> 57% EXECUTING [2m 2s][m[37D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 57% EXECUTING [2m 3s][m[37D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 57% EXECUTING [2m 4s][m[37D[5B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1m> Task :sigstore-java:compileJava[m[0K
+Step #3 - "compile-libfuzzer-address-x86_64": Note: /src/sigstore-java/sigstore-java/src/main/java/dev/sigstore/bundle/BundleVerifier.java uses unchecked or unsafe operations.[0K
+Step #3 - "compile-libfuzzer-address-x86_64": Note: Recompile with -Xlint:unchecked for details.[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1B[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;32;1m=======[0;39;1m------> 57% EXECUTING [2m 4s][m[37D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[1m> :sigstore-java:compileJava[m[28D[1B[5A[1m<[0;32;1m=======[0;39;1m------> 57% EXECUTING [2m 5s][m[37D[5B[5A[1m<[0;32;1m========[0;39;1m-----> 62% EXECUTING [2m 5s][m[37D[1B[1m> :sigstore-java:jar[m[20D[3B[1m> :fuzzing:compileJava > Resolve files of configuration ':fuzzing:compileClassp[m[79D[1B[1A[1m> :fuzzing:compileJava[m[0K[22D[1B[5A[1m<[0;32;1m========[0;39;1m-----> 65% EXECUTING [2m 6s][m[37D[1B> IDLE[0K[6D[4B[5A[1m<[0;32;1m==========[0;39;1m---> 77% EXECUTING [2m 6s][m[37D[4B[1m> :fuzzing:forbiddenApisMain[m[28D[1B[5A[1m<[0;32;1m============[0;39;1m-> 97% EXECUTING [2m 6s][m[37D[1B[1m> :fuzzing:copyToFuzzOut > Resolve files of configuration ':fuzzing:runtimeClas[m[79D[1B[1m> :fuzzing:copyToFuzzOut > Resolve files of configuration ':fuzzing:runtimeClas[m[79D[1B[1m> :fuzzing:copyToFuzzOut > Resolve files of configuration ':fuzzing:runtimeClas[m[79D[1B[1m> :fuzzing:copyToFuzzOut > Resolve files of configuration ':fuzzing:runtimeClas[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[2B[1A[1m> :fuzzing:copyToFuzzOut[m[0K[24D[1B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [Incubating] Problems report is available at: file:///src/sigstore-java/build/reports/problems/problems-report.html[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [32;1mBUILD SUCCESSFUL[0;39m in 2m 10s
+Step #3 - "compile-libfuzzer-address-x86_64": 71 actionable tasks: 71 executed
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+Starting Step #4 - "build-check-libfuzzer-address-x86_64"
+Step #4 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-libfuzzer-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-libfuzzer-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-libfuzzer-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 4cab2e9940c4: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": b2d6cb003f96: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 4257557ce7a0: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": be3245a4a281: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 34b65fbcc5a0: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 5939142620ab: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f5d751699f9: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 6ec6ce971317: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": bc0b8a49c20a: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 76deb7a5dea3: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": eb58a5c57b61: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 25467b80b5de: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 08d50d7c8105: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": d339a9d8e776: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 941a302308b7: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 5468c806efe7: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": d8c06c98aa11: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f77d6138a834: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f3800746dbdc: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": ed84ee51dcf3: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 458cf9be26a0: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 8eb37fd8cc5b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": d796cbbf759e: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": a2b4aac872f7: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 2a16bf25e3f8: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 5939142620ab: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d339a9d8e776: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f5d751699f9: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 941a302308b7: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 5468c806efe7: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 6ec6ce971317: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 8eb37fd8cc5b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d8c06c98aa11: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": a2b4aac872f7: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": bc0b8a49c20a: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 2a16bf25e3f8: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 76deb7a5dea3: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 08d50d7c8105: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": f77d6138a834: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d796cbbf759e: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": f3800746dbdc: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 25467b80b5de: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": eb58a5c57b61: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": ed84ee51dcf3: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 34b65fbcc5a0: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4257557ce7a0: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 4257557ce7a0: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": be3245a4a281: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": be3245a4a281: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f5d751699f9: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f5d751699f9: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4257557ce7a0: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5939142620ab: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 5939142620ab: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bc0b8a49c20a: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": bc0b8a49c20a: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 76deb7a5dea3: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": be3245a4a281: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": eb58a5c57b61: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": eb58a5c57b61: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 34b65fbcc5a0: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 08d50d7c8105: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 08d50d7c8105: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6ec6ce971317: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 6ec6ce971317: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5939142620ab: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 941a302308b7: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 941a302308b7: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f5d751699f9: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d339a9d8e776: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": d339a9d8e776: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 25467b80b5de: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d8c06c98aa11: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f3800746dbdc: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": f3800746dbdc: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ed84ee51dcf3: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": ed84ee51dcf3: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5468c806efe7: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 5468c806efe7: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 458cf9be26a0: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 458cf9be26a0: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d796cbbf759e: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": d796cbbf759e: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6ec6ce971317: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bc0b8a49c20a: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a2b4aac872f7: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": a2b4aac872f7: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 76deb7a5dea3: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": eb58a5c57b61: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2a16bf25e3f8: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 2a16bf25e3f8: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8eb37fd8cc5b: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 8eb37fd8cc5b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f77d6138a834: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": f77d6138a834: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 25467b80b5de: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 08d50d7c8105: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d339a9d8e776: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 941a302308b7: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5468c806efe7: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d8c06c98aa11: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f77d6138a834: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f3800746dbdc: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ed84ee51dcf3: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 458cf9be26a0: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8eb37fd8cc5b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d796cbbf759e: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a2b4aac872f7: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2a16bf25e3f8: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": Digest: sha256:008112e5c601944fb09ae78f0f6f2e273a40072e7ea314aaf50233822994df0d
+Step #4 - "build-check-libfuzzer-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/DigitallySignedFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/KeysParsingFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/FulcioVerifierFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/BundleReaderFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/BundleVerifierFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/CertificateEntryFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/RekorTypesFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/CertificatesFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/JsonCanonicalizerFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/SerializationFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/RekorVerifierFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/TufVerifierFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/FulcioCertificateMatcherFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp8dr_z45l/SignerVerifierFuzzer
+Finished Step #4 - "build-check-libfuzzer-address-x86_64"
+Starting Step #5
+Step #5: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #5
+Starting Step #6
+Step #6: Already have image: gcr.io/oss-fuzz/sigstore-java
+Step #6:   adding: BundleReaderFuzzer (deflated 60%)
+Step #6:   adding: BundleVerifierFuzzer (deflated 60%)
+Step #6:   adding: CertificateEntryFuzzer (deflated 60%)
+Step #6:   adding: CertificatesFuzzer (deflated 60%)
+Step #6:   adding: DigitallySignedFuzzer (deflated 60%)
+Step #6:   adding: FulcioCertificateMatcherFuzzer (deflated 60%)
+Step #6:   adding: FulcioVerifierFuzzer (deflated 60%)
+Step #6:   adding: JsonCanonicalizerFuzzer (deflated 61%)
+Step #6:   adding: KeysParsingFuzzer (deflated 60%)
+Step #6:   adding: RekorTypesFuzzer (deflated 60%)
+Step #6:   adding: RekorVerifierFuzzer (deflated 60%)
+Step #6:   adding: SerializationFuzzer (deflated 61%)
+Step #6:   adding: SignerVerifierFuzzer (deflated 60%)
+Step #6:   adding: TufVerifierFuzzer (deflated 60%)
+Step #6:   adding: animal-sniffer-annotations-1.24.jar (deflated 40%)
+Step #6:   adding: annotations-4.1.1.4.jar (deflated 34%)
+Step #6:   adding: bcpkix-jdk18on-1.82.jar (deflated 13%)
+Step #6:   adding: bcprov-jdk18on-1.82.jar (deflated 14%)
+Step #6:   adding: bcutil-jdk18on-1.82.jar (deflated 15%)
+Step #6:   adding: commons-codec-1.18.0.jar (deflated 17%)
+Step #6:   adding: commons-logging-1.2.jar (deflated 8%)
+Step #6:   adding: error_prone_annotations-2.41.0.jar (deflated 34%)
+Step #6:   adding: failureaccess-1.0.3.jar (deflated 27%)
+Step #6:   adding: fuzzing/ (stored 0%)
+Step #6:   adding: fuzzing/FulcioCertificateMatcherFuzzer.class (deflated 57%)
+Step #6:   adding: fuzzing/SignerVerifierFuzzer.class (deflated 52%)
+Step #6:   adding: fuzzing/KeysParsingFuzzer$Parser.class (deflated 36%)
+Step #6:   adding: fuzzing/FulcioVerifierFuzzer.class (deflated 54%)
+Step #6:   adding: fuzzing/TufVerifierFuzzer.class (deflated 51%)
+Step #6:   adding: fuzzing/BundleVerifierFuzzer.class (deflated 42%)
+Step #6:   adding: fuzzing/RekorVerifierFuzzer.class (deflated 52%)
+Step #6:   adding: fuzzing/BundleReaderFuzzer.class (deflated 45%)
+Step #6:   adding: fuzzing/RekorTypesFuzzer.class (deflated 54%)
+Step #6:   adding: fuzzing/CertificatesFuzzer.class (deflated 52%)
+Step #6:   adding: fuzzing/CertificateEntryFuzzer.class (deflated 56%)
+Step #6:   adding: fuzzing/DigitallySignedFuzzer.class (deflated 57%)
+Step #6:   adding: fuzzing/SerializationFuzzer.class (deflated 48%)
+Step #6:   adding: fuzzing/KeysParsingFuzzer.class (deflated 48%)
+Step #6:   adding: fuzzing/JsonCanonicalizerFuzzer.class (deflated 45%)
+Step #6:   adding: google-http-client-1.47.1.jar (deflated 11%)
+Step #6:   adding: google-http-client-apache-v2-1.47.1.jar (deflated 26%)
+Step #6:   adding: google-http-client-gson-1.47.1.jar (deflated 25%)
+Step #6:   adding: google-oauth-client-1.39.0.jar (deflated 13%)
+Step #6:   adding: google-oauth-client-java6-1.39.0.jar (deflated 22%)
+Step #6:   adding: google-oauth-client-jetty-1.39.0.jar (deflated 23%)
+Step #6:   adding: grpc-api-1.71.0.jar (deflated 10%)
+Step #6:   adding: grpc-context-1.71.0.jar (deflated 43%)
+Step #6:   adding: grpc-core-1.71.0.jar (deflated 9%)
+Step #6:   adding: grpc-netty-shaded-1.71.0.jar (deflated 5%)
+Step #6:   adding: grpc-protobuf-1.71.0.jar (deflated 17%)
+Step #6:   adding: grpc-protobuf-lite-1.71.0.jar (deflated 11%)
+Step #6:   adding: grpc-stub-1.71.0.jar (deflated 12%)
+Step #6:   adding: grpc-util-1.71.0.jar (deflated 12%)
+Step #6:   adding: gson-2.13.2.jar (deflated 11%)
+Step #6:   adding: guava-33.5.0-jre.jar (deflated 10%)
+Step #6:   adding: httpclient-4.5.14.jar (deflated 9%)
+Step #6:   adding: httpcore-4.4.16.jar (deflated 10%)
+Step #6:   adding: j2objc-annotations-3.1.jar (deflated 31%)
+Step #6:   adding: java-json-canonicalization-1.1.jar (deflated 7%)
+Step #6:   adding: jazzer-api-0.26.0.jar (deflated 21%)
+Step #6:   adding: jazzer_agent_deploy.jar (deflated 6%)
+Step #6:   adding: jazzer_driver (deflated 69%)
+Step #6:   adding: jazzer_driver_with_sanitizer (deflated 9%)
+Step #6:   adding: jazzer_junit.jar (deflated 9%)
+Step #6:   adding: jspecify-1.0.0.jar (deflated 41%)
+Step #6:   adding: jsr305-3.0.2.jar (deflated 26%)
+Step #6:   adding: listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar (deflated 33%)
+Step #6:   adding: llvm-symbolizer (deflated 65%)
+Step #6:   adding: opencensus-api-0.31.1.jar (deflated 14%)
+Step #6:   adding: opencensus-contrib-http-util-0.31.1.jar (deflated 9%)
+Step #6:   adding: perfmark-api-0.27.0.jar (deflated 10%)
+Step #6:   adding: proto-google-common-protos-2.51.0.jar (deflated 4%)
+Step #6:   adding: protobuf-java-4.30.2.jar (deflated 6%)
+Step #6:   adding: protobuf-java-util-4.30.2.jar (deflated 11%)
+Step #6:   adding: sigstore-java-2.0.0-rc3-SNAPSHOT.jar (deflated 7%)
+Step #6:   adding: util/ (stored 0%)
+Step #6:   adding: util/Tuf.class (deflated 66%)
+Finished Step #6
+Starting Step #7
+Step #7: Pulling image: gcr.io/oss-fuzz-base/uploader
+Step #7: Using default tag: latest
+Step #7: latest: Pulling from oss-fuzz-base/uploader
+Step #7: c62795f78da9: Pulling fs layer
+Step #7: d4fceeeb758e: Pulling fs layer
+Step #7: 5c9125a401ae: Pulling fs layer
+Step #7: 0062f774e994: Pulling fs layer
+Step #7: 6b33fd031fac: Pulling fs layer
+Step #7: 7eb39101e508: Pulling fs layer
+Step #7: 89257482f398: Pulling fs layer
+Step #7: 0062f774e994: Waiting
+Step #7: 6b33fd031fac: Waiting
+Step #7: 7eb39101e508: Waiting
+Step #7: 89257482f398: Waiting
+Step #7: 5c9125a401ae: Verifying Checksum
+Step #7: 5c9125a401ae: Download complete
+Step #7: d4fceeeb758e: Verifying Checksum
+Step #7: d4fceeeb758e: Download complete
+Step #7: 0062f774e994: Download complete
+Step #7: 6b33fd031fac: Download complete
+Step #7: 89257482f398: Verifying Checksum
+Step #7: 89257482f398: Download complete
+Step #7: c62795f78da9: Verifying Checksum
+Step #7: c62795f78da9: Download complete
+Step #7: 7eb39101e508: Verifying Checksum
+Step #7: 7eb39101e508: Download complete
+Step #7: c62795f78da9: Pull complete
+Step #7: d4fceeeb758e: Pull complete
+Step #7: 5c9125a401ae: Pull complete
+Step #7: 0062f774e994: Pull complete
+Step #7: 6b33fd031fac: Pull complete
+Step #7: 7eb39101e508: Pull complete
+Step #7: 89257482f398: Pull complete
+Step #7: Digest: sha256:5717ba63d13b5515063e2a6ccad09fb5bf32a86c8e0798a363d81c2be522e411
+Step #7: Status: Downloaded newer image for gcr.io/oss-fuzz-base/uploader:latest
+Step #7: gcr.io/oss-fuzz-base/uploader:latest
+Step #7:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #7:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #7:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   163    0     0  100   163      0    839 --:--:-- --:--:-- --:--:--   840
+Finished Step #7
+Starting Step #8
+Step #8: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #8:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #8:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #8:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 38.1M    0     0  100 38.1M      0   112M --:--:-- --:--:-- --:--:--  111M100 38.1M    0     0  100 38.1M      0   112M --:--:-- --:--:-- --:--:--  111M
+Finished Step #8
+Starting Step #9
+Step #9: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #9:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #9:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #9:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   294    0     0  100   294      0   1247 --:--:-- --:--:-- --:--:--  1251
+Finished Step #9
+Starting Step #10
+Step #10: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #10:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #10:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #10:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    38    0     0  100    38      0    193 --:--:-- --:--:-- --:--:--   193
+Finished Step #10
+Starting Step #11
+Step #11: Already have image: gcr.io/oss-fuzz/sigstore-java
+Finished Step #11
+PUSH
+DONE
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [2m 6s][m[38D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m<[0;1m-------------> 0% WAITING[m[0K[26D[5B[5A[2K[1B[2K[1B[2K[1B[2K[1B[2K[4A[0m[?12l[?25h

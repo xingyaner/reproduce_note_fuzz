@@ -1,0 +1,1395 @@
+starting build "31373c56-bd5d-456d-b5a8-eda8dc2fe89a"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2"
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Sending build context to Docker daemon   12.8kB
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 1/16 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b549f31133a9: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": cad0867f0297: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 5d07bc49990e: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 21aae50984bf: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 2b5f5f715028: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": fb6a199bc10f: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 1c207e5b0063: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": caf57254f43a: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 1462b1d00e14: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 540ea4dfdceb: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 8fdd4b5faaa9: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 40d7bc1ff8c7: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": d2eb4100ded1: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 156a283b0470: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e9658ec5255e: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c4e6646538bb: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 6939a674b517: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 003b03fbacbd: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 58292fae4de9: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b06c7963df6e: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b6ae7f0c1d24: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 551029df1c46: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 2f5903485cae: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 60671fdd34b1: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c1a14989bf3a: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 10a7a3f93f2d: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 22ef1e73dafd: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 21aae50984bf: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c9621467b9f7: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 6e67e1dc3fc0: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 2b5f5f715028: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b9c4ff0b77c8: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 155c2dfe5c67: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b5f1ebb46627: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": fb6a199bc10f: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e959da9f743c: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c4e6646538bb: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c66a5b9ffa39: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 0f4fc2b4c404: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 780b129705e7: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 1c207e5b0063: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 6939a674b517: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": a9144c235512: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e16fcfe620a9: Pulling fs layer
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": caf57254f43a: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 40d7bc1ff8c7: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 8fdd4b5faaa9: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b06c7963df6e: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 58292fae4de9: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": d2eb4100ded1: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 003b03fbacbd: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e9658ec5255e: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b6ae7f0c1d24: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 156a283b0470: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 551029df1c46: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 2f5903485cae: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 60671fdd34b1: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c1a14989bf3a: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 1462b1d00e14: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 10a7a3f93f2d: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 22ef1e73dafd: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c9621467b9f7: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 0f4fc2b4c404: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b5f1ebb46627: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 780b129705e7: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b9c4ff0b77c8: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e959da9f743c: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c66a5b9ffa39: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 6e67e1dc3fc0: Waiting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 5d07bc49990e: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 5d07bc49990e: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b549f31133a9: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b549f31133a9: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 2b5f5f715028: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 2b5f5f715028: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 21aae50984bf: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 21aae50984bf: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 1c207e5b0063: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 1c207e5b0063: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": caf57254f43a: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": cad0867f0297: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": cad0867f0297: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b549f31133a9: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 540ea4dfdceb: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 540ea4dfdceb: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 8fdd4b5faaa9: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 8fdd4b5faaa9: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 40d7bc1ff8c7: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 40d7bc1ff8c7: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": d2eb4100ded1: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": d2eb4100ded1: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 156a283b0470: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 156a283b0470: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 1462b1d00e14: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 1462b1d00e14: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e9658ec5255e: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e9658ec5255e: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c4e6646538bb: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c4e6646538bb: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 6939a674b517: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 6939a674b517: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 003b03fbacbd: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 003b03fbacbd: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 58292fae4de9: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 58292fae4de9: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b6ae7f0c1d24: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b6ae7f0c1d24: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b06c7963df6e: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b06c7963df6e: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 551029df1c46: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 551029df1c46: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 2f5903485cae: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 2f5903485cae: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 60671fdd34b1: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 60671fdd34b1: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c1a14989bf3a: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c1a14989bf3a: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 10a7a3f93f2d: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 10a7a3f93f2d: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 22ef1e73dafd: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 22ef1e73dafd: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 6e67e1dc3fc0: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 6e67e1dc3fc0: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c9621467b9f7: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c9621467b9f7: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 155c2dfe5c67: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": cad0867f0297: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b9c4ff0b77c8: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b9c4ff0b77c8: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": fb6a199bc10f: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": fb6a199bc10f: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b5f1ebb46627: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 5d07bc49990e: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e959da9f743c: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e959da9f743c: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c66a5b9ffa39: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 0f4fc2b4c404: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 780b129705e7: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 780b129705e7: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": a9144c235512: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": a9144c235512: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e16fcfe620a9: Verifying Checksum
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e16fcfe620a9: Download complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 21aae50984bf: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 2b5f5f715028: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": fb6a199bc10f: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 1c207e5b0063: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": caf57254f43a: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 1462b1d00e14: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 540ea4dfdceb: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 8fdd4b5faaa9: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 40d7bc1ff8c7: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": d2eb4100ded1: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 156a283b0470: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e9658ec5255e: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c4e6646538bb: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 6939a674b517: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 003b03fbacbd: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 58292fae4de9: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b06c7963df6e: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b6ae7f0c1d24: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 551029df1c46: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 2f5903485cae: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 60671fdd34b1: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c1a14989bf3a: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 10a7a3f93f2d: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 22ef1e73dafd: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c9621467b9f7: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 6e67e1dc3fc0: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b9c4ff0b77c8: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 155c2dfe5c67: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": b5f1ebb46627: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e959da9f743c: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": c66a5b9ffa39: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 0f4fc2b4c404: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 780b129705e7: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": a9144c235512: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": e16fcfe620a9: Pull complete
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Digest: sha256:8fc5606cec35d1cab8811d4eb15e44698bbd03e93eaafd3012d6e6231b2ff825
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> 0439b55c80f1
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 2/16 : RUN apt-get update && apt-get install -y  make  pkg-config  autogen  autopoint  automake  libtool  texinfo  flex  bison  gettext  gengetopt  curl  gperf  wget  python  lzip  rsync  libmicrohttpd-dev  gtk-doc-tools  libtasn1-bin  libz-dev
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in 1c4f259eb1b2
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Hit:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Fetched 128 kB in 1s (159 kB/s)
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Reading package lists...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Reading package lists...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Building dependency tree...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Reading state information...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": make set to manually installed.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": curl is already the newest version (7.68.0-1ubuntu2.25).
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rsync is already the newest version (3.1.3-8ubuntu0.9).
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": wget is already the newest version (1.20.3-1ubuntu2.1).
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": The following additional packages will be installed:
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   autoconf autogen-doc docbook docbook-to-man docbook-xml docbook-xsl file
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   gettext-base guile-2.2-libs libauthen-sasl-perl libcroco3 libdata-dump-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libencode-locale-perl libevent-2.1-7 libfile-listing-perl libfl-dev libfl2
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libfont-afm-perl libgc1c2 libgcrypt20-dev libglib2.0-0 libglib2.0-data
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libgmp-dev libgmpxx4ldbl libgnutls-dane0 libgnutls-openssl27 libgnutls28-dev
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libgnutlsxx28 libgpg-error-dev libhtml-form-perl libhtml-format-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libhtml-parser-perl libhtml-tagset-perl libhtml-tree-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libhttp-message-perl libhttp-negotiate-perl libicu66 libidn2-dev
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libio-html-perl libio-socket-ssl-perl libltdl-dev libltdl7
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   liblwp-mediatypes-perl liblwp-protocol-https-perl libmagic-mgc libmagic1
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libmailtools-perl libmicrohttpd12 libmpdec2 libnet-http-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libnet-smtp-ssl-perl libnet-ssleay-perl libopts25 libopts25-dev libosp5
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libp11-kit-dev libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libpython3-stdlib libpython3.8-minimal libpython3.8-stdlib libtasn1-6-dev
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libtasn1-doc libtext-unidecode-perl libtimedate-perl libtry-tiny-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libunbound8 liburi-perl libwww-perl libwww-robotrules-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libxml-libxml-perl libxml-namespacesupport-perl libxml-parser-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libxml-sax-base-perl libxml-sax-expat-perl libxml-sax-perl libxml2
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libxslt1.1 mime-support nettle-dev opensp perl-openssl-defaults python2
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   python2-minimal python2.7 python2.7-minimal python3 python3-bs4
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   python3-chardet python3-html5lib python3-lxml python3-minimal
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   python3-pkg-resources python3-pygments python3-six python3-soupsieve
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   python3-webencodings python3.8 python3.8-minimal sgml-base sgml-data
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   shared-mime-info tex-common ucf xdg-user-dirs xml-core xsltproc
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Suggested packages:
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   autoconf-archive gnu-standards autoconf-doc bison-doc docbook-defguide
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   docbook-dsssl psgml dbtoepub docbook-xsl-doc-html | docbook-xsl-doc-pdf
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   | docbook-xsl-doc-text | docbook-xsl-doc docbook-xsl-saxon fop libsaxon-java
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libxalan2-java libxslthl-java xalan flex-doc gettext-doc libasprintf-dev
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libgettextpo-dev dblatex libdigest-hmac-perl libgssapi-perl libgcrypt20-doc
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   gmp-doc libgmp10-doc libmpfr-dev dns-root-data gnutls-bin gnutls-doc
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libtool-doc libcrypt-ssleay-perl gfortran | fortran95-compiler gcj-jdk
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libauthen-ntlm-perl libxml-sax-expatxs-perl doc-base python2-doc python-tk
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   python2.7-doc binfmt-support python3-doc python3-tk python3-venv
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   python3-genshi python3-lxml-dbg python-lxml-doc python3-setuptools
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   python-pygments-doc ttf-bitstream-vera python3.8-venv python3.8-doc
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   sgml-base-doc perlsgml w3-recs libxml2-utils debhelper texlive-base
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   texlive-latex-base texlive-plain-generic texlive-fonts-recommended
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": The following NEW packages will be installed:
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   autoconf autogen autogen-doc automake autopoint bison docbook docbook-to-man
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   docbook-xml docbook-xsl file flex gengetopt gettext gettext-base gperf
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   gtk-doc-tools guile-2.2-libs libauthen-sasl-perl libcroco3 libdata-dump-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libencode-locale-perl libevent-2.1-7 libfile-listing-perl libfl-dev libfl2
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libfont-afm-perl libgc1c2 libgcrypt20-dev libglib2.0-0 libglib2.0-data
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libgmp-dev libgmpxx4ldbl libgnutls-dane0 libgnutls-openssl27 libgnutls28-dev
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libgnutlsxx28 libgpg-error-dev libhtml-form-perl libhtml-format-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libhtml-parser-perl libhtml-tagset-perl libhtml-tree-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libhttp-message-perl libhttp-negotiate-perl libicu66 libidn2-dev
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libio-html-perl libio-socket-ssl-perl libltdl-dev libltdl7
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   liblwp-mediatypes-perl liblwp-protocol-https-perl libmagic-mgc libmagic1
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libmailtools-perl libmicrohttpd-dev libmicrohttpd12 libmpdec2
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libnet-http-perl libnet-smtp-ssl-perl libnet-ssleay-perl libopts25
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libopts25-dev libosp5 libp11-kit-dev libpython2-stdlib libpython2.7-minimal
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libpython2.7-stdlib libpython3-stdlib libpython3.8-minimal
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libpython3.8-stdlib libtasn1-6-dev libtasn1-bin libtasn1-doc
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libtext-unidecode-perl libtimedate-perl libtool libtry-tiny-perl libunbound8
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   liburi-perl libwww-perl libwww-robotrules-perl libxml-libxml-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libxml-namespacesupport-perl libxml-parser-perl libxml-sax-base-perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   libxml-sax-expat-perl libxml-sax-perl libxml2 libxslt1.1 lzip mime-support
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   nettle-dev opensp perl-openssl-defaults pkg-config python-is-python2 python2
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   python2-minimal python2.7 python2.7-minimal python3 python3-bs4
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   python3-chardet python3-html5lib python3-lxml python3-minimal
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   python3-pkg-resources python3-pygments python3-six python3-soupsieve
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   python3-webencodings python3.8 python3.8-minimal sgml-base sgml-data
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   shared-mime-info tex-common texinfo ucf xdg-user-dirs xml-core xsltproc
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   zlib1g-dev
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 0 upgraded, 128 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Need to get 43.9 MB of archives.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": After this operation, 227 MB of additional disk space will be used.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-minimal amd64 3.8.10-0ubuntu1~20.04.18 [721 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8-minimal amd64 3.8.10-0ubuntu1~20.04.18 [1900 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-minimal amd64 3.8.2-0ubuntu2 [23.6 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 mime-support all 3.64ubuntu1 [30.6 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpdec2 amd64 2.4.2-3 [81.1 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-stdlib amd64 3.8.10-0ubuntu1~20.04.18 [1676 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8 amd64 3.8.10-0ubuntu1~20.04.18 [387 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libpython3-stdlib amd64 3.8.2-0ubuntu2 [7068 B]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 python3 amd64 3.8.2-0ubuntu2 [47.6 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 flex amd64 2.6.4-6.2 [317 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:11 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-minimal amd64 2.7.18-1~20.04.7 [336 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:12 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7-minimal amd64 2.7.18-1~20.04.7 [1278 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:13 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2-minimal amd64 2.7.17-2ubuntu4 [27.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:14 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-stdlib amd64 2.7.18-1~20.04.7 [1889 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:15 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7 amd64 2.7.18-1~20.04.7 [248 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:16 http://archive.ubuntu.com/ubuntu focal/universe amd64 libpython2-stdlib amd64 2.7.17-2ubuntu4 [7072 B]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:17 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2 amd64 2.7.17-2ubuntu4 [26.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 sgml-base all 1.29.1 [12.4 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 ucf all 3.0038+nmu1 [51.6 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:20 http://archive.ubuntu.com/ubuntu focal/universe amd64 tex-common all 6.13 [32.7 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:23 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:26 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:27 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:28 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-pkg-resources all 45.2.0-1ubuntu0.3 [130 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:29 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-six all 1.14.0-2 [12.1 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:30 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:31 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:32 http://archive.ubuntu.com/ubuntu focal/main amd64 gettext-base amd64 0.19.8.1-10build1 [50.2 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:33 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:34 http://archive.ubuntu.com/ubuntu focal/main amd64 libgc1c2 amd64 1:7.6.4-0.4ubuntu1 [83.9 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:35 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:36 http://archive.ubuntu.com/ubuntu focal/main amd64 guile-2.2-libs amd64 2.2.7+1-4 [4962 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:37 http://archive.ubuntu.com/ubuntu focal/universe amd64 libopts25 amd64 1:5.18.16-3 [59.4 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:38 http://archive.ubuntu.com/ubuntu focal/universe amd64 libopts25-dev amd64 1:5.18.16-3 [96.0 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:39 http://archive.ubuntu.com/ubuntu focal/universe amd64 autogen amd64 1:5.18.16-3 [559 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:40 http://archive.ubuntu.com/ubuntu focal/universe amd64 autogen-doc all 1:5.18.16-3 [1002 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:41 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:42 http://archive.ubuntu.com/ubuntu focal/main amd64 autopoint all 0.19.8.1-10build1 [412 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:43 http://archive.ubuntu.com/ubuntu focal/main amd64 bison amd64 2:3.5.1+dfsg-1 [657 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:44 http://archive.ubuntu.com/ubuntu focal/main amd64 xml-core all 0.18+nmu1 [21.6 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:45 http://archive.ubuntu.com/ubuntu focal/main amd64 sgml-data all 2.0.11 [171 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:46 http://archive.ubuntu.com/ubuntu focal/universe amd64 docbook all 4.5-6 [122 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:47 http://archive.ubuntu.com/ubuntu focal/universe amd64 libosp5 amd64 1.5.2-13ubuntu3 [652 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:48 http://archive.ubuntu.com/ubuntu focal/universe amd64 opensp amd64 1.5.2-13ubuntu3 [145 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:49 http://archive.ubuntu.com/ubuntu focal/universe amd64 docbook-to-man amd64 1:2.0.0-42 [74.1 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:50 http://archive.ubuntu.com/ubuntu focal/main amd64 docbook-xml all 4.5-9 [71.2 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:51 http://archive.ubuntu.com/ubuntu focal/universe amd64 docbook-xsl all 1.79.1+dfsg-2 [1075 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:52 http://archive.ubuntu.com/ubuntu focal/universe amd64 gengetopt amd64 2.23+dfsg1-1 [159 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:53 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcroco3 amd64 0.6.13-1ubuntu0.1 [82.4 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:54 http://archive.ubuntu.com/ubuntu focal/main amd64 gettext amd64 0.19.8.1-10build1 [895 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:55 http://archive.ubuntu.com/ubuntu focal/universe amd64 gperf amd64 3.1-1build1 [103 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:56 http://archive.ubuntu.com/ubuntu focal/main amd64 pkg-config amd64 0.29.1-0ubuntu4 [45.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:57 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxslt1.1 amd64 1.1.34-4ubuntu0.20.04.3 [151 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:58 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-lxml amd64 4.5.0-1ubuntu0.5 [1384 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:59 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-pygments all 2.3.1+dfsg-1ubuntu2.2 [579 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:60 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 xsltproc amd64 1.1.34-4ubuntu0.20.04.3 [14.3 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:61 http://archive.ubuntu.com/ubuntu focal/universe amd64 gtk-doc-tools all 1.32-4 [321 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:62 http://archive.ubuntu.com/ubuntu focal/main amd64 libdata-dump-perl all 1.23-1 [27.0 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:63 http://archive.ubuntu.com/ubuntu focal/main amd64 libencode-locale-perl all 1.05-1 [12.3 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:64 http://archive.ubuntu.com/ubuntu focal/main amd64 libevent-2.1-7 amd64 2.1.11-stable-1 [138 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:65 http://archive.ubuntu.com/ubuntu focal/main amd64 libtimedate-perl all 2.3200-1 [34.0 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:66 http://archive.ubuntu.com/ubuntu focal/main amd64 libhttp-date-perl all 6.05-1 [9920 B]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:67 http://archive.ubuntu.com/ubuntu focal/main amd64 libfile-listing-perl all 6.04-1 [9774 B]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:68 http://archive.ubuntu.com/ubuntu focal/main amd64 libfl2 amd64 2.6.4-6.2 [11.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:69 http://archive.ubuntu.com/ubuntu focal/main amd64 libfl-dev amd64 2.6.4-6.2 [6316 B]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:70 http://archive.ubuntu.com/ubuntu focal/main amd64 libfont-afm-perl all 1.20-2 [13.2 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:71 http://archive.ubuntu.com/ubuntu focal/main amd64 libgpg-error-dev amd64 1.37-1 [109 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:72 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgcrypt20-dev amd64 1.8.5-5ubuntu1.1 [471 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:73 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgmpxx4ldbl amd64 2:6.2.0+dfsg-4ubuntu0.1 [9144 B]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:74 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgmp-dev amd64 2:6.2.0+dfsg-4ubuntu0.1 [320 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:75 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgnutls-openssl27 amd64 3.6.13-2ubuntu1.12 [29.8 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:76 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libunbound8 amd64 1.9.4-2ubuntu1.11 [350 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:77 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgnutls-dane0 amd64 3.6.13-2ubuntu1.12 [29.1 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:78 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgnutlsxx28 amd64 3.6.13-2ubuntu1.12 [14.7 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:79 http://archive.ubuntu.com/ubuntu focal/main amd64 libidn2-dev amd64 2.2.0-2 [64.6 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:80 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libp11-kit-dev amd64 0.23.20-1ubuntu0.1 [65.2 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:81 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtasn1-6-dev amd64 4.16.0-2ubuntu0.1 [86.1 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:82 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 nettle-dev amd64 3.5.1+really3.5.1-2ubuntu0.2 [987 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:83 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgnutls28-dev amd64 3.6.13-2ubuntu1.12 [875 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:84 http://archive.ubuntu.com/ubuntu focal/main amd64 libhtml-tagset-perl all 3.20-4 [12.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:85 http://archive.ubuntu.com/ubuntu focal/main amd64 liburi-perl all 1.76-2 [77.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:86 http://archive.ubuntu.com/ubuntu focal/main amd64 libhtml-parser-perl amd64 3.72-5 [86.3 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:87 http://archive.ubuntu.com/ubuntu focal/main amd64 libio-html-perl all 1.001-1 [14.9 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:88 http://archive.ubuntu.com/ubuntu focal/main amd64 liblwp-mediatypes-perl all 6.04-1 [19.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:89 http://archive.ubuntu.com/ubuntu focal/main amd64 libhttp-message-perl all 6.22-1 [76.1 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:90 http://archive.ubuntu.com/ubuntu focal/main amd64 libhtml-form-perl all 6.07-1 [22.2 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:91 http://archive.ubuntu.com/ubuntu focal/main amd64 libhtml-tree-perl all 5.07-2 [200 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:92 http://archive.ubuntu.com/ubuntu focal/main amd64 libhtml-format-perl all 2.12-1 [41.3 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:93 http://archive.ubuntu.com/ubuntu focal/main amd64 libhttp-cookies-perl all 6.08-1 [18.3 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:94 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libhttp-daemon-perl all 6.06-1ubuntu0.1 [22.0 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:95 http://archive.ubuntu.com/ubuntu focal/main amd64 libhttp-negotiate-perl all 6.01-1 [12.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:96 http://archive.ubuntu.com/ubuntu focal/main amd64 perl-openssl-defaults amd64 4 [7192 B]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:97 http://archive.ubuntu.com/ubuntu focal/main amd64 libnet-ssleay-perl amd64 1.88-2ubuntu1 [291 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:98 http://archive.ubuntu.com/ubuntu focal/main amd64 libio-socket-ssl-perl all 2.067-1 [176 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:99 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:100 http://archive.ubuntu.com/ubuntu focal/main amd64 libnet-http-perl all 6.19-1 [22.8 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:101 http://archive.ubuntu.com/ubuntu focal/main amd64 libtry-tiny-perl all 0.30-1 [20.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:102 http://archive.ubuntu.com/ubuntu focal/main amd64 libwww-robotrules-perl all 6.02-1 [12.6 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:103 http://archive.ubuntu.com/ubuntu focal/main amd64 libwww-perl all 6.43-1 [140 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:104 http://archive.ubuntu.com/ubuntu focal/main amd64 liblwp-protocol-https-perl all 6.07-2ubuntu2 [8560 B]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:105 http://archive.ubuntu.com/ubuntu focal/main amd64 libnet-smtp-ssl-perl all 1.04-1 [5948 B]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:106 http://archive.ubuntu.com/ubuntu focal/main amd64 libmailtools-perl all 2.21-1 [80.7 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:107 http://archive.ubuntu.com/ubuntu focal/universe amd64 libmicrohttpd12 amd64 0.9.66-1 [62.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:108 http://archive.ubuntu.com/ubuntu focal/universe amd64 libmicrohttpd-dev amd64 0.9.66-1 [226 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:109 http://archive.ubuntu.com/ubuntu focal/universe amd64 libtext-unidecode-perl all 1.30-1 [99.0 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:110 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:111 http://archive.ubuntu.com/ubuntu focal/main amd64 libxml-namespacesupport-perl all 1.12-1 [13.2 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:112 http://archive.ubuntu.com/ubuntu focal/main amd64 libxml-sax-base-perl all 1.09-1 [18.8 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:113 http://archive.ubuntu.com/ubuntu focal/main amd64 libxml-sax-perl all 1.02+dfsg-1 [56.2 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:114 http://archive.ubuntu.com/ubuntu focal/main amd64 libxml-libxml-perl amd64 2.0134+dfsg-1build1 [320 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:115 http://archive.ubuntu.com/ubuntu focal/main amd64 libxml-parser-perl amd64 2.46-1 [193 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:116 http://archive.ubuntu.com/ubuntu focal/main amd64 libxml-sax-expat-perl all 0.51-1 [10.5 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:117 http://archive.ubuntu.com/ubuntu focal/universe amd64 lzip amd64 1.21-6build1 [81.6 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:118 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-is-python2 all 2.7.17-4 [2496 B]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:119 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-soupsieve all 1.9.5+dfsg-1 [29.1 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:120 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-bs4 all 4.8.2-1 [83.0 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:121 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-chardet all 3.0.4-4build1 [80.4 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:122 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-webencodings all 0.5.1-1ubuntu1 [11.0 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:123 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-html5lib all 1.0.1-2 [84.3 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:124 http://archive.ubuntu.com/ubuntu focal/universe amd64 texinfo amd64 6.7.0.dfsg.2-5 [1375 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:125 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.5 [155 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:126 http://archive.ubuntu.com/ubuntu focal/main amd64 libauthen-sasl-perl all 2.1600-1 [48.7 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:127 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libtasn1-bin amd64 4.16.0-2ubuntu0.1 [13.2 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Get:128 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtasn1-doc all 4.16.0-2ubuntu0.1 [304 kB]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0mFetched 43.9 MB in 7s (6661 kB/s)
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libpython3.8-minimal:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../libpython3.8-minimal_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libpython3.8-minimal:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3.8-minimal.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../python3.8-minimal_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3.8-minimal (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libpython3.8-minimal:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3.8-minimal (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3-minimal.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17766 files and directories currently installed.)
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../0-python3-minimal_3.8.2-0ubuntu2_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3-minimal (3.8.2-0ubuntu2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package mime-support.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../1-mime-support_3.64ubuntu1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking mime-support (3.64ubuntu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libmpdec2:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../2-libmpdec2_2.4.2-3_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libmpdec2:amd64 (2.4.2-3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libpython3.8-stdlib:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../3-libpython3.8-stdlib_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libpython3.8-stdlib:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3.8.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../4-python3.8_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3.8 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libpython3-stdlib:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../5-libpython3-stdlib_3.8.2-0ubuntu2_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libpython3-stdlib:amd64 (3.8.2-0ubuntu2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3-minimal (3.8.2-0ubuntu2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18168 files and directories currently installed.)
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../0-python3_3.8.2-0ubuntu2_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3 (3.8.2-0ubuntu2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package flex.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../1-flex_2.6.4-6.2_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking flex (2.6.4-6.2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libpython2.7-minimal:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../2-libpython2.7-minimal_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libpython2.7-minimal:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python2.7-minimal.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../3-python2.7-minimal_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python2.7-minimal (2.7.18-1~20.04.7) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python2-minimal.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../4-python2-minimal_2.7.17-2ubuntu4_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python2-minimal (2.7.17-2ubuntu4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libpython2.7-stdlib:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../5-libpython2.7-stdlib_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libpython2.7-stdlib:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python2.7.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../6-python2.7_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python2.7 (2.7.18-1~20.04.7) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libpython2-stdlib:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../7-libpython2-stdlib_2.7.17-2ubuntu4_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libpython2-stdlib:amd64 (2.7.17-2ubuntu4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libpython2.7-minimal:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python2.7-minimal (2.7.18-1~20.04.7) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python2-minimal (2.7.17-2ubuntu4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python2.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19024 files and directories currently installed.)
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../000-python2_2.7.17-2ubuntu4_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python2 (2.7.17-2ubuntu4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package sgml-base.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../001-sgml-base_1.29.1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking sgml-base (1.29.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package ucf.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../002-ucf_3.0038+nmu1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Moving old data out of the way
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking ucf (3.0038+nmu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package tex-common.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../003-tex-common_6.13_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking tex-common (6.13) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../004-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../005-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package file.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../006-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking file (1:5.38-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libglib2.0-0:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../007-libglib2.0-0_2.64.6-1~ubuntu20.04.9_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libglib2.0-data.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../008-libglib2.0-data_2.64.6-1~ubuntu20.04.9_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libicu66:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../009-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libxml2:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../010-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3-pkg-resources.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../011-python3-pkg-resources_45.2.0-1ubuntu0.3_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3-pkg-resources (45.2.0-1ubuntu0.3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3-six.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../012-python3-six_1.14.0-2_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3-six (1.14.0-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package shared-mime-info.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../013-shared-mime-info_1.15-1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking shared-mime-info (1.15-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package xdg-user-dirs.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../014-xdg-user-dirs_0.17-2ubuntu1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package gettext-base.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../015-gettext-base_0.19.8.1-10build1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking gettext-base (0.19.8.1-10build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package autoconf.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../016-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libgc1c2:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../017-libgc1c2_1%3a7.6.4-0.4ubuntu1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libgc1c2:amd64 (1:7.6.4-0.4ubuntu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../018-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package guile-2.2-libs:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../019-guile-2.2-libs_2.2.7+1-4_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking guile-2.2-libs:amd64 (2.2.7+1-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libopts25:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../020-libopts25_1%3a5.18.16-3_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libopts25:amd64 (1:5.18.16-3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libopts25-dev:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../021-libopts25-dev_1%3a5.18.16-3_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libopts25-dev:amd64 (1:5.18.16-3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package autogen.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../022-autogen_1%3a5.18.16-3_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking autogen (1:5.18.16-3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Replaced by files in installed package libopts25-dev:amd64 (1:5.18.16-3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package autogen-doc.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../023-autogen-doc_1%3a5.18.16-3_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking autogen-doc (1:5.18.16-3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package automake.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../024-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package autopoint.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../025-autopoint_0.19.8.1-10build1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking autopoint (0.19.8.1-10build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package bison.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../026-bison_2%3a3.5.1+dfsg-1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking bison (2:3.5.1+dfsg-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package xml-core.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../027-xml-core_0.18+nmu1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking xml-core (0.18+nmu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package sgml-data.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../028-sgml-data_2.0.11_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking sgml-data (2.0.11) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package docbook.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../029-docbook_4.5-6_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking docbook (4.5-6) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libosp5.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../030-libosp5_1.5.2-13ubuntu3_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libosp5 (1.5.2-13ubuntu3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package opensp.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../031-opensp_1.5.2-13ubuntu3_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking opensp (1.5.2-13ubuntu3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package docbook-to-man.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../032-docbook-to-man_1%3a2.0.0-42_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking docbook-to-man (1:2.0.0-42) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package docbook-xml.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../033-docbook-xml_4.5-9_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking docbook-xml (4.5-9) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package docbook-xsl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../034-docbook-xsl_1.79.1+dfsg-2_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking docbook-xsl (1.79.1+dfsg-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package gengetopt.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../035-gengetopt_2.23+dfsg1-1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking gengetopt (2.23+dfsg1-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libcroco3:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../036-libcroco3_0.6.13-1ubuntu0.1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libcroco3:amd64 (0.6.13-1ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package gettext.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../037-gettext_0.19.8.1-10build1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking gettext (0.19.8.1-10build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package gperf.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../038-gperf_3.1-1build1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking gperf (3.1-1build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package pkg-config.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../039-pkg-config_0.29.1-0ubuntu4_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libxslt1.1:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../040-libxslt1.1_1.1.34-4ubuntu0.20.04.3_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libxslt1.1:amd64 (1.1.34-4ubuntu0.20.04.3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3-lxml:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../041-python3-lxml_4.5.0-1ubuntu0.5_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3-lxml:amd64 (4.5.0-1ubuntu0.5) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3-pygments.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../042-python3-pygments_2.3.1+dfsg-1ubuntu2.2_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3-pygments (2.3.1+dfsg-1ubuntu2.2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package xsltproc.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../043-xsltproc_1.1.34-4ubuntu0.20.04.3_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking xsltproc (1.1.34-4ubuntu0.20.04.3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package gtk-doc-tools.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../044-gtk-doc-tools_1.32-4_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking gtk-doc-tools (1.32-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libdata-dump-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../045-libdata-dump-perl_1.23-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libdata-dump-perl (1.23-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libencode-locale-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../046-libencode-locale-perl_1.05-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libencode-locale-perl (1.05-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libevent-2.1-7:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../047-libevent-2.1-7_2.1.11-stable-1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libevent-2.1-7:amd64 (2.1.11-stable-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libtimedate-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../048-libtimedate-perl_2.3200-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libtimedate-perl (2.3200-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libhttp-date-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../049-libhttp-date-perl_6.05-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libhttp-date-perl (6.05-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libfile-listing-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../050-libfile-listing-perl_6.04-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libfile-listing-perl (6.04-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libfl2:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../051-libfl2_2.6.4-6.2_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libfl2:amd64 (2.6.4-6.2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libfl-dev:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../052-libfl-dev_2.6.4-6.2_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libfl-dev:amd64 (2.6.4-6.2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libfont-afm-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../053-libfont-afm-perl_1.20-2_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libfont-afm-perl (1.20-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libgpg-error-dev.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../054-libgpg-error-dev_1.37-1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libgpg-error-dev (1.37-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libgcrypt20-dev.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../055-libgcrypt20-dev_1.8.5-5ubuntu1.1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libgcrypt20-dev (1.8.5-5ubuntu1.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libgmpxx4ldbl:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../056-libgmpxx4ldbl_2%3a6.2.0+dfsg-4ubuntu0.1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libgmpxx4ldbl:amd64 (2:6.2.0+dfsg-4ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libgmp-dev:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../057-libgmp-dev_2%3a6.2.0+dfsg-4ubuntu0.1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libgmp-dev:amd64 (2:6.2.0+dfsg-4ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libgnutls-openssl27:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../058-libgnutls-openssl27_3.6.13-2ubuntu1.12_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libgnutls-openssl27:amd64 (3.6.13-2ubuntu1.12) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libunbound8:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../059-libunbound8_1.9.4-2ubuntu1.11_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libunbound8:amd64 (1.9.4-2ubuntu1.11) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libgnutls-dane0:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../060-libgnutls-dane0_3.6.13-2ubuntu1.12_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libgnutls-dane0:amd64 (3.6.13-2ubuntu1.12) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libgnutlsxx28:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../061-libgnutlsxx28_3.6.13-2ubuntu1.12_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libgnutlsxx28:amd64 (3.6.13-2ubuntu1.12) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libidn2-dev:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../062-libidn2-dev_2.2.0-2_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libidn2-dev:amd64 (2.2.0-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libp11-kit-dev:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../063-libp11-kit-dev_0.23.20-1ubuntu0.1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libp11-kit-dev:amd64 (0.23.20-1ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libtasn1-6-dev:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../064-libtasn1-6-dev_4.16.0-2ubuntu0.1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libtasn1-6-dev:amd64 (4.16.0-2ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package nettle-dev:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../065-nettle-dev_3.5.1+really3.5.1-2ubuntu0.2_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking nettle-dev:amd64 (3.5.1+really3.5.1-2ubuntu0.2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libgnutls28-dev:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../066-libgnutls28-dev_3.6.13-2ubuntu1.12_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libgnutls28-dev:amd64 (3.6.13-2ubuntu1.12) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libhtml-tagset-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../067-libhtml-tagset-perl_3.20-4_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libhtml-tagset-perl (3.20-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package liburi-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../068-liburi-perl_1.76-2_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking liburi-perl (1.76-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libhtml-parser-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../069-libhtml-parser-perl_3.72-5_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libhtml-parser-perl (3.72-5) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libio-html-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../070-libio-html-perl_1.001-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libio-html-perl (1.001-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package liblwp-mediatypes-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../071-liblwp-mediatypes-perl_6.04-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking liblwp-mediatypes-perl (6.04-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libhttp-message-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../072-libhttp-message-perl_6.22-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libhttp-message-perl (6.22-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libhtml-form-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../073-libhtml-form-perl_6.07-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libhtml-form-perl (6.07-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libhtml-tree-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../074-libhtml-tree-perl_5.07-2_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libhtml-tree-perl (5.07-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libhtml-format-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../075-libhtml-format-perl_2.12-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libhtml-format-perl (2.12-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libhttp-cookies-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../076-libhttp-cookies-perl_6.08-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libhttp-cookies-perl (6.08-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libhttp-daemon-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../077-libhttp-daemon-perl_6.06-1ubuntu0.1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libhttp-daemon-perl (6.06-1ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libhttp-negotiate-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../078-libhttp-negotiate-perl_6.01-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libhttp-negotiate-perl (6.01-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package perl-openssl-defaults:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../079-perl-openssl-defaults_4_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking perl-openssl-defaults:amd64 (4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libnet-ssleay-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../080-libnet-ssleay-perl_1.88-2ubuntu1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libnet-ssleay-perl (1.88-2ubuntu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libio-socket-ssl-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../081-libio-socket-ssl-perl_2.067-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libio-socket-ssl-perl (2.067-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../082-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libnet-http-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../083-libnet-http-perl_6.19-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libnet-http-perl (6.19-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libtry-tiny-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../084-libtry-tiny-perl_0.30-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libtry-tiny-perl (0.30-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libwww-robotrules-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../085-libwww-robotrules-perl_6.02-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libwww-robotrules-perl (6.02-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libwww-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../086-libwww-perl_6.43-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libwww-perl (6.43-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package liblwp-protocol-https-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../087-liblwp-protocol-https-perl_6.07-2ubuntu2_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking liblwp-protocol-https-perl (6.07-2ubuntu2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libnet-smtp-ssl-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../088-libnet-smtp-ssl-perl_1.04-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libnet-smtp-ssl-perl (1.04-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libmailtools-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../089-libmailtools-perl_2.21-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libmailtools-perl (2.21-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libmicrohttpd12.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../090-libmicrohttpd12_0.9.66-1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libmicrohttpd12 (0.9.66-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libmicrohttpd-dev.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../091-libmicrohttpd-dev_0.9.66-1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libmicrohttpd-dev (0.9.66-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libtext-unidecode-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../092-libtext-unidecode-perl_1.30-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libtext-unidecode-perl (1.30-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libtool.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../093-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libxml-namespacesupport-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../094-libxml-namespacesupport-perl_1.12-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libxml-namespacesupport-perl (1.12-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libxml-sax-base-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../095-libxml-sax-base-perl_1.09-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libxml-sax-base-perl (1.09-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libxml-sax-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../096-libxml-sax-perl_1.02+dfsg-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libxml-sax-perl (1.02+dfsg-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libxml-libxml-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../097-libxml-libxml-perl_2.0134+dfsg-1build1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libxml-libxml-perl (2.0134+dfsg-1build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libxml-parser-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../098-libxml-parser-perl_2.46-1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libxml-parser-perl (2.46-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libxml-sax-expat-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../099-libxml-sax-expat-perl_0.51-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libxml-sax-expat-perl (0.51-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package lzip.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../100-lzip_1.21-6build1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking lzip (1.21-6build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python-is-python2.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../101-python-is-python2_2.7.17-4_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python-is-python2 (2.7.17-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3-soupsieve.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../102-python3-soupsieve_1.9.5+dfsg-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3-soupsieve (1.9.5+dfsg-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3-bs4.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../103-python3-bs4_4.8.2-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3-bs4 (4.8.2-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3-chardet.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../104-python3-chardet_3.0.4-4build1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3-chardet (3.0.4-4build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3-webencodings.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../105-python3-webencodings_0.5.1-1ubuntu1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3-webencodings (0.5.1-1ubuntu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package python3-html5lib.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../106-python3-html5lib_1.0.1-2_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking python3-html5lib (1.0.1-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package texinfo.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../107-texinfo_6.7.0.dfsg.2-5_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking texinfo (6.7.0.dfsg.2-5) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package zlib1g-dev:amd64.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../108-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu1.5_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libauthen-sasl-perl.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../109-libauthen-sasl-perl_2.1600-1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libauthen-sasl-perl (2.1600-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libtasn1-bin.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../110-libtasn1-bin_4.16.0-2ubuntu0.1_amd64.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libtasn1-bin (4.16.0-2ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Selecting previously unselected package libtasn1-doc.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Preparing to unpack .../111-libtasn1-doc_4.16.0-2ubuntu0.1_all.deb ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Unpacking libtasn1-doc (4.16.0-2ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up flex (2.6.4-6.2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libgnutls-openssl27:amd64 (3.6.13-2ubuntu1.12) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up gengetopt (2.23+dfsg1-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up mime-support (3.64ubuntu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libfont-afm-perl (1.20-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libgc1c2:amd64 (1:7.6.4-0.4ubuntu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": No schema files found: doing nothing.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libhtml-tagset-perl (3.20-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libauthen-sasl-perl (2.1600-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libtasn1-doc (4.16.0-2ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up liblwp-mediatypes-perl (6.04-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libtry-tiny-perl (0.30-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up perl-openssl-defaults:amd64 (4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libxml-namespacesupport-perl (1.12-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up gettext-base (0.19.8.1-10build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libencode-locale-perl (1.05-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up file (1:5.38-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libopts25:amd64 (1:5.18.16-3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up gperf (3.1-1build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libmicrohttpd12 (0.9.66-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libosp5 (1.5.2-13ubuntu3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libpython2.7-stdlib:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up autogen-doc (1:5.18.16-3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libxml-sax-base-perl (1.09-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libgmpxx4ldbl:amd64 (2:6.2.0+dfsg-4ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libdata-dump-perl (1.23-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libgpg-error-dev (1.37-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libtasn1-bin (4.16.0-2ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up lzip (1.21-6build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libevent-2.1-7:amd64 (2.1.11-stable-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libio-html-perl (1.001-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up autopoint (0.19.8.1-10build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libgnutlsxx28:amd64 (3.6.13-2ubuntu1.12) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libfl2:amd64 (2.6.4-6.2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up ucf (3.0038+nmu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libidn2-dev:amd64 (2.2.0-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libtimedate-perl (2.3200-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up bison (2:3.5.1+dfsg-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-alternatives: using /usr/bin/bison.yacc to provide /usr/bin/yacc (yacc) in auto mode
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-alternatives: warning: skip creation of /usr/share/man/man1/yacc.1.gz because associated file /usr/share/man/man1/bison.yacc.1.gz (of link group yacc) doesn't exist
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up sgml-base (1.29.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libmpdec2:amd64 (2.4.2-3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libpython3.8-stdlib:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libtext-unidecode-perl (1.30-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3.8 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libtasn1-6-dev:amd64 (4.16.0-2ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up liburi-perl (1.76-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up guile-2.2-libs:amd64 (2.2.7+1-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libp11-kit-dev:amd64 (0.23.20-1ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libpython3-stdlib:amd64 (3.8.2-0ubuntu2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libnet-ssleay-perl (1.88-2ubuntu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libhttp-date-perl (6.05-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libgmp-dev:amd64 (2:6.2.0+dfsg-4ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libfile-listing-perl (6.04-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up nettle-dev:amd64 (3.5.1+really3.5.1-2ubuntu0.2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python2.7 (2.7.18-1~20.04.7) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libopts25-dev:amd64 (1:5.18.16-3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libpython2-stdlib:amd64 (2.7.17-2ubuntu4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libnet-http-perl (6.19-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3 (3.8.2-0ubuntu2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up opensp (1.5.2-13ubuntu3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libxml-sax-perl (1.02+dfsg-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-perl-sax-parsers: Registering Perl SAX parser XML::SAX::PurePerl with priority 10...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Creating config file /etc/perl/XML/SAX/ParserDetails.ini with new version
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python2 (2.7.17-2ubuntu4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3-webencodings (0.5.1-1ubuntu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libfl-dev:amd64 (2.6.4-6.2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up autogen (1:5.18.16-3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3-six (1.14.0-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up tex-common (6.13) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-language: texlive-base not installed and configured, doing nothing!
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3-pygments (2.3.1+dfsg-1ubuntu2.2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libunbound8:amd64 (1.9.4-2ubuntu1.11) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libgcrypt20-dev (1.8.5-5ubuntu1.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up shared-mime-info (1.15-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libcroco3:amd64 (0.6.13-1ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3-html5lib (1.0.1-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libxml-libxml-perl (2.0134+dfsg-1build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-perl-sax-parsers: Registering Perl SAX parser XML::LibXML::SAX::Parser with priority 50...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-perl-sax-parsers: Registering Perl SAX parser XML::LibXML::SAX with priority 50...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Replacing config file /etc/perl/XML/SAX/ParserDetails.ini with new version
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libwww-robotrules-perl (6.02-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up xml-core (0.18+nmu1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libhtml-parser-perl (3.72-5) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libxslt1.1:amd64 (1.1.34-4ubuntu0.20.04.3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3-soupsieve (1.9.5+dfsg-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libio-socket-ssl-perl (2.067-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libhttp-message-perl (6.22-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python-is-python2 (2.7.17-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libhtml-form-perl (6.07-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3-pkg-resources (45.2.0-1ubuntu0.3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libhttp-negotiate-perl (6.01-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libgnutls-dane0:amd64 (3.6.13-2ubuntu1.12) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up gettext (0.19.8.1-10build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libhttp-cookies-perl (6.08-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libhtml-tree-perl (5.07-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up xsltproc (1.1.34-4ubuntu0.20.04.3) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libhtml-format-perl (2.12-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3-bs4 (4.8.2-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3-chardet (3.0.4-4build1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libnet-smtp-ssl-perl (1.04-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libmailtools-perl (2.21-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up texinfo (6.7.0.dfsg.2-5) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libhttp-daemon-perl (6.06-1ubuntu0.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up python3-lxml:amd64 (4.5.0-1ubuntu0.5) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libgnutls28-dev:amd64 (3.6.13-2ubuntu1.12) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libmicrohttpd-dev (0.9.66-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up liblwp-protocol-https-perl (6.07-2ubuntu2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libwww-perl (6.43-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libxml-parser-perl (2.46-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up libxml-sax-expat-perl (0.51-1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-perl-sax-parsers: Registering Perl SAX parser XML::SAX::Expat with priority 50...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Replacing config file /etc/perl/XML/SAX/ParserDetails.ini with new version
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Processing triggers for sgml-base (1.29.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up docbook-xsl (1.79.1+dfsg-2) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up sgml-data (2.0.11) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Processing triggers for sgml-base (1.29.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up docbook-xml (4.5-9) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up docbook (4.5-6) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Processing triggers for sgml-base (1.29.1) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up docbook-to-man (1:2.0.0-42) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Setting up gtk-doc-tools (1.32-4) ...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Removing intermediate container 1c4f259eb1b2
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> 1ecc051c400a
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 3/16 : RUN cd /usr/src &&         curl -oautoconf-2.71.tar.gz https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.gz &&     tar xf autoconf-2.71.tar.gz &&     cd autoconf-2.71 &&     ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var &&     make install
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in 8e882ecf43c8
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":                                  Dload  Upload   Total   Spent    Left  Spee[0m[91md
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   0     0    0     0    0     0 [0m[91m     0    [0m[91m  0 --:--:-- --:[0m[91m--:-- --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:11 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:12 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:13 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:14 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:15 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:16 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:17 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:18 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:19 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:20 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:21 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:22 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:23 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:24 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:25 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:26 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:27 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:28 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:29 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:30 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:31 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:32 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:33 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:34 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:35 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:36 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:37 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:38 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:39 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:40 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:41 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:42 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:43 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:44 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:45 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:46 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:47 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:48 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:49 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:50 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:51 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:52 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:53 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:54 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:55 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:56 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:57 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:58 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:59 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:00 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:01 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:02 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:03 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:04 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:05 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:06 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:07 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:08 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:09 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:10 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:11 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:12 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:13 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:14 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:15 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:16 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:17 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:18 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:19 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:20 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:21 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:22 --:--:--     0[0m[91m  1 1956k    1 23493    0     0    282      0  1:58:25  0:01:23  1:57:02  4971[0m[91m  4 1956k    4 95493    0     0   1133      0  0:29:28  0:01:24  0:28:04 19417[0m[91m  5 1956k    5  116k    0     0   1404      0  0:23:47  0:01:25  0:22:22 25348[0m[91m  7 1956k    7  147k    0     0   1759      0  0:18:59  0:01:26  0:17:33 31819[0m[91m  9 1956k    9  179k    0     0   2108      0  0:15:50  0:01:27  0:14:23 39049[0m[91m  9 1956k    9  194k    0     0   2259      0  0:14:47  0:01:28  0:13:19 33774[0m[91m  9 1956k    9  194k    0     0   2234      0  0:14:56  0:01:29  0:13:27 20717[0m[91m 10 1956k   10  202k    0     0   2304      0  0:14:29  0:01:30  0:12:59 17681[0m[91m 11 1956k   11  233k    0     0   2629      0  0:12:42  0:01:31  0:11:11 17677[0m[91m 13 1956k   13  265k    0     0   2948      0  0:11:19  0:01:32  0:09:47 17436[0m[91m 13 1956k   13  272k    0     0   3004      0  0:11:07  0:01:33  0:09:34 16796[0m[91m 16 1956k   16  319k    0     0   3481      0  0:09:35  0:01:34  0:08:01 26644[0m[91m 17 1956k   17  335k    0     0   3612      0  0:09:14  0:01:35  0:07:39 26968[0m[91m 17 1956k   17  351k    0     0   3709      0  0:09:00  0:01:36  0:07:24 20583[0m[91m 17 1956k   17  351k    0     0   3671      0  0:09:05  0:01:37  0:07:28 15115[0m[91m 17 1956k   17  351k    0     0   3634      0  0:09:11  0:01:38  0:07:33 13619[0m[91m 17 1956k   17  351k    0     0   3598      0  0:09:16  0:01:39  0:07:37  5486[0m[91m 17 1956k   17  351k    0     0   3562      0  0:09:22  0:01:40  0:07:42  2739[0m[91m 18 1956k   18  358k    0     0   3633      0  0:09:11  0:01:41  0:07:30  1885[0m[91m 19 1956k   19  374k    0     0   3738      0  0:08:56  0:01:42  0:07:14  5148[0m[91m 19 1956k   19  374k    0     0   3702      0  0:09:01  0:01:43  0:07:18  5148[0m[91m 20 1956k   20  397k    0     0   3915      0  0:08:31  0:01:44  0:06:47 11535[0m[91m 21 1956k   21  413k    0     0   4022      0  0:08:18  0:01:45  0:06:33 14625[0m[91m 22 1956k   22  437k    0     0   4219      0  0:07:54  0:01:46  0:06:08 16286[0m[91m 24 1956k   24  483k    0     0   4626      0  0:07:13  0:01:47  0:05:26 24751[0m[91m 25 1956k   25  499k    0     0   4734      0  0:07:03  0:01:48  0:05:15 28693[0m[91m 26 1956k   26  522k    0     0   4911      0  0:06:48  0:01:49  0:04:59 25775[0m[91m 27 1956k   27  530k    0     0   4937      0  0:06:45  0:01:50  0:04:55 25057[0m[91m 27 1956k   27  538k    0     0   4944      0  0:06:45  0:01:51  0:04:54 18971[0m[91m 27 1956k   27  538k    0     0   4900      0  0:06:48  0:01:52  0:04:56 10273[0m[91m 27 1956k   27  538k    0     0   4871      0  0:06:51  0:01:53  0:04:58  7720[0m[91m 29 1956k   29  577k    0     0   5184      0  0:06:26  0:01:54  0:04:32 11089[0m[91m 30 1956k   30  601k    0     0   5308      0  0:06:17  0:01:55  0:04:22 12288[0m[91m 31 1956k   31  608k    0     0   5370      0  0:06:13  0:01:56  0:04:17 15848[0m[91m 31 1956k   31  608k    0     0   5317      0  0:06:16  0:01:57  0:04:19 15328[0m[91m 31 1956k   31  624k    0     0   5416      0  0:06:09  0:01:58  0:04:11 18118[0m[91m 35 1956k   35  687k    0     0   5909      0  0:05:39  0:01:59  0:03:40 22621[0m[91m 37 1956k   37  741k    0     0   6303      0  0:05:17  0:02:00  0:03:17 31669[0m[91m 38 1956k   38  757k    0     0   6404      0  0:05:12  0:02:01  0:03:11 30363[0m[91m 39 1956k   39  780k    0     0   6551      0  0:05:05  0:02:02  0:03:03 36697[0m[91m 40 1956k   40  796k    0     0   6616      0  0:05:02  0:02:03  0:02:59 34035[0m[91m 41 1956k   41  819k    0     0   6766      0  0:04:56  0:02:04  0:02:52 27053[0m[91m 43 1956k   43  843k    0     0   6901      0  0:04:50  0:02:05  0:02:45 22476[0m[91m 43 1956k   43  843k    0     0   6848      0  0:04:52  0:02:06  0:02:46 17652[0m[91m 43 1956k   43  858k    0     0   6921      0  0:04:49  0:02:07  0:02:42 15923[0m[91m 44 1956k   44  874k    0     0   6978      0  0:04:47  0:02:08  0:02:39 15754[0m[91m 45 1956k   45  882k    0     0   6969      0  0:04:47  0:02:09  0:02:38 11506[0m[91m 45 1956k   45  882k    0     0   6916      0  0:04:49  0:02:10  0:02:39  7247[0m[91m 45 1956k   45  890k    0     0   6947      0  0:04:48  0:02:11  0:02:37  9375[0m[91m 47 1956k   47  921k    0     0   7121      0  0:04:41  0:02:12  0:02:29 11812[0m[91m 47 1956k   47  929k    0     0   7103      0  0:04:42  0:02:13  0:02:29  9971[0m[91m 47 1956k   47  929k    0     0   7095      0  0:04:42  0:02:14  0:02:28 10735[0m[91m 47 1956k   47  937k    0     0   7090      0  0:04:42  0:02:15  0:02:27 11917[0m[91m 49 1956k   49  960k    0     0   7211      0  0:04:37  0:02:16  0:02:21 13883[0m[91m 49 1956k   49  976k    0     0   7284      0  0:04:35  0:02:17  0:02:18 11859[0m[91m 51 1956k   51  999k    0     0   7411      0  0:04:30  0:02:18  0:02:12 17291[0m[91m 52 1956k   52 1030k    0     0   7589      0  0:04:24  0:02:19  0:02:05 20896[0m[91m 55 1956k   55 1077k    0     0   7880      0  0:04:14  0:02:20  0:01:54 30605[0m[91m 57 1956k   57 1116k    0     0   8092      0  0:04:07  0:02:21  0:01:46 32500[0m[91m 57 1956k   57 1132k    0     0   8161      0  0:04:05  0:02:22  0:01:43 32840[0m[91m 59 1956k   59 1163k    0     0   8328      0  0:04:00  0:02:23  0:01:37 33870[0m[91m 63 1956k   63 1233k    0     0   8771      0  0:03:48  0:02:24  0:01:24 41884[0m[91m 66 1956k   66 1304k    0     0   9188      0  0:03:38  0:02:25  0:01:13 43691[0m[91m 68 1956k   68 1335k    0     0   9355      0  0:03:34  0:02:26  0:01:08 46090[0m[91m 71 1956k   71 1405k    0     0   9789      0  0:03:24  0:02:27  0:00:57 56349[0m[91m 74 1956k   74 1460k    0     0  10095      0  0:03:18  0:02:28  0:00:50 59960[0m[91m 76 1956k   76 1491k    0     0  10248      0  0:03:15  0:02:29  0:00:46 52800[0m[91m 76 1956k   76 1499k    0     0  10167      0  0:03:17  0:02:31  0:00:46 35236[0m[91m 76 1956k   76 1499k    0     0  10100      0  0:03:18  0:02:32  0:00:46 28717[0m[91m 76 1956k   76 1499k    0     0  10034      0  0:03:19  0:02:33  0:00:46 16058[0m[91m 76 1956k   76 1499k    0     0   9977      0  0:03:20  0:02:33  0:00:47  6944[0m[91m 76 1956k   76 1499k    0     0   9967      0  0:03:21  0:02:34  0:00:47  1596[0m[91m 79 1956k   79 1546k    0     0  10212      0  0:03:16  0:02:35  0:00:41 11904[0m[91m 80 1956k   80 1569k    0     0  10294      0  0:03:14  0:02:36  0:00:38 17416[0m[91m 82 1956k   82 1608k    0     0  10490      0  0:03:11  0:02:37  0:00:34 27791[0m[91m 83 1956k   83 1632k    0     0  10575      0  0:03:09  0:02:38  0:00:31 32668[0m[91m 85 1956k   85 1663k    0     0  10711      0  0:03:07  0:02:39  0:00:28 33734[0m[91m 85 1956k   85 1679k    0     0  10740      0  0:03:06  0:02:40  0:00:26 26946[0m[91m 87 1956k   87 1710k    0     0  10839      0  0:03:04  0:02:41  0:00:23 26485[0m[91m 87 1956k   87 1718k    0     0  10858      0  0:03:04  0:02:42  0:00:22 22431[0m[91m 89 1956k   89 1757k    0     0  11035      0  0:03:01  0:02:43  0:00:18 25579[0m[91m 92 1956k   92 1812k    0     0  11310      0  0:02:57  0:02:44  0:00:13 30242[0m[91m 93 1956k   93 1827k    0     0  11332      0  0:02:56  0:02:45  0:00:11 30093[0m[91m 93 1956k   93 1835k    0     0  11320      0  0:02:57  0:02:46  0:00:11 28854[0m[91m 94 1956k   94 1851k    0     0  11332      0  0:02:56  0:02:47  0:00:09 26023[0m[91m 95 1956k   95 1866k    0     0  11342      0  0:02:56  0:02:48  0:00:08 20520[0m[91m 95 1956k   95 1874k    0     0  11331      0  0:02:56  0:02:49  0:00:07 11980[0m[91m 96 1956k   96 1882k    0     0  11335      0  0:02:56  0:02:50  0:00:06 11440[0m[91m 96 1956k   96 1897k    0     0  11359      0  0:02:56  0:02:51  0:00:05 12630[0m[91m 98 1956k   98 1937k    0     0  11506      0  0:02:54  0:02:52  0:00:02 17207[0m[91m100 1956k  100 1956k    0     0  11575      0  0:02:53  0:02:53 --:--:-- 20137100 1956k  100 1956k    0     0  11575      0  0:02:53  0:02:53 [0m[91m--:--:-- 22774
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0mchecking for a BSD-compatible install... /usr/bin/install -c
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking whether build environment is sane... yes
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for a race-free mkdir -p... /usr/bin/mkdir -p
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for gawk... no
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for mawk... mawk
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking whether make sets $(MAKE)... yes
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking whether make supports nested variables... yes
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking build system type... x86_64-pc-linux-gnu
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking host system type... x86_64-pc-linux-gnu
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": configure: autobuild project... GNU Autoconf
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": configure: autobuild revision... 2.71
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": configure: autobuild hostname... 8e882ecf43c8
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": configure: autobuild timestamp... 20251003T071405Z
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for a shell whose -n mode is known to work... /bin/bash
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for characters that cannot appear in file names... none
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking whether directories can have trailing spaces... yes
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for expr... /usr/bin/expr
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for GNU M4 that supports accurate traces... /usr/bin/m4
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking whether /usr/bin/m4 accepts --gnu... yes
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking how m4 supports trace files... --debugfile
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for perl... /usr/bin/perl
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking whether /usr/bin/perl Fcntl::flock is implemented... yes
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for emacs... no
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for xemacs... no
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for emacs... no
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking where .elc files should go... ${datadir}/emacs/site-lisp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for grep that handles long lines and -e... /usr/bin/grep
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for egrep... /usr/bin/grep -E
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking for a sed that does not truncate output... /usr/bin/sed
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking whether make is case sensitive... yes
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": checking that generated files are newer than configure... done
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": configure: creating ./config.status
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": config.status: creating tests/atlocal
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": config.status: creating Makefile
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": config.status: executing tests/atconfig commands
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": make  install-am
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": make[1]: Entering directory '/usr/src/autoconf-2.71'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f bin/autom4te bin/autom4te.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p bin
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": srcdir=''; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   test -f ./bin/autom4te.in || srcdir=./; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/usr/bin|g' -e 's|@pkgdatadir[@]|/usr/share/autoconf|g' -e 's|@prefix[@]|/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/usr/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|mawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autom4te.in; do not edit by hand.|g' ${srcdir}bin/autom4te.in >bin/autom4te.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x bin/autom4te.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w bin/autom4te.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv bin/autom4te.tmp bin/autom4te
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f lib/autom4te.cfg lib/autom4te.cfg-t
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p lib
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/usr/bin|g' -e 's|@pkgdatadir[@]|/usr/share/autoconf|g' -e 's|@prefix[@]|/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/usr/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|mawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from lib/autom4te.cfg.in; do not edit by hand.|g' ./lib/autom4te.in >lib/autom4te.cfg-t
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w lib/autom4te.cfg-t
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv -f lib/autom4te.cfg-t lib/autom4te.cfg
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p lib/m4sugar
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": :;{ \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo '# This file is part of -*- Autoconf -*-.' && \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo '# Version of Autoconf.' && \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo '# Copyright (C) 1999, 2000, 2001, 2002, 2006, 2007, 2009' && \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo '# Free Software Foundation, Inc.' && \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo  &&\
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo 'm4_define([m4_PACKAGE_NAME],      [GNU Autoconf])' && \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo 'm4_define([m4_PACKAGE_TARNAME],   [autoconf])' && \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo 'm4_define([m4_PACKAGE_VERSION],   [2.71])' && \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo 'm4_define([m4_PACKAGE_STRING],    [GNU Autoconf 2.71])' && \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo 'm4_define([m4_PACKAGE_BUGREPORT], [bug-autoconf@gnu.org])' && \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo 'm4_define([m4_PACKAGE_URL],       [https://www.gnu.org/software/autoconf/])' && \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   echo 'm4_define([m4_PACKAGE_YEAR],      [2021])'; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": } > lib/m4sugar/version.m4-t
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv lib/m4sugar/version.m4-t lib/m4sugar/version.m4
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         --language M4sh --cache '' \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   --melt ./bin/autoconf.as -o bin/autoconf.in
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f bin/autoconf bin/autoconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p bin
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": srcdir=''; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   test -f ./bin/autoconf.in || srcdir=./; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/usr/bin|g' -e 's|@pkgdatadir[@]|/usr/share/autoconf|g' -e 's|@prefix[@]|/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/usr/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|mawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoconf.in; do not edit by hand.|g' ${srcdir}bin/autoconf.in >bin/autoconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x bin/autoconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w bin/autoconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv bin/autoconf.tmp bin/autoconf
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f bin/autoheader bin/autoheader.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p bin
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": srcdir=''; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   test -f ./bin/autoheader.in || srcdir=./; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/usr/bin|g' -e 's|@pkgdatadir[@]|/usr/share/autoconf|g' -e 's|@prefix[@]|/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/usr/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|mawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoheader.in; do not edit by hand.|g' ${srcdir}bin/autoheader.in >bin/autoheader.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x bin/autoheader.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w bin/autoheader.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv bin/autoheader.tmp bin/autoheader
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f bin/autoreconf bin/autoreconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p bin
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": srcdir=''; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   test -f ./bin/autoreconf.in || srcdir=./; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/usr/bin|g' -e 's|@pkgdatadir[@]|/usr/share/autoconf|g' -e 's|@prefix[@]|/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/usr/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|mawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoreconf.in; do not edit by hand.|g' ${srcdir}bin/autoreconf.in >bin/autoreconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x bin/autoreconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w bin/autoreconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv bin/autoreconf.tmp bin/autoreconf
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f bin/autoscan bin/autoscan.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p bin
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": srcdir=''; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   test -f ./bin/autoscan.in || srcdir=./; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/usr/bin|g' -e 's|@pkgdatadir[@]|/usr/share/autoconf|g' -e 's|@prefix[@]|/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/usr/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|mawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoscan.in; do not edit by hand.|g' ${srcdir}bin/autoscan.in >bin/autoscan.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x bin/autoscan.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w bin/autoscan.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv bin/autoscan.tmp bin/autoscan
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f bin/autoupdate bin/autoupdate.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p bin
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": srcdir=''; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   test -f ./bin/autoupdate.in || srcdir=./; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/usr/bin|g' -e 's|@pkgdatadir[@]|/usr/share/autoconf|g' -e 's|@prefix[@]|/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/usr/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|mawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoupdate.in; do not edit by hand.|g' ${srcdir}bin/autoupdate.in >bin/autoupdate.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x bin/autoupdate.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w bin/autoupdate.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv bin/autoupdate.tmp bin/autoupdate
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f bin/ifnames bin/ifnames.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p bin
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": srcdir=''; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   test -f ./bin/ifnames.in || srcdir=./; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/usr/bin|g' -e 's|@pkgdatadir[@]|/usr/share/autoconf|g' -e 's|@prefix[@]|/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/usr/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|mawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/ifnames.in; do not edit by hand.|g' ${srcdir}bin/ifnames.in >bin/ifnames.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x bin/ifnames.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w bin/ifnames.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv bin/ifnames.tmp bin/ifnames
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         --language=M4sh ./tests/wrapper.as -o tests/wrapper.in
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f tests/autoconf tests/autoconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": input=tests/wrapper.in \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && sed -e 's|@wrap_program[@]|autoconf|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x tests/autoconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w tests/autoconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv -f tests/autoconf.tmp tests/autoconf
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f tests/autoheader tests/autoheader.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": input=tests/wrapper.in \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && sed -e 's|@wrap_program[@]|autoheader|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoheader.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x tests/autoheader.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w tests/autoheader.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv -f tests/autoheader.tmp tests/autoheader
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f tests/autom4te tests/autom4te.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": input=tests/wrapper.in \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && sed -e 's|@wrap_program[@]|autom4te|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autom4te.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x tests/autom4te.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w tests/autom4te.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv -f tests/autom4te.tmp tests/autom4te
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f tests/autoreconf tests/autoreconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": input=tests/wrapper.in \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && sed -e 's|@wrap_program[@]|autoreconf|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoreconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x tests/autoreconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w tests/autoreconf.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv -f tests/autoreconf.tmp tests/autoreconf
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f tests/autoscan tests/autoscan.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": input=tests/wrapper.in \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && sed -e 's|@wrap_program[@]|autoscan|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoscan.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x tests/autoscan.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w tests/autoscan.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv -f tests/autoscan.tmp tests/autoscan
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f tests/autoupdate tests/autoupdate.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": input=tests/wrapper.in \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && sed -e 's|@wrap_program[@]|autoupdate|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoupdate.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x tests/autoupdate.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w tests/autoupdate.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv -f tests/autoupdate.tmp tests/autoupdate
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": rm -f tests/ifnames tests/ifnames.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": input=tests/wrapper.in \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && sed -e 's|@wrap_program[@]|ifnames|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/ifnames.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod +x tests/ifnames.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": chmod a-w tests/ifnames.tmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": mv -f tests/ifnames.tmp tests/ifnames
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": if test 'no' != no; then \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   am__dir=. am__subdir_includes=''; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   case lib/emacs/autoconf-mode.elc in */*) \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     am__dir=`echo 'lib/emacs/autoconf-mode.elc' | sed 's,/[^/]*$,,'`; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     am__subdir_includes="-L $am__dir -L ./$am__dir"; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   esac; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   test -d "$am__dir" || /usr/bin/mkdir -p "$am__dir" || exit 1; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   no --batch \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":       \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     $am__subdir_includes -L . -L . \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autoconf-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autoconf-mode.elc") )' \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     -f batch-byte-compile 'lib/emacs/autoconf-mode.el'; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": else :; fi
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": if test 'no' != no; then \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   am__dir=. am__subdir_includes=''; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   case lib/emacs/autotest-mode.elc in */*) \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     am__dir=`echo 'lib/emacs/autotest-mode.elc' | sed 's,/[^/]*$,,'`; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     am__subdir_includes="-L $am__dir -L ./$am__dir"; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   esac; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   test -d "$am__dir" || /usr/bin/mkdir -p "$am__dir" || exit 1; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   no --batch \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":       \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     $am__subdir_includes -L . -L . \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autotest-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autotest-mode.elc") )' \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     -f batch-byte-compile 'lib/emacs/autotest-mode.el'; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": else :; fi
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p lib/autoconf
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": lang=`echo 'lib/autoconf/autoconf' | sed 's,.*/,,'` \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && if test $lang = autoconf; then \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":        lang=autoconf-without-aclocal-m4; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":      else :; fi \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--language=$lang \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--freeze \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--output=lib/autoconf/autoconf.m4f
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p lib/autoscan
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": echo '# Automatically Generated: do not edit this file' >lib/autoscan/autoscan.list
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": sed '/^[#]/!q' ./lib/autoscan/autoscan.pre >>lib/autoscan/autoscan.list
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": ( \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   sed -n '/^[^#]/p' ./lib/autoscan/autoscan.pre; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         --cache '' -M -l autoconf-without-aclocal-m4 \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     -t'AN_OUTPUT:$1: $2		$3' \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": ) | LC_ALL=C sort >>lib/autoscan/autoscan.list
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p lib/autotest
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": lang=`echo 'lib/autotest/autotest' | sed 's,.*/,,'` \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && if test $lang = autoconf; then \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":        lang=autoconf-without-aclocal-m4; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":      else :; fi \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--language=$lang \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--freeze \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--output=lib/autotest/autotest.m4f
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p lib/m4sugar
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": lang=`echo 'lib/m4sugar/m4sugar' | sed 's,.*/,,'` \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && if test $lang = autoconf; then \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":        lang=autoconf-without-aclocal-m4; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":      else :; fi \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--language=$lang \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--freeze \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--output=lib/m4sugar/m4sugar.m4f
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": /usr/bin/mkdir -p lib/m4sugar
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": lang=`echo 'lib/m4sugar/m4sh' | sed 's,.*/,,'` \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && if test $lang = autoconf; then \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":        lang=autoconf-without-aclocal-m4; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":      else :; fi \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   && autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--language=$lang \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--freeze \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 	--output=lib/m4sugar/m4sh.m4f
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": make[2]: Entering directory '/usr/src/autoconf-2.71'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/bin'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c bin/autoconf bin/autoheader bin/autom4te bin/autoreconf bin/autoscan bin/autoupdate bin/ifnames '/usr/bin'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/autoconf/autoconf'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 lib/autoconf/autoconf.m4 lib/autoconf/general.m4 lib/autoconf/status.m4 lib/autoconf/oldnames.m4 lib/autoconf/specific.m4 lib/autoconf/autoheader.m4 lib/autoconf/autoupdate.m4 lib/autoconf/autotest.m4 lib/autoconf/autoscan.m4 lib/autoconf/lang.m4 lib/autoconf/c.m4 lib/autoconf/erlang.m4 lib/autoconf/fortran.m4 lib/autoconf/functions.m4 lib/autoconf/go.m4 lib/autoconf/headers.m4 lib/autoconf/types.m4 lib/autoconf/libs.m4 lib/autoconf/programs.m4 lib/autoconf/trailer.m4 '/usr/share/autoconf/autoconf'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/autoconf/autotest'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 lib/autotest/autotest.m4 lib/autotest/general.m4 lib/autotest/specific.m4 '/usr/share/autoconf/autotest'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/autoconf/build-aux'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 build-aux/config.guess build-aux/config.sub build-aux/install-sh '/usr/share/autoconf/build-aux'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": if test 'no' != no; then \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   am__dir=. am__subdir_includes=''; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   case lib/emacs/autoconf-mode.elc in */*) \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     am__dir=`echo 'lib/emacs/autoconf-mode.elc' | sed 's,/[^/]*$,,'`; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     am__subdir_includes="-L $am__dir -L ./$am__dir"; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   esac; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   test -d "$am__dir" || /usr/bin/mkdir -p "$am__dir" || exit 1; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   no --batch \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":       \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     $am__subdir_includes -L . -L . \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autoconf-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autoconf-mode.elc") )' \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     -f batch-byte-compile 'lib/emacs/autoconf-mode.el'; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": else :; fi
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": if test 'no' != no; then \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   am__dir=. am__subdir_includes=''; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   case lib/emacs/autotest-mode.elc in */*) \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     am__dir=`echo 'lib/emacs/autotest-mode.elc' | sed 's,/[^/]*$,,'`; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     am__subdir_includes="-L $am__dir -L ./$am__dir"; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   esac; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   test -d "$am__dir" || /usr/bin/mkdir -p "$am__dir" || exit 1; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   no --batch \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":       \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     $am__subdir_includes -L . -L . \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autotest-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autotest-mode.elc") )' \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     -f batch-byte-compile 'lib/emacs/autotest-mode.el'; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": else :; fi
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/autoconf/m4sugar'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 lib/m4sugar/m4sugar.m4 lib/m4sugar/foreach.m4 lib/m4sugar/m4sh.m4 '/usr/share/autoconf/m4sugar'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/autoconf/Autom4te'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 lib/Autom4te/C4che.pm lib/Autom4te/ChannelDefs.pm lib/Autom4te/Channels.pm lib/Autom4te/Config.pm lib/Autom4te/Configure_ac.pm lib/Autom4te/FileUtils.pm lib/Autom4te/General.pm lib/Autom4te/Getopt.pm lib/Autom4te/Request.pm lib/Autom4te/XFile.pm '/usr/share/autoconf/Autom4te'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/info'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 ./doc/autoconf.info ./doc/standards.info '/usr/share/info'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/man/man1'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 man/autoconf.1 man/autoheader.1 man/autom4te.1 man/autoreconf.1 man/autoscan.1 man/autoupdate.1 man/ifnames.1 '/usr/share/man/man1'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/autoconf/autoconf'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 lib/autoconf/autoconf.m4f '/usr/share/autoconf/autoconf'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/autoconf/autoscan'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 lib/autoscan/autoscan.list '/usr/share/autoconf/autoscan'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/autoconf/autotest'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 lib/autotest/autotest.m4f '/usr/share/autoconf/autotest'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/autoconf/m4sugar'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 lib/m4sugar/version.m4 lib/m4sugar/m4sugar.m4f lib/m4sugar/m4sh.m4f '/usr/share/autoconf/m4sugar'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/autoconf'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 lib/autom4te.cfg '/usr/share/autoconf'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/mkdir -p '/usr/share/autoconf'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  /usr/bin/install -c -m 644 ./INSTALL '/usr/share/autoconf'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": make  install-data-hook
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": make[3]: Entering directory '/usr/src/autoconf-2.71'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": for s in build-aux/config.guess build-aux/config.sub build-aux/install-sh; do \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   chmod +x "/usr/share/autoconf/$s"; \
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": done
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": make[3]: Leaving directory '/usr/src/autoconf-2.71'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": make[2]: Leaving directory '/usr/src/autoconf-2.71'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": make[1]: Leaving directory '/usr/src/autoconf-2.71'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Removing intermediate container 8e882ecf43c8
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> 422f5bff757e
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 4/16 : ENV GNULIB_TOOL $SRC/gnulib/gnulib-tool
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in e667558ac6fb
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Removing intermediate container e667558ac6fb
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> 2ab80ebaf08e
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 5/16 : ENV GNULIB_SRCDIR $SRC/gnulib
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in 66643b6c4355
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Removing intermediate container 66643b6c4355
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> 1be2c2e61547
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 6/16 : RUN git clone https://gitlab.com/gnuwget/gnulib-mirror.git gnulib
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in 50e59a04614f
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [91mCloning into 'gnulib'...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0mRemoving intermediate container 50e59a04614f
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> 69c99e2d154f
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 7/16 : RUN wget -qO- https://ftp.gnu.org/gnu/libunistring/libunistring-latest.tar.gz | tar xz && mv libunistring-* libunistring
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in 86fac6af0bd9
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Removing intermediate container 86fac6af0bd9
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> dab91bf6ec09
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 8/16 : RUN wget -qO- https://ftp.gnu.org/gnu/libidn/libidn2-latest.tar.gz | tar xz && mv libidn2-* libidn2
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in afb44545b982
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Removing intermediate container afb44545b982
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> 64696f2ca103
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 9/16 : RUN wget -qO- https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.gz | tar xz && mv gmp-* gmp
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in ef33c206ecc3
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Removing intermediate container ef33c206ecc3
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> d13ede7b3ef0
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 10/16 : RUN git clone --depth=1 --recursive https://github.com/rockdaboot/libpsl.git
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in e176ef187c04
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [91mCloning into 'libpsl'...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mSubmodule 'list' (https://github.com/publicsuffix/list) registered for path 'list'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mCloning into '/src/libpsl/list'...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0mSubmodule path 'list': checked out '5db9b65997e3c9230ac4353b01994c2ae9667cb9'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Removing intermediate container e176ef187c04
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> be6c4642985e
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 11/16 : RUN git clone --depth=1 https://git.lysator.liu.se/nettle/nettle.git --branch=nettle_3.9.1_release_20230601
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in c14bdb193797
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [91mCloning into 'nettle'...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mNote: switching to 'd2cc9b95b50440c331ee143312309951a7e8d7ca'.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": You are in 'detached HEAD' state. You can look around, make experimental
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": changes and commit them, and you can discard any commits you make in this
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": state without impacting any branches by switching back to a branch.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": If you want to create a new branch to retain commits you create, you may
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": do so (now or later) by using -c with the switch command. Example:
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   git switch -c <new-branch-name>
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Or undo this operation with:
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   git switch -
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Turn off this advice by setting config variable advice.detachedHead to false
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0mRemoving intermediate container c14bdb193797
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> f13e9e026385
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 12/16 : RUN git clone --depth=1 https://gitlab.com/gnutls/gnutls.git
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in adb25c4e3890
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [91mCloning into 'gnutls'...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0mRemoving intermediate container adb25c4e3890
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> c070a000baf4
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 13/16 : RUN wget -O- https://ftp.gnu.org/pub/gnu/libmicrohttpd/libmicrohttpd-latest.tar.gz | tar xz
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in 8be76c11c2d8
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [91m--2025-10-03 07:28:30--  https://ftp.gnu.org/pub/gnu/libmicrohttpd/libmicrohttpd-latest.tar.gz
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mResolving ftp.gnu.org (ftp.gnu.org)... [0m[91m209.51.188.20, 2001:470:142:3::b
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Connecting to ftp.gnu.org (ftp.gnu.org)|209.51.188.20|:443... [0m[91mconnected.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mHTTP request sent, awaiting response... [0m[91m200 OK
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Length: 2198804 (2.1M) [application/x-gzip]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Saving to: 'STDOUT'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":      0K .......[0m[91m... .....[0m[91m..... ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m....  2% 62.2K 34s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":     50K ....[0m[91m...... .[0m[91m........[0m[91m. .......[0m[91m... .....[0m[91m..... ...[0m[91m.......  4% 65.8K 32s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    100K .[0m[91m.......[0m[91m.. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........[0m[91m .......[0m[91m...  6% 36.1K 39s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    150K .....[0m[91m..... ...[0m[91m....... .[0m[91m........[0m[91m. ......[0m[91m.... ....[0m[91m......  9% 28.6K 46s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    200K ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... ...[0m[91m....... .[0m[91m........[0m[91m. 11% 20.2K 54s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    250K .......[0m[91m... .....[0m[91m..... ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... 13% 23.9K 57s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    300K ....[0m[91m...... .[0m[91m........[0m[91m. .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 16% 23.8K 58s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    350K .[0m[91m.......[0m[91m.. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........[0m[91m .......[0m[91m... 18% 22.5K 59s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    400K .....[0m[91m..... ...[0m[91m....... .[0m[91m........[0m[91m. ......[0m[91m.... ....[0m[91m...... 20% 25.7K 59s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    450K ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... ...[0m[91m....... .[0m[91m........[0m[91m. 23% 19.8K 60s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    500K .......[0m[91m... .....[0m[91m..... ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... 25% 29.2K 57s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    550K ....[0m[91m...... .[0m[91m........[0m[91m. .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 27% 14.9K 60s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    600K .[0m[91m.......[0m[91m.. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........[0m[91m .......[0m[91m... 30% 10.3K 64s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    650K .....[0m[91m..... ...[0m[91m....... .[0m[91m........[0m[91m. ......[0m[91m.... ....[0m[91m...... 32% 11.9K 67s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    700K ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... ...[0m[91m....... .[0m[91m........[0m[91m. 34% 27.4K 63s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    750K .......[0m[91m... .....[0m[91m..... ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... 37% 21.3K 61s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    800K ....[0m[91m...... .[0m[91m........[0m[91m. .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 39% 26.3K 58s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    850K .[0m[91m.......[0m[91m.. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........[0m[91m .......[0m[91m... 41% 14.8K 58s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    900K .....[0m[91m..... ...[0m[91m....... .[0m[91m........[0m[91m. ......[0m[91m.... ....[0m[91m...... 44% 13.4K 57s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":    950K ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... ...[0m[91m....... .[0m[91m........[0m[91m. 46% 36.7K 54s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1000K .......[0m[91m... .....[0m[91m..... ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... 48% 38.2K 50s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1050K ....[0m[91m...... .[0m[91m........[0m[91m. .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 51% 13.3K 49s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1100K .[0m[91m.......[0m[91m.. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........[0m[91m .......[0m[91m... 53% 80.1K 45s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1150K .....[0m[91m..... ...[0m[91m....... .........[0m[91m. ......[0m[91m.... ....[0m[91m...... 55% 82.4K 42s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1200K ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... ...[0m[91m....... .[0m[91m........[0m[91m. 58% 17.0K 40s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1250K .......[0m[91m... .....[0m[91m..... ..[0m[91m........ ........[0m[91m.. ......[0m[91m.... 60% 14.0K 39s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1300K ....[0m[91m...... .[0m[91m........[0m[91m. .......... .....[0m[91m..... ...[0m[91m....... 62% 33.0K 36s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1350K .[0m[91m.......[0m[91m.. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........[0m[91m .......[0m[91m... 65% 23.0K 34s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1400K .....[0m[91m..... ...[0m[91m....... .[0m[91m........[0m[91m. ......[0m[91m.... ....[0m[91m...... 67% 17.2K 32s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1450K ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... ...[0m[91m....... .[0m[91m........[0m[91m. 69% 55.7K 29s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1500K .......[0m[91m... .....[0m[91m..... ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... 72% 18.3K 27s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1550K ....[0m[91m...... .[0m[91m........[0m[91m. .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 74% 55.7K 24s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1600K .[0m[91m.......[0m[91m.. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........[0m[91m .......[0m[91m... 76% 62.5K 22s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1650K .....[0m[91m..... ...[0m[91m....... .[0m[91m........[0m[91m. ......[0m[91m.... ....[0m[91m...... 79% 23.3K 19s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1700K ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... ...[0m[91m....... .[0m[91m........[0m[91m. 81% 18.3K 17s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1750K .......[0m[91m... .....[0m[91m..... ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... 83% 23.4K 15s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1800K ....[0m[91m...... .[0m[91m........[0m[91m. .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 86% 21.3K 13s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1850K .[0m[91m.......[0m[91m.. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........[0m[91m .......[0m[91m... 88% 13.4K 11s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1900K .....[0m[91m..... ...[0m[91m....... .[0m[91m........[0m[91m. ......[0m[91m.... ....[0m[91m...... 90% 17.7K 9s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   1950K ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... ...[0m[91m....... .[0m[91m........[0m[91m. 93% 37.9K 7s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   2000K .......[0m[91m... .....[0m[91m..... ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... 95% 52.0K 4s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   2050K ....[0m[91m...... .[0m[91m........[0m[91m. .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 97% 23.8K 2s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":   2100K .[0m[91m.......[0m[91m.. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........[0m[91m .......   100% 22.6K=94s
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 2025-10-03 07:31:45 (22.9 KB/s) - written to stdout [2198804/2198804]
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0mRemoving intermediate container 8be76c11c2d8
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> a214fe2a4c68
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": Step 14/16 : RUN git clone --recursive https://gitlab.com/gnuwget/wget2.git
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2":  ---> Running in 9da8dd49b5be
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [91mCloning into 'wget2'...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mSubmodule 'gnulib' (https://git.savannah.gnu.org/git/gnulib.git) registered for path 'gnulib'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mSubmodule 'wiki' (https://gitlab.com/gnuwget/wget2.wiki.git) registered for path 'wiki'
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mCloning into '/src/wget2/gnulib'...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91merror: RPC failed; curl 56 GnuTLS recv error (-9): Error decoding the received TLS packet.
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": fatal: the remote end hung up unexpectedly
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": fatal: early EOF
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mfatal: index-pack failed
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mfatal: clone of 'https://git.savannah.gnu.org/git/gnulib.git' into submodule path '/src/wget2/gnulib' failed
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mFailed to clone 'gnulib'. Retry scheduled
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mCloning into '/src/wget2/wiki'...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mCloning into '/src/wget2/gnulib'...
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mremote: error: Out of memory, malloc failed (tried to allocate 6766312 bytes)        
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": remote: fatal: packed object 283f98849d51e48079434e5646e119ac3b67de08 (stored in ./objects/pack/pack-c9a6e2517e7d9df6cf78c9cfb2e98f1e71c215fd.pack) is corrupt        
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": remote: aborting due to possible repository corruption on the remote side. 
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": fatal: protocol error: bad pack header
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mfatal: clone of 'https://git.savannah.gnu.org/git/gnulib.git' into submodule path '/src/wget2/gnulib' failed
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m[91mFailed to clone 'gnulib' a second time, aborting
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": The command '/bin/sh -c git clone --recursive https://gitlab.com/gnuwget/wget2.git' returned a non-zero code: 1
+Finished Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1
+Step #1 - "build-a76d194c-4a7c-499e-9772-805871fd1dd2": [0m

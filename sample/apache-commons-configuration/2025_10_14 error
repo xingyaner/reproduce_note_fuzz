@@ -1,0 +1,345 @@
+starting build "a7d0b419-8541-4635-a568-f36b361fa9ba"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350"
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Sending build context to Docker daemon  33.28kB
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Step 1/20 : FROM gcr.io/oss-fuzz-base/base-builder-jvm
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": latest: Pulling from oss-fuzz-base/base-builder-jvm
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b549f31133a9: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 7116a92c01de: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b11f5ad22a40: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a6da84ec78ca: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 1b52e907a28a: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b66e9cd0f971: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 06cfddc50eb4: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f8746400158b: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 4347830c1951: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a6da84ec78ca: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 86e78d89b166: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": bd4bd96fe257: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 06cfddc50eb4: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0991c68827f7: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b66e9cd0f971: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e8fc5e6a7d33: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f322a6e64378: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f8746400158b: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 1b52e907a28a: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a9e5f87a9757: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": c8f59c9f73d5: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 86e78d89b166: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 4347830c1951: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 65d7af5531b2: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": efc3995c7887: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 55c0197e7ca1: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": bd4bd96fe257: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 7f1a477b641f: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0991c68827f7: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e8fc5e6a7d33: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 2727aca0fc62: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": c45c1b77dfa3: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f322a6e64378: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a9e5f87a9757: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 858441124890: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 47f832a8bc7c: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": c8f59c9f73d5: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0e3a5ff90069: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f5b796d891a7: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 42ccf6e2b063: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": efc3995c7887: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0531ed1b8681: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f9fef266841d: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b95c3f8c0036: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 55c0197e7ca1: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 6766f385176f: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 6748833f8d46: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 20d3a0d4b01e: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e5e954537764: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": d262fc4eee92: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e6e07c50b02a: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 23606678b4e3: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": ed1a63cde6d6: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 80dfa46d474e: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0f799dbacabe: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a7aaeffd6a01: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": ea8518372d12: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 081353b3e40b: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 5b9889fa2c86: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0e3a5ff90069: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 4bc5edab06d1: Pulling fs layer
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 7f1a477b641f: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 23606678b4e3: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e5e954537764: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 65d7af5531b2: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f9fef266841d: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f5b796d891a7: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 6748833f8d46: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 5b9889fa2c86: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 4bc5edab06d1: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 858441124890: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0f799dbacabe: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 20d3a0d4b01e: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 081353b3e40b: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": c45c1b77dfa3: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0531ed1b8681: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 2727aca0fc62: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e6e07c50b02a: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 80dfa46d474e: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": d262fc4eee92: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 47f832a8bc7c: Waiting
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b11f5ad22a40: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b11f5ad22a40: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b549f31133a9: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b549f31133a9: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 1b52e907a28a: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 1b52e907a28a: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a6da84ec78ca: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a6da84ec78ca: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 06cfddc50eb4: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f8746400158b: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f8746400158b: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 7116a92c01de: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 7116a92c01de: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b549f31133a9: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 86e78d89b166: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 86e78d89b166: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": bd4bd96fe257: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": bd4bd96fe257: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0991c68827f7: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0991c68827f7: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e8fc5e6a7d33: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e8fc5e6a7d33: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 4347830c1951: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 4347830c1951: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f322a6e64378: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f322a6e64378: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a9e5f87a9757: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": c8f59c9f73d5: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": c8f59c9f73d5: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": efc3995c7887: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": efc3995c7887: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 65d7af5531b2: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 65d7af5531b2: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 55c0197e7ca1: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 7f1a477b641f: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 7f1a477b641f: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": c45c1b77dfa3: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": c45c1b77dfa3: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 2727aca0fc62: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 2727aca0fc62: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 47f832a8bc7c: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 47f832a8bc7c: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 858441124890: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 858441124890: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f5b796d891a7: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0e3a5ff90069: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0e3a5ff90069: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0531ed1b8681: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 42ccf6e2b063: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f9fef266841d: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f9fef266841d: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b95c3f8c0036: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b95c3f8c0036: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 6766f385176f: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 6766f385176f: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 7116a92c01de: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 6748833f8d46: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 6748833f8d46: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b66e9cd0f971: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b66e9cd0f971: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b11f5ad22a40: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 20d3a0d4b01e: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e5e954537764: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e5e954537764: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": d262fc4eee92: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e6e07c50b02a: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e6e07c50b02a: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 23606678b4e3: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 23606678b4e3: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": ed1a63cde6d6: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": ed1a63cde6d6: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0f799dbacabe: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a7aaeffd6a01: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a7aaeffd6a01: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": ea8518372d12: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 5b9889fa2c86: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 5b9889fa2c86: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 081353b3e40b: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 4bc5edab06d1: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a6da84ec78ca: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 1b52e907a28a: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 80dfa46d474e: Verifying Checksum
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 80dfa46d474e: Download complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b66e9cd0f971: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 06cfddc50eb4: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f8746400158b: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 4347830c1951: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 86e78d89b166: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": bd4bd96fe257: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0991c68827f7: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e8fc5e6a7d33: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f322a6e64378: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a9e5f87a9757: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": c8f59c9f73d5: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 65d7af5531b2: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": efc3995c7887: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 55c0197e7ca1: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 7f1a477b641f: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 2727aca0fc62: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": c45c1b77dfa3: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 858441124890: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 47f832a8bc7c: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0e3a5ff90069: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f5b796d891a7: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 42ccf6e2b063: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0531ed1b8681: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": f9fef266841d: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": b95c3f8c0036: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 6766f385176f: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 6748833f8d46: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 20d3a0d4b01e: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e5e954537764: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": d262fc4eee92: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": e6e07c50b02a: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 23606678b4e3: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": ed1a63cde6d6: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 80dfa46d474e: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 0f799dbacabe: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": a7aaeffd6a01: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": ea8518372d12: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 081353b3e40b: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 5b9889fa2c86: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": 4bc5edab06d1: Pull complete
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Digest: sha256:3f6cbb869a80e45a23278140255f31ca34ca32f488adfc31c93bca04206babd3
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-jvm:latest
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":  ---> 96c0210df5e3
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Step 2/20 : RUN curl -L https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip -o maven.zip &&     unzip maven.zip -d $SRC/maven &&     rm -f maven.zip
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":  ---> Running in 3137eb75e562
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": [91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":                                  Dload  Upload   Total   Spent   [0m[91m Left  Speed
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   0     0    0     0    0     0[0m[91m      0[0m[91m   [0m[91m   0 --:-[0m[91m-:-- --[0m[91m:--:--[0m[91m -[0m[91m-:--:[0m[91m--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m  1 9377k    1  109k    0     0    99k      0  0:01:34  0:00:01  0:01:33   99k[0m[91m  3 9377k    3  351k    0     0   167k      0  0:00:56  0:00:02  0:00:54  167k[0m[91m  5 9377k    5  539k    0     0   174k      0  0:00:53  0:00:03  0:00:50  174k[0m[91m  7 9377k    7  734k    0     0   179k      0  0:00:52  0:00:04  0:00:48  179k[0m[91m  9 9377k    9  929k    0     0   182k      0  0:00:51  0:00:05  0:00:46  187k[0m[91m 12 9377k   12 1148k    0     0   185k      0  0:00:50  0:00:06  0:00:44  203k[0m[91m 14 9377k   14 1343k    0     0   189k      0  0:00:49  0:00:07  0:00:42  198k[0m[91m 16 9377k   16 1539k    0     0   190k      0  0:00:49  0:00:08  0:00:41  199k[0m[91m 18 9377k   18 1726k    0     0   189k      0  0:00:49  0:00:09  0:00:40  198k[0m[91m 20 9377k   20 1914k    0     0   189k      0  0:00:49  0:00:10  0:00:39  196k[0m[91m 22 9377k   22 2117k    0     0   190k      0  0:00:49  0:00:11  0:00:38  197k[0m[91m 24 9377k   24 2312k    0     0   191k      0  0:00:49  0:00:12  0:00:37  193k[0m[91m 26 9377k   26 2484k    0     0   189k      0  0:00:49  0:00:13  0:00:36  188k[0m[91m 28 9377k   28 2695k    0     0   191k      0  0:00:49  0:00:14  0:00:35  193k[0m[91m 30 9377k   30 2890k    0     0   191k      0  0:00:48  0:00:15  0:00:33  195k[0m[91m 32 9377k   32 3093k    0     0   192k      0  0:00:48  0:00:16  0:00:32  194k[0m[91m 35 9377k   35 3304k    0     0   193k      0  0:00:48  0:00:17  0:00:31  198k[0m[91m 37 9377k   37 3499k    0     0   193k      0  0:00:48  0:00:18  0:00:30  203k[0m[91m 39 9377k   39 3687k    0     0   193k      0  0:00:48  0:00:19  0:00:29  198k[0m[91m 41 9377k   41 3882k    0     0   193k      0  0:00:48  0:00:20  0:00:28  198k[0m[91m 43 9377k   43 4070k    0     0   192k      0  0:00:48  0:00:21  0:00:27  195k[0m[91m 45 9377k   45 4273k    0     0   193k      0  0:00:48  0:00:22  0:00:26  194k[0m[91m 47 9377k   47 4453k    0     0   192k      0  0:00:48  0:00:23  0:00:25  190k[0m[91m 49 9377k   49 4648k    0     0   192k      0  0:00:48  0:00:24  0:00:24  189k[0m[91m 51 9377k   51 4843k    0     0   193k      0  0:00:48  0:00:25  0:00:23  192k[0m[91m 53 9377k   53 5023k    0     0   192k      0  0:00:48  0:00:26  0:00:22  191k[0m[91m 55 9377k   55 5218k    0     0   192k      0  0:00:48  0:00:27  0:00:21  186k[0m[91m 57 9377k   57 5429k    0     0   193k      0  0:00:48  0:00:28  0:00:20  195k[0m[91m 60 9377k   60 5632k    0     0   193k      0  0:00:48  0:00:29  0:00:19  199k[0m[91m 62 9377k   62 5843k    0     0   193k      0  0:00:48  0:00:30  0:00:18  195k[0m[91m 64 9377k   64 6046k    0     0   194k      0  0:00:48  0:00:31  0:00:17  204k[0m[91m 66 9377k   66 6249k    0     0   194k      0  0:00:48  0:00:32  0:00:16  208k[0m[91m 68 9377k   68 6453k    0     0   195k      0  0:00:48  0:00:33  0:00:15  204k[0m[91m 71 9377k   71 6664k    0     0   195k      0  0:00:47  0:00:34  0:00:13  206k[0m[91m 73 9377k   73 6859k    0     0   195k      0  0:00:47  0:00:35  0:00:12  207k[0m[91m 75 9377k   75 7070k    0     0   195k      0  0:00:47  0:00:36  0:00:11  204k[0m[91m 77 9377k   77 7265k    0     0   195k      0  0:00:47  0:00:37  0:00:10  203k[0m[91m 79 9377k   79 7445k    0     0   195k      0  0:00:47  0:00:38  0:00:09  198k[0m[91m 81 9377k   81 7671k    0     0   195k      0  0:00:47  0:00:39  0:00:08  196k[0m[91m 83 9377k   83 7874k    0     0   196k      0  0:00:47  0:00:40  0:00:07  203k[0m[91m 86 9377k   86 8070k    0     0   196k      0  0:00:47  0:00:41  0:00:06  199k[0m[91m 88 9377k   88 8273k    0     0   196k      0  0:00:47  0:00:42  0:00:05  201k[0m[91m 90 9377k   90 8484k    0     0   196k      0  0:00:47  0:00:43  0:00:04  207k[0m[91m 92 9377k   92 8671k    0     0   196k      0  0:00:47  0:00:44  0:00:03  204k[0m[91m 94 9377k   94 8882k    0     0   196k      0  0:00:47  0:00:45  0:00:02  201k[0m[91m 96 9377k   96 9085k    0     0   197k      0  0:00:47  0:00:46  0:00:01  202k[0m[91m 98 9377k   98 9281k    0     0   197k      0  0:00:47  0:00:47 --:--:--  201k[0m[91m100 9377k  100 9377k    0     0   197k      0  0:00:47  0:00:47 --:--:--  199k
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": [0mArchive:  maven.zip
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/lib/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/boot/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd32/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd64/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux32/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux64/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/osx/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows32/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows64/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/bin/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/conf/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/conf/logging/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":    creating: /src/maven/apache-maven-3.6.3/lib/ext/
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/README.txt  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/LICENSE  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/NOTICE  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/cdi-api.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-cli.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-io.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-lang3.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/guava.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/guice.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/javax.inject.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jcl-over-slf4j.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jsoup.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jsr250-api.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.inject.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.plexus.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-cipher.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-component-annotations.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-interpolation.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-sec-dispatcher.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-utils.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/slf4j-api.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/boot/plexus-classworlds.license  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd32/libjansi.so  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd64/libjansi.so  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux32/libjansi.so  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux64/libjansi.so  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/osx/libjansi.jnilib  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows32/jansi.dll  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows64/jansi.dll  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/bin/m2.conf  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/bin/mvn.cmd  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/bin/mvnDebug.cmd  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/bin/mvn  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/bin/mvnDebug  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/bin/mvnyjp  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/conf/logging/simplelogger.properties  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/conf/settings.xml  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/conf/toolchains.xml  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/ext/README.txt  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/README.txt  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-embedder-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-settings-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-settings-builder-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-plugin-api-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-model-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-model-builder-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-builder-support-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-api-1.4.1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-util-1.4.1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-shared-utils-3.2.1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-io-2.5.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/guice-4.2.1-no_aop.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/guava-25.1-android.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/javax.inject-1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jsr250-api-1.0.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-utils-3.2.1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-sec-dispatcher-1.4.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-cipher-1.7.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/slf4j-api-1.7.29.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-lang3-3.8.1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-core-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-repository-metadata-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-artifact-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-provider-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-impl-1.4.1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-spi-1.4.1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.inject-0.3.4.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-component-annotations-2.1.0.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-compat-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-interpolation-1.25.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/wagon-provider-api-3.3.4.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.plexus-0.3.4.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/cdi-api-1.0.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-cli-1.4.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/wagon-http-3.3.4-shaded.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jsoup-1.12.1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jcl-over-slf4j-1.7.29.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/wagon-file-3.3.4.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-connector-basic-1.4.1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-transport-wagon-1.4.1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-slf4j-provider-3.6.3.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-1.17.1.jar  
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Removing intermediate container 3137eb75e562
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":  ---> c703e5da7534
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Step 3/20 : ENV MVN $SRC/maven/apache-maven-3.6.3/bin/mvn
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":  ---> Running in e34a7c122b2c
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Removing intermediate container e34a7c122b2c
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":  ---> 2d406eb4498b
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Step 4/20 : ENV TARGET_PACKAGE_PREFIX org.apache.commons.configuration2.*
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":  ---> Running in b907a4050b80
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Removing intermediate container b907a4050b80
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":  ---> 17f044952731
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": Step 5/20 : RUN git clone --depth=1 "https://gitbox.apache.org/repos/asf/commons-configuration.git" commons-configuration
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350":  ---> Running in d9f5d16b186e
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": [91mCloning into 'commons-configuration'...
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": [0m[91merror: RPC failed; curl 52 Empty reply from server
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": fatal: the remote end hung up unexpectedly
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": The command '/bin/sh -c git clone --depth=1 "https://gitbox.apache.org/repos/asf/commons-configuration.git" commons-configuration' returned a non-zero code: 128
+Finished Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 128
+Step #1 - "build-b67382a8-233c-44f7-baf8-1c83be01f350": [0m

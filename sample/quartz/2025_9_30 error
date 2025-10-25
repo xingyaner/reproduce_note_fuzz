@@ -1,0 +1,371 @@
+starting build "cd0520f7-dc39-4784-b881-9fef2abc660a"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a"
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Sending build context to Docker daemon  9.216kB
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Step 1/7 : FROM gcr.io/oss-fuzz-base/base-builder-jvm
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": latest: Pulling from oss-fuzz-base/base-builder-jvm
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": b549f31133a9: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 1f6d64c5d9e3: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 37910743e6c9: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 249fd738df73: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 877bc6daf7ff: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": c954e3a1628d: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 90b67e5f3d5d: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 607e5f9ff9b7: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 01b6b52ab58d: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": dc196883e826: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 39c315fa3e62: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": b128bb74f491: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 342a47195bee: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 80b0a48a62d6: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 292fd52b5e7b: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 6e5f267ab26d: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": cb37ac0c0f76: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 97510fefe804: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": c7c97ce1f4ee: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 2f785f2ba55b: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": e8ccfa4bf60b: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 18848b6b3b2d: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": d58603dd1459: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 09ffd541f975: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": f3103754af8a: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 56dbf4eb0319: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 249fd738df73: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": dc196883e826: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 4f9dee976b6c: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 877bc6daf7ff: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 39c315fa3e62: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": e41bf5356a29: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 90b67e5f3d5d: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 607e5f9ff9b7: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": c954e3a1628d: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": abe24445fcb1: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 01b6b52ab58d: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 2b2b1b3a3f33: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 2f785f2ba55b: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": b128bb74f491: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 831e926d8edb: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 342a47195bee: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 55839d0a4df0: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": d58603dd1459: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 80b0a48a62d6: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 11c32f7fa0a0: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 292fd52b5e7b: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": e8ccfa4bf60b: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": d843b7d23d4f: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 6e5f267ab26d: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 18848b6b3b2d: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": ab63b404ef05: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": c7c97ce1f4ee: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 5807097b165b: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": cb37ac0c0f76: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 870bf89a9fc6: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 09ffd541f975: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": a90bcc532245: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 97510fefe804: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": faf1da46a017: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": cee83559dcdc: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": f3103754af8a: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 39b51158e4d8: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 76f4eeca8b2b: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 56dbf4eb0319: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 831e926d8edb: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 019a21a2a99a: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 4f9dee976b6c: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 55839d0a4df0: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": ab5c2ac82c06: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": fc0caa350877: Pulling fs layer
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 11c32f7fa0a0: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": e41bf5356a29: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": d843b7d23d4f: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": abe24445fcb1: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": ab63b404ef05: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 76f4eeca8b2b: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": faf1da46a017: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 5807097b165b: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 2b2b1b3a3f33: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": ab5c2ac82c06: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": cee83559dcdc: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 39b51158e4d8: Waiting
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 37910743e6c9: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": b549f31133a9: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": b549f31133a9: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 249fd738df73: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 249fd738df73: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 877bc6daf7ff: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 877bc6daf7ff: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 90b67e5f3d5d: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 90b67e5f3d5d: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 607e5f9ff9b7: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 607e5f9ff9b7: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 1f6d64c5d9e3: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 1f6d64c5d9e3: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": b549f31133a9: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": dc196883e826: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": dc196883e826: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 39c315fa3e62: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 39c315fa3e62: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": b128bb74f491: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": b128bb74f491: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 342a47195bee: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 342a47195bee: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 80b0a48a62d6: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 80b0a48a62d6: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 292fd52b5e7b: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 292fd52b5e7b: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 01b6b52ab58d: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 01b6b52ab58d: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 6e5f267ab26d: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 6e5f267ab26d: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 97510fefe804: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 97510fefe804: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": cb37ac0c0f76: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": cb37ac0c0f76: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": c7c97ce1f4ee: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 2f785f2ba55b: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 2f785f2ba55b: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": e8ccfa4bf60b: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": e8ccfa4bf60b: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 18848b6b3b2d: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": d58603dd1459: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 09ffd541f975: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 09ffd541f975: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": f3103754af8a: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": f3103754af8a: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 56dbf4eb0319: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 4f9dee976b6c: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": c954e3a1628d: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": c954e3a1628d: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": e41bf5356a29: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": e41bf5356a29: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": abe24445fcb1: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": abe24445fcb1: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 1f6d64c5d9e3: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 37910743e6c9: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 55839d0a4df0: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 831e926d8edb: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 831e926d8edb: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 2b2b1b3a3f33: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 2b2b1b3a3f33: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": d843b7d23d4f: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": d843b7d23d4f: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 11c32f7fa0a0: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": ab63b404ef05: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": ab63b404ef05: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 5807097b165b: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 5807097b165b: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 870bf89a9fc6: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 870bf89a9fc6: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": a90bcc532245: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": a90bcc532245: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": cee83559dcdc: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 39b51158e4d8: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 39b51158e4d8: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 76f4eeca8b2b: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 76f4eeca8b2b: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 019a21a2a99a: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 019a21a2a99a: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": ab5c2ac82c06: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": ab5c2ac82c06: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": fc0caa350877: Verifying Checksum
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": fc0caa350877: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 249fd738df73: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 877bc6daf7ff: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": faf1da46a017: Download complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": c954e3a1628d: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 90b67e5f3d5d: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 607e5f9ff9b7: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 01b6b52ab58d: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": dc196883e826: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 39c315fa3e62: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": b128bb74f491: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 342a47195bee: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 80b0a48a62d6: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 292fd52b5e7b: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 6e5f267ab26d: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": cb37ac0c0f76: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 97510fefe804: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": c7c97ce1f4ee: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 2f785f2ba55b: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": e8ccfa4bf60b: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 18848b6b3b2d: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": d58603dd1459: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 09ffd541f975: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": f3103754af8a: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 56dbf4eb0319: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 4f9dee976b6c: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": e41bf5356a29: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": abe24445fcb1: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 2b2b1b3a3f33: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 831e926d8edb: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 55839d0a4df0: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 11c32f7fa0a0: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": d843b7d23d4f: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": ab63b404ef05: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 5807097b165b: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 870bf89a9fc6: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": a90bcc532245: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": faf1da46a017: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": cee83559dcdc: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 39b51158e4d8: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 76f4eeca8b2b: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": 019a21a2a99a: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": ab5c2ac82c06: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": fc0caa350877: Pull complete
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Digest: sha256:edf21bc7dc9a12a6f2486ede48562faf6e208100b79d4390dc1f8e3b4f300358
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-jvm:latest
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> 72792b1755e0
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Step 2/7 : RUN curl -L https://download.java.net/openjdk/jdk11.0.0.1/ri/openjdk-11.0.0.1_linux-x64_bin.tar.gz -o jdk.tar.gz &&     tar zxf jdk.tar.gz &&     rm -rf jdk.tar.gz
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> Running in a8c20120d913
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": [91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":                                  Dload  Uploa[0m[91md   Total   Spent    Left  Speed
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":   0   [0m[91m  0    0[0m[91m     0[0m[91m    0    [0m[91m 0    [0m[91m  0    [0m[91m  0 --[0m[91m:--:--[0m[91m --:--[0m[91m:-- --:--:--   [0m[91m  0[0m[91m 48  178M   48 85.9M    0     0   139M      0  0:00:01 --:--:--  0:00:01  139M[0m[91m100  178M  100  178M    0     0   174M      0  0:00:01  0:00:01 --:--:--  174M
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": [0mRemoving intermediate container a8c20120d913
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> 8f02a7ffcaa8
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Step 3/7 : ENV JAVA_HOME="$SRC/jdk-11.0.0.1"
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> Running in 6d98cb789db6
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Removing intermediate container 6d98cb789db6
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> cec9aae20301
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Step 4/7 : ENV PATH="$JAVA_HOME/bin:$PATH"
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> Running in c6dd5e750d4e
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Removing intermediate container c6dd5e750d4e
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> 46beaa1dd948
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Step 5/7 : RUN git clone --depth 1 https://github.com/quartz-scheduler/quartz quartz
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> Running in c02aebea50dd
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": [91mCloning into 'quartz'...
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": [0mRemoving intermediate container c02aebea50dd
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> 906316615d9c
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Step 6/7 : COPY *.sh *.java $SRC/
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> 46c3151f5bc9
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Step 7/7 : WORKDIR $SRC/quartz
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> Running in 8a72bdfa287d
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Removing intermediate container 8a72bdfa287d
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a":  ---> 56c6e2b27e58
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Successfully built 56c6e2b27e58
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Successfully tagged gcr.io/oss-fuzz/quartz:latest
+Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/quartz:latest
+Finished Step #1 - "build-0e690b6d-e1a1-44cb-b2ee-83524cbb002a"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/quartz
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/filex0cGQO
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ jvm == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/quartz/.git
+Step #2 - "srcmap": + GIT_DIR=/src/quartz
+Step #2 - "srcmap": + cd /src/quartz
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/quartz-scheduler/quartz
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=5fd9d6b1bb8b0629abe38543f45aee392c0ca937
+Step #2 - "srcmap": + jq_inplace /tmp/filex0cGQO '."/src/quartz" = { type: "git", url: "https://github.com/quartz-scheduler/quartz", rev: "5fd9d6b1bb8b0629abe38543f45aee392c0ca937" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/file2SJo69
+Step #2 - "srcmap": + cat /tmp/filex0cGQO
+Step #2 - "srcmap": + jq '."/src/quartz" = { type: "git", url: "https://github.com/quartz-scheduler/quartz", rev: "5fd9d6b1bb8b0629abe38543f45aee392c0ca937" }'
+Step #2 - "srcmap": + mv /tmp/file2SJo69 /tmp/filex0cGQO
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/filex0cGQO
+Step #2 - "srcmap": + rm /tmp/filex0cGQO
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/quartz": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/quartz-scheduler/quartz",
+Step #2 - "srcmap":     "rev": "5fd9d6b1bb8b0629abe38543f45aee392c0ca937"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=leak
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=leak
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + ./gradlew clean build -x test -x javadoc -x sources
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading https://services.gradle.org/distributions/gradle-8.5-bin.zip
+Step #3 - "compile-libfuzzer-address-x86_64": ............10%.............20%............30%.............40%.............50%............60%.............70%.............80%............90%.............100%
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Welcome to Gradle 8.5!
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Here are the highlights of this release:
+Step #3 - "compile-libfuzzer-address-x86_64":  - Support for running on Java 21
+Step #3 - "compile-libfuzzer-address-x86_64":  - Faster first use with Kotlin DSL
+Step #3 - "compile-libfuzzer-address-x86_64":  - Improved error and warning messages
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": For more details see https://docs.gradle.org/8.5/release-notes.html
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Starting a Gradle Daemon (subsequent builds will be faster)
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [2A[1B[1m> Starting Daemon[m[17D[1B[1A> IDLE[0K[6D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [100ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [200ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [300ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [400ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [500ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [600ms][m[39D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [700ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [800ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [900ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [1s][m[0K[36D[2B[1A[1m> Evaluating settings > Compiling settings file 'settings.gradle'[m[65D[1B[1A[1m> Evaluating settings[m[0K[21D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [2s][m[36D[2B[1A> IDLE[0K[6D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [2s][m[0K[35D[1B[1m> Loading projects[m[18D[1B[1A[1m> root project[m[0K[14D[1B[1A[1m> root project > Compiling build file 'build.gradle'[m[52D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [3s][m[35D[2B[1A[1m> root project[m[0K[14D[1B[1A[1m> root project > Resolve dependencies of detachedConfiguration1[m[63D[1B[1A[1m> root project > Resolve dependencies of detachedConfiguration1 > io.github.gra[m[79D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [4s][m[35D[1B[1m> root project > Resolve dependencies of detachedConfiguration1[m[0K[63D[1B[1A[1m> root project[m[0K[14D[1B[1A[1m> root project > Resolve dependencies of :classpath > publish-plugin-2.0.0.pom[m[78D[1B[1A[1m> root project > Resolve dependencies of :classpath > publish-plugin-2.0.0.modu[m[79D[1B[1A[1m> root project > Resolve files of :classpath > publish-plugin-2.0.0.jar[m[0K[71D[1B[1A[1m> root project > Resolve files of :classpath > publish-plugin-2.0.0.jar > 750.2[m[79D[1B[1A[1m> root project > Resolve files of :classpath[m[0K[44D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [5s][m[35D[1B[1m> root project[m[0K[14D[1B[1A[1m> root project > Compiling build file 'build.gradle'[m[52D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [6s][m[35D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1m==[0;39;1m-----------> 20% CONFIGURING [6s][m[36D[1B[1m> :examples[m[0K[11D[1B[2A[1m<[0;32;1m=====[0;39;1m--------> 40% CONFIGURING [6s][m[36D[1B[1m> :quartz[m[0K[9D[1B[1A[1m> :quartz > Resolve dependencies of detachedConfiguration1[m[58D[1B[1A[1m> :quartz > Resolve dependencies of :quartz:classpath > biz.aQute.bnd.gradle-6.[m[79D[1B[2A[1m<[0;32;1m=====[0;39;1m--------> 40% CONFIGURING [7s][m[36D[2B
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [4A[1m> :quartz > Resolve dependencies of :quartz:classpath > biz.aQute.resolve-6.4.0[m[79D[1B[1m> :quartz > Resolve dependencies of :quartz:classpath > biz.aQute.bnd.util-6.4.[m[79D[1B[1m> :quartz > Resolve dependencies of :quartz:classpath > biz.aQute.repository-6.[m[79D[1B[1m> :quartz > Resolve dependencies of :quartz:classpath > biz.aQute.bndlib-6.4.0.[m[79D[1B[4A[1m> :quartz > Resolve dependencies of :quartz:classpath > org.osgi.util.tracker-1[m[79D[1B[1m> :quartz > Resolve dependencies of :quartz:classpath > org.osgi.dto-1.0.0.pom[m[0K[78D[1B[1m> :quartz > Resolve dependencies of :quartz:classpath > org.osgi.resource-1.0.0[m[79D[1B[1m> :quartz > Resolve dependencies of :quartz:classpath > org.osgi.framework-1.8.[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[2B> IDLE[0K[6D[1B[2A[1m> :quartz > Resolve dependencies of :quartz:classpath > org.osgi.service.coordi[m[79D[2B[2A[1m> :quartz > Resolve dependencies of :quartz:classpath > org.osgi.service.resolv[m[79D[2B[2A[1m> :quartz > Resolve dependencies of :quartz:classpath > osgi.annotation-8.0.1.p[m[79D[2B[4A[1m> :quartz > Resolve files of :quartz:classpath > biz.aQute.bndlib-6.4.0.jar > 6[m[79D[1B[1m> :quartz > Resolve files of :quartz:classpath > biz.aQute.repository-6.4.0.jar[m[79D[1B[1m> :quartz > Resolve files of :quartz:classpath > biz.aQute.bnd.embedded-repo-6.[m[79D[1B[1m> :quartz > Resolve files of :quartz:classpath > org.osgi.framework-1.8.0.jar >[m[79D[1B[4A[1m> :quartz > Resolve files of :quartz:classpath > biz.aQute.bndlib-6.4.0.jar > 1[m[79D[3B[1m> :quartz > Resolve files of :quartz:classpath > org.osgi.util.promise-1.2.0.ja[m[79D[1B[5A[1m<[0;32;1m=====[0;39;1m--------> 40% CONFIGURING [8s][m[36D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[2B> IDLE[0K[6D[1B[5A[1m<[0;31;1m=======[0;39;1m------> 60% CONFIGURING [8s][m[36D[3B> IDLE[0K[6D[2B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [31mFAILURE: [39m[31mBuild failed with an exception.[39m[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": * What went wrong:[0K
+Step #3 - "compile-libfuzzer-address-x86_64": A problem occurred configuring project ':quartz'.[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [33m> [39mCould not resolve all files for configuration ':quartz:classpath'.
+Step #3 - "compile-libfuzzer-address-x86_64":    [33m> [39mCould not download biz.aQute.resolve-6.4.0.jar (biz.aQute.bnd:biz.aQute.resolve:6.4.0)
+Step #3 - "compile-libfuzzer-address-x86_64":       [33m> [39mCould not get resource 'https://plugins.gradle.org/m2/biz/aQute/bnd/biz.aQute.resolve/6.4.0/biz.aQute.resolve-6.4.0.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":          [33m> [39mCould not GET 'https://repo.maven.apache.org/maven2/biz/aQute/bnd/biz.aQute.resolve/6.4.0/biz.aQute.resolve-6.4.0.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":             [33m> [39mReceived fatal alert: handshake_failure
+Step #3 - "compile-libfuzzer-address-x86_64":    [33m> [39mCould not download biz.aQute.bnd.util-6.4.0.jar (biz.aQute.bnd:biz.aQute.bnd.util:6.4.0)
+Step #3 - "compile-libfuzzer-address-x86_64":       [33m> [39mCould not get resource 'https://plugins.gradle.org/m2/biz/aQute/bnd/biz.aQute.bnd.util/6.4.0/biz.aQute.bnd.util-6.4.0.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":          [33m> [39mCould not GET 'https://repo.maven.apache.org/maven2/biz/aQute/bnd/biz.aQute.bnd.util/6.4.0/biz.aQute.bnd.util-6.4.0.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":             [33m> [39mReceived fatal alert: handshake_failure
+Step #3 - "compile-libfuzzer-address-x86_64":    [33m> [39mCould not download org.osgi.dto-1.0.0.jar (org.osgi:org.osgi.dto:1.0.0)
+Step #3 - "compile-libfuzzer-address-x86_64":       [33m> [39mCould not get resource 'https://plugins.gradle.org/m2/org/osgi/org.osgi.dto/1.0.0/org.osgi.dto-1.0.0.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":          [33m> [39mCould not GET 'https://repo.maven.apache.org/maven2/org/osgi/org.osgi.dto/1.0.0/org.osgi.dto-1.0.0.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":             [33m> [39mReceived fatal alert: handshake_failure
+Step #3 - "compile-libfuzzer-address-x86_64":    [33m> [39mCould not download org.osgi.service.repository-1.1.0.jar (org.osgi:org.osgi.service.repository:1.1.0)
+Step #3 - "compile-libfuzzer-address-x86_64":       [33m> [39mCould not get resource 'https://plugins.gradle.org/m2/org/osgi/org.osgi.service.repository/1.1.0/org.osgi.service.repository-1.1.0.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":          [33m> [39mCould not GET 'https://repo.maven.apache.org/maven2/org/osgi/org.osgi.service.repository/1.1.0/org.osgi.service.repository-1.1.0.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":             [33m> [39mReceived fatal alert: handshake_failure
+Step #3 - "compile-libfuzzer-address-x86_64":    [33m> [39mCould not download org.osgi.service.coordinator-1.0.2.jar (org.osgi:org.osgi.service.coordinator:1.0.2)
+Step #3 - "compile-libfuzzer-address-x86_64":       [33m> [39mCould not get resource 'https://plugins.gradle.org/m2/org/osgi/org.osgi.service.coordinator/1.0.2/org.osgi.service.coordinator-1.0.2.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":          [33m> [39mCould not GET 'https://repo.maven.apache.org/maven2/org/osgi/org.osgi.service.coordinator/1.0.2/org.osgi.service.coordinator-1.0.2.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":             [33m> [39mReceived fatal alert: handshake_failure
+Step #3 - "compile-libfuzzer-address-x86_64":    [33m> [39mCould not download org.osgi.service.resolver-1.1.1.jar (org.osgi:org.osgi.service.resolver:1.1.1)
+Step #3 - "compile-libfuzzer-address-x86_64":       [33m> [39mCould not get resource 'https://plugins.gradle.org/m2/org/osgi/org.osgi.service.resolver/1.1.1/org.osgi.service.resolver-1.1.1.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":          [33m> [39mCould not GET 'https://repo.maven.apache.org/maven2/org/osgi/org.osgi.service.resolver/1.1.1/org.osgi.service.resolver-1.1.1.jar'.
+Step #3 - "compile-libfuzzer-address-x86_64":             [33m> [39mReceived fatal alert: handshake_failure
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": * Try:
+Step #3 - "compile-libfuzzer-address-x86_64": [33m> [39mRun with [1m--stacktrace[m option to get the stack trace.
+Step #3 - "compile-libfuzzer-address-x86_64": [33m> [39mRun with [1m--info[m or [1m--debug[m option to get more log output.
+Step #3 - "compile-libfuzzer-address-x86_64": [33m> [39mRun with [1m--scan[m to get full insights.
+Step #3 - "compile-libfuzzer-address-x86_64": [33m> [39mGet more help at [1mhttps://help.gradle.org[m.
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [31;1mBUILD FAILED[0;39m in 13s
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[2K[1B[2K[1B[2K[1B[2K[1B[2K[4A[0m[?12l[?25h********************************************************************************
+Step #3 - "compile-libfuzzer-address-x86_64": Failed to build.
+Step #3 - "compile-libfuzzer-address-x86_64": To reproduce, run:
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_image quartz
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_fuzzers --sanitizer address --engine libfuzzer --architecture x86_64 quartz
+Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+ERROR
+ERROR: build step 3 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

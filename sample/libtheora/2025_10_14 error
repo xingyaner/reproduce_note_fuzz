@@ -1,0 +1,291 @@
+starting build "0d298d47-5f29-4b05-91d1-8394bae7cedf"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9"
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Sending build context to Docker daemon  6.656kB
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Step 1/7 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b549f31133a9: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 7116a92c01de: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b11f5ad22a40: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": a6da84ec78ca: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 1b52e907a28a: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b66e9cd0f971: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 06cfddc50eb4: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f8746400158b: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 4347830c1951: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 86e78d89b166: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": bd4bd96fe257: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0991c68827f7: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e8fc5e6a7d33: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f322a6e64378: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": a9e5f87a9757: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": c8f59c9f73d5: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 65d7af5531b2: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": efc3995c7887: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 55c0197e7ca1: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 1b52e907a28a: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 7f1a477b641f: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 2727aca0fc62: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": c45c1b77dfa3: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b66e9cd0f971: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 858441124890: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 47f832a8bc7c: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 06cfddc50eb4: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0e3a5ff90069: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f5b796d891a7: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 42ccf6e2b063: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f8746400158b: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0531ed1b8681: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 4347830c1951: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f9fef266841d: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b95c3f8c0036: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 6766f385176f: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f322a6e64378: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 6748833f8d46: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 20d3a0d4b01e: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e5e954537764: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": a9e5f87a9757: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": d262fc4eee92: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e6e07c50b02a: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 86e78d89b166: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": c8f59c9f73d5: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 23606678b4e3: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": bd4bd96fe257: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": ed1a63cde6d6: Pulling fs layer
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 65d7af5531b2: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0531ed1b8681: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e5e954537764: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": efc3995c7887: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0991c68827f7: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f9fef266841d: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": d262fc4eee92: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 55c0197e7ca1: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b95c3f8c0036: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": ed1a63cde6d6: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 7f1a477b641f: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 6766f385176f: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 20d3a0d4b01e: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e6e07c50b02a: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 2727aca0fc62: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 23606678b4e3: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": c45c1b77dfa3: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 858441124890: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 6748833f8d46: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 47f832a8bc7c: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 42ccf6e2b063: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0e3a5ff90069: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": a6da84ec78ca: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f5b796d891a7: Waiting
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b11f5ad22a40: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b11f5ad22a40: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b549f31133a9: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b549f31133a9: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 1b52e907a28a: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 1b52e907a28a: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": a6da84ec78ca: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": a6da84ec78ca: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 06cfddc50eb4: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f8746400158b: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f8746400158b: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 7116a92c01de: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 7116a92c01de: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b549f31133a9: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 86e78d89b166: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 86e78d89b166: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": bd4bd96fe257: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": bd4bd96fe257: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0991c68827f7: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0991c68827f7: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e8fc5e6a7d33: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e8fc5e6a7d33: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f322a6e64378: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 4347830c1951: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 4347830c1951: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": c8f59c9f73d5: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": c8f59c9f73d5: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": a9e5f87a9757: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": a9e5f87a9757: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": efc3995c7887: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": efc3995c7887: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 65d7af5531b2: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 65d7af5531b2: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 55c0197e7ca1: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 55c0197e7ca1: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 7f1a477b641f: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 7f1a477b641f: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 2727aca0fc62: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 2727aca0fc62: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": c45c1b77dfa3: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": c45c1b77dfa3: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 47f832a8bc7c: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 47f832a8bc7c: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 858441124890: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 858441124890: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0e3a5ff90069: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0e3a5ff90069: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f5b796d891a7: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f5b796d891a7: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 42ccf6e2b063: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0531ed1b8681: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0531ed1b8681: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f9fef266841d: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f9fef266841d: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 6766f385176f: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 6766f385176f: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b95c3f8c0036: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b95c3f8c0036: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 6748833f8d46: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b66e9cd0f971: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b66e9cd0f971: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 7116a92c01de: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b11f5ad22a40: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 20d3a0d4b01e: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e5e954537764: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": d262fc4eee92: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": d262fc4eee92: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e6e07c50b02a: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e6e07c50b02a: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 23606678b4e3: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 23606678b4e3: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": ed1a63cde6d6: Verifying Checksum
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": ed1a63cde6d6: Download complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": a6da84ec78ca: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 1b52e907a28a: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b66e9cd0f971: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 06cfddc50eb4: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f8746400158b: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 4347830c1951: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 86e78d89b166: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": bd4bd96fe257: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0991c68827f7: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e8fc5e6a7d33: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f322a6e64378: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": a9e5f87a9757: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": c8f59c9f73d5: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 65d7af5531b2: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": efc3995c7887: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 55c0197e7ca1: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 7f1a477b641f: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 2727aca0fc62: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": c45c1b77dfa3: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 858441124890: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 47f832a8bc7c: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0e3a5ff90069: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f5b796d891a7: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 42ccf6e2b063: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0531ed1b8681: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": f9fef266841d: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": b95c3f8c0036: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 6766f385176f: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 6748833f8d46: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 20d3a0d4b01e: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e5e954537764: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": d262fc4eee92: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": e6e07c50b02a: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 23606678b4e3: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": ed1a63cde6d6: Pull complete
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Digest: sha256:f0cf57facf9669c56ff588ba336026d769e1e9b5f6d12b865c5ed58bb9de055a
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":  ---> b09e37f7dac6
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Step 2/7 : RUN apt-get update && apt-get install -y make autoconf automake libtool
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":  ---> Running in 85d2e14cd9cf
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Hit:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Reading package lists...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Reading package lists...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Building dependency tree...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Reading state information...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": make set to manually installed.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": The following additional packages will be installed:
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":   file libltdl-dev libltdl7 libmagic-mgc libmagic1
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Suggested packages:
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":   autoconf-archive gnu-standards autoconf-doc gettext libtool-doc gfortran
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":   | fortran95-compiler gcj-jdk
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": The following NEW packages will be installed:
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":   autoconf automake file libltdl-dev libltdl7 libmagic-mgc libmagic1 libtool
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": 0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Need to get 1522 kB of archives.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": After this operation, 12.3 MB of additional disk space will be used.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": [0mFetched 1522 kB in 0s (4508 kB/s)
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Preparing to unpack .../0-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Preparing to unpack .../1-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Selecting previously unselected package file.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Preparing to unpack .../2-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Unpacking file (1:5.38-4) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Selecting previously unselected package autoconf.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Preparing to unpack .../3-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Selecting previously unselected package automake.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Preparing to unpack .../4-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Preparing to unpack .../5-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Preparing to unpack .../6-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Selecting previously unselected package libtool.
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Preparing to unpack .../7-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Setting up file (1:5.38-4) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Removing intermediate container 85d2e14cd9cf
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":  ---> f72ea66adf6f
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Step 3/7 : RUN git clone --depth 1 https://gitlab.xiph.org/xiph/ogg.git
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":  ---> Running in 30df60d46d81
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": [91mCloning into 'ogg'...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": [0mRemoving intermediate container 30df60d46d81
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":  ---> f8052fb51104
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Step 4/7 : RUN git clone --depth 1 https://gitlab.xiph.org/xiph/theora.git libtheora
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":  ---> Running in 8ddd0cf534cd
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": [91mCloning into 'libtheora'...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": [0mRemoving intermediate container 8ddd0cf534cd
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":  ---> f43a8ee9855c
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Step 5/7 : RUN git clone --depth 1 https://github.com/tmatth/oss-fuzz-fuzzers.git
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":  ---> Running in a2b347038116
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": [91mCloning into 'oss-fuzz-fuzzers'...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": [0mRemoving intermediate container a2b347038116
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":  ---> 523d82eb396c
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": Step 6/7 : RUN git clone --depth 1 https://github.com/guidovranken/fuzzing-headers.git
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9":  ---> Running in 430b4df18652
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": [91mCloning into 'fuzzing-headers'...
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": [0m[91mfatal: could not read Username for 'https://github.com': No such device or address
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": The command '/bin/sh -c git clone --depth 1 https://github.com/guidovranken/fuzzing-headers.git' returned a non-zero code: 128
+Finished Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 128
+Step #1 - "build-4b152b81-d9ff-49a1-9737-b56645906cd9": [0m

@@ -1,0 +1,330 @@
+starting build "f2755736-86b4-4631-b0e3-cbcb0a6f5434"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547"
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Sending build context to Docker daemon   5.12kB
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Step 1/6 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b549f31133a9: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 46bc15c7fc6e: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 2b268f581054: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ffe3dcaf1d9d: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 42969b9d7aa8: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 6292325f8ccd: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1d61bc3d638b: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": cf476e9c3401: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 3e32d146a183: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": a3c0235ecb84: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 6a2412fe4009: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": e3dc76fcf65d: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 7c50dbc2ce29: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": dc7417ab9f44: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 971cc0f0d80e: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 4d3bcfd84dd4: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 8b4fc56f2c76: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": d4d941dab629: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": f707fa7742be: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 3ad52dcf3abc: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 612a9ca4842b: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ea9045fe5927: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": aca22060c90a: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": be009a000acc: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 9de99b79f655: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": e2e0f319d9cd: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1ea7c7acbcfa: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 9e8d6f89d8bb: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b97bef066f4e: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": c01a3c5d8800: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ca5d51560d83: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1db5faef3523: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 322b82646034: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 50f197e652a1: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": f1e9f07fbf1b: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": af96dc95ac7a: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 74d1b799fa5e: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b583f4ef5f26: Pulling fs layer
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": dc7417ab9f44: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 971cc0f0d80e: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 4d3bcfd84dd4: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 8b4fc56f2c76: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": d4d941dab629: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": f707fa7742be: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 3ad52dcf3abc: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 612a9ca4842b: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ea9045fe5927: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": aca22060c90a: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": be009a000acc: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 9de99b79f655: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": e2e0f319d9cd: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1ea7c7acbcfa: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 9e8d6f89d8bb: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b97bef066f4e: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": c01a3c5d8800: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ca5d51560d83: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1db5faef3523: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 322b82646034: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 50f197e652a1: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": cf476e9c3401: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": f1e9f07fbf1b: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 3e32d146a183: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": af96dc95ac7a: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 74d1b799fa5e: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b583f4ef5f26: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": a3c0235ecb84: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": e3dc76fcf65d: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 7c50dbc2ce29: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 6a2412fe4009: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ffe3dcaf1d9d: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 42969b9d7aa8: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 6292325f8ccd: Waiting
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 2b268f581054: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b549f31133a9: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b549f31133a9: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 42969b9d7aa8: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 42969b9d7aa8: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ffe3dcaf1d9d: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ffe3dcaf1d9d: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1d61bc3d638b: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 46bc15c7fc6e: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 46bc15c7fc6e: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": cf476e9c3401: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b549f31133a9: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": a3c0235ecb84: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": a3c0235ecb84: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 6a2412fe4009: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 6a2412fe4009: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": e3dc76fcf65d: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": e3dc76fcf65d: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 7c50dbc2ce29: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 7c50dbc2ce29: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": dc7417ab9f44: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": dc7417ab9f44: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 3e32d146a183: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 3e32d146a183: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 971cc0f0d80e: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 971cc0f0d80e: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 4d3bcfd84dd4: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 4d3bcfd84dd4: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 8b4fc56f2c76: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": d4d941dab629: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": d4d941dab629: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": f707fa7742be: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 3ad52dcf3abc: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 3ad52dcf3abc: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 612a9ca4842b: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 612a9ca4842b: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ea9045fe5927: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": aca22060c90a: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": aca22060c90a: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": be009a000acc: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 9de99b79f655: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 9de99b79f655: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": e2e0f319d9cd: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1ea7c7acbcfa: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 9e8d6f89d8bb: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 9e8d6f89d8bb: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b97bef066f4e: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b97bef066f4e: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": c01a3c5d8800: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": c01a3c5d8800: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 46bc15c7fc6e: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ca5d51560d83: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ca5d51560d83: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 2b268f581054: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 6292325f8ccd: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 6292325f8ccd: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1db5faef3523: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1db5faef3523: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 322b82646034: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 50f197e652a1: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 50f197e652a1: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": f1e9f07fbf1b: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": af96dc95ac7a: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": af96dc95ac7a: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 74d1b799fa5e: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b583f4ef5f26: Verifying Checksum
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b583f4ef5f26: Download complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ffe3dcaf1d9d: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 42969b9d7aa8: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 6292325f8ccd: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1d61bc3d638b: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": cf476e9c3401: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 3e32d146a183: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": a3c0235ecb84: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 6a2412fe4009: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": e3dc76fcf65d: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 7c50dbc2ce29: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": dc7417ab9f44: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 971cc0f0d80e: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 4d3bcfd84dd4: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 8b4fc56f2c76: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": d4d941dab629: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": f707fa7742be: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 3ad52dcf3abc: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 612a9ca4842b: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ea9045fe5927: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": aca22060c90a: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": be009a000acc: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 9de99b79f655: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": e2e0f319d9cd: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1ea7c7acbcfa: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 9e8d6f89d8bb: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b97bef066f4e: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": c01a3c5d8800: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": ca5d51560d83: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 1db5faef3523: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 322b82646034: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 50f197e652a1: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": f1e9f07fbf1b: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": af96dc95ac7a: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 74d1b799fa5e: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": b583f4ef5f26: Pull complete
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Digest: sha256:2b7ffc98a5b69b2b7a1c9a661f9831eec1e37669d100c259425d0fd23435e89f
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":  ---> c5d27a603c39
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Step 2/6 : RUN apt-get update && apt-get install -y libz-dev autoconf mercurial
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":  ---> Running in f96f4d59394c
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Fetched 383 kB in 1s (548 kB/s)
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Reading package lists...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Reading package lists...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Building dependency tree...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Reading state information...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": The following additional packages will be installed:
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":   automake file libmagic-mgc libmagic1 libpython2-stdlib libpython2.7-minimal
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":   libpython2.7-stdlib mercurial-common mime-support python2 python2-minimal
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":   python2.7 python2.7-minimal ucf
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Suggested packages:
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":   autoconf-archive gnu-standards autoconf-doc libtool gettext kdiff3
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":   | kdiff3-qt | kompare | meld | tkcvs | mgdiff qct python-mysqldb
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":   python-openssl python-pygments wish python2-doc python-tk python2.7-doc
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":   binfmt-support
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": The following NEW packages will be installed:
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":   autoconf automake file libmagic-mgc libmagic1 libpython2-stdlib
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":   libpython2.7-minimal libpython2.7-stdlib mercurial mercurial-common
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":   mime-support python2 python2-minimal python2.7 python2.7-minimal ucf
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":   zlib1g-dev
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 0 upgraded, 17 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Need to get 8184 kB of archives.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": After this operation, 42.2 MB of additional disk space will be used.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:1 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-minimal amd64 2.7.18-1~20.04.7 [336 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:2 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7-minimal amd64 2.7.18-1~20.04.7 [1278 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:3 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2-minimal amd64 2.7.17-2ubuntu4 [27.5 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 mime-support all 3.64ubuntu1 [30.6 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-stdlib amd64 2.7.18-1~20.04.7 [1889 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7 amd64 2.7.18-1~20.04.7 [248 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:7 http://archive.ubuntu.com/ubuntu focal/universe amd64 libpython2-stdlib amd64 2.7.17-2ubuntu4 [7072 B]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:8 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2 amd64 2.7.17-2ubuntu4 [26.5 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 ucf all 3.0038+nmu1 [51.6 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:15 http://archive.ubuntu.com/ubuntu focal/universe amd64 mercurial-common all 5.3.1-1ubuntu1 [2650 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:16 http://archive.ubuntu.com/ubuntu focal/universe amd64 mercurial amd64 5.3.1-1ubuntu1 [323 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.5 [155 kB]
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": [0mFetched 8184 kB in 1s (5489 kB/s)
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package libpython2.7-minimal:amd64.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../0-libpython2.7-minimal_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking libpython2.7-minimal:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package python2.7-minimal.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../1-python2.7-minimal_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking python2.7-minimal (2.7.18-1~20.04.7) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package python2-minimal.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../2-python2-minimal_2.7.17-2ubuntu4_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking python2-minimal (2.7.17-2ubuntu4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package mime-support.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../3-mime-support_3.64ubuntu1_all.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking mime-support (3.64ubuntu1) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package libpython2.7-stdlib:amd64.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../4-libpython2.7-stdlib_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking libpython2.7-stdlib:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package python2.7.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../5-python2.7_2.7.18-1~20.04.7_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking python2.7 (2.7.18-1~20.04.7) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package libpython2-stdlib:amd64.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../6-libpython2-stdlib_2.7.17-2ubuntu4_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking libpython2-stdlib:amd64 (2.7.17-2ubuntu4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up libpython2.7-minimal:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up python2.7-minimal (2.7.18-1~20.04.7) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up python2-minimal (2.7.17-2ubuntu4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package python2.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18259 files and directories currently installed.)
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../0-python2_2.7.17-2ubuntu4_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking python2 (2.7.17-2ubuntu4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../1-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../2-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package file.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../3-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking file (1:5.38-4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package ucf.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../4-ucf_3.0038+nmu1_all.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Moving old data out of the way
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking ucf (3.0038+nmu1) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package autoconf.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../5-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package automake.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../6-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package mercurial-common.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../7-mercurial-common_5.3.1-1ubuntu1_all.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking mercurial-common (5.3.1-1ubuntu1) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package mercurial.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../8-mercurial_5.3.1-1ubuntu1_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking mercurial (5.3.1-1ubuntu1) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Selecting previously unselected package zlib1g-dev:amd64.
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Preparing to unpack .../9-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu1.5_amd64.deb ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up mime-support (3.64ubuntu1) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up file (1:5.38-4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up libpython2.7-stdlib:amd64 (2.7.18-1~20.04.7) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up ucf (3.0038+nmu1) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up python2.7 (2.7.18-1~20.04.7) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up libpython2-stdlib:amd64 (2.7.17-2ubuntu4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up python2 (2.7.17-2ubuntu4) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up mercurial-common (5.3.1-1ubuntu1) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Setting up mercurial (5.3.1-1ubuntu1) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": 
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Creating config file /etc/mercurial/hgrc.d/hgext.rc with new version
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Removing intermediate container f96f4d59394c
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":  ---> 283a0761e02d
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": Step 3/6 : RUN hg clone https://hg.ucc.asn.au/dropbear-fuzzcorpus dropbear-corpus
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547":  ---> Running in 57f976cf687a
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": [91mtransaction abort!
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": [0mrequesting all changes
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": adding changesets
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": adding manifests
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": adding file changes
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": [91mrollback completed
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": [0m[91mabort: stream ended unexpectedly  (got 30170 bytes, expected 32768)
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": The command '/bin/sh -c hg clone https://hg.ucc.asn.au/dropbear-fuzzcorpus dropbear-corpus' returned a non-zero code: 255
+Finished Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 255
+Step #1 - "build-fe57687e-ac48-4194-b4b1-21e9a1666547": [0m

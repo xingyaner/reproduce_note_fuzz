@@ -1,0 +1,327 @@
+starting build "0cd14173-858e-4d01-8513-924eaeb0629d"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7"
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Sending build context to Docker daemon  6.656kB
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Step 1/4 : FROM gcr.io/oss-fuzz-base/base-builder-go
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": latest: Pulling from oss-fuzz-base/base-builder-go
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b549f31133a9: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 6fb0228e1699: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1e95fbb99620: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b9c6cfa559ea: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 890674aa158b: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 915df9e44ed9: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 4fe872e55bc3: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 8ff28619ed3a: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 2d04d1c632fc: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": fdef3b700f37: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 42e96ce93e57: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 09bf5aca0f64: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 42baeef2079a: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": c1dc63a851b7: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 077af4ca6b6a: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": a234fa95b55f: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1629e1047999: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 8733e387d2a4: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 3171588c3234: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": dd638b0ffe6f: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": f68f40c63979: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 5432e629e9f3: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 0b4c8aa032a0: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b47eeae16a52: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": d8daab37a9e0: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 953091638f41: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1fbb0ed3e6ec: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1a65fb42d142: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 27c4bb8f30f8: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 705599c2a601: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b5a291d00754: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 18b501857156: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 635f49e3b090: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 064be6643354: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": de2c9226d15d: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": a46fc48732e3: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 225969ab5c99: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 3256ea500a22: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 7a6fdfb3bb0c: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 91863f9831ba: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": e8c37ae35a9f: Pulling fs layer
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 09bf5aca0f64: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 077af4ca6b6a: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 2d04d1c632fc: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 42baeef2079a: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": a234fa95b55f: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": fdef3b700f37: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 42e96ce93e57: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1629e1047999: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 705599c2a601: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b5a291d00754: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 8733e387d2a4: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 18b501857156: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b9c6cfa559ea: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 3171588c3234: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 635f49e3b090: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 890674aa158b: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": c1dc63a851b7: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 064be6643354: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": dd638b0ffe6f: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": de2c9226d15d: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1a65fb42d142: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": f68f40c63979: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": a46fc48732e3: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 953091638f41: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 5432e629e9f3: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 225969ab5c99: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1fbb0ed3e6ec: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 0b4c8aa032a0: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 3256ea500a22: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b47eeae16a52: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 7a6fdfb3bb0c: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": d8daab37a9e0: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 91863f9831ba: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 4fe872e55bc3: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 27c4bb8f30f8: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 915df9e44ed9: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 8ff28619ed3a: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": e8c37ae35a9f: Waiting
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1e95fbb99620: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b549f31133a9: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b549f31133a9: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 890674aa158b: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 890674aa158b: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b9c6cfa559ea: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b9c6cfa559ea: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 4fe872e55bc3: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 4fe872e55bc3: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 8ff28619ed3a: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 8ff28619ed3a: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 6fb0228e1699: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 6fb0228e1699: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b549f31133a9: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": fdef3b700f37: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": fdef3b700f37: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 42e96ce93e57: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 42e96ce93e57: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 09bf5aca0f64: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 09bf5aca0f64: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 42baeef2079a: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 42baeef2079a: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": c1dc63a851b7: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": c1dc63a851b7: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 2d04d1c632fc: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 2d04d1c632fc: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 077af4ca6b6a: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 077af4ca6b6a: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": a234fa95b55f: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": a234fa95b55f: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1629e1047999: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1629e1047999: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 8733e387d2a4: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 8733e387d2a4: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 3171588c3234: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 3171588c3234: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": dd638b0ffe6f: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": dd638b0ffe6f: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": f68f40c63979: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": f68f40c63979: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 5432e629e9f3: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 0b4c8aa032a0: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 0b4c8aa032a0: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b47eeae16a52: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": d8daab37a9e0: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": d8daab37a9e0: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 953091638f41: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1fbb0ed3e6ec: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1a65fb42d142: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1a65fb42d142: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 27c4bb8f30f8: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 27c4bb8f30f8: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 705599c2a601: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 705599c2a601: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b5a291d00754: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b5a291d00754: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 6fb0228e1699: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 18b501857156: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 18b501857156: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 635f49e3b090: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1e95fbb99620: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 915df9e44ed9: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 915df9e44ed9: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 064be6643354: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 064be6643354: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": de2c9226d15d: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": a46fc48732e3: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": a46fc48732e3: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 7a6fdfb3bb0c: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 7a6fdfb3bb0c: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 225969ab5c99: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 225969ab5c99: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 3256ea500a22: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 3256ea500a22: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": e8c37ae35a9f: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": e8c37ae35a9f: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b9c6cfa559ea: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 890674aa158b: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 91863f9831ba: Verifying Checksum
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 91863f9831ba: Download complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 915df9e44ed9: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 4fe872e55bc3: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 8ff28619ed3a: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 2d04d1c632fc: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": fdef3b700f37: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 42e96ce93e57: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 09bf5aca0f64: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 42baeef2079a: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": c1dc63a851b7: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 077af4ca6b6a: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": a234fa95b55f: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1629e1047999: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 8733e387d2a4: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 3171588c3234: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": dd638b0ffe6f: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": f68f40c63979: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 5432e629e9f3: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 0b4c8aa032a0: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b47eeae16a52: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": d8daab37a9e0: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 953091638f41: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1fbb0ed3e6ec: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 1a65fb42d142: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 27c4bb8f30f8: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 705599c2a601: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": b5a291d00754: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 18b501857156: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 635f49e3b090: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 064be6643354: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": de2c9226d15d: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": a46fc48732e3: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 225969ab5c99: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 3256ea500a22: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 7a6fdfb3bb0c: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": 91863f9831ba: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": e8c37ae35a9f: Pull complete
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Digest: sha256:fe7d2d7f8c1127af4b9103c4e6907cf890645f960d863769f79ffa4c1f16b384
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-go:latest
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7":  ---> 17ed613989c9
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Step 2/4 : RUN git clone --depth 1 https://github.com/facebook/time.git
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7":  ---> Running in de65fb6e83a9
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": [91mCloning into 'time'...
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": [0mRemoving intermediate container de65fb6e83a9
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7":  ---> 84feb4dafe1f
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Step 3/4 : COPY build.sh $SRC/
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7":  ---> 7125660528fc
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Step 4/4 : WORKDIR $SRC/time
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7":  ---> Running in 935b726c4d70
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Removing intermediate container 935b726c4d70
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7":  ---> 840de2442519
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Successfully built 840de2442519
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Successfully tagged gcr.io/oss-fuzz/time:latest
+Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/time:latest
+Finished Step #1 - "build-3b0dedc5-d193-4fa7-ad44-49249e6296b7"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/time
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/filekers9P
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ go == \g\o ]]
+Step #2 - "srcmap": + PATHS_TO_SCAN='/src /root/go'
+Step #2 - "srcmap": ++ find /src /root/go -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/time/.git
+Step #2 - "srcmap": + GIT_DIR=/src/time
+Step #2 - "srcmap": + cd /src/time
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/facebook/time.git
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=a511ac5cd774ae81bc76f0c08b0402cea77d7008
+Step #2 - "srcmap": + jq_inplace /tmp/filekers9P '."/src/time" = { type: "git", url: "https://github.com/facebook/time.git", rev: "a511ac5cd774ae81bc76f0c08b0402cea77d7008" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileqjtibd
+Step #2 - "srcmap": + cat /tmp/filekers9P
+Step #2 - "srcmap": + jq '."/src/time" = { type: "git", url: "https://github.com/facebook/time.git", rev: "a511ac5cd774ae81bc76f0c08b0402cea77d7008" }'
+Step #2 - "srcmap": + mv /tmp/fileqjtibd /tmp/filekers9P
+Step #2 - "srcmap": ++ find /src /root/go -name .svn -type d
+Step #2 - "srcmap": ++ find /src /root/go -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/filekers9P
+Step #2 - "srcmap": + rm /tmp/filekers9P
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/time": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/facebook/time.git",
+Step #2 - "srcmap":     "rev": "a511ac5cd774ae81bc76f0c08b0402cea77d7008"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++ -lresolv
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + go install golang.org/x/tools/cmd/goimports@latest
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/tools v0.37.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/telemetry v0.0.0-20250908211612-aef8a434d053
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/sync v0.17.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/mod v0.28.0
+Step #3 - "compile-libfuzzer-address-x86_64": + go get github.com/AdamKorcz/go-118-fuzz-build/testing
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/AdamKorcz/go-118-fuzz-build v0.0.0-20250520111509-a70c2aa677fa
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/AdaLogics/go-fuzz-headers v0.0.0-20230811130428-ced1acdcaa24
+Step #3 - "compile-libfuzzer-address-x86_64": go: added github.com/AdaLogics/go-fuzz-headers v0.0.0-20230811130428-ced1acdcaa24
+Step #3 - "compile-libfuzzer-address-x86_64": go: added github.com/AdamKorcz/go-118-fuzz-build v0.0.0-20250520111509-a70c2aa677fa
+Step #3 - "compile-libfuzzer-address-x86_64": + go get github.com/stretchr/testify/assert@v1.7.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/stretchr/testify v1.7.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/pmezard/go-difflib v1.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading gopkg.in/yaml.v3 v3.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/davecgh/go-spew v1.1.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/stretchr/objx v0.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downgraded github.com/stretchr/objx v0.5.0 => v0.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downgraded github.com/stretchr/testify v1.8.4 => v1.7.0
+Step #3 - "compile-libfuzzer-address-x86_64": + go get github.com/facebook/time/fbclock/daemon
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/Knetic/govaluate v3.0.0+incompatible
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/sync v0.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/sirupsen/logrus v1.8.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading gopkg.in/yaml.v2 v2.4.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/eclesh/welford v0.0.0-20150116075914-eec62615b1f0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/sys v0.31.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/prometheus/client_golang v1.14.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/prometheus/common v0.37.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/beorn7/perks v1.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/cespare/xxhash/v2 v2.1.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/golang/protobuf v1.5.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading google.golang.org/protobuf v1.33.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/prometheus/procfs v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/prometheus/client_model v0.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/cespare/xxhash v1.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/matttproud/golang_protobuf_extensions v1.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": + sed -i -e '/func TestHashShouldMatch(/,/^}/ s/^/\/\//' leaphash/leaphash_test.go
+Step #3 - "compile-libfuzzer-address-x86_64": + sed -i -e '/func Benchmark.*(/,/^}/ s/^/\/\//' ntp/protocol/ntp_test.go
+Step #3 - "compile-libfuzzer-address-x86_64": + goimports -w ntp/protocol/ntp_test.go
+Step #3 - "compile-libfuzzer-address-x86_64": + sed -i -e '/func Benchmark.*(/,/^}/ s/^/\/\//' ptp/protocol/protocol_test.go
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_native_go_fuzzer github.com/facebook/time/fbclock/daemon FuzzPrepareExpression fuzz_prepare_expression
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_native_go_fuzzer github.com/facebook/time/leaphash FuzzCompute fuzz_compute
+Step #3 - "compile-libfuzzer-address-x86_64": # github.com/facebook/time/leaphash
+Step #3 - "compile-libfuzzer-address-x86_64": leaphash/leaphash_test.go_fuzz.go:4:2: "github.com/stretchr/testify/require" imported and not used
+Step #3 - "compile-libfuzzer-address-x86_64": 2025/09/26 06:32:49 failed to build packages:exit status 1
+Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
+Step #3 - "compile-libfuzzer-address-x86_64": Failed to build.
+Step #3 - "compile-libfuzzer-address-x86_64": To reproduce, run:
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_image time
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_fuzzers --sanitizer address --engine libfuzzer --architecture x86_64 time
+Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+ERROR
+ERROR: build step 3 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

@@ -90,7 +90,7 @@ classify_agent = LlmAgent(
     上一步的输出 `build_attempt_result` 是一个包含所有信息的 JSON 字符串。
 
     **请严格遵循以下步骤：**
-
+    **在处理完成之后必须进行标记**
     1.  **解析输入**: 首先，解析 `build_attempt_result` 中的 JSON 数据。
 
     2.  **检查状态**: 查看 JSON 中的 `status` 字段。
@@ -143,6 +143,7 @@ classify_agent = LlmAgent(
     5.  **记录到表格**: 调用 `update_reproduce_table` 工具。所有参数（`project_name`, `date`, `category`, `failure_reason`, `is_consistent`）都必须来自你的分析结果。
 
     6.  **最终标记**: 无论记录是否成功，最后都**必须**调用 `mark_log_as_processed_by_rename` 工具，`log_path` 参数必须来自 JSON。
+
     """,
     tools=[
         read_file_content,

@@ -1,0 +1,492 @@
+starting build "ba1d137e-fca0-45d8-99d8-3381eb093776"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa"
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Sending build context to Docker daemon   16.9kB
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Step 1/13 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": b549f31133a9: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 1f6d64c5d9e3: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 37910743e6c9: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 249fd738df73: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 877bc6daf7ff: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": c954e3a1628d: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 90b67e5f3d5d: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 607e5f9ff9b7: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 01b6b52ab58d: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": dc196883e826: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 39c315fa3e62: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": b128bb74f491: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 342a47195bee: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 80b0a48a62d6: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 292fd52b5e7b: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 6e5f267ab26d: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": cb37ac0c0f76: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 97510fefe804: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": c7c97ce1f4ee: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 2f785f2ba55b: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": e8ccfa4bf60b: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 18848b6b3b2d: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": d58603dd1459: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 09ffd541f975: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": f3103754af8a: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 56dbf4eb0319: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 4f9dee976b6c: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": e41bf5356a29: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": abe24445fcb1: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 2b2b1b3a3f33: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 831e926d8edb: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 55839d0a4df0: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 11c32f7fa0a0: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": d843b7d23d4f: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": ab63b404ef05: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 5807097b165b: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 870bf89a9fc6: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": a90bcc532245: Pulling fs layer
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 607e5f9ff9b7: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": b128bb74f491: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 90b67e5f3d5d: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": c954e3a1628d: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 342a47195bee: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 249fd738df73: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 80b0a48a62d6: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 01b6b52ab58d: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": dc196883e826: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 39c315fa3e62: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": e41bf5356a29: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 292fd52b5e7b: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 877bc6daf7ff: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": f3103754af8a: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": abe24445fcb1: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 56dbf4eb0319: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": d58603dd1459: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 18848b6b3b2d: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 4f9dee976b6c: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 2b2b1b3a3f33: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 831e926d8edb: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 09ffd541f975: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 55839d0a4df0: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": cb37ac0c0f76: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": c7c97ce1f4ee: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 11c32f7fa0a0: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": d843b7d23d4f: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": ab63b404ef05: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 2f785f2ba55b: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 870bf89a9fc6: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 5807097b165b: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": a90bcc532245: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": e8ccfa4bf60b: Waiting
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 37910743e6c9: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": b549f31133a9: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 877bc6daf7ff: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 877bc6daf7ff: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 249fd738df73: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 249fd738df73: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 90b67e5f3d5d: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 90b67e5f3d5d: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 607e5f9ff9b7: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 607e5f9ff9b7: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 1f6d64c5d9e3: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 1f6d64c5d9e3: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": b549f31133a9: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": dc196883e826: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 39c315fa3e62: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 39c315fa3e62: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": b128bb74f491: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": b128bb74f491: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 342a47195bee: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 80b0a48a62d6: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 80b0a48a62d6: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 01b6b52ab58d: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 01b6b52ab58d: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 292fd52b5e7b: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 292fd52b5e7b: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 6e5f267ab26d: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 6e5f267ab26d: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 97510fefe804: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 97510fefe804: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": cb37ac0c0f76: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": cb37ac0c0f76: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": c7c97ce1f4ee: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": c7c97ce1f4ee: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 2f785f2ba55b: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 2f785f2ba55b: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": e8ccfa4bf60b: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": e8ccfa4bf60b: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 18848b6b3b2d: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 09ffd541f975: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 09ffd541f975: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": d58603dd1459: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": d58603dd1459: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": f3103754af8a: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": f3103754af8a: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 56dbf4eb0319: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 4f9dee976b6c: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": e41bf5356a29: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": e41bf5356a29: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": abe24445fcb1: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": abe24445fcb1: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 1f6d64c5d9e3: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 831e926d8edb: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 831e926d8edb: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 2b2b1b3a3f33: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 2b2b1b3a3f33: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 37910743e6c9: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": c954e3a1628d: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": c954e3a1628d: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 55839d0a4df0: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 55839d0a4df0: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 11c32f7fa0a0: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": d843b7d23d4f: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": d843b7d23d4f: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 5807097b165b: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 5807097b165b: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": ab63b404ef05: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": ab63b404ef05: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": a90bcc532245: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": a90bcc532245: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 870bf89a9fc6: Verifying Checksum
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 870bf89a9fc6: Download complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 249fd738df73: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 877bc6daf7ff: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": c954e3a1628d: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 90b67e5f3d5d: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 607e5f9ff9b7: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 01b6b52ab58d: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": dc196883e826: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 39c315fa3e62: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": b128bb74f491: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 342a47195bee: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 80b0a48a62d6: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 292fd52b5e7b: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 6e5f267ab26d: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": cb37ac0c0f76: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 97510fefe804: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": c7c97ce1f4ee: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 2f785f2ba55b: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": e8ccfa4bf60b: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 18848b6b3b2d: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": d58603dd1459: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 09ffd541f975: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": f3103754af8a: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 56dbf4eb0319: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 4f9dee976b6c: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": e41bf5356a29: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": abe24445fcb1: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 2b2b1b3a3f33: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 831e926d8edb: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 55839d0a4df0: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 11c32f7fa0a0: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": d843b7d23d4f: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": ab63b404ef05: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 5807097b165b: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 870bf89a9fc6: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": a90bcc532245: Pull complete
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Digest: sha256:dd1460e1639b1b553d3081474e14ffcd5f30ef9352be1d91039831068c22bf81
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":  ---> 2238bdb69a54
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Step 2/13 : RUN apt-get update && apt-get install -y make libtool pkg-config vim libreadline-dev wget autoconf
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":  ---> Running in ccd6de4e9822
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Hit:2 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Fetched 128 kB in 1s (134 kB/s)
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Reading package lists...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Reading package lists...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Building dependency tree...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Reading state information...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": make set to manually installed.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": wget is already the newest version (1.20.3-1ubuntu2.1).
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": The following additional packages will be installed:
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   alsa-topology-conf alsa-ucm-conf automake file libasound2 libasound2-data
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   libcanberra0 libglib2.0-0 libglib2.0-data libgpm2 libicu66 libltdl-dev
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   libltdl7 libmagic-mgc libmagic1 libmpdec2 libncurses-dev libogg0
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   libpython3.8 libpython3.8-minimal libpython3.8-stdlib libtdb1 libvorbis0a
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   libvorbisfile3 libxml2 mime-support shared-mime-info sound-theme-freedesktop
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   vim-common vim-runtime xdg-user-dirs xxd
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Suggested packages:
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   autoconf-archive gnu-standards autoconf-doc gettext libasound2-plugins
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   alsa-utils libcanberra-gtk0 libcanberra-pulse gpm libtool-doc ncurses-doc
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   readline-doc gfortran | fortran95-compiler gcj-jdk ctags vim-doc vim-scripts
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": The following NEW packages will be installed:
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   alsa-topology-conf alsa-ucm-conf autoconf automake file libasound2
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   libasound2-data libcanberra0 libglib2.0-0 libglib2.0-data libgpm2 libicu66
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   libltdl-dev libltdl7 libmagic-mgc libmagic1 libmpdec2 libncurses-dev libogg0
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   libpython3.8 libpython3.8-minimal libpython3.8-stdlib libreadline-dev
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   libtdb1 libtool libvorbis0a libvorbisfile3 libxml2 mime-support pkg-config
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   shared-mime-info sound-theme-freedesktop vim vim-common vim-runtime
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":   xdg-user-dirs xxd
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 0 upgraded, 37 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Need to get 25.4 MB of archives.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": After this operation, 116 MB of additional disk space will be used.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpdec2 amd64 2.4.2-3 [81.1 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-minimal amd64 3.8.10-0ubuntu1~20.04.18 [721 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 mime-support all 3.64ubuntu1 [30.6 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-stdlib amd64 3.8.10-0ubuntu1~20.04.18 [1676 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 xxd amd64 2:8.1.2269-1ubuntu5.32 [50.0 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 vim-common all 2:8.1.2269-1ubuntu5.32 [84.9 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 alsa-topology-conf all 1.2.2-1 [7364 B]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 alsa-ucm-conf all 1.2.2-1ubuntu0.13 [27.0 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libasound2-data all 1.2.2-2.1ubuntu2.5 [20.1 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libasound2 amd64 1.2.2-2.1ubuntu2.5 [335 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtdb1 amd64 1.4.5-0ubuntu0.20.04.1 [44.2 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:24 http://archive.ubuntu.com/ubuntu focal/main amd64 libogg0 amd64 1.3.4-0ubuntu1 [24.0 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 libvorbis0a amd64 1.3.6-2ubuntu1 [87.0 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:26 http://archive.ubuntu.com/ubuntu focal/main amd64 libvorbisfile3 amd64 1.3.6-2ubuntu1 [16.1 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:27 http://archive.ubuntu.com/ubuntu focal/main amd64 sound-theme-freedesktop all 0.8-2ubuntu1 [384 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:28 http://archive.ubuntu.com/ubuntu focal/main amd64 libcanberra0 amd64 0.30-7ubuntu1 [38.1 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:29 http://archive.ubuntu.com/ubuntu focal/main amd64 libgpm2 amd64 1.20.7-5 [15.1 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:30 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:31 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libncurses-dev amd64 6.2-0ubuntu2.1 [340 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:32 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8 amd64 3.8.10-0ubuntu1~20.04.18 [1625 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:33 http://archive.ubuntu.com/ubuntu focal/main amd64 libreadline-dev amd64 8.0-4 [141 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:34 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:35 http://archive.ubuntu.com/ubuntu focal/main amd64 pkg-config amd64 0.29.1-0ubuntu4 [45.5 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:36 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 vim-runtime all 2:8.1.2269-1ubuntu5.32 [5876 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Get:37 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 vim amd64 2:8.1.2269-1ubuntu5.32 [1241 kB]
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": [0mFetched 25.4 MB in 9s (2976 kB/s)
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../00-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../01-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package file.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../02-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking file (1:5.38-4) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libglib2.0-0:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../03-libglib2.0-0_2.64.6-1~ubuntu20.04.9_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libglib2.0-data.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../04-libglib2.0-data_2.64.6-1~ubuntu20.04.9_all.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libicu66:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../05-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libmpdec2:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../06-libmpdec2_2.4.2-3_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libmpdec2:amd64 (2.4.2-3) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libpython3.8-minimal:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../07-libpython3.8-minimal_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libpython3.8-minimal:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package mime-support.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../08-mime-support_3.64ubuntu1_all.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking mime-support (3.64ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libpython3.8-stdlib:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../09-libpython3.8-stdlib_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libpython3.8-stdlib:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libxml2:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../10-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package shared-mime-info.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../11-shared-mime-info_1.15-1_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking shared-mime-info (1.15-1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package xxd.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../12-xxd_2%3a8.1.2269-1ubuntu5.32_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking xxd (2:8.1.2269-1ubuntu5.32) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package vim-common.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../13-vim-common_2%3a8.1.2269-1ubuntu5.32_all.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking vim-common (2:8.1.2269-1ubuntu5.32) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package xdg-user-dirs.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../14-xdg-user-dirs_0.17-2ubuntu1_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package alsa-topology-conf.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../15-alsa-topology-conf_1.2.2-1_all.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking alsa-topology-conf (1.2.2-1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package alsa-ucm-conf.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../16-alsa-ucm-conf_1.2.2-1ubuntu0.13_all.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking alsa-ucm-conf (1.2.2-1ubuntu0.13) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package autoconf.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../17-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package automake.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../18-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libasound2-data.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../19-libasound2-data_1.2.2-2.1ubuntu2.5_all.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libasound2-data (1.2.2-2.1ubuntu2.5) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libasound2:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../20-libasound2_1.2.2-2.1ubuntu2.5_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libasound2:amd64 (1.2.2-2.1ubuntu2.5) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../21-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libtdb1:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../22-libtdb1_1.4.5-0ubuntu0.20.04.1_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libtdb1:amd64 (1.4.5-0ubuntu0.20.04.1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libogg0:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../23-libogg0_1.3.4-0ubuntu1_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libogg0:amd64 (1.3.4-0ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libvorbis0a:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../24-libvorbis0a_1.3.6-2ubuntu1_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libvorbis0a:amd64 (1.3.6-2ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libvorbisfile3:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../25-libvorbisfile3_1.3.6-2ubuntu1_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libvorbisfile3:amd64 (1.3.6-2ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package sound-theme-freedesktop.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../26-sound-theme-freedesktop_0.8-2ubuntu1_all.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking sound-theme-freedesktop (0.8-2ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libcanberra0:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../27-libcanberra0_0.30-7ubuntu1_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libcanberra0:amd64 (0.30-7ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libgpm2:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../28-libgpm2_1.20.7-5_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libgpm2:amd64 (1.20.7-5) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../29-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libncurses-dev:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../30-libncurses-dev_6.2-0ubuntu2.1_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libncurses-dev:amd64 (6.2-0ubuntu2.1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libpython3.8:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../31-libpython3.8_3.8.10-0ubuntu1~20.04.18_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libpython3.8:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libreadline-dev:amd64.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../32-libreadline-dev_8.0-4_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libreadline-dev:amd64 (8.0-4) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package libtool.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../33-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package pkg-config.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../34-pkg-config_0.29.1-0ubuntu4_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package vim-runtime.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../35-vim-runtime_2%3a8.1.2269-1ubuntu5.32_all.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Adding 'diversion of /usr/share/vim/vim81/doc/help.txt to /usr/share/vim/vim81/doc/help.txt.vim-tiny by vim-runtime'
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Adding 'diversion of /usr/share/vim/vim81/doc/tags to /usr/share/vim/vim81/doc/tags.vim-tiny by vim-runtime'
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking vim-runtime (2:8.1.2269-1ubuntu5.32) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Selecting previously unselected package vim.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Preparing to unpack .../36-vim_2%3a8.1.2269-1ubuntu5.32_amd64.deb ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Unpacking vim (2:8.1.2269-1ubuntu5.32) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libncurses-dev:amd64 (6.2-0ubuntu2.1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libpython3.8-minimal:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libgpm2:amd64 (1.20.7-5) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libogg0:amd64 (1.3.4-0ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up mime-support (3.64ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up alsa-ucm-conf (1.2.2-1ubuntu0.13) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": No schema files found: doing nothing.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libtdb1:amd64 (1.4.5-0ubuntu0.20.04.1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up file (1:5.38-4) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libreadline-dev:amd64 (8.0-4) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up xxd (2:8.1.2269-1ubuntu5.32) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libasound2-data (1.2.2-2.1ubuntu2.5) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up vim-common (2:8.1.2269-1ubuntu5.32) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libvorbis0a:amd64 (1.3.6-2ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up alsa-topology-conf (1.2.2-1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up sound-theme-freedesktop (0.8-2ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libasound2:amd64 (1.2.2-2.1ubuntu2.5) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libmpdec2:amd64 (2.4.2-3) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up vim-runtime (2:8.1.2269-1ubuntu5.32) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libpython3.8-stdlib:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libvorbisfile3:amd64 (1.3.6-2ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libpython3.8:amd64 (3.8.10-0ubuntu1~20.04.18) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up shared-mime-info (1.15-1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up libcanberra0:amd64 (0.30-7ubuntu1) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Setting up vim (2:8.1.2269-1ubuntu5.32) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vim (vim) in auto mode
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vimdiff (vimdiff) in auto mode
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rvim (rvim) in auto mode
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rview (rview) in auto mode
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi (vi) in auto mode
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/da/man1/vi.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group vi) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/de/man1/vi.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group vi) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/fr/man1/vi.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group vi) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/it/man1/vi.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group vi) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/ja/man1/vi.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group vi) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/pl/man1/vi.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group vi) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/ru/man1/vi.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group vi) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/man1/vi.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group vi) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view (view) in auto mode
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/da/man1/view.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group view) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/de/man1/view.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group view) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/fr/man1/view.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group view) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/it/man1/view.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group view) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/ja/man1/view.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group view) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/pl/man1/view.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group view) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/ru/man1/view.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group view) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/man1/view.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group view) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in auto mode
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/da/man1/ex.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group ex) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/de/man1/ex.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group ex) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/fr/man1/ex.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group ex) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/it/man1/ex.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group ex) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/ja/man1/ex.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group ex) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/pl/man1/ex.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group ex) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/ru/man1/ex.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group ex) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/man1/ex.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group ex) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/editor (editor) in auto mode
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/da/man1/editor.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group editor) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/de/man1/editor.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group editor) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/fr/man1/editor.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group editor) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/it/man1/editor.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group editor) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/ja/man1/editor.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group editor) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/pl/man1/editor.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group editor) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/ru/man1/editor.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group editor) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group editor) doesn't exist
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Removing intermediate container ccd6de4e9822
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":  ---> aa796d65d473
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Step 3/13 : RUN git clone --recursive --depth 1 git://git.ghostscript.com/jbig2dec.git jbig2dec
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":  ---> Running in 242e0774899d
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": [91mCloning into 'jbig2dec'...
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": [0mRemoving intermediate container 242e0774899d
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":  ---> 98e55c08f585
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Step 4/13 : RUN mkdir tests
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":  ---> Running in 0101718837fc
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Removing intermediate container 0101718837fc
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":  ---> 92a9fcde76eb
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Step 5/13 : RUN cp $SRC/jbig2dec/annex-h.jbig2 tests/annex-h.jb2
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":  ---> Running in 6ba4d89c0542
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Removing intermediate container 6ba4d89c0542
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":  ---> c4552d474831
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Step 6/13 : RUN cd tests && wget -O t89-halftone.zip http://cgit.ghostscript.com/cgi-bin/cgit.cgi/tests.git/plain/jbig2/t89-halftone.zip && unzip t89-halftone.zip
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa":  ---> Running in 615bfd3edba6
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": [91m--2025-09-30 06:05:45--  http://cgit.ghostscript.com/cgi-bin/cgit.cgi/tests.git/plain/jbig2/t89-halftone.zip
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Resolving cgit.ghostscript.com (cgit.ghostscript.com)... [0m[91m184.73.189.105
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Connecting to cgit.ghostscript.com (cgit.ghostscript.com)|184.73.189.105|:80... [0m[91mconnected.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": HTTP request sent, awaiting response... [0m[91m401 Unauthorized
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": 
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": Username/Password Authentication Failed.
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": The command '/bin/sh -c cd tests && wget -O t89-halftone.zip http://cgit.ghostscript.com/cgi-bin/cgit.cgi/tests.git/plain/jbig2/t89-halftone.zip && unzip t89-halftone.zip' returned a non-zero code: 6
+Finished Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 6
+Step #1 - "build-9f2519db-cb7f-4aae-a50a-3f4d6a2b26fa": [0m

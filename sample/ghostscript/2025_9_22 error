@@ -1,0 +1,315 @@
+starting build "2b1da6b7-415c-4d32-b699-907ab1a13928"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced"
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Sending build context to Docker daemon  101.9kB
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Step 1/11 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b549f31133a9: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 434ea960668c: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 868f576a1a60: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": d2b7fac4fa91: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e7df5d4b7fe9: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": abe9120609af: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 4912b874168a: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 220d818e8d56: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 7e71ad9e90dc: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 9c93ab725cd0: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 1c5487e81b8a: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 14b97fd07233: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 6d3e7d7d13d1: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e2fa7baf7482: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 9ba30d4ad6d9: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": ea8cc11d148d: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": fb3e0ebed05c: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": a901b1da50ac: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 59e4be53efa2: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 5e93e2a1ffd7: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b0176b5e2b47: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": a6320af92a2e: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e3e9238e3106: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 786a103563fc: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": f91541548774: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": c520c89dd6f0: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 885b00c53a72: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": ccbd52fb1553: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 4344b11fc156: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b3ec0a72fa98: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b5c5f999d55c: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": d2b7fac4fa91: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 953986c847fa: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 579741777197: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 0f69490f99cd: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e7df5d4b7fe9: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 26e21c65feb0: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 0d17d40502b9: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 22de810cc064: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 91c6318ab85f: Pulling fs layer
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": abe9120609af: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 220d818e8d56: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 7e71ad9e90dc: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 9c93ab725cd0: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": f91541548774: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 1c5487e81b8a: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 4912b874168a: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": c520c89dd6f0: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": a901b1da50ac: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 9ba30d4ad6d9: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 14b97fd07233: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 885b00c53a72: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": ea8cc11d148d: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 59e4be53efa2: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e2fa7baf7482: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": ccbd52fb1553: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": fb3e0ebed05c: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 4344b11fc156: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 5e93e2a1ffd7: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b3ec0a72fa98: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b0176b5e2b47: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b5c5f999d55c: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 786a103563fc: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": a6320af92a2e: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 953986c847fa: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 6d3e7d7d13d1: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 22de810cc064: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 579741777197: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 0f69490f99cd: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 91c6318ab85f: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 0d17d40502b9: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 26e21c65feb0: Waiting
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 868f576a1a60: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b549f31133a9: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b549f31133a9: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e7df5d4b7fe9: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": d2b7fac4fa91: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e7df5d4b7fe9: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": d2b7fac4fa91: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 4912b874168a: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 4912b874168a: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 220d818e8d56: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 434ea960668c: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 434ea960668c: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b549f31133a9: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 9c93ab725cd0: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 9c93ab725cd0: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 1c5487e81b8a: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 1c5487e81b8a: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 14b97fd07233: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 14b97fd07233: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 6d3e7d7d13d1: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 6d3e7d7d13d1: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e2fa7baf7482: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 7e71ad9e90dc: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 7e71ad9e90dc: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 9ba30d4ad6d9: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 9ba30d4ad6d9: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": ea8cc11d148d: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": ea8cc11d148d: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": a901b1da50ac: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": a901b1da50ac: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": fb3e0ebed05c: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": fb3e0ebed05c: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 59e4be53efa2: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 5e93e2a1ffd7: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 5e93e2a1ffd7: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b0176b5e2b47: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b0176b5e2b47: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": a6320af92a2e: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": a6320af92a2e: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 786a103563fc: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e3e9238e3106: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e3e9238e3106: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": f91541548774: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": f91541548774: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": c520c89dd6f0: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 885b00c53a72: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": ccbd52fb1553: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": ccbd52fb1553: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 434ea960668c: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 868f576a1a60: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 4344b11fc156: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 4344b11fc156: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": abe9120609af: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": abe9120609af: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b3ec0a72fa98: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b3ec0a72fa98: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b5c5f999d55c: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b5c5f999d55c: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 579741777197: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 579741777197: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 953986c847fa: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 953986c847fa: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 0f69490f99cd: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 0d17d40502b9: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 26e21c65feb0: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 26e21c65feb0: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 22de810cc064: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 22de810cc064: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 91c6318ab85f: Verifying Checksum
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 91c6318ab85f: Download complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": d2b7fac4fa91: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e7df5d4b7fe9: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": abe9120609af: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 4912b874168a: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 220d818e8d56: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 7e71ad9e90dc: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 9c93ab725cd0: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 1c5487e81b8a: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 14b97fd07233: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 6d3e7d7d13d1: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e2fa7baf7482: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 9ba30d4ad6d9: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": ea8cc11d148d: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": fb3e0ebed05c: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": a901b1da50ac: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 59e4be53efa2: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 5e93e2a1ffd7: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b0176b5e2b47: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": a6320af92a2e: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": e3e9238e3106: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 786a103563fc: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": f91541548774: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": c520c89dd6f0: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 885b00c53a72: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": ccbd52fb1553: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 4344b11fc156: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b3ec0a72fa98: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": b5c5f999d55c: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 953986c847fa: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 579741777197: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 0f69490f99cd: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 26e21c65feb0: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 0d17d40502b9: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 22de810cc064: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 91c6318ab85f: Pull complete
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Digest: sha256:da1935bce8ffd5308f198945e0902752866aeb835b461aa0e64367b144af0327
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":  ---> 742f1912ab79
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Step 2/11 : RUN apt-get update && apt-get install -y autoconf zlibc libtool liblcms2-dev libpng-dev
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":  ---> Running in bf8dcfd55aa6
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Fetched 383 kB in 1s (542 kB/s)
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Reading package lists...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Reading package lists...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Building dependency tree...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Reading state information...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": The following additional packages will be installed:
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":   automake file liblcms2-2 libltdl-dev libltdl7 libmagic-mgc libmagic1
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":   libpng-tools libpng16-16 zlib1g-dev
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Suggested packages:
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":   autoconf-archive gnu-standards autoconf-doc gettext liblcms2-utils
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":   libtool-doc gfortran | fortran95-compiler gcj-jdk
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": The following NEW packages will be installed:
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":   autoconf automake file liblcms2-2 liblcms2-dev libltdl-dev libltdl7
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":   libmagic-mgc libmagic1 libpng-dev libpng-tools libpng16-16 libtool
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":   zlib1g-dev zlibc
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": 0 upgraded, 15 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Need to get 11.4 MB of archives.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": After this operation, 24.0 MB of additional disk space will be used.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 libpng16-16 amd64 1.6.37-2 [179 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 liblcms2-2 amd64 2.9-4 [140 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 liblcms2-dev amd64 2.9-4 [9097 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.5 [155 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 libpng-dev amd64 1.6.37-2 [175 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libpng-tools amd64 1.6.37-2 [26.1 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Get:15 http://archive.ubuntu.com/ubuntu focal/universe amd64 zlibc amd64 0.9k-4.3 [63.9 kB]
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": [0mFetched 11.4 MB in 0s (25.7 MB/s)
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../00-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../01-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package file.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../02-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking file (1:5.38-4) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package libpng16-16:amd64.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../03-libpng16-16_1.6.37-2_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking libpng16-16:amd64 (1.6.37-2) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package autoconf.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../04-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package automake.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../05-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package liblcms2-2:amd64.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../06-liblcms2-2_2.9-4_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking liblcms2-2:amd64 (2.9-4) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package liblcms2-dev:amd64.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../07-liblcms2-dev_2.9-4_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking liblcms2-dev:amd64 (2.9-4) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../08-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../09-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package zlib1g-dev:amd64.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../10-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu1.5_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package libpng-dev:amd64.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../11-libpng-dev_1.6.37-2_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking libpng-dev:amd64 (1.6.37-2) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package libpng-tools.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../12-libpng-tools_1.6.37-2_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking libpng-tools (1.6.37-2) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package libtool.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../13-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Selecting previously unselected package zlibc.
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Preparing to unpack .../14-zlibc_0.9k-4.3_amd64.deb ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Unpacking zlibc (0.9k-4.3) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up liblcms2-2:amd64 (2.9-4) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up file (1:5.38-4) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up libpng16-16:amd64 (1.6.37-2) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up liblcms2-dev:amd64 (2.9-4) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up zlibc (0.9k-4.3) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up libpng-tools (1.6.37-2) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up libpng-dev:amd64 (1.6.37-2) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Removing intermediate container bf8dcfd55aa6
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":  ---> 1bd90f3658d6
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Step 3/11 : RUN git clone --branch branch-2.2 --single-branch --depth 1 https://github.com/apple/cups.git cups
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":  ---> Running in 83419e3f8b9e
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": [91mCloning into 'cups'...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": [0mRemoving intermediate container 83419e3f8b9e
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":  ---> 343bf416ed80
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": Step 4/11 : RUN git clone --branch VER-2-13-0 --single-branch --depth 1 https://git.savannah.gnu.org/git/freetype/freetype2.git freetype
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced":  ---> Running in 119627b96438
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": [91mCloning into 'freetype'...
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": [0m[91mfatal: unable to access 'https://git.savannah.gnu.org/git/freetype/freetype2.git/': Failed to connect to git.savannah.gnu.org port 443: Connection timed out
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": The command '/bin/sh -c git clone --branch VER-2-13-0 --single-branch --depth 1 https://git.savannah.gnu.org/git/freetype/freetype2.git freetype' returned a non-zero code: 128
+Finished Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 128
+Step #1 - "build-c88b4878-e1b4-4131-b0f9-8d10f387cced": [0m

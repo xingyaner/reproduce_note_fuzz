@@ -1,0 +1,840 @@
+starting build "bbe07887-04bf-4daf-9283-f44c00bace75"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64"
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Sending build context to Docker daemon   5.12kB
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Step 1/5 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b549f31133a9: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": cb9de8dca298: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 7b011949e673: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 4223e9366084: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": fed81cdfb6a9: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": ec63a2d0d15f: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1ae06f39b1c: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 4223e9366084: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": fed81cdfb6a9: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": ec63a2d0d15f: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 13aa280bbb0b: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 2701ced0d7c4: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5d914f439872: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 13aa280bbb0b: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5afcacf26009: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 2701ced0d7c4: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 6a6cec21bcc6: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 96bef82d3744: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 25f8e8a4262f: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 3b38150c7777: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 261fb7ae3c42: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 626ba5c7ca97: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 483dc6c414c8: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 958337bdba45: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 85c02b013ea1: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8bd3bf18d6f8: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 705eff584c11: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 0f9fdf19bd4d: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 12a9b61083a7: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1bbffe35f41: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5a28647958ef: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 86571ad417df: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5afcacf26009: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8a957f5949e1: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 78937b31eba5: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 25f8e8a4262f: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 96bef82d3744: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 6a6cec21bcc6: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 9d67a7daaea7: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 626ba5c7ca97: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": c382251239b2: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 958337bdba45: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 87c02ad7d9b2: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 85c02b013ea1: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 05c773eac106: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8ad94b8acb6c: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 891509538455: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": ae7c13f8e6d2: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 3b38150c7777: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8a957f5949e1: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5a28647958ef: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 705eff584c11: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 12a9b61083a7: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1bbffe35f41: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 86571ad417df: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1ff1728491b: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8887a4f06d6c: Pulling fs layer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 9d67a7daaea7: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 261fb7ae3c42: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 78937b31eba5: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": c382251239b2: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 891509538455: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 87c02ad7d9b2: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 05c773eac106: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8ad94b8acb6c: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 0f9fdf19bd4d: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1ff1728491b: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8887a4f06d6c: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8bd3bf18d6f8: Waiting
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 7b011949e673: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 7b011949e673: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b549f31133a9: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b549f31133a9: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": fed81cdfb6a9: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 4223e9366084: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 4223e9366084: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1ae06f39b1c: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 13aa280bbb0b: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": cb9de8dca298: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": cb9de8dca298: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b549f31133a9: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5d914f439872: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5d914f439872: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5afcacf26009: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5afcacf26009: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 6a6cec21bcc6: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 6a6cec21bcc6: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 96bef82d3744: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 96bef82d3744: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 25f8e8a4262f: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 3b38150c7777: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 3b38150c7777: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 2701ced0d7c4: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 2701ced0d7c4: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 261fb7ae3c42: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 261fb7ae3c42: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 483dc6c414c8: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 483dc6c414c8: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 626ba5c7ca97: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 626ba5c7ca97: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 958337bdba45: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 85c02b013ea1: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 85c02b013ea1: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8bd3bf18d6f8: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8bd3bf18d6f8: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 705eff584c11: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 705eff584c11: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 0f9fdf19bd4d: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 0f9fdf19bd4d: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 12a9b61083a7: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 12a9b61083a7: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1bbffe35f41: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1bbffe35f41: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5a28647958ef: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 86571ad417df: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8a957f5949e1: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8a957f5949e1: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 78937b31eba5: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 78937b31eba5: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 9d67a7daaea7: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 9d67a7daaea7: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": c382251239b2: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": c382251239b2: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 87c02ad7d9b2: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 87c02ad7d9b2: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 05c773eac106: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 05c773eac106: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8ad94b8acb6c: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 891509538455: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": ec63a2d0d15f: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": ec63a2d0d15f: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": ae7c13f8e6d2: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": ae7c13f8e6d2: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": cb9de8dca298: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 7b011949e673: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1ff1728491b: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1ff1728491b: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8887a4f06d6c: Verifying Checksum
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8887a4f06d6c: Download complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 4223e9366084: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": fed81cdfb6a9: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": ec63a2d0d15f: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1ae06f39b1c: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 13aa280bbb0b: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 2701ced0d7c4: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5d914f439872: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5afcacf26009: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 6a6cec21bcc6: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 96bef82d3744: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 25f8e8a4262f: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 3b38150c7777: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 261fb7ae3c42: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 626ba5c7ca97: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 483dc6c414c8: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 958337bdba45: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 85c02b013ea1: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8bd3bf18d6f8: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 705eff584c11: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 0f9fdf19bd4d: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 12a9b61083a7: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1bbffe35f41: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 5a28647958ef: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 86571ad417df: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8a957f5949e1: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 78937b31eba5: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 9d67a7daaea7: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": c382251239b2: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 87c02ad7d9b2: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 05c773eac106: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8ad94b8acb6c: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 891509538455: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": ae7c13f8e6d2: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": b1ff1728491b: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 8887a4f06d6c: Pull complete
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Digest: sha256:fff6dfd3cd34356d1f99d47aff87c24db5706c229c8bc67726d330bd29881ee8
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":  ---> 1b45a3abb081
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Step 2/5 : RUN apt-get update && apt-get install -y cmake libgc-dev pkg-config
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":  ---> Running in 9a4c41236bda
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Fetched 128 kB in 1s (140 kB/s)
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Reading package lists...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Reading package lists...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Building dependency tree...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Reading state information...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": The following packages were automatically installed and are no longer required:
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":   autotools-dev libsigsegv2 m4
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Use 'apt autoremove' to remove them.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": The following additional packages will be installed:
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":   cmake-data libarchive13 libgc1c2 libglib2.0-0 libglib2.0-data libicu66
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":   libjsoncpp1 librhash0 libuv1 libxml2 shared-mime-info xdg-user-dirs
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Suggested packages:
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":   cmake-doc ninja-build lrzip
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": The following NEW packages will be installed:
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":   cmake cmake-data libarchive13 libgc-dev libgc1c2 libglib2.0-0
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":   libglib2.0-data libicu66 libjsoncpp1 librhash0 libuv1 libxml2 pkg-config
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":   shared-mime-info xdg-user-dirs
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": 0 upgraded, 15 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Need to get 17.2 MB of archives.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": After this operation, 74.1 MB of additional disk space will be used.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.5 [80.9 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake-data all 3.16.3-1ubuntu1.20.04.1 [1613 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libarchive13 amd64 3.4.0-2ubuntu1.5 [327 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 libjsoncpp1 amd64 1.7.4-3.1ubuntu2 [75.6 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 librhash0 amd64 1.3.9-1 [113 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake amd64 3.16.3-1ubuntu1.20.04.1 [3668 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libgc1c2 amd64 1:7.6.4-0.4ubuntu1 [83.9 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 libgc-dev amd64 1:7.6.4-0.4ubuntu1 [234 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 pkg-config amd64 0.29.1-0ubuntu4 [45.5 kB]
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": [0mFetched 17.2 MB in 2s (9988 kB/s)
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package libglib2.0-0:amd64.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../00-libglib2.0-0_2.64.6-1~ubuntu20.04.9_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package libglib2.0-data.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../01-libglib2.0-data_2.64.6-1~ubuntu20.04.9_all.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package libicu66:amd64.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../02-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package libxml2:amd64.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../03-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package shared-mime-info.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../04-shared-mime-info_1.15-1_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking shared-mime-info (1.15-1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package xdg-user-dirs.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../05-xdg-user-dirs_0.17-2ubuntu1_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package libuv1:amd64.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../06-libuv1_1.34.2-1ubuntu1.5_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package cmake-data.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../07-cmake-data_3.16.3-1ubuntu1.20.04.1_all.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking cmake-data (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package libarchive13:amd64.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../08-libarchive13_3.4.0-2ubuntu1.5_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package libjsoncpp1:amd64.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../09-libjsoncpp1_1.7.4-3.1ubuntu2_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package librhash0:amd64.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../10-librhash0_1.3.9-1_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking librhash0:amd64 (1.3.9-1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package cmake.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../11-cmake_3.16.3-1ubuntu1.20.04.1_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking cmake (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package libgc1c2:amd64.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../12-libgc1c2_1%3a7.6.4-0.4ubuntu1_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking libgc1c2:amd64 (1:7.6.4-0.4ubuntu1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package libgc-dev:amd64.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../13-libgc-dev_1%3a7.6.4-0.4ubuntu1_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking libgc-dev:amd64 (1:7.6.4-0.4ubuntu1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Selecting previously unselected package pkg-config.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Preparing to unpack .../14-pkg-config_0.29.1-0ubuntu4_amd64.deb ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Unpacking pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up libgc1c2:amd64 (1:7.6.4-0.4ubuntu1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": No schema files found: doing nothing.
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up librhash0:amd64 (1.3.9-1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up cmake-data (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up libgc-dev:amd64 (1:7.6.4-0.4ubuntu1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up shared-mime-info (1.15-1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Setting up cmake (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Removing intermediate container 9a4c41236bda
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":  ---> 36e51f588c83
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Step 3/5 : RUN git clone --depth 1 https://github.com/arximboldi/immer.git immer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":  ---> Running in b0dbc395ddde
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": [91mCloning into 'immer'...
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": [0mRemoving intermediate container b0dbc395ddde
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":  ---> 026b8150f43a
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Step 4/5 : WORKDIR immer
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":  ---> Running in 878b01392340
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Removing intermediate container 878b01392340
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":  ---> 452f9e68e4e6
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Step 5/5 : COPY build.sh $SRC/
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64":  ---> d2c9596ef0cb
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Successfully built d2c9596ef0cb
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Successfully tagged gcr.io/oss-fuzz/immer:latest
+Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/immer:latest
+Finished Step #1 - "build-af73830b-2019-4c2a-bea4-0fec478c1e64"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/immer
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/fileXO0YPU
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ c++ == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/immer/.git
+Step #2 - "srcmap": + GIT_DIR=/src/immer
+Step #2 - "srcmap": + cd /src/immer
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/arximboldi/immer.git
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=df6ef46d97e1fe81f397015b9aeb32505cef653b
+Step #2 - "srcmap": + jq_inplace /tmp/fileXO0YPU '."/src/immer" = { type: "git", url: "https://github.com/arximboldi/immer.git", rev: "df6ef46d97e1fe81f397015b9aeb32505cef653b" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileeVvyYf
+Step #2 - "srcmap": + cat /tmp/fileXO0YPU
+Step #2 - "srcmap": + jq '."/src/immer" = { type: "git", url: "https://github.com/arximboldi/immer.git", rev: "df6ef46d97e1fe81f397015b9aeb32505cef653b" }'
+Step #2 - "srcmap": + mv /tmp/fileeVvyYf /tmp/fileXO0YPU
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/fileXO0YPU
+Step #2 - "srcmap": + rm /tmp/fileXO0YPU
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/immer": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/arximboldi/immer.git",
+Step #2 - "srcmap":     "rev": "df6ef46d97e1fe81f397015b9aeb32505cef653b"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-afl-address-x86_64"
+Step #3 - "compile-afl-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-afl-address-x86_64": Copying precompiled AFL++
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64": AFL++ target compilation setup:
+Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
+Step #3 - "compile-afl-address-x86_64": AFL_QUIET=1
+Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64":  done.
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": CC=/src/aflplusplus/afl-clang-fast
+Step #3 - "compile-afl-address-x86_64": CXX=/src/aflplusplus/afl-clang-fast++
+Step #3 - "compile-afl-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope 
+Step #3 - "compile-afl-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope  -stdlib=libc++
+Step #3 - "compile-afl-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": + mkdir build
+Step #3 - "compile-afl-address-x86_64": + cd build
+Step #3 - "compile-afl-address-x86_64": + cmake .. -DBOEHM_GC_INCLUDE_DIR=/usr/include -DBOEHM_GC_LIBRARIES=/usr/lib/x86_64-linux-gnu/libgc.a -Dimmer_BUILD_TESTS=OFF
+Step #3 - "compile-afl-address-x86_64": -- The C compiler identification is Clang 22.0.0
+Step #3 - "compile-afl-address-x86_64": -- The CXX compiler identification is Clang 22.0.0
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info - done
+Step #3 - "compile-afl-address-x86_64": -- Check for working C compiler: /src/aflplusplus/afl-clang-fast - skipped
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features
+Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features - done
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info - done
+Step #3 - "compile-afl-address-x86_64": -- Check for working CXX compiler: /src/aflplusplus/afl-clang-fast++ - skipped
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features
+Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features - done
+Step #3 - "compile-afl-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+Step #3 - "compile-afl-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+Step #3 - "compile-afl-address-x86_64": -- Found Threads: TRUE
+Step #3 - "compile-afl-address-x86_64": -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1")
+Step #3 - "compile-afl-address-x86_64": -- Found GC library: /usr/lib/x86_64-linux-gnu/libgc.a
+Step #3 - "compile-afl-address-x86_64": [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+Step #3 - "compile-afl-address-x86_64":   The package name passed to `find_package_handle_standard_args` (Boehm_GC)
+Step #3 - "compile-afl-address-x86_64":   does not match the name of the calling package (BoehmGC).  This can lead to
+Step #3 - "compile-afl-address-x86_64":   problems in calling code that expects `find_package` result variables
+Step #3 - "compile-afl-address-x86_64":   (e.g., `_FOUND`) to follow a certain pattern.
+Step #3 - "compile-afl-address-x86_64": Call Stack (most recent call first):
+Step #3 - "compile-afl-address-x86_64":   cmake/FindBoehmGC.cmake:108 (find_package_handle_standard_args)
+Step #3 - "compile-afl-address-x86_64":   CMakeLists.txt:86 (find_package)
+Step #3 - "compile-afl-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #3 - "compile-afl-address-x86_64": [0m
+Step #3 - "compile-afl-address-x86_64": -- Found Boehm_GC: /usr/lib/x86_64-linux-gnu/libgc.a
+Step #3 - "compile-afl-address-x86_64": -- Could NOT find Boost (missing: Boost_INCLUDE_DIR) (Required is at least version "1.56")
+Step #3 - "compile-afl-address-x86_64": -- Using ccache: /usr/local/bin/ccache
+Step #3 - "compile-afl-address-x86_64": [33mCMake Warning (dev) at extra/python/CMakeLists.txt:22 (find_package):
+Step #3 - "compile-afl-address-x86_64":   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+Step #3 - "compile-afl-address-x86_64":   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+Step #3 - "compile-afl-address-x86_64":   the cmake_policy command to set the policy and suppress this warning.
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #3 - "compile-afl-address-x86_64": [0m
+Step #3 - "compile-afl-address-x86_64": -- Found PythonInterp: /usr/local/bin/python (found version "3.11.13")
+Step #3 - "compile-afl-address-x86_64": [33mCMake Warning (dev) at extra/python/CMakeLists.txt:23 (find_package):
+Step #3 - "compile-afl-address-x86_64":   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+Step #3 - "compile-afl-address-x86_64":   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+Step #3 - "compile-afl-address-x86_64":   the cmake_policy command to set the policy and suppress this warning.
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64": This warning is for project developers.  Use -Wno-dev to suppress it.
+Step #3 - "compile-afl-address-x86_64": [0m
+Step #3 - "compile-afl-address-x86_64": -- Found PythonLibs: /usr/local/lib/libpython3.11.so (found version "3.11.13")
+Step #3 - "compile-afl-address-x86_64": -- Checking for module 'guile-2.2'
+Step #3 - "compile-afl-address-x86_64": --   No package 'guile-2.2' found
+Step #3 - "compile-afl-address-x86_64": -- Disabling Guile modules
+Step #3 - "compile-afl-address-x86_64": -- Configuring done (1.9s)
+Step #3 - "compile-afl-address-x86_64": -- Generating done (0.1s)
+Step #3 - "compile-afl-address-x86_64": -- Build files have been written to: /src/immer/build
+Step #3 - "compile-afl-address-x86_64": ++ nproc
+Step #3 - "compile-afl-address-x86_64": + make -j32 fuzzers
+Step #3 - "compile-afl-address-x86_64": [  5%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-array-gc.dir/array-gc.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [  5%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector.dir/vector.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [  7%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-array.dir/array.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 10%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-bo.dir/flex-vector-bo.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 13%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-st.dir/flex-vector-st.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 15%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector-gc.dir/flex-vector-gc.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 18%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-flex-vector.dir/flex-vector.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 21%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-gc.dir/map-gc.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 23%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st-str-conflict.dir/map-st-str-conflict.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 26%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st-str.dir/map-st-str.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 31%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-gc.dir/set-gc.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 31%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map-st.dir/map-st.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 36%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st-str-conflict.dir/set-st-str-conflict.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 36%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st-str.dir/set-st-str.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 39%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-map.dir/map.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 44%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set.dir/set.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 42%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-set-st.dir/set-st.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 47%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector-gc.dir/vector-gc.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 50%] [32mBuilding CXX object extra/fuzzer/CMakeFiles/extra-fuzzer-vector-st.dir/vector-st.cpp.o[0m
+Step #3 - "compile-afl-address-x86_64": [ 52%] [32m[1mLinking CXX executable array[0m
+Step #3 - "compile-afl-address-x86_64": [ 52%] Built target extra-fuzzer-array
+Step #3 - "compile-afl-address-x86_64": [ 55%] [32m[1mLinking CXX executable array-gc[0m
+Step #3 - "compile-afl-address-x86_64": [ 57%] [32m[1mLinking CXX executable set-gc[0m
+Step #3 - "compile-afl-address-x86_64": [ 57%] Built target extra-fuzzer-array-gc
+Step #3 - "compile-afl-address-x86_64": [ 57%] Built target extra-fuzzer-set-gc
+Step #3 - "compile-afl-address-x86_64": [ 60%] [32m[1mLinking CXX executable map-gc[0m
+Step #3 - "compile-afl-address-x86_64": [ 63%] [32m[1mLinking CXX executable set[0m
+Step #3 - "compile-afl-address-x86_64": [ 65%] [32m[1mLinking CXX executable set-st[0m
+Step #3 - "compile-afl-address-x86_64": [ 65%] Built target extra-fuzzer-set
+Step #3 - "compile-afl-address-x86_64": [ 65%] Built target extra-fuzzer-map-gc
+Step #3 - "compile-afl-address-x86_64": [ 65%] Built target extra-fuzzer-set-st
+Step #3 - "compile-afl-address-x86_64": [ 68%] [32m[1mLinking CXX executable map-st[0m
+Step #3 - "compile-afl-address-x86_64": [ 71%] [32m[1mLinking CXX executable vector-gc[0m
+Step #3 - "compile-afl-address-x86_64": [ 73%] [32m[1mLinking CXX executable map[0m
+Step #3 - "compile-afl-address-x86_64": [ 73%] Built target extra-fuzzer-map-st
+Step #3 - "compile-afl-address-x86_64": [ 73%] Built target extra-fuzzer-map
+Step #3 - "compile-afl-address-x86_64": [ 73%] Built target extra-fuzzer-vector-gc
+Step #3 - "compile-afl-address-x86_64": [ 76%] [32m[1mLinking CXX executable set-st-str[0m
+Step #3 - "compile-afl-address-x86_64": [ 78%] [32m[1mLinking CXX executable set-st-str-conflict[0m
+Step #3 - "compile-afl-address-x86_64": [ 78%] Built target extra-fuzzer-set-st-str
+Step #3 - "compile-afl-address-x86_64": [ 81%] [32m[1mLinking CXX executable vector[0m
+Step #3 - "compile-afl-address-x86_64": [ 81%] Built target extra-fuzzer-set-st-str-conflict
+Step #3 - "compile-afl-address-x86_64": [ 84%] [32m[1mLinking CXX executable vector-st[0m
+Step #3 - "compile-afl-address-x86_64": [ 84%] Built target extra-fuzzer-vector
+Step #3 - "compile-afl-address-x86_64": [ 86%] [32m[1mLinking CXX executable map-st-str[0m
+Step #3 - "compile-afl-address-x86_64": [ 86%] Built target extra-fuzzer-vector-st
+Step #3 - "compile-afl-address-x86_64": [ 89%] [32m[1mLinking CXX executable map-st-str-conflict[0m
+Step #3 - "compile-afl-address-x86_64": [ 89%] Built target extra-fuzzer-map-st-str
+Step #3 - "compile-afl-address-x86_64": [ 89%] Built target extra-fuzzer-map-st-str-conflict
+Step #3 - "compile-afl-address-x86_64": [ 92%] [32m[1mLinking CXX executable flex-vector-gc[0m
+Step #3 - "compile-afl-address-x86_64": [ 92%] Built target extra-fuzzer-flex-vector-gc
+Step #3 - "compile-afl-address-x86_64": [ 94%] [32m[1mLinking CXX executable flex-vector[0m
+Step #3 - "compile-afl-address-x86_64": [ 94%] Built target extra-fuzzer-flex-vector
+Step #3 - "compile-afl-address-x86_64": [ 97%] [32m[1mLinking CXX executable flex-vector-st[0m
+Step #3 - "compile-afl-address-x86_64": [ 97%] Built target extra-fuzzer-flex-vector-st
+Step #3 - "compile-afl-address-x86_64": [100%] [32m[1mLinking CXX executable flex-vector-bo[0m
+Step #3 - "compile-afl-address-x86_64": [100%] Built target extra-fuzzer-flex-vector-bo
+Step #3 - "compile-afl-address-x86_64": [100%] Built target fuzzers
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/CMakeFiles ]]
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/Makefile ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/Makefile ]]
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/array ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/array ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/array /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/array-gc ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/array-gc ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/array-gc /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/cmake_install.cmake ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/cmake_install.cmake ]]
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/flex-vector ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/flex-vector ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/flex-vector /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/flex-vector-bo ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/flex-vector-bo ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/flex-vector-bo /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/flex-vector-gc ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/flex-vector-gc ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/flex-vector-gc /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/flex-vector-st ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/flex-vector-st ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/flex-vector-st /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/map ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/map ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/map /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/map-gc ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/map-gc ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/map-gc /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/map-st ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/map-st ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/map-st /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/map-st-str ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/map-st-str ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/map-st-str /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/map-st-str-conflict ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/map-st-str-conflict ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/map-st-str-conflict /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/set ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/set ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/set /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/set-gc ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/set-gc ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/set-gc /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/set-st ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/set-st ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/set-st /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/set-st-str ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/set-st-str ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/set-st-str /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/set-st-str-conflict ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/set-st-str-conflict ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/set-st-str-conflict /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/vector ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/vector ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/vector /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/vector-gc ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/vector-gc ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/vector-gc /workspace/out/afl-address-x86_64
+Step #3 - "compile-afl-address-x86_64": + for fuzzer in extra/fuzzer/*
+Step #3 - "compile-afl-address-x86_64": + [[ -f extra/fuzzer/vector-st ]]
+Step #3 - "compile-afl-address-x86_64": + [[ -x extra/fuzzer/vector-st ]]
+Step #3 - "compile-afl-address-x86_64": + cp extra/fuzzer/vector-st /workspace/out/afl-address-x86_64
+Finished Step #3 - "compile-afl-address-x86_64"
+Starting Step #4 - "build-check-afl-address-x86_64"
+Step #4 - "build-check-afl-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-afl-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-afl-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-afl-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-afl-address-x86_64": cb9de8dca298: Already exists
+Step #4 - "build-check-afl-address-x86_64": 7b011949e673: Already exists
+Step #4 - "build-check-afl-address-x86_64": 4a6efc29fa40: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 8ad8aaecc588: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 25b48c9682b7: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": a0a2f67714c5: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 4429f74f5b23: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 64c0f397a7d0: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": d299eaf3c84a: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 0eb3ff24f900: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 91cabf0ceb6b: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": f679f85d5b4b: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": d459c7442ea5: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 6b143c752cfb: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 97c8235fb8a8: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": b95353babe5a: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 3f73738b8ea0: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": ee88b93d18fa: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": c1da9d543941: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": e36e532f3b68: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 8faae81d4ed8: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 6d1f2d8beb11: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 64c0f397a7d0: Waiting
+Step #4 - "build-check-afl-address-x86_64": aebee7dde704: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": 6b143c752cfb: Waiting
+Step #4 - "build-check-afl-address-x86_64": 97c5749e852c: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": d299eaf3c84a: Waiting
+Step #4 - "build-check-afl-address-x86_64": 97c8235fb8a8: Waiting
+Step #4 - "build-check-afl-address-x86_64": fbb109e2beee: Pulling fs layer
+Step #4 - "build-check-afl-address-x86_64": b95353babe5a: Waiting
+Step #4 - "build-check-afl-address-x86_64": 0eb3ff24f900: Waiting
+Step #4 - "build-check-afl-address-x86_64": d459c7442ea5: Waiting
+Step #4 - "build-check-afl-address-x86_64": ee88b93d18fa: Waiting
+Step #4 - "build-check-afl-address-x86_64": 91cabf0ceb6b: Waiting
+Step #4 - "build-check-afl-address-x86_64": 6d1f2d8beb11: Waiting
+Step #4 - "build-check-afl-address-x86_64": f679f85d5b4b: Waiting
+Step #4 - "build-check-afl-address-x86_64": c1da9d543941: Waiting
+Step #4 - "build-check-afl-address-x86_64": aebee7dde704: Waiting
+Step #4 - "build-check-afl-address-x86_64": e36e532f3b68: Waiting
+Step #4 - "build-check-afl-address-x86_64": fbb109e2beee: Waiting
+Step #4 - "build-check-afl-address-x86_64": a0a2f67714c5: Waiting
+Step #4 - "build-check-afl-address-x86_64": 8faae81d4ed8: Waiting
+Step #4 - "build-check-afl-address-x86_64": 4429f74f5b23: Waiting
+Step #4 - "build-check-afl-address-x86_64": 97c5749e852c: Waiting
+Step #4 - "build-check-afl-address-x86_64": 25b48c9682b7: Download complete
+Step #4 - "build-check-afl-address-x86_64": 4a6efc29fa40: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 4a6efc29fa40: Download complete
+Step #4 - "build-check-afl-address-x86_64": 8ad8aaecc588: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 8ad8aaecc588: Download complete
+Step #4 - "build-check-afl-address-x86_64": 4429f74f5b23: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 4429f74f5b23: Download complete
+Step #4 - "build-check-afl-address-x86_64": 4a6efc29fa40: Pull complete
+Step #4 - "build-check-afl-address-x86_64": a0a2f67714c5: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": a0a2f67714c5: Download complete
+Step #4 - "build-check-afl-address-x86_64": d299eaf3c84a: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": d299eaf3c84a: Download complete
+Step #4 - "build-check-afl-address-x86_64": 0eb3ff24f900: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 0eb3ff24f900: Download complete
+Step #4 - "build-check-afl-address-x86_64": 91cabf0ceb6b: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 91cabf0ceb6b: Download complete
+Step #4 - "build-check-afl-address-x86_64": 8ad8aaecc588: Pull complete
+Step #4 - "build-check-afl-address-x86_64": d459c7442ea5: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": d459c7442ea5: Download complete
+Step #4 - "build-check-afl-address-x86_64": 25b48c9682b7: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 6b143c752cfb: Download complete
+Step #4 - "build-check-afl-address-x86_64": 64c0f397a7d0: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 64c0f397a7d0: Download complete
+Step #4 - "build-check-afl-address-x86_64": 97c8235fb8a8: Download complete
+Step #4 - "build-check-afl-address-x86_64": a0a2f67714c5: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 3f73738b8ea0: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 3f73738b8ea0: Download complete
+Step #4 - "build-check-afl-address-x86_64": f679f85d5b4b: Download complete
+Step #4 - "build-check-afl-address-x86_64": 4429f74f5b23: Pull complete
+Step #4 - "build-check-afl-address-x86_64": c1da9d543941: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": c1da9d543941: Download complete
+Step #4 - "build-check-afl-address-x86_64": b95353babe5a: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": b95353babe5a: Download complete
+Step #4 - "build-check-afl-address-x86_64": e36e532f3b68: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": e36e532f3b68: Download complete
+Step #4 - "build-check-afl-address-x86_64": 8faae81d4ed8: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 8faae81d4ed8: Download complete
+Step #4 - "build-check-afl-address-x86_64": 6d1f2d8beb11: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": 6d1f2d8beb11: Download complete
+Step #4 - "build-check-afl-address-x86_64": ee88b93d18fa: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": ee88b93d18fa: Download complete
+Step #4 - "build-check-afl-address-x86_64": aebee7dde704: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": aebee7dde704: Download complete
+Step #4 - "build-check-afl-address-x86_64": 97c5749e852c: Download complete
+Step #4 - "build-check-afl-address-x86_64": fbb109e2beee: Verifying Checksum
+Step #4 - "build-check-afl-address-x86_64": fbb109e2beee: Download complete
+Step #4 - "build-check-afl-address-x86_64": 64c0f397a7d0: Pull complete
+Step #4 - "build-check-afl-address-x86_64": d299eaf3c84a: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 0eb3ff24f900: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 91cabf0ceb6b: Pull complete
+Step #4 - "build-check-afl-address-x86_64": f679f85d5b4b: Pull complete
+Step #4 - "build-check-afl-address-x86_64": d459c7442ea5: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 6b143c752cfb: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 97c8235fb8a8: Pull complete
+Step #4 - "build-check-afl-address-x86_64": b95353babe5a: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 3f73738b8ea0: Pull complete
+Step #4 - "build-check-afl-address-x86_64": ee88b93d18fa: Pull complete
+Step #4 - "build-check-afl-address-x86_64": c1da9d543941: Pull complete
+Step #4 - "build-check-afl-address-x86_64": e36e532f3b68: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 8faae81d4ed8: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 6d1f2d8beb11: Pull complete
+Step #4 - "build-check-afl-address-x86_64": aebee7dde704: Pull complete
+Step #4 - "build-check-afl-address-x86_64": 97c5749e852c: Pull complete
+Step #4 - "build-check-afl-address-x86_64": fbb109e2beee: Pull complete
+Step #4 - "build-check-afl-address-x86_64": Digest: sha256:450714430623e966872cc0b5d63cda0fd813075e2c6b6d5b50fc90c21b61eb32
+Step #4 - "build-check-afl-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/flex-vector-st
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/set-st-str
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/map
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/array-gc
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/set-st-str-conflict
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/map-st-str
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/vector-st
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/set-st
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/set
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/map-st
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/set-gc
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/flex-vector
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/map-gc
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/array
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/flex-vector-gc
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/vector
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/flex-vector-bo
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/map-st-str-conflict
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/vector-gc
+Step #4 - "build-check-afl-address-x86_64": Retrying failed fuzz targets sequentially 2
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/array-gc
+Step #4 - "build-check-afl-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpadtvjjag/vector-gc
+Step #4 - "build-check-afl-address-x86_64": Broken fuzz targets 2
+Step #4 - "build-check-afl-address-x86_64": ('/tmp/not-out/tmpadtvjjag/array-gc', CompletedProcess(args=['bad_build_check', '/tmp/not-out/tmpadtvjjag/array-gc'], returncode=1, stdout=b'BAD BUILD: fuzzing /tmp/not-out/tmpadtvjjag/array-gc with afl-fuzz failed.\nvm.mmap_rnd_bits = 28\nafl++ setup:\nAFL_SKIP_CPUFREQ=1\nAFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1\nAFL_TRY_AFFINITY=1\nAFL_IGNORE_UNKNOWN_ENVS=1\nAFL_FUZZER_ARGS=-m none -t 5000+\nAFL_CMPLOG_ONLY_NEW=1\nAFL_FAST_CAL=1\nAFL_NO_UI=1\nAFL_IGNORE_PROBLEMS=1\nAFL_FORKSRV_INIT_TMOUT=30000\nAFL_IGNORE_UNKNOWN_ENVS=1\nAFL_QUIET=1\nAFL_IGNORE_PROBLEMS=1\n/tmp/not-out/tmpadtvjjag/afl-fuzz -m none -t 5000+ -i /tmp/array-gc_corpus -o /tmp/array-gc_afl_address_out -- /tmp/not-out/tmpadtvjjag/array-gc\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_SKIP_CPUFREQ with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_TRY_AFFINITY with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_CMPLOG_ONLY_NEW with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_FAST_CAL with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_NO_UI with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_IGNORE_PROBLEMS with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_FORKSRV_INIT_TMOUT with value 30000\x1b[0m\n\x1b[0;36mafl-fuzz++4.34a\x1b[0m based on afl by Michal Zalewski and a large online community\n\x1b[1;92m[+] \x1b[0mAFL++ is maintained by Marc "van Hauser" Heuse, Dominik Maier, Andrea Fioraldi and Heiko "hexcoder" Ei\xc3\x9ffeldt\x1b[0m\n\x1b[1;92m[+] \x1b[0mAFL++ is open source, get it at https://github.com/AFLplusplus/AFLplusplus\x1b[0m\n\x1b[1;92m[+] \x1b[0mNOTE: AFL++ >= v3 has changed defaults and behaviours - see README.md\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable ASAN_OPTIONS with value alloc_dealloc_mismatch=0:allocator_may_return_null=1:allocator_release_to_os_interval_ms=500:check_malloc_usable_size=0:detect_container_overflow=1:detect_odr_violation=0:detect_leaks=1:detect_stack_use_after_return=1:fast_unwind_on_fatal=0:handle_abort=1:handle_segv=1:handle_sigill=1:max_uar_stack_size_log=16:print_scariness=1:quarantine_size_mb=10:strict_memcmp=1:strip_path_prefix=/workspace/:symbolize=1:use_sigaltstack=1:dedup_token_length=3:abort_on_error=1:symbolize=0:detect_odr_violation=0:\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable MSAN_OPTIONS with value print_stats=1:strip_path_prefix=/workspace/:symbolize=1:dedup_token_length=3:exit_code=86:symbolize=0\x1b[0m\n\x1b[1;92m[+] \x1b[0mNo -M/-S set, autoconfiguring for "-S default"\x1b[0m\n\x1b[1;94m[*] \x1b[0mGetting to work...\x1b[0m\n\x1b[1;92m[+] \x1b[0mUsing exploration-based constant power schedule (EXPLORE)\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled testcache with 50 MB\x1b[0m\n\x1b[1;92m[+] \x1b[0mGenerating fuzz data with a length of min=1 max=1048576\x1b[0m\n\x1b[1;94m[*] \x1b[0mChecking core_pattern...\x1b[0m\n\x1b[1;92m[+] \x1b[0mDisabling the UI because AFL_NO_UI is set.\x1b[0m\n\x1b[1;92m[+] \x1b[0mYou have 32 CPU cores and 19 runnable tasks (utilization: 59%).\x1b[0m\n\x1b[1;92m[+] \x1b[0mTry parallel jobs - see docs/fuzzing_in_depth.md#c-using-multiple-cores\x1b[0m\n\x1b[1;94m[*] \x1b[0mSetting up output directories...\x1b[0m\n\x1b[1;94m[*] \x1b[0mChecking CPU core loadout...\x1b[0m\n\x1b[1;92m[+] \x1b[0mFound a free CPU core, try binding to #2.\x1b[0m\n\x1b[1;94m[*] \x1b[0mValidating target binary...\x1b[0m\n\x1b[1;92m[+] \x1b[0m\x1b[1;95mPersistent mode binary detected.\x1b[0m\n\x1b[1;92m[+] \x1b[0m\x1b[1;95mDeferred forkserver binary detected.\x1b[0m\n\x1b[1;94m[*] \x1b[0mScanning \'/tmp/array-gc_corpus\'...\x1b[0m\n\x1b[1;94m[*] \x1b[0mCreating hard links for all input files...\x1b[0m\n\x1b[1;92m[+] \x1b[0mLoaded a total of 1 seeds.\x1b[0m\n\x1b[1;94m[*] \x1b[0mSpinning up the fork server...\x1b[0m\n\x1b[1;92m[+] \x1b[0mAll right - new fork server model v1 is up.\x1b[0m\n\x1b[1;94m[*] \x1b[0mTarget map size: 180\x1b[0m\n\x1b[1;94m[*] \x1b[0mUsing SHARED MEMORY FUZZING feature.\x1b[0m\n\x1b[1;94m[*] \x1b[0mNo auto-generated dictionary tokens to reuse.\x1b[0m\n\x1b[1;94m[*] \x1b[0mAttempting dry run with \'id:000000,time:0,execs:0,orig:input\'...\x1b[0m\n\x1b[1;93m[!] \x1b[1;97mWARNING: \x1b[0mTest case results in a timeout (skipping)\x1b[0m\n\x1b[?25h\x1b[0m\x1b[1;91m\n[-] PROGRAM ABORT : \x1b[0mAll test cases time out or crash, giving up!\x1b[1;91m\n         Location : \x1b[0mperform_dry_run(), src/afl-fuzz-init.c:1413\n\n', stderr=b''))
+Step #4 - "build-check-afl-address-x86_64": BAD BUILD: fuzzing /tmp/not-out/tmpadtvjjag/array-gc with afl-fuzz failed.
+Step #4 - "build-check-afl-address-x86_64": vm.mmap_rnd_bits = 28
+Step #4 - "build-check-afl-address-x86_64": afl++ setup:
+Step #4 - "build-check-afl-address-x86_64": AFL_SKIP_CPUFREQ=1
+Step #4 - "build-check-afl-address-x86_64": AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
+Step #4 - "build-check-afl-address-x86_64": AFL_TRY_AFFINITY=1
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
+Step #4 - "build-check-afl-address-x86_64": AFL_FUZZER_ARGS=-m none -t 5000+
+Step #4 - "build-check-afl-address-x86_64": AFL_CMPLOG_ONLY_NEW=1
+Step #4 - "build-check-afl-address-x86_64": AFL_FAST_CAL=1
+Step #4 - "build-check-afl-address-x86_64": AFL_NO_UI=1
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
+Step #4 - "build-check-afl-address-x86_64": AFL_FORKSRV_INIT_TMOUT=30000
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
+Step #4 - "build-check-afl-address-x86_64": AFL_QUIET=1
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
+Step #4 - "build-check-afl-address-x86_64": /tmp/not-out/tmpadtvjjag/afl-fuzz -m none -t 5000+ -i /tmp/array-gc_corpus -o /tmp/array-gc_afl_address_out -- /tmp/not-out/tmpadtvjjag/array-gc
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_SKIP_CPUFREQ with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_TRY_AFFINITY with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_CMPLOG_ONLY_NEW with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_FAST_CAL with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_NO_UI with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_IGNORE_PROBLEMS with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_FORKSRV_INIT_TMOUT with value 30000[0m
+Step #4 - "build-check-afl-address-x86_64": [0;36mafl-fuzz++4.34a[0m based on afl by Michal Zalewski and a large online community
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mAFL++ is maintained by Marc "van Hauser" Heuse, Dominik Maier, Andrea Fioraldi and Heiko "hexcoder" Eißfeldt[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mAFL++ is open source, get it at https://github.com/AFLplusplus/AFLplusplus[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mNOTE: AFL++ >= v3 has changed defaults and behaviours - see README.md[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable ASAN_OPTIONS with value alloc_dealloc_mismatch=0:allocator_may_return_null=1:allocator_release_to_os_interval_ms=500:check_malloc_usable_size=0:detect_container_overflow=1:detect_odr_violation=0:detect_leaks=1:detect_stack_use_after_return=1:fast_unwind_on_fatal=0:handle_abort=1:handle_segv=1:handle_sigill=1:max_uar_stack_size_log=16:print_scariness=1:quarantine_size_mb=10:strict_memcmp=1:strip_path_prefix=/workspace/:symbolize=1:use_sigaltstack=1:dedup_token_length=3:abort_on_error=1:symbolize=0:detect_odr_violation=0:[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable MSAN_OPTIONS with value print_stats=1:strip_path_prefix=/workspace/:symbolize=1:dedup_token_length=3:exit_code=86:symbolize=0[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mNo -M/-S set, autoconfiguring for "-S default"[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mGetting to work...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mUsing exploration-based constant power schedule (EXPLORE)[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled testcache with 50 MB[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mGenerating fuzz data with a length of min=1 max=1048576[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mChecking core_pattern...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mDisabling the UI because AFL_NO_UI is set.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mYou have 32 CPU cores and 1 runnable tasks (utilization: 3%).[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mTry parallel jobs - see docs/fuzzing_in_depth.md#c-using-multiple-cores[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mSetting up output directories...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mChecking CPU core loadout...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mFound a free CPU core, try binding to #0.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mValidating target binary...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0m[1;95mPersistent mode binary detected.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0m[1;95mDeferred forkserver binary detected.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mScanning '/tmp/array-gc_corpus'...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mCreating hard links for all input files...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mLoaded a total of 1 seeds.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mSpinning up the fork server...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mAll right - new fork server model v1 is up.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mTarget map size: 180[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mUsing SHARED MEMORY FUZZING feature.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mNo auto-generated dictionary tokens to reuse.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mAttempting dry run with 'id:000000,time:0,execs:0,orig:input'...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;93m[!] [1;97mWARNING: [0mTest case results in a timeout (skipping)[0m
+Step #4 - "build-check-afl-address-x86_64": [?25h[0m[1;91m
+Step #4 - "build-check-afl-address-x86_64": [-] PROGRAM ABORT : [0mAll test cases time out or crash, giving up![1;91m
+Step #4 - "build-check-afl-address-x86_64":          Location : [0mperform_dry_run(), src/afl-fuzz-init.c:1413
+Step #4 - "build-check-afl-address-x86_64": 
+Step #4 - "build-check-afl-address-x86_64": 
+Step #4 - "build-check-afl-address-x86_64": ('/tmp/not-out/tmpadtvjjag/vector-gc', CompletedProcess(args=['bad_build_check', '/tmp/not-out/tmpadtvjjag/vector-gc'], returncode=1, stdout=b'BAD BUILD: fuzzing /tmp/not-out/tmpadtvjjag/vector-gc with afl-fuzz failed.\nvm.mmap_rnd_bits = 28\nafl++ setup:\nAFL_SKIP_CPUFREQ=1\nAFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1\nAFL_TRY_AFFINITY=1\nAFL_IGNORE_UNKNOWN_ENVS=1\nAFL_FUZZER_ARGS=-m none -t 5000+\nAFL_CMPLOG_ONLY_NEW=1\nAFL_FAST_CAL=1\nAFL_NO_UI=1\nAFL_IGNORE_PROBLEMS=1\nAFL_FORKSRV_INIT_TMOUT=30000\nAFL_IGNORE_UNKNOWN_ENVS=1\nAFL_QUIET=1\nAFL_IGNORE_PROBLEMS=1\n/tmp/not-out/tmpadtvjjag/afl-fuzz -m none -t 5000+ -i /tmp/vector-gc_corpus -o /tmp/vector-gc_afl_address_out -- /tmp/not-out/tmpadtvjjag/vector-gc\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_SKIP_CPUFREQ with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_TRY_AFFINITY with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_CMPLOG_ONLY_NEW with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_FAST_CAL with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_NO_UI with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_IGNORE_PROBLEMS with value 1\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable AFL_FORKSRV_INIT_TMOUT with value 30000\x1b[0m\n\x1b[0;36mafl-fuzz++4.34a\x1b[0m based on afl by Michal Zalewski and a large online community\n\x1b[1;92m[+] \x1b[0mAFL++ is maintained by Marc "van Hauser" Heuse, Dominik Maier, Andrea Fioraldi and Heiko "hexcoder" Ei\xc3\x9ffeldt\x1b[0m\n\x1b[1;92m[+] \x1b[0mAFL++ is open source, get it at https://github.com/AFLplusplus/AFLplusplus\x1b[0m\n\x1b[1;92m[+] \x1b[0mNOTE: AFL++ >= v3 has changed defaults and behaviours - see README.md\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable ASAN_OPTIONS with value alloc_dealloc_mismatch=0:allocator_may_return_null=1:allocator_release_to_os_interval_ms=500:check_malloc_usable_size=0:detect_container_overflow=1:detect_odr_violation=0:detect_leaks=1:detect_stack_use_after_return=1:fast_unwind_on_fatal=0:handle_abort=1:handle_segv=1:handle_sigill=1:max_uar_stack_size_log=16:print_scariness=1:quarantine_size_mb=10:strict_memcmp=1:strip_path_prefix=/workspace/:symbolize=1:use_sigaltstack=1:dedup_token_length=3:abort_on_error=1:symbolize=0:detect_odr_violation=0:\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled environment variable MSAN_OPTIONS with value print_stats=1:strip_path_prefix=/workspace/:symbolize=1:dedup_token_length=3:exit_code=86:symbolize=0\x1b[0m\n\x1b[1;92m[+] \x1b[0mNo -M/-S set, autoconfiguring for "-S default"\x1b[0m\n\x1b[1;94m[*] \x1b[0mGetting to work...\x1b[0m\n\x1b[1;92m[+] \x1b[0mUsing exploration-based constant power schedule (EXPLORE)\x1b[0m\n\x1b[1;92m[+] \x1b[0mEnabled testcache with 50 MB\x1b[0m\n\x1b[1;92m[+] \x1b[0mGenerating fuzz data with a length of min=1 max=1048576\x1b[0m\n\x1b[1;94m[*] \x1b[0mChecking core_pattern...\x1b[0m\n\x1b[1;92m[+] \x1b[0mDisabling the UI because AFL_NO_UI is set.\x1b[0m\n\x1b[1;92m[+] \x1b[0mYou have 32 CPU cores and 19 runnable tasks (utilization: 59%).\x1b[0m\n\x1b[1;92m[+] \x1b[0mTry parallel jobs - see docs/fuzzing_in_depth.md#c-using-multiple-cores\x1b[0m\n\x1b[1;94m[*] \x1b[0mSetting up output directories...\x1b[0m\n\x1b[1;94m[*] \x1b[0mChecking CPU core loadout...\x1b[0m\n\x1b[1;92m[+] \x1b[0mFound a free CPU core, try binding to #9.\x1b[0m\n\x1b[1;94m[*] \x1b[0mValidating target binary...\x1b[0m\n\x1b[1;92m[+] \x1b[0m\x1b[1;95mPersistent mode binary detected.\x1b[0m\n\x1b[1;92m[+] \x1b[0m\x1b[1;95mDeferred forkserver binary detected.\x1b[0m\n\x1b[1;94m[*] \x1b[0mScanning \'/tmp/vector-gc_corpus\'...\x1b[0m\n\x1b[1;94m[*] \x1b[0mCreating hard links for all input files...\x1b[0m\n\x1b[1;92m[+] \x1b[0mLoaded a total of 1 seeds.\x1b[0m\n\x1b[1;94m[*] \x1b[0mSpinning up the fork server...\x1b[0m\n\x1b[1;92m[+] \x1b[0mAll right - new fork server model v1 is up.\x1b[0m\n\x1b[1;94m[*] \x1b[0mTarget map size: 1435\x1b[0m\n\x1b[1;94m[*] \x1b[0mUsing SHARED MEMORY FUZZING feature.\x1b[0m\n\x1b[1;94m[*] \x1b[0mNo auto-generated dictionary tokens to reuse.\x1b[0m\n\x1b[1;94m[*] \x1b[0mAttempting dry run with \'id:000000,time:0,execs:0,orig:input\'...\x1b[0m\n\x1b[1;93m[!] \x1b[1;97mWARNING: \x1b[0mTest case results in a timeout (skipping)\x1b[0m\n\x1b[?25h\x1b[0m\x1b[1;91m\n[-] PROGRAM ABORT : \x1b[0mAll test cases time out or crash, giving up!\x1b[1;91m\n         Location : \x1b[0mperform_dry_run(), src/afl-fuzz-init.c:1413\n\n', stderr=b''))
+Step #4 - "build-check-afl-address-x86_64": BAD BUILD: fuzzing /tmp/not-out/tmpadtvjjag/vector-gc with afl-fuzz failed.
+Step #4 - "build-check-afl-address-x86_64": vm.mmap_rnd_bits = 28
+Step #4 - "build-check-afl-address-x86_64": afl++ setup:
+Step #4 - "build-check-afl-address-x86_64": AFL_SKIP_CPUFREQ=1
+Step #4 - "build-check-afl-address-x86_64": AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
+Step #4 - "build-check-afl-address-x86_64": AFL_TRY_AFFINITY=1
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
+Step #4 - "build-check-afl-address-x86_64": AFL_FUZZER_ARGS=-m none -t 5000+
+Step #4 - "build-check-afl-address-x86_64": AFL_CMPLOG_ONLY_NEW=1
+Step #4 - "build-check-afl-address-x86_64": AFL_FAST_CAL=1
+Step #4 - "build-check-afl-address-x86_64": AFL_NO_UI=1
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
+Step #4 - "build-check-afl-address-x86_64": AFL_FORKSRV_INIT_TMOUT=30000
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
+Step #4 - "build-check-afl-address-x86_64": AFL_QUIET=1
+Step #4 - "build-check-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
+Step #4 - "build-check-afl-address-x86_64": /tmp/not-out/tmpadtvjjag/afl-fuzz -m none -t 5000+ -i /tmp/vector-gc_corpus -o /tmp/vector-gc_afl_address_out -- /tmp/not-out/tmpadtvjjag/vector-gc
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_SKIP_CPUFREQ with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_TRY_AFFINITY with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_CMPLOG_ONLY_NEW with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_FAST_CAL with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_NO_UI with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_IGNORE_PROBLEMS with value 1[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable AFL_FORKSRV_INIT_TMOUT with value 30000[0m
+Step #4 - "build-check-afl-address-x86_64": [0;36mafl-fuzz++4.34a[0m based on afl by Michal Zalewski and a large online community
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mAFL++ is maintained by Marc "van Hauser" Heuse, Dominik Maier, Andrea Fioraldi and Heiko "hexcoder" Eißfeldt[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mAFL++ is open source, get it at https://github.com/AFLplusplus/AFLplusplus[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mNOTE: AFL++ >= v3 has changed defaults and behaviours - see README.md[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable ASAN_OPTIONS with value alloc_dealloc_mismatch=0:allocator_may_return_null=1:allocator_release_to_os_interval_ms=500:check_malloc_usable_size=0:detect_container_overflow=1:detect_odr_violation=0:detect_leaks=1:detect_stack_use_after_return=1:fast_unwind_on_fatal=0:handle_abort=1:handle_segv=1:handle_sigill=1:max_uar_stack_size_log=16:print_scariness=1:quarantine_size_mb=10:strict_memcmp=1:strip_path_prefix=/workspace/:symbolize=1:use_sigaltstack=1:dedup_token_length=3:abort_on_error=1:symbolize=0:detect_odr_violation=0:[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled environment variable MSAN_OPTIONS with value print_stats=1:strip_path_prefix=/workspace/:symbolize=1:dedup_token_length=3:exit_code=86:symbolize=0[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mNo -M/-S set, autoconfiguring for "-S default"[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mGetting to work...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mUsing exploration-based constant power schedule (EXPLORE)[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mEnabled testcache with 50 MB[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mGenerating fuzz data with a length of min=1 max=1048576[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mChecking core_pattern...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mDisabling the UI because AFL_NO_UI is set.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mYou have 32 CPU cores and 1 runnable tasks (utilization: 3%).[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mTry parallel jobs - see docs/fuzzing_in_depth.md#c-using-multiple-cores[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mSetting up output directories...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mChecking CPU core loadout...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mFound a free CPU core, try binding to #0.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mValidating target binary...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0m[1;95mPersistent mode binary detected.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0m[1;95mDeferred forkserver binary detected.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mScanning '/tmp/vector-gc_corpus'...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mCreating hard links for all input files...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mLoaded a total of 1 seeds.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mSpinning up the fork server...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;92m[+] [0mAll right - new fork server model v1 is up.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mTarget map size: 1435[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mUsing SHARED MEMORY FUZZING feature.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mNo auto-generated dictionary tokens to reuse.[0m
+Step #4 - "build-check-afl-address-x86_64": [1;94m[*] [0mAttempting dry run with 'id:000000,time:0,execs:0,orig:input'...[0m
+Step #4 - "build-check-afl-address-x86_64": [1;93m[!] [1;97mWARNING: [0mTest case results in a timeout (skipping)[0m
+Step #4 - "build-check-afl-address-x86_64": [?25h[0m[1;91m
+Step #4 - "build-check-afl-address-x86_64": [-] PROGRAM ABORT : [0mAll test cases time out or crash, giving up![1;91m
+Step #4 - "build-check-afl-address-x86_64":          Location : [0mperform_dry_run(), src/afl-fuzz-init.c:1413
+Step #4 - "build-check-afl-address-x86_64": 
+Step #4 - "build-check-afl-address-x86_64": 
+Step #4 - "build-check-afl-address-x86_64": ERROR: 10.526315789473685% of fuzz targets seem to be broken. See the list above for a detailed information.
+Step #4 - "build-check-afl-address-x86_64": ********************************************************************************
+Step #4 - "build-check-afl-address-x86_64": Build checks failed.
+Step #4 - "build-check-afl-address-x86_64": To reproduce, run:
+Step #4 - "build-check-afl-address-x86_64": python infra/helper.py build_image immer
+Step #4 - "build-check-afl-address-x86_64": python infra/helper.py build_fuzzers --sanitizer address --engine afl --architecture x86_64 immer
+Step #4 - "build-check-afl-address-x86_64": python infra/helper.py check_build --sanitizer address --engine afl --architecture x86_64 immer
+Step #4 - "build-check-afl-address-x86_64": ********************************************************************************
+Finished Step #4 - "build-check-afl-address-x86_64"
+ERROR
+ERROR: build step 4 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

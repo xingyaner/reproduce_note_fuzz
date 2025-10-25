@@ -1,0 +1,545 @@
+starting build "a25b14f8-c5ce-40a5-b0a9-ac40d7e79adf"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696"
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Sending build context to Docker daemon  25.09kB
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Step 1/6 : FROM gcr.io/oss-fuzz-base/base-builder-jvm
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": latest: Pulling from oss-fuzz-base/base-builder-jvm
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b549f31133a9: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 82b4985cbfa1: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e2c78405bbfa: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e9891046f21b: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 82b16452beab: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": a1c2bbf406fc: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d4ae0c967a52: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 7f22e22604df: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": cea8c1410696: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 1bf1ba590b89: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 66368804290e: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 22276f1f1557: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": f53b68c71698: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 77b4e9971e7d: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": c09ac5a44944: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 8236f0355a84: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": fbd11ff89b8e: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 100b267fe340: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e7c6aed7d54c: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": ea8bbe2ca172: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d1bbfd946983: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0dbe0ccb6fbd: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e0e1c4fb01f1: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b7859facdd94: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e9891046f21b: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e3e08ee0ed0b: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d7e7ba51ed89: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 82b16452beab: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": c4e7bcb21464: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b68008ebcf2c: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0bdbae586c19: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 77b4e9971e7d: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": a1c2bbf406fc: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 860de74ca10d: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 55ea6dd51172: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": c09ac5a44944: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d4ae0c967a52: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 88e231f62d4f: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d56db65dc1cf: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 7f22e22604df: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0ba050ccbfc3: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 3e1b96c4d1a5: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e7c6aed7d54c: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": cea8c1410696: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": f4e28b1c49df: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 4193f38d9ef1: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 1bf1ba590b89: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 191c64861f60: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 100b267fe340: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 8236f0355a84: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 7765836fb8c4: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 66368804290e: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 693422d3f402: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 22276f1f1557: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": ea8bbe2ca172: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": f53b68c71698: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 776b94030247: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d1bbfd946983: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": fbd11ff89b8e: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 1a3d75812b4c: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0dbe0ccb6fbd: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 213ad0ed309c: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e0e1c4fb01f1: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 615a0d5146f2: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 860de74ca10d: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0a4ea59e2be9: Pulling fs layer
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b7859facdd94: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 55ea6dd51172: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e3e08ee0ed0b: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 88e231f62d4f: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d7e7ba51ed89: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d56db65dc1cf: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": f4e28b1c49df: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 3e1b96c4d1a5: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 4193f38d9ef1: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 191c64861f60: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 213ad0ed309c: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0ba050ccbfc3: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 7765836fb8c4: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0bdbae586c19: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0a4ea59e2be9: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b68008ebcf2c: Waiting
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e2c78405bbfa: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b549f31133a9: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b549f31133a9: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 82b16452beab: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 82b16452beab: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e9891046f21b: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e9891046f21b: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d4ae0c967a52: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d4ae0c967a52: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 82b4985cbfa1: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 82b4985cbfa1: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 7f22e22604df: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b549f31133a9: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 1bf1ba590b89: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 1bf1ba590b89: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 66368804290e: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 66368804290e: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 22276f1f1557: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 22276f1f1557: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": f53b68c71698: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": f53b68c71698: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 77b4e9971e7d: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 77b4e9971e7d: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": cea8c1410696: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": cea8c1410696: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 8236f0355a84: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 8236f0355a84: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": c09ac5a44944: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": c09ac5a44944: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 100b267fe340: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 100b267fe340: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": fbd11ff89b8e: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": fbd11ff89b8e: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": ea8bbe2ca172: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": ea8bbe2ca172: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e7c6aed7d54c: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e7c6aed7d54c: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d1bbfd946983: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d1bbfd946983: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0dbe0ccb6fbd: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0dbe0ccb6fbd: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b7859facdd94: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e0e1c4fb01f1: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e0e1c4fb01f1: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e3e08ee0ed0b: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e3e08ee0ed0b: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d7e7ba51ed89: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b68008ebcf2c: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b68008ebcf2c: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": c4e7bcb21464: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0bdbae586c19: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0bdbae586c19: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 860de74ca10d: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 860de74ca10d: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": a1c2bbf406fc: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": a1c2bbf406fc: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 88e231f62d4f: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 88e231f62d4f: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 82b4985cbfa1: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 55ea6dd51172: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e2c78405bbfa: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d56db65dc1cf: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0ba050ccbfc3: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0ba050ccbfc3: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 3e1b96c4d1a5: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": f4e28b1c49df: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 4193f38d9ef1: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 4193f38d9ef1: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 191c64861f60: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 191c64861f60: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 693422d3f402: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 693422d3f402: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 776b94030247: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 776b94030247: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 1a3d75812b4c: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 213ad0ed309c: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 213ad0ed309c: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 615a0d5146f2: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 615a0d5146f2: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0a4ea59e2be9: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0a4ea59e2be9: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e9891046f21b: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 82b16452beab: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 7765836fb8c4: Verifying Checksum
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 7765836fb8c4: Download complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": a1c2bbf406fc: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d4ae0c967a52: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 7f22e22604df: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": cea8c1410696: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 1bf1ba590b89: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 66368804290e: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 22276f1f1557: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": f53b68c71698: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 77b4e9971e7d: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": c09ac5a44944: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 8236f0355a84: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": fbd11ff89b8e: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 100b267fe340: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e7c6aed7d54c: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": ea8bbe2ca172: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d1bbfd946983: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0dbe0ccb6fbd: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e0e1c4fb01f1: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b7859facdd94: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": e3e08ee0ed0b: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d7e7ba51ed89: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": c4e7bcb21464: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": b68008ebcf2c: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0bdbae586c19: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 860de74ca10d: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 55ea6dd51172: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 88e231f62d4f: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": d56db65dc1cf: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0ba050ccbfc3: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 3e1b96c4d1a5: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": f4e28b1c49df: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 4193f38d9ef1: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 191c64861f60: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 7765836fb8c4: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 693422d3f402: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 776b94030247: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 1a3d75812b4c: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 213ad0ed309c: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 615a0d5146f2: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": 0a4ea59e2be9: Pull complete
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Digest: sha256:f0f37a249da32e990c88289f6880bbb298c215c390b0da9aad5b2270ddb69cd6
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-jvm:latest
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696":  ---> 9fa4b33ca77a
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Step 2/6 : COPY build.sh $SRC/
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696":  ---> 392fb38b599e
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Step 3/6 : COPY ExampleFuzzerNative.h ExampleFuzzerNative.cpp $SRC/
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696":  ---> 8d0137768ace
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Step 4/6 : COPY ExampleFuzzer.java ExampleValueProfileFuzzer.java ExampleFuzzerNative.java default.options $SRC/
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696":  ---> 0884c1f0116a
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Step 5/6 : COPY ExampleFuzzTest.java MutatorFuzzTest.java $SRC/
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696":  ---> ca3d705e782b
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Step 6/6 : WORKDIR $SRC/
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696":  ---> Running in a77dfc7c510e
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Removing intermediate container a77dfc7c510e
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696":  ---> 485889c45980
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Successfully built 485889c45980
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Successfully tagged gcr.io/oss-fuzz/java-example:latest
+Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/java-example:latest
+Finished Step #1 - "build-f2d37cc6-a3d0-4d0f-b68a-4ae78b539696"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/java-example
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/filexMJJBN
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ jvm == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/filexMJJBN
+Step #2 - "srcmap": + rm /tmp/filexMJJBN
+Step #2 - "srcmap": {}
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=leak
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=leak
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + JVM_INCLUDES='-I/usr/lib/jvm/java-17-openjdk-amd64/include -I/usr/lib/jvm/java-17-openjdk-amd64/include/linux'
+Step #3 - "compile-libfuzzer-address-x86_64": + mkdir -p /workspace/out/libfuzzer-address-x86_64/native
+Step #3 - "compile-libfuzzer-address-x86_64": + clang++ -O1 -fno-omit-frame-pointer -gline-tables-only -Wno-error=incompatible-function-pointer-types -Wno-error=int-conversion -Wno-error=deprecated-declarations -Wno-error=implicit-function-declaration -Wno-error=implicit-int -Wno-error=unknown-warning-option -Wno-error=vla-cxx-extension -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=leak -I/usr/lib/jvm/java-17-openjdk-amd64/include -I/usr/lib/jvm/java-17-openjdk-amd64/include/linux -fPIC -shared ExampleFuzzerNative.cpp -o /workspace/out/libfuzzer-address-x86_64/native/libnative.so
+Step #3 - "compile-libfuzzer-address-x86_64": + mkdir -p /workspace/out/libfuzzer-address-x86_64/libs
+Step #3 - "compile-libfuzzer-address-x86_64": + curl -o /workspace/out/libfuzzer-address-x86_64/libs/junit-jupiter-api-5.9.0.jar https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar
+Step #3 - "compile-libfuzzer-address-x86_64":   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #3 - "compile-libfuzzer-address-x86_64":                                  Dload  Upload   Total   Spent    Left  Speed
+Step #3 - "compile-libfuzzer-address-x86_64":   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  198k  100  198k    0     0  1439k      0 --:--:-- --:--:-- --:--:-- 1439k
+Step #3 - "compile-libfuzzer-address-x86_64": + curl -o /workspace/out/libfuzzer-address-x86_64/libs/junit-jupiter-engine-5.9.0.jar https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.9.0/junit-jupiter-engine-5.9.0.jar
+Step #3 - "compile-libfuzzer-address-x86_64":   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #3 - "compile-libfuzzer-address-x86_64":                                  Dload  Upload   Total   Spent    Left  Speed
+Step #3 - "compile-libfuzzer-address-x86_64":   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  240k  100  240k    0     0  2644k      0 --:--:-- --:--:-- --:--:-- 2644k
+Step #3 - "compile-libfuzzer-address-x86_64": + curl -o /workspace/out/libfuzzer-address-x86_64/libs/junit-jupiter-params-5.9.0.jar https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-params/5.9.0/junit-jupiter-params-5.9.0.jar
+Step #3 - "compile-libfuzzer-address-x86_64":   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #3 - "compile-libfuzzer-address-x86_64":                                  Dload  Upload   Total   Spent    Left  Speed
+Step #3 - "compile-libfuzzer-address-x86_64":   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  564k  100  564k    0     0  4953k      0 --:--:-- --:--:-- --:--:-- 4953k
+Step #3 - "compile-libfuzzer-address-x86_64": + curl -o /workspace/out/libfuzzer-address-x86_64/libs/junit-platform-commons-1.9.0.jar https://repo1.maven.org/maven2/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar
+Step #3 - "compile-libfuzzer-address-x86_64":   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #3 - "compile-libfuzzer-address-x86_64":                                  Dload  Upload   Total   Spent    Left  Speed
+Step #3 - "compile-libfuzzer-address-x86_64":   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  100k  100  100k    0     0  1152k      0 --:--:-- --:--:-- --:--:-- 1152k
+Step #3 - "compile-libfuzzer-address-x86_64": + curl -o /workspace/out/libfuzzer-address-x86_64/libs/junit-platform-engine-1.9.0.jar https://repo1.maven.org/maven2/org/junit/platform/junit-platform-engine/1.9.0/junit-platform-engine-1.9.0.jar
+Step #3 - "compile-libfuzzer-address-x86_64":   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #3 - "compile-libfuzzer-address-x86_64":                                  Dload  Upload   Total   Spent    Left  Speed
+Step #3 - "compile-libfuzzer-address-x86_64":   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  183k  100  183k    0     0  1997k      0 --:--:-- --:--:-- --:--:-- 1997k
+Step #3 - "compile-libfuzzer-address-x86_64": + curl -o /workspace/out/libfuzzer-address-x86_64/libs/junit-platform-launcher-1.9.0.jar https://repo1.maven.org/maven2/org/junit/platform/junit-platform-launcher/1.9.0/junit-platform-launcher-1.9.0.jar
+Step #3 - "compile-libfuzzer-address-x86_64":   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #3 - "compile-libfuzzer-address-x86_64":                                  Dload  Upload   Total   Spent    Left  Speed
+Step #3 - "compile-libfuzzer-address-x86_64":   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  165k  100  165k    0     0  1856k      0 --:--:-- --:--:-- --:--:-- 1856k
+Step #3 - "compile-libfuzzer-address-x86_64": + curl -o /workspace/out/libfuzzer-address-x86_64/libs/opentest4j-1.2.0.jar https://repo1.maven.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar
+Step #3 - "compile-libfuzzer-address-x86_64":   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #3 - "compile-libfuzzer-address-x86_64":                                  Dload  Upload   Total   Spent    Left  Speed
+Step #3 - "compile-libfuzzer-address-x86_64":   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  7653  100  7653    0     0   113k      0 --:--:-- --:--:-- --:--:--  113k
+Step #3 - "compile-libfuzzer-address-x86_64": + BUILD_CLASSPATH=/usr/local/lib/jazzer_api_deploy.jar:/usr/local/bin/jazzer_junit.jar:/workspace/out/libfuzzer-address-x86_64/libs/junit-jupiter-api-5.9.0.jar
+Step #3 - "compile-libfuzzer-address-x86_64": + RUNTIME_CLASSPATH='$this_dir'
+Step #3 - "compile-libfuzzer-address-x86_64": ++ find /src -name '*Fuzzer.java' -or -name '*FuzzerNative.java'
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -name '*Fuzzer.java' -or -name '*FuzzerNative.java')
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/ExampleFuzzerNative.java
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=ExampleFuzzerNative
+Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /usr/local/lib/jazzer_api_deploy.jar:/usr/local/bin/jazzer_junit.jar:/workspace/out/libfuzzer-address-x86_64/libs/junit-jupiter-api-5.9.0.jar /src/ExampleFuzzerNative.java
+Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/ExampleFuzzerNative.class /workspace/out/libfuzzer-address-x86_64/
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ ExampleFuzzerNative == *FuzzerNative ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + driver=jazzer_driver_with_sanitizer
+Step #3 - "compile-libfuzzer-address-x86_64": + cp default.options /workspace/out/libfuzzer-address-x86_64/ExampleFuzzerNative.options
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": if [[ "$@" =~ (^| )-runs=[0-9]+($| ) ]]; then
+Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx1900m:-Xss900k'\''
+Step #3 - "compile-libfuzzer-address-x86_64": else
+Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx2048m:-Xss1024k'\''
+Step #3 - "compile-libfuzzer-address-x86_64": fi
+Step #3 - "compile-libfuzzer-address-x86_64": LD_LIBRARY_PATH="/usr/lib/jvm/java-17-openjdk-amd64/lib/server":$this_dir/native ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/jazzer_driver_with_sanitizer --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir --target_class=ExampleFuzzerNative --jvm_args="$mem_settings" $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/ExampleFuzzerNative
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -name '*Fuzzer.java' -or -name '*FuzzerNative.java')
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/ExampleFuzzer.java
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=ExampleFuzzer
+Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /usr/local/lib/jazzer_api_deploy.jar:/usr/local/bin/jazzer_junit.jar:/workspace/out/libfuzzer-address-x86_64/libs/junit-jupiter-api-5.9.0.jar /src/ExampleFuzzer.java
+Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/ExampleFuzzer.class /workspace/out/libfuzzer-address-x86_64/
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ ExampleFuzzer == *FuzzerNative ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + driver=jazzer_driver
+Step #3 - "compile-libfuzzer-address-x86_64": + cp default.options /workspace/out/libfuzzer-address-x86_64/ExampleFuzzer.options
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": if [[ "$@" =~ (^| )-runs=[0-9]+($| ) ]]; then
+Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx1900m:-Xss900k'\''
+Step #3 - "compile-libfuzzer-address-x86_64": else
+Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx2048m:-Xss1024k'\''
+Step #3 - "compile-libfuzzer-address-x86_64": fi
+Step #3 - "compile-libfuzzer-address-x86_64": LD_LIBRARY_PATH="/usr/lib/jvm/java-17-openjdk-amd64/lib/server":$this_dir/native ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir --target_class=ExampleFuzzer --jvm_args="$mem_settings" $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/ExampleFuzzer
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -name '*Fuzzer.java' -or -name '*FuzzerNative.java')
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/ExampleValueProfileFuzzer.java
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=ExampleValueProfileFuzzer
+Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /usr/local/lib/jazzer_api_deploy.jar:/usr/local/bin/jazzer_junit.jar:/workspace/out/libfuzzer-address-x86_64/libs/junit-jupiter-api-5.9.0.jar /src/ExampleValueProfileFuzzer.java
+Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/ExampleValueProfileFuzzer.class /workspace/out/libfuzzer-address-x86_64/
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ ExampleValueProfileFuzzer == *FuzzerNative ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + driver=jazzer_driver
+Step #3 - "compile-libfuzzer-address-x86_64": + cp default.options /workspace/out/libfuzzer-address-x86_64/ExampleValueProfileFuzzer.options
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": if [[ "$@" =~ (^| )-runs=[0-9]+($| ) ]]; then
+Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx1900m:-Xss900k'\''
+Step #3 - "compile-libfuzzer-address-x86_64": else
+Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx2048m:-Xss1024k'\''
+Step #3 - "compile-libfuzzer-address-x86_64": fi
+Step #3 - "compile-libfuzzer-address-x86_64": LD_LIBRARY_PATH="/usr/lib/jvm/java-17-openjdk-amd64/lib/server":$this_dir/native ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir --target_class=ExampleValueProfileFuzzer --jvm_args="$mem_settings" $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/ExampleValueProfileFuzzer
+Step #3 - "compile-libfuzzer-address-x86_64": ++ find /src -name '*FuzzTest.java'
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -name '*FuzzTest.java')
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/MutatorFuzzTest.java
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=MutatorFuzzTest
+Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /usr/local/lib/jazzer_api_deploy.jar:/usr/local/bin/jazzer_junit.jar:/workspace/out/libfuzzer-address-x86_64/libs/junit-jupiter-api-5.9.0.jar:/usr/local/bin/jazzer_agent_deploy.jar /src/MutatorFuzzTest.java
+Step #3 - "compile-libfuzzer-address-x86_64": warning: unknown enum constant Status.STABLE
+Step #3 - "compile-libfuzzer-address-x86_64":   reason: class file for org.apiguardian.api.API$Status not found
+Step #3 - "compile-libfuzzer-address-x86_64": warning: unknown enum constant Status.STABLE
+Step #3 - "compile-libfuzzer-address-x86_64": warning: unknown enum constant Status.STABLE
+Step #3 - "compile-libfuzzer-address-x86_64": warning: unknown enum constant Status.STABLE
+Step #3 - "compile-libfuzzer-address-x86_64": warning: unknown enum constant Status.EXPERIMENTAL
+Step #3 - "compile-libfuzzer-address-x86_64": warning: unknown enum constant Status.EXPERIMENTAL
+Step #3 - "compile-libfuzzer-address-x86_64": 6 warnings
+Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/MutatorFuzzTest.class /workspace/out/libfuzzer-address-x86_64/
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": java -cp $this_dir:$this_dir/jazzer_agent_deploy.jar:$this_dir/jazzer_junit.jar:$this_dir/libs/* com.code_intelligence.jazzer.Jazzer --target_class=MutatorFuzzTest $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/MutatorFuzzTest
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -name '*FuzzTest.java')
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/ExampleFuzzTest.java
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=ExampleFuzzTest
+Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /usr/local/lib/jazzer_api_deploy.jar:/usr/local/bin/jazzer_junit.jar:/workspace/out/libfuzzer-address-x86_64/libs/junit-jupiter-api-5.9.0.jar:/usr/local/bin/jazzer_agent_deploy.jar /src/ExampleFuzzTest.java
+Step #3 - "compile-libfuzzer-address-x86_64": warning: unknown enum constant Status.STABLE
+Step #3 - "compile-libfuzzer-address-x86_64":   reason: class file for org.apiguardian.api.API$Status not found
+Step #3 - "compile-libfuzzer-address-x86_64": warning: unknown enum constant Status.STABLE
+Step #3 - "compile-libfuzzer-address-x86_64": warning: unknown enum constant Status.EXPERIMENTAL
+Step #3 - "compile-libfuzzer-address-x86_64": warning: unknown enum constant Status.EXPERIMENTAL
+Step #3 - "compile-libfuzzer-address-x86_64": 4 warnings
+Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/ExampleFuzzTest.class /workspace/out/libfuzzer-address-x86_64/
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": java -cp $this_dir:$this_dir/jazzer_agent_deploy.jar:$this_dir/jazzer_junit.jar:$this_dir/libs/* com.code_intelligence.jazzer.Jazzer --target_class=ExampleFuzzTest $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/ExampleFuzzTest
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+Starting Step #4 - "build-check-libfuzzer-address-x86_64"
+Step #4 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-libfuzzer-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-libfuzzer-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-libfuzzer-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 82b4985cbfa1: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": e2c78405bbfa: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": ef2dfda34072: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a716d0a8853: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 05c4230a3e2d: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c9452c900323: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": fbb1f50ce49e: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 53b45cbd7d3c: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": bcb66fd3f3f4: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": a88252db19c9: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 0e0ab7ce5454: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 7afce11c0328: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f669b1f58b23: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": b393aff931c0: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": eb373203f29c: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": bcd3173489a9: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 818d357f89dc: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 3bf35587d70e: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": ff9b3fdd3770: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": dc1ef8a0708c: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 476887b9e4f2: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c878006fe4fe: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 5644dbe182f5: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": e93eefb4ca22: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 611c16edb664: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f669b1f58b23: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": b393aff931c0: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 476887b9e4f2: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": c878006fe4fe: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 5644dbe182f5: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": e93eefb4ca22: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 611c16edb664: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": eb373203f29c: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": bcd3173489a9: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 818d357f89dc: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": c9452c900323: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": fbb1f50ce49e: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 53b45cbd7d3c: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": bcb66fd3f3f4: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": a88252db19c9: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 3bf35587d70e: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 7afce11c0328: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": dc1ef8a0708c: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 0e0ab7ce5454: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": ff9b3fdd3770: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 05c4230a3e2d: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 05c4230a3e2d: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ef2dfda34072: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a716d0a8853: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a716d0a8853: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": fbb1f50ce49e: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": fbb1f50ce49e: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c9452c900323: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": c9452c900323: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ef2dfda34072: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bcb66fd3f3f4: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a88252db19c9: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": a88252db19c9: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0e0ab7ce5454: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 0e0ab7ce5454: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a716d0a8853: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 05c4230a3e2d: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f669b1f58b23: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": f669b1f58b23: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 53b45cbd7d3c: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 53b45cbd7d3c: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c9452c900323: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": fbb1f50ce49e: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": b393aff931c0: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": b393aff931c0: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 7afce11c0328: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 7afce11c0328: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": eb373203f29c: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": eb373203f29c: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 818d357f89dc: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 818d357f89dc: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ff9b3fdd3770: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": ff9b3fdd3770: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": dc1ef8a0708c: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bcd3173489a9: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": bcd3173489a9: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 476887b9e4f2: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 476887b9e4f2: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c878006fe4fe: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": c878006fe4fe: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3bf35587d70e: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 3bf35587d70e: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 611c16edb664: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 611c16edb664: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5644dbe182f5: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 5644dbe182f5: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e93eefb4ca22: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": e93eefb4ca22: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 53b45cbd7d3c: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bcb66fd3f3f4: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a88252db19c9: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0e0ab7ce5454: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 7afce11c0328: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f669b1f58b23: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": b393aff931c0: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": eb373203f29c: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bcd3173489a9: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 818d357f89dc: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3bf35587d70e: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ff9b3fdd3770: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": dc1ef8a0708c: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 476887b9e4f2: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c878006fe4fe: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5644dbe182f5: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e93eefb4ca22: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 611c16edb664: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": Digest: sha256:065adb7119f5513ea3b47fe152282cf37f3b847444ab28cc231ac6d5877d1098
+Step #4 - "build-check-libfuzzer-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpws3frcdh/ExampleFuzzerNative
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpws3frcdh/ExampleFuzzTest
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpws3frcdh/ExampleValueProfileFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpws3frcdh/ExampleFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpws3frcdh/MutatorFuzzTest
+Step #4 - "build-check-libfuzzer-address-x86_64": Retrying failed fuzz targets sequentially 1
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpws3frcdh/ExampleFuzzerNative
+Step #4 - "build-check-libfuzzer-address-x86_64": Broken fuzz targets 1
+Step #4 - "build-check-libfuzzer-address-x86_64": ('/tmp/not-out/tmpws3frcdh/ExampleFuzzerNative', CompletedProcess(args=['bad_build_check', '/tmp/not-out/tmpws3frcdh/ExampleFuzzerNative'], returncode=1, stdout=b'BAD BUILD: /tmp/not-out/tmpws3frcdh/ExampleFuzzerNative seems to have either startup crash or exit:\nvm.mmap_rnd_bits = 28\n/tmp/not-out/tmpws3frcdh/ExampleFuzzerNative -- -rss_limit_mb=2560 -timeout=25 -seed=1337 -runs=4 < /dev/null\nOpenJDK 64-Bit Server VM warning: Option CriticalJNINatives was deprecated in version 16.0 and will likely be removed in a future release.\nWARN: Jazzer is not compatible with LeakSanitizer. Leaks are not reported.\nERROR: Failed to run \'clang --print-file-name libclang_rt.asan.so\':\njava.io.IOException: Cannot run program "clang": error=2, No such file or directory\n\tat java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)\n\tat java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)\n\tat com.code_intelligence.jazzer.Jazzer.tryFindLibraryUsingClang(Jazzer.java:485)\n\tat com.code_intelligence.jazzer.Jazzer.findHostClangLibrary(Jazzer.java:452)\n\tat com.code_intelligence.jazzer.Jazzer.findLibrary(Jazzer.java:425)\n\tat com.code_intelligence.jazzer.Jazzer.start(Jazzer.java:153)\n\tat com.code_intelligence.jazzer.Jazzer.main(Jazzer.java:77)\nCaused by: java.io.IOException: error=2, No such file or directory\n\tat java.base/java.lang.ProcessImpl.forkAndExec(Native Method)\n\tat java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:314)\n\tat java.base/java.lang.ProcessImpl.start(ProcessImpl.java:244)\n\tat java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)\n\t... 6 more\n', stderr=b''))
+Step #4 - "build-check-libfuzzer-address-x86_64": BAD BUILD: /tmp/not-out/tmpws3frcdh/ExampleFuzzerNative seems to have either startup crash or exit:
+Step #4 - "build-check-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #4 - "build-check-libfuzzer-address-x86_64": /tmp/not-out/tmpws3frcdh/ExampleFuzzerNative -- -rss_limit_mb=2560 -timeout=25 -seed=1337 -runs=4 < /dev/null
+Step #4 - "build-check-libfuzzer-address-x86_64": OpenJDK 64-Bit Server VM warning: Option CriticalJNINatives was deprecated in version 16.0 and will likely be removed in a future release.
+Step #4 - "build-check-libfuzzer-address-x86_64": WARN: Jazzer is not compatible with LeakSanitizer. Leaks are not reported.
+Step #4 - "build-check-libfuzzer-address-x86_64": ERROR: Failed to run 'clang --print-file-name libclang_rt.asan.so':
+Step #4 - "build-check-libfuzzer-address-x86_64": java.io.IOException: Cannot run program "clang": error=2, No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": 	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+Step #4 - "build-check-libfuzzer-address-x86_64": 	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+Step #4 - "build-check-libfuzzer-address-x86_64": 	at com.code_intelligence.jazzer.Jazzer.tryFindLibraryUsingClang(Jazzer.java:485)
+Step #4 - "build-check-libfuzzer-address-x86_64": 	at com.code_intelligence.jazzer.Jazzer.findHostClangLibrary(Jazzer.java:452)
+Step #4 - "build-check-libfuzzer-address-x86_64": 	at com.code_intelligence.jazzer.Jazzer.findLibrary(Jazzer.java:425)
+Step #4 - "build-check-libfuzzer-address-x86_64": 	at com.code_intelligence.jazzer.Jazzer.start(Jazzer.java:153)
+Step #4 - "build-check-libfuzzer-address-x86_64": 	at com.code_intelligence.jazzer.Jazzer.main(Jazzer.java:77)
+Step #4 - "build-check-libfuzzer-address-x86_64": Caused by: java.io.IOException: error=2, No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": 	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+Step #4 - "build-check-libfuzzer-address-x86_64": 	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+Step #4 - "build-check-libfuzzer-address-x86_64": 	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:244)
+Step #4 - "build-check-libfuzzer-address-x86_64": 	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+Step #4 - "build-check-libfuzzer-address-x86_64": 	... 6 more
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": ERROR: 20.0% of fuzz targets seem to be broken. See the list above for a detailed information.
+Step #4 - "build-check-libfuzzer-address-x86_64": ********************************************************************************\nBuild checks failed.\nTo reproduce, run:\npython infra/helper.py build_image java-example\npython infra/helper.py build_fuzzers --sanitizer address --engine libfuzzer --architecture x86_64 java-example\npython infra/helper.py check_build --sanitizer address --engine libfuzzer --architecture x86_64 java-example\n********************************************************************************
+Finished Step #4 - "build-check-libfuzzer-address-x86_64"
+ERROR
+ERROR: build step 4 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

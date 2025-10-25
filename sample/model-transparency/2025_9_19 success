@@ -1,0 +1,1372 @@
+starting build "c2d50936-6c53-4658-9033-b4897641b9da"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac"
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Sending build context to Docker daemon   5.12kB
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Step 1/5 : FROM gcr.io/oss-fuzz-base/base-builder-python
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": latest: Pulling from oss-fuzz-base/base-builder-python
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b549f31133a9: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f0936458f8ef: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": a9b13b0da72a: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 2dcb3695f063: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": c6417d6bf86c: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 729198acd6a3: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 8f44691bbfee: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 6718fa38d525: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 411c4f46eaf0: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": e2c399d20bd6: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 4243da570c11: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 1280a4fbf606: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 8a07815138c1: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": ed6e5c3a81a9: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f81cfb5d8fcb: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 59295b5d0482: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": bfd95d1e48c3: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 78f5abc977e8: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 7a0faac1eaaf: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f052f26413ec: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b38a7ab32bce: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 34cd19337d17: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": d95e2d7e1351: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": feee20fcaa69: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": acc4ba9b675c: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 96a97b56e83f: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 27a4bc2e09a3: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 71d373aba1fb: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 8f44691bbfee: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b7f2f3bf4013: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": a9e7763af921: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 3875a9770a6b: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 1280a4fbf606: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": e2c399d20bd6: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": c6417d6bf86c: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 5635c92e39ed: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 4243da570c11: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 929cbb46798a: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 8a07815138c1: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 4fabbbb6a911: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 6718fa38d525: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f81cfb5d8fcb: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": ed6e5c3a81a9: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 7afd7cb50231: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 59295b5d0482: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 729198acd6a3: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b08c3d83e971: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": feee20fcaa69: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b7f2f3bf4013: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": bfd95d1e48c3: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 596f30a4e5cf: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": acc4ba9b675c: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 96a97b56e83f: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 78f5abc977e8: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": a9e7763af921: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 27a4bc2e09a3: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 411c4f46eaf0: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 7a0faac1eaaf: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 3875a9770a6b: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": dcea06f99342: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 3c47fb5b2f91: Pulling fs layer
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f052f26413ec: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 2dcb3695f063: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b38a7ab32bce: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 5635c92e39ed: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 34cd19337d17: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 929cbb46798a: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": d95e2d7e1351: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b08c3d83e971: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 4fabbbb6a911: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 596f30a4e5cf: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 7afd7cb50231: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": dcea06f99342: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 3c47fb5b2f91: Waiting
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": a9b13b0da72a: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": a9b13b0da72a: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b549f31133a9: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b549f31133a9: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": c6417d6bf86c: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 2dcb3695f063: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 2dcb3695f063: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 8f44691bbfee: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 8f44691bbfee: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f0936458f8ef: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f0936458f8ef: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 6718fa38d525: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 6718fa38d525: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b549f31133a9: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": e2c399d20bd6: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": e2c399d20bd6: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 411c4f46eaf0: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 411c4f46eaf0: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 4243da570c11: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 4243da570c11: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 1280a4fbf606: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 1280a4fbf606: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 8a07815138c1: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 8a07815138c1: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": ed6e5c3a81a9: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": ed6e5c3a81a9: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f81cfb5d8fcb: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f81cfb5d8fcb: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 59295b5d0482: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 59295b5d0482: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 78f5abc977e8: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 78f5abc977e8: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": bfd95d1e48c3: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": bfd95d1e48c3: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 7a0faac1eaaf: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f052f26413ec: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f052f26413ec: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b38a7ab32bce: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b38a7ab32bce: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 34cd19337d17: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 34cd19337d17: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": feee20fcaa69: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": feee20fcaa69: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": d95e2d7e1351: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": d95e2d7e1351: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": acc4ba9b675c: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": acc4ba9b675c: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f0936458f8ef: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 96a97b56e83f: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 96a97b56e83f: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": a9b13b0da72a: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 27a4bc2e09a3: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 71d373aba1fb: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 71d373aba1fb: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 729198acd6a3: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 729198acd6a3: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 3875a9770a6b: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 3875a9770a6b: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b7f2f3bf4013: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b7f2f3bf4013: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": a9e7763af921: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": a9e7763af921: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 5635c92e39ed: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 5635c92e39ed: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 929cbb46798a: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 4fabbbb6a911: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b08c3d83e971: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b08c3d83e971: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 7afd7cb50231: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 596f30a4e5cf: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 596f30a4e5cf: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": dcea06f99342: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": dcea06f99342: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 3c47fb5b2f91: Verifying Checksum
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 3c47fb5b2f91: Download complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 2dcb3695f063: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": c6417d6bf86c: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 729198acd6a3: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 8f44691bbfee: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 6718fa38d525: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 411c4f46eaf0: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": e2c399d20bd6: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 4243da570c11: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 1280a4fbf606: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 8a07815138c1: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": ed6e5c3a81a9: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f81cfb5d8fcb: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 59295b5d0482: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": bfd95d1e48c3: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 78f5abc977e8: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 7a0faac1eaaf: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": f052f26413ec: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b38a7ab32bce: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 34cd19337d17: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": d95e2d7e1351: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": feee20fcaa69: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": acc4ba9b675c: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 96a97b56e83f: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 27a4bc2e09a3: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 71d373aba1fb: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b7f2f3bf4013: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": a9e7763af921: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 3875a9770a6b: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 5635c92e39ed: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 929cbb46798a: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 4fabbbb6a911: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 7afd7cb50231: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": b08c3d83e971: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 596f30a4e5cf: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": dcea06f99342: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 3c47fb5b2f91: Pull complete
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Digest: sha256:4cbb0081e0a028faf3a363a9389ab11f032123c2987e9d579c4ce49a784cb484
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-python:latest
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":  ---> a2bfe7f2ec94
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Step 2/5 : RUN apt-get update && apt-get install -y make autoconf automake libtool
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":  ---> Running in 5d507f95778c
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Fetched 128 kB in 1s (126 kB/s)
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Reading package lists...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Reading package lists...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Building dependency tree...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Reading state information...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": make set to manually installed.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": The following additional packages will be installed:
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":   file libltdl-dev libltdl7 libmagic-mgc libmagic1
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Suggested packages:
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":   autoconf-archive gnu-standards autoconf-doc gettext libtool-doc gfortran
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":   | fortran95-compiler gcj-jdk
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": The following NEW packages will be installed:
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":   autoconf automake file libltdl-dev libltdl7 libmagic-mgc libmagic1 libtool
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": 0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Need to get 1522 kB of archives.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": After this operation, 12.3 MB of additional disk space will be used.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": [0mFetched 1522 kB in 1s (1344 kB/s)
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Preparing to unpack .../0-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Preparing to unpack .../1-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Selecting previously unselected package file.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Preparing to unpack .../2-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Unpacking file (1:5.38-4) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Selecting previously unselected package autoconf.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Preparing to unpack .../3-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Selecting previously unselected package automake.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Preparing to unpack .../4-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Preparing to unpack .../5-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Preparing to unpack .../6-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Selecting previously unselected package libtool.
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Preparing to unpack .../7-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Setting up file (1:5.38-4) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Removing intermediate container 5d507f95778c
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":  ---> 114166dbee96
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Step 3/5 : RUN git clone --depth 1 https://github.com/sigstore/model-transparency
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":  ---> Running in 0f1f8143440f
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": [91mCloning into 'model-transparency'...
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": [0mRemoving intermediate container 0f1f8143440f
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":  ---> 8a4bb775eb06
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Step 4/5 : WORKDIR model-transparency
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":  ---> Running in 21cdc54e8318
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Removing intermediate container 21cdc54e8318
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":  ---> 5bdec1b04670
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Step 5/5 : COPY build.sh $SRC/
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac":  ---> 8c513d8ec45a
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Successfully built 8c513d8ec45a
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Successfully tagged gcr.io/oss-fuzz/model-transparency:latest
+Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/model-transparency:latest
+Finished Step #1 - "build-7a175faa-6f27-41ed-acca-151554bba9ac"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/model-transparency
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/filecXZtNM
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ python == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/model-transparency/.git
+Step #2 - "srcmap": + GIT_DIR=/src/model-transparency
+Step #2 - "srcmap": + cd /src/model-transparency
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/sigstore/model-transparency
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=542d0db04c76d05063940488e5f25697731dfab7
+Step #2 - "srcmap": + jq_inplace /tmp/filecXZtNM '."/src/model-transparency" = { type: "git", url: "https://github.com/sigstore/model-transparency", rev: "542d0db04c76d05063940488e5f25697731dfab7" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileND2re9
+Step #2 - "srcmap": + cat /tmp/filecXZtNM
+Step #2 - "srcmap": + jq '."/src/model-transparency" = { type: "git", url: "https://github.com/sigstore/model-transparency", rev: "542d0db04c76d05063940488e5f25697731dfab7" }'
+Step #2 - "srcmap": + mv /tmp/fileND2re9 /tmp/filecXZtNM
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/filecXZtNM
+Step #2 - "srcmap": + rm /tmp/filecXZtNM
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/model-transparency": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/sigstore/model-transparency",
+Step #2 - "srcmap":     "rev": "542d0db04c76d05063940488e5f25697731dfab7"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=function,leak,vptr,
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=function,leak,vptr
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + python3 -m pip install .
+Step #3 - "compile-libfuzzer-address-x86_64": Processing /src/model-transparency
+Step #3 - "compile-libfuzzer-address-x86_64":   Installing build dependencies ... [?25l- \ | / done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Getting requirements to build wheel ... [?25ldone
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Preparing metadata (pyproject.toml) ... [?25ldone
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting asn1crypto (from model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading asn1crypto-1.5.1-py2.py3-none-any.whl.metadata (13 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting click (from model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting cryptography (from model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading cryptography-46.0.1-cp311-abi3-manylinux_2_28_x86_64.whl.metadata (5.7 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting in-toto-attestation (from model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading in_toto_attestation-0.9.3-py3-none-any.whl.metadata (2.6 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting sigstore (from model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading sigstore-3.6.5-py3-none-any.whl.metadata (15 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting typing-extensions (from model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting cffi>=2.0.0 (from cryptography->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting pycparser (from cffi>=2.0.0->cryptography->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading pycparser-2.23-py3-none-any.whl.metadata (993 bytes)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting protobuf (from in-toto-attestation->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading protobuf-6.32.1-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting cryptography (from model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading cryptography-45.0.7-cp311-abi3-manylinux_2_28_x86_64.whl.metadata (5.7 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting id>=1.1.0 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading id-1.5.0-py3-none-any.whl.metadata (5.2 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting pyasn1~=0.6 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting pydantic<3,>=2 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading pydantic-2.11.9-py3-none-any.whl.metadata (68 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting pyjwt>=2.1 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading PyJWT-2.10.1-py3-none-any.whl.metadata (4.0 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting pyOpenSSL>=23.0.0 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading pyopenssl-25.3.0-py3-none-any.whl.metadata (17 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting requests (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting rich<15,>=13 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading rich-14.1.0-py3-none-any.whl.metadata (18 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting rfc8785~=0.1.2 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading rfc8785-0.1.4-py3-none-any.whl.metadata (3.4 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting rfc3161-client<1.1.0,>=1.0.3 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading rfc3161_client-1.0.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting sigstore-protobuf-specs==0.3.2 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading sigstore_protobuf_specs-0.3.2-py3-none-any.whl.metadata (1.4 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting sigstore-rekor-types==0.0.18 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading sigstore_rekor_types-0.0.18-py3-none-any.whl.metadata (13 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting tuf~=6.0 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading tuf-6.0.0-py3-none-any.whl.metadata (8.1 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting platformdirs~=4.2 (from sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading platformdirs-4.4.0-py3-none-any.whl.metadata (12 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting betterproto==2.0.0b6 (from sigstore-protobuf-specs==0.3.2->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading betterproto-2.0.0b6-py3-none-any.whl.metadata (17 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting grpclib<0.5.0,>=0.4.1 (from betterproto==2.0.0b6->sigstore-protobuf-specs==0.3.2->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading grpclib-0.4.8-py3-none-any.whl.metadata (6.1 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting python-dateutil<3.0,>=2.8 (from betterproto==2.0.0b6->sigstore-protobuf-specs==0.3.2->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting h2<5,>=3.1.0 (from grpclib<0.5.0,>=0.4.1->betterproto==2.0.0b6->sigstore-protobuf-specs==0.3.2->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading h2-4.3.0-py3-none-any.whl.metadata (5.1 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting multidict (from grpclib<0.5.0,>=0.4.1->betterproto==2.0.0b6->sigstore-protobuf-specs==0.3.2->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading multidict-6.6.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting hyperframe<7,>=6.1 (from h2<5,>=3.1.0->grpclib<0.5.0,>=0.4.1->betterproto==2.0.0b6->sigstore-protobuf-specs==0.3.2->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading hyperframe-6.1.0-py3-none-any.whl.metadata (4.3 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting hpack<5,>=4.1 (from h2<5,>=3.1.0->grpclib<0.5.0,>=0.4.1->betterproto==2.0.0b6->sigstore-protobuf-specs==0.3.2->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading hpack-4.1.0-py3-none-any.whl.metadata (4.6 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting annotated-types>=0.6.0 (from pydantic<3,>=2->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting pydantic-core==2.33.2 (from pydantic<3,>=2->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading pydantic_core-2.33.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting typing-inspection>=0.4.0 (from pydantic<3,>=2->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading typing_inspection-0.4.1-py3-none-any.whl.metadata (2.6 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting email-validator>=2.0.0 (from pydantic[email]<3,>=2->sigstore-rekor-types==0.0.18->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading email_validator-2.3.0-py3-none-any.whl.metadata (26 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.11/site-packages (from python-dateutil<3.0,>=2.8->betterproto==2.0.0b6->sigstore-protobuf-specs==0.3.2->sigstore->model-signing==1.0.1) (1.15.0)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting markdown-it-py>=2.2.0 (from rich<15,>=13->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting pygments<3.0.0,>=2.13.0 (from rich<15,>=13->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting securesystemslib~=1.0 (from tuf~=6.0->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading securesystemslib-1.3.0-py3-none-any.whl.metadata (4.7 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting urllib3<3,>=1.21.1 (from tuf~=6.0->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting dnspython>=2.0.0 (from email-validator>=2.0.0->pydantic[email]<3,>=2->sigstore-rekor-types==0.0.18->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading dnspython-2.8.0-py3-none-any.whl.metadata (5.7 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting idna>=2.0.0 (from email-validator>=2.0.0->pydantic[email]<3,>=2->sigstore-rekor-types==0.0.18->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich<15,>=13->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting charset_normalizer<4,>=2 (from requests->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (36 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting certifi>=2017.4.17 (from requests->sigstore->model-signing==1.0.1)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading certifi-2025.8.3-py3-none-any.whl.metadata (2.4 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading asn1crypto-1.5.1-py2.py3-none-any.whl (105 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading click-8.3.0-py3-none-any.whl (107 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (215 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading in_toto_attestation-0.9.3-py3-none-any.whl (13 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading protobuf-6.32.1-cp39-abi3-manylinux2014_x86_64.whl (322 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading sigstore-3.6.5-py3-none-any.whl (98 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading sigstore_protobuf_specs-0.3.2-py3-none-any.whl (24 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading betterproto-2.0.0b6-py3-none-any.whl (64 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading sigstore_rekor_types-0.0.18-py3-none-any.whl (20 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading cryptography-45.0.7-cp311-abi3-manylinux_2_28_x86_64.whl (4.5 MB)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/4.5 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m4.5/4.5 MB[0m [31m91.0 MB/s[0m  [33m0:00:00[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hDownloading grpclib-0.4.8-py3-none-any.whl (76 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading h2-4.3.0-py3-none-any.whl (61 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading hpack-4.1.0-py3-none-any.whl (34 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading hyperframe-6.1.0-py3-none-any.whl (13 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading platformdirs-4.4.0-py3-none-any.whl (18 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading pyasn1-0.6.1-py3-none-any.whl (83 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading pydantic-2.11.9-py3-none-any.whl (444 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading pydantic_core-2.33.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.0 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.0/2.0 MB[0m [31m89.7 MB/s[0m  [33m0:00:00[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hDownloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading rfc3161_client-1.0.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.2 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.2/2.2 MB[0m [31m96.3 MB/s[0m  [33m0:00:00[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hDownloading rfc8785-0.1.4-py3-none-any.whl (9.2 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading rich-14.1.0-py3-none-any.whl (243 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.2 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m76.0 MB/s[0m  [33m0:00:00[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hDownloading tuf-6.0.0-py3-none-any.whl (54 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading securesystemslib-1.3.0-py3-none-any.whl (871 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/871.2 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m871.2/871.2 kB[0m [31m56.0 MB/s[0m  [33m0:00:00[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hDownloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading email_validator-2.3.0-py3-none-any.whl (35 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading dnspython-2.8.0-py3-none-any.whl (331 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading id-1.5.0-py3-none-any.whl (13 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading idna-3.10-py3-none-any.whl (70 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading PyJWT-2.10.1-py3-none-any.whl (22 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading pyopenssl-25.3.0-py3-none-any.whl (57 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading typing_inspection-0.4.1-py3-none-any.whl (14 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading multidict-6.6.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (246 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (150 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading certifi-2025.8.3-py3-none-any.whl (161 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Building wheels for collected packages: model-signing
+Step #3 - "compile-libfuzzer-address-x86_64":   Building wheel for model-signing (pyproject.toml) ... [?25ldone
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Created wheel for model-signing: filename=model_signing-1.0.1-py3-none-any.whl size=74854 sha256=f27345b7ddd57f679472945fcab10cad6cf948470c3c9ca1c1f557444b47bcbb
+Step #3 - "compile-libfuzzer-address-x86_64":   Stored in directory: /root/.cache/pip/wheels/a1/02/87/8b89f995b84ccdbf992ed9ce50d5f8daca7ee55f7f347ab63b
+Step #3 - "compile-libfuzzer-address-x86_64": Successfully built model-signing
+Step #3 - "compile-libfuzzer-address-x86_64": Installing collected packages: asn1crypto, urllib3, typing-extensions, securesystemslib, rfc8785, python-dateutil, pyjwt, pygments, pycparser, pyasn1, protobuf, platformdirs, multidict, mdurl, idna, hyperframe, hpack, dnspython, click, charset_normalizer, certifi, annotated-types, typing-inspection, tuf, requests, pydantic-core, markdown-it-py, in-toto-attestation, h2, email-validator, cffi, rich, pydantic, id, grpclib, cryptography, rfc3161-client, pyOpenSSL, betterproto, sigstore-rekor-types, sigstore-protobuf-specs, sigstore, model-signing
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l[2K   [91m━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m 2/43[0m [typing-extensions][2K   [91m━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m 7/43[0m [pygments][2K   [91m━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m 7/43[0m [pygments][2K   [91m━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m 7/43[0m [pygments][2K   [91m━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m 7/43[0m [pygments][2K   [91m━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m 7/43[0m [pygments][2K   [91m━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m 8/43[0m [pycparser][2K   [91m━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m10/43[0m [protobuf][2K   [91m━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m14/43[0m [idna][2K   [91m━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m17/43[0m [dnspython][2K   [91m━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━[0m [32m18/43[0m [click][2K   [91m━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━[0m [32m24/43[0m [requests][2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━[0m [32m28/43[0m [h2][2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━[0m [32m31/43[0m [rich][2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━[0m [32m32/43[0m [pydantic][2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━[0m [32m32/43[0m [pydantic][2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━[0m [32m35/43[0m [cryptography][2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━[0m [32m37/43[0m [pyOpenSSL][2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m [32m42/43[0m [model-signing][2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m43/43[0m [model-signing]
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h[1A[2KSuccessfully installed annotated-types-0.7.0 asn1crypto-1.5.1 betterproto-2.0.0b6 certifi-2025.8.3 cffi-2.0.0 charset_normalizer-3.4.3 click-8.3.0 cryptography-45.0.7 dnspython-2.8.0 email-validator-2.3.0 grpclib-0.4.8 h2-4.3.0 hpack-4.1.0 hyperframe-6.1.0 id-1.5.0 idna-3.10 in-toto-attestation-0.9.3 markdown-it-py-4.0.0 mdurl-0.1.2 model-signing-1.0.1 multidict-6.6.4 platformdirs-4.4.0 protobuf-6.32.1 pyOpenSSL-25.3.0 pyasn1-0.6.1 pycparser-2.23 pydantic-2.11.9 pydantic-core-2.33.2 pygments-2.19.2 pyjwt-2.10.1 python-dateutil-2.9.0.post0 requests-2.32.5 rfc3161-client-1.0.4 rfc8785-0.1.4 rich-14.1.0 securesystemslib-1.3.0 sigstore-3.6.5 sigstore-protobuf-specs-0.3.2 sigstore-rekor-types-0.0.18 tuf-6.0.0 typing-extensions-4.15.0 typing-inspection-0.4.1 urllib3-2.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m++ find /src/model-transparency/tests/fuzzing -name 'fuzz_*.py'
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC/model-transparency/tests/fuzzing -name 'fuzz_*.py')
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_python_fuzzer /src/model-transparency/tests/fuzzing/fuzz_sign_with_invalid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_path=/src/model-transparency/tests/fuzzing/fuzz_sign_with_invalid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + shift 1
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .py /src/model-transparency/tests/fuzzing/fuzz_sign_with_invalid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=fuzz_sign_with_invalid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_package=fuzz_sign_with_invalid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_sign_with_invalid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *introspector* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ 0 != \0 ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_sign_with_invalid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-address-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_sign_with_invalid_key --onefile --name fuzz_sign_with_invalid_key.pkg /src/model-transparency/tests/fuzzing/fuzz_sign_with_invalid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": 77 INFO: PyInstaller: 6.10.0, contrib hooks: 2025.8
+Step #3 - "compile-libfuzzer-address-x86_64": 77 INFO: Python: 3.11.13
+Step #3 - "compile-libfuzzer-address-x86_64": 78 INFO: Platform: Linux-5.10.0-32-cloud-amd64-x86_64-with-glibc2.31
+Step #3 - "compile-libfuzzer-address-x86_64": 78 INFO: Python environment: /usr/local
+Step #3 - "compile-libfuzzer-address-x86_64": 79 INFO: wrote /src/model-transparency/fuzz_sign_with_invalid_key.pkg.spec
+Step #3 - "compile-libfuzzer-address-x86_64": 81 INFO: Module search paths (PYTHONPATH):
+Step #3 - "compile-libfuzzer-address-x86_64": ['/usr/local/lib/python311.zip',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/lib-dynload',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages/setuptools/_vendor',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/src/model-transparency/tests/fuzzing']
+Step #3 - "compile-libfuzzer-address-x86_64": 171 INFO: checking Analysis
+Step #3 - "compile-libfuzzer-address-x86_64": 171 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 171 INFO: Running Analysis Analysis-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 171 INFO: Target bytecode optimization level: 0
+Step #3 - "compile-libfuzzer-address-x86_64": 172 INFO: Initializing module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 172 INFO: Caching module graph hooks...
+Step #3 - "compile-libfuzzer-address-x86_64": 180 INFO: Analyzing base_library.zip ...
+Step #3 - "compile-libfuzzer-address-x86_64": 667 INFO: Processing standard module hook 'hook-heapq.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 915 INFO: Processing standard module hook 'hook-encodings.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 2316 INFO: Processing standard module hook 'hook-pickle.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 3787 INFO: Caching module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 3861 INFO: Looking for Python shared library...
+Step #3 - "compile-libfuzzer-address-x86_64": 3870 INFO: Using Python shared library: /usr/local/lib/libpython3.11.so.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": 3870 INFO: Analyzing /src/model-transparency/tests/fuzzing/fuzz_sign_with_invalid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": 3874 INFO: Processing standard module hook 'hook-atheris.py' from '/usr/local/lib/python3.11/site-packages/atheris'
+Step #3 - "compile-libfuzzer-address-x86_64": 3943 INFO: Processing standard module hook 'hook-cryptography.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 4401 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+Step #3 - "compile-libfuzzer-address-x86_64": 4576 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 4576 INFO: SetuptoolsInfo: initializing cached setuptools info...
+Step #3 - "compile-libfuzzer-address-x86_64": 8427 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 8557 INFO: Processing standard module hook 'hook-xml.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9167 INFO: Processing standard module hook 'hook-certifi.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9466 INFO: Processing standard module hook 'hook-dateutil.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9593 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 9838 INFO: Processing standard module hook 'hook-platform.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10701 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 10701 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+Step #3 - "compile-libfuzzer-address-x86_64": 10706 INFO: Processing standard module hook 'hook-setuptools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10713 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 10714 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_find_module_path'
+Step #3 - "compile-libfuzzer-address-x86_64": 10881 INFO: Processing standard module hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10934 INFO: Processing standard module hook 'hook-distutils.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10992 INFO: Processing standard module hook 'hook-sysconfig.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11175 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11176 INFO: Processing standard module hook 'hook-packaging.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11177 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11177 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11185 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11186 INFO: Setuptools: 'importlib_resources' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_resources'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11206 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11206 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11228 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11229 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11237 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11237 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11373 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11373 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11584 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11584 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11675 INFO: Processing standard module hook 'hook-backports.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11875 INFO: Processing pre-safe-import-module hook 'hook-ordered_set.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11875 INFO: Setuptools: 'ordered_set' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.ordered_set'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11974 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11974 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+Step #3 - "compile-libfuzzer-address-x86_64": 12538 INFO: Processing standard module hook 'hook-pkg_resources.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 12720 INFO: Processing pre-safe-import-module hook 'hook-platformdirs.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 12727 INFO: Processing standard module hook 'hook-platformdirs.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 12787 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 12787 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+Step #3 - "compile-libfuzzer-address-x86_64": 13127 INFO: Processing standard module hook 'hook-pydantic.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/lib/python3.11/site-packages/pydantic/experimental/__init__.py:7: PydanticExperimentalWarning: This module is experimental, its contents are subject to change and deprecation.
+Step #3 - "compile-libfuzzer-address-x86_64":   warnings.warn(
+Step #3 - "compile-libfuzzer-address-x86_64": 13887 INFO: Processing standard module hook 'hook-pygments.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 15556 INFO: Processing standard module hook 'hook-zoneinfo.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 16545 INFO: Processing standard module hook 'hook-dns.rdata.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 17769 INFO: Processing standard module hook 'hook-urllib3.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 18071 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 19103 INFO: Processing module hooks (post-graph stage)...
+Step #3 - "compile-libfuzzer-address-x86_64": 19502 INFO: Processing pre-safe-import-module hook 'hook-autocommand.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 19503 INFO: Setuptools: 'autocommand' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.autocommand'!
+Step #3 - "compile-libfuzzer-address-x86_64": 19635 INFO: Processing pre-safe-import-module hook 'hook-typeguard.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 19635 INFO: Setuptools: 'typeguard' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typeguard'!
+Step #3 - "compile-libfuzzer-address-x86_64": 22489 INFO: Performing binary vs. data reclassification (122 entries)
+Step #3 - "compile-libfuzzer-address-x86_64": 22493 INFO: Looking for ctypes DLLs
+Step #3 - "compile-libfuzzer-address-x86_64": 22520 WARNING: Library user32 required via ctypes not found
+Step #3 - "compile-libfuzzer-address-x86_64": 22567 WARNING: Library Iphlpapi.dll required via ctypes not found
+Step #3 - "compile-libfuzzer-address-x86_64": 22617 INFO: Analyzing run-time hooks ...
+Step #3 - "compile-libfuzzer-address-x86_64": 22626 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22628 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22630 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22631 INFO: Including run-time hook 'pyi_rth_setuptools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22632 INFO: Including run-time hook 'pyi_rth_pkgres.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22635 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22663 INFO: Looking for dynamic libraries
+Step #3 - "compile-libfuzzer-address-x86_64": 23347 INFO: Warnings written to /src/pyfuzzworkdir/fuzz_sign_with_invalid_key/fuzz_sign_with_invalid_key.pkg/warn-fuzz_sign_with_invalid_key.pkg.txt
+Step #3 - "compile-libfuzzer-address-x86_64": 23426 INFO: Graph cross-reference written to /src/pyfuzzworkdir/fuzz_sign_with_invalid_key/fuzz_sign_with_invalid_key.pkg/xref-fuzz_sign_with_invalid_key.pkg.html
+Step #3 - "compile-libfuzzer-address-x86_64": 23457 INFO: checking PYZ
+Step #3 - "compile-libfuzzer-address-x86_64": 23457 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 23457 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_sign_with_invalid_key/fuzz_sign_with_invalid_key.pkg/PYZ-00.pyz
+Step #3 - "compile-libfuzzer-address-x86_64": 24725 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_sign_with_invalid_key/fuzz_sign_with_invalid_key.pkg/PYZ-00.pyz completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 24756 INFO: checking PKG
+Step #3 - "compile-libfuzzer-address-x86_64": 24756 INFO: Building PKG because PKG-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 24756 INFO: Building PKG (CArchive) fuzz_sign_with_invalid_key.pkg.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 40870 INFO: Building PKG (CArchive) fuzz_sign_with_invalid_key.pkg.pkg completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 40874 INFO: Bootloader /usr/local/lib/python3.11/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #3 - "compile-libfuzzer-address-x86_64": 40874 INFO: checking EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 40874 INFO: Building EXE because EXE-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 40874 INFO: Building EXE from EXE-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 40874 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-address-x86_64/fuzz_sign_with_invalid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 40875 INFO: Appending PKG archive to custom ELF section in EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 41026 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod -x /workspace/out/libfuzzer-address-x86_64/fuzz_sign_with_invalid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/sh
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": chmod +x $this_dir/fuzz_sign_with_invalid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_sign_with_invalid_key.pkg $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/fuzz_sign_with_invalid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC/model-transparency/tests/fuzzing -name 'fuzz_*.py')
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_python_fuzzer /src/model-transparency/tests/fuzzing/fuzz_sign_verify_with_valid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_path=/src/model-transparency/tests/fuzzing/fuzz_sign_verify_with_valid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + shift 1
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .py /src/model-transparency/tests/fuzzing/fuzz_sign_verify_with_valid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=fuzz_sign_verify_with_valid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_package=fuzz_sign_verify_with_valid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_sign_verify_with_valid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *introspector* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ 0 != \0 ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_sign_verify_with_valid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-address-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_sign_verify_with_valid_key --onefile --name fuzz_sign_verify_with_valid_key.pkg /src/model-transparency/tests/fuzzing/fuzz_sign_verify_with_valid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": 73 INFO: PyInstaller: 6.10.0, contrib hooks: 2025.8
+Step #3 - "compile-libfuzzer-address-x86_64": 73 INFO: Python: 3.11.13
+Step #3 - "compile-libfuzzer-address-x86_64": 74 INFO: Platform: Linux-5.10.0-32-cloud-amd64-x86_64-with-glibc2.31
+Step #3 - "compile-libfuzzer-address-x86_64": 75 INFO: Python environment: /usr/local
+Step #3 - "compile-libfuzzer-address-x86_64": 75 INFO: wrote /src/model-transparency/fuzz_sign_verify_with_valid_key.pkg.spec
+Step #3 - "compile-libfuzzer-address-x86_64": 77 INFO: Module search paths (PYTHONPATH):
+Step #3 - "compile-libfuzzer-address-x86_64": ['/usr/local/lib/python311.zip',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/lib-dynload',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages/setuptools/_vendor',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/src/model-transparency/tests/fuzzing']
+Step #3 - "compile-libfuzzer-address-x86_64": 166 INFO: checking Analysis
+Step #3 - "compile-libfuzzer-address-x86_64": 166 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 166 INFO: Running Analysis Analysis-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 166 INFO: Target bytecode optimization level: 0
+Step #3 - "compile-libfuzzer-address-x86_64": 167 INFO: Initializing module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 167 INFO: Caching module graph hooks...
+Step #3 - "compile-libfuzzer-address-x86_64": 175 INFO: Analyzing base_library.zip ...
+Step #3 - "compile-libfuzzer-address-x86_64": 883 INFO: Processing standard module hook 'hook-heapq.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 958 INFO: Processing standard module hook 'hook-encodings.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 2280 INFO: Processing standard module hook 'hook-pickle.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 3679 INFO: Caching module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 3763 INFO: Looking for Python shared library...
+Step #3 - "compile-libfuzzer-address-x86_64": 3772 INFO: Using Python shared library: /usr/local/lib/libpython3.11.so.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": 3772 INFO: Analyzing /src/model-transparency/tests/fuzzing/fuzz_sign_verify_with_valid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": 3777 INFO: Processing standard module hook 'hook-atheris.py' from '/usr/local/lib/python3.11/site-packages/atheris'
+Step #3 - "compile-libfuzzer-address-x86_64": 3842 INFO: Processing standard module hook 'hook-cryptography.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 4292 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+Step #3 - "compile-libfuzzer-address-x86_64": 4482 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 4482 INFO: SetuptoolsInfo: initializing cached setuptools info...
+Step #3 - "compile-libfuzzer-address-x86_64": 8223 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 8356 INFO: Processing standard module hook 'hook-xml.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 8944 INFO: Processing standard module hook 'hook-certifi.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9277 INFO: Processing standard module hook 'hook-dateutil.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9404 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 9638 INFO: Processing standard module hook 'hook-platform.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10525 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 10525 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+Step #3 - "compile-libfuzzer-address-x86_64": 10530 INFO: Processing standard module hook 'hook-setuptools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10538 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 10538 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_find_module_path'
+Step #3 - "compile-libfuzzer-address-x86_64": 10704 INFO: Processing standard module hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10787 INFO: Processing standard module hook 'hook-distutils.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10820 INFO: Processing standard module hook 'hook-sysconfig.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11018 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11019 INFO: Processing standard module hook 'hook-packaging.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11021 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11021 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11029 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11030 INFO: Setuptools: 'importlib_resources' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_resources'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11050 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11051 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11073 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11073 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11080 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11081 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11203 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11203 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11415 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11416 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11550 INFO: Processing standard module hook 'hook-backports.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11718 INFO: Processing pre-safe-import-module hook 'hook-ordered_set.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11718 INFO: Setuptools: 'ordered_set' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.ordered_set'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11814 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11815 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+Step #3 - "compile-libfuzzer-address-x86_64": 12377 INFO: Processing standard module hook 'hook-pkg_resources.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 12564 INFO: Processing pre-safe-import-module hook 'hook-platformdirs.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 12570 INFO: Processing standard module hook 'hook-platformdirs.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 12627 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 12627 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+Step #3 - "compile-libfuzzer-address-x86_64": 12954 INFO: Processing standard module hook 'hook-pydantic.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/lib/python3.11/site-packages/pydantic/experimental/__init__.py:7: PydanticExperimentalWarning: This module is experimental, its contents are subject to change and deprecation.
+Step #3 - "compile-libfuzzer-address-x86_64":   warnings.warn(
+Step #3 - "compile-libfuzzer-address-x86_64": 13797 INFO: Processing standard module hook 'hook-pygments.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 15374 INFO: Processing standard module hook 'hook-zoneinfo.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 16316 INFO: Processing standard module hook 'hook-dns.rdata.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 17495 INFO: Processing standard module hook 'hook-urllib3.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 17770 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 18805 INFO: Processing module hooks (post-graph stage)...
+Step #3 - "compile-libfuzzer-address-x86_64": 19157 INFO: Processing pre-safe-import-module hook 'hook-autocommand.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 19157 INFO: Setuptools: 'autocommand' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.autocommand'!
+Step #3 - "compile-libfuzzer-address-x86_64": 19271 INFO: Processing pre-safe-import-module hook 'hook-typeguard.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 19272 INFO: Setuptools: 'typeguard' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typeguard'!
+Step #3 - "compile-libfuzzer-address-x86_64": 22076 INFO: Performing binary vs. data reclassification (122 entries)
+Step #3 - "compile-libfuzzer-address-x86_64": 22081 INFO: Looking for ctypes DLLs
+Step #3 - "compile-libfuzzer-address-x86_64": 22106 WARNING: Library user32 required via ctypes not found
+Step #3 - "compile-libfuzzer-address-x86_64": 22154 WARNING: Library Iphlpapi.dll required via ctypes not found
+Step #3 - "compile-libfuzzer-address-x86_64": 22203 INFO: Analyzing run-time hooks ...
+Step #3 - "compile-libfuzzer-address-x86_64": 22212 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22214 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22215 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22216 INFO: Including run-time hook 'pyi_rth_setuptools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22217 INFO: Including run-time hook 'pyi_rth_pkgres.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22221 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22247 INFO: Looking for dynamic libraries
+Step #3 - "compile-libfuzzer-address-x86_64": 22946 INFO: Warnings written to /src/pyfuzzworkdir/fuzz_sign_verify_with_valid_key/fuzz_sign_verify_with_valid_key.pkg/warn-fuzz_sign_verify_with_valid_key.pkg.txt
+Step #3 - "compile-libfuzzer-address-x86_64": 23024 INFO: Graph cross-reference written to /src/pyfuzzworkdir/fuzz_sign_verify_with_valid_key/fuzz_sign_verify_with_valid_key.pkg/xref-fuzz_sign_verify_with_valid_key.pkg.html
+Step #3 - "compile-libfuzzer-address-x86_64": 23054 INFO: checking PYZ
+Step #3 - "compile-libfuzzer-address-x86_64": 23054 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 23054 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_sign_verify_with_valid_key/fuzz_sign_verify_with_valid_key.pkg/PYZ-00.pyz
+Step #3 - "compile-libfuzzer-address-x86_64": 24318 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_sign_verify_with_valid_key/fuzz_sign_verify_with_valid_key.pkg/PYZ-00.pyz completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 24348 INFO: checking PKG
+Step #3 - "compile-libfuzzer-address-x86_64": 24348 INFO: Building PKG because PKG-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 24348 INFO: Building PKG (CArchive) fuzz_sign_verify_with_valid_key.pkg.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 40432 INFO: Building PKG (CArchive) fuzz_sign_verify_with_valid_key.pkg.pkg completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 40436 INFO: Bootloader /usr/local/lib/python3.11/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #3 - "compile-libfuzzer-address-x86_64": 40436 INFO: checking EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 40436 INFO: Building EXE because EXE-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 40436 INFO: Building EXE from EXE-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 40436 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-address-x86_64/fuzz_sign_verify_with_valid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 40436 INFO: Appending PKG archive to custom ELF section in EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 40583 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod -x /workspace/out/libfuzzer-address-x86_64/fuzz_sign_verify_with_valid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/sh
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": chmod +x $this_dir/fuzz_sign_verify_with_valid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_sign_verify_with_valid_key.pkg $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/fuzz_sign_verify_with_valid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC/model-transparency/tests/fuzzing -name 'fuzz_*.py')
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_python_fuzzer /src/model-transparency/tests/fuzzing/fuzz_with_cert_chain.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_path=/src/model-transparency/tests/fuzzing/fuzz_with_cert_chain.py
+Step #3 - "compile-libfuzzer-address-x86_64": + shift 1
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .py /src/model-transparency/tests/fuzzing/fuzz_with_cert_chain.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=fuzz_with_cert_chain
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_package=fuzz_with_cert_chain.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_with_cert_chain
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *introspector* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ 0 != \0 ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_with_cert_chain
+Step #3 - "compile-libfuzzer-address-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-address-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_with_cert_chain --onefile --name fuzz_with_cert_chain.pkg /src/model-transparency/tests/fuzzing/fuzz_with_cert_chain.py
+Step #3 - "compile-libfuzzer-address-x86_64": 71 INFO: PyInstaller: 6.10.0, contrib hooks: 2025.8
+Step #3 - "compile-libfuzzer-address-x86_64": 71 INFO: Python: 3.11.13
+Step #3 - "compile-libfuzzer-address-x86_64": 73 INFO: Platform: Linux-5.10.0-32-cloud-amd64-x86_64-with-glibc2.31
+Step #3 - "compile-libfuzzer-address-x86_64": 73 INFO: Python environment: /usr/local
+Step #3 - "compile-libfuzzer-address-x86_64": 73 INFO: wrote /src/model-transparency/fuzz_with_cert_chain.pkg.spec
+Step #3 - "compile-libfuzzer-address-x86_64": 74 INFO: Module search paths (PYTHONPATH):
+Step #3 - "compile-libfuzzer-address-x86_64": ['/usr/local/lib/python311.zip',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/lib-dynload',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages/setuptools/_vendor',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/src/model-transparency/tests/fuzzing']
+Step #3 - "compile-libfuzzer-address-x86_64": 165 INFO: checking Analysis
+Step #3 - "compile-libfuzzer-address-x86_64": 165 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 165 INFO: Running Analysis Analysis-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 166 INFO: Target bytecode optimization level: 0
+Step #3 - "compile-libfuzzer-address-x86_64": 166 INFO: Initializing module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 166 INFO: Caching module graph hooks...
+Step #3 - "compile-libfuzzer-address-x86_64": 174 INFO: Analyzing base_library.zip ...
+Step #3 - "compile-libfuzzer-address-x86_64": 782 INFO: Processing standard module hook 'hook-heapq.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 904 INFO: Processing standard module hook 'hook-encodings.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 2315 INFO: Processing standard module hook 'hook-pickle.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 3787 INFO: Caching module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 3859 INFO: Looking for Python shared library...
+Step #3 - "compile-libfuzzer-address-x86_64": 3869 INFO: Using Python shared library: /usr/local/lib/libpython3.11.so.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": 3869 INFO: Analyzing /src/model-transparency/tests/fuzzing/fuzz_with_cert_chain.py
+Step #3 - "compile-libfuzzer-address-x86_64": 3879 INFO: Processing standard module hook 'hook-atheris.py' from '/usr/local/lib/python3.11/site-packages/atheris'
+Step #3 - "compile-libfuzzer-address-x86_64": 3952 INFO: Processing standard module hook 'hook-cryptography.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 4398 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+Step #3 - "compile-libfuzzer-address-x86_64": 4696 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 4697 INFO: SetuptoolsInfo: initializing cached setuptools info...
+Step #3 - "compile-libfuzzer-address-x86_64": 8538 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 8706 INFO: Processing standard module hook 'hook-xml.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9275 INFO: Processing standard module hook 'hook-certifi.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9468 INFO: Processing standard module hook 'hook-dateutil.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9591 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 9832 INFO: Processing standard module hook 'hook-platform.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10674 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 10674 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+Step #3 - "compile-libfuzzer-address-x86_64": 10680 INFO: Processing standard module hook 'hook-setuptools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10687 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 10687 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_find_module_path'
+Step #3 - "compile-libfuzzer-address-x86_64": 10852 INFO: Processing standard module hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10906 INFO: Processing standard module hook 'hook-distutils.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10974 INFO: Processing standard module hook 'hook-sysconfig.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11171 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11171 INFO: Processing standard module hook 'hook-packaging.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11173 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11173 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11183 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11183 INFO: Setuptools: 'importlib_resources' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_resources'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11203 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11203 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11224 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11224 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11231 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11231 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11359 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11359 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11568 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11568 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11660 INFO: Processing standard module hook 'hook-backports.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11859 INFO: Processing pre-safe-import-module hook 'hook-ordered_set.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11859 INFO: Setuptools: 'ordered_set' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.ordered_set'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11954 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11954 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+Step #3 - "compile-libfuzzer-address-x86_64": 12498 INFO: Processing standard module hook 'hook-pkg_resources.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 12686 INFO: Processing pre-safe-import-module hook 'hook-platformdirs.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 12693 INFO: Processing standard module hook 'hook-platformdirs.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 12752 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 12752 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+Step #3 - "compile-libfuzzer-address-x86_64": 13092 INFO: Processing standard module hook 'hook-pydantic.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/lib/python3.11/site-packages/pydantic/experimental/__init__.py:7: PydanticExperimentalWarning: This module is experimental, its contents are subject to change and deprecation.
+Step #3 - "compile-libfuzzer-address-x86_64":   warnings.warn(
+Step #3 - "compile-libfuzzer-address-x86_64": 13872 INFO: Processing standard module hook 'hook-pygments.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 15458 INFO: Processing standard module hook 'hook-zoneinfo.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 16410 INFO: Processing standard module hook 'hook-dns.rdata.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 17556 INFO: Processing standard module hook 'hook-urllib3.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 17845 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 18862 INFO: Processing module hooks (post-graph stage)...
+Step #3 - "compile-libfuzzer-address-x86_64": 19220 INFO: Processing pre-safe-import-module hook 'hook-autocommand.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 19220 INFO: Setuptools: 'autocommand' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.autocommand'!
+Step #3 - "compile-libfuzzer-address-x86_64": 19334 INFO: Processing pre-safe-import-module hook 'hook-typeguard.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 19334 INFO: Setuptools: 'typeguard' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typeguard'!
+Step #3 - "compile-libfuzzer-address-x86_64": 22088 INFO: Performing binary vs. data reclassification (122 entries)
+Step #3 - "compile-libfuzzer-address-x86_64": 22093 INFO: Looking for ctypes DLLs
+Step #3 - "compile-libfuzzer-address-x86_64": 22117 WARNING: Library user32 required via ctypes not found
+Step #3 - "compile-libfuzzer-address-x86_64": 22163 WARNING: Library Iphlpapi.dll required via ctypes not found
+Step #3 - "compile-libfuzzer-address-x86_64": 22211 INFO: Analyzing run-time hooks ...
+Step #3 - "compile-libfuzzer-address-x86_64": 22220 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22221 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22223 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22225 INFO: Including run-time hook 'pyi_rth_setuptools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22225 INFO: Including run-time hook 'pyi_rth_pkgres.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22229 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22254 INFO: Looking for dynamic libraries
+Step #3 - "compile-libfuzzer-address-x86_64": 22912 INFO: Warnings written to /src/pyfuzzworkdir/fuzz_with_cert_chain/fuzz_with_cert_chain.pkg/warn-fuzz_with_cert_chain.pkg.txt
+Step #3 - "compile-libfuzzer-address-x86_64": 22990 INFO: Graph cross-reference written to /src/pyfuzzworkdir/fuzz_with_cert_chain/fuzz_with_cert_chain.pkg/xref-fuzz_with_cert_chain.pkg.html
+Step #3 - "compile-libfuzzer-address-x86_64": 23019 INFO: checking PYZ
+Step #3 - "compile-libfuzzer-address-x86_64": 23019 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 23019 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_with_cert_chain/fuzz_with_cert_chain.pkg/PYZ-00.pyz
+Step #3 - "compile-libfuzzer-address-x86_64": 24249 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_with_cert_chain/fuzz_with_cert_chain.pkg/PYZ-00.pyz completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 24279 INFO: checking PKG
+Step #3 - "compile-libfuzzer-address-x86_64": 24279 INFO: Building PKG because PKG-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 24279 INFO: Building PKG (CArchive) fuzz_with_cert_chain.pkg.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 40308 INFO: Building PKG (CArchive) fuzz_with_cert_chain.pkg.pkg completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 40311 INFO: Bootloader /usr/local/lib/python3.11/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #3 - "compile-libfuzzer-address-x86_64": 40312 INFO: checking EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 40312 INFO: Building EXE because EXE-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 40312 INFO: Building EXE from EXE-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 40312 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-address-x86_64/fuzz_with_cert_chain.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 40312 INFO: Appending PKG archive to custom ELF section in EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 40460 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod -x /workspace/out/libfuzzer-address-x86_64/fuzz_with_cert_chain.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/sh
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": chmod +x $this_dir/fuzz_with_cert_chain.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_with_cert_chain.pkg $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/fuzz_with_cert_chain
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC/model-transparency/tests/fuzzing -name 'fuzz_*.py')
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_python_fuzzer /src/model-transparency/tests/fuzzing/fuzz_sign_then_mutate_verify_with_valid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_path=/src/model-transparency/tests/fuzzing/fuzz_sign_then_mutate_verify_with_valid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + shift 1
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .py /src/model-transparency/tests/fuzzing/fuzz_sign_then_mutate_verify_with_valid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=fuzz_sign_then_mutate_verify_with_valid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_package=fuzz_sign_then_mutate_verify_with_valid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_sign_then_mutate_verify_with_valid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *introspector* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ 0 != \0 ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_sign_then_mutate_verify_with_valid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-address-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_sign_then_mutate_verify_with_valid_key --onefile --name fuzz_sign_then_mutate_verify_with_valid_key.pkg /src/model-transparency/tests/fuzzing/fuzz_sign_then_mutate_verify_with_valid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": 69 INFO: PyInstaller: 6.10.0, contrib hooks: 2025.8
+Step #3 - "compile-libfuzzer-address-x86_64": 69 INFO: Python: 3.11.13
+Step #3 - "compile-libfuzzer-address-x86_64": 71 INFO: Platform: Linux-5.10.0-32-cloud-amd64-x86_64-with-glibc2.31
+Step #3 - "compile-libfuzzer-address-x86_64": 71 INFO: Python environment: /usr/local
+Step #3 - "compile-libfuzzer-address-x86_64": 71 INFO: wrote /src/model-transparency/fuzz_sign_then_mutate_verify_with_valid_key.pkg.spec
+Step #3 - "compile-libfuzzer-address-x86_64": 73 INFO: Module search paths (PYTHONPATH):
+Step #3 - "compile-libfuzzer-address-x86_64": ['/usr/local/lib/python311.zip',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/lib-dynload',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages/setuptools/_vendor',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/src/model-transparency/tests/fuzzing']
+Step #3 - "compile-libfuzzer-address-x86_64": 162 INFO: checking Analysis
+Step #3 - "compile-libfuzzer-address-x86_64": 163 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 163 INFO: Running Analysis Analysis-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 163 INFO: Target bytecode optimization level: 0
+Step #3 - "compile-libfuzzer-address-x86_64": 163 INFO: Initializing module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 163 INFO: Caching module graph hooks...
+Step #3 - "compile-libfuzzer-address-x86_64": 171 INFO: Analyzing base_library.zip ...
+Step #3 - "compile-libfuzzer-address-x86_64": 775 INFO: Processing standard module hook 'hook-heapq.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 862 INFO: Processing standard module hook 'hook-encodings.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 2271 INFO: Processing standard module hook 'hook-pickle.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 3699 INFO: Caching module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 3770 INFO: Looking for Python shared library...
+Step #3 - "compile-libfuzzer-address-x86_64": 3779 INFO: Using Python shared library: /usr/local/lib/libpython3.11.so.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": 3779 INFO: Analyzing /src/model-transparency/tests/fuzzing/fuzz_sign_then_mutate_verify_with_valid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": 3785 INFO: Processing standard module hook 'hook-atheris.py' from '/usr/local/lib/python3.11/site-packages/atheris'
+Step #3 - "compile-libfuzzer-address-x86_64": 3863 INFO: Processing standard module hook 'hook-cryptography.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 4311 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+Step #3 - "compile-libfuzzer-address-x86_64": 4497 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 4497 INFO: SetuptoolsInfo: initializing cached setuptools info...
+Step #3 - "compile-libfuzzer-address-x86_64": 8291 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 8432 INFO: Processing standard module hook 'hook-xml.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9058 INFO: Processing standard module hook 'hook-certifi.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9365 INFO: Processing standard module hook 'hook-dateutil.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9494 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 9737 INFO: Processing standard module hook 'hook-platform.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10613 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 10613 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+Step #3 - "compile-libfuzzer-address-x86_64": 10618 INFO: Processing standard module hook 'hook-setuptools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10625 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 10625 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_find_module_path'
+Step #3 - "compile-libfuzzer-address-x86_64": 10793 INFO: Processing standard module hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10849 INFO: Processing standard module hook 'hook-distutils.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10921 INFO: Processing standard module hook 'hook-sysconfig.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11116 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11117 INFO: Processing standard module hook 'hook-packaging.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11119 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11119 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11127 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11127 INFO: Setuptools: 'importlib_resources' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_resources'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11148 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11148 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11167 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11167 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11174 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11174 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11291 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11291 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11500 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11500 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11591 INFO: Processing standard module hook 'hook-backports.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11782 INFO: Processing pre-safe-import-module hook 'hook-ordered_set.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11782 INFO: Setuptools: 'ordered_set' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.ordered_set'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11880 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11880 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+Step #3 - "compile-libfuzzer-address-x86_64": 12412 INFO: Processing standard module hook 'hook-pkg_resources.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 12607 INFO: Processing pre-safe-import-module hook 'hook-platformdirs.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 12614 INFO: Processing standard module hook 'hook-platformdirs.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 12672 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 12672 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+Step #3 - "compile-libfuzzer-address-x86_64": 13000 INFO: Processing standard module hook 'hook-pydantic.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/lib/python3.11/site-packages/pydantic/experimental/__init__.py:7: PydanticExperimentalWarning: This module is experimental, its contents are subject to change and deprecation.
+Step #3 - "compile-libfuzzer-address-x86_64":   warnings.warn(
+Step #3 - "compile-libfuzzer-address-x86_64": 13721 INFO: Processing standard module hook 'hook-pygments.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 15324 INFO: Processing standard module hook 'hook-zoneinfo.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 16273 INFO: Processing standard module hook 'hook-dns.rdata.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 17413 INFO: Processing standard module hook 'hook-urllib3.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 17694 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 18747 INFO: Processing module hooks (post-graph stage)...
+Step #3 - "compile-libfuzzer-address-x86_64": 19137 INFO: Processing pre-safe-import-module hook 'hook-autocommand.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 19137 INFO: Setuptools: 'autocommand' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.autocommand'!
+Step #3 - "compile-libfuzzer-address-x86_64": 19246 INFO: Processing pre-safe-import-module hook 'hook-typeguard.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 19246 INFO: Setuptools: 'typeguard' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typeguard'!
+Step #3 - "compile-libfuzzer-address-x86_64": 21985 INFO: Performing binary vs. data reclassification (122 entries)
+Step #3 - "compile-libfuzzer-address-x86_64": 21990 INFO: Looking for ctypes DLLs
+Step #3 - "compile-libfuzzer-address-x86_64": 22014 WARNING: Library user32 required via ctypes not found
+Step #3 - "compile-libfuzzer-address-x86_64": 22061 WARNING: Library Iphlpapi.dll required via ctypes not found
+Step #3 - "compile-libfuzzer-address-x86_64": 22109 INFO: Analyzing run-time hooks ...
+Step #3 - "compile-libfuzzer-address-x86_64": 22118 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22119 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22121 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22122 INFO: Including run-time hook 'pyi_rth_setuptools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22123 INFO: Including run-time hook 'pyi_rth_pkgres.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22127 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22153 INFO: Looking for dynamic libraries
+Step #3 - "compile-libfuzzer-address-x86_64": 22841 INFO: Warnings written to /src/pyfuzzworkdir/fuzz_sign_then_mutate_verify_with_valid_key/fuzz_sign_then_mutate_verify_with_valid_key.pkg/warn-fuzz_sign_then_mutate_verify_with_valid_key.pkg.txt
+Step #3 - "compile-libfuzzer-address-x86_64": 22916 INFO: Graph cross-reference written to /src/pyfuzzworkdir/fuzz_sign_then_mutate_verify_with_valid_key/fuzz_sign_then_mutate_verify_with_valid_key.pkg/xref-fuzz_sign_then_mutate_verify_with_valid_key.pkg.html
+Step #3 - "compile-libfuzzer-address-x86_64": 22946 INFO: checking PYZ
+Step #3 - "compile-libfuzzer-address-x86_64": 22946 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 22946 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_sign_then_mutate_verify_with_valid_key/fuzz_sign_then_mutate_verify_with_valid_key.pkg/PYZ-00.pyz
+Step #3 - "compile-libfuzzer-address-x86_64": 24200 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_sign_then_mutate_verify_with_valid_key/fuzz_sign_then_mutate_verify_with_valid_key.pkg/PYZ-00.pyz completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 24230 INFO: checking PKG
+Step #3 - "compile-libfuzzer-address-x86_64": 24231 INFO: Building PKG because PKG-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 24231 INFO: Building PKG (CArchive) fuzz_sign_then_mutate_verify_with_valid_key.pkg.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 40257 INFO: Building PKG (CArchive) fuzz_sign_then_mutate_verify_with_valid_key.pkg.pkg completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 40261 INFO: Bootloader /usr/local/lib/python3.11/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #3 - "compile-libfuzzer-address-x86_64": 40261 INFO: checking EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 40261 INFO: Building EXE because EXE-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 40261 INFO: Building EXE from EXE-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 40261 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-address-x86_64/fuzz_sign_then_mutate_verify_with_valid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 40261 INFO: Appending PKG archive to custom ELF section in EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 40385 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod -x /workspace/out/libfuzzer-address-x86_64/fuzz_sign_then_mutate_verify_with_valid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/sh
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": chmod +x $this_dir/fuzz_sign_then_mutate_verify_with_valid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_sign_then_mutate_verify_with_valid_key.pkg $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/fuzz_sign_then_mutate_verify_with_valid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC/model-transparency/tests/fuzzing -name 'fuzz_*.py')
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_python_fuzzer /src/model-transparency/tests/fuzzing/fuzz_sign_with_valid_key_verify_with_invalid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_path=/src/model-transparency/tests/fuzzing/fuzz_sign_with_valid_key_verify_with_invalid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + shift 1
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .py /src/model-transparency/tests/fuzzing/fuzz_sign_with_valid_key_verify_with_invalid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=fuzz_sign_with_valid_key_verify_with_invalid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_package=fuzz_sign_with_valid_key_verify_with_invalid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_sign_with_valid_key_verify_with_invalid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *introspector* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ 0 != \0 ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_sign_with_valid_key_verify_with_invalid_key
+Step #3 - "compile-libfuzzer-address-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-address-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_sign_with_valid_key_verify_with_invalid_key --onefile --name fuzz_sign_with_valid_key_verify_with_invalid_key.pkg /src/model-transparency/tests/fuzzing/fuzz_sign_with_valid_key_verify_with_invalid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": 72 INFO: PyInstaller: 6.10.0, contrib hooks: 2025.8
+Step #3 - "compile-libfuzzer-address-x86_64": 72 INFO: Python: 3.11.13
+Step #3 - "compile-libfuzzer-address-x86_64": 73 INFO: Platform: Linux-5.10.0-32-cloud-amd64-x86_64-with-glibc2.31
+Step #3 - "compile-libfuzzer-address-x86_64": 73 INFO: Python environment: /usr/local
+Step #3 - "compile-libfuzzer-address-x86_64": 73 INFO: wrote /src/model-transparency/fuzz_sign_with_valid_key_verify_with_invalid_key.pkg.spec
+Step #3 - "compile-libfuzzer-address-x86_64": 75 INFO: Module search paths (PYTHONPATH):
+Step #3 - "compile-libfuzzer-address-x86_64": ['/usr/local/lib/python311.zip',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/lib-dynload',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages/setuptools/_vendor',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/src/model-transparency/tests/fuzzing']
+Step #3 - "compile-libfuzzer-address-x86_64": 165 INFO: checking Analysis
+Step #3 - "compile-libfuzzer-address-x86_64": 165 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 165 INFO: Running Analysis Analysis-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 165 INFO: Target bytecode optimization level: 0
+Step #3 - "compile-libfuzzer-address-x86_64": 165 INFO: Initializing module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 166 INFO: Caching module graph hooks...
+Step #3 - "compile-libfuzzer-address-x86_64": 173 INFO: Analyzing base_library.zip ...
+Step #3 - "compile-libfuzzer-address-x86_64": 826 INFO: Processing standard module hook 'hook-heapq.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 932 INFO: Processing standard module hook 'hook-encodings.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 2336 INFO: Processing standard module hook 'hook-pickle.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 3855 INFO: Caching module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 3925 INFO: Looking for Python shared library...
+Step #3 - "compile-libfuzzer-address-x86_64": 3934 INFO: Using Python shared library: /usr/local/lib/libpython3.11.so.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": 3934 INFO: Analyzing /src/model-transparency/tests/fuzzing/fuzz_sign_with_valid_key_verify_with_invalid_key.py
+Step #3 - "compile-libfuzzer-address-x86_64": 3938 INFO: Processing standard module hook 'hook-atheris.py' from '/usr/local/lib/python3.11/site-packages/atheris'
+Step #3 - "compile-libfuzzer-address-x86_64": 3998 INFO: Processing standard module hook 'hook-cryptography.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 4435 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+Step #3 - "compile-libfuzzer-address-x86_64": 4630 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 4630 INFO: SetuptoolsInfo: initializing cached setuptools info...
+Step #3 - "compile-libfuzzer-address-x86_64": 8388 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 8523 INFO: Processing standard module hook 'hook-xml.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9127 INFO: Processing standard module hook 'hook-certifi.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9441 INFO: Processing standard module hook 'hook-dateutil.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9562 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 9780 INFO: Processing standard module hook 'hook-platform.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10671 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 10671 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+Step #3 - "compile-libfuzzer-address-x86_64": 10676 INFO: Processing standard module hook 'hook-setuptools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10683 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 10683 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_find_module_path'
+Step #3 - "compile-libfuzzer-address-x86_64": 10846 INFO: Processing standard module hook 'hook-distutils.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10900 INFO: Processing standard module hook 'hook-distutils.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10933 INFO: Processing standard module hook 'hook-sysconfig.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11159 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11160 INFO: Processing standard module hook 'hook-packaging.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11161 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11161 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11171 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11171 INFO: Setuptools: 'importlib_resources' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_resources'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11192 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11192 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11214 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11214 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11221 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11221 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11311 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11311 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11550 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11550 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11644 INFO: Processing standard module hook 'hook-backports.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 11841 INFO: Processing pre-safe-import-module hook 'hook-ordered_set.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11841 INFO: Setuptools: 'ordered_set' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.ordered_set'!
+Step #3 - "compile-libfuzzer-address-x86_64": 11936 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 11936 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+Step #3 - "compile-libfuzzer-address-x86_64": 12471 INFO: Processing standard module hook 'hook-pkg_resources.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 12650 INFO: Processing pre-safe-import-module hook 'hook-platformdirs.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 12656 INFO: Processing standard module hook 'hook-platformdirs.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 12713 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 12713 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+Step #3 - "compile-libfuzzer-address-x86_64": 13042 INFO: Processing standard module hook 'hook-pydantic.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/lib/python3.11/site-packages/pydantic/experimental/__init__.py:7: PydanticExperimentalWarning: This module is experimental, its contents are subject to change and deprecation.
+Step #3 - "compile-libfuzzer-address-x86_64":   warnings.warn(
+Step #3 - "compile-libfuzzer-address-x86_64": 13830 INFO: Processing standard module hook 'hook-pygments.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 15406 INFO: Processing standard module hook 'hook-zoneinfo.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 16377 INFO: Processing standard module hook 'hook-dns.rdata.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 17531 INFO: Processing standard module hook 'hook-urllib3.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 17792 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 18803 INFO: Processing module hooks (post-graph stage)...
+Step #3 - "compile-libfuzzer-address-x86_64": 19184 INFO: Processing pre-safe-import-module hook 'hook-autocommand.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 19184 INFO: Setuptools: 'autocommand' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.autocommand'!
+Step #3 - "compile-libfuzzer-address-x86_64": 19267 INFO: Processing pre-safe-import-module hook 'hook-typeguard.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 19267 INFO: Setuptools: 'typeguard' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typeguard'!
+Step #3 - "compile-libfuzzer-address-x86_64": 22008 INFO: Performing binary vs. data reclassification (122 entries)
+Step #3 - "compile-libfuzzer-address-x86_64": 22013 INFO: Looking for ctypes DLLs
+Step #3 - "compile-libfuzzer-address-x86_64": 22038 WARNING: Library user32 required via ctypes not found
+Step #3 - "compile-libfuzzer-address-x86_64": 22086 WARNING: Library Iphlpapi.dll required via ctypes not found
+Step #3 - "compile-libfuzzer-address-x86_64": 22135 INFO: Analyzing run-time hooks ...
+Step #3 - "compile-libfuzzer-address-x86_64": 22144 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22146 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22147 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22149 INFO: Including run-time hook 'pyi_rth_setuptools.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22150 INFO: Including run-time hook 'pyi_rth_pkgres.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22153 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 22180 INFO: Looking for dynamic libraries
+Step #3 - "compile-libfuzzer-address-x86_64": 22832 INFO: Warnings written to /src/pyfuzzworkdir/fuzz_sign_with_valid_key_verify_with_invalid_key/fuzz_sign_with_valid_key_verify_with_invalid_key.pkg/warn-fuzz_sign_with_valid_key_verify_with_invalid_key.pkg.txt
+Step #3 - "compile-libfuzzer-address-x86_64": 22906 INFO: Graph cross-reference written to /src/pyfuzzworkdir/fuzz_sign_with_valid_key_verify_with_invalid_key/fuzz_sign_with_valid_key_verify_with_invalid_key.pkg/xref-fuzz_sign_with_valid_key_verify_with_invalid_key.pkg.html
+Step #3 - "compile-libfuzzer-address-x86_64": 22937 INFO: checking PYZ
+Step #3 - "compile-libfuzzer-address-x86_64": 22937 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 22937 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_sign_with_valid_key_verify_with_invalid_key/fuzz_sign_with_valid_key_verify_with_invalid_key.pkg/PYZ-00.pyz
+Step #3 - "compile-libfuzzer-address-x86_64": 24174 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_sign_with_valid_key_verify_with_invalid_key/fuzz_sign_with_valid_key_verify_with_invalid_key.pkg/PYZ-00.pyz completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 24205 INFO: checking PKG
+Step #3 - "compile-libfuzzer-address-x86_64": 24205 INFO: Building PKG because PKG-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 24205 INFO: Building PKG (CArchive) fuzz_sign_with_valid_key_verify_with_invalid_key.pkg.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 40248 INFO: Building PKG (CArchive) fuzz_sign_with_valid_key_verify_with_invalid_key.pkg.pkg completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 40252 INFO: Bootloader /usr/local/lib/python3.11/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #3 - "compile-libfuzzer-address-x86_64": 40252 INFO: checking EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 40252 INFO: Building EXE because EXE-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 40252 INFO: Building EXE from EXE-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 40252 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-address-x86_64/fuzz_sign_with_valid_key_verify_with_invalid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 40253 INFO: Appending PKG archive to custom ELF section in EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 40394 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod -x /workspace/out/libfuzzer-address-x86_64/fuzz_sign_with_valid_key_verify_with_invalid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/sh
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": chmod +x $this_dir/fuzz_sign_with_valid_key_verify_with_invalid_key.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_sign_with_valid_key_verify_with_invalid_key.pkg $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/fuzz_sign_with_valid_key_verify_with_invalid_key
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+Starting Step #4 - "build-check-libfuzzer-address-x86_64"
+Step #4 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-libfuzzer-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-libfuzzer-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-libfuzzer-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": f0936458f8ef: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": a9b13b0da72a: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": d355fcbe0d90: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": adea1c571a09: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 10500bd57919: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": e1147336b5d9: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 945d6e885bce: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 98c7f176c26c: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 29ed0c785dff: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 5f4b464f2e3a: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": ee73d4474a6a: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 3ce0745be514: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 35a6b86a0628: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f5db2b8709fa: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a28ba74043b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 2c80da27a7b3: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": a8583812f023: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 6fe904e514c5: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": b37cd7140ec6: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": a52bd9bffef4: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": fd212991fa89: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 94d534597ae6: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 02d6dfcafde1: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 9a2ee8c80426: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 74311d4d0b6b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f5db2b8709fa: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 35a6b86a0628: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a28ba74043b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 2c80da27a7b3: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": a8583812f023: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": e1147336b5d9: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 6fe904e514c5: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 945d6e885bce: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": b37cd7140ec6: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 29ed0c785dff: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 98c7f176c26c: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": a52bd9bffef4: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 5f4b464f2e3a: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": ee73d4474a6a: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": fd212991fa89: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 9a2ee8c80426: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 94d534597ae6: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 02d6dfcafde1: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 3ce0745be514: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 74311d4d0b6b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 10500bd57919: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d355fcbe0d90: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": adea1c571a09: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": adea1c571a09: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 945d6e885bce: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 945d6e885bce: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d355fcbe0d90: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e1147336b5d9: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": e1147336b5d9: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 29ed0c785dff: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 29ed0c785dff: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5f4b464f2e3a: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 5f4b464f2e3a: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ee73d4474a6a: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": ee73d4474a6a: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": adea1c571a09: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 10500bd57919: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 35a6b86a0628: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 35a6b86a0628: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 98c7f176c26c: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 98c7f176c26c: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f5db2b8709fa: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": f5db2b8709fa: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e1147336b5d9: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a28ba74043b: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a28ba74043b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a8583812f023: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": a8583812f023: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 945d6e885bce: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3ce0745be514: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": b37cd7140ec6: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": b37cd7140ec6: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a52bd9bffef4: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": a52bd9bffef4: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2c80da27a7b3: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 2c80da27a7b3: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": fd212991fa89: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": fd212991fa89: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 94d534597ae6: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 94d534597ae6: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6fe904e514c5: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 6fe904e514c5: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 02d6dfcafde1: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 02d6dfcafde1: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 9a2ee8c80426: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 9a2ee8c80426: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 74311d4d0b6b: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 74311d4d0b6b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 98c7f176c26c: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 29ed0c785dff: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5f4b464f2e3a: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ee73d4474a6a: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3ce0745be514: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 35a6b86a0628: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f5db2b8709fa: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a28ba74043b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2c80da27a7b3: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a8583812f023: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6fe904e514c5: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": b37cd7140ec6: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a52bd9bffef4: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": fd212991fa89: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 94d534597ae6: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 02d6dfcafde1: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 9a2ee8c80426: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 74311d4d0b6b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": Digest: sha256:79f2347d151a6c57f9dc5596345f7a26b8501329cf94626cf5d63609b6c076c6
+Step #4 - "build-check-libfuzzer-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpt0662tox/fuzz_sign_with_valid_key_verify_with_invalid_key
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpt0662tox/fuzz_sign_then_mutate_verify_with_valid_key
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpt0662tox/fuzz_sign_with_invalid_key
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpt0662tox/fuzz_with_cert_chain
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpt0662tox/fuzz_sign_verify_with_valid_key
+Finished Step #4 - "build-check-libfuzzer-address-x86_64"
+Starting Step #5
+Step #5: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #5
+Starting Step #6
+Step #6: Already have image: gcr.io/oss-fuzz/model-transparency
+Step #6:   adding: fuzz_sign_then_mutate_verify_with_valid_key (deflated 38%)
+Step #6:   adding: fuzz_sign_then_mutate_verify_with_valid_key.pkg (deflated 1%)
+Step #6:   adding: fuzz_sign_verify_with_valid_key (deflated 36%)
+Step #6:   adding: fuzz_sign_verify_with_valid_key.pkg (deflated 1%)
+Step #6:   adding: fuzz_sign_with_invalid_key (deflated 35%)
+Step #6:   adding: fuzz_sign_with_invalid_key.pkg (deflated 1%)
+Step #6:   adding: fuzz_sign_with_valid_key_verify_with_invalid_key (deflated 41%)
+Step #6:   adding: fuzz_sign_with_valid_key_verify_with_invalid_key.pkg (deflated 1%)
+Step #6:   adding: fuzz_with_cert_chain (deflated 34%)
+Step #6:   adding: fuzz_with_cert_chain.pkg (deflated 1%)
+Step #6:   adding: llvm-symbolizer (deflated 65%)
+Step #6:   adding: sanitizer_with_fuzzer.so (deflated 72%)
+Finished Step #6
+Starting Step #7
+Step #7: Pulling image: gcr.io/oss-fuzz-base/uploader
+Step #7: Using default tag: latest
+Step #7: latest: Pulling from oss-fuzz-base/uploader
+Step #7: c62795f78da9: Pulling fs layer
+Step #7: d4fceeeb758e: Pulling fs layer
+Step #7: 5c9125a401ae: Pulling fs layer
+Step #7: 0062f774e994: Pulling fs layer
+Step #7: 6b33fd031fac: Pulling fs layer
+Step #7: 7eb39101e508: Pulling fs layer
+Step #7: 89257482f398: Pulling fs layer
+Step #7: 0062f774e994: Waiting
+Step #7: 6b33fd031fac: Waiting
+Step #7: 7eb39101e508: Waiting
+Step #7: 89257482f398: Waiting
+Step #7: 5c9125a401ae: Verifying Checksum
+Step #7: 5c9125a401ae: Download complete
+Step #7: d4fceeeb758e: Verifying Checksum
+Step #7: d4fceeeb758e: Download complete
+Step #7: 6b33fd031fac: Verifying Checksum
+Step #7: 6b33fd031fac: Download complete
+Step #7: 0062f774e994: Download complete
+Step #7: 89257482f398: Verifying Checksum
+Step #7: 89257482f398: Download complete
+Step #7: c62795f78da9: Verifying Checksum
+Step #7: c62795f78da9: Download complete
+Step #7: 7eb39101e508: Verifying Checksum
+Step #7: 7eb39101e508: Download complete
+Step #7: c62795f78da9: Pull complete
+Step #7: d4fceeeb758e: Pull complete
+Step #7: 5c9125a401ae: Pull complete
+Step #7: 0062f774e994: Pull complete
+Step #7: 6b33fd031fac: Pull complete
+Step #7: 7eb39101e508: Pull complete
+Step #7: 89257482f398: Pull complete
+Step #7: Digest: sha256:5717ba63d13b5515063e2a6ccad09fb5bf32a86c8e0798a363d81c2be522e411
+Step #7: Status: Downloaded newer image for gcr.io/oss-fuzz-base/uploader:latest
+Step #7: gcr.io/oss-fuzz-base/uploader:latest
+Step #7:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #7:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #7:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   173    0     0  100   173      0    957 --:--:-- --:--:-- --:--:--   955100   173    0     0  100   173      0    956 --:--:-- --:--:-- --:--:--   955
+Finished Step #7
+Starting Step #8
+Step #8: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #8:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #8:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #8:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 32  232M    0     0   32 75.8M      0   212M  0:00:01 --:--:--  0:00:01  212M100  232M    0     0  100  232M      0   174M  0:00:01  0:00:01 --:--:--  175M
+Finished Step #8
+Starting Step #9
+Step #9: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #9:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #9:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #9:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   173    0     0  100   173      0    726 --:--:-- --:--:-- --:--:--   726
+Finished Step #9
+Starting Step #10
+Step #10: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #10:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #10:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #10:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    43    0     0  100    43      0    213 --:--:-- --:--:-- --:--:--   215
+Finished Step #10
+Starting Step #11
+Step #11: Already have image: gcr.io/oss-fuzz/model-transparency
+Finished Step #11
+PUSH
+DONE

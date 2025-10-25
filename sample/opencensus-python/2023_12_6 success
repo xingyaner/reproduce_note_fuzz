@@ -1,0 +1,503 @@
+starting build "0b7dc2ee-a964-4188-8925-c42a5e6a1954"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1
+Step #1: Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1: Sending build context to Docker daemon   7.68kB
+Step #1: Step 1/4 : FROM gcr.io/oss-fuzz-base/base-builder-python
+Step #1: latest: Pulling from oss-fuzz-base/base-builder-python
+Step #1: b549f31133a9: Pulling fs layer
+Step #1: 4c33b3095284: Pulling fs layer
+Step #1: 13b21ff08d56: Pulling fs layer
+Step #1: 5f96ac6eabeb: Pulling fs layer
+Step #1: cc0adaabe67e: Pulling fs layer
+Step #1: d2d896a533fa: Pulling fs layer
+Step #1: 893f876a704d: Pulling fs layer
+Step #1: ab88e01d4aaf: Pulling fs layer
+Step #1: dd2d94e9c1dc: Pulling fs layer
+Step #1: 94845adf001a: Pulling fs layer
+Step #1: b20266d7b58d: Pulling fs layer
+Step #1: ec007df5ba4e: Pulling fs layer
+Step #1: f69431b8b3ee: Pulling fs layer
+Step #1: b17598c60891: Pulling fs layer
+Step #1: 2ad9365844fe: Pulling fs layer
+Step #1: a2b5ff1eb413: Pulling fs layer
+Step #1: 2cb719b19033: Pulling fs layer
+Step #1: 8a354bf4b969: Pulling fs layer
+Step #1: 6f004a05315f: Pulling fs layer
+Step #1: d18c9fa282be: Pulling fs layer
+Step #1: bf17d5ab76e0: Pulling fs layer
+Step #1: fff1755e708c: Pulling fs layer
+Step #1: 74fead37e7c7: Pulling fs layer
+Step #1: 7b3e97a95448: Pulling fs layer
+Step #1: 534e0faad8ee: Pulling fs layer
+Step #1: d39d70cdd755: Pulling fs layer
+Step #1: 8f05af96bec2: Pulling fs layer
+Step #1: f5a2f2d7994e: Pulling fs layer
+Step #1: 479500d4b8a3: Pulling fs layer
+Step #1: 01ea93a3a338: Pulling fs layer
+Step #1: 62bbb32a2768: Pulling fs layer
+Step #1: 2cb719b19033: Waiting
+Step #1: 8a354bf4b969: Waiting
+Step #1: 6f004a05315f: Waiting
+Step #1: d18c9fa282be: Waiting
+Step #1: bf17d5ab76e0: Waiting
+Step #1: fff1755e708c: Waiting
+Step #1: 74fead37e7c7: Waiting
+Step #1: 7b3e97a95448: Waiting
+Step #1: 534e0faad8ee: Waiting
+Step #1: d39d70cdd755: Waiting
+Step #1: 8f05af96bec2: Waiting
+Step #1: f5a2f2d7994e: Waiting
+Step #1: 479500d4b8a3: Waiting
+Step #1: 01ea93a3a338: Waiting
+Step #1: 62bbb32a2768: Waiting
+Step #1: cc0adaabe67e: Waiting
+Step #1: d2d896a533fa: Waiting
+Step #1: dd2d94e9c1dc: Waiting
+Step #1: 893f876a704d: Waiting
+Step #1: ec007df5ba4e: Waiting
+Step #1: b20266d7b58d: Waiting
+Step #1: a2b5ff1eb413: Waiting
+Step #1: 5f96ac6eabeb: Waiting
+Step #1: b17598c60891: Waiting
+Step #1: 2ad9365844fe: Waiting
+Step #1: 13b21ff08d56: Verifying Checksum
+Step #1: 13b21ff08d56: Download complete
+Step #1: b549f31133a9: Verifying Checksum
+Step #1: b549f31133a9: Download complete
+Step #1: 5f96ac6eabeb: Verifying Checksum
+Step #1: 5f96ac6eabeb: Download complete
+Step #1: cc0adaabe67e: Download complete
+Step #1: d2d896a533fa: Verifying Checksum
+Step #1: d2d896a533fa: Download complete
+Step #1: ab88e01d4aaf: Verifying Checksum
+Step #1: ab88e01d4aaf: Download complete
+Step #1: dd2d94e9c1dc: Download complete
+Step #1: 4c33b3095284: Verifying Checksum
+Step #1: 4c33b3095284: Download complete
+Step #1: b20266d7b58d: Verifying Checksum
+Step #1: b20266d7b58d: Download complete
+Step #1: ec007df5ba4e: Verifying Checksum
+Step #1: ec007df5ba4e: Download complete
+Step #1: f69431b8b3ee: Verifying Checksum
+Step #1: f69431b8b3ee: Download complete
+Step #1: b17598c60891: Verifying Checksum
+Step #1: b17598c60891: Download complete
+Step #1: 2ad9365844fe: Verifying Checksum
+Step #1: 2ad9365844fe: Download complete
+Step #1: b549f31133a9: Pull complete
+Step #1: a2b5ff1eb413: Verifying Checksum
+Step #1: a2b5ff1eb413: Download complete
+Step #1: 2cb719b19033: Verifying Checksum
+Step #1: 2cb719b19033: Download complete
+Step #1: 8a354bf4b969: Verifying Checksum
+Step #1: 8a354bf4b969: Download complete
+Step #1: 6f004a05315f: Verifying Checksum
+Step #1: 6f004a05315f: Download complete
+Step #1: d18c9fa282be: Verifying Checksum
+Step #1: d18c9fa282be: Download complete
+Step #1: 94845adf001a: Verifying Checksum
+Step #1: 94845adf001a: Download complete
+Step #1: bf17d5ab76e0: Verifying Checksum
+Step #1: bf17d5ab76e0: Download complete
+Step #1: fff1755e708c: Download complete
+Step #1: 74fead37e7c7: Verifying Checksum
+Step #1: 74fead37e7c7: Download complete
+Step #1: 7b3e97a95448: Verifying Checksum
+Step #1: 7b3e97a95448: Download complete
+Step #1: 534e0faad8ee: Download complete
+Step #1: d39d70cdd755: Verifying Checksum
+Step #1: d39d70cdd755: Download complete
+Step #1: f5a2f2d7994e: Verifying Checksum
+Step #1: f5a2f2d7994e: Download complete
+Step #1: 8f05af96bec2: Download complete
+Step #1: 479500d4b8a3: Verifying Checksum
+Step #1: 479500d4b8a3: Download complete
+Step #1: 01ea93a3a338: Verifying Checksum
+Step #1: 01ea93a3a338: Download complete
+Step #1: 893f876a704d: Download complete
+Step #1: 62bbb32a2768: Verifying Checksum
+Step #1: 62bbb32a2768: Download complete
+Step #1: 4c33b3095284: Pull complete
+Step #1: 13b21ff08d56: Pull complete
+Step #1: 5f96ac6eabeb: Pull complete
+Step #1: cc0adaabe67e: Pull complete
+Step #1: d2d896a533fa: Pull complete
+Step #1: 893f876a704d: Pull complete
+Step #1: ab88e01d4aaf: Pull complete
+Step #1: dd2d94e9c1dc: Pull complete
+Step #1: 94845adf001a: Pull complete
+Step #1: b20266d7b58d: Pull complete
+Step #1: ec007df5ba4e: Pull complete
+Step #1: f69431b8b3ee: Pull complete
+Step #1: b17598c60891: Pull complete
+Step #1: 2ad9365844fe: Pull complete
+Step #1: a2b5ff1eb413: Pull complete
+Step #1: 2cb719b19033: Pull complete
+Step #1: 8a354bf4b969: Pull complete
+Step #1: 6f004a05315f: Pull complete
+Step #1: d18c9fa282be: Pull complete
+Step #1: bf17d5ab76e0: Pull complete
+Step #1: fff1755e708c: Pull complete
+Step #1: 74fead37e7c7: Pull complete
+Step #1: 7b3e97a95448: Pull complete
+Step #1: 534e0faad8ee: Pull complete
+Step #1: d39d70cdd755: Pull complete
+Step #1: 8f05af96bec2: Pull complete
+Step #1: f5a2f2d7994e: Pull complete
+Step #1: 479500d4b8a3: Pull complete
+Step #1: 01ea93a3a338: Pull complete
+Step #1: 62bbb32a2768: Pull complete
+Step #1: Digest: sha256:3a639d55d8f24585a8eceee010b9a52632e215fd09ad02981030b1cb5894cb24
+Step #1: Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-python:latest
+Step #1:  ---> acd14994365b
+Step #1: Step 2/4 : RUN git clone https://github.com/census-instrumentation/opencensus-python
+Step #1:  ---> Running in 67d02839a0a0
+Step #1: [91mCloning into 'opencensus-python'...
+Step #1: [0mRemoving intermediate container 67d02839a0a0
+Step #1:  ---> 9776543a19a0
+Step #1: Step 3/4 : COPY build.sh fuzz_* $SRC/
+Step #1:  ---> b0a692bcefc1
+Step #1: Step 4/4 : WORKDIR $SRC/opencensus-python
+Step #1:  ---> Running in 12d0c812b533
+Step #1: Removing intermediate container 12d0c812b533
+Step #1:  ---> bcfe3a4f6fd6
+Step #1: Successfully built bcfe3a4f6fd6
+Step #1: Successfully tagged gcr.io/oss-fuzz/opencensus-python:latest
+Finished Step #1
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/opencensus-python
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/fileeT7AAN
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ python == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/opencensus-python/.git
+Step #2 - "srcmap": + GIT_DIR=/src/opencensus-python
+Step #2 - "srcmap": + cd /src/opencensus-python
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/census-instrumentation/opencensus-python
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=977d93824e24b73f2cffca03301b7b83c1929fb4
+Step #2 - "srcmap": + jq_inplace /tmp/fileeT7AAN '."/src/opencensus-python" = { type: "git", url: "https://github.com/census-instrumentation/opencensus-python", rev: "977d93824e24b73f2cffca03301b7b83c1929fb4" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileG4aOic
+Step #2 - "srcmap": + cat /tmp/fileeT7AAN
+Step #2 - "srcmap": + jq '."/src/opencensus-python" = { type: "git", url: "https://github.com/census-instrumentation/opencensus-python", rev: "977d93824e24b73f2cffca03301b7b83c1929fb4" }'
+Step #2 - "srcmap": + mv /tmp/fileG4aOic /tmp/fileeT7AAN
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/fileeT7AAN
+Step #2 - "srcmap": + rm /tmp/fileeT7AAN
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/opencensus-python": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/census-instrumentation/opencensus-python",
+Step #2 - "srcmap":     "rev": "977d93824e24b73f2cffca03301b7b83c1929fb4"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1 -fno-omit-frame-pointer -gline-tables-only -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=function,leak,vptr,
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1 -fno-omit-frame-pointer -gline-tables-only -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=function,leak,vptr
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + python3 -m pip install .
+Step #3 - "compile-libfuzzer-address-x86_64": Processing /src/opencensus-python
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting opencensus-context>=0.2.dev0 (from opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading https://files.pythonhosted.org/packages/7d/d8/92ec4bd2c362618035f4011e2cd37dcea69c0e90c751d88263e7fa3804d7/opencensus_context-0.2.dev0-py2.py3-none-any.whl
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting six~=1.16 (from opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting google-api-core<3.0.0,>=1.0.0 (from opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l  Downloading https://files.pythonhosted.org/packages/c4/1e/924dcad4725d2e697888e044edf7a433db84bf9a3e40d3efa38ba859d0ce/google_api_core-2.14.0-py3-none-any.whl (122kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [K     |██▊                             | 10kB 2.0MB/s eta 0:00:01[K     |█████▍                          | 20kB 1.7MB/s eta 0:00:01[K     |████████                        | 30kB 2.5MB/s eta 0:00:01[K     |██████████▊                     | 40kB 1.2MB/s eta 0:00:01[K     |█████████████▍                  | 51kB 1.3MB/s eta 0:00:01[K     |████████████████                | 61kB 1.5MB/s eta 0:00:01[K     |██████████████████▊             | 71kB 1.7MB/s eta 0:00:01[K     |█████████████████████▌          | 81kB 1.9MB/s eta 0:00:01[K     |████████████████████████▏       | 92kB 2.0MB/s eta 0:00:01[K     |██████████████████████████▉     | 102kB 1.5MB/s eta 0:00:01[K     |█████████████████████████████▌  | 112kB 1.5MB/s eta 0:00:01[K     |████████████████████████████████| 122kB 1.5MB/s 
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting google-auth<3.0.dev0,>=2.14.1 (from google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l  Downloading https://files.pythonhosted.org/packages/1f/eb/29123fbd92e4cb25d24713ab5d26ea74e02ce04290edc7c35356441de4f2/google_auth-2.25.1-py2.py3-none-any.whl (184kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [K     |█▉                              | 10kB 12.6MB/s eta 0:00:01[K     |███▋                            | 20kB 7.5MB/s eta 0:00:01[K     |█████▍                          | 30kB 10.4MB/s eta 0:00:01[K     |███████▏                        | 40kB 9.3MB/s eta 0:00:01[K     |█████████                       | 51kB 6.9MB/s eta 0:00:01[K     |██████████▊                     | 61kB 8.0MB/s eta 0:00:01[K     |████████████▌                   | 71kB 8.0MB/s eta 0:00:01[K     |██████████████▎                 | 81kB 8.9MB/s eta 0:00:01[K     |████████████████                | 92kB 8.6MB/s eta 0:00:01[K     |█████████████████▉              | 102kB 8.2MB/s eta 0:00:01[K     |███████████████████▋            | 112kB 8.2MB/s eta 0:00:01[K     |█████████████████████▍          | 122kB 8.2MB/s eta 0:00:01[K     |███████████████████████▏        | 133kB 8.2MB/s eta 0:00:01[K     |█████████████████████████       | 143kB 8.2MB/s eta 0:00:01[K     |██████████████████████████▊     | 153kB 8.2MB/s eta 0:00:01[K     |████████████████████████████▌   | 163kB 8.2MB/s eta 0:00:01[K     |██████████████████████████████▎ | 174kB 8.2MB/s eta 0:00:01[K     |████████████████████████████████| 184kB 8.2MB/s 
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting requests<3.0.0.dev0,>=2.18.0 (from google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l  Downloading https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl (62kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [K     |█████▎                          | 10kB 20.7MB/s eta 0:00:01[K     |██████████▌                     | 20kB 28.6MB/s eta 0:00:01[K     |███████████████▊                | 30kB 35.7MB/s eta 0:00:01[K     |█████████████████████           | 40kB 38.2MB/s eta 0:00:01[K     |██████████████████████████▏     | 51kB 41.6MB/s eta 0:00:01[K     |███████████████████████████████▍| 61kB 45.2MB/s eta 0:00:01[K     |████████████████████████████████| 71kB 28.5MB/s 
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting googleapis-common-protos<2.0.dev0,>=1.56.2 (from google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l  Downloading https://files.pythonhosted.org/packages/21/49/12996dc0238e017504dceea1d121a48bd49fb3f4416f40d59fc3e924b4f3/googleapis_common_protos-1.61.0-py2.py3-none-any.whl (230kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [K     |█▍                              | 10kB 22.5MB/s eta 0:00:01[K     |██▉                             | 20kB 31.0MB/s eta 0:00:01[K     |████▎                           | 30kB 35.9MB/s eta 0:00:01[K     |█████▊                          | 40kB 39.8MB/s eta 0:00:01[K     |███████                         | 51kB 25.3MB/s eta 0:00:01[K     |████████▌                       | 61kB 27.4MB/s eta 0:00:01[K     |██████████                      | 71kB 23.7MB/s eta 0:00:01[K     |███████████▍                    | 81kB 25.6MB/s eta 0:00:01[K     |████████████▊                   | 92kB 27.5MB/s eta 0:00:01[K     |██████████████▏                 | 102kB 24.5MB/s eta 0:00:01[K     |███████████████▋                | 112kB 24.5MB/s eta 0:00:01[K     |█████████████████               | 122kB 24.5MB/s eta 0:00:01[K     |██████████████████▌             | 133kB 24.5MB/s eta 0:00:01[K     |███████████████████▉            | 143kB 24.5MB/s eta 0:00:01[K     |█████████████████████▎          | 153kB 24.5MB/s eta 0:00:01[K     |██████████████████████▊         | 163kB 24.5MB/s eta 0:00:01[K     |████████████████████████▏       | 174kB 24.5MB/s eta 0:00:01[K     |█████████████████████████▌      | 184kB 24.5MB/s eta 0:00:01[K     |███████████████████████████     | 194kB 24.5MB/s eta 0:00:01[K     |████████████████████████████▍   | 204kB 24.5MB/s eta 0:00:01[K     |█████████████████████████████▉  | 215kB 24.5MB/s eta 0:00:01[K     |███████████████████████████████▎| 225kB 24.5MB/s eta 0:00:01[K     |████████████████████████████████| 235kB 24.5MB/s 
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0.dev0,>=3.19.5 (from google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l  Downloading https://files.pythonhosted.org/packages/57/6b/cb08c28a90375e18aa80913253135b5fb6e6b1ff5c1472ba833836540f16/protobuf-4.25.1-py3-none-any.whl (156kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [K     |██                              | 10kB 22.4MB/s eta 0:00:01[K     |████▏                           | 20kB 29.4MB/s eta 0:00:01[K     |██████▎                         | 30kB 33.7MB/s eta 0:00:01[K     |████████▍                       | 40kB 36.8MB/s eta 0:00:01[K     |██████████▌                     | 51kB 40.4MB/s eta 0:00:01[K     |████████████▋                   | 61kB 43.7MB/s eta 0:00:01[K     |██████████████▋                 | 71kB 46.2MB/s eta 0:00:01[K     |████████████████▊               | 81kB 46.5MB/s eta 0:00:01[K     |██████████████████▉             | 92kB 47.4MB/s eta 0:00:01[K     |█████████████████████           | 102kB 37.6MB/s eta 0:00:01[K     |███████████████████████         | 112kB 37.6MB/s eta 0:00:01[K     |█████████████████████████▏      | 122kB 37.6MB/s eta 0:00:01[K     |███████████████████████████▎    | 133kB 37.6MB/s eta 0:00:01[K     |█████████████████████████████▎  | 143kB 37.6MB/s eta 0:00:01[K     |███████████████████████████████▍| 153kB 37.6MB/s eta 0:00:01[K     |████████████████████████████████| 163kB 37.6MB/s 
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting rsa<5,>=3.1.4 (from google-auth<3.0.dev0,>=2.14.1->google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading https://files.pythonhosted.org/packages/49/97/fa78e3d2f65c02c8e1268b9aba606569fe97f6c8f7c2d74394553347c145/rsa-4.9-py3-none-any.whl
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting pyasn1-modules>=0.2.1 (from google-auth<3.0.dev0,>=2.14.1->google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l  Downloading https://files.pythonhosted.org/packages/cd/8e/bea464350e1b8c6ed0da3a312659cb648804a08af6cacc6435867f74f8bd/pyasn1_modules-0.3.0-py2.py3-none-any.whl (181kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [K     |█▉                              | 10kB 23.0MB/s eta 0:00:01[K     |███▋                            | 20kB 31.7MB/s eta 0:00:01[K     |█████▍                          | 30kB 32.5MB/s eta 0:00:01[K     |███████▎                        | 40kB 36.6MB/s eta 0:00:01[K     |█████████                       | 51kB 40.2MB/s eta 0:00:01[K     |██████████▉                     | 61kB 43.6MB/s eta 0:00:01[K     |████████████▋                   | 71kB 46.0MB/s eta 0:00:01[K     |██████████████▌                 | 81kB 48.7MB/s eta 0:00:01[K     |████████████████▎               | 92kB 48.3MB/s eta 0:00:01[K     |██████████████████              | 102kB 35.9MB/s eta 0:00:01[K     |███████████████████▉            | 112kB 35.9MB/s eta 0:00:01[K     |█████████████████████▊          | 122kB 35.9MB/s eta 0:00:01[K     |███████████████████████▌        | 133kB 35.9MB/s eta 0:00:01[K     |█████████████████████████▎      | 143kB 35.9MB/s eta 0:00:01[K     |███████████████████████████     | 153kB 35.9MB/s eta 0:00:01[K     |█████████████████████████████   | 163kB 35.9MB/s eta 0:00:01[K     |██████████████████████████████▊ | 174kB 35.9MB/s eta 0:00:01[K     |████████████████████████████████| 184kB 35.9MB/s 
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting cachetools<6.0,>=2.0.0 (from google-auth<3.0.dev0,>=2.14.1->google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading https://files.pythonhosted.org/packages/a2/91/2d843adb9fbd911e0da45fbf6f18ca89d07a087c3daa23e955584f90ebf4/cachetools-5.3.2-py3-none-any.whl
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting certifi>=2017.4.17 (from requests<3.0.0.dev0,>=2.18.0->google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l  Downloading https://files.pythonhosted.org/packages/64/62/428ef076be88fa93716b576e4a01f919d25968913e817077a386fcbe4f42/certifi-2023.11.17-py3-none-any.whl (162kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [K     |██                              | 10kB 19.7MB/s eta 0:00:01[K     |████                            | 20kB 26.9MB/s eta 0:00:01[K     |██████                          | 30kB 32.3MB/s eta 0:00:01[K     |████████                        | 40kB 36.1MB/s eta 0:00:01[K     |██████████                      | 51kB 39.6MB/s eta 0:00:01[K     |████████████                    | 61kB 43.3MB/s eta 0:00:01[K     |██████████████▏                 | 71kB 46.0MB/s eta 0:00:01[K     |████████████████▏               | 81kB 41.4MB/s eta 0:00:01[K     |██████████████████▏             | 92kB 42.3MB/s eta 0:00:01[K     |████████████████████▏           | 102kB 33.5MB/s eta 0:00:01[K     |██████████████████████▏         | 112kB 33.5MB/s eta 0:00:01[K     |████████████████████████▏       | 122kB 33.5MB/s eta 0:00:01[K     |██████████████████████████▏     | 133kB 33.5MB/s eta 0:00:01[K     |████████████████████████████▎   | 143kB 33.5MB/s eta 0:00:01[K     |██████████████████████████████▎ | 153kB 33.5MB/s eta 0:00:01[K     |████████████████████████████████| 163kB 33.5MB/s 
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting idna<4,>=2.5 (from requests<3.0.0.dev0,>=2.18.0->google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l  Downloading https://files.pythonhosted.org/packages/c2/e7/a82b05cf63a603df6e68d59ae6a68bf5064484a0718ea5033660af4b54a9/idna-3.6-py3-none-any.whl (61kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [K     |█████▎                          | 10kB 20.7MB/s eta 0:00:01[K     |██████████▋                     | 20kB 26.2MB/s eta 0:00:01[K     |████████████████                | 30kB 32.9MB/s eta 0:00:01[K     |█████████████████████▎          | 40kB 37.3MB/s eta 0:00:01[K     |██████████████████████████▋     | 51kB 40.8MB/s eta 0:00:01[K     |████████████████████████████████| 61kB 44.3MB/s eta 0:00:01[K     |████████████████████████████████| 71kB 27.3MB/s 
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting charset-normalizer<4,>=2 (from requests<3.0.0.dev0,>=2.18.0->google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l  Downloading https://files.pythonhosted.org/packages/28/76/e6222113b83e3622caa4bb41032d0b1bf785250607392e1b778aca0b8a7d/charset_normalizer-3.3.2-py3-none-any.whl (48kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [K     |██████▊                         | 10kB 16.1MB/s eta 0:00:01[K     |█████████████▌                  | 20kB 23.8MB/s eta 0:00:01[K     |████████████████████▎           | 30kB 30.4MB/s eta 0:00:01[K     |███████████████████████████     | 40kB 35.2MB/s eta 0:00:01[K     |████████████████████████████████| 51kB 21.9MB/s 
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting urllib3<3,>=1.21.1 (from requests<3.0.0.dev0,>=2.18.0->google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l  Downloading https://files.pythonhosted.org/packages/96/94/c31f58c7a7f470d5665935262ebd7455c7e4c7782eb525658d3dbf4b9403/urllib3-2.1.0-py3-none-any.whl (104kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [K     |███▏                            | 10kB 22.5MB/s eta 0:00:01[K     |██████▎                         | 20kB 30.6MB/s eta 0:00:01[K     |█████████▍                      | 30kB 36.9MB/s eta 0:00:01[K     |████████████▌                   | 40kB 38.6MB/s eta 0:00:01[K     |███████████████▋                | 51kB 41.8MB/s eta 0:00:01[K     |██████████████████▉             | 61kB 44.8MB/s eta 0:00:01[K     |██████████████████████          | 71kB 47.3MB/s eta 0:00:01[K     |█████████████████████████       | 81kB 49.9MB/s eta 0:00:01[K     |████████████████████████████▏   | 92kB 49.8MB/s eta 0:00:01[K     |███████████████████████████████▎| 102kB 51.0MB/s eta 0:00:01[K     |████████████████████████████████| 112kB 51.0MB/s 
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting pyasn1>=0.1.3 (from rsa<5,>=3.1.4->google-auth<3.0.dev0,>=2.14.1->google-api-core<3.0.0,>=1.0.0->opencensus==0.12.dev0)
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l  Downloading https://files.pythonhosted.org/packages/d1/75/4686d2872bf2fc0b37917cbc8bbf0dd3a5cdb0990799be1b9cbf1e1eb733/pyasn1-0.5.1-py2.py3-none-any.whl (84kB)
+Step #3 - "compile-libfuzzer-address-x86_64": [K     |███▉                            | 10kB 21.2MB/s eta 0:00:01[K     |███████▊                        | 20kB 26.6MB/s eta 0:00:01[K     |███████████▋                    | 30kB 32.7MB/s eta 0:00:01[K     |███████████████▍                | 40kB 35.5MB/s eta 0:00:01[K     |███████████████████▎            | 51kB 38.6MB/s eta 0:00:01[K     |███████████████████████▏        | 61kB 41.6MB/s eta 0:00:01[K     |███████████████████████████     | 71kB 44.0MB/s eta 0:00:01[K     |██████████████████████████████▉ | 81kB 45.5MB/s eta 0:00:01[K     |████████████████████████████████| 92kB 30.5MB/s 
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hInstalling collected packages: opencensus-context, six, pyasn1, rsa, pyasn1-modules, cachetools, google-auth, certifi, idna, charset-normalizer, urllib3, requests, protobuf, googleapis-common-protos, google-api-core, opencensus
+Step #3 - "compile-libfuzzer-address-x86_64":   Found existing installation: six 1.15.0
+Step #3 - "compile-libfuzzer-address-x86_64":     Uninstalling six-1.15.0:
+Step #3 - "compile-libfuzzer-address-x86_64":       Successfully uninstalled six-1.15.0
+Step #3 - "compile-libfuzzer-address-x86_64":   Running setup.py install for opencensus ... [?25l- \ done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hSuccessfully installed cachetools-5.3.2 certifi-2023.11.17 charset-normalizer-3.3.2 google-api-core-2.14.0 google-auth-2.25.1 googleapis-common-protos-1.61.0 idna-3.6 opencensus-0.12.dev0 opencensus-context-0.2.dev0 protobuf-4.25.1 pyasn1-0.5.1 pyasn1-modules-0.3.0 requests-2.31.0 rsa-4.9 six-1.16.0 urllib3-2.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": [33mWARNING: You are using pip version 19.2.3, however version 23.3.1 is available.
+Step #3 - "compile-libfuzzer-address-x86_64": You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+Step #3 - "compile-libfuzzer-address-x86_64": ++ find /src -name 'fuzz_*.py'
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -name 'fuzz_*.py')
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_python_fuzzer /src/fuzz_trace.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_path=/src/fuzz_trace.py
+Step #3 - "compile-libfuzzer-address-x86_64": + shift 1
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .py /src/fuzz_trace.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=fuzz_trace
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_package=fuzz_trace.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_trace
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *introspector* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ 0 != \0 ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_trace
+Step #3 - "compile-libfuzzer-address-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-address-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_trace --onefile --name fuzz_trace.pkg /src/fuzz_trace.py
+Step #3 - "compile-libfuzzer-address-x86_64": 60 INFO: PyInstaller: 5.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": 60 INFO: Python: 3.8.3
+Step #3 - "compile-libfuzzer-address-x86_64": 61 INFO: Platform: Linux-5.10.0-26-cloud-amd64-x86_64-with-glibc2.2.5
+Step #3 - "compile-libfuzzer-address-x86_64": 61 INFO: wrote /src/opencensus-python/fuzz_trace.pkg.spec
+Step #3 - "compile-libfuzzer-address-x86_64": 64 INFO: UPX is not available.
+Step #3 - "compile-libfuzzer-address-x86_64": 65 INFO: Extending PYTHONPATH with paths
+Step #3 - "compile-libfuzzer-address-x86_64": ['/src']
+Step #3 - "compile-libfuzzer-address-x86_64": 254 INFO: checking Analysis
+Step #3 - "compile-libfuzzer-address-x86_64": 254 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 254 INFO: Initializing module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 256 INFO: Caching module graph hooks...
+Step #3 - "compile-libfuzzer-address-x86_64": 265 INFO: Analyzing base_library.zip ...
+Step #3 - "compile-libfuzzer-address-x86_64": 3163 INFO: Processing pre-find module path hook distutils from '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks/pre_find_module_path/hook-distutils.py'.
+Step #3 - "compile-libfuzzer-address-x86_64": 3163 INFO: distutils: retargeting to non-venv dir '/usr/local/lib/python3.8'
+Step #3 - "compile-libfuzzer-address-x86_64": 4858 INFO: Caching module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 5011 INFO: running Analysis Analysis-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 5037 INFO: Analyzing /src/fuzz_trace.py
+Step #3 - "compile-libfuzzer-address-x86_64": 5780 INFO: Processing module hooks...
+Step #3 - "compile-libfuzzer-address-x86_64": 5781 INFO: Loading module hook 'hook-atheris.py' from '/usr/local/lib/python3.8/site-packages/atheris'...
+Step #3 - "compile-libfuzzer-address-x86_64": 5782 INFO: Loading module hook 'hook-multiprocessing.util.py' from '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks'...
+Step #3 - "compile-libfuzzer-address-x86_64": 5784 INFO: Loading module hook 'hook-pickle.py' from '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks'...
+Step #3 - "compile-libfuzzer-address-x86_64": 5785 INFO: Loading module hook 'hook-difflib.py' from '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks'...
+Step #3 - "compile-libfuzzer-address-x86_64": 5786 INFO: Loading module hook 'hook-distutils.py' from '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks'...
+Step #3 - "compile-libfuzzer-address-x86_64": 5795 INFO: Loading module hook 'hook-sysconfig.py' from '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks'...
+Step #3 - "compile-libfuzzer-address-x86_64": 5795 INFO: Loading module hook 'hook-heapq.py' from '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks'...
+Step #3 - "compile-libfuzzer-address-x86_64": 5796 INFO: Loading module hook 'hook-encodings.py' from '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks'...
+Step #3 - "compile-libfuzzer-address-x86_64": 5847 INFO: Loading module hook 'hook-xml.py' from '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks'...
+Step #3 - "compile-libfuzzer-address-x86_64": 6081 INFO: Loading module hook 'hook-pkg_resources.py' from '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks'...
+Step #3 - "compile-libfuzzer-address-x86_64": 6523 INFO: Processing pre-safe import module hook win32com from '/usr/local/lib/python3.8/site-packages/_pyinstaller_hooks_contrib/hooks/pre_safe_import_module/hook-win32com.py'.
+Step #3 - "compile-libfuzzer-address-x86_64": 6826 WARNING: Hidden import "pkg_resources.py2_warn" not found!
+Step #3 - "compile-libfuzzer-address-x86_64": 6826 WARNING: Hidden import "pkg_resources.markers" not found!
+Step #3 - "compile-libfuzzer-address-x86_64": 6842 INFO: Looking for ctypes DLLs
+Step #3 - "compile-libfuzzer-address-x86_64": 6853 INFO: Analyzing run-time hooks ...
+Step #3 - "compile-libfuzzer-address-x86_64": 6858 INFO: Including run-time hook '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks/rthooks/pyi_rth_subprocess.py'
+Step #3 - "compile-libfuzzer-address-x86_64": 6859 INFO: Including run-time hook '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks/rthooks/pyi_rth_pkgutil.py'
+Step #3 - "compile-libfuzzer-address-x86_64": 6862 INFO: Including run-time hook '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks/rthooks/pyi_rth_multiprocessing.py'
+Step #3 - "compile-libfuzzer-address-x86_64": 6865 INFO: Including run-time hook '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks/rthooks/pyi_rth_inspect.py'
+Step #3 - "compile-libfuzzer-address-x86_64": 6866 INFO: Including run-time hook '/usr/local/lib/python3.8/site-packages/PyInstaller/hooks/rthooks/pyi_rth_pkgres.py'
+Step #3 - "compile-libfuzzer-address-x86_64": 6879 INFO: Looking for dynamic libraries
+Step #3 - "compile-libfuzzer-address-x86_64": 7819 INFO: Looking for eggs
+Step #3 - "compile-libfuzzer-address-x86_64": 7819 INFO: Using Python library /usr/local/lib/libpython3.8.so.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": 7824 INFO: Warnings written to /src/pyfuzzworkdir//fuzz_trace/fuzz_trace.pkg/warn-fuzz_trace.pkg.txt
+Step #3 - "compile-libfuzzer-address-x86_64": 7859 INFO: Graph cross-reference written to /src/pyfuzzworkdir//fuzz_trace/fuzz_trace.pkg/xref-fuzz_trace.pkg.html
+Step #3 - "compile-libfuzzer-address-x86_64": 7876 INFO: checking PYZ
+Step #3 - "compile-libfuzzer-address-x86_64": 7876 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 7876 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir//fuzz_trace/fuzz_trace.pkg/PYZ-00.pyz
+Step #3 - "compile-libfuzzer-address-x86_64": 8376 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir//fuzz_trace/fuzz_trace.pkg/PYZ-00.pyz completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 8383 INFO: checking PKG
+Step #3 - "compile-libfuzzer-address-x86_64": 8383 INFO: Building PKG because PKG-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 8383 INFO: Building PKG (CArchive) fuzz_trace.pkg.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 15188 INFO: Building PKG (CArchive) fuzz_trace.pkg.pkg completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 15191 INFO: Bootloader /usr/local/lib/python3.8/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #3 - "compile-libfuzzer-address-x86_64": 15191 INFO: checking EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 15191 INFO: Building EXE because EXE-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 15191 INFO: Building EXE from EXE-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 15191 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-address-x86_64/fuzz_trace.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 15192 INFO: Appending PKG archive to custom ELF section in EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 15254 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod -x /workspace/out/libfuzzer-address-x86_64/fuzz_trace.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/sh
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": chmod +x $this_dir/fuzz_trace.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_trace.pkg $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/fuzz_trace
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+Starting Step #4 - "build-check-libfuzzer-address-x86_64"
+Step #4 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-libfuzzer-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-libfuzzer-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-libfuzzer-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 4c33b3095284: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 13b21ff08d56: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": c5404aa84fbd: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": db81b6367537: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 0395267d2626: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 4750fa066a84: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 26d0d5c8cfbc: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 0308f5e5586b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 6110366c96fe: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 9372bfe046f1: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f9a7598e9c2: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 7a4bb9e3f6b8: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 78ea71928ac1: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 83806575952b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 2eb4508b6598: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 17c53d420bc7: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 9372bfe046f1: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f9a7598e9c2: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 7a4bb9e3f6b8: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 78ea71928ac1: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 83806575952b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 2eb4508b6598: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 17c53d420bc7: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 4750fa066a84: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 26d0d5c8cfbc: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 0308f5e5586b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 0395267d2626: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 0395267d2626: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c5404aa84fbd: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": db81b6367537: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": db81b6367537: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 26d0d5c8cfbc: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 26d0d5c8cfbc: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0308f5e5586b: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 0308f5e5586b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c5404aa84fbd: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6110366c96fe: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 6110366c96fe: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f9a7598e9c2: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f9a7598e9c2: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": db81b6367537: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 9372bfe046f1: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0395267d2626: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 78ea71928ac1: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 83806575952b: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 83806575952b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4750fa066a84: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 4750fa066a84: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 17c53d420bc7: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 17c53d420bc7: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 7a4bb9e3f6b8: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 7a4bb9e3f6b8: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2eb4508b6598: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 2eb4508b6598: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4750fa066a84: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 26d0d5c8cfbc: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0308f5e5586b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6110366c96fe: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 9372bfe046f1: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f9a7598e9c2: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 7a4bb9e3f6b8: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 78ea71928ac1: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 83806575952b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2eb4508b6598: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 17c53d420bc7: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": Digest: sha256:43a8c73482c7d04228a67b7a4997700761ea7efce560cf40a7c59b9eb8bf8a95
+Step #4 - "build-check-libfuzzer-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpqq3iqkn7/fuzz_trace
+Finished Step #4 - "build-check-libfuzzer-address-x86_64"
+Starting Step #5
+Step #5: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #5
+Starting Step #6
+Step #6: Already have image: gcr.io/oss-fuzz/opencensus-python
+Step #6:   adding: fuzz_trace (deflated 31%)
+Step #6:   adding: fuzz_trace.pkg (deflated 1%)
+Step #6:   adding: llvm-symbolizer (deflated 64%)
+Step #6:   adding: sanitizer_with_fuzzer.so (deflated 66%)
+Finished Step #6
+Starting Step #7
+Step #7: Pulling image: gcr.io/oss-fuzz-base/uploader
+Step #7: Using default tag: latest
+Step #7: latest: Pulling from oss-fuzz-base/uploader
+Step #7: c62795f78da9: Pulling fs layer
+Step #7: d4fceeeb758e: Pulling fs layer
+Step #7: 5c9125a401ae: Pulling fs layer
+Step #7: 0062f774e994: Pulling fs layer
+Step #7: 6b33fd031fac: Pulling fs layer
+Step #7: 7eb39101e508: Pulling fs layer
+Step #7: 89257482f398: Pulling fs layer
+Step #7: 6b33fd031fac: Waiting
+Step #7: 7eb39101e508: Waiting
+Step #7: 89257482f398: Waiting
+Step #7: 0062f774e994: Waiting
+Step #7: 5c9125a401ae: Verifying Checksum
+Step #7: 5c9125a401ae: Download complete
+Step #7: d4fceeeb758e: Verifying Checksum
+Step #7: d4fceeeb758e: Download complete
+Step #7: 6b33fd031fac: Verifying Checksum
+Step #7: 6b33fd031fac: Download complete
+Step #7: 0062f774e994: Verifying Checksum
+Step #7: 0062f774e994: Download complete
+Step #7: 89257482f398: Verifying Checksum
+Step #7: 89257482f398: Download complete
+Step #7: c62795f78da9: Verifying Checksum
+Step #7: c62795f78da9: Download complete
+Step #7: 7eb39101e508: Verifying Checksum
+Step #7: 7eb39101e508: Download complete
+Step #7: c62795f78da9: Pull complete
+Step #7: d4fceeeb758e: Pull complete
+Step #7: 5c9125a401ae: Pull complete
+Step #7: 0062f774e994: Pull complete
+Step #7: 6b33fd031fac: Pull complete
+Step #7: 7eb39101e508: Pull complete
+Step #7: 89257482f398: Pull complete
+Step #7: Digest: sha256:5717ba63d13b5515063e2a6ccad09fb5bf32a86c8e0798a363d81c2be522e411
+Step #7: Status: Downloaded newer image for gcr.io/oss-fuzz-base/uploader:latest
+Step #7: gcr.io/oss-fuzz-base/uploader:latest
+Step #7:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #7:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #7:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   185    0     0  100   185      0    658 --:--:-- --:--:-- --:--:--   660
+Finished Step #7
+Starting Step #8
+Step #8: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #8:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #8:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #8:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 20.2M    0     0  100 20.2M      0  59.8M --:--:-- --:--:-- --:--:-- 59.8M
+Finished Step #8
+Starting Step #9
+Step #9: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #9:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #9:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #9:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    11    0     0  100    11      0     40 --:--:-- --:--:-- --:--:--    40
+Finished Step #9
+Starting Step #10
+Step #10: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #10:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #10:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #10:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    42    0     0  100    42      0    225 --:--:-- --:--:-- --:--:--   227
+Finished Step #10
+Starting Step #11
+Step #11: Already have image: gcr.io/oss-fuzz/opencensus-python
+Finished Step #11
+PUSH
+DONE

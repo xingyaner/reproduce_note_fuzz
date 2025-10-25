@@ -1,0 +1,480 @@
+starting build "df6e547e-adbc-435a-9b05-2a6c7db375a1"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: 
+Step #0:                    ***** NOTICE *****
+Step #0: 
+Step #0: Official `cloud-sdk` images, including multiple tagged versions across multiple
+Step #0: platforms, can be found at
+Step #0: https://github.com/GoogleCloudPlatform/cloud-sdk-docker and may be more suitable
+Step #0: for some use cases when interacting with Cloud Source Repositories.
+Step #0: 
+Step #0: For additional information, please visit
+Step #0: https://github.com/GoogleCloudPlatform/cloud-builders/tree/master/git
+Step #0: 
+Step #0:                 ***** END OF NOTICE *****
+Step #0: 
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c"
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Sending build context to Docker daemon  6.656kB
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Step 1/4 : FROM gcr.io/oss-fuzz-base/base-builder-go
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": latest: Pulling from oss-fuzz-base/base-builder-go
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b549f31133a9: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": eb02c1410fe0: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 297bdddc0bbf: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 698988fa3324: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 926221d32884: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 867ca4ff8b06: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 67267e15d1a7: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 28257711365e: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": f3fbc153c7c8: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": d92f09768937: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 7b41d9eeb0f8: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 56e24eb72777: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 60e284275f81: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 465bbcc9c5c7: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 6beec21add2c: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 02758932c09c: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 9d6437f540b3: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 7486526a30d3: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 90261fc60ebe: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": f8a53a51ec61: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 0a835365a750: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 28257711365e: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 1290ee423d2e: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 04fdc2ab98e8: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": ec50a6e5540b: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 6595f2071e63: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": d1ddd56aabcf: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 31f29bdb9e6f: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": c5e889ff8d54: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 92e1264018ec: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": f3fbc153c7c8: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 465bbcc9c5c7: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 7b41d9eeb0f8: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 2693809c62e6: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 56e24eb72777: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 6beec21add2c: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": d92f09768937: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 698988fa3324: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 60e284275f81: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 926221d32884: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 867ca4ff8b06: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 9d6437f540b3: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": e9afe7c09179: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 67267e15d1a7: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 02758932c09c: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b9947e8de5ba: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": c5d703cffb01: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 4ebff852a6e8: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": aad5b3905aea: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 65926889827b: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 4a899addf909: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 27b82dc7d545: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 8a02dde7c5f9: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": d1ddd56aabcf: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": bab1e91054fa: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b6c3b7465572: Pulling fs layer
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 27b82dc7d545: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 8a02dde7c5f9: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b6c3b7465572: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 92e1264018ec: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": bab1e91054fa: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 65926889827b: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": e9afe7c09179: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 4ebff852a6e8: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 1290ee423d2e: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 04fdc2ab98e8: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 90261fc60ebe: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 2693809c62e6: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 6595f2071e63: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 31f29bdb9e6f: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": c5d703cffb01: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b9947e8de5ba: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": f8a53a51ec61: Waiting
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 297bdddc0bbf: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b549f31133a9: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b549f31133a9: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 926221d32884: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 926221d32884: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 698988fa3324: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 698988fa3324: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 67267e15d1a7: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 67267e15d1a7: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": eb02c1410fe0: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": eb02c1410fe0: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 28257711365e: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 28257711365e: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b549f31133a9: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": d92f09768937: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": d92f09768937: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": f3fbc153c7c8: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": f3fbc153c7c8: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 7b41d9eeb0f8: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 56e24eb72777: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 56e24eb72777: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 60e284275f81: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 60e284275f81: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 465bbcc9c5c7: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 02758932c09c: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 6beec21add2c: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 6beec21add2c: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 7486526a30d3: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 7486526a30d3: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 9d6437f540b3: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 9d6437f540b3: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 90261fc60ebe: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 90261fc60ebe: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": f8a53a51ec61: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": f8a53a51ec61: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 0a835365a750: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 1290ee423d2e: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 04fdc2ab98e8: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 04fdc2ab98e8: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": ec50a6e5540b: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": ec50a6e5540b: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 6595f2071e63: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 6595f2071e63: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": eb02c1410fe0: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": d1ddd56aabcf: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 297bdddc0bbf: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 31f29bdb9e6f: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": c5e889ff8d54: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 867ca4ff8b06: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 867ca4ff8b06: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 92e1264018ec: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 92e1264018ec: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": e9afe7c09179: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": e9afe7c09179: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b9947e8de5ba: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b9947e8de5ba: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": c5d703cffb01: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": c5d703cffb01: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 2693809c62e6: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 2693809c62e6: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 4ebff852a6e8: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 4ebff852a6e8: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 65926889827b: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 65926889827b: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": aad5b3905aea: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": aad5b3905aea: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 8a02dde7c5f9: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 4a899addf909: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 4a899addf909: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 27b82dc7d545: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 27b82dc7d545: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b6c3b7465572: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b6c3b7465572: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 698988fa3324: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 926221d32884: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": bab1e91054fa: Verifying Checksum
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": bab1e91054fa: Download complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 867ca4ff8b06: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 67267e15d1a7: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 28257711365e: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": f3fbc153c7c8: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": d92f09768937: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 7b41d9eeb0f8: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 56e24eb72777: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 60e284275f81: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 465bbcc9c5c7: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 6beec21add2c: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 02758932c09c: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 9d6437f540b3: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 7486526a30d3: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 90261fc60ebe: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": f8a53a51ec61: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 0a835365a750: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 1290ee423d2e: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 04fdc2ab98e8: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": ec50a6e5540b: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 6595f2071e63: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": d1ddd56aabcf: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 31f29bdb9e6f: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": c5e889ff8d54: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 92e1264018ec: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 2693809c62e6: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": e9afe7c09179: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b9947e8de5ba: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": c5d703cffb01: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 4ebff852a6e8: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": aad5b3905aea: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 65926889827b: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 4a899addf909: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 27b82dc7d545: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": 8a02dde7c5f9: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": bab1e91054fa: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": b6c3b7465572: Pull complete
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Digest: sha256:67d055d0008b63442809af6957d14236138f7d615cc4aca03a08063b9f5a5d1e
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-go:latest
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c":  ---> b3364713ad81
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Step 2/4 : RUN git clone --depth 1 https://github.com/go-yaml/yaml
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c":  ---> Running in 63a21f2e1e30
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": [91mCloning into 'yaml'...
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": [0mRemoving intermediate container 63a21f2e1e30
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c":  ---> 990d135998f5
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Step 3/4 : WORKDIR yaml
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c":  ---> Running in 5e4e555c5e1b
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Removing intermediate container 5e4e555c5e1b
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c":  ---> 996698ed6a84
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Step 4/4 : COPY build.sh fuzz_test.go $SRC/
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c":  ---> 9fecdba91561
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Successfully built 9fecdba91561
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Successfully tagged gcr.io/oss-fuzz/go-yaml:latest
+Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/go-yaml:latest
+Finished Step #1 - "build-3d11fa0a-2d2d-4325-9777-d9b2f490fc1c"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/go-yaml
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/filejtmTPL
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ go == \g\o ]]
+Step #2 - "srcmap": + PATHS_TO_SCAN='/src /root/go'
+Step #2 - "srcmap": ++ find /src /root/go -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/yaml/.git
+Step #2 - "srcmap": + GIT_DIR=/src/yaml
+Step #2 - "srcmap": + cd /src/yaml
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/go-yaml/yaml
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=944c86a7d29391925ed6ac33bee98a0516f1287a
+Step #2 - "srcmap": + jq_inplace /tmp/filejtmTPL '."/src/yaml" = { type: "git", url: "https://github.com/go-yaml/yaml", rev: "944c86a7d29391925ed6ac33bee98a0516f1287a" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileFRkJcd
+Step #2 - "srcmap": + cat /tmp/filejtmTPL
+Step #2 - "srcmap": + jq '."/src/yaml" = { type: "git", url: "https://github.com/go-yaml/yaml", rev: "944c86a7d29391925ed6ac33bee98a0516f1287a" }'
+Step #2 - "srcmap": + mv /tmp/fileFRkJcd /tmp/filejtmTPL
+Step #2 - "srcmap": ++ find /src /root/go -name .svn -type d
+Step #2 - "srcmap": ++ find /src /root/go -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/filejtmTPL
+Step #2 - "srcmap": + rm /tmp/filejtmTPL
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/yaml": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/go-yaml/yaml",
+Step #2 - "srcmap":     "rev": "944c86a7d29391925ed6ac33bee98a0516f1287a"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++ -lresolv
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/fuzz_test.go ./
+Step #3 - "compile-libfuzzer-address-x86_64": + go mod tidy
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405
+Step #3 - "compile-libfuzzer-address-x86_64": + printf 'package yaml\nimport _ "github.com/AdamKorcz/go-118-fuzz-build/testing"\n'
+Step #3 - "compile-libfuzzer-address-x86_64": + go mod tidy
+Step #3 - "compile-libfuzzer-address-x86_64": go: finding module for package github.com/AdamKorcz/go-118-fuzz-build/testing
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/AdamKorcz/go-118-fuzz-build v0.0.0-20250520111509-a70c2aa677fa
+Step #3 - "compile-libfuzzer-address-x86_64": go: found github.com/AdamKorcz/go-118-fuzz-build/testing in github.com/AdamKorcz/go-118-fuzz-build v0.0.0-20250520111509-a70c2aa677fa
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/AdaLogics/go-fuzz-headers v0.0.0-20230811130428-ced1acdcaa24
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_native_go_fuzzer gopkg.in/yaml.v3 FuzzDecode FuzzDecode
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+Starting Step #4 - "build-check-libfuzzer-address-x86_64"
+Step #4 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-libfuzzer-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-libfuzzer-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-libfuzzer-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": eb02c1410fe0: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 297bdddc0bbf: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 5ca1d33b3180: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 33d66bbbe40c: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c9c54824b229: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 438c6107ca4c: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 24809bef3bb3: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f395e3f56b87: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 6fedd4bd2b52: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 3e6953799545: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 5d1ebe4c183a: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": e969caa000b6: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 9b43de06048f: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 4e94eaa66058: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 036a1f7eab73: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 82a21fc45e0a: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c6d2f5beb058: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 55249ec900ef: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 07e1f87999d6: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 19c3b77b2643: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": ba1e6370404e: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 998dfe0c4253: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 1099342fdd43: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": e600efa64655: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 9fbbd36a28d2: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 4e94eaa66058: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 036a1f7eab73: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 998dfe0c4253: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 82a21fc45e0a: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 1099342fdd43: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": ba1e6370404e: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": c6d2f5beb058: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 19c3b77b2643: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": e600efa64655: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 07e1f87999d6: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 55249ec900ef: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 9fbbd36a28d2: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 6fedd4bd2b52: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 3e6953799545: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 438c6107ca4c: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": f395e3f56b87: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 24809bef3bb3: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": e969caa000b6: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 9b43de06048f: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": c9c54824b229: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5ca1d33b3180: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 5ca1d33b3180: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 33d66bbbe40c: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 33d66bbbe40c: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 24809bef3bb3: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 24809bef3bb3: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5ca1d33b3180: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 438c6107ca4c: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 438c6107ca4c: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6fedd4bd2b52: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 6fedd4bd2b52: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3e6953799545: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 3e6953799545: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 33d66bbbe40c: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5d1ebe4c183a: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 5d1ebe4c183a: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c9c54824b229: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 9b43de06048f: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 9b43de06048f: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f395e3f56b87: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": f395e3f56b87: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 438c6107ca4c: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4e94eaa66058: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 4e94eaa66058: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 036a1f7eab73: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 036a1f7eab73: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 24809bef3bb3: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c6d2f5beb058: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e969caa000b6: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": e969caa000b6: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 07e1f87999d6: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 07e1f87999d6: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 19c3b77b2643: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 19c3b77b2643: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 82a21fc45e0a: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 82a21fc45e0a: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ba1e6370404e: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": ba1e6370404e: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1099342fdd43: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 1099342fdd43: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f395e3f56b87: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e600efa64655: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": e600efa64655: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6fedd4bd2b52: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 55249ec900ef: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 55249ec900ef: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 9fbbd36a28d2: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 998dfe0c4253: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 998dfe0c4253: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3e6953799545: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5d1ebe4c183a: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e969caa000b6: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 9b43de06048f: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4e94eaa66058: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 036a1f7eab73: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 82a21fc45e0a: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c6d2f5beb058: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 55249ec900ef: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 07e1f87999d6: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 19c3b77b2643: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ba1e6370404e: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 998dfe0c4253: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1099342fdd43: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e600efa64655: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 9fbbd36a28d2: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": Digest: sha256:ac946e7c0a8970179b59e96d612285b92cf9cfb0e39d4c61ac485a60fd7f21c9
+Step #4 - "build-check-libfuzzer-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpcq1p6e4y/FuzzDecode
+Finished Step #4 - "build-check-libfuzzer-address-x86_64"
+Starting Step #5
+Step #5: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #5
+Starting Step #6
+Step #6: Already have image: gcr.io/oss-fuzz/go-yaml
+Step #6:   adding: FuzzDecode (deflated 63%)
+Step #6:   adding: llvm-symbolizer (deflated 65%)
+Finished Step #6
+Starting Step #7
+Step #7: Pulling image: gcr.io/oss-fuzz-base/uploader
+Step #7: Using default tag: latest
+Step #7: latest: Pulling from oss-fuzz-base/uploader
+Step #7: c62795f78da9: Pulling fs layer
+Step #7: d4fceeeb758e: Pulling fs layer
+Step #7: 5c9125a401ae: Pulling fs layer
+Step #7: 0062f774e994: Pulling fs layer
+Step #7: 6b33fd031fac: Pulling fs layer
+Step #7: 7eb39101e508: Pulling fs layer
+Step #7: 89257482f398: Pulling fs layer
+Step #7: 6b33fd031fac: Waiting
+Step #7: 7eb39101e508: Waiting
+Step #7: 89257482f398: Waiting
+Step #7: 0062f774e994: Waiting
+Step #7: d4fceeeb758e: Download complete
+Step #7: 5c9125a401ae: Verifying Checksum
+Step #7: 5c9125a401ae: Download complete
+Step #7: 0062f774e994: Download complete
+Step #7: 6b33fd031fac: Verifying Checksum
+Step #7: 6b33fd031fac: Download complete
+Step #7: 89257482f398: Verifying Checksum
+Step #7: 89257482f398: Download complete
+Step #7: c62795f78da9: Verifying Checksum
+Step #7: c62795f78da9: Download complete
+Step #7: 7eb39101e508: Verifying Checksum
+Step #7: 7eb39101e508: Download complete
+Step #7: c62795f78da9: Pull complete
+Step #7: d4fceeeb758e: Pull complete
+Step #7: 5c9125a401ae: Pull complete
+Step #7: 0062f774e994: Pull complete
+Step #7: 6b33fd031fac: Pull complete
+Step #7: 7eb39101e508: Pull complete
+Step #7: 89257482f398: Pull complete
+Step #7: Digest: sha256:5717ba63d13b5515063e2a6ccad09fb5bf32a86c8e0798a363d81c2be522e411
+Step #7: Status: Downloaded newer image for gcr.io/oss-fuzz-base/uploader:latest
+Step #7: gcr.io/oss-fuzz-base/uploader:latest
+Step #7:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #7:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #7:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   144    0     0  100   144      0    806 --:--:-- --:--:-- --:--:--   808
+Finished Step #7
+Starting Step #8
+Step #8: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #8:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #8:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #8:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 6522k    0     0  100 6522k      0  25.9M --:--:-- --:--:-- --:--:-- 25.9M
+Finished Step #8
+Starting Step #9
+Step #9: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #9:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #9:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #9:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    11    0     0  100    11      0     53 --:--:-- --:--:-- --:--:--    53100    11    0     0  100    11      0     42 --:--:-- --:--:-- --:--:--    42
+Finished Step #9
+Starting Step #10
+Step #10: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #10:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #10:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #10:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    32    0     0  100    32      0    153 --:--:-- --:--:-- --:--:--   153100    32    0     0  100    32      0    148 --:--:-- --:--:-- --:--:--   149
+Finished Step #10
+Starting Step #11
+Step #11: Already have image: gcr.io/oss-fuzz/go-yaml
+Finished Step #11
+PUSH
+DONE

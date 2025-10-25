@@ -1,0 +1,630 @@
+starting build "9a3aea72-53b2-4a32-b8e0-6461637f0a4c"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0"
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Sending build context to Docker daemon  10.75kB
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Step 1/4 : FROM gcr.io/oss-fuzz-base/base-builder-jvm
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": latest: Pulling from oss-fuzz-base/base-builder-jvm
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b549f31133a9: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": cb9de8dca298: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 7b011949e673: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 4223e9366084: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": fed81cdfb6a9: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": ec63a2d0d15f: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1ae06f39b1c: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 13aa280bbb0b: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 2701ced0d7c4: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5d914f439872: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5afcacf26009: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 6a6cec21bcc6: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 96bef82d3744: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 25f8e8a4262f: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 3b38150c7777: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 261fb7ae3c42: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 626ba5c7ca97: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 483dc6c414c8: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 958337bdba45: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 85c02b013ea1: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8bd3bf18d6f8: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 705eff584c11: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 0f9fdf19bd4d: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 12a9b61083a7: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1bbffe35f41: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5a28647958ef: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 86571ad417df: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 4223e9366084: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8a957f5949e1: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": fed81cdfb6a9: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 78937b31eba5: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 9d67a7daaea7: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": c382251239b2: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": ec63a2d0d15f: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 87c02ad7d9b2: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 05c773eac106: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1ae06f39b1c: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8ad94b8acb6c: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 13aa280bbb0b: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 2701ced0d7c4: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5d914f439872: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5afcacf26009: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 891509538455: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": ae7c13f8e6d2: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1ff1728491b: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8887a4f06d6c: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": d36876d32069: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 9732b89661fa: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": c2425364d9bf: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 329e956b556c: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": ae7c13f8e6d2: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 87c02ad7d9b2: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 33da410a3982: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 380547e65ba1: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 891509538455: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5a28647958ef: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": d36876d32069: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 0f9fdf19bd4d: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 9732b89661fa: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 78937b31eba5: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": c2425364d9bf: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8ad94b8acb6c: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 958337bdba45: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": c382251239b2: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 329e956b556c: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 96bef82d3744: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 33da410a3982: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 261fb7ae3c42: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 3b38150c7777: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8887a4f06d6c: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 6a6cec21bcc6: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 380547e65ba1: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 7f483b64b992: Pulling fs layer
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 7f483b64b992: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 25f8e8a4262f: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 12a9b61083a7: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 705eff584c11: Waiting
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 7b011949e673: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 7b011949e673: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b549f31133a9: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b549f31133a9: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": fed81cdfb6a9: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": fed81cdfb6a9: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 4223e9366084: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 4223e9366084: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1ae06f39b1c: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 13aa280bbb0b: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 13aa280bbb0b: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": cb9de8dca298: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": cb9de8dca298: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b549f31133a9: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5d914f439872: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5d914f439872: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5afcacf26009: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5afcacf26009: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 6a6cec21bcc6: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 6a6cec21bcc6: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 96bef82d3744: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 96bef82d3744: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 25f8e8a4262f: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 2701ced0d7c4: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 2701ced0d7c4: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 261fb7ae3c42: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 261fb7ae3c42: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 3b38150c7777: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 3b38150c7777: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 483dc6c414c8: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 483dc6c414c8: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 626ba5c7ca97: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 626ba5c7ca97: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 958337bdba45: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 958337bdba45: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 85c02b013ea1: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 85c02b013ea1: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8bd3bf18d6f8: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8bd3bf18d6f8: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 705eff584c11: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 12a9b61083a7: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 0f9fdf19bd4d: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 0f9fdf19bd4d: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1bbffe35f41: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1bbffe35f41: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5a28647958ef: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5a28647958ef: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 86571ad417df: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 86571ad417df: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8a957f5949e1: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8a957f5949e1: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": cb9de8dca298: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 7b011949e673: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 78937b31eba5: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 78937b31eba5: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": ec63a2d0d15f: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": ec63a2d0d15f: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 9d67a7daaea7: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 9d67a7daaea7: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": c382251239b2: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 87c02ad7d9b2: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 87c02ad7d9b2: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 05c773eac106: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 05c773eac106: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8ad94b8acb6c: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8ad94b8acb6c: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": ae7c13f8e6d2: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": ae7c13f8e6d2: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 891509538455: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1ff1728491b: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1ff1728491b: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 9732b89661fa: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 9732b89661fa: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8887a4f06d6c: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8887a4f06d6c: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": c2425364d9bf: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": c2425364d9bf: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 4223e9366084: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 329e956b556c: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": fed81cdfb6a9: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 33da410a3982: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 33da410a3982: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 380547e65ba1: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 7f483b64b992: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 7f483b64b992: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": d36876d32069: Verifying Checksum
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": d36876d32069: Download complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": ec63a2d0d15f: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1ae06f39b1c: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 13aa280bbb0b: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 2701ced0d7c4: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5d914f439872: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5afcacf26009: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 6a6cec21bcc6: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 96bef82d3744: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 25f8e8a4262f: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 3b38150c7777: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 261fb7ae3c42: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 626ba5c7ca97: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 483dc6c414c8: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 958337bdba45: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 85c02b013ea1: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8bd3bf18d6f8: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 705eff584c11: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 0f9fdf19bd4d: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 12a9b61083a7: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1bbffe35f41: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 5a28647958ef: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 86571ad417df: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8a957f5949e1: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 78937b31eba5: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 9d67a7daaea7: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": c382251239b2: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 87c02ad7d9b2: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 05c773eac106: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8ad94b8acb6c: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 891509538455: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": ae7c13f8e6d2: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": b1ff1728491b: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 8887a4f06d6c: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": d36876d32069: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 9732b89661fa: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": c2425364d9bf: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 329e956b556c: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 33da410a3982: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 380547e65ba1: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": 7f483b64b992: Pull complete
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Digest: sha256:fae8460a63b3055db112e062fefdf35ddcb3c636dc267df1c66a7fdd7b135895
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-jvm:latest
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0":  ---> 9ec49afc6fa3
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Step 2/4 : RUN git clone --depth 1 https://github.com/apache/calcite-avatica calcite-avatica
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0":  ---> Running in f2c846d106ed
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": [91mCloning into 'calcite-avatica'...
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": [0mRemoving intermediate container f2c846d106ed
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0":  ---> bbb9f022b23b
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Step 3/4 : COPY *.sh *.java $SRC/
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0":  ---> d1a09ad540f6
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Step 4/4 : WORKDIR $SRC/calcite-avatica
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0":  ---> Running in c9dd8f5fbc9b
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Removing intermediate container c9dd8f5fbc9b
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0":  ---> be22967a2dd3
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Successfully built be22967a2dd3
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Successfully tagged gcr.io/oss-fuzz/calcite-avatica:latest
+Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/calcite-avatica:latest
+Finished Step #1 - "build-708a320f-02a9-4889-b90c-cf00a820e0e0"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/calcite-avatica
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/filejsJYSL
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ jvm == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/calcite-avatica/.git
+Step #2 - "srcmap": + GIT_DIR=/src/calcite-avatica
+Step #2 - "srcmap": + cd /src/calcite-avatica
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/apache/calcite-avatica
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=1e05be2bbe3e63eafe7b157beb8cbe00abaa15f2
+Step #2 - "srcmap": + jq_inplace /tmp/filejsJYSL '."/src/calcite-avatica" = { type: "git", url: "https://github.com/apache/calcite-avatica", rev: "1e05be2bbe3e63eafe7b157beb8cbe00abaa15f2" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/file0B8wlb
+Step #2 - "srcmap": + cat /tmp/filejsJYSL
+Step #2 - "srcmap": + jq '."/src/calcite-avatica" = { type: "git", url: "https://github.com/apache/calcite-avatica", rev: "1e05be2bbe3e63eafe7b157beb8cbe00abaa15f2" }'
+Step #2 - "srcmap": + mv /tmp/file0B8wlb /tmp/filejsJYSL
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/filejsJYSL
+Step #2 - "srcmap": + rm /tmp/filejsJYSL
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/calcite-avatica": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/apache/calcite-avatica",
+Step #2 - "srcmap":     "rev": "1e05be2bbe3e63eafe7b157beb8cbe00abaa15f2"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=leak
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=leak
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + rm -rf /root/.gradle/caches/
+Step #3 - "compile-libfuzzer-address-x86_64": + ./gradlew clean build shadowJar -x test
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading https://services.gradle.org/distributions/gradle-8.14.3-bin.zip
+Step #3 - "compile-libfuzzer-address-x86_64": .............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%..............100%
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Welcome to Gradle 8.14.3!
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Here are the highlights of this release:
+Step #3 - "compile-libfuzzer-address-x86_64":  - Java 24 support
+Step #3 - "compile-libfuzzer-address-x86_64":  - GraalVM Native Image toolchain selection
+Step #3 - "compile-libfuzzer-address-x86_64":  - Enhancements to test reporting
+Step #3 - "compile-libfuzzer-address-x86_64":  - Build Authoring improvements
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": For more details see https://docs.gradle.org/8.14.3/release-notes.html
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Starting a Gradle Daemon (subsequent builds will be faster)
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [2A[1B[1m> Starting Daemon[m[17D[1B[1A> IDLE[0K[6D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [78ms][m[38D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [178ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [278ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [378ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [478ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [578ms][m[39D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [678ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [778ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [878ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [978ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [1s][m[0K[36D[1B[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 0%[m[72D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 6%[m[72D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 9%[m[72D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 10%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 11%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 14%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [2s][m[36D[2B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 19%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 23%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 26%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 28%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 29%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 30%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 31%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 35%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [3s][m[36D[2B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 37%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 38%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 39%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 40%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 43%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [4s][m[36D[1B[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 46%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 47%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 49%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 52%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 53%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 56%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 57%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [5s][m[36D[1B[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 60%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 64%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 66%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [6s][m[36D[1B[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 68%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 73%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 76%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 78%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 80%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 82%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 89%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 90%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 91%[m[73D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [7s][m[36D[1B[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 92%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 95%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 97%[m[73D[1B[1A[1m> Evaluating settings > Generating gradle-api-8.14.3.jar > Generating 100%[m[74D[1B[1A[1m> Evaluating settings[m[0K[21D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [8s][m[36D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [9s][m[36D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [10s][m[37D[2B[1A[1m> Evaluating settings > Compiling settings file 'settings.gradle.kts'[m[69D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [11s][m[37D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [12s][m[37D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [13s][m[37D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [14s][m[37D[2B[1A[1m> Evaluating settings[m[0K[21D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [15s][m[37D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [16s][m[37D[2B[1A[1m> Evaluating settings > Compiling settings file 'settings.gradle.kts'[m[69D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [17s][m[0K[36D[1B> IDLE[0K[6D[1B[1A[1m> root project[m[14D[1B[1A[1m> root project > Compiling build file 'build.gradle.kts'[m[56D[1B[1A[1m> root project[m[0K[14D[1B[1A[1m> root project > Resolve dependencies of detachedConfiguration1[m[63D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [18s][m[36D[1B[1m> root project > Resolve dependencies of detachedConfiguration1 > com.github.au[m[79D[1B[1A[1m> root project > Resolve dependencies of detachedConfiguration1[m[0K[63D[1B[1A[1m> root project > Resolve dependencies of detachedConfiguration2 > org.nosphere.[m[79D[1B[1A[1m> root project[m[0K[14D[1B[1A[1m> root project > Resolve dependencies of detachedConfiguration3 > com.github.sp[m[79D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [19s][m[36D[1B[1m> root project[m[0K[14D[1B[1A[1m> root project > Resolve dependencies of detachedConfiguration4[m[63D[1B[1A[1m> root project[m[0K[14D[1B[1A[1m> root project > Resolve dependencies of detachedConfiguration5 > org.owasp.dep[m[79D[1B[1A[1m> root project > Resolve dependencies of detachedConfiguration6 > com.github.jo[m[79D[1B[1A[1m> root project > Resolve dependencies of detachedConfiguration7 > org.jetbrains[m[79D[1B[1A[1m> root project[m[0K[14D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [20s][m[36D[2B[1A[1m> root project > Resolve dependencies of detachedConfiguration12 > com.github.v[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > autostyle-plugin-gradle-3.[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > creadur-rat-gradle-0.8.0.p[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > creadur-rat-gradle-0.8.0.m[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > spotbugs-gradle-plugin-2.0[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B[1A[1m> root project > Resolve dependencies of classpath > forbiddenapis-3.7.pom[m[74D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [21s][m[36D[1B[1m> root project > Resolve dependencies of classpath > dependency-check-gradle-12[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > shadow-8.1.1.pom[m[0K[69D[1B[1A[1m> root project > Resolve dependencies of classpath > shadow-8.1.1.module[m[72D[1B[1A[1m> root project > Resolve dependencies of classpath > gradle-idea-ext-0.5.pom[m[76D[1B[1A[1m> root project > Resolve dependencies of classpath > ide-plugin-1.90.pom[m[0K[72D[1B[1A[1m> root project > Resolve dependencies of classpath > crlf-plugin-1.90.pom[m[73D[1B[1A[1m> root project > Resolve dependencies of classpath > gradle-extensions-plugin-1[m[79D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [22s][m[36D[1B[1m> root project > Resolve dependencies of classpath > license-gather-plugin-1.90[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > stage-vote-release-plugin-[m[79D[1B
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [4A[1m> root project > Resolve dependencies of classpath > durian-io-1.2.0.pom[m[0K[72D[1B[1m> root project > Resolve dependencies of classpath > autostyle-lib-3.0.pom[m[74D[1B[1m> root project > Resolve dependencies of classpath > durian-collect-1.2.0.pom[m[77D[1B[1m> root project > Resolve dependencies of classpath > autostyle-lib-extra-3.0.po[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > kotlin-stdlib-2.0.21.pom[m[0K[77D[1B[1A[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B[1A[1m> root project > Resolve dependencies of classpath > dependency-check-parent-12[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B[4A[1m> root project > Resolve dependencies of classpath > jdependency-2.8.0.pom[m[74D[1B[1m> root project > Resolve dependencies of classpath > commons-io-2.11.0.pom[m[74D[1B[1m> root project > Resolve dependencies of classpath > ant-1.10.13.pom[m[68D[1B[1m> root project > Resolve dependencies of classpath > jdom2-2.0.6.1.pom[m[70D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > ant-parent-1.10.13.pom[m[75D[1B> IDLE[0K[6D[1B[2A[1m> root project > Resolve dependencies of classpath > junit-bom-5.7.2.pom[m[0K[72D[2B[5A[1m<[0;1m-------------> 0% CONFIGURING [23s][m[36D[1B[1m> root project > Resolve dependencies of classpath > log4j-core-2.20.0.pom[m[74D[2B[1m> root project > Resolve dependencies of classpath > asm-9.7.1.pom[m[0K[66D[1B[1m> root project > Resolve dependencies of classpath > asm-commons-9.7.1.pom[m[74D[1B[4A> IDLE[0K[6D[2B> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > logging-parent-7.pom[m[0K[73D[1B[1A[1m> root project > Resolve dependencies of classpath > log4j-bom-2.20.0.pom[m[73D[1B[1A[1m> root project > Resolve dependencies of classpath > groovy-bom-3.0.14.pom[m[74D[1B[1A[1m> root project > Resolve dependencies of classpath > jackson-parent-2.14.pom[m[76D[1B[1A[1m> root project > Resolve dependencies of classpath > jakarta.jakartaee-bom-9.0.[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > project-1.0.6.pom[m[0K[70D[1B[1A[1m> root project > Resolve dependencies of classpath > junit-bom-5.9.1.pom[m[72D[1B[1A[1m> root project > Resolve dependencies of classpath > kubernetes-client-bom-5.12[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > oss-parent-7.pom[m[0K[69D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [24s][m[36D[4B[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B[4A[1m> root project > Resolve dependencies of classpath > gson-parent-2.8.2.pom[m[74D[3B[1m> root project > Resolve dependencies of classpath > guava-25.1-jre.pom > 7.5 K[m[79D[1B[4A[1m> root project > Resolve dependencies of classpath > gradle-idea-ext-0.7.pom[m[76D[3B> IDLE[0K[6D[1B[4A[1m> root project > Resolve dependencies of classpath[m[0K[50D[4B[4A[1m> root project > Resolve dependencies of classpath > grgit-gradle-4.1.1.pom[m[75D[1B[1m> root project > Resolve dependencies of classpath > grgit-core-4.1.1.module[m[76D[1B[1m> root project > Resolve dependencies of classpath > nexus-publish-plugin-0.4.0[m[79D[1B[1m> root project > Resolve dependencies of classpath > gradle-nexus-staging-plugi[m[79D[1B[3A> IDLE[0K[6D[2B> IDLE[0K[6D[1B[4A[1m> root project > Resolve dependencies of classpath > groovy-xml-2.4.7.pom[m[0K[73D[2B[1m> root project > Resolve dependencies of classpath > concurrent-trees-2.6.1.pom[m[79D[2B[4A> IDLE[0K[6D[2B[1m> root project > Resolve dependencies of classpath > open-vulnerability-clients[m[79D[2B[2A[1m> root project > Resolve dependencies of classpath > jackson-parent-2.18.1.pom[m[0K[78D[2B[5A[1m<[0;1m-------------> 0% CONFIGURING [25s][m[36D[3B[1m> root project > Resolve dependencies of classpath > open-vulnerability-clients[m[79D[2B[2A[1m> root project > Resolve dependencies of classpath > commons-parent-81.pom > 47[m[79D[2B[2A[1m> root project > Resolve dependencies of classpath > apache-33.pom[m[0K[66D[2B[2A[1m> root project > Resolve dependencies of classpath > junit-bom-5.11.4.module[m[76D[2B[4A[1m> root project > Resolve dependencies of classpath > lucene-queryparser-9.12.0.[m[79D[1B[1m> root project > Resolve dependencies of classpath > slf4j-api-1.7.36.pom[m[73D[1B[1m> root project > Resolve dependencies of classpath > pecoff4j-0.0.2.1.pom[m[0K[73D[1B[1m> root project > Resolve dependencies of classpath > jackson-dataformat-yaml-2.[m[79D[1B[4A[1m> root project > Resolve dependencies of classpath > jackson-modules-base-2.19.[m[79D[1B[1m> root project > Resolve dependencies of classpath > ossindex-service-1.8.2.pom[m[79D[1B[1m> root project > Resolve dependencies of classpath > httpclient5-5.5.pom[m[0K[72D[1B[1m> root project > Resolve dependencies of classpath > jcs3-slf4j-1.0.5.module[m[0K[76D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > httpclient5-parent-5.5.pom[m[79D[1B[1m> root project > Resolve dependencies of classpath > public-parent-13.pom[m[0K[73D[1B[4A[1m> root project > Resolve dependencies of classpath > jackson-databind-2.19.0.mo[m[79D[1B[1m> root project > Resolve dependencies of classpath > jackson-annotations-2.19.0[m[79D[1B[1m> root project > Resolve dependencies of classpath > httpcomponents-parent-14.p[m[79D[1B[1m> root project > Resolve dependencies of classpath > buildsupport-13.pom[m[0K[72D[1B[4A[1m> root project > Resolve dependencies of classpath > junit-bom-5.11.0-M1.module[m[79D[1B[1m> root project > Resolve dependencies of classpath > ossindex-service-bom-1.8.2[m[79D[1B[1m> root project > Resolve dependencies of classpath > junit-bom-5.12.2.module[m[0K[76D[1B[1m> root project > Resolve dependencies of classpath > junit-bom-5.9.3.module[m[75D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > gson-2.3.1.pom > 8 KiB/8.8[m[79D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [26s][m[36D[4B[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B[1A[1m> root project > Resolve dependencies of classpath > JavaEWAH-1.1.12.pom[m[72D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlin-stdlib-common-2.0.2[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > http-builder-0.7.1.pom[m[0K[75D[1B[2A[1m> root project > Resolve dependencies of classpath > jmustache-1.16.pom[m[71D[1B[1m> root project > Resolve dependencies of classpath > httpclient5-cache-5.4.3.po[m[79D[1B[2A[1m> root project > Resolve dependencies of classpath > jspecify-1.0.0.pom[m[71D[1B> IDLE[0K[6D[1B[2A[1m> root project > Resolve dependencies of classpath > commons-codec-1.17.1.pom[m[77D[2B[4A[1m> root project > Resolve dependencies of classpath > commons-logging-1.3.4.pom[m[78D[2B[1m> root project > Resolve dependencies of classpath > commons-pool2-2.12.0.pom[m[77D[1B[1m> root project > Resolve dependencies of classpath > jakarta.transaction-api-1.[m[79D[1B[4A> IDLE[0K[6D[2B[1m> root project > Resolve dependencies of classpath > apache-30.pom[m[0K[66D[1B> IDLE[0K[6D[1B[2A[1m> root project > Resolve dependencies of classpath > junit-bom-5.10.0.module[m[76D[2B[5A[1m<[0;1m-------------> 0% CONFIGURING [27s][m[36D[3B[1m> root project > Resolve dependencies of classpath > snakeyaml-2.4.pom[m[0K[70D[2B[2A[1m> root project > Resolve dependencies of classpath > mustache.java-0.9.6.pom[m[76D[2B[2A[1m> root project > Resolve dependencies of classpath > gson-parent-2.9.0.pom[m[0K[74D[2B[2A[1m> root project > Resolve dependencies of classpath > jaxb-api-parent-2.3.1.pom[m[78D[2B[4A[1m> root project > Resolve dependencies of classpath > j2objc-annotations-3.0.0.p[m[79D[2B[1m> root project > Resolve dependencies of classpath > failureaccess-1.0.3.pom[m[0K[76D[1B[1m> root project > Resolve dependencies of classpath > error_prone_annotations-2.[m[79D[1B[4A[1m> root project > Resolve dependencies of classpath > commons-parent-39.pom[m[0K[74D[2B[1m> root project > Resolve dependencies of classpath > commons-parent-17.pom[m[0K[74D[1B> IDLE[0K[6D[1B[4A[1m> root project > Resolve dependencies of classpath[m[0K[50D[2B> IDLE[0K[6D[2B[4A[1m> root project > Resolve dependencies of classpath > slf4j-bom-2.0.12.pom[m[73D[4B[4A[1m> root project > Resolve dependencies of classpath > httpcore5-h2-5.3.4.pom[m[75D[4B[4A[1m> root project > Resolve dependencies of classpath > httpclient-4.2.1.pom[m[0K[73D[1B[1m> root project > Resolve dependencies of classpath > xml-resolver-1.2.pom[m[73D[1B[1m> root project > Resolve dependencies of classpath > json-lib-2.3.pom[m[69D[1B[1m> root project > Resolve dependencies of classpath > nekohtml-1.9.16.pom[m[72D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [28s][m[36D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > project-6.pom[m[0K[66D[1B> IDLE[0K[6D[1B[2A[1m> root project > Resolve dependencies of classpath > javax.activation-api-1.2.0[m[79D[2B[3A[1m> root project > Resolve dependencies of classpath > bcpg-jdk18on-1.78.pom[m[74D[1B[1m> root project > Resolve dependencies of classpath > bcprov-jdk18on-1.78.pom[m[0K[76D[2B[3A[1m> root project > Resolve dependencies of classpath > httpcomponents-core-4.2.1.[m[79D[1B> IDLE[0K[6D[2B[3A[1m> root project > Resolve dependencies of classpath > commons-parent-11.pom[m[0K[74D[1B[1m> root project > Resolve dependencies of classpath > commons-parent-9.pom[m[73D[2B[3A[1m> root project > Resolve dependencies of classpath > xercesImpl-2.9.1.pom[m[0K[73D[1B> IDLE[0K[6D[2B[3A[1m> root project > Resolve files of configuration 'classpath' > shadow-8.1.1.jar[m[78D[3B[4A[1m> root project > Resolve files of configuration 'classpath' > kotlinx-coroutine[m[79D[2B[1m> root project > Resolve files of configuration 'classpath' > log4j-core-2.20.0[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > crlf-plugin-1.90.[m[79D[1B[3A[1m> root project > Resolve files of configuration 'classpath' > velocity-engine-c[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > grgit-core-4.1.1.[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > packageurl-java-1[m[79D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > lucene-queryparse[m[79D[4B[5A[1m<[0;1m-------------> 0% CONFIGURING [29s][m[36D[1B[1m> root project > Resolve files of configuration 'classpath' > android-json-0.0.[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > package-url-java-[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > jackson-dataforma[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > httpcore5-5.3.4.j[m[79D[1B[3A[1m> root project > Resolve files of configuration 'classpath' > j2objc-annotation[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > compiler-0.9.6.ja[m[79D[2B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> root project > Resolve files of configuration 'classpath' > bcpg-jdk18on-1.78[m[79D[1B[1A[1m> root project > Resolve files of configuration 'classpath' > bcprov-jdk18on-1.[m[79D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[1B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [30s][m[36D[5B[4A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[3A[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[2B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[3A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[2B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [31s][m[36D[5B[3A> IDLE[0K[6D[3B[4A> IDLE[0K[6D[4B[2A> IDLE[0K[6D[2B[1A[1m> root project > Resolve files of configuration 'classpath'[m[0K[59D[1B[1A[1m> root project[m[0K[14D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [32s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [33s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [34s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [35s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [36s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [37s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [38s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [39s][m[36D[5B[1A[1m> root project > Compiling build file 'build.gradle.kts'[m[56D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [40s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [41s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [42s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [43s][m[36D[5B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1m> Configure project :[m[0K
+Step #3 - "compile-libfuzzer-address-x86_64": w: file:///src/calcite-avatica/build.gradle.kts:258:9: 'setter for dirMode: Int?' is deprecated. Deprecated in Java[0K
+Step #3 - "compile-libfuzzer-address-x86_64": w: file:///src/calcite-avatica/build.gradle.kts:259:9: 'setter for fileMode: Int?' is deprecated. Deprecated in Java[0K
+Step #3 - "compile-libfuzzer-address-x86_64": w: file:///src/calcite-avatica/build.gradle.kts:424:49: Unchecked cast: Enumeration<*>! to Enumeration<String>[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;1m-------------> 0% CONFIGURING [43s][m[36D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[1m> root project[m[14D[1B[5ABuilding Apache Calcite Avatica 1.27.0-SNAPSHOT[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [4B[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;1m-------------> 0% CONFIGURING [43s][m[36D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[0K[6D[1B[1m> root project[m[14D[1B[5A[1m<[0;32;1m=[0;39;1m------------> 7% CONFIGURING [43s][m[36D[4B[1m> :bom > Compiling build file 'bom/build.gradle.kts'[m[52D[1B[1A[1m> :bom[m[0K[6D[1B[1A[1m> :bom > Compiling build file 'bom/build.gradle.kts'[m[52D[1B[5A[1m<[0;32;1m==[0;39;1m-----------> 15% CONFIGURING [44s][m[37D[4B[1m> :core > Compiling build file 'core/build.gradle.kts'[m[54D[1B[1A[1m> :core[m[0K[7D[1B[1A[1m> :core > Resolve dependencies of classpath > protobuf-gradle-plugin-0.8.12.pom[m[79D[1B[4A[1m> :core > Resolve dependencies of classpath > commons-lang-2.6.pom[m[66D[2B[1m> :core > Resolve dependencies of classpath > osdetector-gradle-plugin-1.6.2.po[m[79D[1B[1m> :core > Resolve dependencies of classpath > guava-27.0.1-jre.pom[m[0K[66D[1B[4A> IDLE[0K[6D[2B> IDLE[0K[6D[1B[1m> :core > Resolve dependencies of classpath > guava-parent-27.0.1-jre.pom[m[73D[1B[4A[1m> :core > Resolve dependencies of classpath > error_prone_parent-2.2.0.pom[m[74D[3B[1m> :core > Resolve dependencies of classpath > j2objc-annotations-1.1.pom[m[0K[72D[1B[4A[1m> :core > Resolve dependencies of classpath > os-maven-plugin-1.6.2.pom[m[0K[71D[3B> IDLE[0K[6D[1B[4A[1m> :core > Resolve files of configuration 'classpath' > protobuf-gradle-plugin-0[m[79D[1B[1m> :core > Resolve files of configuration 'classpath' > failureaccess-1.0.1.jar[m[78D[1B[1m> :core > Resolve files of configuration 'classpath' > commons-lang-2.6.jar[m[75D[1B[1m> :core > Resolve files of configuration 'classpath' > guava-27.0.1-jre.jar > 3[m[79D[1B[5A[1m<[0;32;1m==[0;39;1m-----------> 15% CONFIGURING [45s][m[37D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> :core > Resolve files of configuration 'classpath' > Resolve files of configu[m[79D[1B[4A[1m> :core > Resolve files of configuration 'classpath' > ExternalDependencyInstru[m[79D[2B[1m> :core > Resolve files of configuration 'classpath' > ExternalDependencyInstru[m[79D[1B[1m> :core > Resolve files of configuration 'classpath' > ExternalDependencyInstru[m[79D[1B[4A> IDLE[0K[6D[3B> IDLE[0K[6D[1B[2A[1m> :core[m[0K[7D[2B[5A[1m<[0;32;1m==[0;39;1m-----------> 15% CONFIGURING [46s][m[37D[5B[2A[1m> :core > Compiling build file 'core/build.gradle.kts'[m[54D[2B[2A[1m> :core[m[0K[7D[2B[5A[1m<[0;32;1m==[0;39;1m-----------> 15% CONFIGURING [47s][m[37D[5B[5A[1m<[0;32;1m====[0;39;1m---------> 30% CONFIGURING [47s][m[37D[3B[1m> :metrics > Compiling build file 'metrics/build.gradle.kts'[m[60D[2B[2A[1m> :metrics[m[0K[10D[2B[2A[1m> :metrics > Compiling build file 'metrics/build.gradle.kts'[m[60D[2B[5A[1m<[0;32;1m=====[0;39;1m--------> 38% CONFIGURING [47s][m[37D[3B[1m> :metrics-dropwizardmetrics > Compiling build file 'metrics-dropwizardmetrics/[m[79D[2B[5A[1m<[0;32;1m=====[0;39;1m--------> 38% CONFIGURING [48s][m[37D[3B[1m> :metrics-dropwizardmetrics[m[0K[28D[2B[2A[1m> :metrics-dropwizardmetrics > Compiling build file 'metrics-dropwizardmetrics/[m[79D[2B[5A[1m<[0;32;1m======[0;39;1m-------> 46% CONFIGURING [48s][m[37D[3B[1m> :noop-driver > Compiling build file 'noop-driver/build.gradle.kts'[m[0K[68D[2B[5A[1m<[0;32;1m=======[0;39;1m------> 53% CONFIGURING [48s][m[37D[3B[1m> :release[m[0K[10D[2B[2A[1m> :release > Compiling build file 'release/build.gradle.kts'[m[60D[2B[5A[1m<[0;32;1m========[0;39;1m-----> 61% CONFIGURING [49s][m[37D[3B[1m> :server > Compiling build file 'server/build.gradle.kts'[m[0K[58D[2B[2A[1m> :server[m[0K[9D[2B[2A[1m> :server > Compiling build file 'server/build.gradle.kts'[m[58D[2B[2A[1m> :server[m[0K[9D[2B[5A[1m<[0;32;1m==========[0;39;1m---> 76% CONFIGURING [49s][m[37D[3B[1m> :standalone-server > Compiling build file 'standalone-server/build.gradle.kts[m[79D[2B[2A[1m> :standalone-server[m[0K[20D[2B[2A[1m> :standalone-server > Compiling build file 'standalone-server/build.gradle.kts[m[79D[2B[5A[1m<[0;32;1m==========[0;39;1m---> 76% CONFIGURING [50s][m[37D[5B[2A[1m> :standalone-server[m[0K[20D[2B[5A[1m<[0;32;1m===========[0;39;1m--> 84% CONFIGURING [50s][m[37D[3B[1m> :tck > Compiling build file 'tck/build.gradle.kts'[m[52D[2B[2A[1m> :tck[m[0K[6D[2B[2A[1m> :tck > Compiling build file 'tck/build.gradle.kts'[m[52D[2B[5A[1m<[0;32;1m============[0;39;1m-> 92% CONFIGURING [51s][m[37D[3B[1m> :shaded:avatica > Compiling build file 'shaded/core/build.gradle.kts'[m[71D[2B[2A[1m> :shaded:avatica[m[0K[17D[2B[2A[1m> :shaded:avatica > Compiling build file 'shaded/core/build.gradle.kts'[m[71D[2B[2A[1m> :shaded:avatica[m[0K[17D[2B[5A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [51s][m[38D[3B> IDLE[0K[6D[2B[5A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [52s][m[38D[3B[1m> Resolve dependencies of :standalone-server:shaded[m[51D[2B[2A[1m> Resolve dependencies of :standalone-server:shaded > protobuf-java-3.25.8.pom[m[78D[2B[2A[1m> Resolve dependencies of :standalone-server:shaded[m[0K[51D[2B[2A[1m> Resolve dependencies of :standalone-server:shaded > jetty-http-9.4.58.v202508[m[79D[2B[2A[1m> Resolve dependencies of :standalone-server:shaded > infinispan-build-configur[m[79D[2B[2A[1m> Resolve dependencies of :standalone-server:shaded > jetty-util-9.4.58.v202508[m[79D[2B[2A[1m> Resolve dependencies of :standalone-server:shaded[m[0K[51D[2B[5A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [53s][m[38D[5B[2A[1m> Resolve dependencies of :standalone-server:shaded > log4j-api-2.17.1.pom[m[74D[1B[1m> Resolve dependencies of :standalone-server:shaded > log4j-core-2.17.1.pom[m[75D[1B[4A[1m> Resolve files of configuration ':standalone-server:shaded' > jackson-databind[m[79D[1B[1m> Resolve files of configuration ':standalone-server:shaded' > httpcore5-5.3.5.[m[79D[1B[1m> Resolve files of configuration ':standalone-server:shaded' > jackson-core-2.1[m[79D[1B[1m> Resolve files of configuration ':standalone-server:shaded' > jetty-server-9.4[m[79D[1B[4A[1m> Resolve dependencies of :tck:shaded > junit-4.13.2.pom[m[0K[56D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[4A[1m> Resolve files of configuration ':tck:shaded' > junit-4.13.2.jar[m[65D[1B[1m> Resolve files of configuration ':tck:shaded' > slf4j-api-1.7.25.jar[m[69D[1B[1m> Resolve files of configuration ':tck:shaded' > hamcrest-core-1.3.jar[m[70D[1B[1m> Resolve files of configuration ':tck:shaded' > hsqldb-2.4.1.jar[m[65D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> Resolve dependencies of :shaded:avatica:shaded[m[0K[48D[1B[1A> IDLE[0K[6D[1B[5A[1m<[0;1m-------------> 0% EXECUTING [53s][m[0K[34D[1B[1m> :shaded:avatica:clean[m[23D[1B[1m> :standalone-server:clean[m[26D[1B[1m> :noop-driver:clean[m[20D[1B[1m> :release:clean[m[16D[1B[5A[1m<[0;32;1m=[0;39;1m------------> 10% EXECUTING [53s][m[35D[1B[1m> :autostyleConfigsCheck[m[24D[1B[1m> :release:gitProps[m[0K[19D[1B[1m> :docker:autostyleConfigsCheck[m[31D[1B[1m> :shaded:avatica:processResources[m[34D[1B[5A[1m<[0;32;1m=[0;39;1m------------> 13% EXECUTING [53s][m[35D[2B[1m> :metrics:compileJava[m[22D[2B[1m> :tck:compileJava[m[0K[18D[1B[5A[1m<[0;32;1m==[0;39;1m-----------> 17% EXECUTING [54s][m[35D[1B[1m> :noop-driver:compileJava[m[26D[2B[1m> :release:getLicenses[m[0K[22D[2B[5A[1m<[0;32;1m==[0;39;1m-----------> 18% EXECUTING [54s][m[35D[3B[1m> :docker:autostyleKotlinGradleCheck > Resolve dependencies of :docker:detached[m[79D[2B[2A[1m> :docker:autostyleKotlinGradleCheck > Resolve files of configuration ':docker:[m[79D[2B[5A[1m<[0;32;1m==[0;39;1m-----------> 20% EXECUTING [54s][m[35D[3B[1m> :release:distTar[m[0K[18D[2B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1m> Task :release:distTar[m[0K
+Step #3 - "compile-libfuzzer-address-x86_64": Source distribution is created: /src/calcite-avatica/release/build/distributions/apache-calcite-avatica-1.27.0-SNAPSHOT-src.tar.gz[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [2B[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;32;1m==[0;39;1m-----------> 21% EXECUTING [54s][m[35D[1B[1m> :noop-driver:compileJava[m[26D[1B[1m> :metrics:compileJava[m[22D[1B[1m> :metrics-dropwizardmetrics:autostyleJavaCheck[m[47D[1B[1m> :tck:compileJava[m[18D[1B[5A[1m<[0;32;1m===[0;39;1m----------> 27% EXECUTING [55s][m[35D[1B[1m> :server:autostyleJavaCheck[m[28D[1B[1m> :standalone-server:autostyleJavaCheck[m[39D[3B[3A[1m> :autostyleKotlinGradleCheck[m[0K[29D[3B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1m> Task :release:distTarSha512[m[0K
+Step #3 - "compile-libfuzzer-address-x86_64": Checksum /src/calcite-avatica/release/build/distributions/apache-calcite-avatica-1.27.0-SNAPSHOT-src.tar.gz to /src/calcite-avatica/release/build/checksums/distTarSha512/apache-calcite-avatica-1.27.0-SNAPSHOT-src.tar.gz.sha512[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [2B[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;32;1m===[0;39;1m----------> 30% EXECUTING [55s][m[0K[35D[1B[1m> :server:autostyleJavaCheck[m[28D[1B[1m> :autostyleKotlinGradleCheck[m[29D[1B[1m> :core:autostyleKotlinGradleCheck[m[34D[1B[1m> :tck:compileJava[m[18D[1B[5A[1m<[0;32;1m====[0;39;1m---------> 32% EXECUTING [55s][m[35D[1B[1m> :standalone-server:autostyleKotlinGradleCheck[m[47D[4B[5A[1m<[0;32;1m====[0;39;1m---------> 33% EXECUTING [55s][m[35D[4B[1m> :metrics:autostyleKotlinGradleCheck[m[37D[1B[5A[1m<[0;32;1m=====[0;39;1m--------> 39% EXECUTING [55s][m[35D[4B[1m> :shaded:avatica:autostyleKotlinGradleCheck[m[44D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 46% EXECUTING [56s][m[35D[1B[1m> :metrics-dropwizardmetrics:checkstyleMain > Resolve dependencies of :metrics-[m[79D[2B[1m> :metrics:checkstyleMain > Resolve dependencies of :metrics:checkstyle[m[71D[1B[1m> :noop-driver:checkstyleMain > Resolve dependencies of :noop-driver:checkstyle[m[79D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 49% EXECUTING [56s][m[35D[2B[1m> :core:extractIncludeProto[m[0K[27D[3B[5A[1m<[0;32;1m======[0;39;1m-------> 50% EXECUTING [56s][m[35D[2B[1m> :tck:shadowJar[m[0K[16D[3B[2A[1m> :metrics:checkstyleMain > Resolve dependencies of :metrics:checkstyle > httpc[m[79D[2B[2A[1m> :metrics:checkstyleMain > Resolve dependencies of :metrics:checkstyle > xbean[m[79D[2B[2A[1m> :metrics:checkstyleMain > Resolve dependencies of :metrics:checkstyle > httpc[m[79D[2B[4A[1m> :metrics-dropwizardmetrics:checkstyleMain > Resolve files of configuration ':[m[79D[2B[1m> :metrics:checkstyleMain > Resolve files of configuration ':metrics:checkstyle[m[79D[1B[1m> :noop-driver:checkstyleMain > Resolve files of configuration ':noop-driver:ch[m[79D[1B[4A[1m> :metrics-dropwizardmetrics:checkstyleMain[m[0K[43D[2B[1m> :metrics:checkstyleMain[m[0K[25D[1B[1m> :noop-driver:checkstyleMain[m[0K[29D[1B[5A[1m<[0;32;1m======[0;39;1m-------> 50% EXECUTING [57s][m[35D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 52% EXECUTING [57s][m[35D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 53% EXECUTING [57s][m[35D[5B[5A[1m<[0;32;1m======[0;39;1m-------> 53% EXECUTING [58s][m[35D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 54% EXECUTING [58s][m[35D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 54% EXECUTING [59s][m[35D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 55% EXECUTING [59s][m[35D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 57% EXECUTING [59s][m[35D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 58% EXECUTING [59s][m[35D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 59% EXECUTING [59s][m[35D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 59% EXECUTING [1m][m[0K[34D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 59% EXECUTING [1m 1s][m[37D[5B[5A[1m<[0;32;1m=======[0;39;1m------> 60% EXECUTING [1m 1s][m[37D[1B[1m> :core:compileJava[m[0K[19D[4B[2A[1m> :metrics:checkstyleTest[m[25D[2B[5A[1m<[0;32;1m========[0;39;1m-----> 61% EXECUTING [1m 1s][m[37D[4B[1m> :metrics-dropwizardmetrics:checkstyleTest[m[43D[1B[5A[1m<[0;32;1m========[0;39;1m-----> 61% EXECUTING [1m 2s][m[37D[5B[5A[1m<[0;32;1m========[0;39;1m-----> 64% EXECUTING [1m 2s][m[37D[2B[1m> :tck:autostyleKotlinGradleCheck[m[33D[3B[5A[1m<[0;32;1m========[0;39;1m-----> 67% EXECUTING [1m 2s][m[37D[2B[1m> :tck:checkstyleMain[m[0K[21D[3B[5A[1m<[0;32;1m========[0;39;1m-----> 68% EXECUTING [1m 3s][m[37D[5B[5A[1m<[0;32;1m=========[0;39;1m----> 69% EXECUTING [1m 3s][m[37D[3B> IDLE[0K[6D[2B[5A[1m<[0;32;1m=========[0;39;1m----> 70% EXECUTING [1m 3s][m[37D[4B> IDLE[0K[6D[1B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1m> Task :core:compileJava[m[0K
+Step #3 - "compile-libfuzzer-address-x86_64": Note: Some input files use unchecked or unsafe operations.[0K
+Step #3 - "compile-libfuzzer-address-x86_64": Note: Recompile with -Xlint:unchecked for details.[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1B[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;32;1m=========[0;39;1m----> 72% EXECUTING [1m 3s][m[37D[1B[1m> :core:compileJava[m[19D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m<[0;32;1m=========[0;39;1m----> 72% EXECUTING [1m 4s][m[37D[5B[5A[1m<[0;32;1m=========[0;39;1m----> 74% EXECUTING [1m 4s][m[37D[1B[1m> :core:jar[m[0K[11D[1B[1m> :server:compileJava[m[21D[2B[1m> :shaded:avatica:checkstyleTest[m[32D[1B[5A[1m<[0;32;1m=========[0;39;1m----> 76% EXECUTING [1m 4s][m[37D[5B[5A[1m<[0;32;1m==========[0;39;1m---> 77% EXECUTING [1m 4s][m[37D[1B[1m> :shaded:avatica:getLicenses[m[29D[2B[1m> :core:autostyleJavaCheck[m[26D[1B> IDLE[0K[6D[1B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1m> Task :shaded:avatica:getLicenses[m[0K
+Step #3 - "compile-libfuzzer-address-x86_64": License overrides were declared but unused for the following dependencies: [org.slf4j:slf4j-api:1.7.25][0K
+Step #3 - "compile-libfuzzer-address-x86_64": [2B[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;32;1m==========[0;39;1m---> 79% EXECUTING [1m 4s][m[37D[1B[1m> :shaded:avatica:shadowJar[m[27D[1B[1m> :server:compileJava[m[21D[1B[1m> :core:autostyleJavaCheck[m[26D[1B> IDLE[6D[1B[5A[1m<[0;32;1m==========[0;39;1m---> 80% EXECUTING [1m 4s][m[37D[2B[1m> :standalone-server:compileJava[m[32D[2B[1m> :server:checkstyleMain[m[24D[1B[5A[1m<[0;32;1m==========[0;39;1m---> 81% EXECUTING [1m 4s][m[37D[2B[1m> :server:compileTestJava > Resolve dependencies of :server:testCompileClasspat[m[79D[3B[5A[1m<[0;32;1m==========[0;39;1m---> 81% EXECUTING [1m 5s][m[37D[3B[1m> :standalone-server:getLicenses[m[32D[2B[5A[1m<[0;32;1m==========[0;39;1m---> 82% EXECUTING [1m 5s][m[37D[5B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1m> Task :standalone-server:getLicenses[m[0K
+Step #3 - "compile-libfuzzer-address-x86_64": License overrides were declared but unused for the following dependencies: [org.slf4j:slf4j-api:1.7.25][0K
+Step #3 - "compile-libfuzzer-address-x86_64": [2B[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;32;1m==========[0;39;1m---> 83% EXECUTING [1m 5s][m[37D[1B[1m> :shaded:avatica:shadowJar[m[27D[1B[1m> :server:compileTestJava > Resolve dependencies of :server:testCompileClasspat[m[79D[1B[1m> :core:checkstyleMain[m[22D[1B[1m> :server:checkstyleMain[m[24D[1B[5A[1m<[0;32;1m===========[0;39;1m--> 85% EXECUTING [1m 5s][m[37D[5B[3A[1m> :server:compileTestJava > Resolve files of configuration ':server:testCompile[m[79D[3B[3A> IDLE[0K[6D[3B[5A[1m<[0;32;1m===========[0;39;1m--> 85% EXECUTING [1m 6s][m[37D[2B[1m> :server:compileTestJava[m[25D[2B[1m> :standalone-server:shadowJar[m[30D[1B[5A[1m<[0;32;1m===========[0;39;1m--> 85% EXECUTING [1m 7s][m[37D[5B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1m> Task :server:compileTestJava[m[0K
+Step #3 - "compile-libfuzzer-address-x86_64": Note: Some input files use unchecked or unsafe operations.[0K
+Step #3 - "compile-libfuzzer-address-x86_64": Note: Recompile with -Xlint:unchecked for details.[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1B[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;32;1m===========[0;39;1m--> 85% EXECUTING [1m 7s][m[37D[1B[1m> :shaded:avatica:shadowJar[m[27D[1B[1m> :server:compileTestJava[m[25D[1B[1m> :core:checkstyleMain[m[22D[1B[1m> :standalone-server:shadowJar[m[30D[1B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1m> Task :core:compileTestJava[m[0K
+Step #3 - "compile-libfuzzer-address-x86_64": Note: Some input files use unchecked or unsafe operations.[0K
+Step #3 - "compile-libfuzzer-address-x86_64": Note: Recompile with -Xlint:unchecked for details.[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [1B[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;32;1m===========[0;39;1m--> 86% EXECUTING [1m 7s][m[37D[1B[1m> :shaded:avatica:shadowJar[m[27D[1B[1m> :server:compileTestJava[m[25D[1B[1m> :core:checkstyleMain[m[22D[1B[1m> :standalone-server:shadowJar[m[30D[1B[5A[1m<[0;32;1m===========[0;39;1m--> 86% EXECUTING [1m 8s][m[37D[5B[5A[1m<[0;32;1m===========[0;39;1m--> 87% EXECUTING [1m 8s][m[37D[5B[5A[1m<[0;32;1m===========[0;39;1m--> 88% EXECUTING [1m 8s][m[37D[5B[5A[1m<[0;32;1m===========[0;39;1m--> 90% EXECUTING [1m 8s][m[37D[1B[1m> :core:checkstyleTest[m[0K[22D[1B[1m> :server:checkstyleTest[m[0K[24D[3B[5A[1m<[0;32;1m===========[0;39;1m--> 91% EXECUTING [1m 8s][m[37D[3B> IDLE[0K[6D[2B[5A[1m<[0;32;1m===========[0;39;1m--> 91% EXECUTING [1m 9s][m[37D[3B[1m> :server:forbiddenApisMain[m[27D[2B[2A[1m> :server:forbiddenApisTest[m[27D[2B[5A[1m<[0;32;1m============[0;39;1m-> 93% EXECUTING [1m 9s][m[37D[1B> IDLE[0K[6D[4B[2A> IDLE[0K[6D[2B[5A[1m<[0;32;1m============[0;39;1m-> 95% EXECUTING [1m 10s][m[38D[2B> IDLE[0K[6D[3B[5A[1m<[0;32;1m============[0;39;1m-> 95% EXECUTING [1m 11s][m[38D[5B[5A[1m<[0;32;1m============[0;39;1m-> 97% EXECUTING [1m 11s][m[38D[2B[1m> :standalone-server:checkstyleTest[m[35D[1B[1m> :standalone-server:forbiddenApisTest[m[38D[1B[1m> :standalone-server:checkstyleMain[m[35D[1B[5A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [1m 11s][m[39D[2B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[5A[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [Incubating] Problems report is available at: file:///src/calcite-avatica/build/reports/problems/problems-report.html[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.[0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [32;1mBUILD SUCCESSFUL[0;39m in 1m 15s
+Step #3 - "compile-libfuzzer-address-x86_64": 138 actionable tasks: 125 executed, 13 up-to-date
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [0K
+Step #3 - "compile-libfuzzer-address-x86_64": [5A[1m<[0;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[2K[1B[2K[1B[2K[1B[2K[1B[2K[4A[0m[?12l[?25h+ ./gradlew --stop
+Step #3 - "compile-libfuzzer-address-x86_64": Stopping Daemon(s)
+Step #3 - "compile-libfuzzer-address-x86_64": 1 Daemon stopped
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[?12l[?25h++ ./gradlew properties
+Step #3 - "compile-libfuzzer-address-x86_64": ++ grep '^version:'
+Step #3 - "compile-libfuzzer-address-x86_64": ++ cut '-d ' -f2
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[?12l[?25h+ CURRENT_VERSION=1.27.0-SNAPSHOT
+Step #3 - "compile-libfuzzer-address-x86_64": + cp ./shaded/core/build/libs/avatica-1.27.0-SNAPSHOT-shadow.jar /workspace/out/libfuzzer-address-x86_64/avatica.jar
+Step #3 - "compile-libfuzzer-address-x86_64": + ALL_JARS=avatica.jar
+Step #3 - "compile-libfuzzer-address-x86_64": ++ echo avatica.jar
+Step #3 - "compile-libfuzzer-address-x86_64": ++ xargs printf -- /workspace/out/libfuzzer-address-x86_64/%s:
+Step #3 - "compile-libfuzzer-address-x86_64": + BUILD_CLASSPATH=/workspace/out/libfuzzer-address-x86_64/avatica.jar::/usr/local/lib/jazzer_api_deploy.jar
+Step #3 - "compile-libfuzzer-address-x86_64": ++ echo avatica.jar
+Step #3 - "compile-libfuzzer-address-x86_64": ++ xargs printf -- '$this_dir/%s:'
+Step #3 - "compile-libfuzzer-address-x86_64": + RUNTIME_CLASSPATH='$this_dir/avatica.jar::$this_dir'
+Step #3 - "compile-libfuzzer-address-x86_64": ++ find /src -maxdepth 1 -name '*Fuzzer.java'
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -maxdepth 1 -name '*Fuzzer.java')
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/Base64Fuzzer.java
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=Base64Fuzzer
+Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /workspace/out/libfuzzer-address-x86_64/avatica.jar::/usr/local/lib/jazzer_api_deploy.jar /src/Base64Fuzzer.java
+Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/Base64Fuzzer.class /workspace/out/libfuzzer-address-x86_64/
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64":   # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64":   this_dir=$(dirname $0)
+Step #3 - "compile-libfuzzer-address-x86_64":   if [[ $@ =~ (^| )-runs=[0-9]+($| ) ]]
+Step #3 - "compile-libfuzzer-address-x86_64":   then
+Step #3 - "compile-libfuzzer-address-x86_64":     mem_settings='\''-Xmx1900m:-Xss900k'\''
+Step #3 - "compile-libfuzzer-address-x86_64":   else
+Step #3 - "compile-libfuzzer-address-x86_64":     mem_settings='\''-Xmx2048m:-Xss1024k'\''
+Step #3 - "compile-libfuzzer-address-x86_64":   fi
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64":   LD_LIBRARY_PATH=/usr/lib/jvm/java-17-openjdk-amd64/lib/server:$this_dir     $this_dir/jazzer_driver                            --agent_path=$this_dir/jazzer_agent_deploy.jar     --cp=$this_dir/avatica.jar::$this_dir                             --target_class=Base64Fuzzer                     --jvm_args=$mem_settings                         $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod u+x /workspace/out/libfuzzer-address-x86_64/Base64Fuzzer
+Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -maxdepth 1 -name '*Fuzzer.java')
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/ConnectStringParserFuzzer.java
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=ConnectStringParserFuzzer
+Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /workspace/out/libfuzzer-address-x86_64/avatica.jar::/usr/local/lib/jazzer_api_deploy.jar /src/ConnectStringParserFuzzer.java
+Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/ConnectStringParserFuzzer.class /workspace/out/libfuzzer-address-x86_64/
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64":   # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64":   this_dir=$(dirname $0)
+Step #3 - "compile-libfuzzer-address-x86_64":   if [[ $@ =~ (^| )-runs=[0-9]+($| ) ]]
+Step #3 - "compile-libfuzzer-address-x86_64":   then
+Step #3 - "compile-libfuzzer-address-x86_64":     mem_settings='\''-Xmx1900m:-Xss900k'\''
+Step #3 - "compile-libfuzzer-address-x86_64":   else
+Step #3 - "compile-libfuzzer-address-x86_64":     mem_settings='\''-Xmx2048m:-Xss1024k'\''
+Step #3 - "compile-libfuzzer-address-x86_64":   fi
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64":   LD_LIBRARY_PATH=/usr/lib/jvm/java-17-openjdk-amd64/lib/server:$this_dir     $this_dir/jazzer_driver                            --agent_path=$this_dir/jazzer_agent_deploy.jar     --cp=$this_dir/avatica.jar::$this_dir                             --target_class=ConnectStringParserFuzzer                     --jvm_args=$mem_settings                         $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod u+x /workspace/out/libfuzzer-address-x86_64/ConnectStringParserFuzzer
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+Starting Step #4 - "build-check-libfuzzer-address-x86_64"
+Step #4 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-libfuzzer-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-libfuzzer-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-libfuzzer-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": cb9de8dca298: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 7b011949e673: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a6efc29fa40: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 8ad8aaecc588: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 25b48c9682b7: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": a0a2f67714c5: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 4429f74f5b23: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 64c0f397a7d0: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": d299eaf3c84a: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 0eb3ff24f900: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 91cabf0ceb6b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f679f85d5b4b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": d459c7442ea5: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 6b143c752cfb: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 97c8235fb8a8: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": b95353babe5a: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 3f73738b8ea0: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": ee88b93d18fa: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c1da9d543941: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": e36e532f3b68: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 8faae81d4ed8: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 6d1f2d8beb11: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": aebee7dde704: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 97c5749e852c: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": fbb109e2beee: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": a0a2f67714c5: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": b95353babe5a: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 4429f74f5b23: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 91cabf0ceb6b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 64c0f397a7d0: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": fbb109e2beee: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 3f73738b8ea0: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 97c5749e852c: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 6d1f2d8beb11: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": c1da9d543941: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 8faae81d4ed8: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": aebee7dde704: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": f679f85d5b4b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 6b143c752cfb: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d459c7442ea5: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": ee88b93d18fa: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 97c8235fb8a8: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 0eb3ff24f900: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d299eaf3c84a: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 25b48c9682b7: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 25b48c9682b7: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8ad8aaecc588: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 8ad8aaecc588: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a0a2f67714c5: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": a0a2f67714c5: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a6efc29fa40: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4429f74f5b23: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 4429f74f5b23: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d299eaf3c84a: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": d299eaf3c84a: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4a6efc29fa40: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0eb3ff24f900: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 91cabf0ceb6b: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 91cabf0ceb6b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 64c0f397a7d0: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 64c0f397a7d0: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8ad8aaecc588: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d459c7442ea5: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": d459c7442ea5: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 25b48c9682b7: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6b143c752cfb: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 6b143c752cfb: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 97c8235fb8a8: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a0a2f67714c5: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3f73738b8ea0: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 3f73738b8ea0: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4429f74f5b23: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f679f85d5b4b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c1da9d543941: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": c1da9d543941: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e36e532f3b68: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": e36e532f3b68: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": b95353babe5a: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": b95353babe5a: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8faae81d4ed8: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 8faae81d4ed8: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ee88b93d18fa: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": ee88b93d18fa: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": aebee7dde704: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": aebee7dde704: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 97c5749e852c: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 97c5749e852c: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": fbb109e2beee: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 64c0f397a7d0: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d299eaf3c84a: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 0eb3ff24f900: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 91cabf0ceb6b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6d1f2d8beb11: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 6d1f2d8beb11: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f679f85d5b4b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d459c7442ea5: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6b143c752cfb: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 97c8235fb8a8: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": b95353babe5a: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3f73738b8ea0: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ee88b93d18fa: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c1da9d543941: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e36e532f3b68: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8faae81d4ed8: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6d1f2d8beb11: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": aebee7dde704: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 97c5749e852c: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": fbb109e2beee: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": Digest: sha256:450714430623e966872cc0b5d63cda0fd813075e2c6b6d5b50fc90c21b61eb32
+Step #4 - "build-check-libfuzzer-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpvs30mbrx/ConnectStringParserFuzzer
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpvs30mbrx/Base64Fuzzer
+Finished Step #4 - "build-check-libfuzzer-address-x86_64"
+Starting Step #5
+Step #5: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #5
+Starting Step #6
+Step #6: Already have image: gcr.io/oss-fuzz/calcite-avatica
+Step #6:   adding: Base64Fuzzer (deflated 44%)
+Step #6:   adding: Base64Fuzzer.class (deflated 34%)
+Step #6:   adding: ConnectStringParserFuzzer (deflated 44%)
+Step #6:   adding: ConnectStringParserFuzzer.class (deflated 35%)
+Step #6:   adding: avatica.jar (deflated 10%)
+Step #6:   adding: jazzer_agent_deploy.jar (deflated 6%)
+Step #6:   adding: jazzer_driver (deflated 69%)
+Step #6:   adding: jazzer_driver_with_sanitizer (deflated 9%)
+Step #6:   adding: jazzer_junit.jar (deflated 9%)
+Step #6:   adding: llvm-symbolizer (deflated 65%)
+Finished Step #6
+Starting Step #7
+Step #7: Pulling image: gcr.io/oss-fuzz-base/uploader
+Step #7: Using default tag: latest
+Step #7: latest: Pulling from oss-fuzz-base/uploader
+Step #7: c62795f78da9: Pulling fs layer
+Step #7: d4fceeeb758e: Pulling fs layer
+Step #7: 5c9125a401ae: Pulling fs layer
+Step #7: 0062f774e994: Pulling fs layer
+Step #7: 6b33fd031fac: Pulling fs layer
+Step #7: 7eb39101e508: Pulling fs layer
+Step #7: 89257482f398: Pulling fs layer
+Step #7: 7eb39101e508: Waiting
+Step #7: 89257482f398: Waiting
+Step #7: 0062f774e994: Waiting
+Step #7: 6b33fd031fac: Waiting
+Step #7: 5c9125a401ae: Download complete
+Step #7: d4fceeeb758e: Verifying Checksum
+Step #7: d4fceeeb758e: Download complete
+Step #7: 0062f774e994: Verifying Checksum
+Step #7: 0062f774e994: Download complete
+Step #7: 6b33fd031fac: Verifying Checksum
+Step #7: 6b33fd031fac: Download complete
+Step #7: 89257482f398: Verifying Checksum
+Step #7: 89257482f398: Download complete
+Step #7: c62795f78da9: Verifying Checksum
+Step #7: c62795f78da9: Download complete
+Step #7: 7eb39101e508: Verifying Checksum
+Step #7: 7eb39101e508: Download complete
+Step #7: c62795f78da9: Pull complete
+Step #7: d4fceeeb758e: Pull complete
+Step #7: 5c9125a401ae: Pull complete
+Step #7: 0062f774e994: Pull complete
+Step #7: 6b33fd031fac: Pull complete
+Step #7: 7eb39101e508: Pull complete
+Step #7: 89257482f398: Pull complete
+Step #7: Digest: sha256:5717ba63d13b5515063e2a6ccad09fb5bf32a86c8e0798a363d81c2be522e411
+Step #7: Status: Downloaded newer image for gcr.io/oss-fuzz-base/uploader:latest
+Step #7: gcr.io/oss-fuzz-base/uploader:latest
+Step #7:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #7:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #7:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   165    0     0  100   165      0    872 --:--:-- --:--:-- --:--:--   868100   165    0     0  100   165      0    872 --:--:-- --:--:-- --:--:--   868
+Finished Step #7
+Starting Step #8
+Step #8: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #8:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #8:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #8:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 15.9M    0     0  100 15.9M      0  55.1M --:--:-- --:--:-- --:--:-- 55.3M
+Finished Step #8
+Starting Step #9
+Step #9: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #9:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #9:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #9:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    39    0     0  100    39      0    166 --:--:-- --:--:-- --:--:--   166
+Finished Step #9
+Starting Step #10
+Step #10: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #10:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #10:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #10:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    40    0     0  100    40      0    194 --:--:-- --:--:-- --:--:--   196
+Finished Step #10
+Starting Step #11
+Step #11: Already have image: gcr.io/oss-fuzz/calcite-avatica
+Finished Step #11
+PUSH
+DONE

@@ -1,0 +1,311 @@
+starting build "ec51a6cd-ec87-46f0-8a2e-b44d4e5f1981"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908"
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Sending build context to Docker daemon   5.12kB
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Step 1/5 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b549f31133a9: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 82b4985cbfa1: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e2c78405bbfa: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e9891046f21b: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 82b16452beab: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": a1c2bbf406fc: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d4ae0c967a52: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 7f22e22604df: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": cea8c1410696: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 1bf1ba590b89: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 66368804290e: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 22276f1f1557: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": f53b68c71698: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 77b4e9971e7d: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": c09ac5a44944: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 8236f0355a84: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": fbd11ff89b8e: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 100b267fe340: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e7c6aed7d54c: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": ea8bbe2ca172: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d1bbfd946983: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0dbe0ccb6fbd: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e0e1c4fb01f1: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b7859facdd94: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e3e08ee0ed0b: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d7e7ba51ed89: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": c4e7bcb21464: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e9891046f21b: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b68008ebcf2c: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0bdbae586c19: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 82b16452beab: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 860de74ca10d: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 55ea6dd51172: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": a1c2bbf406fc: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 88e231f62d4f: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d56db65dc1cf: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d4ae0c967a52: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0ba050ccbfc3: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 3e1b96c4d1a5: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": f4e28b1c49df: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 7f22e22604df: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 4193f38d9ef1: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 191c64861f60: Pulling fs layer
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": cea8c1410696: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 1bf1ba590b89: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 66368804290e: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 22276f1f1557: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d7e7ba51ed89: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": f53b68c71698: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": c4e7bcb21464: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 77b4e9971e7d: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b68008ebcf2c: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0bdbae586c19: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 860de74ca10d: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": c09ac5a44944: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 55ea6dd51172: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 8236f0355a84: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 88e231f62d4f: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d56db65dc1cf: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": fbd11ff89b8e: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0dbe0ccb6fbd: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 100b267fe340: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e0e1c4fb01f1: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e7c6aed7d54c: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b7859facdd94: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0ba050ccbfc3: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": ea8bbe2ca172: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 3e1b96c4d1a5: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e3e08ee0ed0b: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d1bbfd946983: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": f4e28b1c49df: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 191c64861f60: Waiting
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e2c78405bbfa: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e2c78405bbfa: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b549f31133a9: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b549f31133a9: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 82b16452beab: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e9891046f21b: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e9891046f21b: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d4ae0c967a52: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d4ae0c967a52: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 7f22e22604df: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 82b4985cbfa1: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 82b4985cbfa1: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b549f31133a9: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 1bf1ba590b89: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 1bf1ba590b89: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 66368804290e: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 66368804290e: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 22276f1f1557: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 22276f1f1557: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": f53b68c71698: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": f53b68c71698: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 77b4e9971e7d: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 77b4e9971e7d: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": cea8c1410696: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": cea8c1410696: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 8236f0355a84: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 8236f0355a84: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": c09ac5a44944: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": c09ac5a44944: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": fbd11ff89b8e: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": fbd11ff89b8e: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 100b267fe340: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 100b267fe340: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e7c6aed7d54c: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e7c6aed7d54c: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": ea8bbe2ca172: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": ea8bbe2ca172: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d1bbfd946983: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d1bbfd946983: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0dbe0ccb6fbd: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0dbe0ccb6fbd: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e0e1c4fb01f1: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e0e1c4fb01f1: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b7859facdd94: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b7859facdd94: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e3e08ee0ed0b: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e3e08ee0ed0b: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d7e7ba51ed89: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": c4e7bcb21464: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": c4e7bcb21464: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b68008ebcf2c: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b68008ebcf2c: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0bdbae586c19: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0bdbae586c19: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 55ea6dd51172: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 55ea6dd51172: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 860de74ca10d: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 860de74ca10d: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 82b4985cbfa1: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": a1c2bbf406fc: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": a1c2bbf406fc: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e2c78405bbfa: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 88e231f62d4f: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 88e231f62d4f: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d56db65dc1cf: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d56db65dc1cf: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 3e1b96c4d1a5: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 3e1b96c4d1a5: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0ba050ccbfc3: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0ba050ccbfc3: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": f4e28b1c49df: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": f4e28b1c49df: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 4193f38d9ef1: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 191c64861f60: Verifying Checksum
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 191c64861f60: Download complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e9891046f21b: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 82b16452beab: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": a1c2bbf406fc: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d4ae0c967a52: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 7f22e22604df: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": cea8c1410696: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 1bf1ba590b89: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 66368804290e: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 22276f1f1557: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": f53b68c71698: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 77b4e9971e7d: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": c09ac5a44944: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 8236f0355a84: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": fbd11ff89b8e: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 100b267fe340: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e7c6aed7d54c: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": ea8bbe2ca172: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d1bbfd946983: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0dbe0ccb6fbd: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e0e1c4fb01f1: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b7859facdd94: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": e3e08ee0ed0b: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d7e7ba51ed89: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": c4e7bcb21464: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": b68008ebcf2c: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0bdbae586c19: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 860de74ca10d: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 55ea6dd51172: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 88e231f62d4f: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": d56db65dc1cf: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0ba050ccbfc3: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 3e1b96c4d1a5: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": f4e28b1c49df: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 4193f38d9ef1: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 191c64861f60: Pull complete
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Digest: sha256:f2c1aa4d3ea29f36039dfdd02a2d198752253836d12acf0bf6c91cb51ff271ae
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908":  ---> 651d9a7ebe20
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Step 2/5 : RUN apt-get update && apt-get install -y make
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908":  ---> Running in 3a3b2c8588e1
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Fetched 128 kB in 1s (122 kB/s)
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Reading package lists...
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Reading package lists...
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Building dependency tree...
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Reading state information...
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": make set to manually installed.
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": The following packages were automatically installed and are no longer required:
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908":   autotools-dev libsigsegv2 m4
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Use 'apt autoremove' to remove them.
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Removing intermediate container 3a3b2c8588e1
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908":  ---> c83ff3b55b5d
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Step 3/5 : RUN git clone --depth 1 https://github.com/gavinhoward/bc.git bc-gh
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908":  ---> Running in a105cdc5288a
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": [91mCloning into 'bc-gh'...
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": [0mRemoving intermediate container a105cdc5288a
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908":  ---> 0b79660046f5
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Step 4/5 : WORKDIR bc-gh
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908":  ---> Running in 9fe57852ef4c
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Removing intermediate container 9fe57852ef4c
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908":  ---> 1f5aa39aa9a9
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Step 5/5 : COPY build.sh $SRC/
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908":  ---> 1099e9acdd85
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Successfully built 1099e9acdd85
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Successfully tagged gcr.io/oss-fuzz/bc-gh:latest
+Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/bc-gh:latest
+Finished Step #1 - "build-bf64ba7c-f57a-45a4-bd46-8b263d139908"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/bc-gh
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/file3r6X7N
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ c == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/bc-gh/.git
+Step #2 - "srcmap": + GIT_DIR=/src/bc-gh
+Step #2 - "srcmap": + cd /src/bc-gh
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/gavinhoward/bc.git
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=8a9b0fc7866792c437342039b5f2ae5ee432b79c
+Step #2 - "srcmap": + jq_inplace /tmp/file3r6X7N '."/src/bc-gh" = { type: "git", url: "https://github.com/gavinhoward/bc.git", rev: "8a9b0fc7866792c437342039b5f2ae5ee432b79c" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileVaZdW9
+Step #2 - "srcmap": + cat /tmp/file3r6X7N
+Step #2 - "srcmap": + jq '."/src/bc-gh" = { type: "git", url: "https://github.com/gavinhoward/bc.git", rev: "8a9b0fc7866792c437342039b5f2ae5ee432b79c" }'
+Step #2 - "srcmap": + mv /tmp/fileVaZdW9 /tmp/file3r6X7N
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/file3r6X7N
+Step #2 - "srcmap": + rm /tmp/file3r6X7N
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/bc-gh": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/gavinhoward/bc.git",
+Step #2 - "srcmap":     "rev": "8a9b0fc7866792c437342039b5f2ae5ee432b79c"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-afl-address-x86_64"
+Step #3 - "compile-afl-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-afl-address-x86_64": Copying precompiled AFL++
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64": AFL++ target compilation setup:
+Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
+Step #3 - "compile-afl-address-x86_64": AFL_QUIET=1
+Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64":  done.
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": CC=/src/aflplusplus/afl-clang-fast
+Step #3 - "compile-afl-address-x86_64": CXX=/src/aflplusplus/afl-clang-fast++
+Step #3 - "compile-afl-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope 
+Step #3 - "compile-afl-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope  -stdlib=libc++
+Step #3 - "compile-afl-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-afl-address-x86_64": + ./configure -Z
+Step #3 - "compile-afl-address-x86_64": Illegal option -Z
+Step #3 - "compile-afl-address-x86_64": Invalid option: ?
+Step #3 - "compile-afl-address-x86_64": 
+Step #3 - "compile-afl-address-x86_64": usage:
+Step #3 - "compile-afl-address-x86_64":     configure -h
+Step #3 - "compile-afl-address-x86_64":     configure --help
+Step #3 - "compile-afl-address-x86_64":     configure [-a|-bD|-dB|-c] [-CeEfgGHilmMNPrtTvz] [-O OPT_LEVEL] [-k KARATSUBA_LEN]\
+Step #3 - "compile-afl-address-x86_64":        [-s SETTING] [-S SETTING] [-p TYPE]
+Step #3 - "compile-afl-address-x86_64":     configure \
+Step #3 - "compile-afl-address-x86_64":        [--library|--bc-only --disable-dc|--dc-only --disable-bc]             \
+Step #3 - "compile-afl-address-x86_64":        [--force --debug --disable-extra-math --disable-generated-tests]      \
+Step #3 - "compile-afl-address-x86_64":        [--disable-history --disable-man-pages --disable-nls --disable-strip] \
+Step #3 - "compile-afl-address-x86_64":        [--enable-editline] [--enable-readline] [--enable-internal-history]   \
+Step #3 - "compile-afl-address-x86_64":        [--disable-problematic-tests] [--install-all-locales]                 \
+Step #3 - "compile-afl-address-x86_64":        [--opt=OPT_LEVEL] [--karatsuba-len=KARATSUBA_LEN]                     \
+Step #3 - "compile-afl-address-x86_64":        [--set-default-on=SETTING] [--set-default-off=SETTING]                \
+Step #3 - "compile-afl-address-x86_64":        [--predefined-build-type=TYPE]                                        \
+Step #3 - "compile-afl-address-x86_64":        [--prefix=PREFIX] [--bindir=BINDIR] [--datarootdir=DATAROOTDIR]       \
+Step #3 - "compile-afl-address-x86_64":        [--datadir=DATADIR] [--mandir=MANDIR] [--man1dir=MAN1DIR]             \
+Step #3 - "compile-afl-address-x86_64":        [--man3dir=MAN3DIR]
+Step #3 - "compile-afl-address-x86_64": ********************************************************************************\nFailed to build.\nTo reproduce, run:\npython infra/helper.py build_image bc-gh\npython infra/helper.py build_fuzzers --sanitizer address --engine afl --architecture x86_64 bc-gh\n********************************************************************************
+Finished Step #3 - "compile-afl-address-x86_64"
+ERROR
+ERROR: build step 3 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

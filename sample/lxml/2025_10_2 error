@@ -1,0 +1,599 @@
+starting build "eb97b29d-6d6e-4cba-923b-4c684e8252fb"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b"
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Sending build context to Docker daemon  23.55kB
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Step 1/8 : FROM gcr.io/oss-fuzz-base/base-builder-python
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": latest: Pulling from oss-fuzz-base/base-builder-python
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b549f31133a9: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": f902dcb2c452: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b96a3ee92563: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 79d32170ccec: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 6ee90e19cd9c: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c3e6adb72e0c: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": fab86c6c3424: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 7b0e3f58fc04: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b9438328c831: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 81b84f0c96e3: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 170eb5da4377: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": eddf06c463f2: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c3e6adb72e0c: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 0e5b7c3079bb: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 6ee90e19cd9c: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 4830da2e4635: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 7b0e3f58fc04: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 06acda231297: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 961dfab508d8: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 5a12c3a2ed08: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": fab86c6c3424: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 79d32170ccec: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 3aca20a4a787: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 98f79320a850: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 0b1c3cbe7734: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 3e56728204c1: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 6134384fed17: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 382d2b100069: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 69f84a8cf9f5: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b9438328c831: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c6c4c842caf9: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ff5833ff55bb: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ffaac41201fd: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 81b84f0c96e3: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 2ff31941802d: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 0e5b7c3079bb: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 1cda0edabc71: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 7819a2b3f0e3: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 76903adbb826: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 4830da2e4635: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c9ee201624c1: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 576def9df37b: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 06acda231297: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b976cacb8b98: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b73b515d3165: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ba1389cc3414: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 91645af8fc67: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 85032a5424f4: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 2e0337f7eb34: Pulling fs layer
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 961dfab508d8: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 5a12c3a2ed08: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 170eb5da4377: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 7819a2b3f0e3: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 76903adbb826: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c9ee201624c1: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 1cda0edabc71: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 576def9df37b: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b976cacb8b98: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b73b515d3165: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 3aca20a4a787: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ba1389cc3414: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 98f79320a850: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 91645af8fc67: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 0b1c3cbe7734: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 85032a5424f4: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 3e56728204c1: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 2e0337f7eb34: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 6134384fed17: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": eddf06c463f2: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ff5833ff55bb: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c6c4c842caf9: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 2ff31941802d: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ffaac41201fd: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 69f84a8cf9f5: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 382d2b100069: Waiting
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b96a3ee92563: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b96a3ee92563: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b549f31133a9: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b549f31133a9: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 6ee90e19cd9c: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 6ee90e19cd9c: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 79d32170ccec: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 79d32170ccec: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": fab86c6c3424: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": fab86c6c3424: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": f902dcb2c452: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": f902dcb2c452: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 7b0e3f58fc04: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 7b0e3f58fc04: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b549f31133a9: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 81b84f0c96e3: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 81b84f0c96e3: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 170eb5da4377: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 170eb5da4377: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": eddf06c463f2: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": eddf06c463f2: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 0e5b7c3079bb: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 0e5b7c3079bb: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 4830da2e4635: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 4830da2e4635: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 06acda231297: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 06acda231297: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 961dfab508d8: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 961dfab508d8: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 5a12c3a2ed08: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 5a12c3a2ed08: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b9438328c831: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b9438328c831: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 3aca20a4a787: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 3aca20a4a787: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 98f79320a850: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 98f79320a850: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 0b1c3cbe7734: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 0b1c3cbe7734: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 3e56728204c1: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 3e56728204c1: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 6134384fed17: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 382d2b100069: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 382d2b100069: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 69f84a8cf9f5: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 69f84a8cf9f5: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c6c4c842caf9: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c6c4c842caf9: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": f902dcb2c452: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b96a3ee92563: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ff5833ff55bb: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ff5833ff55bb: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ffaac41201fd: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 2ff31941802d: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 2ff31941802d: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c3e6adb72e0c: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c3e6adb72e0c: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 1cda0edabc71: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 7819a2b3f0e3: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 7819a2b3f0e3: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 76903adbb826: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 76903adbb826: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c9ee201624c1: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c9ee201624c1: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b976cacb8b98: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b976cacb8b98: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 576def9df37b: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b73b515d3165: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b73b515d3165: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ba1389cc3414: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ba1389cc3414: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 91645af8fc67: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 91645af8fc67: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 85032a5424f4: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 85032a5424f4: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 79d32170ccec: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 6ee90e19cd9c: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 2e0337f7eb34: Verifying Checksum
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 2e0337f7eb34: Download complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c3e6adb72e0c: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": fab86c6c3424: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 7b0e3f58fc04: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b9438328c831: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 81b84f0c96e3: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 170eb5da4377: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": eddf06c463f2: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 0e5b7c3079bb: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 4830da2e4635: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 06acda231297: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 961dfab508d8: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 5a12c3a2ed08: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 3aca20a4a787: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 98f79320a850: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 0b1c3cbe7734: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 3e56728204c1: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 6134384fed17: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 382d2b100069: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 69f84a8cf9f5: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c6c4c842caf9: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ff5833ff55bb: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ffaac41201fd: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 2ff31941802d: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 1cda0edabc71: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 7819a2b3f0e3: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 76903adbb826: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": c9ee201624c1: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 576def9df37b: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b976cacb8b98: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": b73b515d3165: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ba1389cc3414: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 91645af8fc67: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 85032a5424f4: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 2e0337f7eb34: Pull complete
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Digest: sha256:2f3759065984c777448a566a6431089a1dd2edb9bfad37b203fccfe2f33f0906
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-python:latest
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> b0c155ac7e17
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Step 2/8 : RUN git clone --depth 1 https://github.com/lxml/lxml $SRC/lxml
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> Running in 7c19c4fc16b7
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [91mCloning into '/src/lxml'...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [0mRemoving intermediate container 7c19c4fc16b7
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> d45a0666aa76
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Step 3/8 : RUN apt-get update && apt-get install -y zlib1g-dev make autoconf automake libtool pkg-config rsync
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> Running in 3d9c454962a2
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Fetched 383 kB in 1s (353 kB/s)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Reading package lists...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Reading package lists...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Building dependency tree...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Reading state information...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": make set to manually installed.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": rsync is already the newest version (3.1.3-8ubuntu0.9).
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": The following additional packages will be installed:
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":   file libglib2.0-0 libglib2.0-data libicu66 libltdl-dev libltdl7 libmagic-mgc
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":   libmagic1 libxml2 shared-mime-info xdg-user-dirs
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Suggested packages:
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":   autoconf-archive gnu-standards autoconf-doc gettext libtool-doc gfortran
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":   | fortran95-compiler gcj-jdk
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": The following NEW packages will be installed:
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":   autoconf automake file libglib2.0-0 libglib2.0-data libicu66 libltdl-dev
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":   libltdl7 libmagic-mgc libmagic1 libtool libxml2 pkg-config shared-mime-info
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":   xdg-user-dirs zlib1g-dev
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 0 upgraded, 16 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Need to get 12.7 MB of archives.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": After this operation, 56.1 MB of additional disk space will be used.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 pkg-config amd64 0.29.1-0ubuntu4 [45.5 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.5 [155 kB]
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [0mFetched 12.7 MB in 2s (7871 kB/s)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../00-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../01-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package file.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../02-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking file (1:5.38-4) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package libglib2.0-0:amd64.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../03-libglib2.0-0_2.64.6-1~ubuntu20.04.9_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package libglib2.0-data.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../04-libglib2.0-data_2.64.6-1~ubuntu20.04.9_all.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package libicu66:amd64.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../05-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package libxml2:amd64.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../06-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package shared-mime-info.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../07-shared-mime-info_1.15-1_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking shared-mime-info (1.15-1) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package xdg-user-dirs.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../08-xdg-user-dirs_0.17-2ubuntu1_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package autoconf.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../09-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package automake.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../10-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../11-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../12-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package libtool.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../13-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package pkg-config.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../14-pkg-config_0.29.1-0ubuntu4_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Selecting previously unselected package zlib1g-dev:amd64.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Preparing to unpack .../15-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu1.5_amd64.deb ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": No schema files found: doing nothing.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up file (1:5.38-4) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Setting up shared-mime-info (1.15-1) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Removing intermediate container 3d9c454962a2
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> e09ac897d7e2
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Step 4/8 : RUN python3 -m pip install --upgrade pip     && python3 -m pip install 'setuptools~=69.0' 'pyinstaller~=6.0' -r $SRC/lxml/requirements.txt
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> Running in 148e16dfd9de
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Requirement already satisfied: pip in /usr/local/lib/python3.11/site-packages (25.2)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [0mCollecting setuptools~=69.0
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":   Downloading setuptools-69.5.1-py3-none-any.whl.metadata (6.2 kB)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Requirement already satisfied: pyinstaller~=6.0 in /usr/local/lib/python3.11/site-packages (6.10.0)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Collecting Cython>=3.1.4 (from -r /src/lxml/requirements.txt (line 1))
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":   Downloading cython-3.1.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.0 kB)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Requirement already satisfied: altgraph in /usr/local/lib/python3.11/site-packages (from pyinstaller~=6.0) (0.17.4)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Requirement already satisfied: pyinstaller-hooks-contrib>=2024.8 in /usr/local/lib/python3.11/site-packages (from pyinstaller~=6.0) (2025.9)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Requirement already satisfied: packaging>=22.0 in /usr/local/lib/python3.11/site-packages (from pyinstaller~=6.0) (25.0)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Downloading setuptools-69.5.1-py3-none-any.whl (894 kB)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 894.6/894.6 kB 28.5 MB/s  0:00:00
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Downloading cython-3.1.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.3 MB)
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 96.3 MB/s  0:00:00
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Installing collected packages: setuptools, Cython
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":   Attempting uninstall: setuptools
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":     Found existing installation: setuptools 72.1.0
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":     Uninstalling setuptools-72.1.0:
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":       Successfully uninstalled setuptools-72.1.0
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Successfully installed Cython-3.1.4 setuptools-69.5.1
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [0mRemoving intermediate container 148e16dfd9de
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> 27a4279ad225
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Step 5/8 : RUN git clone --depth 1 https://github.com/DaveLak/oss-fuzz-inputs.git oss-fuzz-inputs     && rsync -avc oss-fuzz-inputs/lxml/ $SRC/seed_data/     && rm -rf oss-fuzz-inputs;
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> Running in b61e2b986e44
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [91mCloning into 'oss-fuzz-inputs'...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [0msending incremental file list
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": created directory /src/seed_data
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": ./
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": corpra/
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": corpra/fuzz_html_parse_seed_corpus.zip
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": corpra/fuzz_sax_seed_corpus.zip
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": corpra/fuzz_schematron_seed_corpus.zip
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": corpra/fuzz_xml_parse_seed_corpus.zip
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": corpra/fuzz_xmlschema_seed_corpus.zip
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": corpra/fuzz_xslt_seed_corpus.zip
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": dicts/
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": dicts/__base.dict
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": dicts/fuzz_html_parse.dict
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": dicts/fuzz_sax.dict
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": dicts/fuzz_schematron.dict
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": dicts/fuzz_xml_parse.dict
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": dicts/fuzz_xmlschema.dict
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": dicts/fuzz_xslt.dict
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": 
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": sent 23,068,123 bytes  received 319 bytes  46,136,884.00 bytes/sec
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": total size is 23,061,265  speedup is 1.00
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Removing intermediate container b61e2b986e44
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> d2373a234ae7
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Step 6/8 : RUN git clone --depth 1 https://github.com/google/fuzzing fuzzing     && cat fuzzing/dictionaries/html.dict         fuzzing/dictionaries/css.dict         fuzzing/dictionaries/svg.dict         fuzzing/dictionaries/xml.dict         fuzzing/dictionaries/rss.dict         fuzzing/dictionaries/xslt.dict         fuzzing/dictionaries/xpath.dict         fuzzing/dictionaries/regexp.dict       >> $SRC/seed_data/__base.dict     && rm -rf fuzzing;
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> Running in 85ed8f8f3e8c
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [91mCloning into 'fuzzing'...
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": [0mRemoving intermediate container 85ed8f8f3e8c
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> fe8a34b9213d
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Step 7/8 : COPY build.sh *.py $SRC/
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> 716ddd58c302
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Step 8/8 : WORKDIR $SRC/lxml
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> Running in cd914c1f507b
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Removing intermediate container cd914c1f507b
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b":  ---> 822f621fac3a
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Successfully built 822f621fac3a
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Successfully tagged gcr.io/oss-fuzz/lxml:latest
+Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/lxml:latest
+Finished Step #1 - "build-f58fac67-7979-4d37-8540-6e93e649183b"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/lxml
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/fileBw6AEP
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ python == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/lxml/.git
+Step #2 - "srcmap": + GIT_DIR=/src/lxml
+Step #2 - "srcmap": + cd /src/lxml
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/lxml/lxml
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=89c1495c6dca402c2a30478f9a76fd8d5a04a37b
+Step #2 - "srcmap": + jq_inplace /tmp/fileBw6AEP '."/src/lxml" = { type: "git", url: "https://github.com/lxml/lxml", rev: "89c1495c6dca402c2a30478f9a76fd8d5a04a37b" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/file9adPLa
+Step #2 - "srcmap": + cat /tmp/fileBw6AEP
+Step #2 - "srcmap": + jq '."/src/lxml" = { type: "git", url: "https://github.com/lxml/lxml", rev: "89c1495c6dca402c2a30478f9a76fd8d5a04a37b" }'
+Step #2 - "srcmap": + mv /tmp/file9adPLa /tmp/fileBw6AEP
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/fileBw6AEP
+Step #2 - "srcmap": + rm /tmp/fileBw6AEP
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/lxml": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/lxml/lxml",
+Step #2 - "srcmap":     "rev": "89c1495c6dca402c2a30478f9a76fd8d5a04a37b"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=function,leak,vptr,
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=function,leak,vptr
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + export 'CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=function,leak,vptr, -fPIC'
+Step #3 - "compile-libfuzzer-address-x86_64": + CFLAGS='-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=function,leak,vptr, -fPIC'
+Step #3 - "compile-libfuzzer-address-x86_64": + export 'CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=function,leak,vptr -fPIC'
+Step #3 - "compile-libfuzzer-address-x86_64": + CXXFLAGS='-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=function,leak,vptr -fPIC'
+Step #3 - "compile-libfuzzer-address-x86_64": + : clang++
+Step #3 - "compile-libfuzzer-address-x86_64": + : '-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=function,leak,vptr -fPIC'
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = \u\n\d\e\f\i\n\e\d ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = \i\n\t\r\o\s\p\e\c\t\o\r ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + export STATICBUILD=1
+Step #3 - "compile-libfuzzer-address-x86_64": + STATICBUILD=1
+Step #3 - "compile-libfuzzer-address-x86_64": + make require-cython
+Step #3 - "compile-libfuzzer-address-x86_64": + make clean
+Step #3 - "compile-libfuzzer-address-x86_64": find src \( -name '*.o' -o -name '*.so' -o -name '*.py[cod]' -o -name '*.dll' \) -exec rm -f {} \;
+Step #3 - "compile-libfuzzer-address-x86_64": rm -rf build
+Step #3 - "compile-libfuzzer-address-x86_64": ++ nproc
+Step #3 - "compile-libfuzzer-address-x86_64": + make 'SETUPFLAGS=--with-clines --with-unicode-strings' build PYTHON_WITH_CYTHON=--with-cython -j32
+Step #3 - "compile-libfuzzer-address-x86_64": python3 setup.py --with-clines --with-unicode-strings build --with-cython --warnings
+Step #3 - "compile-libfuzzer-address-x86_64": Building lxml version 7.0.0a0.
+Step #3 - "compile-libfuzzer-address-x86_64": Found 3 links at https://zlib.net/
+Step #3 - "compile-libfuzzer-address-x86_64": Latest version of zlib is 1.3.1
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading zlib into libs/zlib-1.3.1.tar.gz from https://zlib.net/zlib-1.3.1.tar.gz
+Step #3 - "compile-libfuzzer-address-x86_64": Unpacking zlib-1.3.1.tar.gz into build/tmp
+Step #3 - "compile-libfuzzer-address-x86_64": Found 54 links at https://ftp.gnu.org/pub/gnu/libiconv/
+Step #3 - "compile-libfuzzer-address-x86_64": Latest version of libiconv is 1.18
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading libiconv into libs/libiconv-1.18.tar.gz from https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.18.tar.gz
+Step #3 - "compile-libfuzzer-address-x86_64": Download failed: <urlopen error [Errno 104] Connection reset by peer>, retrying in 2 seconds…
+Step #3 - "compile-libfuzzer-address-x86_64": Traceback (most recent call last):
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 1348, in do_open
+Step #3 - "compile-libfuzzer-address-x86_64":     h.request(req.get_method(), req.selector, req.data, headers,
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 1303, in request
+Step #3 - "compile-libfuzzer-address-x86_64":     self._send_request(method, url, body, headers, encode_chunked)
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 1349, in _send_request
+Step #3 - "compile-libfuzzer-address-x86_64":     self.endheaders(body, encode_chunked=encode_chunked)
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 1298, in endheaders
+Step #3 - "compile-libfuzzer-address-x86_64":     self._send_output(message_body, encode_chunked=encode_chunked)
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 1058, in _send_output
+Step #3 - "compile-libfuzzer-address-x86_64":     self.send(msg)
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 996, in send
+Step #3 - "compile-libfuzzer-address-x86_64":     self.connect()
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 1475, in connect
+Step #3 - "compile-libfuzzer-address-x86_64":     self.sock = self._context.wrap_socket(self.sock,
+Step #3 - "compile-libfuzzer-address-x86_64":                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/ssl.py", line 517, in wrap_socket
+Step #3 - "compile-libfuzzer-address-x86_64":     return self.sslsocket_class._create(
+Step #3 - "compile-libfuzzer-address-x86_64":            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/ssl.py", line 1104, in _create
+Step #3 - "compile-libfuzzer-address-x86_64":     self.do_handshake()
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/ssl.py", line 1382, in do_handshake
+Step #3 - "compile-libfuzzer-address-x86_64":     self._sslobj.do_handshake()
+Step #3 - "compile-libfuzzer-address-x86_64": ConnectionResetError: [Errno 104] Connection reset by peer
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": During handling of the above exception, another exception occurred:
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Traceback (most recent call last):
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/src/lxml/buildlibxml.py", line 380, in download_library
+Step #3 - "compile-libfuzzer-address-x86_64":     urlretrieve(full_url, dest_filename)
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 241, in urlretrieve
+Step #3 - "compile-libfuzzer-address-x86_64":     with contextlib.closing(urlopen(url, data)) as fp:
+Step #3 - "compile-libfuzzer-address-x86_64":                             ^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 216, in urlopen
+Step #3 - "compile-libfuzzer-address-x86_64":     return opener.open(url, data, timeout)
+Step #3 - "compile-libfuzzer-address-x86_64":            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 519, in open
+Step #3 - "compile-libfuzzer-address-x86_64":     response = self._open(req, data)
+Step #3 - "compile-libfuzzer-address-x86_64":                ^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 536, in _open
+Step #3 - "compile-libfuzzer-address-x86_64":     result = self._call_chain(self.handle_open, protocol, protocol +
+Step #3 - "compile-libfuzzer-address-x86_64":              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 496, in _call_chain
+Step #3 - "compile-libfuzzer-address-x86_64":     result = func(*args)
+Step #3 - "compile-libfuzzer-address-x86_64":              ^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 1391, in https_open
+Step #3 - "compile-libfuzzer-address-x86_64":     return self.do_open(http.client.HTTPSConnection, req,
+Step #3 - "compile-libfuzzer-address-x86_64":            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 1351, in do_open
+Step #3 - "compile-libfuzzer-address-x86_64":     raise URLError(err)
+Step #3 - "compile-libfuzzer-address-x86_64": urllib.error.URLError: <urlopen error [Errno 104] Connection reset by peer>
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": During handling of the above exception, another exception occurred:
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Traceback (most recent call last):
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 1348, in do_open
+Step #3 - "compile-libfuzzer-address-x86_64":     h.request(req.get_method(), req.selector, req.data, headers,
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 1303, in request
+Step #3 - "compile-libfuzzer-address-x86_64":     self._send_request(method, url, body, headers, encode_chunked)
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 1349, in _send_request
+Step #3 - "compile-libfuzzer-address-x86_64":     self.endheaders(body, encode_chunked=encode_chunked)
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 1298, in endheaders
+Step #3 - "compile-libfuzzer-address-x86_64":     self._send_output(message_body, encode_chunked=encode_chunked)
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 1058, in _send_output
+Step #3 - "compile-libfuzzer-address-x86_64":     self.send(msg)
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 996, in send
+Step #3 - "compile-libfuzzer-address-x86_64":     self.connect()
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 1468, in connect
+Step #3 - "compile-libfuzzer-address-x86_64":     super().connect()
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/http/client.py", line 962, in connect
+Step #3 - "compile-libfuzzer-address-x86_64":     self.sock = self._create_connection(
+Step #3 - "compile-libfuzzer-address-x86_64":                 ^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/socket.py", line 863, in create_connection
+Step #3 - "compile-libfuzzer-address-x86_64":     raise exceptions[0]
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/socket.py", line 848, in create_connection
+Step #3 - "compile-libfuzzer-address-x86_64":     sock.connect(sa)
+Step #3 - "compile-libfuzzer-address-x86_64": OSError: [Errno 99] Cannot assign requested address
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": During handling of the above exception, another exception occurred:
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Traceback (most recent call last):
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/src/lxml/setup.py", line 250, in <module>
+Step #3 - "compile-libfuzzer-address-x86_64":     **setup_extra_options()
+Step #3 - "compile-libfuzzer-address-x86_64":       ^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/src/lxml/setup.py", line 152, in setup_extra_options
+Step #3 - "compile-libfuzzer-address-x86_64":     ext_modules = setupinfo.ext_modules(
+Step #3 - "compile-libfuzzer-address-x86_64":                   ^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/src/lxml/setupinfo.py", line 72, in ext_modules
+Step #3 - "compile-libfuzzer-address-x86_64":     XML2_CONFIG, XSLT_CONFIG = build_libxml2xslt(
+Step #3 - "compile-libfuzzer-address-x86_64":                                ^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/src/lxml/buildlibxml.py", line 501, in build_libxml2xslt
+Step #3 - "compile-libfuzzer-address-x86_64":     lib_dirs = download_libs(download_dir, build_dir,
+Step #3 - "compile-libfuzzer-address-x86_64":                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/src/lxml/buildlibxml.py", line 526, in download_libs
+Step #3 - "compile-libfuzzer-address-x86_64":     libiconv_dir = unpack_tarball(download_libiconv(download_dir, libiconv_version), build_dir)
+Step #3 - "compile-libfuzzer-address-x86_64":                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/src/lxml/buildlibxml.py", line 311, in download_libiconv
+Step #3 - "compile-libfuzzer-address-x86_64":     return download_library(dest_dir, LIBICONV_LOCATION, 'libiconv',
+Step #3 - "compile-libfuzzer-address-x86_64":            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/src/lxml/buildlibxml.py", line 386, in download_library
+Step #3 - "compile-libfuzzer-address-x86_64":     urlretrieve(full_url, dest_filename)
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 241, in urlretrieve
+Step #3 - "compile-libfuzzer-address-x86_64":     with contextlib.closing(urlopen(url, data)) as fp:
+Step #3 - "compile-libfuzzer-address-x86_64":                             ^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 216, in urlopen
+Step #3 - "compile-libfuzzer-address-x86_64":     return opener.open(url, data, timeout)
+Step #3 - "compile-libfuzzer-address-x86_64":            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 519, in open
+Step #3 - "compile-libfuzzer-address-x86_64":     response = self._open(req, data)
+Step #3 - "compile-libfuzzer-address-x86_64":                ^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 536, in _open
+Step #3 - "compile-libfuzzer-address-x86_64":     result = self._call_chain(self.handle_open, protocol, protocol +
+Step #3 - "compile-libfuzzer-address-x86_64":              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 496, in _call_chain
+Step #3 - "compile-libfuzzer-address-x86_64":     result = func(*args)
+Step #3 - "compile-libfuzzer-address-x86_64":              ^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 1391, in https_open
+Step #3 - "compile-libfuzzer-address-x86_64":     return self.do_open(http.client.HTTPSConnection, req,
+Step #3 - "compile-libfuzzer-address-x86_64":            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step #3 - "compile-libfuzzer-address-x86_64":   File "/usr/local/lib/python3.11/urllib/request.py", line 1351, in do_open
+Step #3 - "compile-libfuzzer-address-x86_64":     raise URLError(err)
+Step #3 - "compile-libfuzzer-address-x86_64": urllib.error.URLError: <urlopen error [Errno 99] Cannot assign requested address>
+Step #3 - "compile-libfuzzer-address-x86_64": make: *** [Makefile:50: build] Error 1
+Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
+Step #3 - "compile-libfuzzer-address-x86_64": Failed to build.
+Step #3 - "compile-libfuzzer-address-x86_64": To reproduce, run:
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_image lxml
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_fuzzers --sanitizer address --engine libfuzzer --architecture x86_64 lxml
+Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+ERROR
+ERROR: build step 3 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

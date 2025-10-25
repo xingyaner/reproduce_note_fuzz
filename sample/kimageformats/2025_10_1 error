@@ -1,0 +1,538 @@
+starting build "cfd6b3bf-dddb-412b-879f-f7f983d30218"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d"
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Sending build context to Docker daemon  16.38kB
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Step 1/22 : FROM gcr.io/oss-fuzz-base/base-builder@sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": gcr.io/oss-fuzz-base/base-builder@sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": b549f31133a9: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": dd951afe29d9: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e375f16f47e1: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": d4cb766c0ca5: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1f7c92883fdd: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 43fab1956036: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": edcb6c4ab22d: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": d723b97a8b23: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 572c9069a0b3: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1fcefc1b0875: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 06953686bfeb: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 6d8d5683bf98: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 65b2c2456957: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": f09a01ebcab8: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 751d59f16429: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 215525518037: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 185f4228e62b: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": cac66a6f7419: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e4ac8c28adba: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a8bbd0316451: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a1203169359e: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a31b9d48a57e: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": f7154a177a60: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": b23f140c9f04: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 2db3c3c22ba5: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 5e52d96d289b: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 2ad5622f02d1: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 491315b3c37d: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 748b6eedca98: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 5c7f852fd40b: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 69150bb81b54: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": edcb6c4ab22d: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 79ada44f8b23: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 52c04df9aba6: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": bdfd1fcd190e: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 97a2daa2ba61: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": d723b97a8b23: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a6ea2d9647c7: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e4f39cb01e44: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 572c9069a0b3: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1bac9eb98018: Pulling fs layer
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1fcefc1b0875: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 751d59f16429: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 06953686bfeb: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 215525518037: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 6d8d5683bf98: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": f7154a177a60: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 185f4228e62b: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": cac66a6f7419: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 69150bb81b54: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 79ada44f8b23: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 65b2c2456957: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 52c04df9aba6: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e4ac8c28adba: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": f09a01ebcab8: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": bdfd1fcd190e: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a8bbd0316451: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": b23f140c9f04: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 97a2daa2ba61: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a1203169359e: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 491315b3c37d: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a6ea2d9647c7: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a31b9d48a57e: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 2db3c3c22ba5: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e4f39cb01e44: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 748b6eedca98: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 5e52d96d289b: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 5c7f852fd40b: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1bac9eb98018: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 2ad5622f02d1: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 43fab1956036: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1f7c92883fdd: Waiting
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e375f16f47e1: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e375f16f47e1: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": b549f31133a9: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": b549f31133a9: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": d4cb766c0ca5: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": d4cb766c0ca5: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1f7c92883fdd: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1f7c92883fdd: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": dd951afe29d9: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": dd951afe29d9: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 43fab1956036: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": d723b97a8b23: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": d723b97a8b23: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 572c9069a0b3: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 572c9069a0b3: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": b549f31133a9: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 06953686bfeb: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 06953686bfeb: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 6d8d5683bf98: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 6d8d5683bf98: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 65b2c2456957: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 65b2c2456957: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": f09a01ebcab8: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": f09a01ebcab8: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1fcefc1b0875: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1fcefc1b0875: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 215525518037: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 215525518037: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 751d59f16429: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 751d59f16429: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 185f4228e62b: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 185f4228e62b: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": cac66a6f7419: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": cac66a6f7419: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": edcb6c4ab22d: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": edcb6c4ab22d: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e4ac8c28adba: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e4ac8c28adba: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": dd951afe29d9: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e375f16f47e1: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a31b9d48a57e: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a31b9d48a57e: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a1203169359e: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a1203169359e: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a8bbd0316451: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a8bbd0316451: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": f7154a177a60: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": f7154a177a60: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": b23f140c9f04: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": b23f140c9f04: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 2db3c3c22ba5: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 2db3c3c22ba5: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 5e52d96d289b: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 491315b3c37d: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 491315b3c37d: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 748b6eedca98: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 748b6eedca98: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 2ad5622f02d1: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 69150bb81b54: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 69150bb81b54: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 5c7f852fd40b: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 5c7f852fd40b: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 79ada44f8b23: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 52c04df9aba6: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 52c04df9aba6: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": d4cb766c0ca5: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": bdfd1fcd190e: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 97a2daa2ba61: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 97a2daa2ba61: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a6ea2d9647c7: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a6ea2d9647c7: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1f7c92883fdd: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 43fab1956036: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e4f39cb01e44: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e4f39cb01e44: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1bac9eb98018: Verifying Checksum
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1bac9eb98018: Download complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": edcb6c4ab22d: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": d723b97a8b23: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 572c9069a0b3: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1fcefc1b0875: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 06953686bfeb: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 6d8d5683bf98: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 65b2c2456957: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": f09a01ebcab8: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 751d59f16429: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 215525518037: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 185f4228e62b: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": cac66a6f7419: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e4ac8c28adba: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a8bbd0316451: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a1203169359e: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a31b9d48a57e: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": f7154a177a60: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": b23f140c9f04: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 2db3c3c22ba5: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 5e52d96d289b: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 2ad5622f02d1: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 491315b3c37d: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 748b6eedca98: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 5c7f852fd40b: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 69150bb81b54: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 79ada44f8b23: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 52c04df9aba6: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": bdfd1fcd190e: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 97a2daa2ba61: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": a6ea2d9647c7: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": e4f39cb01e44: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 1bac9eb98018: Pull complete
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Digest: sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder@sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> 376fbc54347a
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Step 2/22 : RUN apt-get update && apt-get install --yes cmake make autoconf automake autopoint libtool wget po4a ninja-build pkgconf
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> Running in c6258d7a6f7f
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [1023 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [4920 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1599 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [1377 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Fetched 9302 kB in 2s (4829 kB/s)
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Reading package lists...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Reading package lists...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Building dependency tree...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Reading state information...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": make set to manually installed.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": wget is already the newest version (1.20.3-1ubuntu2.1).
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": The following additional packages will be installed:
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   cmake-data file gettext gettext-base libarchive13 libcroco3 libdatrie1
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libglib2.0-0 libglib2.0-data libicu66 libjsoncpp1 libltdl-dev libltdl7
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libmagic-mgc libmagic1 libmime-charset-perl libosp5 libpkgconf3 librhash0
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libsgmls-perl libsombok3 libterm-readkey-perl libtext-charwidth-perl
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libtext-wrapi18n-perl libthai-data libthai0 libunicode-linebreak-perl libuv1
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libxml2 libyaml-tiny-perl opensp sgml-base shared-mime-info xdg-user-dirs
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Suggested packages:
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   autoconf-archive gnu-standards autoconf-doc cmake-doc gettext-doc
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libasprintf-dev libgettextpo-dev lrzip libtool-doc libencode-hanextra-perl
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libpod2-base-perl sgmlspl sgmls-doc gfortran | fortran95-compiler gcj-jdk
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   python3 doc-base sgml-data sgml-base-doc
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": The following NEW packages will be installed:
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   autoconf automake autopoint cmake cmake-data file gettext gettext-base
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libarchive13 libcroco3 libdatrie1 libglib2.0-0 libglib2.0-data libicu66
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libjsoncpp1 libltdl-dev libltdl7 libmagic-mgc libmagic1 libmime-charset-perl
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libosp5 libpkgconf3 librhash0 libsgmls-perl libsombok3 libterm-readkey-perl
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libtext-charwidth-perl libtext-wrapi18n-perl libthai-data libthai0 libtool
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   libunicode-linebreak-perl libuv1 libxml2 libyaml-tiny-perl ninja-build
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   opensp pkgconf po4a sgml-base shared-mime-info xdg-user-dirs
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 0 upgraded, 42 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Need to get 22.7 MB of archives.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": After this operation, 98.1 MB of additional disk space will be used.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 sgml-base all 1.29.1 [12.4 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libtext-charwidth-perl amd64 0.04-10 [9872 B]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libtext-wrapi18n-perl all 0.06-9 [8264 B]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 gettext-base amd64 0.19.8.1-10build1 [50.2 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.5 [80.9 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 autopoint all 0.19.8.1-10build1 [412 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake-data all 3.16.3-1ubuntu1.20.04.1 [1613 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libarchive13 amd64 3.4.0-2ubuntu1.5 [327 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 libjsoncpp1 amd64 1.7.4-3.1ubuntu2 [75.6 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 librhash0 amd64 1.3.9-1 [113 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake amd64 3.16.3-1ubuntu1.20.04.1 [3668 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcroco3 amd64 0.6.13-1ubuntu0.1 [82.4 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:24 http://archive.ubuntu.com/ubuntu focal/main amd64 gettext amd64 0.19.8.1-10build1 [895 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 libdatrie1 amd64 0.2.12-3 [18.7 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:26 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:27 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:28 http://archive.ubuntu.com/ubuntu focal/universe amd64 libmime-charset-perl all 1.012.2-1 [30.9 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:29 http://archive.ubuntu.com/ubuntu focal/universe amd64 libosp5 amd64 1.5.2-13ubuntu3 [652 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:30 http://archive.ubuntu.com/ubuntu focal/universe amd64 libpkgconf3 amd64 1.6.3-5 [28.5 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:31 http://archive.ubuntu.com/ubuntu focal/universe amd64 libsgmls-perl all 1.03ii-36 [23.1 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:32 http://archive.ubuntu.com/ubuntu focal/main amd64 libthai-data all 0.1.28-3 [134 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:33 http://archive.ubuntu.com/ubuntu focal/main amd64 libthai0 amd64 0.1.28-3 [18.1 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:34 http://archive.ubuntu.com/ubuntu focal/universe amd64 libsombok3 amd64 2.4.0-2 [26.9 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:35 http://archive.ubuntu.com/ubuntu focal/main amd64 libterm-readkey-perl amd64 2.38-1build1 [24.6 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:36 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:37 http://archive.ubuntu.com/ubuntu focal/universe amd64 libunicode-linebreak-perl amd64 0.0.20190101-1build1 [96.9 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:38 http://archive.ubuntu.com/ubuntu focal/main amd64 libyaml-tiny-perl all 1.73-1 [25.2 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:39 http://archive.ubuntu.com/ubuntu focal/universe amd64 ninja-build amd64 1.10.0-1build1 [107 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:40 http://archive.ubuntu.com/ubuntu focal/universe amd64 opensp amd64 1.5.2-13ubuntu3 [145 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:41 http://archive.ubuntu.com/ubuntu focal/universe amd64 pkgconf amd64 1.6.3-5 [33.4 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Get:42 http://archive.ubuntu.com/ubuntu focal/universe amd64 po4a all 0.57-2 [1508 kB]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0mFetched 22.7 MB in 2s (10.6 MB/s)
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package sgml-base.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../00-sgml-base_1.29.1_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking sgml-base (1.29.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../01-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../02-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package file.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../03-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking file (1:5.38-4) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libglib2.0-0:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../04-libglib2.0-0_2.64.6-1~ubuntu20.04.9_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libglib2.0-data.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../05-libglib2.0-data_2.64.6-1~ubuntu20.04.9_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libicu66:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../06-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libtext-charwidth-perl.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../07-libtext-charwidth-perl_0.04-10_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libtext-charwidth-perl (0.04-10) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libtext-wrapi18n-perl.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../08-libtext-wrapi18n-perl_0.06-9_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libtext-wrapi18n-perl (0.06-9) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libxml2:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../09-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package shared-mime-info.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../10-shared-mime-info_1.15-1_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking shared-mime-info (1.15-1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package xdg-user-dirs.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../11-xdg-user-dirs_0.17-2ubuntu1_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package gettext-base.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../12-gettext-base_0.19.8.1-10build1_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking gettext-base (0.19.8.1-10build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libuv1:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../13-libuv1_1.34.2-1ubuntu1.5_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package autoconf.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../14-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package automake.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../15-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package autopoint.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../16-autopoint_0.19.8.1-10build1_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking autopoint (0.19.8.1-10build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package cmake-data.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../17-cmake-data_3.16.3-1ubuntu1.20.04.1_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking cmake-data (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libarchive13:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../18-libarchive13_3.4.0-2ubuntu1.5_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libjsoncpp1:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../19-libjsoncpp1_1.7.4-3.1ubuntu2_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package librhash0:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../20-librhash0_1.3.9-1_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking librhash0:amd64 (1.3.9-1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package cmake.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../21-cmake_3.16.3-1ubuntu1.20.04.1_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking cmake (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libcroco3:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../22-libcroco3_0.6.13-1ubuntu0.1_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libcroco3:amd64 (0.6.13-1ubuntu0.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package gettext.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../23-gettext_0.19.8.1-10build1_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking gettext (0.19.8.1-10build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libdatrie1:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../24-libdatrie1_0.2.12-3_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libdatrie1:amd64 (0.2.12-3) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../25-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../26-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libmime-charset-perl.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../27-libmime-charset-perl_1.012.2-1_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libmime-charset-perl (1.012.2-1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libosp5.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../28-libosp5_1.5.2-13ubuntu3_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libosp5 (1.5.2-13ubuntu3) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libpkgconf3:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../29-libpkgconf3_1.6.3-5_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libpkgconf3:amd64 (1.6.3-5) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libsgmls-perl.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../30-libsgmls-perl_1.03ii-36_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libsgmls-perl (1.03ii-36) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libthai-data.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../31-libthai-data_0.1.28-3_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libthai-data (0.1.28-3) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libthai0:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../32-libthai0_0.1.28-3_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libthai0:amd64 (0.1.28-3) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libsombok3:amd64.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../33-libsombok3_2.4.0-2_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libsombok3:amd64 (2.4.0-2) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libterm-readkey-perl.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../34-libterm-readkey-perl_2.38-1build1_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libterm-readkey-perl (2.38-1build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libtool.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../35-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libunicode-linebreak-perl.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../36-libunicode-linebreak-perl_0.0.20190101-1build1_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libunicode-linebreak-perl (0.0.20190101-1build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package libyaml-tiny-perl.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../37-libyaml-tiny-perl_1.73-1_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking libyaml-tiny-perl (1.73-1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package ninja-build.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../38-ninja-build_1.10.0-1build1_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking ninja-build (1.10.0-1build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package opensp.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../39-opensp_1.5.2-13ubuntu3_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking opensp (1.5.2-13ubuntu3) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package pkgconf.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../40-pkgconf_1.6.3-5_amd64.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Adding 'diversion of /usr/bin/pkg-config to /usr/bin/pkg-config.real by pkgconf'
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Adding 'diversion of /usr/share/aclocal/pkg.m4 to /usr/share/aclocal/pkg.real.m4 by pkgconf'
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Adding 'diversion of /usr/share/man/man1/pkg-config.1.gz to /usr/share/man/man1/pkg-config.real.1.gz by pkgconf'
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Adding 'diversion of /usr/share/pkg-config-crosswrapper to /usr/share/pkg-config-crosswrapper.real by pkgconf'
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking pkgconf (1.6.3-5) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Selecting previously unselected package po4a.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Preparing to unpack .../41-po4a_0.57-2_all.deb ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Unpacking po4a (0.57-2) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libtext-charwidth-perl (0.04-10) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libsgmls-perl (1.03ii-36) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libdatrie1:amd64 (0.2.12-3) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": No schema files found: doing nothing.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up gettext-base (0.19.8.1-10build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up file (1:5.38-4) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libyaml-tiny-perl (1.73-1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libtext-wrapi18n-perl (0.06-9) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up ninja-build (1.10.0-1build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libosp5 (1.5.2-13ubuntu3) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libpkgconf3:amd64 (1.6.3-5) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up autopoint (0.19.8.1-10build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libmime-charset-perl (1.012.2-1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up librhash0:amd64 (1.3.9-1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libthai-data (0.1.28-3) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up sgml-base (1.29.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up cmake-data (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libterm-readkey-perl (2.38-1build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up opensp (1.5.2-13ubuntu3) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up pkgconf (1.6.3-5) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libthai0:amd64 (0.1.28-3) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up shared-mime-info (1.15-1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libcroco3:amd64 (0.6.13-1ubuntu0.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up cmake (3.16.3-1ubuntu1.20.04.1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up gettext (0.19.8.1-10build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up po4a (0.57-2) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libsombok3:amd64 (2.4.0-2) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Setting up libunicode-linebreak-perl (0.0.20190101-1build1) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Removing intermediate container c6258d7a6f7f
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> 8d5a7a3e7c41
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Step 3/22 : RUN git clone --depth 1 https://github.com/madler/zlib.git
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> Running in 618531817f05
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [91mCloning into 'zlib'...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0mRemoving intermediate container 618531817f05
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> 45f94270f495
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Step 4/22 : RUN git clone --depth 1 -b v1.5.7 https://github.com/facebook/zstd.git
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> Running in 76e21f58f81b
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [91mCloning into 'zstd'...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0m[91mNote: switching to 'f8745da6ff1ad1e7bab384bd1f9d742439278e99'.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": You are in 'detached HEAD' state. You can look around, make experimental
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": changes and commit them, and you can discard any commits you make in this
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": state without impacting any branches by switching back to a branch.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": If you want to create a new branch to retain commits you create, you may
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": do so (now or later) by using -c with the switch command. Example:
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   git switch -c <new-branch-name>
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Or undo this operation with:
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":   git switch -
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Turn off this advice by setting config variable advice.detachedHead to false
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0mRemoving intermediate container 76e21f58f81b
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> d7defea34414
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Step 5/22 : RUN wget https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> Running in 36d21e979a59
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [91m--2025-10-01 06:42:06--  https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0m[91mResolving sourceware.org (sourceware.org)... [0m[91m8.43.85.97, 2620:52:3:1:0:246e:9693:128c
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Connecting to sourceware.org (sourceware.org)|8.43.85.97|:443... [0m[91mconnected.
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0m[91mHTTP request sent, awaiting response... [0m[91m200 OK
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Length: 810029 (791K) [application/x-gzip]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0m[91mSaving to: 'bzip2-1.0.8.tar.gz'
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":      0K .......[0m[91m... .......... ...[0m[91m.......[0m[91m .......... ......[0m[91m....  6%  594K 1s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":     50K ....[0m[91m...... ..[0m[91m........ .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 12% 1.17M 1s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    100K .[0m[91m........[0m[91m. ......[0m[91m.... ....[0m[91m...... ..........[0m[91m ........[0m[91m.. 18% 35.9M 1s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    150K .....[0m[91m..... ...[0m[91m....... .[0m[91m......... .......[0m[91m... ....[0m[91m...... 25% 1.21M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    200K ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... ....[0m[91m...... .........[0m[91m. 31% 56.4M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    250K .......[0m[91m... .....[0m[91m..... ...[0m[91m.......[0m[91m ........[0m[91m.. ......[0m[91m.... 37%  107M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    300K ....[0m[91m...... .......... .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 44% 76.5M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    350K .[0m[91m......... ......[0m[91m.... .......... ..[0m[91m........[0m[91m ........[0m[91m.. 50% 1.22M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    400K .....[0m[91m..... .......... ....[0m[91m.....[0m[91m. .......... ....[0m[91m...... 56% 75.9M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    450K ..........[0m[91m .......... ......[0m[91m.... .......... .[0m[91m......... 63% 69.2M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    500K ...[0m[91m....[0m[91m... .......... ...[0m[91m.......[0m[91m ........[0m[91m.. .......... 69%  100M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    550K ....[0m[91m...... ..[0m[91m.......[0m[91m. .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 75%  206M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    600K .[0m[91m........[0m[91m. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........[0m[91m ........[0m[91m.. 82% 87.0M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    650K .....[0m[91m..... ...[0m[91m....... .[0m[91m........[0m[91m. .......... ....[0m[91m...... 88%  110M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    700K ..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... ....[0m[91m...... .[0m[91m........[0m[91m. 94%  125M 0s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":    750K .......[0m[91m... .....[0m[91m..... ...[0m[91m.......[0m[91m ........[0m[91m.. .         100%  165M=0.2s
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0m[91m2025-10-01 06:42:06 (3.62 MB/s) - 'bzip2-1.0.8.tar.gz' saved [810029/810029]
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": 
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0mRemoving intermediate container 36d21e979a59
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> 4367dd4d7617
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Step 6/22 : RUN git clone https://github.com/tukaani-project/xz.git
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> Running in a98fe31f7a6d
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [91mCloning into 'xz'...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0mRemoving intermediate container a98fe31f7a6d
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> 8495b0051b7f
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Step 7/22 : RUN git clone --depth 1 --branch=RB-3.3 https://github.com/AcademySoftwareFoundation/openexr.git
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> Running in 41fdb6810aa4
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [91mCloning into 'openexr'...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0mRemoving intermediate container 41fdb6810aa4
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> a5e440e5e3e7
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": Step 8/22 : RUN git clone --depth 1 -b master https://invent.kde.org/frameworks/extra-cmake-modules.git
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d":  ---> Running in e15efcc6d124
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [91mCloning into 'extra-cmake-modules'...
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0m[91mfatal: unable to access 'https://invent.kde.org/frameworks/extra-cmake-modules.git/': Failed to connect to invent.kde.org port 443: Connection refused
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": The command '/bin/sh -c git clone --depth 1 -b master https://invent.kde.org/frameworks/extra-cmake-modules.git' returned a non-zero code: 128
+Finished Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 128
+Step #1 - "build-af826339-c070-4116-8a95-50142e52f90d": [0m

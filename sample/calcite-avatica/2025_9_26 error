@@ -1,0 +1,330 @@
+starting build "61c96537-d7a9-4e6c-9543-17e33302e8cf"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038"
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Sending build context to Docker daemon  10.75kB
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Step 1/4 : FROM gcr.io/oss-fuzz-base/base-builder-jvm
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": latest: Pulling from oss-fuzz-base/base-builder-jvm
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b549f31133a9: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 6fb0228e1699: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1e95fbb99620: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b9c6cfa559ea: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 890674aa158b: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 915df9e44ed9: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 4fe872e55bc3: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 8ff28619ed3a: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 2d04d1c632fc: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": fdef3b700f37: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 42e96ce93e57: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 09bf5aca0f64: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 42baeef2079a: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": c1dc63a851b7: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 077af4ca6b6a: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": a234fa95b55f: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1629e1047999: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 8733e387d2a4: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 3171588c3234: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": dd638b0ffe6f: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b9c6cfa559ea: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": f68f40c63979: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 890674aa158b: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 5432e629e9f3: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 0b4c8aa032a0: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 915df9e44ed9: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b47eeae16a52: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 2d04d1c632fc: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 4fe872e55bc3: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": d8daab37a9e0: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 8ff28619ed3a: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 953091638f41: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": fdef3b700f37: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1fbb0ed3e6ec: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 42e96ce93e57: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": c1dc63a851b7: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 09bf5aca0f64: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1a65fb42d142: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 42baeef2079a: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 27c4bb8f30f8: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 8733e387d2a4: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 3171588c3234: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 077af4ca6b6a: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": dd638b0ffe6f: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": f68f40c63979: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 705599c2a601: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": a234fa95b55f: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b5a291d00754: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1629e1047999: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 5432e629e9f3: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 18b501857156: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 0b4c8aa032a0: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 635f49e3b090: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b47eeae16a52: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 064be6643354: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1a65fb42d142: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": d8daab37a9e0: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": de2c9226d15d: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 27c4bb8f30f8: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": a46fc48732e3: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 225969ab5c99: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 953091638f41: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 3256ea500a22: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1fbb0ed3e6ec: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 705599c2a601: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": d7aa5cc2b1e4: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b5a291d00754: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 7458b03e233e: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 18b501857156: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": f1fdec2d0019: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 4abc9d521ecd: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 635f49e3b090: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 951189a48cfa: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 064be6643354: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 454a2acc98a5: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 56efd2f1b30b: Pulling fs layer
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": de2c9226d15d: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 3256ea500a22: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": a46fc48732e3: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": d7aa5cc2b1e4: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 225969ab5c99: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 951189a48cfa: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 454a2acc98a5: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 7458b03e233e: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": f1fdec2d0019: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 4abc9d521ecd: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 56efd2f1b30b: Waiting
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1e95fbb99620: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1e95fbb99620: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b549f31133a9: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b549f31133a9: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 890674aa158b: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b9c6cfa559ea: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b9c6cfa559ea: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 4fe872e55bc3: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 4fe872e55bc3: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 6fb0228e1699: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 6fb0228e1699: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 8ff28619ed3a: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 8ff28619ed3a: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b549f31133a9: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": fdef3b700f37: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": fdef3b700f37: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 42e96ce93e57: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 42e96ce93e57: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 09bf5aca0f64: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 09bf5aca0f64: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 42baeef2079a: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 42baeef2079a: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 2d04d1c632fc: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 2d04d1c632fc: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": c1dc63a851b7: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": c1dc63a851b7: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": a234fa95b55f: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 077af4ca6b6a: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 077af4ca6b6a: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 8733e387d2a4: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 8733e387d2a4: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1629e1047999: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1629e1047999: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 3171588c3234: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": dd638b0ffe6f: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": dd638b0ffe6f: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": f68f40c63979: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": f68f40c63979: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 5432e629e9f3: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 5432e629e9f3: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b47eeae16a52: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b47eeae16a52: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 0b4c8aa032a0: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 0b4c8aa032a0: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": d8daab37a9e0: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": d8daab37a9e0: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 953091638f41: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1fbb0ed3e6ec: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1a65fb42d142: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1a65fb42d142: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 6fb0228e1699: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1e95fbb99620: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 27c4bb8f30f8: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 27c4bb8f30f8: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 705599c2a601: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 705599c2a601: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 915df9e44ed9: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 915df9e44ed9: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b5a291d00754: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b5a291d00754: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 18b501857156: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 18b501857156: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 064be6643354: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 635f49e3b090: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 635f49e3b090: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": a46fc48732e3: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": a46fc48732e3: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": de2c9226d15d: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 225969ab5c99: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 225969ab5c99: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 3256ea500a22: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 3256ea500a22: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 7458b03e233e: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 7458b03e233e: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 4abc9d521ecd: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 4abc9d521ecd: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": f1fdec2d0019: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": f1fdec2d0019: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b9c6cfa559ea: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 951189a48cfa: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 454a2acc98a5: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 454a2acc98a5: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 890674aa158b: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 56efd2f1b30b: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 56efd2f1b30b: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": d7aa5cc2b1e4: Verifying Checksum
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": d7aa5cc2b1e4: Download complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 915df9e44ed9: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 4fe872e55bc3: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 8ff28619ed3a: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 2d04d1c632fc: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": fdef3b700f37: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 42e96ce93e57: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 09bf5aca0f64: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 42baeef2079a: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": c1dc63a851b7: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 077af4ca6b6a: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": a234fa95b55f: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1629e1047999: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 8733e387d2a4: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 3171588c3234: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": dd638b0ffe6f: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": f68f40c63979: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 5432e629e9f3: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 0b4c8aa032a0: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b47eeae16a52: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": d8daab37a9e0: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 953091638f41: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1fbb0ed3e6ec: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 1a65fb42d142: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 27c4bb8f30f8: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 705599c2a601: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": b5a291d00754: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 18b501857156: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 635f49e3b090: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 064be6643354: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": de2c9226d15d: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": a46fc48732e3: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 225969ab5c99: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 3256ea500a22: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": d7aa5cc2b1e4: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 7458b03e233e: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": f1fdec2d0019: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 4abc9d521ecd: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 951189a48cfa: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 454a2acc98a5: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": 56efd2f1b30b: Pull complete
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Digest: sha256:0e7dae09d2b7a88bb6ddfa3a5e3ce0207f35a2f50dbdddbe775099dd5defc08e
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-jvm:latest
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038":  ---> ab8be1babdeb
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Step 2/4 : RUN git clone --depth 1 https://github.com/apache/calcite-avatica calcite-avatica
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038":  ---> Running in 1dfe63947e15
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": [91mCloning into 'calcite-avatica'...
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": [0mRemoving intermediate container 1dfe63947e15
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038":  ---> fb27a28d9c22
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Step 3/4 : COPY *.sh *.java $SRC/
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038":  ---> 01a01399e827
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Step 4/4 : WORKDIR $SRC/calcite-avatica
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038":  ---> Running in 835bc32c7c72
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Removing intermediate container 835bc32c7c72
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038":  ---> b7976609ae74
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Successfully built b7976609ae74
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Successfully tagged gcr.io/oss-fuzz/calcite-avatica:latest
+Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/calcite-avatica:latest
+Finished Step #1 - "build-497bdc8e-5f50-4e55-8682-a68470937038"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/calcite-avatica
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/fileT2MBdP
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ jvm == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/calcite-avatica/.git
+Step #2 - "srcmap": + GIT_DIR=/src/calcite-avatica
+Step #2 - "srcmap": + cd /src/calcite-avatica
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/apache/calcite-avatica
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=1e05be2bbe3e63eafe7b157beb8cbe00abaa15f2
+Step #2 - "srcmap": + jq_inplace /tmp/fileT2MBdP '."/src/calcite-avatica" = { type: "git", url: "https://github.com/apache/calcite-avatica", rev: "1e05be2bbe3e63eafe7b157beb8cbe00abaa15f2" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileKsUCMb
+Step #2 - "srcmap": + cat /tmp/fileT2MBdP
+Step #2 - "srcmap": + jq '."/src/calcite-avatica" = { type: "git", url: "https://github.com/apache/calcite-avatica", rev: "1e05be2bbe3e63eafe7b157beb8cbe00abaa15f2" }'
+Step #2 - "srcmap": + mv /tmp/fileKsUCMb /tmp/fileT2MBdP
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/fileT2MBdP
+Step #2 - "srcmap": + rm /tmp/fileT2MBdP
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/calcite-avatica": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/apache/calcite-avatica",
+Step #2 - "srcmap":     "rev": "1e05be2bbe3e63eafe7b157beb8cbe00abaa15f2"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=leak
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=leak
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + rm -rf /root/.gradle/caches/
+Step #3 - "compile-libfuzzer-address-x86_64": + ./gradlew clean build shadowJar -x test
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading https://services.gradle.org/distributions/gradle-8.14.3-bin.zip
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": Exception in thread "main" java.io.IOException: Downloading from https://services.gradle.org/distributions/gradle-8.14.3-bin.zip failed: timeout (10000ms)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at org.gradle.wrapper.Install.forceFetch(SourceFile:4)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at org.gradle.wrapper.Install$1.call(SourceFile:8)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at org.gradle.wrapper.GradleWrapperMain.main(SourceFile:67)
+Step #3 - "compile-libfuzzer-address-x86_64": Caused by: java.net.SocketTimeoutException: Connect timed out
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:551)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/java.net.Socket.connect(Socket.java:633)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:533)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:638)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:266)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1258)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1144)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect0(HttpURLConnection.java:2960)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect(HttpURLConnection.java:2869)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1965)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1627)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+Step #3 - "compile-libfuzzer-address-x86_64": 	at org.gradle.wrapper.Install.forceFetch(SourceFile:2)
+Step #3 - "compile-libfuzzer-address-x86_64": 	... 2 more
+Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
+Step #3 - "compile-libfuzzer-address-x86_64": Failed to build.
+Step #3 - "compile-libfuzzer-address-x86_64": To reproduce, run:
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_image calcite-avatica
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_fuzzers --sanitizer address --engine libfuzzer --architecture x86_64 calcite-avatica
+Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+ERROR
+ERROR: build step 3 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

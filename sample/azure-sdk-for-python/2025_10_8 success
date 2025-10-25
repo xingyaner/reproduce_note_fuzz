@@ -1,0 +1,818 @@
+starting build "11a987ec-73d3-4289-9909-2724bf5ffc4f"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: 
+Step #0:                    ***** NOTICE *****
+Step #0: 
+Step #0: Official `cloud-sdk` images, including multiple tagged versions across multiple
+Step #0: platforms, can be found at
+Step #0: https://github.com/GoogleCloudPlatform/cloud-sdk-docker and may be more suitable
+Step #0: for some use cases when interacting with Cloud Source Repositories.
+Step #0: 
+Step #0: For additional information, please visit
+Step #0: https://github.com/GoogleCloudPlatform/cloud-builders/tree/master/git
+Step #0: 
+Step #0:                 ***** END OF NOTICE *****
+Step #0: 
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896"
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Sending build context to Docker daemon   7.68kB
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Step 1/4 : FROM gcr.io/oss-fuzz-base/base-builder-python
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": latest: Pulling from oss-fuzz-base/base-builder-python
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b549f31133a9: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 46bc15c7fc6e: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 2b268f581054: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ffe3dcaf1d9d: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 42969b9d7aa8: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 6292325f8ccd: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1d61bc3d638b: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": cf476e9c3401: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 3e32d146a183: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": a3c0235ecb84: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 6a2412fe4009: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": e3dc76fcf65d: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 7c50dbc2ce29: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": dc7417ab9f44: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 6292325f8ccd: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 971cc0f0d80e: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 4d3bcfd84dd4: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 8b4fc56f2c76: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1d61bc3d638b: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": d4d941dab629: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": cf476e9c3401: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": f707fa7742be: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 3ad52dcf3abc: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 3e32d146a183: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 612a9ca4842b: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ea9045fe5927: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": aca22060c90a: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": a3c0235ecb84: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": be009a000acc: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 9de99b79f655: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": e2e0f319d9cd: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1ea7c7acbcfa: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 9e8d6f89d8bb: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b97bef066f4e: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": c01a3c5d8800: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ca5d51560d83: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1db5faef3523: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 322b82646034: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 50f197e652a1: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": f1e9f07fbf1b: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": af96dc95ac7a: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 74d1b799fa5e: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b583f4ef5f26: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 077de01d829d: Pulling fs layer
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ea9045fe5927: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": aca22060c90a: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": be009a000acc: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 9de99b79f655: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 50f197e652a1: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ffe3dcaf1d9d: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": e2e0f319d9cd: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": f1e9f07fbf1b: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 42969b9d7aa8: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1ea7c7acbcfa: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 6a2412fe4009: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 9e8d6f89d8bb: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1db5faef3523: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 612a9ca4842b: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 322b82646034: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b97bef066f4e: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 4d3bcfd84dd4: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": dc7417ab9f44: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 971cc0f0d80e: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 8b4fc56f2c76: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": c01a3c5d8800: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 7c50dbc2ce29: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": e3dc76fcf65d: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": d4d941dab629: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b583f4ef5f26: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 077de01d829d: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": af96dc95ac7a: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ca5d51560d83: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": f707fa7742be: Waiting
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 2b268f581054: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 2b268f581054: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b549f31133a9: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b549f31133a9: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 42969b9d7aa8: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 42969b9d7aa8: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ffe3dcaf1d9d: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ffe3dcaf1d9d: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1d61bc3d638b: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 46bc15c7fc6e: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 46bc15c7fc6e: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": cf476e9c3401: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b549f31133a9: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": a3c0235ecb84: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": a3c0235ecb84: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 6a2412fe4009: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 6a2412fe4009: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": e3dc76fcf65d: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": e3dc76fcf65d: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 7c50dbc2ce29: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 7c50dbc2ce29: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": dc7417ab9f44: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": dc7417ab9f44: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 3e32d146a183: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 3e32d146a183: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 971cc0f0d80e: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 971cc0f0d80e: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 4d3bcfd84dd4: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 4d3bcfd84dd4: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 8b4fc56f2c76: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 8b4fc56f2c76: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": d4d941dab629: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": d4d941dab629: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": f707fa7742be: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 3ad52dcf3abc: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 3ad52dcf3abc: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 612a9ca4842b: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 612a9ca4842b: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ea9045fe5927: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ea9045fe5927: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": aca22060c90a: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": aca22060c90a: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": be009a000acc: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": be009a000acc: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 9de99b79f655: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 9de99b79f655: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": e2e0f319d9cd: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": e2e0f319d9cd: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1ea7c7acbcfa: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1ea7c7acbcfa: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 9e8d6f89d8bb: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 9e8d6f89d8bb: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b97bef066f4e: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b97bef066f4e: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 46bc15c7fc6e: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": c01a3c5d8800: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": c01a3c5d8800: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ca5d51560d83: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 2b268f581054: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 6292325f8ccd: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 6292325f8ccd: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1db5faef3523: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 322b82646034: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 50f197e652a1: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 50f197e652a1: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": af96dc95ac7a: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": af96dc95ac7a: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": f1e9f07fbf1b: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b583f4ef5f26: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b583f4ef5f26: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 74d1b799fa5e: Verifying Checksum
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 74d1b799fa5e: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 077de01d829d: Download complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ffe3dcaf1d9d: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 42969b9d7aa8: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 6292325f8ccd: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1d61bc3d638b: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": cf476e9c3401: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 3e32d146a183: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": a3c0235ecb84: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 6a2412fe4009: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": e3dc76fcf65d: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 7c50dbc2ce29: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": dc7417ab9f44: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 971cc0f0d80e: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 4d3bcfd84dd4: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 8b4fc56f2c76: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": d4d941dab629: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": f707fa7742be: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 3ad52dcf3abc: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 612a9ca4842b: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ea9045fe5927: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": aca22060c90a: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": be009a000acc: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 9de99b79f655: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": e2e0f319d9cd: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1ea7c7acbcfa: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 9e8d6f89d8bb: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b97bef066f4e: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": c01a3c5d8800: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": ca5d51560d83: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 1db5faef3523: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 322b82646034: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 50f197e652a1: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": f1e9f07fbf1b: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": af96dc95ac7a: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 74d1b799fa5e: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": b583f4ef5f26: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": 077de01d829d: Pull complete
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Digest: sha256:d2a0306c120dd92d92ba3f14b231e4666f3470d167f9a27c4729482e600e8daa
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-python:latest
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896":  ---> 62058baf1aa5
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Step 2/4 : RUN git clone https://github.com/azure/azure-sdk-for-python azure-sdk-for-python
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896":  ---> Running in a276bcba16b9
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": [91mCloning into 'azure-sdk-for-python'...
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": [0m[91mUpdating files:  24% (12793/51646)[0m[91mUpdating files:  25% (12912/51646)[0m[91mUpdating files:  26% (13428/51646)[0m[91mUpdating files:  27% (13945/51646)[0m[91mUpdating files:  28% (14461/51646)[0m[91mUpdating files:  29% (14978/51646)[0m[91mUpdating files:  30% (15494/51646)[0m[91mUpdating files:  31% (16011/51646)[0m[91mUpdating files:  32% (16527/51646)[0m[91mUpdating files:  33% (17044/51646)[0m[91mUpdating files:  34% (17560/51646)[0m[91mUpdating files:  35% (18077/51646)[0m[91mUpdating files:  36% (18593/51646)[0m[91mUpdating files:  37% (19110/51646)[0m[91mUpdating files:  38% (19626/51646)[0m[91mUpdating files:  39% (20142/51646)[0m[91mUpdating files:  40% (20659/51646)[0m[91mUpdating files:  41% (21175/51646)[0m[91mUpdating files:  42% (21692/51646)[0m[91mUpdating files:  42% (22145/51646)[0m[91mUpdating files:  43% (22208/51646)[0m[91mUpdating files:  44% (22725/51646)[0m[91mUpdating files:  45% (23241/51646)[0m[91mUpdating files:  46% (23758/51646)[0m[91mUpdating files:  47% (24274/51646)[0m[91mUpdating files:  48% (24791/51646)[0m[91mUpdating files:  49% (25307/51646)[0m[91mUpdating files:  50% (25823/51646)[0m[91mUpdating files:  51% (26340/51646)[0m[91mUpdating files:  52% (26856/51646)[0m[91mUpdating files:  53% (27373/51646)[0m[91mUpdating files:  54% (27889/51646)[0m[91mUpdating files:  55% (28406/51646)[0m[91mUpdating files:  56% (28922/51646)[0m[91mUpdating files:  57% (29439/51646)[0m[91mUpdating files:  58% (29955/51646)[0m[91mUpdating files:  59% (30472/51646)[0m[91mUpdating files:  60% (30988/51646)[0m[91mUpdating files:  61% (31505/51646)[0m[91mUpdating files:  62% (32021/51646)[0m[91mUpdating files:  63% (32537/51646)[0m[91mUpdating files:  63% (32659/51646)[0m[91mUpdating files:  64% (33054/51646)[0m[91mUpdating files:  65% (33570/51646)[0m[91mUpdating files:  66% (34087/51646)[0m[91mUpdating files:  67% (34603/51646)[0m[91mUpdating files:  68% (35120/51646)[0m[91mUpdating files:  69% (35636/51646)[0m[91mUpdating files:  70% (36153/51646)[0m[91mUpdating files:  71% (36669/51646)[0m[91mUpdating files:  72% (37186/51646)[0m[91mUpdating files:  73% (37702/51646)[0m[91mUpdating files:  74% (38219/51646)[0m[91mUpdating files:  75% (38735/51646)[0m[91mUpdating files:  76% (39251/51646)[0m[91mUpdating files:  77% (39768/51646)[0m[91mUpdating files:  78% (40284/51646)[0m[91mUpdating files:  79% (40801/51646)[0m[91mUpdating files:  80% (41317/51646)[0m[91mUpdating files:  81% (41834/51646)[0m[91mUpdating files:  82% (42350/51646)[0m[91mUpdating files:  83% (42867/51646)[0m[91mUpdating files:  84% (43383/51646)[0m[91mUpdating files:  85% (43900/51646)[0m[91mUpdating files:  86% (44416/51646)[0m[91mUpdating files:  86% (44859/51646)[0m[91mUpdating files:  87% (44933/51646)[0m[91mUpdating files:  88% (45449/51646)[0m[91mUpdating files:  89% (45965/51646)[0m[91mUpdating files:  90% (46482/51646)[0m[91mUpdating files:  91% (46998/51646)[0m[91mUpdating files:  92% (47515/51646)[0m[91mUpdating files:  93% (48031/51646)[0m[91mUpdating files:  94% (48548/51646)[0m[91mUpdating files:  95% (49064/51646)[0m[91mUpdating files:  96% (49581/51646)[0m[91mUpdating files:  97% (50097/51646)[0m[91mUpdating files:  98% (50614/51646)[0m[91mUpdating files:  99% (51130/51646)[0m[91mUpdating files: 100% (51646/51646)Updating files: 100% (51646/51646), done.
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": [0mRemoving intermediate container a276bcba16b9
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896":  ---> 1ed13531eb0b
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Step 3/4 : COPY *.sh *py $SRC/
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896":  ---> 12cb515ff0b0
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Step 4/4 : WORKDIR $SRC/azure-sdk-for-python
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896":  ---> Running in 99bc6c69c940
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Removing intermediate container 99bc6c69c940
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896":  ---> e5e7feb3f1b3
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Successfully built e5e7feb3f1b3
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Successfully tagged gcr.io/oss-fuzz/azure-sdk-for-python:latest
+Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/azure-sdk-for-python:latest
+Finished Step #1 - "build-7bb9a3d9-2933-4091-998d-99c8aa6bd896"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/azure-sdk-for-python
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/file3jjLGO
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ python == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/azure-sdk-for-python/.git
+Step #2 - "srcmap": + GIT_DIR=/src/azure-sdk-for-python
+Step #2 - "srcmap": + cd /src/azure-sdk-for-python
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/azure/azure-sdk-for-python
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=5bfeceef926f2658d37a8a7997a9f5d2be422531
+Step #2 - "srcmap": + jq_inplace /tmp/file3jjLGO '."/src/azure-sdk-for-python" = { type: "git", url: "https://github.com/azure/azure-sdk-for-python", rev: "5bfeceef926f2658d37a8a7997a9f5d2be422531" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/fileWA1e2b
+Step #2 - "srcmap": + cat /tmp/file3jjLGO
+Step #2 - "srcmap": + jq '."/src/azure-sdk-for-python" = { type: "git", url: "https://github.com/azure/azure-sdk-for-python", rev: "5bfeceef926f2658d37a8a7997a9f5d2be422531" }'
+Step #2 - "srcmap": + mv /tmp/fileWA1e2b /tmp/file3jjLGO
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/file3jjLGO
+Step #2 - "srcmap": + rm /tmp/file3jjLGO
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/azure-sdk-for-python": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/azure/azure-sdk-for-python",
+Step #2 - "srcmap":     "rev": "5bfeceef926f2658d37a8a7997a9f5d2be422531"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=function,leak,vptr,
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=function,leak,vptr
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + cd /src/azure-sdk-for-python/sdk/core/azure-core
+Step #3 - "compile-libfuzzer-address-x86_64": + pip3 install .
+Step #3 - "compile-libfuzzer-address-x86_64": Processing /src/azure-sdk-for-python/sdk/core/azure-core
+Step #3 - "compile-libfuzzer-address-x86_64":   Installing build dependencies ... [?25l- \ done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Getting requirements to build wheel ... [?25l- done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Preparing metadata (pyproject.toml) ... [?25l- done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting requests>=2.21.0 (from azure-core==1.35.2)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Requirement already satisfied: six>=1.11.0 in /usr/local/lib/python3.11/site-packages (from azure-core==1.35.2) (1.15.0)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting typing-extensions>=4.6.0 (from azure-core==1.35.2)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting charset_normalizer<4,>=2 (from requests>=2.21.0->azure-core==1.35.2)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (36 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting idna<4,>=2.5 (from requests>=2.21.0->azure-core==1.35.2)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting urllib3<3,>=1.21.1 (from requests>=2.21.0->azure-core==1.35.2)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting certifi>=2017.4.17 (from requests>=2.21.0->azure-core==1.35.2)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading certifi-2025.10.5-py3-none-any.whl.metadata (2.5 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (150 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading idna-3.10-py3-none-any.whl (70 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading certifi-2025.10.5-py3-none-any.whl (163 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Building wheels for collected packages: azure-core
+Step #3 - "compile-libfuzzer-address-x86_64":   Building wheel for azure-core (pyproject.toml) ... [?25l- \ done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Created wheel for azure-core: filename=azure_core-1.35.2-py3-none-any.whl size=211945 sha256=c120a29ccafc034d3b76bff49e24c73f656387e8a26bee4800e7c5684693e0fe
+Step #3 - "compile-libfuzzer-address-x86_64":   Stored in directory: /root/.cache/pip/wheels/7f/6a/ce/f52f1a2d2a8a0ddfb7a035b53e545e85b87d6256bf762c1075
+Step #3 - "compile-libfuzzer-address-x86_64": Successfully built azure-core
+Step #3 - "compile-libfuzzer-address-x86_64": Installing collected packages: urllib3, typing-extensions, idna, charset_normalizer, certifi, requests, azure-core
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l[2K   [91m━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2/7[0m [idna][2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━[0m [32m6/7[0m [azure-core][2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m7/7[0m [azure-core]
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h[1A[2KSuccessfully installed azure-core-1.35.2 certifi-2025.10.5 charset_normalizer-3.4.3 idna-3.10 requests-2.32.5 typing-extensions-4.15.0 urllib3-2.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m+ cd /src/azure-sdk-for-python/sdk/dynatrace/azure-mgmt-dynatrace/
+Step #3 - "compile-libfuzzer-address-x86_64": + pip3 install .
+Step #3 - "compile-libfuzzer-address-x86_64": Processing /src/azure-sdk-for-python/sdk/dynatrace/azure-mgmt-dynatrace
+Step #3 - "compile-libfuzzer-address-x86_64":   Installing build dependencies ... [?25l- \ done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Getting requirements to build wheel ... [?25l- done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Preparing metadata (pyproject.toml) ... [?25l- done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25hCollecting isodate<1.0.0,>=0.6.1 (from azure-mgmt-dynatrace==2.0.0)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading isodate-0.7.2-py3-none-any.whl.metadata (11 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting azure-common~=1.1 (from azure-mgmt-dynatrace==2.0.0)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading azure_common-1.1.28-py2.py3-none-any.whl.metadata (5.0 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Collecting azure-mgmt-core<2.0.0,>=1.3.2 (from azure-mgmt-dynatrace==2.0.0)
+Step #3 - "compile-libfuzzer-address-x86_64":   Downloading azure_mgmt_core-1.6.0-py3-none-any.whl.metadata (4.6 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Requirement already satisfied: azure-core>=1.32.0 in /usr/local/lib/python3.11/site-packages (from azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (1.35.2)
+Step #3 - "compile-libfuzzer-address-x86_64": Requirement already satisfied: requests>=2.21.0 in /usr/local/lib/python3.11/site-packages (from azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (2.32.5)
+Step #3 - "compile-libfuzzer-address-x86_64": Requirement already satisfied: six>=1.11.0 in /usr/local/lib/python3.11/site-packages (from azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (1.15.0)
+Step #3 - "compile-libfuzzer-address-x86_64": Requirement already satisfied: typing-extensions>=4.6.0 in /usr/local/lib/python3.11/site-packages (from azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (4.15.0)
+Step #3 - "compile-libfuzzer-address-x86_64": Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.11/site-packages (from requests>=2.21.0->azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (3.4.3)
+Step #3 - "compile-libfuzzer-address-x86_64": Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.11/site-packages (from requests>=2.21.0->azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (3.10)
+Step #3 - "compile-libfuzzer-address-x86_64": Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.11/site-packages (from requests>=2.21.0->azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (2.5.0)
+Step #3 - "compile-libfuzzer-address-x86_64": Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.11/site-packages (from requests>=2.21.0->azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (2025.10.5)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading azure_common-1.1.28-py2.py3-none-any.whl (14 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading azure_mgmt_core-1.6.0-py3-none-any.whl (29 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Downloading isodate-0.7.2-py3-none-any.whl (22 kB)
+Step #3 - "compile-libfuzzer-address-x86_64": Building wheels for collected packages: azure-mgmt-dynatrace
+Step #3 - "compile-libfuzzer-address-x86_64":   Building wheel for azure-mgmt-dynatrace (pyproject.toml) ... [?25l- done
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h  Created wheel for azure-mgmt-dynatrace: filename=azure_mgmt_dynatrace-2.0.0-py3-none-any.whl size=82106 sha256=582946eb1ad1f37426cbb99f6b3eeb2e7cf511d2b19e8595881ee0651555f655
+Step #3 - "compile-libfuzzer-address-x86_64":   Stored in directory: /root/.cache/pip/wheels/ec/e4/d1/c188594d0c78a611e1e64052f5d0c7dfe410839638353271bd
+Step #3 - "compile-libfuzzer-address-x86_64": Successfully built azure-mgmt-dynatrace
+Step #3 - "compile-libfuzzer-address-x86_64": Installing collected packages: azure-common, isodate, azure-mgmt-core, azure-mgmt-dynatrace
+Step #3 - "compile-libfuzzer-address-x86_64": [?25l[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m4/4[0m [azure-mgmt-dynatrace]
+Step #3 - "compile-libfuzzer-address-x86_64": [?25h[1A[2KSuccessfully installed azure-common-1.1.28 azure-mgmt-core-1.6.0 azure-mgmt-dynatrace-2.0.0 isodate-0.7.2
+Step #3 - "compile-libfuzzer-address-x86_64": [33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m+ compile_python_fuzzer /src/fuzz_mgmt_serialization.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_path=/src/fuzz_mgmt_serialization.py
+Step #3 - "compile-libfuzzer-address-x86_64": + shift 1
+Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .py /src/fuzz_mgmt_serialization.py
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=fuzz_mgmt_serialization
+Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_package=fuzz_mgmt_serialization.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_mgmt_serialization
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *introspector* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ 0 != \0 ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #3 - "compile-libfuzzer-address-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_mgmt_serialization
+Step #3 - "compile-libfuzzer-address-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-address-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_mgmt_serialization --onefile --name fuzz_mgmt_serialization.pkg /src/fuzz_mgmt_serialization.py
+Step #3 - "compile-libfuzzer-address-x86_64": 67 INFO: PyInstaller: 6.10.0, contrib hooks: 2025.9
+Step #3 - "compile-libfuzzer-address-x86_64": 67 INFO: Python: 3.11.13
+Step #3 - "compile-libfuzzer-address-x86_64": 68 INFO: Platform: Linux-5.10.0-32-cloud-amd64-x86_64-with-glibc2.31
+Step #3 - "compile-libfuzzer-address-x86_64": 68 INFO: Python environment: /usr/local
+Step #3 - "compile-libfuzzer-address-x86_64": 69 INFO: wrote /src/azure-sdk-for-python/sdk/dynatrace/azure-mgmt-dynatrace/fuzz_mgmt_serialization.pkg.spec
+Step #3 - "compile-libfuzzer-address-x86_64": 70 INFO: Module search paths (PYTHONPATH):
+Step #3 - "compile-libfuzzer-address-x86_64": ['/usr/local/lib/python311.zip',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/lib-dynload',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/usr/local/lib/python3.11/site-packages/setuptools/_vendor',
+Step #3 - "compile-libfuzzer-address-x86_64":  '/src']
+Step #3 - "compile-libfuzzer-address-x86_64": 157 INFO: checking Analysis
+Step #3 - "compile-libfuzzer-address-x86_64": 158 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 158 INFO: Running Analysis Analysis-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 158 INFO: Target bytecode optimization level: 0
+Step #3 - "compile-libfuzzer-address-x86_64": 158 INFO: Initializing module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 158 INFO: Caching module graph hooks...
+Step #3 - "compile-libfuzzer-address-x86_64": 166 INFO: Analyzing base_library.zip ...
+Step #3 - "compile-libfuzzer-address-x86_64": 867 INFO: Processing standard module hook 'hook-encodings.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 2292 INFO: Processing standard module hook 'hook-pickle.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 3457 INFO: Processing standard module hook 'hook-heapq.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 3747 INFO: Caching module dependency graph...
+Step #3 - "compile-libfuzzer-address-x86_64": 3818 INFO: Looking for Python shared library...
+Step #3 - "compile-libfuzzer-address-x86_64": 3827 INFO: Using Python shared library: /usr/local/lib/libpython3.11.so.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": 3827 INFO: Analyzing /src/fuzz_mgmt_serialization.py
+Step #3 - "compile-libfuzzer-address-x86_64": 3853 INFO: Processing standard module hook 'hook-atheris.py' from '/usr/local/lib/python3.11/site-packages/atheris'
+Step #3 - "compile-libfuzzer-address-x86_64": 4025 INFO: Processing standard module hook 'hook-xml.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 4040 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 4116 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #3 - "compile-libfuzzer-address-x86_64": 4116 INFO: SetuptoolsInfo: initializing cached setuptools info...
+Step #3 - "compile-libfuzzer-address-x86_64": 7936 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 8805 INFO: Processing standard module hook 'hook-platform.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 8883 INFO: Processing standard module hook 'hook-urllib3.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9632 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 9732 INFO: Processing standard module hook 'hook-certifi.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10202 INFO: Processing module hooks (post-graph stage)...
+Step #3 - "compile-libfuzzer-address-x86_64": 10245 INFO: Performing binary vs. data reclassification (4 entries)
+Step #3 - "compile-libfuzzer-address-x86_64": 10248 INFO: Looking for ctypes DLLs
+Step #3 - "compile-libfuzzer-address-x86_64": 10262 INFO: Analyzing run-time hooks ...
+Step #3 - "compile-libfuzzer-address-x86_64": 10265 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10267 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10268 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #3 - "compile-libfuzzer-address-x86_64": 10275 INFO: Looking for dynamic libraries
+Step #3 - "compile-libfuzzer-address-x86_64": 10855 INFO: Warnings written to /src/pyfuzzworkdir/fuzz_mgmt_serialization/fuzz_mgmt_serialization.pkg/warn-fuzz_mgmt_serialization.pkg.txt
+Step #3 - "compile-libfuzzer-address-x86_64": 10878 INFO: Graph cross-reference written to /src/pyfuzzworkdir/fuzz_mgmt_serialization/fuzz_mgmt_serialization.pkg/xref-fuzz_mgmt_serialization.pkg.html
+Step #3 - "compile-libfuzzer-address-x86_64": 10890 INFO: checking PYZ
+Step #3 - "compile-libfuzzer-address-x86_64": 10890 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 10890 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_mgmt_serialization/fuzz_mgmt_serialization.pkg/PYZ-00.pyz
+Step #3 - "compile-libfuzzer-address-x86_64": 11298 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_mgmt_serialization/fuzz_mgmt_serialization.pkg/PYZ-00.pyz completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 11312 INFO: checking PKG
+Step #3 - "compile-libfuzzer-address-x86_64": 11312 INFO: Building PKG because PKG-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 11312 INFO: Building PKG (CArchive) fuzz_mgmt_serialization.pkg.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 23314 INFO: Building PKG (CArchive) fuzz_mgmt_serialization.pkg.pkg completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": 23316 INFO: Bootloader /usr/local/lib/python3.11/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #3 - "compile-libfuzzer-address-x86_64": 23316 INFO: checking EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 23316 INFO: Building EXE because EXE-00.toc is non existent
+Step #3 - "compile-libfuzzer-address-x86_64": 23316 INFO: Building EXE from EXE-00.toc
+Step #3 - "compile-libfuzzer-address-x86_64": 23316 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-address-x86_64/fuzz_mgmt_serialization.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": 23316 INFO: Appending PKG archive to custom ELF section in EXE
+Step #3 - "compile-libfuzzer-address-x86_64": 23406 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod -x /workspace/out/libfuzzer-address-x86_64/fuzz_mgmt_serialization.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": + [[ address = *coverage* ]]
+Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/sh
+Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
+Step #3 - "compile-libfuzzer-address-x86_64": chmod +x $this_dir/fuzz_mgmt_serialization.pkg
+Step #3 - "compile-libfuzzer-address-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_mgmt_serialization.pkg $@'
+Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/fuzz_mgmt_serialization
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+Starting Step #4 - "build-check-libfuzzer-address-x86_64"
+Step #4 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-libfuzzer-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-libfuzzer-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-libfuzzer-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 46bc15c7fc6e: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 2b268f581054: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 5b854d27b9e8: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": bdd9bd96f06e: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": a5480c8d16a2: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": e5606a63b532: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c8e39c85da68: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 4ed579542e1f: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 2728e38551c3: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 47e918eaf99b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": ae7eeef8fb64: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f572e431c94: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 2c62413f4330: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c1e5023eb144: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": fc0dffc816d4: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 6cc1885f3328: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": a51f302ecc01: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c4aadc336dba: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": ebfa39689e0a: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 8853303807a4: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 520b6291b9a7: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 80c4950a02e9: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 5bff420bddc8: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 290b368c55fb: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f3bae8f8756: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c4aadc336dba: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 47e918eaf99b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": e5606a63b532: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": fc0dffc816d4: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": ae7eeef8fb64: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": c8e39c85da68: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 6cc1885f3328: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 4ed579542e1f: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f572e431c94: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": a51f302ecc01: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 2728e38551c3: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 2c62413f4330: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": c1e5023eb144: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 8853303807a4: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 520b6291b9a7: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 290b368c55fb: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 80c4950a02e9: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f3bae8f8756: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 5bff420bddc8: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 5b854d27b9e8: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 5b854d27b9e8: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a5480c8d16a2: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bdd9bd96f06e: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": bdd9bd96f06e: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5b854d27b9e8: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c8e39c85da68: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": c8e39c85da68: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e5606a63b532: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": e5606a63b532: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2728e38551c3: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 47e918eaf99b: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 47e918eaf99b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bdd9bd96f06e: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a5480c8d16a2: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ae7eeef8fb64: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": ae7eeef8fb64: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4ed579542e1f: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 4ed579542e1f: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2c62413f4330: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 2c62413f4330: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": e5606a63b532: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c1e5023eb144: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": c1e5023eb144: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": fc0dffc816d4: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c8e39c85da68: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a51f302ecc01: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f572e431c94: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ebfa39689e0a: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": ebfa39689e0a: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6cc1885f3328: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 6cc1885f3328: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8853303807a4: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 8853303807a4: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 520b6291b9a7: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 520b6291b9a7: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 80c4950a02e9: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 80c4950a02e9: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c4aadc336dba: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": c4aadc336dba: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 290b368c55fb: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 290b368c55fb: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f3bae8f8756: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5bff420bddc8: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 5bff420bddc8: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4ed579542e1f: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2728e38551c3: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 47e918eaf99b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ae7eeef8fb64: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f572e431c94: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2c62413f4330: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c1e5023eb144: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": fc0dffc816d4: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6cc1885f3328: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a51f302ecc01: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c4aadc336dba: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ebfa39689e0a: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8853303807a4: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 520b6291b9a7: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 80c4950a02e9: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5bff420bddc8: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 290b368c55fb: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f3bae8f8756: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": Digest: sha256:c784a13ce5d8ac8a4b83b11bbfade1135dd205635524791423b647f7d91508c1
+Step #4 - "build-check-libfuzzer-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp2fpcf9r9/fuzz_mgmt_serialization
+Finished Step #4 - "build-check-libfuzzer-address-x86_64"
+Starting Step #5
+Step #5: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #5
+Starting Step #6
+Step #6: Already have image: gcr.io/oss-fuzz/azure-sdk-for-python
+Step #6:   adding: fuzz_mgmt_serialization (deflated 35%)
+Step #6:   adding: fuzz_mgmt_serialization.pkg (deflated 1%)
+Step #6:   adding: llvm-symbolizer (deflated 65%)
+Step #6:   adding: sanitizer_with_fuzzer.so (deflated 72%)
+Finished Step #6
+Starting Step #7
+Step #7: Pulling image: gcr.io/oss-fuzz-base/uploader
+Step #7: Using default tag: latest
+Step #7: latest: Pulling from oss-fuzz-base/uploader
+Step #7: c62795f78da9: Pulling fs layer
+Step #7: d4fceeeb758e: Pulling fs layer
+Step #7: 5c9125a401ae: Pulling fs layer
+Step #7: 0062f774e994: Pulling fs layer
+Step #7: 6b33fd031fac: Pulling fs layer
+Step #7: 7eb39101e508: Pulling fs layer
+Step #7: 89257482f398: Pulling fs layer
+Step #7: 0062f774e994: Waiting
+Step #7: 6b33fd031fac: Waiting
+Step #7: 7eb39101e508: Waiting
+Step #7: 89257482f398: Waiting
+Step #7: d4fceeeb758e: Download complete
+Step #7: 5c9125a401ae: Verifying Checksum
+Step #7: 5c9125a401ae: Download complete
+Step #7: 0062f774e994: Verifying Checksum
+Step #7: 0062f774e994: Download complete
+Step #7: 6b33fd031fac: Verifying Checksum
+Step #7: 6b33fd031fac: Download complete
+Step #7: c62795f78da9: Verifying Checksum
+Step #7: c62795f78da9: Download complete
+Step #7: 89257482f398: Verifying Checksum
+Step #7: 89257482f398: Download complete
+Step #7: 7eb39101e508: Verifying Checksum
+Step #7: 7eb39101e508: Download complete
+Step #7: c62795f78da9: Pull complete
+Step #7: d4fceeeb758e: Pull complete
+Step #7: 5c9125a401ae: Pull complete
+Step #7: 0062f774e994: Pull complete
+Step #7: 6b33fd031fac: Pull complete
+Step #7: 7eb39101e508: Pull complete
+Step #7: 89257482f398: Pull complete
+Step #7: Digest: sha256:5717ba63d13b5515063e2a6ccad09fb5bf32a86c8e0798a363d81c2be522e411
+Step #7: Status: Downloaded newer image for gcr.io/oss-fuzz-base/uploader:latest
+Step #7: gcr.io/oss-fuzz-base/uploader:latest
+Step #7:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #7:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #7:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   174    0     0  100   174      0    874 --:--:-- --:--:-- --:--:--   874100   174    0     0  100   174      0    873 --:--:-- --:--:-- --:--:--   870
+Finished Step #7
+Starting Step #8
+Step #8: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #8:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #8:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #8:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 37.6M    0     0  100 37.6M      0  86.3M --:--:-- --:--:-- --:--:-- 86.3M100 37.6M    0     0  100 37.6M      0  86.3M --:--:-- --:--:-- --:--:-- 86.3M
+Finished Step #8
+Starting Step #9
+Step #9: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #9:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #9:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #9:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    24    0     0  100    24      0     94 --:--:-- --:--:-- --:--:--    94
+Finished Step #9
+Starting Step #10
+Step #10: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #10:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #10:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #10:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    45    0     0  100    45      0    233 --:--:-- --:--:-- --:--:--   233100    45    0     0  100    45      0    233 --:--:-- --:--:-- --:--:--   233
+Finished Step #10
+Starting Step #11
+Step #11: Already have image: gcr.io/oss-fuzz/azure-sdk-for-python
+Finished Step #11
+Starting Step #12 - "compile-libfuzzer-undefined-x86_64"
+Step #12 - "compile-libfuzzer-undefined-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #12 - "compile-libfuzzer-undefined-x86_64": ---------------------------------------------------------------
+Step #12 - "compile-libfuzzer-undefined-x86_64": vm.mmap_rnd_bits = 28
+Step #12 - "compile-libfuzzer-undefined-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #12 - "compile-libfuzzer-undefined-x86_64": ---------------------------------------------------------------
+Step #12 - "compile-libfuzzer-undefined-x86_64": CC=clang
+Step #12 - "compile-libfuzzer-undefined-x86_64": CXX=clang++
+Step #12 - "compile-libfuzzer-undefined-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=array-bounds,bool,builtin,enum,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unsigned-integer-overflow,unreachable,vla-bound,vptr -fno-sanitize-recover=array-bounds,bool,builtin,enum,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unreachable,vla-bound,vptr -fsanitize=fuzzer-no-link -fno-sanitize=function -fno-sanitize=function,leak,vptr,
+Step #12 - "compile-libfuzzer-undefined-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=array-bounds,bool,builtin,enum,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unsigned-integer-overflow,unreachable,vla-bound,vptr -fno-sanitize-recover=array-bounds,bool,builtin,enum,function,integer-divide-by-zero,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,unreachable,vla-bound,vptr -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=function,leak,vptr
+Step #12 - "compile-libfuzzer-undefined-x86_64": RUSTFLAGS=--cfg fuzzing -Cdebuginfo=1 -Cforce-frame-pointers
+Step #12 - "compile-libfuzzer-undefined-x86_64": ---------------------------------------------------------------
+Step #12 - "compile-libfuzzer-undefined-x86_64": + cd /src/azure-sdk-for-python/sdk/core/azure-core
+Step #12 - "compile-libfuzzer-undefined-x86_64": + pip3 install .
+Step #12 - "compile-libfuzzer-undefined-x86_64": Processing /src/azure-sdk-for-python/sdk/core/azure-core
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Installing build dependencies ... [?25l- \ done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h  Getting requirements to build wheel ... [?25l- done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h  Preparing metadata (pyproject.toml) ... [?25l- done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25hCollecting requests>=2.21.0 (from azure-core==1.35.2)
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Requirement already satisfied: six>=1.11.0 in /usr/local/lib/python3.11/site-packages (from azure-core==1.35.2) (1.15.0)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Collecting typing-extensions>=4.6.0 (from azure-core==1.35.2)
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Collecting charset_normalizer<4,>=2 (from requests>=2.21.0->azure-core==1.35.2)
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Downloading charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (36 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Collecting idna<4,>=2.5 (from requests>=2.21.0->azure-core==1.35.2)
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Collecting urllib3<3,>=1.21.1 (from requests>=2.21.0->azure-core==1.35.2)
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Collecting certifi>=2017.4.17 (from requests>=2.21.0->azure-core==1.35.2)
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Downloading certifi-2025.10.5-py3-none-any.whl.metadata (2.5 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Downloading charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (150 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Downloading idna-3.10-py3-none-any.whl (70 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Downloading certifi-2025.10.5-py3-none-any.whl (163 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Building wheels for collected packages: azure-core
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Building wheel for azure-core (pyproject.toml) ... [?25l- \ done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h  Created wheel for azure-core: filename=azure_core-1.35.2-py3-none-any.whl size=211945 sha256=005b11c73ca5edcda4d899128d0d5e3c36a47e584d26a563da407565aff96233
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Stored in directory: /root/.cache/pip/wheels/7f/6a/ce/f52f1a2d2a8a0ddfb7a035b53e545e85b87d6256bf762c1075
+Step #12 - "compile-libfuzzer-undefined-x86_64": Successfully built azure-core
+Step #12 - "compile-libfuzzer-undefined-x86_64": Installing collected packages: urllib3, typing-extensions, idna, charset_normalizer, certifi, requests, azure-core
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25l[2K   [91m━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2/7[0m [idna][2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━[0m [32m6/7[0m [azure-core][2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m7/7[0m [azure-core]
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h[1A[2KSuccessfully installed azure-core-1.35.2 certifi-2025.10.5 charset_normalizer-3.4.3 idna-3.10 requests-2.32.5 typing-extensions-4.15.0 urllib3-2.5.0
+Step #12 - "compile-libfuzzer-undefined-x86_64": [33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
+Step #12 - "compile-libfuzzer-undefined-x86_64": [0m+ cd /src/azure-sdk-for-python/sdk/dynatrace/azure-mgmt-dynatrace/
+Step #12 - "compile-libfuzzer-undefined-x86_64": + pip3 install .
+Step #12 - "compile-libfuzzer-undefined-x86_64": Processing /src/azure-sdk-for-python/sdk/dynatrace/azure-mgmt-dynatrace
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Installing build dependencies ... [?25l- \ done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h  Getting requirements to build wheel ... [?25l- done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h  Preparing metadata (pyproject.toml) ... [?25l- done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25hCollecting isodate<1.0.0,>=0.6.1 (from azure-mgmt-dynatrace==2.0.0)
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Downloading isodate-0.7.2-py3-none-any.whl.metadata (11 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Collecting azure-common~=1.1 (from azure-mgmt-dynatrace==2.0.0)
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Downloading azure_common-1.1.28-py2.py3-none-any.whl.metadata (5.0 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Collecting azure-mgmt-core<2.0.0,>=1.3.2 (from azure-mgmt-dynatrace==2.0.0)
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Downloading azure_mgmt_core-1.6.0-py3-none-any.whl.metadata (4.6 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Requirement already satisfied: azure-core>=1.32.0 in /usr/local/lib/python3.11/site-packages (from azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (1.35.2)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Requirement already satisfied: requests>=2.21.0 in /usr/local/lib/python3.11/site-packages (from azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (2.32.5)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Requirement already satisfied: six>=1.11.0 in /usr/local/lib/python3.11/site-packages (from azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (1.15.0)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Requirement already satisfied: typing-extensions>=4.6.0 in /usr/local/lib/python3.11/site-packages (from azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (4.15.0)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.11/site-packages (from requests>=2.21.0->azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (3.4.3)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.11/site-packages (from requests>=2.21.0->azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (3.10)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.11/site-packages (from requests>=2.21.0->azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (2.5.0)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.11/site-packages (from requests>=2.21.0->azure-core>=1.32.0->azure-mgmt-core<2.0.0,>=1.3.2->azure-mgmt-dynatrace==2.0.0) (2025.10.5)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Downloading azure_common-1.1.28-py2.py3-none-any.whl (14 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Downloading azure_mgmt_core-1.6.0-py3-none-any.whl (29 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Downloading isodate-0.7.2-py3-none-any.whl (22 kB)
+Step #12 - "compile-libfuzzer-undefined-x86_64": Building wheels for collected packages: azure-mgmt-dynatrace
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Building wheel for azure-mgmt-dynatrace (pyproject.toml) ... [?25l- done
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h  Created wheel for azure-mgmt-dynatrace: filename=azure_mgmt_dynatrace-2.0.0-py3-none-any.whl size=82106 sha256=7ff21d42d1b678b9544a32738d4d82d22e37a29fc68e2cc850642f6c023f4db2
+Step #12 - "compile-libfuzzer-undefined-x86_64":   Stored in directory: /root/.cache/pip/wheels/ec/e4/d1/c188594d0c78a611e1e64052f5d0c7dfe410839638353271bd
+Step #12 - "compile-libfuzzer-undefined-x86_64": Successfully built azure-mgmt-dynatrace
+Step #12 - "compile-libfuzzer-undefined-x86_64": Installing collected packages: azure-common, isodate, azure-mgmt-core, azure-mgmt-dynatrace
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25l[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m4/4[0m [azure-mgmt-dynatrace]
+Step #12 - "compile-libfuzzer-undefined-x86_64": [?25h[1A[2KSuccessfully installed azure-common-1.1.28 azure-mgmt-core-1.6.0 azure-mgmt-dynatrace-2.0.0 isodate-0.7.2
+Step #12 - "compile-libfuzzer-undefined-x86_64": [33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.[0m[33m
+Step #12 - "compile-libfuzzer-undefined-x86_64": [0m+ compile_python_fuzzer /src/fuzz_mgmt_serialization.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": + fuzzer_path=/src/fuzz_mgmt_serialization.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": + shift 1
+Step #12 - "compile-libfuzzer-undefined-x86_64": ++ basename -s .py /src/fuzz_mgmt_serialization.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": + fuzzer_basename=fuzz_mgmt_serialization
+Step #12 - "compile-libfuzzer-undefined-x86_64": + fuzzer_package=fuzz_mgmt_serialization.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": + PYFUZZ_WORKPATH=/src/pyfuzzworkdir/
+Step #12 - "compile-libfuzzer-undefined-x86_64": + FUZZ_WORKPATH=/src/pyfuzzworkdir//fuzz_mgmt_serialization
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ undefined = *introspector* ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ undefined = *coverage* ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ 0 != \0 ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + rm -rf /src/pyfuzzworkdir/
+Step #12 - "compile-libfuzzer-undefined-x86_64": + mkdir /src/pyfuzzworkdir/ /src/pyfuzzworkdir//fuzz_mgmt_serialization
+Step #12 - "compile-libfuzzer-undefined-x86_64": + pyinstaller --distpath /workspace/out/libfuzzer-undefined-x86_64 --workpath=/src/pyfuzzworkdir//fuzz_mgmt_serialization --onefile --name fuzz_mgmt_serialization.pkg /src/fuzz_mgmt_serialization.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": 67 INFO: PyInstaller: 6.10.0, contrib hooks: 2025.9
+Step #12 - "compile-libfuzzer-undefined-x86_64": 68 INFO: Python: 3.11.13
+Step #12 - "compile-libfuzzer-undefined-x86_64": 69 INFO: Platform: Linux-5.10.0-32-cloud-amd64-x86_64-with-glibc2.31
+Step #12 - "compile-libfuzzer-undefined-x86_64": 69 INFO: Python environment: /usr/local
+Step #12 - "compile-libfuzzer-undefined-x86_64": 69 INFO: wrote /src/azure-sdk-for-python/sdk/dynatrace/azure-mgmt-dynatrace/fuzz_mgmt_serialization.pkg.spec
+Step #12 - "compile-libfuzzer-undefined-x86_64": 72 INFO: Module search paths (PYTHONPATH):
+Step #12 - "compile-libfuzzer-undefined-x86_64": ['/usr/local/lib/python311.zip',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11/lib-dynload',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11/site-packages',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/usr/local/lib/python3.11/site-packages/setuptools/_vendor',
+Step #12 - "compile-libfuzzer-undefined-x86_64":  '/src']
+Step #12 - "compile-libfuzzer-undefined-x86_64": 160 INFO: checking Analysis
+Step #12 - "compile-libfuzzer-undefined-x86_64": 160 INFO: Building Analysis because Analysis-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 160 INFO: Running Analysis Analysis-00.toc
+Step #12 - "compile-libfuzzer-undefined-x86_64": 160 INFO: Target bytecode optimization level: 0
+Step #12 - "compile-libfuzzer-undefined-x86_64": 160 INFO: Initializing module dependency graph...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 160 INFO: Caching module graph hooks...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 169 INFO: Analyzing base_library.zip ...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 861 INFO: Processing standard module hook 'hook-heapq.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 931 INFO: Processing standard module hook 'hook-encodings.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 2279 INFO: Processing standard module hook 'hook-pickle.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 3724 INFO: Caching module dependency graph...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 3806 INFO: Looking for Python shared library...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 3816 INFO: Using Python shared library: /usr/local/lib/libpython3.11.so.1.0
+Step #12 - "compile-libfuzzer-undefined-x86_64": 3816 INFO: Analyzing /src/fuzz_mgmt_serialization.py
+Step #12 - "compile-libfuzzer-undefined-x86_64": 3842 INFO: Processing standard module hook 'hook-atheris.py' from '/usr/local/lib/python3.11/site-packages/atheris'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4011 INFO: Processing standard module hook 'hook-xml.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4026 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4108 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/pre_safe_import_module'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 4108 INFO: SetuptoolsInfo: initializing cached setuptools info...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 7960 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 8837 INFO: Processing standard module hook 'hook-platform.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 8915 INFO: Processing standard module hook 'hook-urllib3.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 9674 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 9793 INFO: Processing standard module hook 'hook-certifi.py' from '/usr/local/lib/python3.11/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10254 INFO: Processing module hooks (post-graph stage)...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10296 INFO: Performing binary vs. data reclassification (4 entries)
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10299 INFO: Looking for ctypes DLLs
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10313 INFO: Analyzing run-time hooks ...
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10316 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10317 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10318 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/usr/local/lib/python3.11/site-packages/PyInstaller/hooks/rthooks'
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10325 INFO: Looking for dynamic libraries
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10925 INFO: Warnings written to /src/pyfuzzworkdir/fuzz_mgmt_serialization/fuzz_mgmt_serialization.pkg/warn-fuzz_mgmt_serialization.pkg.txt
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10947 INFO: Graph cross-reference written to /src/pyfuzzworkdir/fuzz_mgmt_serialization/fuzz_mgmt_serialization.pkg/xref-fuzz_mgmt_serialization.pkg.html
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10959 INFO: checking PYZ
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10960 INFO: Building PYZ because PYZ-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 10960 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_mgmt_serialization/fuzz_mgmt_serialization.pkg/PYZ-00.pyz
+Step #12 - "compile-libfuzzer-undefined-x86_64": 11352 INFO: Building PYZ (ZlibArchive) /src/pyfuzzworkdir/fuzz_mgmt_serialization/fuzz_mgmt_serialization.pkg/PYZ-00.pyz completed successfully.
+Step #12 - "compile-libfuzzer-undefined-x86_64": 11366 INFO: checking PKG
+Step #12 - "compile-libfuzzer-undefined-x86_64": 11366 INFO: Building PKG because PKG-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 11366 INFO: Building PKG (CArchive) fuzz_mgmt_serialization.pkg.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": 23361 INFO: Building PKG (CArchive) fuzz_mgmt_serialization.pkg.pkg completed successfully.
+Step #12 - "compile-libfuzzer-undefined-x86_64": 23363 INFO: Bootloader /usr/local/lib/python3.11/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+Step #12 - "compile-libfuzzer-undefined-x86_64": 23363 INFO: checking EXE
+Step #12 - "compile-libfuzzer-undefined-x86_64": 23363 INFO: Building EXE because EXE-00.toc is non existent
+Step #12 - "compile-libfuzzer-undefined-x86_64": 23363 INFO: Building EXE from EXE-00.toc
+Step #12 - "compile-libfuzzer-undefined-x86_64": 23363 INFO: Copying bootloader EXE to /workspace/out/libfuzzer-undefined-x86_64/fuzz_mgmt_serialization.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": 23363 INFO: Appending PKG archive to custom ELF section in EXE
+Step #12 - "compile-libfuzzer-undefined-x86_64": 23449 INFO: Building EXE from EXE-00.toc completed successfully.
+Step #12 - "compile-libfuzzer-undefined-x86_64": + chmod -x /workspace/out/libfuzzer-undefined-x86_64/fuzz_mgmt_serialization.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": + [[ undefined = *coverage* ]]
+Step #12 - "compile-libfuzzer-undefined-x86_64": + echo '#!/bin/sh
+Step #12 - "compile-libfuzzer-undefined-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
+Step #12 - "compile-libfuzzer-undefined-x86_64": this_dir=$(dirname "$0")
+Step #12 - "compile-libfuzzer-undefined-x86_64": chmod +x $this_dir/fuzz_mgmt_serialization.pkg
+Step #12 - "compile-libfuzzer-undefined-x86_64": LD_PRELOAD=$this_dir/sanitizer_with_fuzzer.so ASAN_OPTIONS=$ASAN_OPTIONS:symbolize=1:external_symbolizer_path=$this_dir/llvm-symbolizer:detect_leaks=0 $this_dir/fuzz_mgmt_serialization.pkg $@'
+Step #12 - "compile-libfuzzer-undefined-x86_64": + chmod +x /workspace/out/libfuzzer-undefined-x86_64/fuzz_mgmt_serialization
+Finished Step #12 - "compile-libfuzzer-undefined-x86_64"
+Starting Step #13 - "build-check-libfuzzer-undefined-x86_64"
+Step #13 - "build-check-libfuzzer-undefined-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #13 - "build-check-libfuzzer-undefined-x86_64": INFO: performing bad build checks for /tmp/not-out/tmp2gm8eakd/fuzz_mgmt_serialization
+Finished Step #13 - "build-check-libfuzzer-undefined-x86_64"
+Starting Step #14
+Step #14: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #14
+Starting Step #15
+Step #15: Already have image: gcr.io/oss-fuzz/azure-sdk-for-python
+Step #15:   adding: fuzz_mgmt_serialization (deflated 35%)
+Step #15:   adding: fuzz_mgmt_serialization.pkg (deflated 1%)
+Step #15:   adding: llvm-symbolizer (deflated 65%)
+Step #15:   adding: sanitizer_with_fuzzer.so (deflated 70%)
+Finished Step #15
+Starting Step #16
+Step #16: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #16:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #16:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #16:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   174    0     0  100   174      0    914 --:--:-- --:--:-- --:--:--   915
+Finished Step #16
+Starting Step #17
+Step #17: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #17:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #17:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #17:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 35.1M    0     0  100 35.1M      0  66.3M --:--:-- --:--:-- --:--:-- 66.3M
+Finished Step #17
+Starting Step #18
+Step #18: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #18:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #18:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #18:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    24    0     0  100    24      0    103 --:--:-- --:--:-- --:--:--   103
+Finished Step #18
+Starting Step #19
+Step #19: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #19:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #19:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #19:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    47    0     0  100    47      0    247 --:--:-- --:--:-- --:--:--   247
+Finished Step #19
+Starting Step #20
+Step #20: Already have image: gcr.io/oss-fuzz/azure-sdk-for-python
+Finished Step #20
+PUSH
+DONE

@@ -1,0 +1,770 @@
+starting build "31cf46e6-10bb-4467-b6c7-65c471d757ca"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784"
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Sending build context to Docker daemon  6.144kB
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Step 1/4 : FROM gcr.io/oss-fuzz-base/base-builder-go
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": latest: Pulling from oss-fuzz-base/base-builder-go
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": b549f31133a9: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 4cab2e9940c4: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": b2d6cb003f96: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": c5ec622c42d5: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 76a8da3bd377: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 14f53b14f02e: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 7f1353e6e254: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 52ca464d533f: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 75bdb4b0a6ee: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8ec5c0f7ce63: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": dd5488d9d92f: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": c14c4e4bf959: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 56d811f45d53: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 47129490b488: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": a22b9cc82a87: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f37aabbf5378: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 60885dd8685c: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 2a4eda99b39d: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 503dd44e6582: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": ffd7a4a02cd7: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": cecb76a0eeeb: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8a98b72756b0: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 7eb7765bb32e: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 310b72b462ed: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": ebb8e741a3d1: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": dd7cddead71d: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 43ee29b25f02: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f1bc67d99a5e: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 6c12abd78e9f: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 4f37e418f520: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": d3c3787c69b1: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 786ba5cb8e87: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 6e870e8e2bc1: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 756c38c339b4: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f642f0edb40e: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": dd5488d9d92f: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8615c4186726: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 98e3d3db37fc: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 3806054f9efe: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 970e587b6493: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 9f1c7112f1fb: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": a5e15bfea41a: Pulling fs layer
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": cecb76a0eeeb: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": c5ec622c42d5: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 310b72b462ed: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 76a8da3bd377: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": c14c4e4bf959: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 786ba5cb8e87: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 60885dd8685c: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 6e870e8e2bc1: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 98e3d3db37fc: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 56d811f45d53: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": ebb8e741a3d1: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 756c38c339b4: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 3806054f9efe: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 47129490b488: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f642f0edb40e: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 2a4eda99b39d: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": dd7cddead71d: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": a22b9cc82a87: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 7eb7765bb32e: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 970e587b6493: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 4f37e418f520: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 9f1c7112f1fb: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8615c4186726: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 43ee29b25f02: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f37aabbf5378: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f1bc67d99a5e: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": a5e15bfea41a: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": d3c3787c69b1: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 503dd44e6582: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 6c12abd78e9f: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8ec5c0f7ce63: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 75bdb4b0a6ee: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 14f53b14f02e: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 52ca464d533f: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 7f1353e6e254: Waiting
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": b2d6cb003f96: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": b549f31133a9: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": b549f31133a9: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 76a8da3bd377: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 76a8da3bd377: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": c5ec622c42d5: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": c5ec622c42d5: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 7f1353e6e254: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 7f1353e6e254: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 52ca464d533f: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 4cab2e9940c4: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 4cab2e9940c4: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": b549f31133a9: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8ec5c0f7ce63: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8ec5c0f7ce63: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": dd5488d9d92f: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": dd5488d9d92f: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": c14c4e4bf959: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": c14c4e4bf959: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 56d811f45d53: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 56d811f45d53: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 47129490b488: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 47129490b488: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": a22b9cc82a87: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": a22b9cc82a87: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 75bdb4b0a6ee: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 75bdb4b0a6ee: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f37aabbf5378: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f37aabbf5378: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 60885dd8685c: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 60885dd8685c: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 2a4eda99b39d: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 2a4eda99b39d: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 503dd44e6582: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 503dd44e6582: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": ffd7a4a02cd7: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": ffd7a4a02cd7: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": cecb76a0eeeb: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": cecb76a0eeeb: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8a98b72756b0: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8a98b72756b0: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 310b72b462ed: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 310b72b462ed: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 7eb7765bb32e: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 7eb7765bb32e: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": ebb8e741a3d1: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": ebb8e741a3d1: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": dd7cddead71d: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": dd7cddead71d: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 43ee29b25f02: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f1bc67d99a5e: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f1bc67d99a5e: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 6c12abd78e9f: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 6c12abd78e9f: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 4f37e418f520: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 4f37e418f520: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": d3c3787c69b1: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 786ba5cb8e87: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 6e870e8e2bc1: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 6e870e8e2bc1: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 756c38c339b4: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 756c38c339b4: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f642f0edb40e: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8615c4186726: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8615c4186726: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 14f53b14f02e: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 14f53b14f02e: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 4cab2e9940c4: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": b2d6cb003f96: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 970e587b6493: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 970e587b6493: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 98e3d3db37fc: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 98e3d3db37fc: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 3806054f9efe: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 3806054f9efe: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": a5e15bfea41a: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": a5e15bfea41a: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": c5ec622c42d5: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 76a8da3bd377: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 9f1c7112f1fb: Verifying Checksum
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 9f1c7112f1fb: Download complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 14f53b14f02e: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 7f1353e6e254: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 52ca464d533f: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 75bdb4b0a6ee: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8ec5c0f7ce63: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": dd5488d9d92f: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": c14c4e4bf959: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 56d811f45d53: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 47129490b488: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": a22b9cc82a87: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f37aabbf5378: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 60885dd8685c: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 2a4eda99b39d: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 503dd44e6582: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": ffd7a4a02cd7: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": cecb76a0eeeb: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8a98b72756b0: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 7eb7765bb32e: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 310b72b462ed: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": ebb8e741a3d1: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": dd7cddead71d: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 43ee29b25f02: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f1bc67d99a5e: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 6c12abd78e9f: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 4f37e418f520: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": d3c3787c69b1: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 786ba5cb8e87: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 6e870e8e2bc1: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 756c38c339b4: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": f642f0edb40e: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 8615c4186726: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 98e3d3db37fc: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 3806054f9efe: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 970e587b6493: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": 9f1c7112f1fb: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": a5e15bfea41a: Pull complete
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Digest: sha256:66c8870a11eaec121582703baa0733d3930e6af9fdfc1444d4c7eb4a6b64bb81
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-go:latest
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784":  ---> 9aeea59c902a
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Step 2/4 : RUN git clone --depth 1 https://github.com/linkerd/linkerd2
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784":  ---> Running in 255f20444224
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": [91mCloning into 'linkerd2'...
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": [0mRemoving intermediate container 255f20444224
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784":  ---> 6ad38c233cda
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Step 3/4 : COPY build.sh $SRC/
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784":  ---> 9d9ed29857f9
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Step 4/4 : WORKDIR $SRC/linkerd2
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784":  ---> Running in 0aa99269ef75
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Removing intermediate container 0aa99269ef75
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784":  ---> efd4a3a24b3b
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Successfully built efd4a3a24b3b
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Successfully tagged gcr.io/oss-fuzz/linkerd2:latest
+Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/linkerd2:latest
+Finished Step #1 - "build-e12c6a8b-8fdd-44fb-846a-2173d2889784"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/linkerd2
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/file2rha7L
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ go == \g\o ]]
+Step #2 - "srcmap": + PATHS_TO_SCAN='/src /root/go'
+Step #2 - "srcmap": ++ find /src /root/go -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/linkerd2/.git
+Step #2 - "srcmap": + GIT_DIR=/src/linkerd2
+Step #2 - "srcmap": + cd /src/linkerd2
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/linkerd/linkerd2
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=9df474f32afd7a46c13525e7423e2d09cfb6eaeb
+Step #2 - "srcmap": + jq_inplace /tmp/file2rha7L '."/src/linkerd2" = { type: "git", url: "https://github.com/linkerd/linkerd2", rev: "9df474f32afd7a46c13525e7423e2d09cfb6eaeb" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/filefXfOc9
+Step #2 - "srcmap": + cat /tmp/file2rha7L
+Step #2 - "srcmap": + jq '."/src/linkerd2" = { type: "git", url: "https://github.com/linkerd/linkerd2", rev: "9df474f32afd7a46c13525e7423e2d09cfb6eaeb" }'
+Step #2 - "srcmap": + mv /tmp/filefXfOc9 /tmp/file2rha7L
+Step #2 - "srcmap": ++ find /src /root/go -name .svn -type d
+Step #2 - "srcmap": ++ find /src /root/go -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/file2rha7L
+Step #2 - "srcmap": + rm /tmp/file2rha7L
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/linkerd2": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/linkerd/linkerd2",
+Step #2 - "srcmap":     "rev": "9df474f32afd7a46c13525e7423e2d09cfb6eaeb"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++ -lresolv
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + export FUZZER_DIR=/src/linkerd2/test/fuzzing
+Step #3 - "compile-libfuzzer-address-x86_64": + FUZZER_DIR=/src/linkerd2/test/fuzzing
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/pkg/profiles FuzzProfilesValidate FuzzProfilesValidate
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/pkg/profiles: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/apimachinery v0.34.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/api v0.34.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/sirupsen/logrus v1.9.3
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/linkerd/linkerd2-proxy-api v0.17.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-test/deep v1.1.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading google.golang.org/grpc v1.76.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/prometheus/client_golang v1.23.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/client-go v0.34.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/net v0.46.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/AdaLogics/go-fuzz-headers v0.0.0-20230811130428-ced1acdcaa24
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/golang/protobuf v1.5.4
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opencensus.io v0.24.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading google.golang.org/protobuf v1.36.10
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/shurcooL/vfsgen v0.0.0-20230704071429-0000e147ea92
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/tools v0.38.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.5.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/code-generator v0.34.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading sigs.k8s.io/gateway-api v0.8.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/prometheus/common v0.67.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading sigs.k8s.io/yaml v1.6.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading helm.sh/helm/v3 v3.19.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/fatih/color v1.18.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/endpointslice v0.34.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/briandowns/spinner v1.23.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/prometheus/client_model v0.6.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/evanphx/json-patch v5.9.11+incompatible
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading dario.cat/mergo v1.0.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/grantae/certinfo v0.0.0-20170412194111-59d56a35515b
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/utils v0.0.0-20250604170112-4c0f3b243397
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/spf13/cobra v1.10.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/spf13/pflag v1.0.10
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/bombsimon/logrusr/v4 v4.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/mattn/go-isatty v0.0.20
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/apiextensions-apiserver v0.34.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading contrib.go.opencensus.io/exporter/ocagent v0.7.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/klog/v2 v2.130.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/clarketm/json v1.15.7
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/emicklei/proto v1.14.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/spec v0.22.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/kube-aggregator v0.34.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/fsnotify/fsnotify v1.9.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/sergi/go-diff v1.4.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading gopkg.in/yaml.v2 v2.4.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/mattn/go-runewidth v0.0.19
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/nsf/termbox-go v1.1.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/pkg/browser v0.0.0-20170505125900-c90ca0c84f15
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/julienschmidt/httprouter v1.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/gorilla/websocket v1.5.4-0.20250319132907-e064f32e3674
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/patrickmn/go-cache v2.1.0+incompatible
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/sys v0.37.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/beorn7/perks v1.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/cespare/xxhash/v2 v2.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/prometheus/procfs v0.16.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/shurcooL/httpfs v0.0.0-20230704072500-f1e31cf0ba5c
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/tools/godoc v0.1.0-deprecated
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/google/go-cmp v0.7.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/gogo/protobuf v1.3.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading sigs.k8s.io/randfill v1.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading sigs.k8s.io/structured-merge-diff/v6 v6.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading gopkg.in/inf.v0 v0.9.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/json-iterator/go v1.1.12
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.yaml.in/yaml/v2 v2.4.3
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.yaml.in/yaml/v3 v3.0.4
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/kube-openapi v0.0.0-20250710124328-f3f2b991d03b
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading google.golang.org/genproto/googleapis/rpc v0.0.0-20250804133106-a7a43d27e69b
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/klauspost/compress v1.18.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/mattn/go-colorable v0.1.13
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/component-base v0.34.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/term v0.36.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/inconshreveable/mousetrap v1.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/cpuguy83/go-md2man/v2 v2.0.6
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading gopkg.in/yaml.v3 v3.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/telemetry v0.0.0-20251008203120-078029d740a8
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-logr/logr v1.4.3
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/census-instrumentation/opencensus-proto v0.4.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading google.golang.org/api v0.143.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/pkg/errors v0.9.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/Masterminds/semver/v3 v3.4.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/cyphar/filepath-securejoin v0.4.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/mitchellh/copystructure v1.2.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/santhosh-tekuri/jsonschema/v6 v6.0.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/BurntSushi/toml v1.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/Masterminds/sprig/v3 v3.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/gobwas/glob v0.2.3
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/jsonpointer v0.22.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/jsonreference v0.21.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/swag/jsonname v0.25.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/swag/jsonutils v0.25.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/swag/loading v0.25.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/swag/stringutils v0.25.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/swag/conv v0.25.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/google/gnostic-models v0.7.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading sigs.k8s.io/json v0.0.0-20241014173422-cfa47c3a1cc8
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/time v0.12.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading gopkg.in/evanphx/json-patch.v4 v4.12.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/oauth2 v0.31.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/swag v0.23.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/clipperhouse/uax29/v2 v2.2.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/gengo/v2 v2.0.0-20250604051438-85fd79dbfd9f
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/fxamacker/cbor/v2 v2.9.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/mod v0.29.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/sync v0.17.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/modern-go/reflect2 v1.0.3-0.20250322232337-35a7c28c31ee
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/russross/blackfriday/v2 v2.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/mitchellh/reflectwalk v1.0.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/google/uuid v1.6.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/moby/spdystream v0.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/Masterminds/goutils v1.1.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/huandu/xstrings v1.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/shopspring/decimal v1.4.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/spf13/cast v1.7.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/crypto v0.43.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/text v0.30.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/jpillora/backoff v1.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/swag/yamlutils v0.25.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/swag/typeutils v0.25.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/stretchr/testify v1.11.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.uber.org/goleak v1.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/kylelemons/godebug v1.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/armon/go-socks5 v0.0.0-20160902184237-e75332964ef5
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/dlclark/regexp2 v1.11.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-openapi/swag/jsonutils/fixtures_test v0.25.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel v1.37.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/blang/semver/v4 v4.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/trace v1.37.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/cli-runtime v0.34.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/containerd/containerd v1.7.28
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/opencontainers/image-spec v1.1.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading oras.land/oras-go/v2 v2.6.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/distribution/distribution/v3 v3.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/foxcpp/go-mockdns v1.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/phayes/freeport v0.0.0-20220201140144-74d24b5ae9f5
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/mxk/go-flowrate v0.0.0-20140419014527-cca7078d478f
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/x448/float16 v0.8.4
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/frankban/quicktest v1.14.6
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/kr/pretty v0.3.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading gonum.org/v1/gonum v0.16.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/stretchr/objx v0.5.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/hashicorp/go-multierror v1.1.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading k8s.io/kubectl v0.34.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/opencontainers/go-digest v1.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/onsi/ginkgo/v2 v2.21.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/onsi/gomega v1.35.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading google.golang.org/genproto/googleapis/api v0.0.0-20250804133106-a7a43d27e69b
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/kr/text v0.2.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/rogpeppe/go-internal v1.13.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading sigs.k8s.io/kustomize/api v0.20.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading sigs.k8s.io/kustomize/kyaml v0.20.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/miekg/dns v1.1.57
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/sdk/metric v1.37.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/hashicorp/errwrap v1.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/metric v1.37.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/tools/go/packages/packagestest v0.1.1-deprecated
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/mailru/easyjson v0.7.7
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/emicklei/go-restful/v3 v3.12.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/moby/term v0.5.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/gregjones/httpcache v0.0.0-20190611155906-901d90724c79
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/peterbourgon/diskv v2.0.1+incompatible
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading golang.org/x/tools/go/expect v0.1.0-deprecated
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/creack/pty v1.1.18
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/josharian/intern v1.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/Azure/go-ansiterm v0.0.0-20250102033503-faa5f7b0171c
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/sdk v1.37.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/google/btree v1.1.3
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-task/slim-sprig/v3 v3.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/google/pprof v0.0.0-20241029153458-d1b30febd7db
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-errors/errors v1.4.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/go-logr/stdr v1.2.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/auto/sdk v1.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/xlab/treeprint v1.2.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/monochromegane/go-gitignore v0.0.0-20200626010858-205db1a8cc00
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/redis/go-redis/v9 v9.7.3
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/docker/go-metrics v0.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/bshuster-repo/logrus-logstash-hook v1.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.58.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/gorilla/handlers v1.5.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/coreos/go-systemd/v22 v22.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/redis/go-redis/extra/redisotel/v9 v9.0.5
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/distribution/reference v0.6.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/docker/go-events v0.0.0-20190806004212-e31b211e4f1c
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/gorilla/mux v1.8.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/contrib/exporters/autoexport v0.57.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.32.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/hashicorp/golang-lru/arc/v2 v2.0.5
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/docker/docker-credential-helpers v0.8.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/felixge/httpsnoop v1.0.4
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/hashicorp/golang-lru v0.5.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/redis/go-redis/extra/rediscmd/v9 v9.0.5
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.32.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp v1.32.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc v1.32.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/contrib/bridges/prometheus v0.57.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.34.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/exporters/prometheus v0.54.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/exporters/stdout/stdoutlog v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/exporters/stdout/stdoutmetric v1.32.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/sdk/log v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.34.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/hashicorp/golang-lru/v2 v2.0.5
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/proto/otlp v1.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/cenkalti/backoff/v4 v4.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading go.opentelemetry.io/otel/log v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/containerd/platforms v0.2.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/containerd/log v0.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/containerd/errdefs v0.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/exponent-io/jsonpath v0.0.0-20210407135951-1de76d718b3f
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/mitchellh/go-wordwrap v1.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/chai2010/gettext-go v1.0.2
+Step #3 - "compile-libfuzzer-address-x86_64": go: downloading github.com/MakeNowJust/heredoc v1.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/pkg/profiles
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/pkg/profiles
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzProfilesValidate -o FuzzProfilesValidate.a github.com/linkerd/linkerd2/pkg/profiles
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/pkg/profiles FuzzRenderProto FuzzRenderProto
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/pkg/profiles: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/pkg/profiles
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/pkg/profiles
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzRenderProto -o FuzzRenderProto.a github.com/linkerd/linkerd2/pkg/profiles
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/controller/api/destination FuzzAdd FuzzAdd
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/controller/api/destination: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzAdd -o FuzzAdd.a github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/controller/api/destination FuzzGet FuzzGet
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/controller/api/destination: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzGet -o FuzzGet.a github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/controller/api/destination FuzzGetProfile FuzzGetProfile
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/controller/api/destination: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzGetProfile -o FuzzGetProfile.a github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/controller/api/destination FuzzProfileTranslatorUpdate FuzzProfileTranslatorUpdate
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/controller/api/destination: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzProfileTranslatorUpdate -o FuzzProfileTranslatorUpdate.a github.com/linkerd/linkerd2/controller/api/destination
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/pkg/healthcheck FuzzFetchCurrentConfiguration FuzzFetchCurrentConfiguration
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/pkg/healthcheck: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/pkg/healthcheck
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/pkg/healthcheck
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzFetchCurrentConfiguration -o FuzzFetchCurrentConfiguration.a github.com/linkerd/linkerd2/pkg/healthcheck
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/pkg/inject FuzzInject FuzzInject
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/pkg/inject: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/pkg/inject
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/pkg/inject
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzInject -o FuzzInject.a github.com/linkerd/linkerd2/pkg/inject
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/pkg/identity FuzzServiceCertify FuzzServiceCertify
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/pkg/identity: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/pkg/identity
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/pkg/identity
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzServiceCertify -o FuzzServiceCertify.a github.com/linkerd/linkerd2/pkg/identity
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/test/fuzzing FuzzParseContainerOpaquePorts FuzzParseContainerOpaquePorts
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/test/fuzzing: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/test/fuzzing
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/test/fuzzing
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzParseContainerOpaquePorts -o FuzzParseContainerOpaquePorts.a github.com/linkerd/linkerd2/test/fuzzing
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/test/fuzzing FuzzParsePorts FuzzParsePorts
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/test/fuzzing: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/test/fuzzing
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/test/fuzzing
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzParsePorts -o FuzzParsePorts.a github.com/linkerd/linkerd2/test/fuzzing
+Step #3 - "compile-libfuzzer-address-x86_64": + compile_go_fuzzer github.com/linkerd/linkerd2/test/fuzzing FuzzHealthCheck FuzzHealthCheck
+Step #3 - "compile-libfuzzer-address-x86_64": /usr/local/bin/compile_go_fuzzer: line 32: cd: /root/go/src/github.com/linkerd/linkerd2/test/fuzzing: No such file or directory
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/test/fuzzing
+Step #3 - "compile-libfuzzer-address-x86_64": github.com/linkerd/linkerd2/test/fuzzing
+Step #3 - "compile-libfuzzer-address-x86_64": Running go-fuzz -tags gofuzz -func FuzzHealthCheck -o FuzzHealthCheck.a github.com/linkerd/linkerd2/test/fuzzing
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+Starting Step #4 - "build-check-libfuzzer-address-x86_64"
+Step #4 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-libfuzzer-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-libfuzzer-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-libfuzzer-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 4cab2e9940c4: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": b2d6cb003f96: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 4257557ce7a0: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": be3245a4a281: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 34b65fbcc5a0: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 5939142620ab: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f5d751699f9: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 6ec6ce971317: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": bc0b8a49c20a: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 76deb7a5dea3: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": eb58a5c57b61: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 25467b80b5de: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 08d50d7c8105: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": d339a9d8e776: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 941a302308b7: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 5468c806efe7: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": d8c06c98aa11: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f77d6138a834: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f3800746dbdc: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": ed84ee51dcf3: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 458cf9be26a0: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f5d751699f9: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 8eb37fd8cc5b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 6ec6ce971317: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d796cbbf759e: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": bc0b8a49c20a: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": a2b4aac872f7: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 2a16bf25e3f8: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 76deb7a5dea3: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": eb58a5c57b61: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 25467b80b5de: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 08d50d7c8105: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d339a9d8e776: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 941a302308b7: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 5468c806efe7: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d8c06c98aa11: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 5939142620ab: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d796cbbf759e: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": f77d6138a834: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": a2b4aac872f7: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 2a16bf25e3f8: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": ed84ee51dcf3: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 458cf9be26a0: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 8eb37fd8cc5b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": f3800746dbdc: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 34b65fbcc5a0: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 34b65fbcc5a0: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4257557ce7a0: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 4257557ce7a0: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": be3245a4a281: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": be3245a4a281: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f5d751699f9: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f5d751699f9: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 4257557ce7a0: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5939142620ab: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 5939142620ab: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bc0b8a49c20a: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": bc0b8a49c20a: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 76deb7a5dea3: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 76deb7a5dea3: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": eb58a5c57b61: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": be3245a4a281: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 08d50d7c8105: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 08d50d7c8105: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 34b65fbcc5a0: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d339a9d8e776: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6ec6ce971317: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 6ec6ce971317: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 941a302308b7: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 941a302308b7: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d8c06c98aa11: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5939142620ab: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 25467b80b5de: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 1f5d751699f9: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f3800746dbdc: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": f3800746dbdc: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ed84ee51dcf3: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": ed84ee51dcf3: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5468c806efe7: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 5468c806efe7: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 458cf9be26a0: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 458cf9be26a0: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f77d6138a834: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": f77d6138a834: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d796cbbf759e: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": d796cbbf759e: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2a16bf25e3f8: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a2b4aac872f7: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": a2b4aac872f7: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8eb37fd8cc5b: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 8eb37fd8cc5b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6ec6ce971317: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": bc0b8a49c20a: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 76deb7a5dea3: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": eb58a5c57b61: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 25467b80b5de: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 08d50d7c8105: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d339a9d8e776: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 941a302308b7: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5468c806efe7: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d8c06c98aa11: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f77d6138a834: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f3800746dbdc: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ed84ee51dcf3: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 458cf9be26a0: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8eb37fd8cc5b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d796cbbf759e: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a2b4aac872f7: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 2a16bf25e3f8: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": Digest: sha256:008112e5c601944fb09ae78f0f6f2e273a40072e7ea314aaf50233822994df0d
+Step #4 - "build-check-libfuzzer-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzAdd
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzInject
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzProfilesValidate
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzServiceCertify
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzGetProfile
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzFetchCurrentConfiguration
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzParseContainerOpaquePorts
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzProfileTranslatorUpdate
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzGet
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzRenderProto
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzParsePorts
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpfjf8eipx/FuzzHealthCheck
+Finished Step #4 - "build-check-libfuzzer-address-x86_64"
+Starting Step #5
+Step #5: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
+Finished Step #5
+Starting Step #6
+Step #6: Already have image: gcr.io/oss-fuzz/linkerd2
+Step #6:   adding: FuzzAdd (deflated 72%)
+Step #6:   adding: FuzzFetchCurrentConfiguration (deflated 75%)
+Step #6:   adding: FuzzGet (deflated 76%)
+Step #6:   adding: FuzzGetProfile (deflated 76%)
+Step #6:   adding: FuzzHealthCheck (deflated 74%)
+Step #6:   adding: FuzzInject (deflated 72%)
+Step #6:   adding: FuzzParseContainerOpaquePorts (deflated 71%)
+Step #6:   adding: FuzzParsePorts (deflated 72%)
+Step #6:   adding: FuzzProfileTranslatorUpdate (deflated 72%)
+Step #6:   adding: FuzzProfilesValidate (deflated 72%)
+Step #6:   adding: FuzzRenderProto (deflated 72%)
+Step #6:   adding: FuzzServiceCertify (deflated 68%)
+Step #6:   adding: llvm-symbolizer (deflated 65%)
+Finished Step #6
+Starting Step #7
+Step #7: Pulling image: gcr.io/oss-fuzz-base/uploader
+Step #7: Using default tag: latest
+Step #7: latest: Pulling from oss-fuzz-base/uploader
+Step #7: c62795f78da9: Pulling fs layer
+Step #7: d4fceeeb758e: Pulling fs layer
+Step #7: 5c9125a401ae: Pulling fs layer
+Step #7: 0062f774e994: Pulling fs layer
+Step #7: 6b33fd031fac: Pulling fs layer
+Step #7: 7eb39101e508: Pulling fs layer
+Step #7: 89257482f398: Pulling fs layer
+Step #7: 0062f774e994: Waiting
+Step #7: 7eb39101e508: Waiting
+Step #7: 6b33fd031fac: Waiting
+Step #7: 89257482f398: Waiting
+Step #7: 5c9125a401ae: Download complete
+Step #7: d4fceeeb758e: Verifying Checksum
+Step #7: d4fceeeb758e: Download complete
+Step #7: 0062f774e994: Download complete
+Step #7: 6b33fd031fac: Verifying Checksum
+Step #7: 6b33fd031fac: Download complete
+Step #7: 89257482f398: Verifying Checksum
+Step #7: 89257482f398: Download complete
+Step #7: c62795f78da9: Verifying Checksum
+Step #7: c62795f78da9: Download complete
+Step #7: 7eb39101e508: Verifying Checksum
+Step #7: 7eb39101e508: Download complete
+Step #7: c62795f78da9: Pull complete
+Step #7: d4fceeeb758e: Pull complete
+Step #7: 5c9125a401ae: Pull complete
+Step #7: 0062f774e994: Pull complete
+Step #7: 6b33fd031fac: Pull complete
+Step #7: 7eb39101e508: Pull complete
+Step #7: 89257482f398: Pull complete
+Step #7: Digest: sha256:5717ba63d13b5515063e2a6ccad09fb5bf32a86c8e0798a363d81c2be522e411
+Step #7: Status: Downloaded newer image for gcr.io/oss-fuzz-base/uploader:latest
+Step #7: gcr.io/oss-fuzz-base/uploader:latest
+Step #7:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #7:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #7:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   152    0     0  100   152      0    692 --:--:-- --:--:-- --:--:--   694
+Finished Step #7
+Starting Step #8
+Step #8: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #8:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #8:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #8:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 20  458M    0     0   20 93.3M      0   159M  0:00:02 --:--:--  0:00:02  159M 61  458M    0     0   61  282M      0   178M  0:00:02  0:00:01  0:00:01  178M 99  458M    0     0   99  456M      0   177M  0:00:02  0:00:02 --:--:--  177M100  458M    0     0  100  458M      0   162M  0:00:02  0:00:02 --:--:--  162M
+Finished Step #8
+Starting Step #9
+Step #9: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
+Step #9:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #9:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #9:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   217    0     0  100   217      0   1056 --:--:-- --:--:-- --:--:--  1053100   217    0     0  100   217      0    826 --:--:-- --:--:-- --:--:--   825
+Finished Step #9
+Starting Step #10
+Step #10: Already have image (with digest): gcr.io/cloud-builders/curl
+Step #10:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Step #10:                                  Dload  Upload   Total   Spent    Left  Speed
+Step #10:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    33    0     0  100    33      0    168 --:--:-- --:--:-- --:--:--   168100    33    0     0  100    33      0    168 --:--:-- --:--:-- --:--:--   168
+Finished Step #10
+Starting Step #11
+Step #11: Already have image: gcr.io/oss-fuzz/linkerd2
+Finished Step #11
+PUSH
+DONE

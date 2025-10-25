@@ -1,0 +1,731 @@
+starting build "f1a12e87-a0c7-467d-a894-1acef7d8da2e"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c"
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Sending build context to Docker daemon   5.12kB
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Step 1/5 : FROM gcr.io/oss-fuzz-base/base-builder-rust
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": latest: Pulling from oss-fuzz-base/base-builder-rust
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": b549f31133a9: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 8427520e0a5b: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 64b4d595659f: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 6e1c1d3e4462: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": afb56af0a22a: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 72c1acfa5514: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": f3499323806d: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 81959724b051: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 6c36e369683f: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 58387b5f929e: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 076f843edfc3: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 4b64e4c05f98: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5cb3e9fe63f9: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": faadcd61d980: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5fd65fedf344: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": d8155ff7f654: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 45978ca5c24e: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1a63bdf6f5a7: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5e5b15960855: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 23e4366b8ce0: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": eb205c7b6e67: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": ec1b58d1aae0: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": e91bff2557d5: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5cb0c6e882e7: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": dc48be633c37: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1fa9ef14dba1: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 2d8bfd769fb5: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 8a3a1eeaab04: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": cc49c4e6b6b2: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1cf3b09b548c: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 9ca97fd4bce9: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 72c1acfa5514: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 384f0456065f: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 2d88aa98e850: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 4b64e4c05f98: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": df818356be26: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 98184f19e73a: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 45978ca5c24e: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 89802f7cd705: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5cb3e9fe63f9: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 688ac644baff: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1a63bdf6f5a7: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": faadcd61d980: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 17a65d67e5af: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": f3499323806d: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 993e50cc3b88: Pulling fs layer
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 9ca97fd4bce9: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 89802f7cd705: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": e91bff2557d5: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 2d8bfd769fb5: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5cb0c6e882e7: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": dc48be633c37: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5e5b15960855: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 8a3a1eeaab04: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": cc49c4e6b6b2: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1cf3b09b548c: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 23e4366b8ce0: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 993e50cc3b88: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": afb56af0a22a: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 076f843edfc3: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5fd65fedf344: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 6e1c1d3e4462: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 384f0456065f: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 688ac644baff: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 17a65d67e5af: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 81959724b051: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1fa9ef14dba1: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": d8155ff7f654: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": df818356be26: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 98184f19e73a: Waiting
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 64b4d595659f: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 64b4d595659f: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": b549f31133a9: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": b549f31133a9: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": afb56af0a22a: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 6e1c1d3e4462: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 6e1c1d3e4462: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": f3499323806d: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": f3499323806d: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 81959724b051: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 81959724b051: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 8427520e0a5b: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 8427520e0a5b: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": b549f31133a9: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 58387b5f929e: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 58387b5f929e: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 076f843edfc3: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 076f843edfc3: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 4b64e4c05f98: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 4b64e4c05f98: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5cb3e9fe63f9: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5cb3e9fe63f9: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": faadcd61d980: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": faadcd61d980: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 6c36e369683f: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 6c36e369683f: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5fd65fedf344: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5fd65fedf344: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": d8155ff7f654: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": d8155ff7f654: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 45978ca5c24e: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 45978ca5c24e: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1a63bdf6f5a7: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1a63bdf6f5a7: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5e5b15960855: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5e5b15960855: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 23e4366b8ce0: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 23e4366b8ce0: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": eb205c7b6e67: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": eb205c7b6e67: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": ec1b58d1aae0: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": ec1b58d1aae0: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5cb0c6e882e7: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": e91bff2557d5: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": e91bff2557d5: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": dc48be633c37: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": dc48be633c37: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1fa9ef14dba1: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 2d8bfd769fb5: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 8a3a1eeaab04: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 8a3a1eeaab04: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": cc49c4e6b6b2: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": cc49c4e6b6b2: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1cf3b09b548c: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1cf3b09b548c: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 9ca97fd4bce9: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 9ca97fd4bce9: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 8427520e0a5b: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 64b4d595659f: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 72c1acfa5514: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 72c1acfa5514: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 384f0456065f: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 384f0456065f: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 2d88aa98e850: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 2d88aa98e850: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 89802f7cd705: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 98184f19e73a: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": df818356be26: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": df818356be26: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 688ac644baff: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 688ac644baff: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 17a65d67e5af: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 17a65d67e5af: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 6e1c1d3e4462: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": afb56af0a22a: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 993e50cc3b88: Verifying Checksum
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 993e50cc3b88: Download complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 72c1acfa5514: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": f3499323806d: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 81959724b051: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 6c36e369683f: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 58387b5f929e: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 076f843edfc3: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 4b64e4c05f98: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5cb3e9fe63f9: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": faadcd61d980: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5fd65fedf344: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": d8155ff7f654: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 45978ca5c24e: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1a63bdf6f5a7: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5e5b15960855: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 23e4366b8ce0: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": eb205c7b6e67: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": ec1b58d1aae0: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": e91bff2557d5: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 5cb0c6e882e7: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": dc48be633c37: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1fa9ef14dba1: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 2d8bfd769fb5: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 8a3a1eeaab04: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": cc49c4e6b6b2: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 1cf3b09b548c: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 9ca97fd4bce9: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 384f0456065f: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 2d88aa98e850: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": df818356be26: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 98184f19e73a: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 89802f7cd705: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 688ac644baff: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 17a65d67e5af: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 993e50cc3b88: Pull complete
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Digest: sha256:24919bbfa467291830bf52ac603141b46a3ad219ee622cd54d84136c17b33801
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-rust:latest
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":  ---> 04f43e33bf5c
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Step 2/5 : RUN apt-get update && apt-get install -y make autoconf automake libtool
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":  ---> Running in 36cc053a723f
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Fetched 128 kB in 1s (124 kB/s)
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Reading package lists...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Reading package lists...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Building dependency tree...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Reading state information...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": make set to manually installed.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": The following additional packages will be installed:
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":   file libltdl-dev libltdl7 libmagic-mgc libmagic1
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Suggested packages:
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":   autoconf-archive gnu-standards autoconf-doc gettext libtool-doc gfortran
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":   | fortran95-compiler gcj-jdk
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": The following NEW packages will be installed:
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":   autoconf automake file libltdl-dev libltdl7 libmagic-mgc libmagic1 libtool
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": 0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Need to get 1522 kB of archives.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": After this operation, 12.3 MB of additional disk space will be used.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": [0mFetched 1522 kB in 1s (1355 kB/s)
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Preparing to unpack .../0-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Preparing to unpack .../1-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Selecting previously unselected package file.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Preparing to unpack .../2-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Unpacking file (1:5.38-4) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Selecting previously unselected package autoconf.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Preparing to unpack .../3-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Selecting previously unselected package automake.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Preparing to unpack .../4-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Preparing to unpack .../5-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Preparing to unpack .../6-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Selecting previously unselected package libtool.
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Preparing to unpack .../7-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Setting up file (1:5.38-4) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Removing intermediate container 36cc053a723f
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":  ---> 45b76a4499b7
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Step 3/5 : RUN git clone --depth 1 https://github.com/ron-rs/ron ron
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":  ---> Running in a20b55528380
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": [91mCloning into 'ron'...
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": [0mRemoving intermediate container a20b55528380
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":  ---> b83ee97eaf83
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Step 4/5 : WORKDIR ron
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":  ---> Running in 8a74ce6c6499
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Removing intermediate container 8a74ce6c6499
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":  ---> fa944fe59508
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Step 5/5 : COPY build.sh $SRC/
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c":  ---> 4808078aa343
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Successfully built 4808078aa343
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Successfully tagged gcr.io/oss-fuzz/ron:latest
+Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/ron:latest
+Finished Step #1 - "build-ed456cb1-af2e-4d13-addc-c36f960bc19c"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/ron
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/fileUbQcnO
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ rust == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/ron/.git
+Step #2 - "srcmap": + GIT_DIR=/src/ron
+Step #2 - "srcmap": + cd /src/ron
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/ron-rs/ron
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=cdd9fccd76e4c2f515706453f7c0e4351b8f3784
+Step #2 - "srcmap": + jq_inplace /tmp/fileUbQcnO '."/src/ron" = { type: "git", url: "https://github.com/ron-rs/ron", rev: "cdd9fccd76e4c2f515706453f7c0e4351b8f3784" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/file4Nvo7a
+Step #2 - "srcmap": + cat /tmp/fileUbQcnO
+Step #2 - "srcmap": + jq '."/src/ron" = { type: "git", url: "https://github.com/ron-rs/ron", rev: "cdd9fccd76e4c2f515706453f7c0e4351b8f3784" }'
+Step #2 - "srcmap": + mv /tmp/file4Nvo7a /tmp/fileUbQcnO
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/fileUbQcnO
+Step #2 - "srcmap": + rm /tmp/fileUbQcnO
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/ron": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/ron-rs/ron",
+Step #2 - "srcmap":     "rev": "cdd9fccd76e4c2f515706453f7c0e4351b8f3784"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + cargo fuzz build -O
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m    Updating[0m crates.io index
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m     Locking[0m 73 packages to latest compatible versions
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[36m      Adding[0m criterion v0.5.1 [1m[33m(available: v0.7.0)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m Downloading[0m crates ...
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m bitflags v2.9.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m cast v0.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m anes v0.1.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m typeid v1.0.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m anstyle v1.0.11
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m autocfg v1.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m arbitrary v1.4.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m clap_lex v0.7.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m anyhow v1.0.99
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m serde_path_to_error v0.1.19
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m itoa v1.0.15
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m shlex v1.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m serde v1.0.223
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m same-file v1.0.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m oorandom v11.1.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m is-terminal v0.4.16
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m walkdir v2.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m ryu v1.0.20
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m unicode-ident v1.0.19
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m serde_core v1.0.223
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m memchr v2.7.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m erased-serde v0.4.8
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m itertools v0.10.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m criterion v0.5.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m serde_json v1.0.145
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m regex v1.11.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m libfuzzer-sys v0.4.10
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m clap_builder v4.5.47
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m aho-corasick v1.1.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m clap v4.5.47
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m ciborium v0.2.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m syn v2.0.106
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m serde_derive v1.0.223
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m regex-syntax v0.8.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m proc-macro2 v1.0.101
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m num-traits v0.2.19
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m half v2.6.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m jobserver v0.1.34
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m criterion-plot v0.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m cc v1.2.37
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m base64 v0.22.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m tinytemplate v1.2.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m quote v1.0.40
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m once_cell v1.21.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m find-msvc-tools v0.1.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m ciborium-ll v0.2.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m cfg-if v1.0.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m either v1.15.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m derive_arbitrary v1.4.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m regex-automata v0.4.10
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m ciborium-io v0.2.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m libc v0.2.175
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m proc-macro2 v1.0.101
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m unicode-ident v1.0.19
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m serde_core v1.0.223
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m libc v0.2.175
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m serde v1.0.223
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m serde_json v1.0.145
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m itoa v1.0.15
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m shlex v1.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m find-msvc-tools v0.1.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m cfg-if v1.0.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m autocfg v1.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m regex-syntax v0.8.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m anstyle v1.0.11
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m clap_lex v0.7.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m typeid v1.0.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m ryu v1.0.20
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m either v1.15.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m ciborium-io v0.2.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m memchr v2.7.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m erased-serde v0.4.8
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m anyhow v1.0.99
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m same-file v1.0.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m cast v0.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m once_cell v1.21.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m base64 v0.22.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m anes v0.1.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m oorandom v11.1.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m half v2.6.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m walkdir v2.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m clap_builder v4.5.47
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m itertools v0.10.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m ciborium-ll v0.2.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m num-traits v0.2.19
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m quote v1.0.40
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m syn v2.0.106
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m jobserver v0.1.34
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m is-terminal v0.4.16
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m cc v1.2.37
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m regex-automata v0.4.10
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m criterion-plot v0.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m clap v4.5.47
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m libfuzzer-sys v0.4.10
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m serde_path_to_error v0.1.19
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m serde_derive v1.0.223
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m derive_arbitrary v1.4.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m regex v1.11.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m arbitrary v1.4.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m tinytemplate v1.2.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m ciborium v0.2.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m bitflags v2.9.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m ron v0.11.0 (/src/ron)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m criterion v0.5.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m ron-fuzz v0.0.0 (/src/ron/fuzz)
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;9merror[E0599][0m[0m[1m: no variant or associated item named `deserialize` found for enum `serde_core::__private::content::Content<'de>` in the current scope[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:2609:62[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m2609[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                let content = serde::__private::de::Content::deserialize(deserializer)?;[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m                                                              [0m[0m[1m[38;5;9m^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mvariant or associated item not found in `serde_core::__private::content::Content<'_>`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;9merror[E0277][0m[0m[1m: the trait bound `serde_core::__private::content::Content<'_>: serde::Deserialize<'de>` is not satisfied[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:1809:65[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1809[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;9m^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mthe trait `Deserialize<'de>` is not implemented for `serde_core::__private::content::Content<'_>`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for local types consider adding `#[derive(serde::Deserialize)]` to your `serde_core::__private::content::Content<'_>` type[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for types from other crates check whether the crate offers a `serde` feature flag[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: the following other types implement trait `Deserialize<'de>`:[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a RawValue[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a [u8][0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a std::path::Path[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a str[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               ()[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T,)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1, T2)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m             and 150 others[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;10mnote[0m[0m: required by a bound in `next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0m/rust/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.223/src/de/mod.rs:1917:12[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1915[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn next_value<V>(&mut self) -> Result<V, Self::Error>[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m        [0m[0m[1m[38;5;12m----------[0m[0m [0m[0m[1m[38;5;12mrequired by a bound in this associated function[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1916[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    where[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1917[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        V: Deserialize<'de>,[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m            [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `MapAccess::next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;9merror[E0277][0m[0m[1m: the trait bound `serde_core::__private::content::Content<'_>: serde::Deserialize<'de>` is not satisfied[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:1822:57[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1822[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;9m^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mthe trait `Deserialize<'de>` is not implemented for `serde_core::__private::content::Content<'_>`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for local types consider adding `#[derive(serde::Deserialize)]` to your `serde_core::__private::content::Content<'_>` type[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for types from other crates check whether the crate offers a `serde` feature flag[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: the following other types implement trait `Deserialize<'de>`:[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a RawValue[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a [u8][0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a std::path::Path[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a str[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               ()[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T,)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1, T2)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m             and 150 others[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;10mnote[0m[0m: required by a bound in `next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0m/rust/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.223/src/de/mod.rs:1917:12[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1915[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn next_value<V>(&mut self) -> Result<V, Self::Error>[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m        [0m[0m[1m[38;5;12m----------[0m[0m [0m[0m[1m[38;5;12mrequired by a bound in this associated function[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1916[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    where[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1917[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        V: Deserialize<'de>,[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m            [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `MapAccess::next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;9merror[E0277][0m[0m[1m: the trait bound `serde_core::__private::content::Content<'_>: serde::Deserialize<'de>` is not satisfied[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:2500:82[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m2500[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   .push(Some((key, map.next_value()?)));[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m                                            [0m[0m[1m[38;5;9m^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mthe trait `Deserialize<'de>` is not implemented for `serde_core::__private::content::Content<'_>`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for local types consider adding `#[derive(serde::Deserialize)]` to your `serde_core::__private::content::Content<'_>` type[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for types from other crates check whether the crate offers a `serde` feature flag[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: the following other types implement trait `Deserialize<'de>`:[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a RawValue[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a [u8][0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a std::path::Path[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a str[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               ()[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T,)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1, T2)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m             and 150 others[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;10mnote[0m[0m: required by a bound in `next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0m/rust/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.223/src/de/mod.rs:1917:12[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1915[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn next_value<V>(&mut self) -> Result<V, Self::Error>[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m        [0m[0m[1m[38;5;12m----------[0m[0m [0m[0m[1m[38;5;12mrequired by a bound in this associated function[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1916[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    where[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1917[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        V: Deserialize<'de>,[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m            [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `MapAccess::next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;9merror[E0277][0m[0m[1m: the trait bound `serde_core::__private::content::Content<'_>: serde::Deserialize<'de>` is not satisfied[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:2513:77[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m2513[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;9m^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mthe trait `Deserialize<'de>` is not implemented for `serde_core::__private::content::Content<'_>`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for local types consider adding `#[derive(serde::Deserialize)]` to your `serde_core::__private::content::Content<'_>` type[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for types from other crates check whether the crate offers a `serde` feature flag[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: the following other types implement trait `Deserialize<'de>`:[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a RawValue[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a [u8][0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a std::path::Path[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a str[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               ()[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T,)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1, T2)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m             and 150 others[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;10mnote[0m[0m: required by a bound in `next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0m/rust/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.223/src/de/mod.rs:1917:12[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1915[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn next_value<V>(&mut self) -> Result<V, Self::Error>[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m        [0m[0m[1m[38;5;12m----------[0m[0m [0m[0m[1m[38;5;12mrequired by a bound in this associated function[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1916[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    where[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1917[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        V: Deserialize<'de>,[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m            [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `MapAccess::next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;9merror[E0277][0m[0m[1m: the trait bound `serde_core::__private::content::Content<'_>: serde::Deserialize<'de>` is not satisfied[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:3069:77[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m3069[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;9m^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mthe trait `Deserialize<'de>` is not implemented for `serde_core::__private::content::Content<'_>`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for local types consider adding `#[derive(serde::Deserialize)]` to your `serde_core::__private::content::Content<'_>` type[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for types from other crates check whether the crate offers a `serde` feature flag[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: the following other types implement trait `Deserialize<'de>`:[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a RawValue[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a [u8][0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a std::path::Path[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a str[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               ()[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T,)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1, T2)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m             and 150 others[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;10mnote[0m[0m: required by a bound in `next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0m/rust/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.223/src/de/mod.rs:1917:12[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1915[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn next_value<V>(&mut self) -> Result<V, Self::Error>[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m        [0m[0m[1m[38;5;12m----------[0m[0m [0m[0m[1m[38;5;12mrequired by a bound in this associated function[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1916[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    where[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1917[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        V: Deserialize<'de>,[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m            [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `MapAccess::next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;9merror[E0277][0m[0m[1m: the trait bound `serde_core::__private::content::Content<'_>: serde::Deserialize<'de>` is not satisfied[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:3084:69[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m3084[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;9m^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mthe trait `Deserialize<'de>` is not implemented for `serde_core::__private::content::Content<'_>`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for local types consider adding `#[derive(serde::Deserialize)]` to your `serde_core::__private::content::Content<'_>` type[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for types from other crates check whether the crate offers a `serde` feature flag[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: the following other types implement trait `Deserialize<'de>`:[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a RawValue[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a [u8][0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a std::path::Path[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a str[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               ()[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T,)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1, T2)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m             and 150 others[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;10mnote[0m[0m: required by a bound in `next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0m/rust/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.223/src/de/mod.rs:1917:12[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1915[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn next_value<V>(&mut self) -> Result<V, Self::Error>[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m        [0m[0m[1m[38;5;12m----------[0m[0m [0m[0m[1m[38;5;12mrequired by a bound in this associated function[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1916[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    where[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1917[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        V: Deserialize<'de>,[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m            [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `MapAccess::next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;9merror[E0277][0m[0m[1m: the trait bound `serde_core::__private::content::Content<'_>: serde::Deserialize<'de>` is not satisfied[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:3998:73[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m3998[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;9m^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mthe trait `Deserialize<'de>` is not implemented for `serde_core::__private::content::Content<'_>`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for local types consider adding `#[derive(serde::Deserialize)]` to your `serde_core::__private::content::Content<'_>` type[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for types from other crates check whether the crate offers a `serde` feature flag[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: the following other types implement trait `Deserialize<'de>`:[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a RawValue[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a [u8][0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a std::path::Path[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a str[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               ()[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T,)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1, T2)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m             and 150 others[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;10mnote[0m[0m: required by a bound in `next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0m/rust/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.223/src/de/mod.rs:1917:12[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1915[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn next_value<V>(&mut self) -> Result<V, Self::Error>[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m        [0m[0m[1m[38;5;12m----------[0m[0m [0m[0m[1m[38;5;12mrequired by a bound in this associated function[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1916[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    where[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1917[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        V: Deserialize<'de>,[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m            [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `MapAccess::next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;9merror[E0277][0m[0m[1m: the trait bound `serde_core::__private::content::Content<'_>: serde::Deserialize<'de>` is not satisfied[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4013:65[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m4013[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;9m^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mthe trait `Deserialize<'de>` is not implemented for `serde_core::__private::content::Content<'_>`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for local types consider adding `#[derive(serde::Deserialize)]` to your `serde_core::__private::content::Content<'_>` type[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for types from other crates check whether the crate offers a `serde` feature flag[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: the following other types implement trait `Deserialize<'de>`:[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a RawValue[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a [u8][0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a std::path::Path[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a str[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               ()[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T,)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1, T2)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m             and 150 others[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;10mnote[0m[0m: required by a bound in `next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0m/rust/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.223/src/de/mod.rs:1917:12[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1915[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn next_value<V>(&mut self) -> Result<V, Self::Error>[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m        [0m[0m[1m[38;5;12m----------[0m[0m [0m[0m[1m[38;5;12mrequired by a bound in this associated function[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1916[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    where[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1917[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        V: Deserialize<'de>,[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m            [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `MapAccess::next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;9merror[E0277][0m[0m[1m: the trait bound `serde_core::__private::content::Content<'_>: serde::Deserialize<'de>` is not satisfied[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4761:77[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m4761[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;9m^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mthe trait `Deserialize<'de>` is not implemented for `serde_core::__private::content::Content<'_>`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for local types consider adding `#[derive(serde::Deserialize)]` to your `serde_core::__private::content::Content<'_>` type[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for types from other crates check whether the crate offers a `serde` feature flag[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: the following other types implement trait `Deserialize<'de>`:[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a RawValue[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a [u8][0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a std::path::Path[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a str[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               ()[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T,)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1, T2)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m             and 150 others[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;10mnote[0m[0m: required by a bound in `next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0m/rust/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.223/src/de/mod.rs:1917:12[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1915[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn next_value<V>(&mut self) -> Result<V, Self::Error>[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m        [0m[0m[1m[38;5;12m----------[0m[0m [0m[0m[1m[38;5;12mrequired by a bound in this associated function[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1916[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    where[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1917[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        V: Deserialize<'de>,[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m            [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `MapAccess::next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;9merror[E0277][0m[0m[1m: the trait bound `serde_core::__private::content::Content<'_>: serde::Deserialize<'de>` is not satisfied[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4776:69[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m4776[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;9m^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mthe trait `Deserialize<'de>` is not implemented for `serde_core::__private::content::Content<'_>`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for local types consider adding `#[derive(serde::Deserialize)]` to your `serde_core::__private::content::Content<'_>` type[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for types from other crates check whether the crate offers a `serde` feature flag[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: the following other types implement trait `Deserialize<'de>`:[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a RawValue[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a [u8][0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a std::path::Path[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               &'a str[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               ()[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T,)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m               (T0, T1, T2)[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m             and 150 others[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;10mnote[0m[0m: required by a bound in `next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m    [0m[0m[1m[38;5;12m--> [0m[0m/rust/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.223/src/de/mod.rs:1917:12[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1915[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn next_value<V>(&mut self) -> Result<V, Self::Error>[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m        [0m[0m[1m[38;5;12m----------[0m[0m [0m[0m[1m[38;5;12mrequired by a bound in this associated function[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1916[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    where[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1m[38;5;12m1917[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        V: Deserialize<'de>,[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m     [0m[0m[1m[38;5;12m|[0m[0m            [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `MapAccess::next_value`[0m
+Step #3 - "compile-libfuzzer-address-x86_64": 
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1mSome errors have detailed explanations: E0277, E0599.[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [0m[1mFor more information about an error, try `rustc --explain E0277`.[0m
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[31merror[0m[1m:[0m could not compile `ron-fuzz` (bin "arbitrary") due to 11 previous errors
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+Step #3 - "compile-libfuzzer-address-x86_64": Error: failed to build fuzz script: ASAN_OPTIONS="detect_odr_violation=0" RUSTFLAGS=" -Cpasses=sancov-module -Cllvm-args=-sanitizer-coverage-level=4 -Cllvm-args=-sanitizer-coverage-inline-8bit-counters -Cllvm-args=-sanitizer-coverage-pc-table -Cllvm-args=-sanitizer-coverage-trace-compares --cfg fuzzing -Cllvm-args=-simplifycfg-branch-fold-threshold=0 -Zsanitizer=address -Cllvm-args=-sanitizer-coverage-stack-depth -Ccodegen-units=1 --cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers" "cargo" "build" "--manifest-path" "/src/ron/fuzz/Cargo.toml" "--target" "x86_64-unknown-linux-gnu" "--release" "--config" "profile.release.debug=\"line-tables-only\"" "--bins"
+Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
+Step #3 - "compile-libfuzzer-address-x86_64": Failed to build.
+Step #3 - "compile-libfuzzer-address-x86_64": To reproduce, run:
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_image ron
+Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_fuzzers --sanitizer address --engine libfuzzer --architecture x86_64 ron
+Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+ERROR
+ERROR: build step 3 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

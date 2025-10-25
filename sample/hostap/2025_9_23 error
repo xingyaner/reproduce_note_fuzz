@@ -1,0 +1,321 @@
+starting build "68dd1af8-41ba-4fb0-93de-545d550b0aca"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf"
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Sending build context to Docker daemon  5.632kB
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Step 1/5 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": b549f31133a9: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e7c5c1e3302c: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 4d10d210e237: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a0e72f3ecde7: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 29dc64ba5758: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": aeb5712dbfb1: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 2ac0d5abe89f: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 392a9ee6a997: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 130aa5f6198c: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e6dd266af302: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f9f867d1983b: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0cbfb74c6717: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 29dc64ba5758: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f009d5fcbf7c: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": cf96d6c3761b: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": aeb5712dbfb1: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 15700a076335: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 2ac0d5abe89f: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 130aa5f6198c: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 392a9ee6a997: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f89bba1b24a7: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 86fb9281e3f3: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f9f867d1983b: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 309c26e601f8: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e6dd266af302: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0cbfb74c6717: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 7fb381b5997d: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f009d5fcbf7c: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0de482a74ef7: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 17fc4f6ea710: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": cf96d6c3761b: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": bff8c9bba403: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 3bdd50f6b837: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 15700a076335: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a0e72f3ecde7: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e0ad7b16073b: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0a9e3d85d272: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 309c26e601f8: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 7fb381b5997d: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f89bba1b24a7: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": dfb2e61d7c68: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0de482a74ef7: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 86fb9281e3f3: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 9f4f662f63dc: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 17fc4f6ea710: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 3bdd50f6b837: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0aeced434930: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": bff8c9bba403: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e0ad7b16073b: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0a9e3d85d272: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 9eef757c4076: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0aeced434930: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 6b698a788045: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 9f4f662f63dc: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": bc5e6086f3c0: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": dfb2e61d7c68: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e7481b367256: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": bc5e6086f3c0: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a3b71657f2de: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": b9007560d059: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a5ae13fd435c: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a3b71657f2de: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 320c0cc4ab9f: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": b9007560d059: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 11bec1929cef: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a5ae13fd435c: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 11bec1929cef: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f6ec5b54eee1: Pulling fs layer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f6ec5b54eee1: Waiting
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 4d10d210e237: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 4d10d210e237: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": b549f31133a9: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": b549f31133a9: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 29dc64ba5758: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 29dc64ba5758: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a0e72f3ecde7: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a0e72f3ecde7: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 2ac0d5abe89f: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 392a9ee6a997: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 392a9ee6a997: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e7c5c1e3302c: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e7c5c1e3302c: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": b549f31133a9: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e6dd266af302: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e6dd266af302: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f9f867d1983b: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f9f867d1983b: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0cbfb74c6717: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0cbfb74c6717: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f009d5fcbf7c: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f009d5fcbf7c: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": cf96d6c3761b: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 15700a076335: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 15700a076335: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 130aa5f6198c: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 130aa5f6198c: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f89bba1b24a7: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 86fb9281e3f3: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 86fb9281e3f3: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 309c26e601f8: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 309c26e601f8: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 7fb381b5997d: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 7fb381b5997d: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0de482a74ef7: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0de482a74ef7: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 17fc4f6ea710: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 17fc4f6ea710: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": bff8c9bba403: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 3bdd50f6b837: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 3bdd50f6b837: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e0ad7b16073b: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e0ad7b16073b: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0a9e3d85d272: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0a9e3d85d272: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": dfb2e61d7c68: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 9f4f662f63dc: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0aeced434930: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0aeced434930: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 9eef757c4076: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 9eef757c4076: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 6b698a788045: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 6b698a788045: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": bc5e6086f3c0: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e7481b367256: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e7481b367256: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a3b71657f2de: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a3b71657f2de: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": b9007560d059: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": b9007560d059: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a5ae13fd435c: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": aeb5712dbfb1: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": aeb5712dbfb1: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 320c0cc4ab9f: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 320c0cc4ab9f: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e7c5c1e3302c: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 4d10d210e237: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 11bec1929cef: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 11bec1929cef: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f6ec5b54eee1: Verifying Checksum
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f6ec5b54eee1: Download complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a0e72f3ecde7: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 29dc64ba5758: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": aeb5712dbfb1: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 2ac0d5abe89f: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 392a9ee6a997: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 130aa5f6198c: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e6dd266af302: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f9f867d1983b: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0cbfb74c6717: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f009d5fcbf7c: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": cf96d6c3761b: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 15700a076335: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f89bba1b24a7: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 86fb9281e3f3: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 309c26e601f8: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 7fb381b5997d: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0de482a74ef7: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 17fc4f6ea710: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": bff8c9bba403: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 3bdd50f6b837: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e0ad7b16073b: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0a9e3d85d272: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": dfb2e61d7c68: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 9f4f662f63dc: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0aeced434930: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 9eef757c4076: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 6b698a788045: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": bc5e6086f3c0: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": e7481b367256: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a3b71657f2de: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": b9007560d059: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": a5ae13fd435c: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 320c0cc4ab9f: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 11bec1929cef: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": f6ec5b54eee1: Pull complete
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Digest: sha256:c2d93f6861bc383a4b035f84c4a0dbb5cef5e0df319c88e3f2f76da8b8a5a41f
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":  ---> afb78f3bd8a4
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Step 2/5 : RUN apt-get update &&     apt-get install -y make autoconf automake libtool g++ libssl-dev                        libssl-dev:i386
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":  ---> Running in 8ea0791c226f
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Fetched 383 kB in 1s (392 kB/s)
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Reading package lists...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Reading package lists...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Building dependency tree...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Reading state information...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": g++ is already the newest version (4:9.3.0-1ubuntu2).
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": g++ set to manually installed.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": make set to manually installed.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": libssl-dev is already the newest version (1.1.1f-1ubuntu2.24).
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": The following additional packages will be installed:
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":   file gcc-10-base:i386 libc6:i386 libcrypt1:i386 libgcc-s1:i386
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":   libidn2-0:i386 libltdl-dev libltdl7 libmagic-mgc libmagic1 libssl1.1:i386
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":   libunistring2:i386
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Suggested packages:
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":   autoconf-archive gnu-standards autoconf-doc gettext glibc-doc:i386
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":   locales:i386 libtool-doc libssl-doc:i386 gfortran | fortran95-compiler
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":   gcj-jdk
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": The following NEW packages will be installed:
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":   autoconf automake file gcc-10-base:i386 libc6:i386 libcrypt1:i386
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":   libgcc-s1:i386 libidn2-0:i386 libltdl-dev libltdl7 libmagic-mgc libmagic1
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":   libssl-dev:i386 libssl1.1:i386 libtool libunistring2:i386
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": 0 upgraded, 16 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Need to get 7629 kB of archives.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": After this operation, 38.5 MB of additional disk space will be used.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main i386 gcc-10-base i386 10.5.0-1ubuntu1~20.04 [20.8 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main i386 libgcc-s1 i386 10.5.0-1ubuntu1~20.04 [49.4 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:3 http://archive.ubuntu.com/ubuntu focal/main i386 libcrypt1 i386 1:4.4.10-10ubuntu4 [90.9 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main i386 libc6 i386 2.31-0ubuntu9.18 [2581 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:8 http://archive.ubuntu.com/ubuntu focal/main i386 libunistring2 i386 0.9.10-2 [377 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:9 http://archive.ubuntu.com/ubuntu focal/main i386 libidn2-0 i386 2.2.0-2 [51.4 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main i386 libssl1.1 i386 1.1.1f-1ubuntu2.24 [1321 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main i386 libssl-dev i386 1.1.1f-1ubuntu2.24 [1616 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": [0mFetched 7629 kB in 0s (17.6 MB/s)
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package gcc-10-base:i386.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../00-gcc-10-base_10.5.0-1ubuntu1~20.04_i386.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking gcc-10-base:i386 (10.5.0-1ubuntu1~20.04) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libgcc-s1:i386.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../01-libgcc-s1_10.5.0-1ubuntu1~20.04_i386.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libgcc-s1:i386 (10.5.0-1ubuntu1~20.04) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libcrypt1:i386.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../02-libcrypt1_1%3a4.4.10-10ubuntu4_i386.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libcrypt1:i386 (1:4.4.10-10ubuntu4) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libc6:i386.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../03-libc6_2.31-0ubuntu9.18_i386.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libc6:i386 (2.31-0ubuntu9.18) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Replacing files in old package libc6-i386 (2.31-0ubuntu9.18) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../04-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../05-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package file.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../06-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking file (1:5.38-4) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libunistring2:i386.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../07-libunistring2_0.9.10-2_i386.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libunistring2:i386 (0.9.10-2) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libidn2-0:i386.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../08-libidn2-0_2.2.0-2_i386.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libidn2-0:i386 (2.2.0-2) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libssl1.1:i386.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../09-libssl1.1_1.1.1f-1ubuntu2.24_i386.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libssl1.1:i386 (1.1.1f-1ubuntu2.24) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package autoconf.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../10-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package automake.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../11-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../12-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../13-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libssl-dev:i386.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../14-libssl-dev_1.1.1f-1ubuntu2.24_i386.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libssl-dev:i386 (1.1.1f-1ubuntu2.24) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Selecting previously unselected package libtool.
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Preparing to unpack .../15-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up file (1:5.38-4) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up gcc-10-base:i386 (10.5.0-1ubuntu1~20.04) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libcrypt1:i386 (1:4.4.10-10ubuntu4) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libgcc-s1:i386 (10.5.0-1ubuntu1~20.04) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libc6:i386 (2.31-0ubuntu9.18) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libssl1.1:i386 (1.1.1f-1ubuntu2.24) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libunistring2:i386 (0.9.10-2) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libidn2-0:i386 (2.2.0-2) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Setting up libssl-dev:i386 (1.1.1f-1ubuntu2.24) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Removing intermediate container 8ea0791c226f
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":  ---> 8e5be7e686bf
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": Step 3/5 : RUN git clone --depth 1 git://w1.fi/srv/git/hostap.git hostap
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf":  ---> Running in 5ddf36025d29
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": [91mCloning into 'hostap'...
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": [0m[91mfatal: read error: Connection reset by peer
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": The command '/bin/sh -c git clone --depth 1 git://w1.fi/srv/git/hostap.git hostap' returned a non-zero code: 128
+Finished Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 128
+Step #1 - "build-3a5640c3-d598-452d-8848-26ac02131fdf": [0m
