@@ -1,0 +1,280 @@
+Progress (1): 1.0/1.6 MB
+Progress (1): 1.0/1.6 MB
+Progress (1): 1.0/1.6 MB
+Progress (1): 1.0/1.6 MB
+Progress (1): 1.0/1.6 MB
+Progress (1): 1.0/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.1/1.6 MB
+Progress (1): 1.2/1.6 MB
+Progress (1): 1.2/1.6 MB
+Progress (1): 1.2/1.6 MB
+Progress (1): 1.2/1.6 MB
+Progress (1): 1.2/1.6 MB
+Progress (1): 1.2/1.6 MB
+Progress (1): 1.2/1.6 MB
+Progress (1): 1.2/1.6 MB
+Progress (1): 1.2/1.6 MB
+Progress (1): 1.2/1.6 MB
+Progress (1): 1.2/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.3/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.4/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.5/1.6 MB
+Progress (1): 1.6/1.6 MB
+Progress (1): 1.6/1.6 MB
+Progress (1): 1.6/1.6 MB
+Progress (1): 1.6/1.6 MB
+Progress (1): 1.6 MB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/6.5.1/woodstox-core-6.5.1.jar (1.6 MB at 706 kB/s)
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for Apache CXF 4.1.4-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Apache CXF ......................................... [1;32mSUCCESS[m [ 24.851 s]
+[[1;34mINFO[m] Apache CXF BOM ..................................... [1;32mSUCCESS[m [  0.008 s]
+[[1;34mINFO[m] Apache CXF Parent .................................. [1;32mSUCCESS[m [03:48 min]
+[[1;34mINFO[m] Apache CXF Core .................................... [1;32mSUCCESS[m [02:59 min]
+[[1;34mINFO[m] Apache CXF Runtime Core for WSDL ................... [1;32mSUCCESS[m [  5.663 s]
+[[1;34mINFO[m] Apache CXF Command Line Tools Common ............... [1;32mSUCCESS[m [  7.954 s]
+[[1;34mINFO[m] Apache CXF Runtime JAXB DataBinding ................ [1;32mSUCCESS[m [  4.114 s]
+[[1;34mINFO[m] Apache CXF Runtime SOAP Binding .................... [1;32mSUCCESS[m [  2.246 s]
+[[1;34mINFO[m] Apache CXF Command Line Tools Validator ............ [1;32mSUCCESS[m [  1.299 s]
+[[1;34mINFO[m] Apache CXF Command Line Tools WSDLTo Core .......... [1;32mSUCCESS[m [  1.611 s]
+[[1;34mINFO[m] Apache CXF Command Line Tools WSDLTo JAXWS Frontend  [1;32mSUCCESS[m [  4.349 s]
+[[1;34mINFO[m] Apache CXF Runtime JavaScript Client Generator Projects [1;32mSUCCESS[m [  0.058 s]
+[[1;34mINFO[m] Apache CXF Runtime JavaScript Client Generator ..... [1;32mSUCCESS[m [  1.101 s]
+[[1;34mINFO[m] Apache CXF Command Line Tools WSDL to JavaScript Front End [1;32mSUCCESS[m [  0.824 s]
+[[1;34mINFO[m] Apache CXF Command Line Tools WSDLTo JAXB Databinding [1;32mSUCCESS[m [  0.871 s]
+[[1;34mINFO[m] Apache CXF Maven Plugins ........................... [1;32mSUCCESS[m [  0.017 s]
+[[1;34mINFO[m] Apache CXF Code Generation Maven2 Plugins .......... [1;32mSUCCESS[m [04:01 min]
+[[1;34mINFO[m] Apache CXF Test Utilities .......................... [1;32mSUCCESS[m [01:06 min]
+[[1;34mINFO[m] Apache CXF Runtime Management ...................... [1;32mSUCCESS[m [  1.554 s]
+[[1;34mINFO[m] Apache CXF Runtime JMS Transport ................... [1;32mSUCCESS[m [ 18.279 s]
+[[1;34mINFO[m] Apache CXF Runtime XML Binding ..................... [1;32mSUCCESS[m [  1.189 s]
+[[1;34mINFO[m] Apache CXF Runtime WS Policy ....................... [1;32mSUCCESS[m [  7.847 s]
+[[1;34mINFO[m] Apache CXF Runtime HTTP Transport .................. [1;31mFAILURE[m [ 22.520 s]
+[[1;34mINFO[m] Apache CXF Command Line Tools WSDLTo Test .......... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Command Line Tools WSDLTo Misctools ..... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Command Line Tools ...................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Command Line Tools WSDLTo ............... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Advanced Logging Feature ................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime Local Transport ................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime Simple Frontend ................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime HTTP Jetty Transport ............ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime WS Addressing ................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime JAX-WS Frontend ................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime Aegis Databinding ............... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Command Line Tools JavaTo WS ............ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Command Line Tools JavaTo ............... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime Security functionality .......... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime JAX-RS Frontend ................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Extensions: JSON Basic ........... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Extensions: Providers ............ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Service Description .............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Command Line Tools WADLTo JAXRS Frontend  [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Command Line Tools WADLTo ............... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime CORBA Binding ................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Command Line Tools CORBA ................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime HTTP Undertow Transport ......... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime HTTP Async Transport ............ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime HTTP Async Transport ............ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime HTTP Netty Server Transport ..... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime HTTP Netty Client Transport ..... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime UDP Transport ................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime WebSocket Transport ............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime ................................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Transports Runtime ...................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Databinding Runtime ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime Colocated Binding ............... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime Bindings ........................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime Clustering ...................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Metrics Feature ......................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Throttling Feature ...................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Features Runtime ........................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime JavaScript Frontend ............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Frontend Runtime ........................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime SAML Security functionality ..... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime WS MetadataExchange ............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime WS Security ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime WS Reliable Messaging ........... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime WS Eventing ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime WS Transfer ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Web Services Runtime .................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Client ........................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Servlet Container Initializer .... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Extensions: Search ............... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Extensions: RxJava ............... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Extensions: Reactive Streams ..... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Extensions: RxJava2 .............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Extensions: RxJava3 .............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Extensions: Project Reactor ...... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF RS XML Security ......................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime JOSE Core ....................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime JOSE JAX-RS ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Rest Runtime ............................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Rest Security Runtime ................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JOSE Security parent .................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime RS Security OAuth Parent ........ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime OAuth 2.0 ....................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime OAuth 2.0 SAML .................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF RS SSO SAML ............................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime OpenId Connect .................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF RS Cross-Origin Resource Sharing ........ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime Http-Signature .................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Server-Side Events Support ....... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Service Description OpenAPI/Swagger Common [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Service Description Swagger UI integration [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Service Description OpenAPI v3 ... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF MicroProfile Client ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS Service Description Microprofile OpenAPI [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Runtime JavaScript Client Generator Tests [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JCA Connection .......................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CDI Integration ......................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Distributed Tracing using OpenZipkin Brave [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Distributed Tracing using OpenTracing ... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Distributed Tracing using OpenTelemetry . [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Observability using Micrometer Observation [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Spring Boot Autoconfigure ............... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Spring Boot Starter JAX-WS .............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Spring Boot Starter JAX-RS .............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Integration ............................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Spring Boot Integration ................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Java2WS Maven2 Plugin ................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Java2WADL Maven2 Plugin ................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WSDL Validator Maven2 Plugin ............ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CORBA Tools Maven2 Plugins .............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Archetype - Simple JAX-WS Java First .... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Archetype - Simple JAX-WS Java First .... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Archetype - Simple JAX-RS webapp ........ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Maven Archetypes ........................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WADL2Java Code Generation Maven2 Plugin . [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF STS Core ................................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF STS basic systests ...................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF STS advanced systests ................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF STS test OSGi deployment ................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Services ................................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF STS service ............................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF STS systests ............................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WSN API ................................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WSN Core ................................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WSN OSGi ................................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WSN service ............................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WS-Discovery API ........................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WS-Discovery Service .................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WS-Discovery ............................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF XKMS Common ............................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF XKMS X509 Handlers ...................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF XKMS Service ............................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF XKMS Client ............................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF XKMS LDAP repository .................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF XKMS Service war deployment ............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF XKMS .................................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Container Integration System Tests ...... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Container Integration Test Webapp ....... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Container Integration Test Grizzly ...... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Uncategorized System Tests .............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Transport System Tests .................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Forked System Tests ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Undertow Transport System Tests ......... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-WS System Tests ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Databinding System Tests ................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WS-* Specifications System Tests ........ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WS-RM Specifications System Tests ....... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WS-Security System Tests ................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WS-Security Interop System Tests ........ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Kerberos Integration System Tests ....... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF LDAP Integration System Tests ........... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS System Advanced Security Tests ... [1;33mSKIPPED[m
+[[1;34mINFO[m] Test for writing wsdl to repo ...................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Test for generating code from wsdl in repo ......... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF System Tests ............................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF System Tests for Maven Plugins .......... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CDI Integration System Tests ............ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CDI Integration System Tests - Base ..... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CDI Integration System Tests - Weld ..... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CDI Integration System Tests - Weld with multiple apps [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CDI Integration System Tests - Weld with no apps [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CDI Integration System Tests - Weld with producers [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CDI Integration System Tests - OWB ...... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CDI Integration System Tests - OWB with multiple apps [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CDI Integration System Tests - OWB with no apps [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF CDI Integration System Tests - OWB with producers [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Servlet Container Initializer Integration System Tests [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Distributed Tracing Integration System Tests [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF WS-Transfer System Tests ................ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF SSE Integration System Tests ............ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF SSE Integration System Tests base classes [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF SSE Integration System Tests for Tomcat . [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF SSE Integration System Tests for Jetty .. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF SSE Integration System Tests for Undertow [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF MicroProfile TCKs ....................... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF MicroProfile Async Sys Tests ............ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF MicroProfile JAX-RS integration Sys Tests [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF MicroProfile Tracing integration Sys Tests [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF System Tests - MicroProfile Rest Client TCK on Weld [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF MicroProfile No-CDI/Config Sys Tests .... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Spring Boot Integration System Tests .... [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Netty Transport System Tests ............ [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Apache HttpClient 5.x Transport System Tests [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF Transport System Tests JMS .............. [1;33mSKIPPED[m
+[[1;34mINFO[m] Apache CXF JAX-RS System Tests ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  15:46 min
+[[1;34mINFO[m] Finished at: 2025-10-26T07:04:24Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32mcom.googlecode.maven-download-plugin:download-maven-plugin:1.13.0:wget[m [1m(download-public-suffix-list)[m on project [36mcxf-rt-transports-http[m: [1;31mConnect to publicsuffix.org:443 [publicsuffix.org/198.18.0.42] failed: Read timed out[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[[1;31mERROR[m] 
+[[1;31mERROR[m] After correcting the problems, you can resume the build with the command
+[[1;31mERROR[m]   [1mmvn <args> -rf :cxf-rt-transports-http[m
+ERROR:__main__:Building fuzzers failed.

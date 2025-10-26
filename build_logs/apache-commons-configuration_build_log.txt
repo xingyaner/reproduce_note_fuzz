@@ -1,0 +1,127 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/apache-commons-configuration --file /root/reproduce_note_fuzz/oss-fuzz/projects/apache-commons-configuration/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/apache-commons-configuration.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.34kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-jvm:latest
+#2 DONE 6.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [ 1/18] FROM gcr.io/oss-fuzz-base/base-builder-jvm:latest@sha256:2d4a04773feb030afbe924a3987a706745085610355663a9611dcd5fb38110da
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 474B done
+#5 DONE 0.0s
+
+#6 [16/18] COPY build.sh /src/
+#6 CACHED
+
+#7 [ 4/18] RUN git clone --depth=1 "https://github.com/google/fuzzing" fuzzing
+#7 CACHED
+
+#8 [ 9/18] RUN cp /src/JSONConfigurationReadFuzzer.dict /src/JSONConfigurationWriteFuzzer.dict
+#8 CACHED
+
+#9 [15/18] RUN cp /src/JSONConfigurationReadFuzzer_seed_corpus.zip /src/JSONConfigurationWriteFuzzer_seed_corpus.zip
+#9 CACHED
+
+#10 [ 3/18] RUN git clone --depth=1 "https://gitbox.apache.org/repos/asf/commons-configuration.git" commons-configuration
+#10 CACHED
+
+#11 [ 8/18] RUN cp fuzzing/dictionaries/json.dict /src/JSONConfigurationReadFuzzer.dict
+#11 CACHED
+
+#12 [ 6/18] RUN cp fuzzing/dictionaries/yaml.dict /src/YAMLConfigurationReadFuzzer.dict
+#12 CACHED
+
+#13 [10/18] COPY ini.dict /src/INIConfigurationReadFuzzer.dict
+#13 CACHED
+
+#14 [14/18] RUN zip -q /src/JSONConfigurationReadFuzzer_seed_corpus.zip corpora/json/corpus/*
+#14 CACHED
+
+#15 [ 2/18] RUN curl -L https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip -o maven.zip &&     unzip maven.zip -d /src/maven &&     rm -f maven.zip
+#15 CACHED
+
+#16 [13/18] RUN zip -q /src/XMLConfigurationLoadFuzzer_seed_corpus.zip corpora/xml/corpus/*
+#16 CACHED
+
+#17 [ 5/18] RUN cp fuzzing/dictionaries/xml.dict /src/XMLConfigurationLoadFuzzer.dict
+#17 CACHED
+
+#18 [ 7/18] RUN cp /src/YAMLConfigurationReadFuzzer.dict /src/YAMLConfigurationWriteFuzzer.dict
+#18 CACHED
+
+#19 [17/18] COPY *Fuzzer.java /src/
+#19 CACHED
+
+#20 [12/18] RUN git clone --depth=1 "https://github.com/dvyukov/go-fuzz-corpus" corpora
+#20 CACHED
+
+#21 [11/18] RUN cp /src/INIConfigurationReadFuzzer.dict /src/INIConfigurationWriteFuzzer.dict
+#21 CACHED
+
+#22 [18/18] WORKDIR /src/commons-configuration
+#22 CACHED
+
+#23 exporting to image
+#23 exporting layers done
+#23 writing image sha256:ab89a50f51f791163b7b4f6cdf2f0544fdd5d0c15cf609b90ef9959e6049aef3 done
+#23 naming to gcr.io/oss-fuzz/apache-commons-configuration done
+#23 DONE 0.0s
+
+ [33m2 warnings found (use docker --debug to expand):
+[0m - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 24)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 25)
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=apache-commons-configuration -e HELPER=True -e FUZZING_LANGUAGE=jvm -v /root/reproduce_note_fuzz/oss-fuzz/build/out/apache-commons-configuration/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/apache-commons-configuration:/work -t gcr.io/oss-fuzz/apache-commons-configuration.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+---------------------------------------------------------------
+CC=clang
+CXX=clang++
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=leak
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=leak
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ mv /src/JSONConfigurationReadFuzzer_seed_corpus.zip /src/JSONConfigurationWriteFuzzer_seed_corpus.zip /src/XMLConfigurationLoadFuzzer_seed_corpus.zip /src/INIConfigurationReadFuzzer.dict /src/INIConfigurationWriteFuzzer.dict /src/JSONConfigurationReadFuzzer.dict /src/JSONConfigurationWriteFuzzer.dict /src/XMLConfigurationLoadFuzzer.dict /src/YAMLConfigurationReadFuzzer.dict /src/YAMLConfigurationWriteFuzzer.dict /out
++ MAVEN_ARGS='--no-transfer-progress -Dmaven.test.skip=true -Djavac.src.version=15 -Djavac.target.version=15 -Djdk.version=15'
+++ /src/maven/apache-maven-3.6.3/bin/mvn org.apache.maven.plugins:maven-help-plugin:3.2.0:evaluate -Dexpression=project.version -q -DforceStdout
++ CURRENT_VERSION=2.13.0-SNAPSHOT
++ /src/maven/apache-maven-3.6.3/bin/mvn clean package org.apache.maven.plugins:maven-shade-plugin:3.2.4:shade --no-transfer-progress -Dmaven.test.skip=true -Djavac.src.version=15 -Djavac.target.version=15 -Djdk.version=15
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------< [0;36morg.apache.commons:commons-configuration2[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons Configuration 2.13.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;33mWARNING[m] The artifact org.slf4j:slf4j-log4j12:jar:2.0.17 has been relocated to org.slf4j:slf4j-reload4j:jar:2.0.17
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.5.0:clean[m [1m(default-clean)[m @ [36mcommons-configuration2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.5.0:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-configuration2[0;1m ---[m
+[[1;34mINFO[m] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.5.0:enforce[m [1m(enforce-java-version)[m @ [36mcommons-configuration2[0;1m ---[m
+[[1;34mINFO[m] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.16.1:check[m [1m(rat-check)[m @ [36mcommons-configuration2[0;1m ---[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  04:51 min
+[[1;34mINFO[m] Finished at: 2025-10-25T11:10:44Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.rat:apache-rat-plugin:0.16.1:check[m [1m(rat-check)[m on project [36mcommons-configuration2[m: [1;31mExecution rat-check of goal org.apache.rat:apache-rat-plugin:0.16.1:check failed: Plugin org.apache.rat:apache-rat-plugin:0.16.1 or one of its dependencies could not be resolved: Could not transfer artifact org.apache.commons:commons-collections4:jar:4.4 from/to central (https://repo.maven.apache.org/maven2): Transfer failed for https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar[m: Connect to repo.maven.apache.org:443 [repo.maven.apache.org/198.18.0.18] failed: Connection timed out -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException
+ERROR:__main__:Building fuzzers failed.
