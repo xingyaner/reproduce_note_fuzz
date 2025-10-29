@@ -1,0 +1,172 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/glaze --file /root/reproduce_note_fuzz/oss-fuzz/projects/glaze/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/glaze.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 920B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder:latest
+#2 DONE 0.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM gcr.io/oss-fuzz-base/base-builder:latest@sha256:851574c79285419658880ee57f5691ac23ae53216dea600ffb372395532f3ff6
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 1.91kB done
+#5 DONE 0.0s
+
+#6 [2/4] RUN git clone --depth 1 https://github.com/stephenberry/glaze
+#6 0.124 Cloning into 'glaze'...
+#6 DONE 1.9s
+
+#7 [3/4] WORKDIR glaze
+#7 DONE 0.1s
+
+#8 [4/4] COPY build.sh run_tests.sh /src/
+#8 DONE 0.1s
+
+#9 exporting to image
+#9 exporting layers 0.1s done
+#9 writing image sha256:7c2c627e691e5ca05bdb3d057a00479c6f925f3379b1089bd1b103297a2cd46b done
+#9 naming to gcr.io/oss-fuzz/glaze done
+#9 DONE 0.1s
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - WorkdirRelativePath: Relative workdir "glaze" can have unexpected results if the base image changes (line 20)
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=glaze -e HELPER=True -e FUZZING_LANGUAGE=c++ -v /root/reproduce_note_fuzz/oss-fuzz/build/out/glaze/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/glaze:/work -t gcr.io/oss-fuzz/glaze.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+---------------------------------------------------------------
+CC=clang
+CXX=clang++
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ sed -i '/add_subdirectory(networking_tests)/d' ./tests/CMakeLists.txt
++ sed -i '/target_compile_options(glz_test_common INTERFACE -fno-exceptions -fno-rtti)/d' ./tests/CMakeLists.txt
++ mkdir build
++ cmake -B build -DCMAKE_BUILD_TYPE=Release
+-- The CXX compiler identification is Clang 22.0.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/local/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Fetching dependencies...
+-- ...finished fetching dependencies.
+-- The C compiler identification is Clang 22.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/local/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test haslibfuzzer
+-- Performing Test haslibfuzzer - Success
+-- Configuring done (8.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /src/glaze/build
+++ nproc
++ cmake --build build --config Release -j16
+[  1%] [32mBuilding CXX object CMakeFiles/glaze_ide.dir/src/main.cpp.o[0m
+[  2%] [32mBuilding CXX object tests/api_test/CMakeFiles/api_test.dir/api_test.cpp.o[0m
+[  3%] [32mBuilding CXX object tests/beve_test/CMakeFiles/beve_test.dir/beve_test.cpp.o[0m
+[  6%] [32mBuilding CXX object tests/compare_test/CMakeFiles/compare_test.dir/compare_test.cpp.o[0m
+[  6%] [32mBuilding CXX object tests/cli_menu_test/CMakeFiles/cli_menu_test.dir/cli_menu_test.cpp.o[0m
+[  6%] [32mBuilding CXX object tests/csv_test/CMakeFiles/csv_test.dir/csv_test.cpp.o[0m
+[  7%] [32mBuilding CXX object tests/eigen_test/CMakeFiles/eigen_test.dir/eigen_test.cpp.o[0m
+[  8%] [32mBuilding CXX object tests/exceptions_test/CMakeFiles/exceptions_test.dir/exceptions_test.cpp.o[0m
+[  9%] [32mBuilding CXX object tests/inplace_vector/CMakeFiles/inplace_vector_test.dir/inplace_vector_test.cpp.o[0m
+[ 10%] [32mBuilding CXX object tests/int_parsing/CMakeFiles/int_parsing.dir/int_parsing.cpp.o[0m
+[ 12%] [32mBuilding CXX object tests/inplace_vector/CMakeFiles/inplace_vector_test_noexceptions.dir/inplace_vector_test.cpp.o[0m
+[ 12%] [32mBuilding CXX object tests/jsonrpc_test/CMakeFiles/jsonrpc_test.dir/jsonrpc_test.cpp.o[0m
+[ 13%] [32mBuilding CXX object tests/key_transformers_test/CMakeFiles/key_transformers_test.dir/key_transformers_test.cpp.o[0m
+[ 17%] [32mBuilding CXX object tests/jmespath/CMakeFiles/jmespath.dir/jmespath.cpp.o[0m
+[ 17%] [32mBuilding CXX object tests/lib_test/test_lib/CMakeFiles/test_lib.dir/test_lib.cpp.o[0m
+[ 17%] [32mBuilding CXX object tests/example_json/CMakeFiles/example_json.dir/example_json.cpp.o[0m
+[ 18%] [32m[1mLinking CXX executable compare_test[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/compare_test/CMakeFiles/compare_test.dir/build.make:97: tests/compare_test/compare_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1498: tests/compare_test/CMakeFiles/compare_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 19%] [32m[1mLinking CXX executable glaze_ide[0m
+[ 19%] Built target glaze_ide
+[ 20%] [32m[1mLinking CXX executable cli_menu_test[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/cli_menu_test/CMakeFiles/cli_menu_test.dir/build.make:97: tests/cli_menu_test/cli_menu_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1472: tests/cli_menu_test/CMakeFiles/cli_menu_test.dir/all] Error 2
+[ 21%] [32m[1mLinking CXX executable key_transformers_test[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/key_transformers_test/CMakeFiles/key_transformers_test.dir/build.make:97: tests/key_transformers_test/key_transformers_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1758: tests/key_transformers_test/CMakeFiles/key_transformers_test.dir/all] Error 2
+[ 22%] [32m[1mLinking CXX executable inplace_vector_test[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/inplace_vector/CMakeFiles/inplace_vector_test.dir/build.make:97: tests/inplace_vector/inplace_vector_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1628: tests/inplace_vector/CMakeFiles/inplace_vector_test.dir/all] Error 2
+[ 23%] [32m[1mLinking CXX executable int_parsing[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/int_parsing/CMakeFiles/int_parsing.dir/build.make:97: tests/int_parsing/int_parsing] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1680: tests/int_parsing/CMakeFiles/int_parsing.dir/all] Error 2
+[ 24%] [32m[1mLinking CXX shared library /src/glaze/bin/libtest_lib.so[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/lib_test/test_lib/CMakeFiles/test_lib.dir/build.make:97: /src/glaze/bin/libtest_lib.so] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1810: tests/lib_test/test_lib/CMakeFiles/test_lib.dir/all] Error 2
+[ 25%] [32m[1mLinking CXX executable inplace_vector_test_noexceptions[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/inplace_vector/CMakeFiles/inplace_vector_test_noexceptions.dir/build.make:97: tests/inplace_vector/inplace_vector_test_noexceptions] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1654: tests/inplace_vector/CMakeFiles/inplace_vector_test_noexceptions.dir/all] Error 2
+[ 26%] [32m[1mLinking CXX executable exceptions_test[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/exceptions_test/CMakeFiles/exceptions_test.dir/build.make:97: tests/exceptions_test/exceptions_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1602: tests/exceptions_test/CMakeFiles/exceptions_test.dir/all] Error 2
+[ 27%] [32m[1mLinking CXX executable eigen_test[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/eigen_test/CMakeFiles/eigen_test.dir/build.make:97: tests/eigen_test/eigen_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1550: tests/eigen_test/CMakeFiles/eigen_test.dir/all] Error 2
+[ 28%] [32m[1mLinking CXX executable jmespath[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/jmespath/CMakeFiles/jmespath.dir/build.make:97: tests/jmespath/jmespath] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1706: tests/jmespath/CMakeFiles/jmespath.dir/all] Error 2
+[ 29%] [32m[1mLinking CXX executable api_test[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/api_test/CMakeFiles/api_test.dir/build.make:97: tests/api_test/api_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1420: tests/api_test/CMakeFiles/api_test.dir/all] Error 2
+[ 30%] [32m[1mLinking CXX executable jsonrpc_test[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/jsonrpc_test/CMakeFiles/jsonrpc_test.dir/build.make:97: tests/jsonrpc_test/jsonrpc_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1732: tests/jsonrpc_test/CMakeFiles/jsonrpc_test.dir/all] Error 2
+[ 31%] [32m[1mLinking CXX executable example_json[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/example_json/CMakeFiles/example_json.dir/build.make:97: tests/example_json/example_json] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1576: tests/example_json/CMakeFiles/example_json.dir/all] Error 2
+[ 32%] [32m[1mLinking CXX executable csv_test[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/csv_test/CMakeFiles/csv_test.dir/build.make:97: tests/csv_test/csv_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1524: tests/csv_test/CMakeFiles/csv_test.dir/all] Error 2
+[ 34%] [32m[1mLinking CXX executable beve_test[0m
+/usr/bin/ld: cannot find -lglz_asio
+clang++: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make[2]: *** [tests/beve_test/CMakeFiles/beve_test.dir/build.make:97: tests/beve_test/beve_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1446: tests/beve_test/CMakeFiles/beve_test.dir/all] Error 2
+make: *** [Makefile:166: all] Error 2
+ERROR:__main__:Building fuzzers failed.

@@ -1,0 +1,59 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/gateway --file /root/reproduce_note_fuzz/oss-fuzz/projects/gateway/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/gateway.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.16kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-go:latest
+#2 DONE 1.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM gcr.io/oss-fuzz-base/base-builder-go:latest@sha256:66437e689fab89814a5ceeab586d98dd622e63b1ac493c44482e4ae56dc3d23b
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 30B done
+#5 DONE 0.0s
+
+#6 [2/4] RUN wget https://go.dev/dl/go1.24.0.linux-amd64.tar.gz     && mkdir temp-go     && rm -rf /root/.go/*     && tar -C temp-go/ -xzf go1.24.0.linux-amd64.tar.gz     && mv temp-go/go/* /root/.go/     && rm -rf temp-go go1.24.0.linux-amd64.tar.gz     && apt-get update     && apt-get install -y btrfs-progs libbtrfs-dev
+#6 CACHED
+
+#7 [3/4] RUN git clone --depth 1 https://github.com/envoyproxy/gateway.git
+#7 CACHED
+
+#8 [4/4] COPY build.sh /src/
+#8 CACHED
+
+#9 exporting to image
+#9 exporting layers done
+#9 writing image sha256:8bb4307a3daa78c418a18e6cc76e0f82bf28d222c0cd6a081f0ff843e5c2d021 done
+#9 naming to gcr.io/oss-fuzz/gateway done
+#9 DONE 0.0s
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=gateway -e HELPER=True -e FUZZING_LANGUAGE=go -v /root/reproduce_note_fuzz/oss-fuzz/build/out/gateway/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/gateway:/work -t gcr.io/oss-fuzz/gateway.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+---------------------------------------------------------------
+CC=clang
+CXX=clang++ -lresolv
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ /src/gateway/test/fuzz/oss_fuzz_build.sh
++ compile_native_go_fuzzer_v2 github.com/envoyproxy/gateway/test/fuzz FuzzGatewayAPIToXDS FuzzGatewayAPIToXDS
+go: downloading go1.25.3 (linux/amd64)
+renaming _test.go file in fuzzer dir:  /src/gateway/test/fuzz/xds_fuzz_test.go
+Running go  [build -buildmode c-archive -tags gofuzz_libfuzzer,libfuzzer,gofuzz -trimpath -gcflags all=-d=libfuzzer -gcflags syscall=-d=libfuzzer=0 -gcflags runtime/cgo=-d=libfuzzer=0 -gcflags runtime/pprof=-d=libfuzzer=0 -overlay /tmp/gofuzzbuild2039231085/ossFuzzOverlayFile.json2917063070 -o FuzzGatewayAPIToXDS.a ./main.1582487309.go]
+go: overlay contains a replacement for /root/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.25.3.linux-amd64/src/testing/fuzz.go. Files beneath GOMODCACHE (/root/go/pkg/mod) must not be replaced.
+panic: exit status 1
+
+goroutine 1 [running]:
+main.main()
+	/tmp/go-118-fuzz-build/main.go:196 +0x140e
+ERROR:__main__:Building fuzzers failed.

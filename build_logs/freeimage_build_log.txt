@@ -1,0 +1,22 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/freeimage --file /root/reproduce_note_fuzz/oss-fuzz/projects/freeimage/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/freeimage.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.22kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder:latest
+#2 ERROR: failed to do request: Head "https://gcr.io/v2/oss-fuzz-base/base-builder/manifests/latest": net/http: TLS handshake timeout
+------
+ > [internal] load metadata for gcr.io/oss-fuzz-base/base-builder:latest:
+------
+Dockerfile:17
+--------------------
+  15 |     ################################################################################
+  16 |     
+  17 | >>> FROM gcr.io/oss-fuzz-base/base-builder
+  18 |     RUN apt-get update && apt-get install -y make autoconf automake libtool wget dos2unix
+  19 |     RUN svn checkout https://svn.code.sf.net/p/freeimage/svn/ freeimage-svn
+--------------------
+ERROR: failed to build: failed to solve: gcr.io/oss-fuzz-base/base-builder: failed to resolve source metadata for gcr.io/oss-fuzz-base/base-builder:latest: failed to do request: Head "https://gcr.io/v2/oss-fuzz-base/base-builder/manifests/latest": net/http: TLS handshake timeout
+ERROR:__main__:Docker build failed.

@@ -1,0 +1,280 @@
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:432:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  432 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, flagsStride, dataPtr, w_, [0;32m2[0m, [0;32m6[0m, [0;32mfalse[0m); \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:47:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   47 |       UPDATE_FLAGS(flags, flagsPtr, ci, v, flagsStride, vsc);                                  \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_base.h:155:18: [0m[0;1;36mnote: [0mexpanded from macro 'UPDATE_FLAGS'[0m
+  155 |     flags |= ((s << T1_CHI_1_I) | T1_SIGMA_4) << (ci);    \[0m
+      | [0;1;32m               ~~^~~~~~~~~~~~~  ~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:432:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  432 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, flagsStride, dataPtr, w_, [0;32m2[0m, [0;32m6[0m, [0;32mfalse[0m); \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:47:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   47 |       UPDATE_FLAGS(flags, flagsPtr, ci, v, flagsStride, vsc);                                  \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_base.h:162:20: [0m[0;1;36mnote: [0mexpanded from macro 'UPDATE_FLAGS'[0m
+  162 |       *north |= (s << T1_CHI_5_I) | T1_SIGMA_16;          \[0m
+      | [0;1;32m                 ~~^~~~~~~~~~~~~  ~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:432:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  432 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, flagsStride, dataPtr, w_, [0;32m2[0m, [0;32m6[0m, [0;32mfalse[0m); \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:47:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   47 |       UPDATE_FLAGS(flags, flagsPtr, ci, v, flagsStride, vsc);                                  \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_base.h:170:20: [0m[0;1;36mnote: [0mexpanded from macro 'UPDATE_FLAGS'[0m
+  170 |       *south |= (s << T1_CHI_0_I) | T1_SIGMA_1;           \[0m
+      | [0;1;32m                 ~~^~~~~~~~~~~~~  ~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:434:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  434 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, flagsStride, dataPtr, w_, [0;32m3[0m, [0;32m9[0m, [0;32mfalse[0m); \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:36:9: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   36 |         DEC_SYMBOL(v, mqc, curctx, a, c, ct);                                                  \[0m
+      | [0;1;32m        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:336:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_SYMBOL'[0m
+  336 |       DEC_RENORM(mqc, a, c, ct);                     \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:307:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_RENORM'[0m
+  307 |           DEC_BYTEIN(mqc, c, ct);            \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:289:17: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_BYTEIN'[0m
+  289 |       c += next << ([0;32m8[0m + curff);                                                         \[0m
+      | [0;1;32m        ~~ ~~~~~^~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:434:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  434 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, flagsStride, dataPtr, w_, [0;32m3[0m, [0;32m9[0m, [0;32mfalse[0m); \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:36:9: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   36 |         DEC_SYMBOL(v, mqc, curctx, a, c, ct);                                                  \[0m
+      | [0;1;32m        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:346:9: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_SYMBOL'[0m
+  346 |         DEC_RENORM(mqc, a, c, ct);                   \[0m
+      | [0;1;32m        ^~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:307:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_RENORM'[0m
+  307 |           DEC_BYTEIN(mqc, c, ct);            \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:289:17: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_BYTEIN'[0m
+  289 |       c += next << ([0;32m8[0m + curff);                                                         \[0m
+      | [0;1;32m        ~~ ~~~~~^~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:434:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  434 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, flagsStride, dataPtr, w_, [0;32m3[0m, [0;32m9[0m, [0;32mfalse[0m); \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:44:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   44 |       DEC_SYMBOL(v, mqc, curctx, a, c, ct);                                                    \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:336:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_SYMBOL'[0m
+  336 |       DEC_RENORM(mqc, a, c, ct);                     \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:307:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_RENORM'[0m
+  307 |           DEC_BYTEIN(mqc, c, ct);            \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:289:17: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_BYTEIN'[0m
+  289 |       c += next << ([0;32m8[0m + curff);                                                         \[0m
+      | [0;1;32m        ~~ ~~~~~^~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:434:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  434 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, flagsStride, dataPtr, w_, [0;32m3[0m, [0;32m9[0m, [0;32mfalse[0m); \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:44:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   44 |       DEC_SYMBOL(v, mqc, curctx, a, c, ct);                                                    \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:346:9: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_SYMBOL'[0m
+  346 |         DEC_RENORM(mqc, a, c, ct);                   \[0m
+      | [0;1;32m        ^~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:307:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_RENORM'[0m
+  307 |           DEC_BYTEIN(mqc, c, ct);            \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:289:17: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_BYTEIN'[0m
+  289 |       c += next << ([0;32m8[0m + curff);                                                         \[0m
+      | [0;1;32m        ~~ ~~~~~^~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:434:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  434 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, flagsStride, dataPtr, w_, [0;32m3[0m, [0;32m9[0m, [0;32mfalse[0m); \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:47:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   47 |       UPDATE_FLAGS(flags, flagsPtr, ci, v, flagsStride, vsc);                                  \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_base.h:155:18: [0m[0;1;36mnote: [0mexpanded from macro 'UPDATE_FLAGS'[0m
+  155 |     flags |= ((s << T1_CHI_1_I) | T1_SIGMA_4) << (ci);    \[0m
+      | [0;1;32m               ~~^~~~~~~~~~~~~  ~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:434:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  434 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, flagsStride, dataPtr, w_, [0;32m3[0m, [0;32m9[0m, [0;32mfalse[0m); \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:47:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   47 |       UPDATE_FLAGS(flags, flagsPtr, ci, v, flagsStride, vsc);                                  \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_base.h:162:20: [0m[0;1;36mnote: [0mexpanded from macro 'UPDATE_FLAGS'[0m
+  162 |       *north |= (s << T1_CHI_5_I) | T1_SIGMA_16;          \[0m
+      | [0;1;32m                 ~~^~~~~~~~~~~~~  ~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:434:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  434 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, flagsStride, dataPtr, w_, [0;32m3[0m, [0;32m9[0m, [0;32mfalse[0m); \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:47:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   47 |       UPDATE_FLAGS(flags, flagsPtr, ci, v, flagsStride, vsc);                                  \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_base.h:170:20: [0m[0;1;36mnote: [0mexpanded from macro 'UPDATE_FLAGS'[0m
+  170 |       *south |= (s << T1_CHI_0_I) | T1_SIGMA_1;           \[0m
+      | [0;1;32m                 ~~^~~~~~~~~~~~~  ~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:447:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  447 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, w_ + [0;32m2U[0m, dataPtr + j * w_, [0;32m0[0m, j, j * [0;32m3[0m, \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m  448 |                             vsc);                                                                  \[0m
+      | [0;1;32m                            ~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:36:9: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   36 |         DEC_SYMBOL(v, mqc, curctx, a, c, ct);                                                  \[0m
+      | [0;1;32m        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:336:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_SYMBOL'[0m
+  336 |       DEC_RENORM(mqc, a, c, ct);                     \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:307:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_RENORM'[0m
+  307 |           DEC_BYTEIN(mqc, c, ct);            \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:289:17: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_BYTEIN'[0m
+  289 |       c += next << ([0;32m8[0m + curff);                                                         \[0m
+      | [0;1;32m        ~~ ~~~~~^~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:447:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  447 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, w_ + [0;32m2U[0m, dataPtr + j * w_, [0;32m0[0m, j, j * [0;32m3[0m, \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m  448 |                             vsc);                                                                  \[0m
+      | [0;1;32m                            ~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:36:9: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   36 |         DEC_SYMBOL(v, mqc, curctx, a, c, ct);                                                  \[0m
+      | [0;1;32m        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:346:9: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_SYMBOL'[0m
+  346 |         DEC_RENORM(mqc, a, c, ct);                   \[0m
+      | [0;1;32m        ^~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:307:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_RENORM'[0m
+  307 |           DEC_BYTEIN(mqc, c, ct);            \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:289:17: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_BYTEIN'[0m
+  289 |       c += next << ([0;32m8[0m + curff);                                                         \[0m
+      | [0;1;32m        ~~ ~~~~~^~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:447:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  447 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, w_ + [0;32m2U[0m, dataPtr + j * w_, [0;32m0[0m, j, j * [0;32m3[0m, \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m  448 |                             vsc);                                                                  \[0m
+      | [0;1;32m                            ~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:44:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   44 |       DEC_SYMBOL(v, mqc, curctx, a, c, ct);                                                    \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:336:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_SYMBOL'[0m
+  336 |       DEC_RENORM(mqc, a, c, ct);                     \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:307:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_RENORM'[0m
+  307 |           DEC_BYTEIN(mqc, c, ct);            \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:289:17: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_BYTEIN'[0m
+  289 |       c += next << ([0;32m8[0m + curff);                                                         \[0m
+      | [0;1;32m        ~~ ~~~~~^~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:447:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  447 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, w_ + [0;32m2U[0m, dataPtr + j * w_, [0;32m0[0m, j, j * [0;32m3[0m, \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m  448 |                             vsc);                                                                  \[0m
+      | [0;1;32m                            ~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:44:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   44 |       DEC_SYMBOL(v, mqc, curctx, a, c, ct);                                                    \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:346:9: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_SYMBOL'[0m
+  346 |         DEC_RENORM(mqc, a, c, ct);                   \[0m
+      | [0;1;32m        ^~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:307:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_RENORM'[0m
+  307 |           DEC_BYTEIN(mqc, c, ct);            \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_dec_inl.h:289:17: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_BYTEIN'[0m
+  289 |       c += next << ([0;32m8[0m + curff);                                                         \[0m
+      | [0;1;32m        ~~ ~~~~~^~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:447:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  447 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, w_ + [0;32m2U[0m, dataPtr + j * w_, [0;32m0[0m, j, j * [0;32m3[0m, \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m  448 |                             vsc);                                                                  \[0m
+      | [0;1;32m                            ~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:47:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   47 |       UPDATE_FLAGS(flags, flagsPtr, ci, v, flagsStride, vsc);                                  \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_base.h:155:18: [0m[0;1;36mnote: [0mexpanded from macro 'UPDATE_FLAGS'[0m
+  155 |     flags |= ((s << T1_CHI_1_I) | T1_SIGMA_4) << (ci);    \[0m
+      | [0;1;32m               ~~^~~~~~~~~~~~~  ~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:447:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  447 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, w_ + [0;32m2U[0m, dataPtr + j * w_, [0;32m0[0m, j, j * [0;32m3[0m, \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m  448 |                             vsc);                                                                  \[0m
+      | [0;1;32m                            ~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:47:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   47 |       UPDATE_FLAGS(flags, flagsPtr, ci, v, flagsStride, vsc);                                  \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_base.h:162:20: [0m[0;1;36mnote: [0mexpanded from macro 'UPDATE_FLAGS'[0m
+  162 |       *north |= (s << T1_CHI_5_I) | T1_SIGMA_16;          \[0m
+      | [0;1;32m                 ~~^~~~~~~~~~~~~  ~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:713:3: [0m[0;1;35mwarning: [0m[1mimplicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion][0m
+  713 |   DEC_PASS_CLN_IMPL_DIFF_FINAL(bpno, vsc, w_, h_, w_ + [0;32m2[0m);[0m
+      | [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderDec.cpp:447:11: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_IMPL_DIFF_FINAL'[0m
+  447 |           DEC_PASS_CLN_STEP([0;32mtrue[0m, [0;32mfalse[0m, _flags, flagsPtr, w_ + [0;32m2U[0m, dataPtr + j * w_, [0;32m0[0m, j, j * [0;32m3[0m, \[0m
+      | [0;1;32m          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m  448 |                             vsc);                                                                  \[0m
+      | [0;1;32m                            ~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/BlockCoderMacros.h:47:7: [0m[0;1;36mnote: [0mexpanded from macro 'DEC_PASS_CLN_STEP'[0m
+   47 |       UPDATE_FLAGS(flags, flagsPtr, ci, v, flagsStride, vsc);                                  \[0m
+      | [0;1;32m      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/src/grok/src/lib/core/t1/part1/block_coder/mqcoder/mqc_base.h:170:20: [0m[0;1;36mnote: [0mexpanded from macro 'UPDATE_FLAGS'[0m
+  170 |       *south |= (s << T1_CHI_0_I) | T1_SIGMA_1;           \[0m
+      | [0;1;32m                 ~~^~~~~~~~~~~~~  ~
+[0m1361 warnings generated.
+[ 98%] [32m[1mLinking CXX static library ../../../bin/libgrokj2k.a[0m
+[ 98%] Built target grokj2k
+[ 98%] [32mBuilding CXX object examples/core/CMakeFiles/core_decompress.dir/core_decompress.cpp.o[0m
+[100%] [32mBuilding CXX object examples/core/CMakeFiles/core_compress.dir/core_compress.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ../../bin/core_compress[0m
+[100%] Built target core_compress
+[1m/src/grok/examples/core/core_decompress.cpp:29:10: [0m[0;1;31mfatal error: [0m[1m'CLI/CLI.hpp' file not found[0m
+   29 | #include <CLI/CLI.hpp>[0m
+      | [0;1;32m         ^~~~~~~~~~~~~
+[0m1 error generated.
+make[2]: *** [examples/core/CMakeFiles/core_decompress.dir/build.make:76: examples/core/CMakeFiles/core_decompress.dir/core_decompress.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1942: examples/core/CMakeFiles/core_decompress.dir/all] Error 2
+make: *** [Makefile:156: all] Error 2
+ERROR:__main__:Building fuzzers failed.

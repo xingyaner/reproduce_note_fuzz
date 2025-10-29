@@ -1,0 +1,212 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/go-ethereum --file /root/reproduce_note_fuzz/oss-fuzz/projects/go-ethereum/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/go-ethereum.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.11kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-go:latest
+#2 DONE 0.9s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM gcr.io/oss-fuzz-base/base-builder-go:latest@sha256:66437e689fab89814a5ceeab586d98dd622e63b1ac493c44482e4ae56dc3d23b
+#4 CACHED
+
+#5 [2/5] RUN git clone --single-branch --depth=1 https://github.com/ethereum/go-ethereum /root/go/src/github.com/ethereum/go-ethereum
+#5 0.136 Cloning into '/root/go/src/github.com/ethereum/go-ethereum'...
+#5 DONE 5.9s
+
+#6 [3/5] RUN (cd /root/go/src/github.com/ethereum/go-ethereum && go mod download)
+#6 DONE 76.9s
+
+#7 [4/5] RUN cp /root/go/src/github.com/ethereum/go-ethereum/oss-fuzz.sh /src/build.sh
+#7 DONE 0.1s
+
+#8 [5/5] WORKDIR /src/
+#8 DONE 0.0s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 3.8s done
+#9 writing image sha256:9fd64efb42895c1b610bb2cd78aff60dad126f598437c3f00f1688ef9acd4b77 done
+#9 naming to gcr.io/oss-fuzz/go-ethereum done
+#9 DONE 3.8s
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=go-ethereum -e HELPER=True -e FUZZING_LANGUAGE=go -v /root/reproduce_note_fuzz/oss-fuzz/build/out/go-ethereum/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/go-ethereum:/work -t gcr.io/oss-fuzz/go-ethereum.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+---------------------------------------------------------------
+CC=clang
+CXX=clang++ -lresolv
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ coverpkg=github.com/ethereum/go-ethereum/...
++ go install github.com/holiman/gofuzz-shim@latest
+go: downloading github.com/holiman/gofuzz-shim v0.0.0-20240509121320-c1eff0bcb432
+go: downloading golang.org/x/tools v0.14.0
+go: downloading github.com/urfave/cli/v2 v2.25.7
+go: downloading golang.org/x/exp v0.0.0-20231006140011-7918f672742d
+go: downloading github.com/cpuguy83/go-md2man/v2 v2.0.2
+go: downloading github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673
++ repo=/root/go/src/github.com/ethereum/go-ethereum
++ compile_fuzzer github.com/ethereum/go-ethereum/accounts/abi FuzzABI fuzzAbi /root/go/src/github.com/ethereum/go-ethereum/accounts/abi/abifuzzer_test.go
++ package=github.com/ethereum/go-ethereum/accounts/abi
++ function=FuzzABI
++ fuzzer=fuzzAbi
++ file=/root/go/src/github.com/ethereum/go-ethereum/accounts/abi/abifuzzer_test.go
++ path=/root/go/src/github.com/ethereum/go-ethereum/accounts/abi
++ echo 'Building fuzzAbi'
+Building fuzzAbi
++ cd /root/go/src/github.com/ethereum/go-ethereum/accounts/abi
++ go mod tidy
+go: downloading github.com/google/go-cmp v0.6.0
+go: downloading gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
+go: downloading github.com/allegro/bigcache v1.2.1-0.20190218064605-e24eb225f156
+go: downloading github.com/decred/dcrd/crypto/blake256 v1.0.0
+go: downloading github.com/onsi/ginkgo v1.14.0
+go: downloading github.com/onsi/gomega v1.10.1
+go: downloading github.com/prysmaticlabs/gohashtree v0.0.4-beta
+go: downloading github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.3.0
+go: downloading github.com/cockroachdb/datadriven v1.0.3-0.20230413201302-be42291fc80f
+go: downloading github.com/leanovate/gopter v0.2.11
+go: downloading github.com/prashantv/gostub v1.1.0
+go: downloading github.com/jmespath/go-jmespath/internal/testify v1.5.1
+go: downloading github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/storage/armstorage v1.2.0
+go: downloading github.com/dnaeon/go-vcr v1.2.0
+go: downloading github.com/go-errors/errors v1.4.2
+go: downloading github.com/pingcap/errors v0.11.4
+go: downloading github.com/nxadm/tail v1.4.4
+go: downloading github.com/AzureAD/microsoft-authentication-library-for-go v1.0.0
+go: downloading gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7
+go: downloading github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8
++ go get github.com/holiman/gofuzz-shim/testing
+go: added github.com/holiman/gofuzz-shim v0.0.0-20240509121320-c1eff0bcb432
+go: upgraded golang.org/x/exp v0.0.0-20230626212559-97b1e661b5df => v0.0.0-20231006140011-7918f672742d
++ [[ address == *coverage* ]]
++ gofuzz-shim --func FuzzABI --package github.com/ethereum/go-ethereum/accounts/abi -f /root/go/src/github.com/ethereum/go-ethereum/accounts/abi/abifuzzer_test.go -o fuzzAbi.a
+2025/10/27 02:41:06 INFO Fuzz-builder starting function=FuzzABI to-rewrite=/root/go/src/github.com/ethereum/go-ethereum/accounts/abi/abifuzzer_test.go package=github.com/ethereum/go-ethereum/accounts/abi output=fuzzAbi.a buildflags="[-gcflags all=-d=libfuzzer -buildmode=c-archive]" tags="[gofuzz_libfuzzer libfuzzer]"
+2025/10/27 02:41:06 INFO Rewriting imports file=/root/go/src/github.com/ethereum/go-ethereum/accounts/abi/abifuzzer_test.go
+2025/10/27 02:41:06 INFO Created new file name=/root/go/src/github.com/ethereum/go-ethereum/accounts/abi/abifuzzer_test.go_fuzz.go
+2025/10/27 02:41:06 INFO Saving original file path=/root/go/src/github.com/ethereum/go-ethereum/accounts/abi/abifuzzer_test.go.orig
+2025/10/27 02:41:06 INFO Wrote main entry point for fuzzing file=./main.3995070057.go
+2025/10/27 02:41:06 INFO Building command="/root/.go/bin/go build -o fuzzAbi.a -gcflags all=-d=libfuzzer -buildmode=c-archive -tags gofuzz_libfuzzer,libfuzzer ./main.3995070057.go"
+2025/10/27 02:41:35 INFO Restoring files restoring=/root/go/src/github.com/ethereum/go-ethereum/accounts/abi/abifuzzer_test.go removing=/root/go/src/github.com/ethereum/go-ethereum/accounts/abi/abifuzzer_test.go_fuzz.go
++ clang++ -lresolv -O1 -fno-omit-frame-pointer -gline-tables-only -Wno-error=incompatible-function-pointer-types -Wno-error=int-conversion -Wno-error=deprecated-declarations -Wno-error=implicit-function-declaration -Wno-error=implicit-int -Wno-error=unknown-warning-option -Wno-error=vla-cxx-extension -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fsanitize=fuzzer /root/go/gosigfuzz/gosigfuzz.o fuzzAbi.a -o /out/fuzzAbi
++ corpusfile=/root/go/src/github.com/ethereum/go-ethereum/accounts/abi/testdata/fuzzAbi_seed_corpus.zip
++ '[' -f /root/go/src/github.com/ethereum/go-ethereum/accounts/abi/testdata/fuzzAbi_seed_corpus.zip ']'
++ cd -
+/src
++ compile_fuzzer github.com/ethereum/go-ethereum/common/bitutil FuzzEncoder fuzzBitutilEncoder /root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go
++ package=github.com/ethereum/go-ethereum/common/bitutil
++ function=FuzzEncoder
++ fuzzer=fuzzBitutilEncoder
++ file=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go
++ path=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil
++ echo 'Building fuzzBitutilEncoder'
+Building fuzzBitutilEncoder
++ cd /root/go/src/github.com/ethereum/go-ethereum/common/bitutil
++ go mod tidy
++ go get github.com/holiman/gofuzz-shim/testing
+go: added github.com/holiman/gofuzz-shim v0.0.0-20240509121320-c1eff0bcb432
++ [[ address == *coverage* ]]
++ gofuzz-shim --func FuzzEncoder --package github.com/ethereum/go-ethereum/common/bitutil -f /root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go -o fuzzBitutilEncoder.a
+2025/10/27 02:41:37 INFO Fuzz-builder starting function=FuzzEncoder to-rewrite=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go package=github.com/ethereum/go-ethereum/common/bitutil output=fuzzBitutilEncoder.a buildflags="[-gcflags all=-d=libfuzzer -buildmode=c-archive]" tags="[gofuzz_libfuzzer libfuzzer]"
+2025/10/27 02:41:37 INFO Rewriting imports file=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go
+2025/10/27 02:41:37 INFO Created new file name=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go_fuzz.go
+2025/10/27 02:41:37 INFO Saving original file path=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go.orig
+2025/10/27 02:41:37 INFO Wrote main entry point for fuzzing file=./main.213357264.go
+2025/10/27 02:41:37 INFO Building command="/root/.go/bin/go build -o fuzzBitutilEncoder.a -gcflags all=-d=libfuzzer -buildmode=c-archive -tags gofuzz_libfuzzer,libfuzzer ./main.213357264.go"
+2025/10/27 02:41:38 INFO Restoring files restoring=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go removing=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go_fuzz.go
++ clang++ -lresolv -O1 -fno-omit-frame-pointer -gline-tables-only -Wno-error=incompatible-function-pointer-types -Wno-error=int-conversion -Wno-error=deprecated-declarations -Wno-error=implicit-function-declaration -Wno-error=implicit-int -Wno-error=unknown-warning-option -Wno-error=vla-cxx-extension -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fsanitize=fuzzer /root/go/gosigfuzz/gosigfuzz.o fuzzBitutilEncoder.a -o /out/fuzzBitutilEncoder
++ corpusfile=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/testdata/fuzzBitutilEncoder_seed_corpus.zip
++ '[' -f /root/go/src/github.com/ethereum/go-ethereum/common/bitutil/testdata/fuzzBitutilEncoder_seed_corpus.zip ']'
++ cd -
+/src
++ compile_fuzzer github.com/ethereum/go-ethereum/common/bitutil FuzzDecoder fuzzBitutilDecoder /root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go
++ package=github.com/ethereum/go-ethereum/common/bitutil
++ function=FuzzDecoder
++ fuzzer=fuzzBitutilDecoder
++ file=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go
++ path=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil
++ echo 'Building fuzzBitutilDecoder'
+Building fuzzBitutilDecoder
++ cd /root/go/src/github.com/ethereum/go-ethereum/common/bitutil
++ go mod tidy
++ go get github.com/holiman/gofuzz-shim/testing
+go: added github.com/holiman/gofuzz-shim v0.0.0-20240509121320-c1eff0bcb432
++ [[ address == *coverage* ]]
++ gofuzz-shim --func FuzzDecoder --package github.com/ethereum/go-ethereum/common/bitutil -f /root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go -o fuzzBitutilDecoder.a
+2025/10/27 02:41:39 INFO Fuzz-builder starting function=FuzzDecoder to-rewrite=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go package=github.com/ethereum/go-ethereum/common/bitutil output=fuzzBitutilDecoder.a buildflags="[-gcflags all=-d=libfuzzer -buildmode=c-archive]" tags="[gofuzz_libfuzzer libfuzzer]"
+2025/10/27 02:41:39 INFO Rewriting imports file=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go
+2025/10/27 02:41:39 INFO Created new file name=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go_fuzz.go
+2025/10/27 02:41:39 INFO Saving original file path=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go.orig
+2025/10/27 02:41:39 INFO Wrote main entry point for fuzzing file=./main.698175740.go
+2025/10/27 02:41:39 INFO Building command="/root/.go/bin/go build -o fuzzBitutilDecoder.a -gcflags all=-d=libfuzzer -buildmode=c-archive -tags gofuzz_libfuzzer,libfuzzer ./main.698175740.go"
+2025/10/27 02:41:40 INFO Restoring files restoring=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go removing=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/compress_test.go_fuzz.go
++ clang++ -lresolv -O1 -fno-omit-frame-pointer -gline-tables-only -Wno-error=incompatible-function-pointer-types -Wno-error=int-conversion -Wno-error=deprecated-declarations -Wno-error=implicit-function-declaration -Wno-error=implicit-int -Wno-error=unknown-warning-option -Wno-error=vla-cxx-extension -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fsanitize=fuzzer /root/go/gosigfuzz/gosigfuzz.o fuzzBitutilDecoder.a -o /out/fuzzBitutilDecoder
++ corpusfile=/root/go/src/github.com/ethereum/go-ethereum/common/bitutil/testdata/fuzzBitutilDecoder_seed_corpus.zip
++ '[' -f /root/go/src/github.com/ethereum/go-ethereum/common/bitutil/testdata/fuzzBitutilDecoder_seed_corpus.zip ']'
++ cd -
+/src
++ compile_fuzzer github.com/ethereum/go-ethereum/core/vm/runtime FuzzVmRuntime fuzzVmRuntime /root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime/runtime_fuzz_test.go
++ package=github.com/ethereum/go-ethereum/core/vm/runtime
++ function=FuzzVmRuntime
++ fuzzer=fuzzVmRuntime
++ file=/root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime/runtime_fuzz_test.go
++ path=/root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime
++ echo 'Building fuzzVmRuntime'
+Building fuzzVmRuntime
++ cd /root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime
++ go mod tidy
++ go get github.com/holiman/gofuzz-shim/testing
+go: added github.com/holiman/gofuzz-shim v0.0.0-20240509121320-c1eff0bcb432
++ [[ address == *coverage* ]]
++ gofuzz-shim --func FuzzVmRuntime --package github.com/ethereum/go-ethereum/core/vm/runtime -f /root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime/runtime_fuzz_test.go -o fuzzVmRuntime.a
+2025/10/27 02:41:41 INFO Fuzz-builder starting function=FuzzVmRuntime to-rewrite=/root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime/runtime_fuzz_test.go package=github.com/ethereum/go-ethereum/core/vm/runtime output=fuzzVmRuntime.a buildflags="[-gcflags all=-d=libfuzzer -buildmode=c-archive]" tags="[gofuzz_libfuzzer libfuzzer]"
+2025/10/27 02:41:41 INFO Rewriting imports file=/root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime/runtime_fuzz_test.go
+2025/10/27 02:41:41 INFO Created new file name=/root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime/runtime_fuzz_test.go_fuzz.go
+2025/10/27 02:41:41 INFO Saving original file path=/root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime/runtime_fuzz_test.go.orig
+2025/10/27 02:41:41 INFO Wrote main entry point for fuzzing file=./main.1893876456.go
+2025/10/27 02:41:41 INFO Building command="/root/.go/bin/go build -o fuzzVmRuntime.a -gcflags all=-d=libfuzzer -buildmode=c-archive -tags gofuzz_libfuzzer,libfuzzer ./main.1893876456.go"
+2025/10/27 02:41:53 INFO Restoring files restoring=/root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime/runtime_fuzz_test.go removing=/root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime/runtime_fuzz_test.go_fuzz.go
++ clang++ -lresolv -O1 -fno-omit-frame-pointer -gline-tables-only -Wno-error=incompatible-function-pointer-types -Wno-error=int-conversion -Wno-error=deprecated-declarations -Wno-error=implicit-function-declaration -Wno-error=implicit-int -Wno-error=unknown-warning-option -Wno-error=vla-cxx-extension -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fsanitize=fuzzer /root/go/gosigfuzz/gosigfuzz.o fuzzVmRuntime.a -o /out/fuzzVmRuntime
++ corpusfile=/root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime/testdata/fuzzVmRuntime_seed_corpus.zip
++ '[' -f /root/go/src/github.com/ethereum/go-ethereum/core/vm/runtime/testdata/fuzzVmRuntime_seed_corpus.zip ']'
++ cd -
+/src
++ compile_fuzzer github.com/ethereum/go-ethereum/core/vm FuzzPrecompiledContracts fuzzPrecompiledContracts /root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_fuzz_test.go,/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_test.go
++ package=github.com/ethereum/go-ethereum/core/vm
++ function=FuzzPrecompiledContracts
++ fuzzer=fuzzPrecompiledContracts
++ file=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_fuzz_test.go,/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_test.go
++ path=/root/go/src/github.com/ethereum/go-ethereum/core/vm
++ echo 'Building fuzzPrecompiledContracts'
+Building fuzzPrecompiledContracts
++ cd /root/go/src/github.com/ethereum/go-ethereum/core/vm
++ go mod tidy
++ go get github.com/holiman/gofuzz-shim/testing
+go: added github.com/holiman/gofuzz-shim v0.0.0-20240509121320-c1eff0bcb432
++ [[ address == *coverage* ]]
++ gofuzz-shim --func FuzzPrecompiledContracts --package github.com/ethereum/go-ethereum/core/vm -f /root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_fuzz_test.go,/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_test.go -o fuzzPrecompiledContracts.a
+2025/10/27 02:41:54 INFO Fuzz-builder starting function=FuzzPrecompiledContracts to-rewrite=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_fuzz_test.go,/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_test.go package=github.com/ethereum/go-ethereum/core/vm output=fuzzPrecompiledContracts.a buildflags="[-gcflags all=-d=libfuzzer -buildmode=c-archive]" tags="[gofuzz_libfuzzer libfuzzer]"
+2025/10/27 02:41:54 INFO Rewriting imports file=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_fuzz_test.go
+2025/10/27 02:41:54 INFO Created new file name=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_fuzz_test.go_fuzz.go
+2025/10/27 02:41:54 INFO Saving original file path=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_fuzz_test.go.orig
+2025/10/27 02:41:54 INFO Rewriting imports file=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_test.go
+2025/10/27 02:41:54 INFO Created new file name=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_test.go_fuzz.go
+2025/10/27 02:41:54 INFO Saving original file path=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_test.go.orig
+2025/10/27 02:41:54 INFO Wrote main entry point for fuzzing file=./main.3652044945.go
+2025/10/27 02:41:55 INFO Building command="/root/.go/bin/go build -o fuzzPrecompiledContracts.a -gcflags all=-d=libfuzzer -buildmode=c-archive -tags gofuzz_libfuzzer,libfuzzer ./main.3652044945.go"
+# github.com/ethereum/go-ethereum/core/vm
+./contracts_test.go_fuzz.go:148:13: bench.Loop undefined (type *testing.B has no field or method Loop)
+
+2025/10/27 02:41:56 INFO Restoring files restoring=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_test.go removing=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_test.go_fuzz.go
+2025/10/27 02:41:56 INFO Restoring files restoring=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_fuzz_test.go removing=/root/go/src/github.com/ethereum/go-ethereum/core/vm/contracts_fuzz_test.go_fuzz.go
+exit status 1
+ERROR:__main__:Building fuzzers failed.

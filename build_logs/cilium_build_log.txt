@@ -1,0 +1,252 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/cilium --file /root/reproduce_note_fuzz/oss-fuzz/projects/cilium/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/cilium.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.17kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-go:latest
+#2 DONE 2.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 869B done
+#4 DONE 0.0s
+
+#5 [1/9] FROM gcr.io/oss-fuzz-base/base-builder-go:latest@sha256:66437e689fab89814a5ceeab586d98dd622e63b1ac493c44482e4ae56dc3d23b
+#5 resolve gcr.io/oss-fuzz-base/base-builder-go:latest@sha256:66437e689fab89814a5ceeab586d98dd622e63b1ac493c44482e4ae56dc3d23b done
+#5 sha256:66437e689fab89814a5ceeab586d98dd622e63b1ac493c44482e4ae56dc3d23b 8.92kB / 8.92kB done
+#5 sha256:ff4f7ee17ca08913a19fb2cbbc2851d873d019c176a0cfb80250f2b24aff667f 28.31kB / 28.31kB done
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 0B / 188.20MB 0.2s
+#5 sha256:2360a678453336288f3502d88c8320855d8ff419a6dc699e4e49e294ef9051c8 0B / 862B 0.4s
+#5 sha256:aefdcf400469b639063d1df0b4eedc8273c06796ea21a1323fb6cc1703d8c3a0 0B / 1.11kB 0.3s
+#5 sha256:2360a678453336288f3502d88c8320855d8ff419a6dc699e4e49e294ef9051c8 862B / 862B 0.7s done
+#5 extracting sha256:2360a678453336288f3502d88c8320855d8ff419a6dc699e4e49e294ef9051c8 done
+#5 sha256:aefdcf400469b639063d1df0b4eedc8273c06796ea21a1323fb6cc1703d8c3a0 1.11kB / 1.11kB 1.2s done
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 11.53MB / 188.20MB 2.4s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 20.97MB / 188.20MB 3.6s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 32.51MB / 188.20MB 4.8s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 41.94MB / 188.20MB 5.7s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 56.62MB / 188.20MB 7.2s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 69.21MB / 188.20MB 8.6s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 80.74MB / 188.20MB 9.8s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 92.27MB / 188.20MB 11.1s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 101.71MB / 188.20MB 13.1s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 111.15MB / 188.20MB 14.4s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 121.63MB / 188.20MB 15.5s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 131.07MB / 188.20MB 16.7s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 140.51MB / 188.20MB 17.6s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 149.95MB / 188.20MB 18.6s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 159.38MB / 188.20MB 19.6s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 173.02MB / 188.20MB 21.2s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 185.60MB / 188.20MB 22.3s
+#5 sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 188.20MB / 188.20MB 22.9s done
+#5 extracting sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5
+#5 extracting sha256:29559dc9127564a4b2aadf39b1a88a19236bd60d3f6f77e9b5c60574004449d5 4.1s done
+#5 extracting sha256:aefdcf400469b639063d1df0b4eedc8273c06796ea21a1323fb6cc1703d8c3a0
+#5 extracting sha256:aefdcf400469b639063d1df0b4eedc8273c06796ea21a1323fb6cc1703d8c3a0 done
+#5 DONE 27.2s
+
+#6 [2/9] RUN apt-get update && apt-get install -y wget
+#6 0.545 Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+#6 0.677 Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+#6 1.007 Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+#6 1.854 Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+#6 2.022 Fetched 383 kB in 2s (209 kB/s)
+#6 2.022 Reading package lists...
+#6 3.197 Reading package lists...
+#6 4.350 Building dependency tree...
+#6 4.553 Reading state information...
+#6 4.707 wget is already the newest version (1.20.3-1ubuntu2.1).
+#6 4.707 The following packages were automatically installed and are no longer required:
+#6 4.708   autotools-dev libsigsegv2 m4
+#6 4.708 Use 'apt autoremove' to remove them.
+#6 4.737 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+#6 DONE 5.3s
+
+#7 [3/9] RUN wget https://raw.githubusercontent.com/google/AFL/master/dictionaries/json.dict -O /out/fuzz.dict
+#7 0.139 --2025-10-26 09:27:58--  https://raw.githubusercontent.com/google/AFL/master/dictionaries/json.dict
+#7 0.141 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 198.18.0.51
+#7 0.141 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|198.18.0.51|:443... connected.
+#7 0.431 HTTP request sent, awaiting response... 200 OK
+#7 0.794 Length: 416 [text/plain]
+#7 0.794 Saving to: '/out/fuzz.dict'
+#7 0.794 
+#7 0.794      0K                                                       100% 36.5M=0s
+#7 0.794 
+#7 0.794 2025-10-26 09:27:59 (36.5 MB/s) - '/out/fuzz.dict' saved [416/416]
+#7 0.794 
+#7 DONE 0.8s
+
+#8 [4/9] RUN git clone --depth 1 https://github.com/dvyukov/go-fuzz-corpus
+#8 0.149 Cloning into 'go-fuzz-corpus'...
+#8 5.641 Updating files:  41% (25531/60861)
+Updating files:  42% (25562/60861)
+Updating files:  43% (26171/60861)
+Updating files:  44% (26779/60861)
+Updating files:  45% (27388/60861)
+Updating files:  46% (27997/60861)
+Updating files:  47% (28605/60861)
+Updating files:  48% (29214/60861)
+Updating files:  49% (29822/60861)
+Updating files:  50% (30431/60861)
+Updating files:  51% (31040/60861)
+Updating files:  52% (31648/60861)
+Updating files:  53% (32257/60861)
+Updating files:  54% (32865/60861)
+Updating files:  55% (33474/60861)
+Updating files:  56% (34083/60861)
+Updating files:  57% (34691/60861)
+Updating files:  58% (35300/60861)
+Updating files:  59% (35908/60861)
+Updating files:  60% (36517/60861)
+Updating files:  61% (37126/60861)
+Updating files:  62% (37734/60861)
+Updating files:  63% (38343/60861)
+Updating files:  64% (38952/60861)
+Updating files:  65% (39560/60861)
+Updating files:  66% (40169/60861)
+Updating files:  67% (40777/60861)
+Updating files:  68% (41386/60861)
+Updating files:  69% (41995/60861)
+Updating files:  70% (42603/60861)
+Updating files:  71% (43212/60861)
+Updating files:  72% (43820/60861)
+Updating files:  73% (44429/60861)
+Updating files:  74% (45038/60861)
+Updating files:  75% (45646/60861)
+Updating files:  76% (46255/60861)
+Updating files:  77% (46863/60861)
+Updating files:  78% (47472/60861)
+Updating files:  79% (48081/60861)
+Updating files:  80% (48689/60861)
+Updating files:  81% (49298/60861)
+Updating files:  82% (49907/60861)
+Updating files:  83% (50515/60861)
+Updating files:  83% (51059/60861)
+Updating files:  84% (51124/60861)
+Updating files:  85% (51732/60861)
+Updating files:  86% (52341/60861)
+Updating files:  87% (52950/60861)
+Updating files:  88% (53558/60861)
+Updating files:  89% (54167/60861)
+Updating files:  90% (54775/60861)
+Updating files:  91% (55384/60861)
+Updating files:  92% (55993/60861)
+Updating files:  93% (56601/60861)
+Updating files:  94% (57210/60861)
+Updating files:  95% (57818/60861)
+Updating files:  96% (58427/60861)
+Updating files:  97% (59036/60861)
+Updating files:  98% (59644/60861)
+Updating files:  99% (60253/60861)
+Updating files: 100% (60861/60861)
+Updating files: 100% (60861/60861), done.
+#8 DONE 7.6s
+
+#9 [5/9] RUN git clone --depth 1 https://github.com/cilium/cilium
+#9 0.135 Cloning into 'cilium'...
+#9 22.90 Updating files:  51% (12631/24328)
+Updating files:  52% (12651/24328)
+Updating files:  53% (12894/24328)
+Updating files:  54% (13138/24328)
+Updating files:  55% (13381/24328)
+Updating files:  56% (13624/24328)
+Updating files:  57% (13867/24328)
+Updating files:  58% (14111/24328)
+Updating files:  59% (14354/24328)
+Updating files:  60% (14597/24328)
+Updating files:  61% (14841/24328)
+Updating files:  62% (15084/24328)
+Updating files:  63% (15327/24328)
+Updating files:  64% (15570/24328)
+Updating files:  65% (15814/24328)
+Updating files:  66% (16057/24328)
+Updating files:  67% (16300/24328)
+Updating files:  68% (16544/24328)
+Updating files:  69% (16787/24328)
+Updating files:  70% (17030/24328)
+Updating files:  71% (17273/24328)
+Updating files:  72% (17517/24328)
+Updating files:  73% (17760/24328)
+Updating files:  74% (18003/24328)
+Updating files:  75% (18246/24328)
+Updating files:  76% (18490/24328)
+Updating files:  77% (18733/24328)
+Updating files:  78% (18976/24328)
+Updating files:  79% (19220/24328)
+Updating files:  80% (19463/24328)
+Updating files:  81% (19706/24328)
+Updating files:  82% (19949/24328)
+Updating files:  83% (20193/24328)
+Updating files:  84% (20436/24328)
+Updating files:  85% (20679/24328)
+Updating files:  86% (20923/24328)
+Updating files:  87% (21166/24328)
+Updating files:  88% (21409/24328)
+Updating files:  89% (21652/24328)
+Updating files:  90% (21896/24328)
+Updating files:  91% (22139/24328)
+Updating files:  92% (22382/24328)
+Updating files:  93% (22626/24328)
+Updating files:  94% (22869/24328)
+Updating files:  95% (23112/24328)
+Updating files:  96% (23355/24328)
+Updating files:  97% (23599/24328)
+Updating files:  98% (23842/24328)
+Updating files:  99% (24085/24328)
+Updating files: 100% (24328/24328)
+Updating files: 100% (24328/24328), done.
+#9 DONE 24.4s
+
+#10 [6/9] RUN git clone --depth 1 https://github.com/cncf/cncf-fuzzing
+#10 0.138 Cloning into 'cncf-fuzzing'...
+#10 DONE 1.9s
+
+#11 [7/9] RUN git clone --depth 1 https://github.com/cilium/proxy
+#11 0.299 Cloning into 'proxy'...
+#11 DONE 3.6s
+
+#12 [8/9] COPY build.sh /src/
+#12 DONE 0.0s
+
+#13 [9/9] WORKDIR /src/cilium
+#13 DONE 0.0s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 4.0s done
+#14 writing image sha256:91d21db30c3d1a9ac8b2c0525f4e349c5c995a2d605e5e3cc6bd105e64c13cfe done
+#14 naming to gcr.io/oss-fuzz/cilium done
+#14 DONE 4.0s
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=cilium -e HELPER=True -e FUZZING_LANGUAGE=go -v /root/reproduce_note_fuzz/oss-fuzz/build/out/cilium/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/cilium:/work -t gcr.io/oss-fuzz/cilium.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+---------------------------------------------------------------
+CC=clang
+CXX=clang++ -lresolv
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ /src/cilium/test/fuzzing/oss-fuzz-build.sh
+Could not find the function: func FuzzMatchpatternValidate(f *testing.F)
+# github.com/cilium/cilium/pkg/policy
+pkg/policy/l4_filter_test_fuzz.go:468:15: undefined: OriginForTest
+pkg/policy/l4_filter_test_fuzz.go:558:15: undefined: OriginForTest
+pkg/policy/l4_filter_test_fuzz.go:611:15: undefined: OriginForTest
+pkg/policy/l4_filter_test_fuzz.go:674:15: undefined: OriginForTest
+pkg/policy/l4_filter_test_fuzz.go:735:15: undefined: OriginForTest
+pkg/policy/l4_filter_test_fuzz.go:975:15: undefined: OriginForTest
+pkg/policy/l4_filter_test_fuzz.go:1059:15: undefined: OriginForTest
+pkg/policy/l4_filter_test_fuzz.go:1160:15: undefined: OriginForTest
+pkg/policy/l4_filter_test_fuzz.go:1270:15: undefined: OriginForTest
+pkg/policy/l4_filter_test_fuzz.go:1328:15: undefined: OriginForTest
+pkg/policy/l4_filter_test_fuzz.go:1328:15: too many errors
+2025/10/26 09:29:55 failed to build packages:exit status 1
+ERROR:__main__:Building fuzzers failed.

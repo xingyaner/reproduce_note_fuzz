@@ -1,0 +1,280 @@
+#12 naming to gcr.io/oss-fuzz/checker-framework done
+#12 DONE 2.8s
+
+ [33m2 warnings found (use docker --debug to expand):
+[0m - WorkdirRelativePath: Relative workdir "checker-framework" can have unexpected results if the base image changes (line 29)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 25)
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=checker-framework -e HELPER=True -e FUZZING_LANGUAGE=jvm -v /root/reproduce_note_fuzz/oss-fuzz/build/out/checker-framework/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/checker-framework:/work -t gcr.io/oss-fuzz/checker-framework.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+---------------------------------------------------------------
+CC=clang
+CXX=clang++
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=leak
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=leak
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ ln -s /src/maven/apache-maven-3.6.3/bin/mvn /bin/mvn
++ export JAVA_HOME=/out/open-jdk-17
++ JAVA_HOME=/out/open-jdk-17
++ mkdir -p /out/open-jdk-17
++ rsync -aL '--exclude=*.zip' /usr/lib/jvm/java-17-openjdk-amd64/ /out/open-jdk-17
+++ ./gradlew properties --console=plain
+++ sed -nr 's/^version:\ (.*)/\1/p'
+[0m[?12l[?25h+ CURRENT_VERSION=3.51.2-SNAPSHOT
++ ./gradlew build -x test -x :checker:javadoc -x :framework-test:spotlessJavaCheck
+
+
+[2A[1m<[0;32;1m=[0;39;1m------------> 9% CONFIGURING [66ms][m[37D[1B[1m> Building buildSrc > :buildSrc:compileGroovy > Resolve dependencies of :buildS[m[79D[1B[2A[1m<[0;32;1m=[0;39;1m------------> 9% CONFIGURING [166ms][m[38D[1B[1m> root project > Resolve files of configuration 'classpath'[m[0K[59D[1B[2A[1m<[0;32;1m=[0;39;1m------------> 9% CONFIGURING [266ms][m[38D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1m===[0;39;1m----------> 27% CONFIGURING [366ms][m[39D[1B[1m> :checker[m[0K[10D[1B[2A[1m<[0;32;1m===[0;39;1m----------> 27% CONFIGURING [466ms][m[39D[2B[2A[1m<[0;32;1m=====[0;39;1m--------> 45% CONFIGURING [566ms][m[39D[1B[1m> :checker-qual-android[m[23D[1B[2A[1m<[0;32;1m==========[0;39;1m---> 81% CONFIGURING [666ms][m[39D[1B[1m> :framework-test[m[0K[17D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [766ms][m[40D[1B[1m> Resolve dependencies of :checker:runtimeClasspath > error_prone_annotations-2[m[79D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [866ms][m[40D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [966ms][m[40D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1s][m[0K[37D[2B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > error_prone_parent-2.43.0[m[79D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > guava-33.1.0.2-jre.pom[m[0K[76D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > Resolve dependencies of :[m[79D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [2s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [3s][m[37D[2B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > reflection-util-1.1.5.pom[m[79D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [4s][m[37D[2B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > reflection-util-1.1.5.mod[m[79D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > plume-util-1.11.0.pom[m[0K[75D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > plume-util-1.11.0.module[m[78D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [5s][m[37D[2B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > failureaccess-1.0.2.pom[m[0K[77D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > guava-parent-26.0-android[m[79D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > oss-parent-9.pom[m[0K[70D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [6s][m[37D[1B[1m> Resolve dependencies of :checker:runtimeClasspath > listenablefuture-9999.0-e[m[79D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > jsr305-3.0.2.pom[m[0K[70D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath[m[0K[51D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > j2objc-annotations-3.0.0.[m[79D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [7s][m[37D[2B[1A[1m> Resolve dependencies of :checker:runtimeClasspath[m[0K[51D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > hashmap-util-0.0.1.pom[m[76D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath[m[0K[51D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > hashmap-util-0.0.1.module[m[79D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > stubparser-3.26.4.pom[m[0K[75D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [8s][m[37D[1B[1m> Resolve dependencies of :checker:runtimeClasspath > classgraph-4.8.184.pom[m[76D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > options-2.0.3.pom[m[0K[71D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > options-2.0.3.module[m[74D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [9s][m[37D[1B[1m> Resolve dependencies of :checker:runtimeClasspath > asm-9.9.pom[m[0K[65D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath[m[0K[51D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > commons-text-1.10.0.pom[m[77D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > commons-parent-54.pom[m[0K[75D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [10s][m[38D[2B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > apache-27.pom[m[0K[67D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > junit-bom-5.9.0.pom[m[73D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > junit-bom-5.9.0.module[m[76D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [11s][m[38D[2B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > junit-bom-5.9.1.pom[m[0K[73D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath[m[0K[51D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > junit-bom-5.9.1.module[m[76D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > commons-lang3-3.12.0.pom[m[78D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [12s][m[38D[2B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > commons-parent-52.pom[m[0K[75D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > apache-23.pom[m[0K[67D[1B[1A[1m> Resolve dependencies of :checker:runtimeClasspath > junit-bom-5.7.1.pom[m[73D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [13s][m[38D[1B[1m> Resolve dependencies of :checker:runtimeClasspath > junit-bom-5.7.1.module[m[76D[1B
+
+
+[4A[1m> Resolve files of configuration ':checker:runtimeClasspath' > guava-33.1.0.2-j[m[79D[1B[1m> Resolve files of configuration ':checker:runtimeClasspath' > error_prone_anno[m[79D[1B[1m> Resolve files of configuration ':checker:runtimeClasspath' > plume-util-1.11.[m[79D[1B[1m> Resolve files of configuration ':checker:runtimeClasspath' > reflection-util-[m[79D[1B  (11 lines not showing)[24D[4A[1m> Resolve files of configuration ':checker:runtimeClasspath' > asm-9.9.jar > 10[m[79D[1B[1m> Resolve files of configuration ':checker:runtimeClasspath' > classgraph-4.8.1[m[79D[2B[1m> Resolve files of configuration ':checker:runtimeClasspath' > commons-text-1.1[m[79D[1B  (2 lines not showing)[0K[23D[3A> IDLE[0K[6D[3B[5A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [14s][m[38D[1B> IDLE[0K[6D[2B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1A[1m> Resolve dependencies of :annotation-file-utilities:runtimeClasspath > classgr[m[79D[1B[0K[1A[1m> Resolve dependencies of :annotation-file-utilities:runtimeClasspath > error_p[m[79D[1B[5A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [15s][m[38D[5B[2A[1m> Resolve files of configuration ':annotation-file-utilities:runtimeClasspath' [m[79D[1B[1m> Resolve files of configuration ':annotation-file-utilities:runtimeClasspath' [m[79D[1B[1A> IDLE[0K[6D[1B[5A[1m<[0;1m-------------> 4% EXECUTING [15s][m[0K[34D[1B[1m> :checker-qual-android:copySources[m[35D[1B[1m> :checker-util:sourcesJar[m[26D[1B[1m> :setLocalRepo[m[0K[15D[1B[1m> :checker:processResources[m[27D[1B  (6 lines not showing)[23D[5A[1m<[0;1m-------------> 6% EXECUTING [16s][m[34D[3B[1m> :checker-qual:sourcesJar[m[26D[1B[1m> :dataflow:sourcesJar[m[0K[22D[1B  (4 lines not showing)[23D[5A[1m<[0;32;1m=[0;39;1m------------> 12% EXECUTING [16s][m[35D[2B[1m> :framework:cloneTypetoolsJdk[m[30D[1B[1m> :framework-test:compileTagletJava > Resolve dependencies of :framework-test:t[m[79D[1B[1m> :checker:sourcesJar[m[0K[21D[1B  (2 lines not showing)[23D[1A[1m> :checker-qual:compileJava9[m[28D[1B[5A[1m<[0;32;1m=[0;39;1m------------> 13% EXECUTING [16s][m[35D[1B[1m> :spotlessInternalRegisterDependencies[m[39D[4B[5A[1m<[0;32;1m=[0;39;1m------------> 13% EXECUTING [17s][m[35D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 13% EXECUTING [18s][m[35D[5B[1A[1m> :checker-qual:compileJava9 > Packing build cache entry[m[56D[1B[1A[1m> :checker:generateGitProperties[m[0K[32D[1B[5A[1m<[0;32;1m=[0;39;1m------------> 13% EXECUTING [19s][m[35D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 14% EXECUTING [19s][m[35D[4B[1m> :checker-qual:compileJava > Resolve dependencies of :checker-qual:annotationP[m[79D[1B  (1 line not showing)[0K[22D[5A[1m<[0;32;1m=[0;39;1m------------> 14% EXECUTING [20s][m[35D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 14% EXECUTING [21s][m[35D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 14% EXECUTING [22s][m[35D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 14% EXECUTING [23s][m[35D[5B[5A[1m<[0;32;1m=[0;39;1m------------> 14% EXECUTING [24s][m[35D[4B[1m> :checker-qual:compileJava > Resolve files of configuration ':checker-qual:ann[m[79D[1B  (13 lines not showing)[24D  (12 lines not showing)[24D[5A[1m<[0;32;1m=[0;39;1m------------> 14% EXECUTING [25s][m[35D[5B  (11 lines not showing)[24D  (10 lines not showing)[24D  (9 lines not showing)[0K[23D[2A[1m> :framework-test:compileTagletJava > Resolve files of configuration ':framewor[m[79D[2B  (5 lines not showing)[23D  (4 lines not showing)[23D[5A[1m<[0;32;1m=[0;39;1m------------> 14% EXECUTING [26s][m[35D[5B  (3 lines not showing)[23D  (1 line not showing)[0K[22D[2A[1m> :framework-test:compileTagletJava[m[0K[35D[1B[1m> :checker-qual:compileJava[m[0K[27D[1B[5A[0K
+[31;1m> Task :framework-test:compileTagletJava[0;39m[31m FAILED[39m[0K
+An exception has occurred in the compiler (17.0.15). Please file a bug against the Java compiler via the Java bug reporting page (https://bugreport.java.com) after checking the Bug Database (https://bugs.java.com) for duplicates. Include your program, the following diagnostic, and the parameters passed to the Java compiler in your report. Thank you.[0K
+java.lang.UnsupportedClassVersionError: com/google/errorprone/ErrorProneJavacPlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0[0K
+        at java.base/java.lang.ClassLoader.defineClass1(Native Method)[0K
+        at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)[0K
+        at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+        at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524)
+        at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427)
+        at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421)
+        at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+        at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:592)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+        at java.base/java.lang.Class.forName0(Native Method)
+        at java.base/java.lang.Class.forName(Class.java:467)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.nextProviderClass(ServiceLoader.java:1217)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(ServiceLoader.java:1228)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(ServiceLoader.java:1273)
+        at java.base/java.util.ServiceLoader$2.hasNext(ServiceLoader.java:1309)
+        at java.base/java.util.ServiceLoader$3.hasNext(ServiceLoader.java:1393)
+        at jdk.compiler/com.sun.tools.javac.api.BasicJavacTask.initPlugins(BasicJavacTask.java:220)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.prepareCompiler(JavacTaskImpl.java:204)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0(JavacTaskImpl.java:101)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.invocationHelper(JavacTaskImpl.java:152)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:100)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:94)
+        at org.gradle.internal.compiler.java.IncrementalCompileTask.call(IncrementalCompileTask.java:92)
+        at org.gradle.api.internal.tasks.compile.AnnotationProcessingCompileTask.call(AnnotationProcessingCompileTask.java:94)
+        at org.gradle.api.internal.tasks.compile.ResourceCleaningCompilationTask.call(ResourceCleaningCompilationTask.java:57)
+        at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:83)
+        at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
+        at org.gradle.api.internal.tasks.compile.daemon.AbstractIsolatedCompilerWorkerExecutor$CompilerWorkAction.execute(AbstractIsolatedCompilerWorkerExecutor.java:79)
+        at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:68)
+        at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:54)
+        at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:48)
+        at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+        at org.gradle.workers.internal.AbstractClassLoaderWorker.executeInClassLoader(AbstractClassLoaderWorker.java:48)
+        at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:32)
+        at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:22)
+        at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:108)
+        at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:77)
+        at org.gradle.process.internal.worker.request.WorkerAction.lambda$run$1(WorkerAction.java:150)
+        at org.gradle.process.internal.worker.child.WorkerLogEventListener.withWorkerLoggingProtocol(WorkerLogEventListener.java:41)
+        at org.gradle.process.internal.worker.request.WorkerAction.lambda$run$2(WorkerAction.java:150)
+        at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:84)
+        at org.gradle.process.internal.worker.request.WorkerAction.run(WorkerAction.java:142)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+        at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+        at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;31;1m=[0;39;1m------------> 15% EXECUTING [26s][m[35D[1B[1m> :spotlessInternalRegisterDependencies[m[39D[1B[1m> :framework:cloneTypetoolsJdk[m[30D[1B[1m> :checker-qual-android:compileJava[m[35D[1B[1m> :checker-qual:compileJava[m[27D[1B[5A[1m<[0;31;1m=[0;39;1m------------> 15% EXECUTING [27s][m[35D[5B[5A[0K
+[1m> Task :checker-qual:compileJava[m[0K
+An exception has occurred in the compiler (17.0.15). Please file a bug against the Java compiler via the Java bug reporting page (https://bugreport.java.com) after checking the Bug Database (https://bugs.java.com) for duplicates. Include your program, the following diagnostic, and the parameters passed to the Java compiler in your report. Thank you.[0K
+java.lang.UnsupportedClassVersionError: com/google/errorprone/ErrorProneJavacPlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0[0K
+        at java.base/java.lang.ClassLoader.defineClass1(Native Method)[0K
+        at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+        at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+        at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524)
+        at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427)
+        at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421)
+        at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+        at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:592)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+        at java.base/java.lang.Class.forName0(Native Method)
+        at java.base/java.lang.Class.forName(Class.java:467)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.nextProviderClass(ServiceLoader.java:1217)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(ServiceLoader.java:1228)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(ServiceLoader.java:1273)
+        at java.base/java.util.ServiceLoader$2.hasNext(ServiceLoader.java:1309)
+        at java.base/java.util.ServiceLoader$3.hasNext(ServiceLoader.java:1393)
+        at jdk.compiler/com.sun.tools.javac.api.BasicJavacTask.initPlugins(BasicJavacTask.java:220)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.prepareCompiler(JavacTaskImpl.java:204)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0(JavacTaskImpl.java:101)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.invocationHelper(JavacTaskImpl.java:152)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:100)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:94)
+        at org.gradle.internal.compiler.java.IncrementalCompileTask.call(IncrementalCompileTask.java:92)
+        at org.gradle.api.internal.tasks.compile.AnnotationProcessingCompileTask.call(AnnotationProcessingCompileTask.java:94)
+        at org.gradle.api.internal.tasks.compile.ResourceCleaningCompilationTask.call(ResourceCleaningCompilationTask.java:57)
+        at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:83)
+        at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
+        at org.gradle.api.internal.tasks.compile.daemon.AbstractIsolatedCompilerWorkerExecutor$CompilerWorkAction.execute(AbstractIsolatedCompilerWorkerExecutor.java:79)
+        at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:68)
+        at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:54)
+        at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:48)
+        at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+        at org.gradle.workers.internal.AbstractClassLoaderWorker.executeInClassLoader(AbstractClassLoaderWorker.java:48)
+        at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:32)
+        at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:22)
+        at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:108)
+        at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:77)
+        at org.gradle.process.internal.worker.request.WorkerAction.lambda$run$1(WorkerAction.java:150)
+        at org.gradle.process.internal.worker.child.WorkerLogEventListener.withWorkerLoggingProtocol(WorkerLogEventListener.java:41)
+        at org.gradle.process.internal.worker.request.WorkerAction.lambda$run$2(WorkerAction.java:150)
+        at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:84)
+        at org.gradle.process.internal.worker.request.WorkerAction.run(WorkerAction.java:142)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+        at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+        at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;31;1m=[0;39;1m------------> 15% EXECUTING [27s][m[35D[1B[1m> :spotlessInternalRegisterDependencies[m[39D[1B[1m> :framework:cloneTypetoolsJdk[m[30D[1B[1m> :checker-qual-android:compileJava[m[35D[1B[1m> :checker-qual:compileJava[m[27D[1B[5A[0K
+[31;1m> Task :checker-qual-android:compileJava[0;39m[31m FAILED[39m[0K
+An exception has occurred in the compiler (17.0.15). Please file a bug against the Java compiler via the Java bug reporting page (https://bugreport.java.com) after checking the Bug Database (https://bugs.java.com) for duplicates. Include your program, the following diagnostic, and the parameters passed to the Java compiler in your report. Thank you.[0K
+java.lang.UnsupportedClassVersionError: com/google/errorprone/ErrorProneJavacPlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0[0K
+        at java.base/java.lang.ClassLoader.defineClass1(Native Method)[0K
+        at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+        at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+        at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524)
+        at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427)
+        at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421)
+        at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+        at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:592)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+        at java.base/java.lang.Class.forName0(Native Method)
+        at java.base/java.lang.Class.forName(Class.java:467)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.nextProviderClass(ServiceLoader.java:1217)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(ServiceLoader.java:1228)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(ServiceLoader.java:1273)
+        at java.base/java.util.ServiceLoader$2.hasNext(ServiceLoader.java:1309)
+        at java.base/java.util.ServiceLoader$3.hasNext(ServiceLoader.java:1393)
+        at jdk.compiler/com.sun.tools.javac.api.BasicJavacTask.initPlugins(BasicJavacTask.java:220)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.prepareCompiler(JavacTaskImpl.java:204)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0(JavacTaskImpl.java:101)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.invocationHelper(JavacTaskImpl.java:152)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:100)
+        at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:94)
+        at org.gradle.internal.compiler.java.IncrementalCompileTask.call(IncrementalCompileTask.java:92)
+        at org.gradle.api.internal.tasks.compile.AnnotationProcessingCompileTask.call(AnnotationProcessingCompileTask.java:94)
+        at org.gradle.api.internal.tasks.compile.ResourceCleaningCompilationTask.call(ResourceCleaningCompilationTask.java:57)
+        at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:83)
+        at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
+        at org.gradle.api.internal.tasks.compile.daemon.AbstractIsolatedCompilerWorkerExecutor$CompilerWorkAction.execute(AbstractIsolatedCompilerWorkerExecutor.java:79)
+        at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:68)
+        at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:54)
+        at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:48)
+        at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+        at org.gradle.workers.internal.AbstractClassLoaderWorker.executeInClassLoader(AbstractClassLoaderWorker.java:48)
+        at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:32)
+        at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:22)
+        at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:108)
+        at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:77)
+        at org.gradle.process.internal.worker.request.WorkerAction.lambda$run$1(WorkerAction.java:150)
+        at org.gradle.process.internal.worker.child.WorkerLogEventListener.withWorkerLoggingProtocol(WorkerLogEventListener.java:41)
+        at org.gradle.process.internal.worker.request.WorkerAction.lambda$run$2(WorkerAction.java:150)
+        at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:84)
+        at org.gradle.process.internal.worker.request.WorkerAction.run(WorkerAction.java:142)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+        at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+        at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+
+[31;1m> Task :checker-qual:compileJava[0;39m[31m FAILED[39m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [27s][m[35D[1B[1m> :spotlessInternalRegisterDependencies[m[39D[1B[1m> :framework:cloneTypetoolsJdk[m[30D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [28s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [29s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [30s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [31s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [32s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [33s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [34s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [35s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [36s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [37s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [38s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [39s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [40s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [41s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [42s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [43s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [44s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [45s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [46s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [47s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [48s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [49s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [50s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [51s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [52s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [53s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [54s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [55s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [56s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [57s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [58s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [59s][m[35D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m][m[0K[34D[5B[3A> IDLE[0K[6D[3B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 1s][m[37D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 2s][m[37D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 3s][m[37D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 4s][m[37D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 5s][m[37D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 6s][m[37D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 7s][m[37D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 8s][m[37D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 9s][m[37D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 10s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 11s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 12s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 13s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 14s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 15s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 16s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 17s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 18s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 19s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 20s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 21s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 22s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 23s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 24s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 25s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 26s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 27s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 28s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 29s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 30s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 31s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 32s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 33s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 34s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 35s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 36s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 37s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 38s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 39s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 40s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 41s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 42s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 43s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 44s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 45s][m[38D[1B[1m> :spotlessInternalRegisterDependencies > Resolve dependencies of :spotless1637[m[79D[4B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 46s][m[38D[5B[4A[1m> :spotlessInternalRegisterDependencies > Resolve files of configuration ':spot[m[79D[4B[4A[1m> :spotlessInternalRegisterDependencies[m[0K[39D[4B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 47s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 48s][m[38D[1B[1m> :spotlessInternalRegisterDependencies > Resolve dependencies of :spotless8655[m[79D[4B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 49s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 50s][m[38D[5B[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 51s][m[38D[5B[4A[1m> :spotlessInternalRegisterDependencies > Resolve files of configuration ':spot[m[79D[1B[1m> :spotlessInternalRegisterDependencies > Resolve files of configuration ':spot[m[79D[1B[1m> :spotlessInternalRegisterDependencies > Resolve files of configuration ':spot[m[79D[1B[1m> :spotlessInternalRegisterDependencies > Resolve files of configuration ':spot[m[79D[1B  (1 line not showing)[22D[2A> IDLE[0K[6D[2B[0K[5A[1m<[0;31;1m==[0;39;1m-----------> 16% EXECUTING [1m 52s][m[38D[1B> IDLE[0K[6D[3B> IDLE[0K[6D[1B[5A[0K
+[Incubating] Problems report is available at: file:///src/checker-framework/build/reports/problems/problems-report.html[0K
+[0K
+[31mFAILURE: Build completed with 3 failures.[39m[0K
+[0K
+[31m1: [39m[31mTask failed with an exception.[39m
+-----------
+* What went wrong:
+Execution failed for task ':framework-test:compileTagletJava'.
+[33m> [39mCompilation failed; see the compiler output below.
+
+* Try:
+[33m> [39mRun with [1m--scan[m to generate a Build Scan (Powered by Develocity).
+==============================================================================
+
+[31m2: [39m[31mTask failed with an exception.[39m
+-----------
+* What went wrong:
+Execution failed for task ':checker-qual-android:compileJava'.
+[33m> [39mCompilation failed; see the compiler output below.
+
+* Try:
+[33m> [39mRun with [1m--scan[m to generate a Build Scan (Powered by Develocity).
+==============================================================================
+
+[31m3: [39m[31mTask failed with an exception.[39m
+-----------
+* What went wrong:
+Execution failed for task ':checker-qual:compileJava'.
+[33m> [39mCompilation failed; see the compiler output below.
+
+* Try:
+[33m> [39mRun with [1m--scan[m to generate a Build Scan (Powered by Develocity).
+==============================================================================
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+[31;1mBUILD FAILED[0;39m in 1m 52s
+22 actionable tasks: 20 executed, 2 up-to-date
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[1m> :spotlessInternalRegisterDependencies > Resolve files of configuration ':spot[m[79D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[2K[1B[2K[1B[2K[1B[2K[1B[2K[1B[2K[5A[0m[?12l[?25hERROR:__main__:Building fuzzers failed.

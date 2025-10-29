@@ -1,0 +1,200 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/graphicsfuzz-spirv --file /root/reproduce_note_fuzz/oss-fuzz/projects/graphicsfuzz-spirv/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/graphicsfuzz-spirv.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.51kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder:latest
+#2 DONE 0.7s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [ 1/11] FROM gcr.io/oss-fuzz-base/base-builder:latest@sha256:851574c79285419658880ee57f5691ac23ae53216dea600ffb372395532f3ff6
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 1.71kB done
+#5 DONE 0.0s
+
+#6 [ 2/11] RUN apt-get update && apt-get install -y cmake ninja-build
+#6 0.738 Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+#6 0.749 Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+#6 1.060 Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+#6 1.865 Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+#6 2.034 Fetched 383 kB in 2s (209 kB/s)
+#6 2.034 Reading package lists...
+#6 3.255 Reading package lists...
+#6 4.429 Building dependency tree...
+#6 4.641 Reading state information...
+#6 4.811 The following packages were automatically installed and are no longer required:
+#6 4.812   autotools-dev libsigsegv2 m4
+#6 4.812 Use 'apt autoremove' to remove them.
+#6 4.812 The following additional packages will be installed:
+#6 4.813   cmake-data libarchive13 libicu66 libjsoncpp1 librhash0 libuv1 libxml2
+#6 4.813 Suggested packages:
+#6 4.813   cmake-doc lrzip python3
+#6 4.868 The following NEW packages will be installed:
+#6 4.868   cmake cmake-data libarchive13 libicu66 libjsoncpp1 librhash0 libuv1 libxml2
+#6 4.869   ninja-build
+#6 5.340 0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
+#6 5.340 Need to get 15.1 MB of archives.
+#6 5.340 After this operation, 65.3 MB of additional disk space will be used.
+#6 5.340 Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+#6 7.840 Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+#6 7.921 Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.5 [80.9 kB]
+#6 7.931 Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake-data all 3.16.3-1ubuntu1.20.04.1 [1613 kB]
+#6 8.710 Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libarchive13 amd64 3.4.0-2ubuntu1.5 [327 kB]
+#6 8.712 Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libjsoncpp1 amd64 1.7.4-3.1ubuntu2 [75.6 kB]
+#6 8.713 Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 librhash0 amd64 1.3.9-1 [113 kB]
+#6 8.714 Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake amd64 3.16.3-1ubuntu1.20.04.1 [3668 kB]
+#6 8.743 Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 ninja-build amd64 1.10.0-1build1 [107 kB]
+#6 8.876 debconf: delaying package configuration, since apt-utils is not installed
+#6 8.903 Fetched 15.1 MB in 4s (3915 kB/s)
+#6 8.925 Selecting previously unselected package libicu66:amd64.
+#6 8.925 (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 17483 files and directories currently installed.)
+#6 8.934 Preparing to unpack .../0-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+#6 8.938 Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+#6 9.556 Selecting previously unselected package libxml2:amd64.
+#6 9.557 Preparing to unpack .../1-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
+#6 9.559 Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+#6 9.621 Selecting previously unselected package libuv1:amd64.
+#6 9.622 Preparing to unpack .../2-libuv1_1.34.2-1ubuntu1.5_amd64.deb ...
+#6 9.624 Unpacking libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+#6 9.654 Selecting previously unselected package cmake-data.
+#6 9.655 Preparing to unpack .../3-cmake-data_3.16.3-1ubuntu1.20.04.1_all.deb ...
+#6 9.658 Unpacking cmake-data (3.16.3-1ubuntu1.20.04.1) ...
+#6 9.998 Selecting previously unselected package libarchive13:amd64.
+#6 10.000 Preparing to unpack .../4-libarchive13_3.4.0-2ubuntu1.5_amd64.deb ...
+#6 10.00 Unpacking libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
+#6 10.04 Selecting previously unselected package libjsoncpp1:amd64.
+#6 10.05 Preparing to unpack .../5-libjsoncpp1_1.7.4-3.1ubuntu2_amd64.deb ...
+#6 10.05 Unpacking libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
+#6 10.07 Selecting previously unselected package librhash0:amd64.
+#6 10.07 Preparing to unpack .../6-librhash0_1.3.9-1_amd64.deb ...
+#6 10.08 Unpacking librhash0:amd64 (1.3.9-1) ...
+#6 10.10 Selecting previously unselected package cmake.
+#6 10.10 Preparing to unpack .../7-cmake_3.16.3-1ubuntu1.20.04.1_amd64.deb ...
+#6 10.10 Unpacking cmake (3.16.3-1ubuntu1.20.04.1) ...
+#6 10.39 Selecting previously unselected package ninja-build.
+#6 10.39 Preparing to unpack .../8-ninja-build_1.10.0-1build1_amd64.deb ...
+#6 10.39 Unpacking ninja-build (1.10.0-1build1) ...
+#6 10.43 Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+#6 10.44 Setting up ninja-build (1.10.0-1build1) ...
+#6 10.44 Setting up libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+#6 10.45 Setting up librhash0:amd64 (1.3.9-1) ...
+#6 10.45 Setting up cmake-data (3.16.3-1ubuntu1.20.04.1) ...
+#6 10.47 Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+#6 10.47 Setting up libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
+#6 10.48 Setting up libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
+#6 10.48 Setting up cmake (3.16.3-1ubuntu1.20.04.1) ...
+#6 10.49 Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+#6 DONE 10.6s
+
+#7 [ 3/11] RUN mkdir -p graphicsfuzz-spirv
+#7 DONE 0.2s
+
+#8 [ 4/11] RUN git clone --depth=1 https://github.com/KhronosGroup/glslang.git graphicsfuzz-spirv/glslang
+#8 0.184 Cloning into 'graphicsfuzz-spirv/glslang'...
+#8 DONE 3.7s
+
+#9 [ 5/11] RUN git clone --depth=1 https://github.com/KhronosGroup/SPIRV-Cross.git graphicsfuzz-spirv/SPIRV-Cross
+#9 0.186 Cloning into 'graphicsfuzz-spirv/SPIRV-Cross'...
+#9 DONE 2.4s
+
+#10 [ 6/11] RUN git clone --depth=1 https://github.com/KhronosGroup/SPIRV-Tools.git graphicsfuzz-spirv/SPIRV-Tools
+#10 0.174 Cloning into 'graphicsfuzz-spirv/SPIRV-Tools'...
+#10 DONE 3.5s
+
+#11 [ 7/11] RUN git clone --depth=1 https://github.com/KhronosGroup/SPIRV-Headers graphicsfuzz-spirv/SPIRV-Tools/external/spirv-headers
+#11 0.178 Cloning into 'graphicsfuzz-spirv/SPIRV-Tools/external/spirv-headers'...
+#11 DONE 1.8s
+
+#12 [ 8/11] RUN git clone --depth=1 https://github.com/google/effcee graphicsfuzz-spirv/SPIRV-Tools/external/effcee
+#12 0.139 Cloning into 'graphicsfuzz-spirv/SPIRV-Tools/external/effcee'...
+#12 DONE 1.4s
+
+#13 [ 9/11] RUN git clone --depth=1 https://github.com/google/re2 graphicsfuzz-spirv/SPIRV-Tools/external/re2
+#13 0.157 Cloning into 'graphicsfuzz-spirv/SPIRV-Tools/external/re2'...
+#13 DONE 1.8s
+
+#14 [10/11] COPY build.sh /src/
+#14 DONE 0.0s
+
+#15 [11/11] WORKDIR graphicsfuzz-spirv
+#15 DONE 0.0s
+
+#16 exporting to image
+#16 exporting layers
+#16 exporting layers 0.5s done
+#16 writing image sha256:b8e38038b31f35def782a9db23fc046df153431d63c747717e77f5df00385cec done
+#16 naming to gcr.io/oss-fuzz/graphicsfuzz-spirv done
+#16 DONE 0.5s
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - WorkdirRelativePath: Relative workdir "graphicsfuzz-spirv" can have unexpected results if the base image changes (line 32)
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=graphicsfuzz-spirv -e HELPER=True -e FUZZING_LANGUAGE=c++ -v /root/reproduce_note_fuzz/oss-fuzz/build/out/graphicsfuzz-spirv/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/graphicsfuzz-spirv:/work -t gcr.io/oss-fuzz/graphicsfuzz-spirv.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+---------------------------------------------------------------
+CC=clang
+CXX=clang++
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ mkdir glslang/build
++ pushd glslang/build
+/src/graphicsfuzz-spirv/glslang/build /src/graphicsfuzz-spirv
++ cmake -G Ninja -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DCMAKE_BUILD_TYPE=RelWithDebInfo '-DCMAKE_C_FLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link' '-DCMAKE_CXX_FLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++' ..
+-- The C compiler identification is Clang 22.0.0
+-- The CXX compiler identification is Clang 22.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/local/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/local/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Google Mock was not found - tests based on that will not build
+[31mCMake Error at CMakeLists.txt:294 (message):
+  ENABLE_OPT set but SPIR-V tools not found.  Please run
+  update_glslang_sources.py, set the ALLOW_EXTERNAL_SPIRV_TOOLS option to use
+  a local install of SPIRV-Tools, or set ENABLE_OPT=0.
+
+[0m
+-- optimizer enabled
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found Python3: /usr/local/bin/python3.11 (found version "3.11.13") found components: Interpreter
+-- Configuring incomplete, errors occurred!
+ERROR:__main__:Building fuzzers failed.

@@ -8,7 +8,7 @@ import tempfile
 import time
 from collections import deque
 from datetime import datetime
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 import openpyxl
 from openpyxl import Workbook
 
@@ -142,15 +142,22 @@ def parse_error_log(log_path: str) -> Dict[str, str]:
 
 def find_sha_for_timestamp(commits_file_path: str, target_date_str: str) -> Dict[str, str]:
     """
-    在 commits 文件中，为给定的日期找到当天最早的 commit SHA。
+    【新逻辑】在 commits 文件中，为给定的日期找到最合适的 commit SHA。
+    逻辑如下：
+    1. 如果目标当天有 commit，则返回当天最早的那个。
+    2. 如果目标当天没有 commit，则返回在目标日期之前的所有 commit 中，最晚（最新）的那个。
     """
-    print(f"--- Tool: find_sha_for_timestamp called for date: {target_date_str} ---")
+    print(f"--- Tool: find_sha_for_timestamp (New Logic) called for date: {target_date_str} ---")
+    
     try:
         target_date = datetime.strptime(target_date_str, '%Y.%m.%d').date()
     except ValueError:
         return {'status': 'error', 'message': f"Invalid target date format: '{target_date_str}'. Expected 'YYYY.MM.DD'."}
 
-    daily_commits: List[Tuple[datetime, str]] = []
+    # 用于存储当天和过去的所有有效 commits
+    todays_commits: List[Tuple[datetime, str]] = []
+    past_commits: List[Tuple[datetime, str]] = []
+
     try:
         with open(commits_file_path, 'r', encoding='utf-8') as f:
             lines = f.readlines()
@@ -161,21 +168,47 @@ def find_sha_for_timestamp(commits_file_path: str, target_date_str: str) -> Dict
                     try:
                         timestamp_str = line.replace("Time: ", "")
                         commit_datetime = datetime.strptime(timestamp_str, '%Y.%m.%d %H:%M')
-                        if commit_datetime.date() == target_date:
-                            sha = lines[i+1].strip().replace("- SHA: ", "")
-                            daily_commits.append((commit_datetime, sha))
-                        i += 2 # Move to the SHA line
+                        sha = lines[i+1].strip().replace("- SHA: ", "")
+
+                        # --- 【核心逻辑】: 将 commit 分类存储 ---
+                        commit_date = commit_datetime.date()
+                        if commit_date == target_date:
+                            todays_commits.append((commit_datetime, sha))
+                        elif commit_date < target_date:
+                            past_commits.append((commit_datetime, sha))
+                        
+                        i += 2
                     except (ValueError, IndexError):
                         pass
                 i += 1
     except FileNotFoundError:
         return {'status': 'error', 'message': f"Commits file not found at: {commits_file_path}"}
+    except Exception as e:
+        return {'status': 'error', 'message': f"An unexpected error occurred: {e}"}
 
-    if not daily_commits:
-        return {'status': 'error', 'message': f"No suitable SHA found for the date {target_date_str}."}
+    # --- 【决策逻辑】 ---
+    # 1. 检查当天是否有 commit
+    if todays_commits:
+        # 如果有，找到最早的那个
+        # min() 函数会根据元组的第一个元素（即 datetime 对象）进行比较
+        earliest_today = min(todays_commits)
+        found_sha = earliest_today[1]
+        print(f"--- Tool: Found earliest commit on the same day: {found_sha} at {earliest_today[0].strftime('%Y.%m.%d %H:%M')} ---")
+        return {'status': 'success', 'sha': found_sha}
+    
+    # 2. 如果当天没有，则检查过去是否有 commit
+    elif past_commits:
+        # 如果有，找到最晚（最新）的那个
+        # max() 函数会根据元组的第一个元素（即 datetime 对象）进行比较
+        latest_in_past = max(past_commits)
+        found_sha = latest_in_past[1]
+        print(f"--- Tool: No commits on target day. Found latest past commit: {found_sha} at {latest_in_past[0].strftime('%Y.%m.%d %H:%M')} ---")
+        return {'status': 'success', 'sha': found_sha}
+        
+    # 3. 如果当天和过去都没有任何 commit
+    else:
+        return {'status': 'error', 'message': f"No suitable SHA found on or before the date {target_date_str}."}
 
-    earliest_commit_datetime, earliest_sha = min(daily_commits)
-    return {'status': 'success', 'sha': earliest_sha}
 
 
 def checkout_oss_fuzz_commit(oss_fuzz_path: str, sha: str) -> Dict[str, str]:

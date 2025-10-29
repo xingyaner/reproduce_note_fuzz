@@ -1,0 +1,194 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/bs4 --file /root/reproduce_note_fuzz/oss-fuzz/projects/bs4/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/bs4.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 DONE 0.0s
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.19kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-python@sha256:d223a882810372830fd7968eb3e64533f3a2318c90be43ac753a46a15946faec
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM gcr.io/oss-fuzz-base/base-builder-python@sha256:d223a882810372830fd7968eb3e64533f3a2318c90be43ac753a46a15946faec
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 63B done
+#5 DONE 0.0s
+
+#6 [2/6] RUN apt-get install -y bzr python-lxml python-html5lib libxslt-dev libxml2-dev zlib1g-dev
+#6 0.159 Reading package lists...
+#6 1.301 Building dependency tree...
+#6 1.511 Reading state information...
+#6 1.693 The following packages were automatically installed and are no longer required:
+#6 1.697   autotools-dev libsigsegv2 m4
+#6 1.697 Use 'apt autoremove' to remove them.
+#6 1.697 The following additional packages will be installed:
+#6 1.697   brz dbus distro-info-data file gir1.2-glib-2.0 icu-devtools libapparmor1
+#6 1.698   libdbus-1-3 libgirepository-1.0-1 libglib2.0-0 libglib2.0-data libgpgme11
+#6 1.698   libicu-dev libicu66 libmagic-mgc libmagic1 libmpdec2 libpython2-stdlib
+#6 1.698   libpython2.7-minimal libpython2.7-stdlib libpython3-stdlib
+#6 1.699   libpython3.8-minimal libpython3.8-stdlib libxml2 libxslt1.1 lsb-release
+#6 1.699   mime-support python-backports.functools-lru-cache python-bs4 python-chardet
+#6 1.699   python-pkg-resources python-six python-soupsieve python-webencodings python2
+#6 1.699   python2-minimal python2.7 python2.7-minimal python3 python3-blinker
+#6 1.699   python3-breezy python3-certifi python3-cffi-backend python3-chardet
+#6 1.699   python3-configobj python3-cryptography python3-dbus python3-deprecated
+#6 1.699   python3-distro python3-dulwich python3-entrypoints python3-fastimport
+#6 1.699   python3-gi python3-github python3-gitlab python3-gpg python3-httplib2
+#6 1.699   python3-idna python3-jwt python3-keyring python3-launchpadlib
+#6 1.699   python3-lazr.restfulclient python3-lazr.uri python3-minimal python3-oauthlib
+#6 1.699   python3-pkg-resources python3-requests python3-secretstorage
+#6 1.699   python3-simplejson python3-six python3-urllib3 python3-wadllib python3-wrapt
+#6 1.699   python3.8 python3.8-minimal shared-mime-info xdg-user-dirs
+#6 1.700 Suggested packages:
+#6 1.700   brz-doc python3-breezy.tests default-dbus-session-bus | dbus-session-bus
+#6 1.700   icu-doc pkg-config python-genshi python-lxml-dbg python-lxml-doc
+#6 1.700   python-setuptools python2-doc python-tk python2.7-doc binfmt-support
+#6 1.700   python3-doc python3-tk python3-venv python-blinker-doc python3-breezy-dbg
+#6 1.700   python3-kerberos python3-paramiko xdg-utils python-configobj-doc
+#6 1.700   python-cryptography-doc python3-cryptography-vectors python-dbus-doc
+#6 1.700   python3-dbus-dbg python-gitlab-doc python3-crypto gnome-keyring
+#6 1.700   libkf5wallet-bin python3-keyrings.alt python3-testresources
+#6 1.700   python3-setuptools python3-openssl python3-socks python-secretstorage-doc
+#6 1.700   python3.8-venv python3.8-doc
+#6 2.014 The following NEW packages will be installed:
+#6 2.015   brz bzr dbus distro-info-data file gir1.2-glib-2.0 icu-devtools libapparmor1
+#6 2.015   libdbus-1-3 libgirepository-1.0-1 libglib2.0-0 libglib2.0-data libgpgme11
+#6 2.015   libicu-dev libicu66 libmagic-mgc libmagic1 libmpdec2 libpython2-stdlib
+#6 2.015   libpython2.7-minimal libpython2.7-stdlib libpython3-stdlib
+#6 2.015   libpython3.8-minimal libpython3.8-stdlib libxml2 libxml2-dev libxslt1-dev
+#6 2.015   libxslt1.1 lsb-release mime-support python-backports.functools-lru-cache
+#6 2.015   python-bs4 python-chardet python-html5lib python-lxml python-pkg-resources
+#6 2.015   python-six python-soupsieve python-webencodings python2 python2-minimal
+#6 2.015   python2.7 python2.7-minimal python3 python3-blinker python3-breezy
+#6 2.015   python3-certifi python3-cffi-backend python3-chardet python3-configobj
+#6 2.015   python3-cryptography python3-dbus python3-deprecated python3-distro
+#6 2.015   python3-dulwich python3-entrypoints python3-fastimport python3-gi
+#6 2.015   python3-github python3-gitlab python3-gpg python3-httplib2 python3-idna
+#6 2.015   python3-jwt python3-keyring python3-launchpadlib python3-lazr.restfulclient
+#6 2.015   python3-lazr.uri python3-minimal python3-oauthlib python3-pkg-resources
+#6 2.015   python3-requests python3-secretstorage python3-simplejson python3-six
+#6 2.015   python3-urllib3 python3-wadllib python3-wrapt python3.8 python3.8-minimal
+#6 2.015   shared-mime-info xdg-user-dirs zlib1g-dev
+#6 2.555 0 upgraded, 83 newly installed, 0 to remove and 0 not upgraded.
+#6 2.555 Need to get 36.8 MB of archives.
+#6 2.555 After this operation, 170 MB of additional disk space will be used.
+#6 2.555 Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-minimal amd64 3.8.10-0ubuntu1~20.04.18 [721 kB]
+#6 3.782 Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8-minimal amd64 3.8.10-0ubuntu1~20.04.18 [1900 kB]
+#6 4.091 Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-minimal amd64 3.8.2-0ubuntu2 [23.6 kB]
+#6 4.092 Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 mime-support all 3.64ubuntu1 [30.6 kB]
+#6 4.100 Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpdec2 amd64 2.4.2-3 [81.1 kB]
+#6 4.115 Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-stdlib amd64 3.8.10-0ubuntu1~20.04.18 [1676 kB]
+#6 4.411 Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8 amd64 3.8.10-0ubuntu1~20.04.18 [387 kB]
+#6 4.468 Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libpython3-stdlib amd64 3.8.2-0ubuntu2 [7068 B]
+#6 4.468 Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 python3 amd64 3.8.2-0ubuntu2 [47.6 kB]
+#6 4.847 Get:10 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-minimal amd64 2.7.18-1~20.04.7 [336 kB]
+#6 4.962 Get:11 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7-minimal amd64 2.7.18-1~20.04.7 [1278 kB]
+#6 5.097 Get:12 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2-minimal amd64 2.7.17-2ubuntu4 [27.5 kB]
+#6 5.098 Get:13 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython2.7-stdlib amd64 2.7.18-1~20.04.7 [1889 kB]
+#6 5.113 Get:14 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python2.7 amd64 2.7.18-1~20.04.7 [248 kB]
+#6 5.115 Get:15 http://archive.ubuntu.com/ubuntu focal/universe amd64 libpython2-stdlib amd64 2.7.17-2ubuntu4 [7072 B]
+#6 5.115 Get:16 http://archive.ubuntu.com/ubuntu focal/universe amd64 python2 amd64 2.7.17-2ubuntu4 [26.5 kB]
+#6 5.115 Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libapparmor1 amd64 2.13.3-7ubuntu5.4 [36.0 kB]
+#6 5.116 Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdbus-1-3 amd64 1.12.16-2ubuntu2.3 [179 kB]
+#6 5.323 Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 dbus amd64 1.12.16-2ubuntu2.3 [151 kB]
+#6 5.511 Ign:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 distro-info-data all 0.43ubuntu1.18
+#6 5.512 Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+#6 5.542 Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+#6 5.552 Get:23 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+#6 5.553 Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+#6 5.713 Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgirepository-1.0-1 amd64 1.64.1-1~ubuntu20.04.1 [85.7 kB]
+#6 5.724 Get:26 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gir1.2-glib-2.0 amd64 1.64.1-1~ubuntu20.04.1 [134 kB]
+#6 5.744 Get:27 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+#6 5.744 Get:28 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+#6 7.395 Get:29 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+#6 7.400 Get:30 http://archive.ubuntu.com/ubuntu focal/main amd64 lsb-release all 11.1.0ubuntu2 [10.6 kB]
+#6 7.400 Get:31 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-cffi-backend amd64 1.14.0-1build1 [68.7 kB]
+#6 7.401 Get:32 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-dbus amd64 1.2.16-1build1 [94.0 kB]
+#6 7.402 Get:33 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-gi amd64 3.36.0-1 [165 kB]
+#6 7.403 Get:34 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-pkg-resources all 45.2.0-1ubuntu0.3 [130 kB]
+#6 7.404 Get:35 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-six all 1.14.0-2 [12.1 kB]
+#6 7.404 Get:36 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
+#6 7.560 Get:37 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
+#6 7.777 Get:38 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-configobj all 5.0.6-4ubuntu0.1 [34.3 kB]
+#6 7.819 Get:39 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-certifi all 2019.11.28-1 [149 kB]
+#6 7.852 Get:40 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-urllib3 all 1.25.8-2ubuntu0.4 [88.7 kB]
+#6 7.869 Get:41 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-dulwich amd64 0.19.15-1build1 [248 kB]
+#6 7.920 Get:42 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-fastimport all 0.9.8-5build1 [29.6 kB]
+#6 7.926 Get:43 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-breezy amd64 3.0.2-4ubuntu2 [1645 kB]
+#6 8.267 Get:44 http://archive.ubuntu.com/ubuntu focal/universe amd64 brz all 3.0.2-4ubuntu2 [38.1 kB]
+#6 8.268 Get:45 http://archive.ubuntu.com/ubuntu focal/universe amd64 bzr all 2.7.0+bzr6622+brz [4064 B]
+#6 8.268 Get:46 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 icu-devtools amd64 66.1-2ubuntu2.1 [189 kB]
+#6 8.312 Get:47 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgpgme11 amd64 1.13.1-7ubuntu2.2 [120 kB]
+#6 8.337 Get:48 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu-dev amd64 66.1-2ubuntu2.1 [9451 kB]
+#6 9.684 Get:49 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2-dev amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [735 kB]
+#6 9.768 Get:50 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxslt1.1 amd64 1.1.34-4ubuntu0.20.04.3 [151 kB]
+#6 9.789 Get:51 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxslt1-dev amd64 1.1.34-4ubuntu0.20.04.3 [219 kB]
+#6 9.816 Get:52 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-backports.functools-lru-cache all 1.5-3build1 [6520 B]
+#6 9.816 Get:53 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-soupsieve all 1.9.5+dfsg-1 [29.0 kB]
+#6 9.821 Get:54 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-bs4 all 4.8.2-1 [83.2 kB]
+#6 9.833 Get:55 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python-pkg-resources all 44.0.0-2ubuntu0.1 [130 kB]
+#6 9.843 Get:56 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-chardet all 3.0.4-4build1 [80.5 kB]
+#6 9.861 Get:57 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-six all 1.14.0-2 [12.0 kB]
+#6 10.10 Get:58 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-webencodings all 0.5.1-1ubuntu1 [10.9 kB]
+#6 10.21 Get:59 http://archive.ubuntu.com/ubuntu focal/universe amd64 python-html5lib all 1.0.1-2 [84.6 kB]
+#6 10.24 Get:60 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python-lxml amd64 4.5.0-1ubuntu0.5 [950 kB]
+#6 10.37 Get:61 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-blinker all 1.4+dfsg1-0.3ubuntu1 [13.2 kB]
+#6 10.37 Get:62 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-chardet all 3.0.4-4build1 [80.4 kB]
+#6 10.38 Get:63 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-cryptography amd64 2.8-3ubuntu0.3 [211 kB]
+#6 10.41 Get:64 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-wrapt amd64 1.11.2-2build1 [30.6 kB]
+#6 10.41 Get:65 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-deprecated all 1.2.7-1 [8432 B]
+#6 10.41 Get:66 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-entrypoints all 0.3-2ubuntu1 [5740 B]
+#6 10.41 Get:67 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-jwt all 1.7.1-2ubuntu2.1 [18.0 kB]
+#6 10.49 Get:68 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-idna all 2.8-1ubuntu0.1 [36.2 kB]
+#6 10.64 Get:69 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-requests all 2.22.0-2ubuntu1.1 [47.2 kB]
+#6 10.79 Get:70 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-github all 1.43.7-1 [64.5 kB]
+#6 10.80 Get:71 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-gitlab all 1:2.0.1-1 [47.5 kB]
+#6 10.81 Get:72 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-gpg amd64 1.13.1-7ubuntu2.2 [163 kB]
+#6 10.83 Get:73 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-httplib2 all 0.14.0-1ubuntu1 [28.9 kB]
+#6 10.83 Get:74 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-secretstorage all 2.3.1-2ubuntu1 [12.4 kB]
+#6 10.83 Get:75 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-keyring all 18.0.1-2ubuntu1 [28.7 kB]
+#6 10.84 Get:76 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-lazr.uri all 1.0.3-4build1 [13.9 kB]
+#6 10.84 Get:77 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-simplejson amd64 3.16.0-2ubuntu2 [50.8 kB]
+#6 10.88 Get:78 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-wadllib all 1.3.3-3build1 [45.4 kB]
+#6 11.06 Get:79 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-distro all 1.4.0-1 [14.6 kB]
+#6 11.19 Get:80 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-oauthlib all 3.1.0-1ubuntu2 [84.8 kB]
+#6 11.22 Get:81 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-lazr.restfulclient all 0.14.2-2build1 [50.7 kB]
+#6 11.24 Get:82 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-launchpadlib all 1.10.13-1 [50.0 kB]
+#6 11.24 Get:83 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.5 [155 kB]
+#6 11.26 Err:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 distro-info-data all 0.43ubuntu1.18
+#6 11.26   404  Not Found [IP: 198.18.0.25 80]
+#6 11.27 E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.43ubuntu1.18_all.deb  404  Not Found [IP: 198.18.0.25 80]
+#6 11.27 E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+#6 11.27 Fetched 36.8 MB in 9s (3980 kB/s)
+#6 ERROR: process "/bin/sh -c apt-get install -y bzr python-lxml python-html5lib libxslt-dev libxml2-dev zlib1g-dev" did not complete successfully: exit code: 100
+------
+ > [2/6] RUN apt-get install -y bzr python-lxml python-html5lib libxslt-dev libxml2-dev zlib1g-dev:
+11.06 Get:79 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-distro all 1.4.0-1 [14.6 kB]
+11.19 Get:80 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-oauthlib all 3.1.0-1ubuntu2 [84.8 kB]
+11.22 Get:81 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-lazr.restfulclient all 0.14.2-2build1 [50.7 kB]
+11.24 Get:82 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-launchpadlib all 1.10.13-1 [50.0 kB]
+11.24 Get:83 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.5 [155 kB]
+11.26 Err:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 distro-info-data all 0.43ubuntu1.18
+11.26   404  Not Found [IP: 198.18.0.25 80]
+11.27 E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.43ubuntu1.18_all.deb  404  Not Found [IP: 198.18.0.25 80]
+11.27 E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+11.27 Fetched 36.8 MB in 9s (3980 kB/s)
+------
+Dockerfile:22
+--------------------
+  20 |     FROM gcr.io/oss-fuzz-base/base-builder-python@sha256:d223a882810372830fd7968eb3e64533f3a2318c90be43ac753a46a15946faec
+  21 |     
+  22 | >>> RUN apt-get install -y bzr python-lxml python-html5lib libxslt-dev libxml2-dev zlib1g-dev
+  23 |     RUN python3 -m pip install --upgrade pip
+  24 |     RUN python3 -m pip install soupsieve html5lib lxml
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c apt-get install -y bzr python-lxml python-html5lib libxslt-dev libxml2-dev zlib1g-dev" did not complete successfully: exit code: 100
+ERROR:__main__:Docker build failed.

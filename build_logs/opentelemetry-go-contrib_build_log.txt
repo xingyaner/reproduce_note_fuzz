@@ -1,0 +1,107 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/opentelemetry-go-contrib --file /root/reproduce_note_fuzz/oss-fuzz/projects/opentelemetry-go-contrib/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/opentelemetry-go-contrib.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 904B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-go:latest
+#2 DONE 0.7s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM gcr.io/oss-fuzz-base/base-builder-go:latest@sha256:fb8f5c513f8c06c006551558f746233826f72bd15bcb900c53907bba8ccf0b13
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 935B done
+#5 DONE 0.0s
+
+#6 [2/4] RUN go install github.com/AdamKorcz/go-118-fuzz-build@latest
+#6 3.246 go: downloading github.com/AdamKorcz/go-118-fuzz-build v0.0.0-20250520111509-a70c2aa677fa
+#6 DONE 6.0s
+
+#7 [3/4] RUN git clone --depth 1 https://github.com/open-telemetry/opentelemetry-go-contrib
+#7 0.183 Cloning into 'opentelemetry-go-contrib'...
+#7 DONE 2.0s
+
+#8 [4/4] COPY build.sh /src/
+#8 DONE 0.0s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 0.4s done
+#9 writing image sha256:d2e9dbb986897d392456322fbb7bf6f785c6632621bf8f31ca44583fe841a3e4 done
+#9 naming to gcr.io/oss-fuzz/opentelemetry-go-contrib done
+#9 DONE 0.4s
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=opentelemetry-go-contrib -e HELPER=True -e FUZZING_LANGUAGE=go -v /root/reproduce_note_fuzz/oss-fuzz/build/out/opentelemetry-go-contrib/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/opentelemetry-go-contrib:/work -t gcr.io/oss-fuzz/opentelemetry-go-contrib.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+---------------------------------------------------------------
+CC=clang
+CXX=clang++ -lresolv
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ cd /src/opentelemetry-go-contrib
++ pushd otelconf/v0.3.0
+/src/opentelemetry-go-contrib/otelconf/v0.3.0 /src/opentelemetry-go-contrib
++ go get github.com/AdamKorcz/go-118-fuzz-build/testing
+go: downloading github.com/AdaLogics/go-fuzz-headers v0.0.0-20230811130428-ced1acdcaa24
+go: added github.com/AdaLogics/go-fuzz-headers v0.0.0-20230811130428-ced1acdcaa24
+go: added github.com/AdamKorcz/go-118-fuzz-build v0.0.0-20250520111509-a70c2aa677fa
+++ go list
+go: downloading go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp v1.38.0
+go: downloading go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.38.0
+go: downloading go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.38.0
+go: downloading github.com/prometheus/client_golang v1.23.2
+go: downloading go.opentelemetry.io/otel/exporters/prometheus v0.60.0
+go: downloading go.opentelemetry.io/otel v1.38.0
+go: downloading go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp v0.14.0
+go: downloading go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc v1.38.0
+go: downloading go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc v0.14.0
+go: downloading go.opentelemetry.io/otel/exporters/stdout/stdoutlog v0.14.0
+go: downloading go.opentelemetry.io/otel/exporters/stdout/stdoutmetric v1.38.0
+go: downloading go.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.38.0
+go: downloading go.opentelemetry.io/otel/log v0.14.0
+go: downloading go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.38.0
+go: downloading go.opentelemetry.io/otel/metric v1.38.0
+go: downloading go.opentelemetry.io/otel/sdk v1.38.0
+go: downloading go.opentelemetry.io/otel/sdk/log v0.14.0
+go: downloading go.opentelemetry.io/otel/sdk/metric v1.38.0
+go: downloading go.opentelemetry.io/otel/trace v1.38.0
+go: downloading go.yaml.in/yaml/v3 v3.0.4
+go: downloading google.golang.org/grpc v1.76.0
+go: downloading github.com/prometheus/client_model v0.6.2
+go: downloading github.com/prometheus/common v0.67.1
+go: downloading github.com/beorn7/perks v1.0.1
+go: downloading github.com/cespare/xxhash/v2 v2.3.0
+go: downloading github.com/prometheus/procfs v0.19.1
+go: downloading google.golang.org/protobuf v1.36.10
+go: downloading github.com/go-logr/logr v1.4.3
+go: downloading go.opentelemetry.io/proto/otlp v1.8.0
+go: downloading google.golang.org/genproto/googleapis/rpc v0.0.0-20251022142026-3a174f9686a8
+go: downloading github.com/prometheus/otlptranslator v1.0.0
+go: downloading github.com/google/uuid v1.6.0
+go: downloading golang.org/x/sys v0.37.0
+go: downloading github.com/go-logr/stdr v1.2.2
+go: downloading go.opentelemetry.io/auto/sdk v1.2.1
+go: downloading github.com/cenkalti/backoff/v5 v5.0.3
+go: downloading github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822
+go: downloading go.yaml.in/yaml/v2 v2.4.3
+go: downloading github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.3
+go: downloading golang.org/x/net v0.46.0
+go: downloading google.golang.org/genproto/googleapis/api v0.0.0-20251022142026-3a174f9686a8
+go: downloading golang.org/x/text v0.30.0
++ compile_native_go_fuzzer go.opentelemetry.io/contrib/otelconf/v0.3.0 FuzzJSON FuzzJSON
+# go.opentelemetry.io/contrib/otelconf/v0.3.0
+./fuzz_test.go_fuzz.go:33:40: t.Context undefined (type *"github.com/AdamKorcz/go-118-fuzz-build/testing".T has no field or method Context)
+./fuzz_test.go_fuzz.go:57:40: t.Context undefined (type *"github.com/AdamKorcz/go-118-fuzz-build/testing".T has no field or method Context)
+./fuzz_test.go_fuzz.go:113:40: t.Context undefined (type *"github.com/AdamKorcz/go-118-fuzz-build/testing".T has no field or method Context)
+2025/10/28 19:51:59 failed to build packages:exit status 1
+ERROR:__main__:Building fuzzers failed.

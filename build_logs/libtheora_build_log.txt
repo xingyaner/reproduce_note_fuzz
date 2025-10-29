@@ -1,0 +1,143 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/libtheora --file /root/reproduce_note_fuzz/oss-fuzz/projects/libtheora/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/libtheora.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.11kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder:latest
+#2 DONE 0.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/7] FROM gcr.io/oss-fuzz-base/base-builder:latest@sha256:2e588719d119d0ae712ba5695839e07955516ad9470db27dd3b803c9b8c5b1f1
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 1.88kB done
+#5 DONE 0.0s
+
+#6 [2/7] RUN apt-get update && apt-get install -y make autoconf automake libtool
+#6 0.543 Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+#6 0.662 Hit:2 http://security.ubuntu.com/ubuntu focal-security InRelease
+#6 0.803 Hit:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+#6 1.104 Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+#6 1.173 Reading package lists...
+#6 2.373 Reading package lists...
+#6 3.534 Building dependency tree...
+#6 3.728 Reading state information...
+#6 3.878 make is already the newest version (4.2.1-1.2).
+#6 3.878 make set to manually installed.
+#6 3.878 The following additional packages will be installed:
+#6 3.878   file libltdl-dev libltdl7 libmagic-mgc libmagic1
+#6 3.879 Suggested packages:
+#6 3.879   autoconf-archive gnu-standards autoconf-doc gettext libtool-doc gfortran
+#6 3.879   | fortran95-compiler gcj-jdk
+#6 3.910 The following NEW packages will be installed:
+#6 3.911   autoconf automake file libltdl-dev libltdl7 libmagic-mgc libmagic1 libtool
+#6 4.388 0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+#6 4.388 Need to get 1522 kB of archives.
+#6 4.388 After this operation, 12.3 MB of additional disk space will be used.
+#6 4.388 Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+#6 5.307 Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+#6 5.308 Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+#6 5.308 Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+#6 5.498 Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+#6 5.638 Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+#6 5.643 Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+#6 5.666 Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+#6 5.803 debconf: delaying package configuration, since apt-utils is not installed
+#6 5.829 Fetched 1522 kB in 2s (860 kB/s)
+#6 5.845 Selecting previously unselected package libmagic-mgc.
+#6 5.845 (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 17483 files and directories currently installed.)
+#6 5.853 Preparing to unpack .../0-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+#6 5.855 Unpacking libmagic-mgc (1:5.38-4) ...
+#6 5.904 Selecting previously unselected package libmagic1:amd64.
+#6 5.905 Preparing to unpack .../1-libmagic1_1%3a5.38-4_amd64.deb ...
+#6 5.908 Unpacking libmagic1:amd64 (1:5.38-4) ...
+#6 5.930 Selecting previously unselected package file.
+#6 5.931 Preparing to unpack .../2-file_1%3a5.38-4_amd64.deb ...
+#6 5.933 Unpacking file (1:5.38-4) ...
+#6 5.950 Selecting previously unselected package autoconf.
+#6 5.951 Preparing to unpack .../3-autoconf_2.69-11.1_all.deb ...
+#6 5.952 Unpacking autoconf (2.69-11.1) ...
+#6 5.996 Selecting previously unselected package automake.
+#6 5.997 Preparing to unpack .../4-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+#6 6.001 Unpacking automake (1:1.16.1-4ubuntu6) ...
+#6 6.050 Selecting previously unselected package libltdl7:amd64.
+#6 6.052 Preparing to unpack .../5-libltdl7_2.4.6-14_amd64.deb ...
+#6 6.053 Unpacking libltdl7:amd64 (2.4.6-14) ...
+#6 6.070 Selecting previously unselected package libltdl-dev:amd64.
+#6 6.072 Preparing to unpack .../6-libltdl-dev_2.4.6-14_amd64.deb ...
+#6 6.074 Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+#6 6.106 Selecting previously unselected package libtool.
+#6 6.107 Preparing to unpack .../7-libtool_2.4.6-14_all.deb ...
+#6 6.109 Unpacking libtool (2.4.6-14) ...
+#6 6.141 Setting up libmagic-mgc (1:5.38-4) ...
+#6 6.146 Setting up libmagic1:amd64 (1:5.38-4) ...
+#6 6.155 Setting up file (1:5.38-4) ...
+#6 6.160 Setting up libltdl7:amd64 (2.4.6-14) ...
+#6 6.165 Setting up autoconf (2.69-11.1) ...
+#6 6.181 Setting up automake (1:1.16.1-4ubuntu6) ...
+#6 6.188 update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+#6 6.189 update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+#6 6.189 update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+#6 6.193 Setting up libtool (2.4.6-14) ...
+#6 6.198 Setting up libltdl-dev:amd64 (2.4.6-14) ...
+#6 6.203 Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+#6 DONE 6.3s
+
+#7 [3/7] RUN git clone --depth 1 https://gitlab.xiph.org/xiph/ogg.git
+#7 0.151 Cloning into 'ogg'...
+#7 DONE 2.7s
+
+#8 [4/7] RUN git clone --depth 1 https://gitlab.xiph.org/xiph/theora.git libtheora
+#8 0.148 Cloning into 'libtheora'...
+#8 DONE 2.3s
+
+#9 [5/7] RUN git clone --depth 1 https://github.com/tmatth/oss-fuzz-fuzzers.git
+#9 0.148 Cloning into 'oss-fuzz-fuzzers'...
+#9 DONE 5.0s
+
+#10 [6/7] RUN git clone --depth 1 https://github.com/guidovranken/fuzzing-headers.git
+#10 0.134 Cloning into 'fuzzing-headers'...
+#10 0.773 fatal: could not read Username for 'https://github.com': No such device or address
+#10 ERROR: process "/bin/sh -c git clone --depth 1 https://github.com/guidovranken/fuzzing-headers.git" did not complete successfully: exit code: 128
+------
+ > [6/7] RUN git clone --depth 1 https://github.com/guidovranken/fuzzing-headers.git:
+0.134 Cloning into 'fuzzing-headers'...
+0.773 fatal: could not read Username for 'https://github.com': No such device or address
+------
+Dockerfile:22
+--------------------
+  20 |     RUN git clone --depth 1 https://gitlab.xiph.org/xiph/theora.git libtheora
+  21 |     RUN git clone --depth 1 https://github.com/tmatth/oss-fuzz-fuzzers.git
+  22 | >>> RUN git clone --depth 1 https://github.com/guidovranken/fuzzing-headers.git
+  23 |     COPY build.sh $SRC/
+  24 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c git clone --depth 1 https://github.com/guidovranken/fuzzing-headers.git" did not complete successfully: exit code: 128
+ERROR:__main__:Docker build failed.

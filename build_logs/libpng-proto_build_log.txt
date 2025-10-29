@@ -1,0 +1,280 @@
+#10 165.5 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2196:9: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::raw_hash_set' requested here
+#10 165.5  2196 |       : raw_hash_set(0, that.hash_ref(), that.eq_ref(), a) {
+#10 165.5       |         ^
+#10 165.5 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2247:18: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::raw_hash_set' requested here
+#10 165.5  2247 |     raw_hash_set tmp(that, propagate_alloc ? that.alloc_ref() : alloc_ref());
+#10 165.5       |                  ^
+#10 165.5 /src/LPM/external.protobuf/include/absl/container/flat_hash_set.h:105:7: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::operator=' requested here
+#10 165.5   105 | class flat_hash_set
+#10 165.5       |       ^
+#10 165.5 2 warnings generated.
+#10 165.6 [11/16] Building CXX object src/CMakeFiles/protobuf-mutator.dir/binary_format.cc.o
+#10 165.6 In file included from /src/libprotobuf-mutator/src/binary_format.cc:15:
+#10 165.6 In file included from /src/libprotobuf-mutator/src/binary_format.h:20:
+#10 165.6 In file included from /src/libprotobuf-mutator/port/protobuf.h:20:
+#10 165.6 In file included from /src/LPM/external.protobuf/include/google/protobuf/any.pb.h:20:
+#10 165.6 In file included from /src/LPM/external.protobuf/include/google/protobuf/io/coded_stream.h:107:
+#10 165.6 In file included from /src/LPM/external.protobuf/include/absl/log/absl_log.h:36:
+#10 165.6 In file included from /src/LPM/external.protobuf/include/absl/log/internal/log_impl.h:18:
+#10 165.6 In file included from /src/LPM/external.protobuf/include/absl/log/absl_vlog_is_on.h:61:
+#10 165.6 In file included from /src/LPM/external.protobuf/include/absl/log/internal/vlog_config.h:39:
+#10 165.6 In file included from /src/LPM/external.protobuf/include/absl/strings/string_view.h:40:
+#10 165.6 In file included from /src/LPM/external.protobuf/include/absl/base/nullability.h:153:
+#10 165.6 In file included from /src/LPM/external.protobuf/include/absl/base/internal/nullability_impl.h:22:
+#10 165.6 /src/LPM/external.protobuf/include/absl/meta/type_traits.h:511:36: warning: builtin __is_trivially_relocatable is deprecated; use __builtin_is_cpp_trivially_relocatable instead [-Wdeprecated-builtins]
+#10 165.6   511 |     : std::integral_constant<bool, __is_trivially_relocatable(T)> {};
+#10 165.6       |                                    ^
+#10 165.6 /src/LPM/external.protobuf/include/absl/meta/type_traits.h:511:36: warning: builtin __is_trivially_relocatable is deprecated; use __builtin_is_cpp_trivially_relocatable instead [-Wdeprecated-builtins]
+#10 165.6 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:108:41: note: in instantiation of template class 'absl::is_trivially_relocatable<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>' requested here
+#10 165.6   108 |             typename = std::enable_if_t<absl::is_trivially_relocatable<
+#10 165.6       |                                         ^
+#10 165.6 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:110:25: note: in instantiation of default argument for 'transfer_impl<std::allocator<char>>' required here
+#10 165.6   110 |   static std::true_type transfer_impl(Alloc*, slot_type* new_slot,
+#10 165.6       |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.6   111 |                                       slot_type* old_slot, Rank1) {
+#10 165.6       |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.6   112 |     // TODO(b/247130232): remove casts after fixing warnings.
+#10 165.6       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.6   113 |     // TODO(b/251814870): remove casts after fixing warnings.
+#10 165.6       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.6   114 |     std::memcpy(
+#10 165.6       |     ~~~~~~~~~~~~
+#10 165.6   115 |         static_cast<void*>(std::launder(
+#10 165.6       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.6   116 |             const_cast<std::remove_const_t<value_type>*>(&element(new_slot)))),
+#10 165.6       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.6   117 |         static_cast<const void*>(&element(old_slot)), sizeof(value_type));
+#10 165.6       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.6   118 |     return {};
+#10 165.6       |     ~~~~~~~~~~
+#10 165.6   119 |   }
+#10 165.6       |   ~
+#10 165.6 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:84:34: note: while substituting deduced template arguments into function template 'transfer_impl' [with Alloc = std::allocator<char>, $1 = (no value)]
+#10 165.6    84 |     return std::is_same<decltype(transfer_impl<std::allocator<char>>(
+#10 165.6       |                                  ^
+#10 165.6 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2915:53: note: in instantiation of member function 'absl::container_internal::common_policy_traits<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::transfer_uses_memcpy' requested here
+#10 165.6  2915 |                                       PolicyTraits::transfer_uses_memcpy(),
+#10 165.6       |                                                     ^
+#10 165.6 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2096:7: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::resize' requested here
+#10 165.6  2096 |       resize(NormalizeCapacity(bucket_count));
+#10 165.6       |       ^
+#10 165.6 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2196:9: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::raw_hash_set' requested here
+#10 165.6  2196 |       : raw_hash_set(0, that.hash_ref(), that.eq_ref(), a) {
+#10 165.6       |         ^
+#10 165.6 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2247:18: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::raw_hash_set' requested here
+#10 165.6  2247 |     raw_hash_set tmp(that, propagate_alloc ? that.alloc_ref() : alloc_ref());
+#10 165.6       |                  ^
+#10 165.6 /src/LPM/external.protobuf/include/absl/container/flat_hash_set.h:105:7: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::operator=' requested here
+#10 165.6   105 | class flat_hash_set
+#10 165.6       |       ^
+#10 165.6 2 warnings generated.
+#10 165.7 [12/16] Building CXX object src/libfuzzer/CMakeFiles/protobuf-mutator-libfuzzer.dir/libfuzzer_macro.cc.o
+#10 165.7 In file included from /src/libprotobuf-mutator/src/libfuzzer/libfuzzer_macro.cc:15:
+#10 165.7 In file included from /src/libprotobuf-mutator/src/libfuzzer/libfuzzer_macro.h:24:
+#10 165.7 In file included from /src/libprotobuf-mutator/port/protobuf.h:20:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/google/protobuf/any.pb.h:20:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/google/protobuf/io/coded_stream.h:107:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/log/absl_log.h:36:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/log/internal/log_impl.h:18:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/log/absl_vlog_is_on.h:61:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/log/internal/vlog_config.h:39:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/strings/string_view.h:40:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/base/nullability.h:153:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/base/internal/nullability_impl.h:22:
+#10 165.7 /src/LPM/external.protobuf/include/absl/meta/type_traits.h:511:36: warning: builtin __is_trivially_relocatable is deprecated; use __builtin_is_cpp_trivially_relocatable instead [-Wdeprecated-builtins]
+#10 165.7   511 |     : std::integral_constant<bool, __is_trivially_relocatable(T)> {};
+#10 165.7       |                                    ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/meta/type_traits.h:511:36: warning: builtin __is_trivially_relocatable is deprecated; use __builtin_is_cpp_trivially_relocatable instead [-Wdeprecated-builtins]
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:108:41: note: in instantiation of template class 'absl::is_trivially_relocatable<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>' requested here
+#10 165.7   108 |             typename = std::enable_if_t<absl::is_trivially_relocatable<
+#10 165.7       |                                         ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:110:25: note: in instantiation of default argument for 'transfer_impl<std::allocator<char>>' required here
+#10 165.7   110 |   static std::true_type transfer_impl(Alloc*, slot_type* new_slot,
+#10 165.7       |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   111 |                                       slot_type* old_slot, Rank1) {
+#10 165.7       |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   112 |     // TODO(b/247130232): remove casts after fixing warnings.
+#10 165.7       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   113 |     // TODO(b/251814870): remove casts after fixing warnings.
+#10 165.7       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   114 |     std::memcpy(
+#10 165.7       |     ~~~~~~~~~~~~
+#10 165.7   115 |         static_cast<void*>(std::launder(
+#10 165.7       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   116 |             const_cast<std::remove_const_t<value_type>*>(&element(new_slot)))),
+#10 165.7       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   117 |         static_cast<const void*>(&element(old_slot)), sizeof(value_type));
+#10 165.7       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   118 |     return {};
+#10 165.7       |     ~~~~~~~~~~
+#10 165.7   119 |   }
+#10 165.7       |   ~
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:84:34: note: while substituting deduced template arguments into function template 'transfer_impl' [with Alloc = std::allocator<char>, $1 = (no value)]
+#10 165.7    84 |     return std::is_same<decltype(transfer_impl<std::allocator<char>>(
+#10 165.7       |                                  ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2915:53: note: in instantiation of member function 'absl::container_internal::common_policy_traits<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::transfer_uses_memcpy' requested here
+#10 165.7  2915 |                                       PolicyTraits::transfer_uses_memcpy(),
+#10 165.7       |                                                     ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2096:7: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::resize' requested here
+#10 165.7  2096 |       resize(NormalizeCapacity(bucket_count));
+#10 165.7       |       ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2196:9: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::raw_hash_set' requested here
+#10 165.7  2196 |       : raw_hash_set(0, that.hash_ref(), that.eq_ref(), a) {
+#10 165.7       |         ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2247:18: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::raw_hash_set' requested here
+#10 165.7  2247 |     raw_hash_set tmp(that, propagate_alloc ? that.alloc_ref() : alloc_ref());
+#10 165.7       |                  ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/flat_hash_set.h:105:7: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::operator=' requested here
+#10 165.7   105 | class flat_hash_set
+#10 165.7       |       ^
+#10 165.7 2 warnings generated.
+#10 165.7 [13/16] Building CXX object src/libfuzzer/CMakeFiles/protobuf-mutator-libfuzzer.dir/libfuzzer_mutator.cc.o
+#10 165.7 In file included from /src/libprotobuf-mutator/src/libfuzzer/libfuzzer_mutator.cc:15:
+#10 165.7 In file included from /src/libprotobuf-mutator/src/libfuzzer/libfuzzer_mutator.h:20:
+#10 165.7 In file included from /src/libprotobuf-mutator/src/mutator.h:28:
+#10 165.7 In file included from /src/libprotobuf-mutator/port/protobuf.h:20:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/google/protobuf/any.pb.h:20:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/google/protobuf/io/coded_stream.h:107:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/log/absl_log.h:36:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/log/internal/log_impl.h:18:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/log/absl_vlog_is_on.h:61:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/log/internal/vlog_config.h:39:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/strings/string_view.h:40:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/base/nullability.h:153:
+#10 165.7 In file included from /src/LPM/external.protobuf/include/absl/base/internal/nullability_impl.h:22:
+#10 165.7 /src/LPM/external.protobuf/include/absl/meta/type_traits.h:511:36: warning: builtin __is_trivially_relocatable is deprecated; use __builtin_is_cpp_trivially_relocatable instead [-Wdeprecated-builtins]
+#10 165.7   511 |     : std::integral_constant<bool, __is_trivially_relocatable(T)> {};
+#10 165.7       |                                    ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/meta/type_traits.h:511:36: warning: builtin __is_trivially_relocatable is deprecated; use __builtin_is_cpp_trivially_relocatable instead [-Wdeprecated-builtins]
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:108:41: note: in instantiation of template class 'absl::is_trivially_relocatable<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>' requested here
+#10 165.7   108 |             typename = std::enable_if_t<absl::is_trivially_relocatable<
+#10 165.7       |                                         ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:110:25: note: in instantiation of default argument for 'transfer_impl<std::allocator<char>>' required here
+#10 165.7   110 |   static std::true_type transfer_impl(Alloc*, slot_type* new_slot,
+#10 165.7       |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   111 |                                       slot_type* old_slot, Rank1) {
+#10 165.7       |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   112 |     // TODO(b/247130232): remove casts after fixing warnings.
+#10 165.7       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   113 |     // TODO(b/251814870): remove casts after fixing warnings.
+#10 165.7       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   114 |     std::memcpy(
+#10 165.7       |     ~~~~~~~~~~~~
+#10 165.7   115 |         static_cast<void*>(std::launder(
+#10 165.7       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   116 |             const_cast<std::remove_const_t<value_type>*>(&element(new_slot)))),
+#10 165.7       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   117 |         static_cast<const void*>(&element(old_slot)), sizeof(value_type));
+#10 165.7       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 165.7   118 |     return {};
+#10 165.7       |     ~~~~~~~~~~
+#10 165.7   119 |   }
+#10 165.7       |   ~
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:84:34: note: while substituting deduced template arguments into function template 'transfer_impl' [with Alloc = std::allocator<char>, $1 = (no value)]
+#10 165.7    84 |     return std::is_same<decltype(transfer_impl<std::allocator<char>>(
+#10 165.7       |                                  ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2915:53: note: in instantiation of member function 'absl::container_internal::common_policy_traits<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::transfer_uses_memcpy' requested here
+#10 165.7  2915 |                                       PolicyTraits::transfer_uses_memcpy(),
+#10 165.7       |                                                     ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2096:7: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::resize' requested here
+#10 165.7  2096 |       resize(NormalizeCapacity(bucket_count));
+#10 165.7       |       ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2196:9: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::raw_hash_set' requested here
+#10 165.7  2196 |       : raw_hash_set(0, that.hash_ref(), that.eq_ref(), a) {
+#10 165.7       |         ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2247:18: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::raw_hash_set' requested here
+#10 165.7  2247 |     raw_hash_set tmp(that, propagate_alloc ? that.alloc_ref() : alloc_ref());
+#10 165.7       |                  ^
+#10 165.7 /src/LPM/external.protobuf/include/absl/container/flat_hash_set.h:105:7: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::operator=' requested here
+#10 165.7   105 | class flat_hash_set
+#10 165.7       |       ^
+#10 165.7 2 warnings generated.
+#10 166.6 [14/16] Building CXX object src/CMakeFiles/protobuf-mutator.dir/mutator.cc.o
+#10 166.6 In file included from /src/libprotobuf-mutator/src/mutator.cc:15:
+#10 166.6 In file included from /src/libprotobuf-mutator/src/mutator.h:28:
+#10 166.6 In file included from /src/libprotobuf-mutator/port/protobuf.h:20:
+#10 166.6 In file included from /src/LPM/external.protobuf/include/google/protobuf/any.pb.h:20:
+#10 166.6 In file included from /src/LPM/external.protobuf/include/google/protobuf/io/coded_stream.h:107:
+#10 166.6 In file included from /src/LPM/external.protobuf/include/absl/log/absl_log.h:36:
+#10 166.6 In file included from /src/LPM/external.protobuf/include/absl/log/internal/log_impl.h:18:
+#10 166.6 In file included from /src/LPM/external.protobuf/include/absl/log/absl_vlog_is_on.h:61:
+#10 166.6 In file included from /src/LPM/external.protobuf/include/absl/log/internal/vlog_config.h:39:
+#10 166.6 In file included from /src/LPM/external.protobuf/include/absl/strings/string_view.h:40:
+#10 166.6 In file included from /src/LPM/external.protobuf/include/absl/base/nullability.h:153:
+#10 166.6 In file included from /src/LPM/external.protobuf/include/absl/base/internal/nullability_impl.h:22:
+#10 166.6 /src/LPM/external.protobuf/include/absl/meta/type_traits.h:511:36: warning: builtin __is_trivially_relocatable is deprecated; use __builtin_is_cpp_trivially_relocatable instead [-Wdeprecated-builtins]
+#10 166.6   511 |     : std::integral_constant<bool, __is_trivially_relocatable(T)> {};
+#10 166.6       |                                    ^
+#10 166.6 /src/LPM/external.protobuf/include/absl/meta/type_traits.h:511:36: warning: builtin __is_trivially_relocatable is deprecated; use __builtin_is_cpp_trivially_relocatable instead [-Wdeprecated-builtins]
+#10 166.6 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:108:41: note: in instantiation of template class 'absl::is_trivially_relocatable<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>' requested here
+#10 166.6   108 |             typename = std::enable_if_t<absl::is_trivially_relocatable<
+#10 166.6       |                                         ^
+#10 166.6 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:110:25: note: in instantiation of default argument for 'transfer_impl<std::allocator<char>>' required here
+#10 166.6   110 |   static std::true_type transfer_impl(Alloc*, slot_type* new_slot,
+#10 166.6       |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 166.6   111 |                                       slot_type* old_slot, Rank1) {
+#10 166.6       |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 166.6   112 |     // TODO(b/247130232): remove casts after fixing warnings.
+#10 166.6       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 166.6   113 |     // TODO(b/251814870): remove casts after fixing warnings.
+#10 166.6       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 166.6   114 |     std::memcpy(
+#10 166.6       |     ~~~~~~~~~~~~
+#10 166.6   115 |         static_cast<void*>(std::launder(
+#10 166.6       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 166.6   116 |             const_cast<std::remove_const_t<value_type>*>(&element(new_slot)))),
+#10 166.6       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 166.6   117 |         static_cast<const void*>(&element(old_slot)), sizeof(value_type));
+#10 166.6       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#10 166.6   118 |     return {};
+#10 166.6       |     ~~~~~~~~~~
+#10 166.6   119 |   }
+#10 166.6       |   ~
+#10 166.6 /src/LPM/external.protobuf/include/absl/container/internal/common_policy_traits.h:84:34: note: while substituting deduced template arguments into function template 'transfer_impl' [with Alloc = std::allocator<char>, $1 = (no value)]
+#10 166.6    84 |     return std::is_same<decltype(transfer_impl<std::allocator<char>>(
+#10 166.6       |                                  ^
+#10 166.6 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2915:53: note: in instantiation of member function 'absl::container_internal::common_policy_traits<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::transfer_uses_memcpy' requested here
+#10 166.6  2915 |                                       PolicyTraits::transfer_uses_memcpy(),
+#10 166.6       |                                                     ^
+#10 166.6 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2096:7: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::resize' requested here
+#10 166.6  2096 |       resize(NormalizeCapacity(bucket_count));
+#10 166.6       |       ^
+#10 166.6 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2196:9: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::raw_hash_set' requested here
+#10 166.6  2196 |       : raw_hash_set(0, that.hash_ref(), that.eq_ref(), a) {
+#10 166.6       |         ^
+#10 166.6 /src/LPM/external.protobuf/include/absl/container/internal/raw_hash_set.h:2247:18: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::raw_hash_set' requested here
+#10 166.6  2247 |     raw_hash_set tmp(that, propagate_alloc ? that.alloc_ref() : alloc_ref());
+#10 166.6       |                  ^
+#10 166.6 /src/LPM/external.protobuf/include/absl/container/flat_hash_set.h:105:7: note: in instantiation of member function 'absl::container_internal::raw_hash_set<absl::container_internal::FlatHashSetPolicy<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, absl::hash_internal::Hash<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::equal_to<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>, std::allocator<std::pair<const google::protobuf::Message *, const google::protobuf::FieldDescriptor *>>>::operator=' requested here
+#10 166.6   105 | class flat_hash_set
+#10 166.6       |       ^
+#10 166.6 2 warnings generated.
+#10 166.7 [15/16] Linking CXX static library src/libprotobuf-mutator.a
+#10 166.7 [16/16] Linking CXX static library src/libfuzzer/libprotobuf-mutator-libfuzzer.a
+#10 DONE 166.9s
+
+#11 [7/7] COPY build.sh png_fuzz_proto.proto png_proto_fuzzer_example.cc libpng_transforms_fuzzer.cc png_proto_mutator.cc /src/
+#11 DONE 0.0s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 2.0s done
+#12 writing image sha256:4f2d2a72915b48968b6ceec0cfc84229641365fb787af5fa6dbe69102615ef19 done
+#12 naming to gcr.io/oss-fuzz/libpng-proto done
+#12 DONE 2.0s
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=libpng-proto -e HELPER=True -e FUZZING_LANGUAGE=c++ -v /root/reproduce_note_fuzz/oss-fuzz/build/out/libpng-proto/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/libpng-proto:/work -t gcr.io/oss-fuzz/libpng-proto.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+---------------------------------------------------------------
+CC=clang
+CXX=clang++
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ cd libpng/
++ contrib/oss-fuzz/build.sh
+/src/build.sh: line 22: contrib/oss-fuzz/build.sh: No such file or directory
+ERROR:__main__:Building fuzzers failed.

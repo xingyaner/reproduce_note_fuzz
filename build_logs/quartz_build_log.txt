@@ -1,0 +1,22 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/quartz --file /root/reproduce_note_fuzz/oss-fuzz/projects/quartz/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/quartz.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.09kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-jvm:latest
+#2 ERROR: failed to do request: Head "https://gcr.io/v2/oss-fuzz-base/base-builder-jvm/manifests/latest": net/http: TLS handshake timeout
+------
+ > [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-jvm:latest:
+------
+Dockerfile:16
+--------------------
+  14 |     #
+  15 |     ##########################################################################
+  16 | >>> FROM gcr.io/oss-fuzz-base/base-builder-jvm
+  17 |     
+  18 |     RUN curl -L https://download.java.net/openjdk/jdk11.0.0.1/ri/openjdk-11.0.0.1_linux-x64_bin.tar.gz -o jdk.tar.gz && \
+--------------------
+ERROR: failed to build: failed to solve: gcr.io/oss-fuzz-base/base-builder-jvm: failed to resolve source metadata for gcr.io/oss-fuzz-base/base-builder-jvm:latest: failed to do request: Head "https://gcr.io/v2/oss-fuzz-base/base-builder-jvm/manifests/latest": net/http: TLS handshake timeout
+ERROR:__main__:Docker build failed.

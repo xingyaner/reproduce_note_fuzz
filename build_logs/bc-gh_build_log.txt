@@ -1,0 +1,91 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/bc-gh --file /root/reproduce_note_fuzz/oss-fuzz/projects/bc-gh/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/bc-gh.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 885B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder:latest
+#2 DONE 0.9s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM gcr.io/oss-fuzz-base/base-builder:latest@sha256:851574c79285419658880ee57f5691ac23ae53216dea600ffb372395532f3ff6
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 772B done
+#5 DONE 0.0s
+
+#6 [2/5] RUN apt-get update && apt-get install -y make
+#6 0.592 Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+#6 0.617 Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+#6 0.924 Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+#6 1.451 Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+#6 1.606 Fetched 383 kB in 1s (271 kB/s)
+#6 1.606 Reading package lists...
+#6 2.825 Reading package lists...
+#6 3.987 Building dependency tree...
+#6 4.195 Reading state information...
+#6 4.362 make is already the newest version (4.2.1-1.2).
+#6 4.362 make set to manually installed.
+#6 4.362 The following packages were automatically installed and are no longer required:
+#6 4.363   autotools-dev libsigsegv2 m4
+#6 4.363 Use 'apt autoremove' to remove them.
+#6 4.403 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+#6 DONE 4.4s
+
+#7 [3/5] RUN git clone --depth 1 https://github.com/gavinhoward/bc.git bc-gh
+#7 0.166 Cloning into 'bc-gh'...
+#7 DONE 2.3s
+
+#8 [4/5] WORKDIR bc-gh
+#8 DONE 0.0s
+
+#9 [5/5] COPY build.sh /src/
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers 0.1s done
+#10 writing image sha256:90886cfd4a2ec08dedf6e1a06e927625eb84a0fde76305a12ef8344b2f2be723 done
+#10 naming to gcr.io/oss-fuzz/bc-gh done
+#10 DONE 0.1s
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - WorkdirRelativePath: Relative workdir "bc-gh" can have unexpected results if the base image changes (line 20)
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=bc-gh -e HELPER=True -e FUZZING_LANGUAGE=c -v /root/reproduce_note_fuzz/oss-fuzz/build/out/bc-gh/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/bc-gh:/work -t gcr.io/oss-fuzz/bc-gh.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+---------------------------------------------------------------
+CC=clang
+CXX=clang++
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ ./configure -Z
+Illegal option -Z
+Invalid option: ?
+
+usage:
+    configure -h
+    configure --help
+    configure [-a|-bD|-dB|-c] [-CeEfgGHilmMNPrtTvz] [-O OPT_LEVEL] [-k KARATSUBA_LEN]\
+       [-s SETTING] [-S SETTING] [-p TYPE]
+    configure \
+       [--library|--bc-only --disable-dc|--dc-only --disable-bc]             \
+       [--force --debug --disable-extra-math --disable-generated-tests]      \
+       [--disable-history --disable-man-pages --disable-nls --disable-strip] \
+       [--enable-editline] [--enable-readline] [--enable-internal-history]   \
+       [--disable-problematic-tests] [--install-all-locales]                 \
+       [--opt=OPT_LEVEL] [--karatsuba-len=KARATSUBA_LEN]                     \
+       [--set-default-on=SETTING] [--set-default-off=SETTING]                \
+       [--predefined-build-type=TYPE]                                        \
+       [--prefix=PREFIX] [--bindir=BINDIR] [--datarootdir=DATAROOTDIR]       \
+       [--datadir=DATADIR] [--mandir=MANDIR] [--man1dir=MAN1DIR]             \
+       [--man3dir=MAN3DIR]
+ERROR:__main__:Building fuzzers failed.

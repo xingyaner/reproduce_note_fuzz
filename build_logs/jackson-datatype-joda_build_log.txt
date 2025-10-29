@@ -1,0 +1,280 @@
+Progress (1): 5.6/7.4 MB
+Progress (1): 5.6/7.4 MB
+Progress (1): 5.6/7.4 MB
+Progress (1): 5.6/7.4 MB
+Progress (1): 5.6/7.4 MB
+Progress (1): 5.6/7.4 MB
+Progress (1): 5.7/7.4 MB
+Progress (1): 5.7/7.4 MB
+Progress (1): 5.7/7.4 MB
+Progress (1): 5.7/7.4 MB
+Progress (1): 5.7/7.4 MB
+Progress (1): 5.7/7.4 MB
+Progress (1): 5.8/7.4 MB
+Progress (2): 5.8/7.4 MB | 7.7/516 kB
+Progress (2): 5.8/7.4 MB | 16/516 kB 
+Progress (2): 5.8/7.4 MB | 25/516 kB
+Progress (2): 5.8/7.4 MB | 41/516 kB
+Progress (2): 5.8/7.4 MB | 57/516 kB
+Progress (2): 5.8/7.4 MB | 57/516 kB
+Progress (2): 5.8/7.4 MB | 74/516 kB
+Progress (2): 5.8/7.4 MB | 74/516 kB
+Progress (2): 5.8/7.4 MB | 74/516 kB
+Progress (2): 5.8/7.4 MB | 90/516 kB
+Progress (2): 5.8/7.4 MB | 90/516 kB
+Progress (2): 5.8/7.4 MB | 106/516 kB
+Progress (2): 5.8/7.4 MB | 106/516 kB
+Progress (2): 5.8/7.4 MB | 123/516 kB
+Progress (2): 5.9/7.4 MB | 123/516 kB
+Progress (2): 5.9/7.4 MB | 139/516 kB
+Progress (2): 5.9/7.4 MB | 156/516 kB
+Progress (2): 5.9/7.4 MB | 156/516 kB
+Progress (2): 5.9/7.4 MB | 156/516 kB
+Progress (2): 5.9/7.4 MB | 172/516 kB
+Progress (2): 5.9/7.4 MB | 188/516 kB
+Progress (2): 5.9/7.4 MB | 205/516 kB
+Progress (2): 5.9/7.4 MB | 205/516 kB
+Progress (2): 5.9/7.4 MB | 205/516 kB
+Progress (2): 5.9/7.4 MB | 221/516 kB
+Progress (2): 5.9/7.4 MB | 221/516 kB
+Progress (2): 5.9/7.4 MB | 238/516 kB
+Progress (2): 5.9/7.4 MB | 254/516 kB
+Progress (2): 6.0/7.4 MB | 254/516 kB
+Progress (2): 6.0/7.4 MB | 270/516 kB
+Progress (2): 6.0/7.4 MB | 270/516 kB
+Progress (2): 6.0/7.4 MB | 287/516 kB
+Progress (2): 6.0/7.4 MB | 287/516 kB
+Progress (2): 6.0/7.4 MB | 303/516 kB
+Progress (2): 6.0/7.4 MB | 303/516 kB
+Progress (2): 6.0/7.4 MB | 319/516 kB
+Progress (2): 6.0/7.4 MB | 319/516 kB
+Progress (2): 6.0/7.4 MB | 319/516 kB
+Progress (2): 6.0/7.4 MB | 336/516 kB
+Progress (2): 6.0/7.4 MB | 344/516 kB
+Progress (2): 6.0/7.4 MB | 344/516 kB
+Progress (2): 6.0/7.4 MB | 360/516 kB
+Progress (2): 6.1/7.4 MB | 360/516 kB
+Progress (2): 6.1/7.4 MB | 377/516 kB
+Progress (2): 6.1/7.4 MB | 377/516 kB
+Progress (2): 6.1/7.4 MB | 393/516 kB
+Progress (2): 6.1/7.4 MB | 393/516 kB
+Progress (2): 6.1/7.4 MB | 393/516 kB
+Progress (2): 6.1/7.4 MB | 410/516 kB
+Progress (2): 6.1/7.4 MB | 426/516 kB
+Progress (2): 6.1/7.4 MB | 426/516 kB
+Progress (2): 6.1/7.4 MB | 426/516 kB
+Progress (2): 6.1/7.4 MB | 442/516 kB
+Progress (2): 6.1/7.4 MB | 459/516 kB
+Progress (2): 6.2/7.4 MB | 459/516 kB
+Progress (2): 6.2/7.4 MB | 475/516 kB
+Progress (2): 6.2/7.4 MB | 475/516 kB
+Progress (2): 6.2/7.4 MB | 492/516 kB
+Progress (2): 6.2/7.4 MB | 508/516 kB
+Progress (2): 6.2/7.4 MB | 516 kB    
+Progress (2): 6.2/7.4 MB | 516 kB
+Progress (2): 6.2/7.4 MB | 516 kB
+Progress (2): 6.2/7.4 MB | 516 kB
+                                 
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/velocity/velocity-engine-core/2.4.1/velocity-engine-core-2.4.1.jar[90m (516 kB at 263 kB/s)[0m
+Progress (1): 6.2/7.4 MB
+Progress (1): 6.3/7.4 MB
+Progress (1): 6.3/7.4 MB
+Progress (1): 6.3/7.4 MB
+Progress (1): 6.3/7.4 MB
+Progress (1): 6.3/7.4 MB
+Progress (1): 6.3/7.4 MB
+Progress (1): 6.4/7.4 MB
+Progress (1): 6.4/7.4 MB
+Progress (1): 6.4/7.4 MB
+Progress (1): 6.4/7.4 MB
+Progress (1): 6.4/7.4 MB
+Progress (1): 6.4/7.4 MB
+Progress (1): 6.5/7.4 MB
+Progress (1): 6.5/7.4 MB
+Progress (1): 6.5/7.4 MB
+Progress (1): 6.5/7.4 MB
+Progress (1): 6.5/7.4 MB
+Progress (1): 6.5/7.4 MB
+Progress (1): 6.6/7.4 MB
+Progress (1): 6.6/7.4 MB
+Progress (1): 6.6/7.4 MB
+Progress (1): 6.6/7.4 MB
+Progress (1): 6.6/7.4 MB
+Progress (1): 6.6/7.4 MB
+Progress (1): 6.6/7.4 MB
+Progress (1): 6.7/7.4 MB
+Progress (1): 6.7/7.4 MB
+Progress (1): 6.7/7.4 MB
+Progress (1): 6.7/7.4 MB
+Progress (1): 6.7/7.4 MB
+Progress (1): 6.7/7.4 MB
+Progress (1): 6.8/7.4 MB
+Progress (1): 6.8/7.4 MB
+Progress (1): 6.8/7.4 MB
+Progress (1): 6.8/7.4 MB
+Progress (1): 6.8/7.4 MB
+Progress (1): 6.8/7.4 MB
+Progress (1): 6.9/7.4 MB
+Progress (1): 6.9/7.4 MB
+Progress (1): 6.9/7.4 MB
+Progress (1): 6.9/7.4 MB
+Progress (1): 6.9/7.4 MB
+Progress (1): 6.9/7.4 MB
+Progress (1): 6.9/7.4 MB
+Progress (1): 7.0/7.4 MB
+Progress (1): 7.0/7.4 MB
+Progress (1): 7.0/7.4 MB
+Progress (1): 7.0/7.4 MB
+Progress (1): 7.0/7.4 MB
+Progress (1): 7.0/7.4 MB
+Progress (1): 7.1/7.4 MB
+Progress (1): 7.1/7.4 MB
+Progress (1): 7.1/7.4 MB
+Progress (1): 7.1/7.4 MB
+Progress (1): 7.1/7.4 MB
+Progress (1): 7.1/7.4 MB
+Progress (1): 7.2/7.4 MB
+Progress (1): 7.2/7.4 MB
+Progress (1): 7.2/7.4 MB
+Progress (1): 7.2/7.4 MB
+Progress (1): 7.2/7.4 MB
+Progress (1): 7.2/7.4 MB
+Progress (1): 7.3/7.4 MB
+Progress (1): 7.3/7.4 MB
+Progress (1): 7.3/7.4 MB
+Progress (1): 7.3/7.4 MB
+Progress (1): 7.3/7.4 MB
+Progress (1): 7.3/7.4 MB
+Progress (1): 7.3/7.4 MB
+Progress (1): 7.4/7.4 MB
+Progress (1): 7.4/7.4 MB
+Progress (1): 7.4/7.4 MB
+Progress (1): 7.4 MB    
+                    
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0mcom/github/luben/zstd-jni/1.5.7-4/zstd-jni-1.5.7-4.jar[90m (7.4 MB at 3.6 MB/s)[0m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  02:05 min
+[[1;34mINFO[m] Finished at: 2025-10-27T07:17:16Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[0m[0m+ mkdir -p /out/dependency
++ cp /src/jackson-datatype-joda/target/jackson-datatype-joda-3.1.0-SNAPSHOT.jar /out/joda.jar
+++ find /src/jackson-datatype-joda/target/dependency/ -name '*.jar' '!' -name 'junit*.jar' '!' -name 'hamcrest*.jar'
++ for jarfile in $(find $SRC/jackson-datatype-joda/target/dependency/ -name *.jar ! -name junit*.jar ! -name hamcrest*.jar)
++ cp /src/jackson-datatype-joda/target/dependency/joda-time-2.12.7.jar /out/dependency
++ for jarfile in $(find $SRC/jackson-datatype-joda/target/dependency/ -name *.jar ! -name junit*.jar ! -name hamcrest*.jar)
++ cp /src/jackson-datatype-joda/target/dependency/jackson-core-3.1.0-SNAPSHOT.jar /out/dependency
++ for jarfile in $(find $SRC/jackson-datatype-joda/target/dependency/ -name *.jar ! -name junit*.jar ! -name hamcrest*.jar)
++ cp /src/jackson-datatype-joda/target/dependency/apiguardian-api-1.1.2.jar /out/dependency
++ for jarfile in $(find $SRC/jackson-datatype-joda/target/dependency/ -name *.jar ! -name junit*.jar ! -name hamcrest*.jar)
++ cp /src/jackson-datatype-joda/target/dependency/jackson-databind-3.1.0-SNAPSHOT.jar /out/dependency
++ for jarfile in $(find $SRC/jackson-datatype-joda/target/dependency/ -name *.jar ! -name junit*.jar ! -name hamcrest*.jar)
++ cp /src/jackson-datatype-joda/target/dependency/jackson-annotations-2.20.jar /out/dependency
++ for jarfile in $(find $SRC/jackson-datatype-joda/target/dependency/ -name *.jar ! -name junit*.jar ! -name hamcrest*.jar)
++ cp /src/jackson-datatype-joda/target/dependency/opentest4j-1.3.0.jar /out/dependency
++ ALL_JARS=joda.jar
+++ find /out/dependency -name '*.jar' -printf '%f '
++ ALL_DEPENDENCY='joda-time-2.12.7.jar jackson-core-3.1.0-SNAPSHOT.jar apiguardian-api-1.1.2.jar jackson-databind-3.1.0-SNAPSHOT.jar jackson-annotations-2.20.jar opentest4j-1.3.0.jar '
+++ echo joda.jar
+++ xargs printf -- /out/%s:
+++ echo joda-time-2.12.7.jar jackson-core-3.1.0-SNAPSHOT.jar apiguardian-api-1.1.2.jar jackson-databind-3.1.0-SNAPSHOT.jar jackson-annotations-2.20.jar opentest4j-1.3.0.jar
+++ xargs printf -- /out/dependency/%s:
++ BUILD_CLASSPATH=/out/joda.jar::/out/dependency/joda-time-2.12.7.jar:/out/dependency/jackson-core-3.1.0-SNAPSHOT.jar:/out/dependency/apiguardian-api-1.1.2.jar:/out/dependency/jackson-databind-3.1.0-SNAPSHOT.jar:/out/dependency/jackson-annotations-2.20.jar:/out/dependency/opentest4j-1.3.0.jar::/usr/local/lib/jazzer_api_deploy.jar
+++ echo joda.jar
+++ xargs printf -- '$this_dir/%s:'
+++ echo joda-time-2.12.7.jar jackson-core-3.1.0-SNAPSHOT.jar apiguardian-api-1.1.2.jar jackson-databind-3.1.0-SNAPSHOT.jar jackson-annotations-2.20.jar opentest4j-1.3.0.jar
+++ xargs printf -- '$this_dir/dependency/%s:'
++ RUNTIME_CLASSPATH='$this_dir/joda.jar::$this_dir/dependency/joda-time-2.12.7.jar:$this_dir/dependency/jackson-core-3.1.0-SNAPSHOT.jar:$this_dir/dependency/apiguardian-api-1.1.2.jar:$this_dir/dependency/jackson-databind-3.1.0-SNAPSHOT.jar:$this_dir/dependency/jackson-annotations-2.20.jar:$this_dir/dependency/opentest4j-1.3.0.jar::$this_dir'
+++ find /src -maxdepth 1 -name '*Fuzzer.java'
++ for fuzzer in $(find $SRC -maxdepth 1 -name '*Fuzzer.java')
+++ basename -s .java /src/JodaDeserializerFuzzer.java
++ fuzzer_basename=JodaDeserializerFuzzer
++ javac -cp /out/joda.jar::/out/dependency/joda-time-2.12.7.jar:/out/dependency/jackson-core-3.1.0-SNAPSHOT.jar:/out/dependency/apiguardian-api-1.1.2.jar:/out/dependency/jackson-databind-3.1.0-SNAPSHOT.jar:/out/dependency/jackson-annotations-2.20.jar:/out/dependency/opentest4j-1.3.0.jar::/usr/local/lib/jazzer_api_deploy.jar /src/JodaDeserializerFuzzer.java
+/src/JodaDeserializerFuzzer.java:19: error: package com.fasterxml.jackson.core.type does not exist
+import com.fasterxml.jackson.core.type.TypeReference;
+                                      ^
+/src/JodaDeserializerFuzzer.java:20: error: package com.fasterxml.jackson.databind does not exist
+import com.fasterxml.jackson.databind.ObjectMapper;
+                                     ^
+/src/JodaDeserializerFuzzer.java:21: error: package com.fasterxml.jackson.databind.annotation does not exist
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+                                                ^
+/src/JodaDeserializerFuzzer.java:22: error: package com.fasterxml.jackson.datatype.joda does not exist
+import com.fasterxml.jackson.datatype.joda.JodaModule;
+                                          ^
+/src/JodaDeserializerFuzzer.java:23: error: package com.fasterxml.jackson.datatype.joda.deser does not exist
+import com.fasterxml.jackson.datatype.joda.deser.DateTimeDeserializer;
+                                                ^
+/src/JodaDeserializerFuzzer.java:45: error: cannot find symbol
+  private static ObjectMapper mapper;
+                 ^
+  symbol:   class ObjectMapper
+  location: class JodaDeserializerFuzzer
+/src/JodaDeserializerFuzzer.java:46: error: cannot find symbol
+  private static ObjectMapper plainMapper;
+                 ^
+  symbol:   class ObjectMapper
+  location: class JodaDeserializerFuzzer
+/src/JodaDeserializerFuzzer.java:48: error: cannot find symbol
+  private static List<TypeReference> typeChoice;
+                      ^
+  symbol:   class TypeReference
+  location: class JodaDeserializerFuzzer
+/src/JodaDeserializerFuzzer.java:126: error: cannot find symbol
+    @JsonDeserialize(using = DateTimeDeserializer.class)
+     ^
+  symbol:   class JsonDeserialize
+  location: class AnnotationClass
+/src/JodaDeserializerFuzzer.java:126: error: cannot find symbol
+    @JsonDeserialize(using = DateTimeDeserializer.class)
+                             ^
+  symbol:   class DateTimeDeserializer
+  location: class AnnotationClass
+/src/JodaDeserializerFuzzer.java:52: error: cannot find symbol
+    mapper = new ObjectMapper().registerModule(new JodaModule());
+                                                   ^
+  symbol:   class JodaModule
+  location: class JodaDeserializerFuzzer
+/src/JodaDeserializerFuzzer.java:52: error: cannot find symbol
+    mapper = new ObjectMapper().registerModule(new JodaModule());
+                 ^
+  symbol:   class ObjectMapper
+  location: class JodaDeserializerFuzzer
+/src/JodaDeserializerFuzzer.java:53: error: cannot find symbol
+    plainMapper = new ObjectMapper();
+                      ^
+  symbol:   class ObjectMapper
+  location: class JodaDeserializerFuzzer
+/src/JodaDeserializerFuzzer.java:61: error: cannot find symbol
+      TypeReference typeReference = data.pickValue(typeChoice);
+      ^
+  symbol:   class TypeReference
+  location: class JodaDeserializerFuzzer
+/src/JodaDeserializerFuzzer.java:73: error: cannot find symbol
+    typeChoice = new ArrayList<TypeReference>();
+                               ^
+  symbol:   class TypeReference
+  location: class JodaDeserializerFuzzer
+/src/JodaDeserializerFuzzer.java:93: error: cannot find symbol
+    typeChoice.add(new TypeReference<Map<DateTime, String>>() {});
+                       ^
+  symbol:   class TypeReference
+  location: class JodaDeserializerFuzzer
+/src/JodaDeserializerFuzzer.java:94: error: cannot find symbol
+    typeChoice.add(new TypeReference<Map<LocalDate, String>>() {});
+                       ^
+  symbol:   class TypeReference
+  location: class JodaDeserializerFuzzer
+/src/JodaDeserializerFuzzer.java:95: error: cannot find symbol
+    typeChoice.add(new TypeReference<Map<LocalTime, String>>() {});
+                       ^
+  symbol:   class TypeReference
+  location: class JodaDeserializerFuzzer
+/src/JodaDeserializerFuzzer.java:96: error: cannot find symbol
+    typeChoice.add(new TypeReference<Map<LocalDateTime, String>>() {});
+                       ^
+  symbol:   class TypeReference
+  location: class JodaDeserializerFuzzer
+19 errors
+ERROR:__main__:Building fuzzers failed.

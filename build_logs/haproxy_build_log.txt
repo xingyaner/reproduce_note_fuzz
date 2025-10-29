@@ -1,0 +1,280 @@
+	-o src/teken.o -c src/teken.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc.o -c src/vtc.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_barrier.o -c src/vtc_barrier.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_client.o -c src/vtc_client.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_gzip.o -c src/vtc_gzip.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_h2_hpack.o -c src/vtc_h2_hpack.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_h2_tbl.o -c src/vtc_h2_tbl.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_haproxy.o -c src/vtc_haproxy.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_http.o -c src/vtc_http.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_http2.o -c src/vtc_http2.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_log.o -c src/vtc_log.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_logexp.o -c src/vtc_logexp.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_main.o -c src/vtc_main.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_misc.o -c src/vtc_misc.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_process.o -c src/vtc_process.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_proxy.o -c src/vtc_proxy.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_server.o -c src/vtc_server.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_sess.o -c src/vtc_sess.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_subr.o -c src/vtc_subr.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_syslog.o -c src/vtc_syslog.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_tunnel.o -c src/vtc_tunnel.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_varnish.o -c src/vtc_varnish.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o src/vtc_vsm.o -c src/vtc_vsm.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vas.o -c lib/vas.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vav.o -c lib/vav.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vbh.o -c lib/vbh.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vbt.o -c lib/vbt.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vct.o -c lib/vct.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vev.o -c lib/vev.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vfil.o -c lib/vfil.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vfl.o -c lib/vfl.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vjsn.o -c lib/vjsn.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vlu.o -c lib/vlu.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vnum.o -c lib/vnum.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vpf.o -c lib/vpf.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vre.o -c lib/vre.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vrnd.o -c lib/vrnd.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vsa.o -c lib/vsa.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vsb.o -c lib/vsb.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vss.o -c lib/vss.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vsub.o -c lib/vsub.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vtcp.o -c lib/vtcp.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vtim.o -c lib/vtim.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vudp.o -c lib/vudp.c
+clang \
+	-O2 -Wall -Werror \
+	 \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	-I/home/phk/Varnish/trunk/varnish-cache/include \
+	-o lib/vus.o -c lib/vus.c
+make[1]: Leaving directory '/src/VTest2'
+clang \
+	-O2 -Wall -Werror -rdynamic \
+	-o vtest \
+	-I. -Isrc -Ilib -I/usr/local/include -pthread \
+	src/*.o lib/*.o \
+	-L/usr/local/lib -lm -lpcre2-8 -lz
+/usr/bin/ld: src/vtc.o: in function `find_cmd':
+vtc.c:(.text+0x1b7): undefined reference to `dlopen'
+/usr/bin/ld: src/vtc.o: in function `exec_file':
+vtc.c:(.text+0x2179): undefined reference to `dlopen'
+/usr/bin/ld: vtc.c:(.text+0x23d9): undefined reference to `dlerror'
+clang: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make: *** [Makefile:44: vtest] Error 1
+ERROR:__main__:Building fuzzers failed.

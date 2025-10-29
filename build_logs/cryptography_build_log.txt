@@ -1,0 +1,280 @@
+#10 4.914 warn: continuing (because the -y flag is set and the error is ignorable)
+#10 4.932 info: profile set to 'default'
+#10 4.932 info: default host triple is x86_64-unknown-linux-gnu
+#10 4.932 info: syncing channel updates for 'stable-x86_64-unknown-linux-gnu'
+#10 6.279 info: latest update on 2025-09-18, rust version 1.90.0 (1159e78c4 2025-09-14)
+#10 6.279 info: downloading component 'cargo'
+#10 9.079 info: downloading component 'clippy'
+#10 10.89 info: downloading component 'rust-docs'
+#10 16.18 info: downloading component 'rust-std'
+#10 24.01 info: downloading component 'rustc'
+#10 44.32 info: downloading component 'rustfmt'
+#10 45.29 info: installing component 'cargo'
+#10 46.11 info: installing component 'clippy'
+#10 46.54 info: installing component 'rust-docs'
+#10 48.35 info: installing component 'rust-std'
+#10 50.52 info: installing component 'rustc'
+#10 56.08 info: installing component 'rustfmt'
+#10 56.43 info: default toolchain set to 'stable-x86_64-unknown-linux-gnu'
+#10 56.43 
+#10 56.44   stable-x86_64-unknown-linux-gnu installed - rustc 1.90.0 (1159e78c4 2025-09-14)
+#10 56.44 
+#10 56.44 
+#10 56.44 Rust is installed now. Great!
+#10 56.44 
+#10 56.44 To get started you may need to restart your current shell.
+#10 56.44 This would reload your PATH environment variable to include
+#10 56.44 Cargo's bin directory ($HOME/.cargo/bin).
+#10 56.44 
+#10 56.44 To configure your current shell, you need to source
+#10 56.44 the corresponding env file under $HOME/.cargo.
+#10 56.44 
+#10 56.44 This is usually done by running one of the following (note the leading DOT):
+#10 56.44 . "$HOME/.cargo/env"            # For sh/bash/zsh/ash/dash/pdksh
+#10 56.44 source "$HOME/.cargo/env.fish"  # For fish
+#10 56.44 source $"($nu.home-path)/.cargo/env.nu"  # For nushell
+#10 DONE 59.8s
+
+#11 [ 7/10] RUN rustup install nightly
+#11 0.136 info: syncing channel updates for 'nightly-x86_64-unknown-linux-gnu'
+#11 1.545 info: latest update on 2025-10-26, rust version 1.93.0-nightly (34f954f9b 2025-10-25)
+#11 1.545 info: downloading component 'cargo'
+#11 4.195 info: downloading component 'clippy'
+#11 5.576 info: downloading component 'rust-docs'
+#11 10.49 info: downloading component 'rust-std'
+#11 29.04 info: downloading component 'rustc'
+#11 74.94 info: downloading component 'rustfmt'
+#11 76.45 info: installing component 'cargo'
+#11 77.28 info: installing component 'clippy'
+#11 77.71 info: installing component 'rust-docs'
+#11 79.58 info: installing component 'rust-std'
+#11 81.79 info: installing component 'rustc'
+#11 87.08 info: installing component 'rustfmt'
+#11 87.43 
+#11 87.44   nightly-x86_64-unknown-linux-gnu installed - rustc 1.93.0-nightly (34f954f9b 2025-10-25)
+#11 87.44 
+#11 87.44 info: checking for self-update
+#11 DONE 89.4s
+
+#12 [ 8/10] RUN rustup default nightly
+#12 0.141 info: using existing install for 'nightly-x86_64-unknown-linux-gnu'
+#12 0.182 info: default toolchain set to 'nightly-x86_64-unknown-linux-gnu'
+#12 0.182 
+#12 0.190   nightly-x86_64-unknown-linux-gnu unchanged - rustc 1.93.0-nightly (34f954f9b 2025-10-25)
+#12 0.190 
+#12 DONE 0.2s
+
+#13 [ 9/10] WORKDIR cryptography
+#13 DONE 0.0s
+
+#14 [10/10] COPY build.sh fuzz_*.py /src/
+#14 DONE 0.0s
+
+#15 exporting to image
+#15 exporting layers
+#15 exporting layers 7.3s done
+#15 writing image sha256:028912b5a060196fec4a260222e2bbe9946df8683f8c7c66536d39d060591d5b done
+#15 naming to gcr.io/oss-fuzz/cryptography done
+#15 DONE 7.3s
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - WorkdirRelativePath: Relative workdir "cryptography" can have unexpected results if the base image changes (line 28)
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=cryptography -e HELPER=True -e FUZZING_LANGUAGE=python -v /root/reproduce_note_fuzz/oss-fuzz/build/out/cryptography/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/cryptography:/work -t gcr.io/oss-fuzz/cryptography.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+---------------------------------------------------------------
+CC=clang
+CXX=clang++
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=function,leak,vptr,
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=function,leak,vptr
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ python3 -m pip cache purge
+Files removed: 8 (1.4 MB)
++ unset RUSTFLAGS
++ unset CXXFLAGS
++ unset CFLAGS
++ python3 -m pip install .
+Processing /src/cryptography
+  Installing build dependencies ... [?25l- \ | / - \ | / - \ | / - \ | / done
+[?25h  Getting requirements to build wheel ... [?25ldone
+[?25h  Preparing metadata (pyproject.toml) ... [?25l- \ | / - \ | done
+[?25hCollecting cffi>=2.0.0 (from cryptography==47.0.0.dev1)
+  Using cached cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography==47.0.0.dev1)
+  Using cached pycparser-2.23-py3-none-any.whl.metadata (993 bytes)
+Using cached cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (215 kB)
+Using cached pycparser-2.23-py3-none-any.whl (118 kB)
+Building wheels for collected packages: cryptography
+  Building wheel for cryptography (pyproject.toml) ... [?25l- \ | / - \ | / - \ | / error
+  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+  
+  [31m×[0m [32mBuilding wheel for cryptography [0m[1;32m([0m[32mpyproject.toml[0m[1;32m)[0m did not run successfully.
+  [31m│[0m exit code: [1;36m1[0m
+  [31m╰─>[0m [31m[154 lines of output][0m
+  [31m   [0m Running `maturin pep517 build-wheel -i /usr/local/bin/python3 --compatibility off`
+  [31m   [0m 🍹 Building a mixed python/rust project
+  [31m   [0m ⚠️  Warning: You're building a library without activating pyo3's `extension-module` feature. See https://pyo3.rs/v0.27.1/building-and-distribution.html#the-extension-module-feature
+  [31m   [0m 🔗 Found pyo3 bindings with abi3 support
+  [31m   [0m 🐍 Found CPython 3.11 at /usr/local/bin/python3
+  [31m   [0m 📡 Using build options locked from pyproject.toml
+  [31m   [0m    Compiling target-lexicon v0.13.3
+  [31m   [0m    Compiling proc-macro2 v1.0.103
+  [31m   [0m    Compiling unicode-ident v1.0.20
+  [31m   [0m    Compiling quote v1.0.41
+  [31m   [0m    Compiling shlex v1.3.0
+  [31m   [0m    Compiling find-msvc-tools v0.1.4
+  [31m   [0m    Compiling vcpkg v0.2.15
+  [31m   [0m    Compiling pkg-config v0.3.32
+  [31m   [0m    Compiling libc v0.2.177
+  [31m   [0m    Compiling once_cell v1.21.3
+  [31m   [0m    Compiling openssl v0.10.74
+  [31m   [0m    Compiling autocfg v1.5.0
+  [31m   [0m    Compiling foreign-types-shared v0.1.1
+  [31m   [0m    Compiling cfg-if v1.0.4
+  [31m   [0m    Compiling bitflags v2.10.0
+  [31m   [0m    Compiling heck v0.5.0
+  [31m   [0m    Compiling foreign-types v0.3.2
+  [31m   [0m    Compiling cryptography-openssl v0.1.0 (/src/cryptography/src/rust/cryptography-openssl)
+  [31m   [0m    Compiling itoa v1.0.15
+  [31m   [0m    Compiling cryptography-key-parsing v0.1.0 (/src/cryptography/src/rust/cryptography-key-parsing)
+  [31m   [0m    Compiling cc v1.2.41
+  [31m   [0m    Compiling indoc v2.0.7
+  [31m   [0m    Compiling base64 v0.22.1
+  [31m   [0m    Compiling unindent v0.2.4
+  [31m   [0m    Compiling self_cell v1.2.1
+  [31m   [0m    Compiling memoffset v0.9.1
+  [31m   [0m    Compiling pem v3.0.6
+  [31m   [0m    Compiling pyo3-build-config v0.27.1
+  [31m   [0m    Compiling syn v2.0.108
+  [31m   [0m    Compiling openssl-sys v0.9.110
+  [31m   [0m    Compiling cryptography-cffi v0.1.0 (/src/cryptography/src/rust/cryptography-cffi)
+  [31m   [0m    Compiling pyo3-macros-backend v0.27.1
+  [31m   [0m    Compiling pyo3-ffi v0.27.1
+  [31m   [0m    Compiling pyo3 v0.27.1
+  [31m   [0m    Compiling cryptography-rust v0.1.0 (/src/cryptography/src/rust)
+  [31m   [0m warning: cryptography-cffi@0.1.0: /src/cryptography/target/release/build/cryptography-cffi-42b578ec66a0961f/out/_openssl.c:624:10: error: "pyca/cryptography MUST be linked with OpenSSL 3.0.0 or later"
+  [31m   [0m warning: cryptography-cffi@0.1.0:   624 |         #error "pyca/cryptography MUST be linked with OpenSSL 3.0.0 or later"
+  [31m   [0m warning: cryptography-cffi@0.1.0:       |          ^
+  [31m   [0m warning: cryptography-cffi@0.1.0: 1 error generated.
+  [31m   [0m error: failed to run custom build command for `cryptography-cffi v0.1.0 (/src/cryptography/src/rust/cryptography-cffi)`
+  [31m   [0m 
+  [31m   [0m Caused by:
+  [31m   [0m   process didn't exit successfully: `/src/cryptography/target/release/build/cryptography-cffi-88d1a68d2c33c13b/build-script-build` (exit status: 1)
+  [31m   [0m   --- stdout
+  [31m   [0m   cargo:rerun-if-env-changed=PYO3_PYTHON
+  [31m   [0m   cargo:rerun-if-changed=../../_cffi_src/
+  [31m   [0m   cargo:rerun-if-changed=../../cryptography/__about__.py
+  [31m   [0m   cargo:rustc-cfg=python_implementation="CPython"
+  [31m   [0m   OUT_DIR = Some(/src/cryptography/target/release/build/cryptography-cffi-42b578ec66a0961f/out)
+  [31m   [0m   OPT_LEVEL = Some(3)
+  [31m   [0m   TARGET = Some(x86_64-unknown-linux-gnu)
+  [31m   [0m   CARGO_ENCODED_RUSTFLAGS = Some()
+  [31m   [0m   HOST = Some(x86_64-unknown-linux-gnu)
+  [31m   [0m   cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  [31m   [0m   CC_x86_64-unknown-linux-gnu = None
+  [31m   [0m   cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  [31m   [0m   CC_x86_64_unknown_linux_gnu = None
+  [31m   [0m   cargo:rerun-if-env-changed=HOST_CC
+  [31m   [0m   HOST_CC = None
+  [31m   [0m   cargo:rerun-if-env-changed=CC
+  [31m   [0m   CC = Some(clang)
+  [31m   [0m   cargo:rerun-if-env-changed=CC_KNOWN_WRAPPER_CUSTOM
+  [31m   [0m   CC_KNOWN_WRAPPER_CUSTOM = None
+  [31m   [0m   RUSTC_WRAPPER = None
+  [31m   [0m   cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  [31m   [0m   cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  [31m   [0m   CRATE_CC_NO_DEFAULTS = None
+  [31m   [0m   DEBUG = Some(false)
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS
+  [31m   [0m   CFLAGS = None
+  [31m   [0m   cargo:rerun-if-env-changed=HOST_CFLAGS
+  [31m   [0m   HOST_CFLAGS = None
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  [31m   [0m   CFLAGS_x86_64_unknown_linux_gnu = None
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  [31m   [0m   CFLAGS_x86_64-unknown-linux-gnu = None
+  [31m   [0m   OUT_DIR = Some(/src/cryptography/target/release/build/cryptography-cffi-42b578ec66a0961f/out)
+  [31m   [0m   cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  [31m   [0m   cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  [31m   [0m   CRATE_CC_NO_DEFAULTS = None
+  [31m   [0m   TARGET = Some(x86_64-unknown-linux-gnu)
+  [31m   [0m   HOST = Some(x86_64-unknown-linux-gnu)
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS
+  [31m   [0m   CFLAGS = None
+  [31m   [0m   cargo:rerun-if-env-changed=HOST_CFLAGS
+  [31m   [0m   HOST_CFLAGS = None
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  [31m   [0m   CFLAGS_x86_64_unknown_linux_gnu = None
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  [31m   [0m   CFLAGS_x86_64-unknown-linux-gnu = None
+  [31m   [0m   OUT_DIR = Some(/src/cryptography/target/release/build/cryptography-cffi-42b578ec66a0961f/out)
+  [31m   [0m   cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  [31m   [0m   cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  [31m   [0m   CRATE_CC_NO_DEFAULTS = None
+  [31m   [0m   TARGET = Some(x86_64-unknown-linux-gnu)
+  [31m   [0m   HOST = Some(x86_64-unknown-linux-gnu)
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS
+  [31m   [0m   CFLAGS = None
+  [31m   [0m   cargo:rerun-if-env-changed=HOST_CFLAGS
+  [31m   [0m   HOST_CFLAGS = None
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  [31m   [0m   CFLAGS_x86_64_unknown_linux_gnu = None
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  [31m   [0m   CFLAGS_x86_64-unknown-linux-gnu = None
+  [31m   [0m   OUT_DIR = Some(/src/cryptography/target/release/build/cryptography-cffi-42b578ec66a0961f/out)
+  [31m   [0m   cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  [31m   [0m   cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  [31m   [0m   CRATE_CC_NO_DEFAULTS = None
+  [31m   [0m   TARGET = Some(x86_64-unknown-linux-gnu)
+  [31m   [0m   HOST = Some(x86_64-unknown-linux-gnu)
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS
+  [31m   [0m   CFLAGS = None
+  [31m   [0m   cargo:rerun-if-env-changed=HOST_CFLAGS
+  [31m   [0m   HOST_CFLAGS = None
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  [31m   [0m   CFLAGS_x86_64_unknown_linux_gnu = None
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  [31m   [0m   CFLAGS_x86_64-unknown-linux-gnu = None
+  [31m   [0m   OUT_DIR = Some(/src/cryptography/target/release/build/cryptography-cffi-42b578ec66a0961f/out)
+  [31m   [0m   cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  [31m   [0m   cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  [31m   [0m   CRATE_CC_NO_DEFAULTS = None
+  [31m   [0m   TARGET = Some(x86_64-unknown-linux-gnu)
+  [31m   [0m   HOST = Some(x86_64-unknown-linux-gnu)
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS
+  [31m   [0m   CFLAGS = None
+  [31m   [0m   cargo:rerun-if-env-changed=HOST_CFLAGS
+  [31m   [0m   HOST_CFLAGS = None
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  [31m   [0m   CFLAGS_x86_64_unknown_linux_gnu = None
+  [31m   [0m   cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  [31m   [0m   CFLAGS_x86_64-unknown-linux-gnu = None
+  [31m   [0m   cargo:warning=/src/cryptography/target/release/build/cryptography-cffi-42b578ec66a0961f/out/_openssl.c:624:10: error: "pyca/cryptography MUST be linked with OpenSSL 3.0.0 or later"
+  [31m   [0m   cargo:warning=  624 |         #error "pyca/cryptography MUST be linked with OpenSSL 3.0.0 or later"
+  [31m   [0m   cargo:warning=      |          ^
+  [31m   [0m   cargo:warning=1 error generated.
+  [31m   [0m 
+  [31m   [0m   --- stderr
+  [31m   [0m 
+  [31m   [0m 
+  [31m   [0m   error occurred in cc-rs: command did not execute successfully (status code exit status: 1): LC_ALL="C" "clang" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "--target=x86_64-unknown-linux-gnu" "-I" "/usr/include" "-I" "/usr/local/include/python3.11" "-Wall" "-Wextra" "-Wconversion" "-Wno-error=sign-conversion" "-Wno-unused-parameter" "-fmacro-prefix-map=/src/cryptography/target/release/build/cryptography-cffi-42b578ec66a0961f/out=." "-DPy_LIMITED_API=0x030800f0" "-o" "/src/cryptography/target/release/build/cryptography-cffi-42b578ec66a0961f/out/5030281349c4b476-_openssl.o" "-c" "/src/cryptography/target/release/build/cryptography-cffi-42b578ec66a0961f/out/_openssl.c"
+  [31m   [0m 
+  [31m   [0m 
+  [31m   [0m warning: build failed, waiting for other jobs to finish...
+  [31m   [0m 💥 maturin failed
+  [31m   [0m   Caused by: Failed to build a native library through cargo
+  [31m   [0m   Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.11-64bit" PYO3_PYTHON="/usr/local/bin/python3" PYTHON_SYS_EXECUTABLE="/usr/local/bin/python3" "cargo" "rustc" "--message-format" "json-render-diagnostics" "--locked" "--manifest-path" "/src/cryptography/src/rust/Cargo.toml" "--release" "--lib"`
+  [31m   [0m Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/usr/local/bin/python3', '--compatibility', 'off'] returned non-zero exit status 1
+  [31m   [0m [31m[end of output][0m
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+[31m  ERROR: Failed building wheel for cryptography[0m[31m
+[0m[?25hFailed to build cryptography
+[1;31merror[0m: [1mfailed-wheel-build-for-install[0m
+
+[31m×[0m Failed to build installable wheels for some pyproject.toml based projects
+[31m╰─>[0m cryptography
+ERROR:__main__:Building fuzzers failed.

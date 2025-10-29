@@ -1,0 +1,280 @@
+Progress (2): 106/886 kB | 0.3/2.0 MB
+Progress (2): 106/886 kB | 0.3/2.0 MB
+Progress (2): 106/886 kB | 0.3/2.0 MB
+Progress (2): 106/886 kB | 0.4/2.0 MB
+Progress (2): 106/886 kB | 0.4/2.0 MB
+Progress (2): 106/886 kB | 0.4/2.0 MB
+Progress (2): 106/886 kB | 0.4/2.0 MB
+Progress (2): 106/886 kB | 0.4/2.0 MB
+Progress (2): 106/886 kB | 0.4/2.0 MB
+Progress (2): 106/886 kB | 0.4/2.0 MB
+Progress (2): 106/886 kB | 0.5/2.0 MB
+Progress (2): 106/886 kB | 0.5/2.0 MB
+Progress (2): 106/886 kB | 0.5/2.0 MB
+Progress (2): 106/886 kB | 0.5/2.0 MB
+Progress (2): 106/886 kB | 0.5/2.0 MB
+Progress (2): 106/886 kB | 0.5/2.0 MB
+Progress (2): 106/886 kB | 0.6/2.0 MB
+Progress (2): 106/886 kB | 0.6/2.0 MB
+Progress (2): 106/886 kB | 0.6/2.0 MB
+Progress (2): 106/886 kB | 0.6/2.0 MB
+Progress (2): 106/886 kB | 0.6/2.0 MB
+Progress (2): 106/886 kB | 0.6/2.0 MB
+Progress (2): 106/886 kB | 0.6/2.0 MB
+Progress (2): 106/886 kB | 0.7/2.0 MB
+Progress (2): 106/886 kB | 0.7/2.0 MB
+Progress (2): 106/886 kB | 0.7/2.0 MB
+Progress (2): 106/886 kB | 0.7/2.0 MB
+Progress (2): 106/886 kB | 0.7/2.0 MB
+Progress (2): 106/886 kB | 0.7/2.0 MB
+Progress (2): 106/886 kB | 0.7/2.0 MB
+Progress (2): 106/886 kB | 0.8/2.0 MB
+Progress (2): 106/886 kB | 0.8/2.0 MB
+Progress (2): 106/886 kB | 0.8/2.0 MB
+Progress (2): 106/886 kB | 0.8/2.0 MB
+Progress (2): 106/886 kB | 0.8/2.0 MB
+Progress (2): 106/886 kB | 0.8/2.0 MB
+Progress (2): 106/886 kB | 0.9/2.0 MB
+Progress (2): 106/886 kB | 0.9/2.0 MB
+Progress (2): 106/886 kB | 0.9/2.0 MB
+Progress (2): 106/886 kB | 0.9/2.0 MB
+Progress (2): 106/886 kB | 0.9/2.0 MB
+Progress (2): 106/886 kB | 0.9/2.0 MB
+Progress (2): 106/886 kB | 0.9/2.0 MB
+Progress (2): 106/886 kB | 1.0/2.0 MB
+Progress (2): 106/886 kB | 1.0/2.0 MB
+Progress (2): 106/886 kB | 1.0/2.0 MB
+Progress (2): 106/886 kB | 1.0/2.0 MB
+Progress (2): 106/886 kB | 1.0/2.0 MB
+Progress (2): 106/886 kB | 1.0/2.0 MB
+Progress (2): 106/886 kB | 1.0/2.0 MB
+Progress (2): 106/886 kB | 1.1/2.0 MB
+Progress (2): 106/886 kB | 1.1/2.0 MB
+Progress (2): 106/886 kB | 1.1/2.0 MB
+Progress (2): 106/886 kB | 1.1/2.0 MB
+Progress (2): 106/886 kB | 1.1/2.0 MB
+Progress (2): 106/886 kB | 1.1/2.0 MB
+Progress (2): 106/886 kB | 1.1/2.0 MB
+Progress (2): 106/886 kB | 1.2/2.0 MB
+Progress (2): 106/886 kB | 1.2/2.0 MB
+Progress (2): 106/886 kB | 1.2/2.0 MB
+Progress (2): 106/886 kB | 1.2/2.0 MB
+Progress (2): 106/886 kB | 1.2/2.0 MB
+Progress (2): 123/886 kB | 1.2/2.0 MB
+Progress (2): 139/886 kB | 1.2/2.0 MB
+Progress (2): 156/886 kB | 1.2/2.0 MB
+Progress (2): 172/886 kB | 1.2/2.0 MB
+Progress (2): 188/886 kB | 1.2/2.0 MB
+Progress (2): 205/886 kB | 1.2/2.0 MB
+Progress (2): 221/886 kB | 1.2/2.0 MB
+Progress (2): 233/886 kB | 1.2/2.0 MB
+Progress (2): 250/886 kB | 1.2/2.0 MB
+Progress (2): 266/886 kB | 1.2/2.0 MB
+Progress (2): 282/886 kB | 1.2/2.0 MB
+Progress (2): 299/886 kB | 1.2/2.0 MB
+Progress (2): 315/886 kB | 1.2/2.0 MB
+Progress (2): 331/886 kB | 1.2/2.0 MB
+Progress (2): 344/886 kB | 1.2/2.0 MB
+Progress (2): 360/886 kB | 1.2/2.0 MB
+Progress (2): 377/886 kB | 1.2/2.0 MB
+Progress (2): 393/886 kB | 1.2/2.0 MB
+Progress (2): 401/886 kB | 1.2/2.0 MB
+Progress (2): 417/886 kB | 1.2/2.0 MB
+Progress (2): 434/886 kB | 1.2/2.0 MB
+Progress (2): 442/886 kB | 1.2/2.0 MB
+Progress (2): 458/886 kB | 1.2/2.0 MB
+Progress (2): 475/886 kB | 1.2/2.0 MB
+Progress (2): 479/886 kB | 1.2/2.0 MB
+Progress (2): 495/886 kB | 1.2/2.0 MB
+Progress (2): 499/886 kB | 1.2/2.0 MB
+Progress (2): 516/886 kB | 1.2/2.0 MB
+Progress (2): 520/886 kB | 1.2/2.0 MB
+Progress (2): 532/886 kB | 1.2/2.0 MB
+Progress (2): 549/886 kB | 1.2/2.0 MB
+Progress (2): 557/886 kB | 1.2/2.0 MB
+Progress (2): 573/886 kB | 1.2/2.0 MB
+Progress (2): 590/886 kB | 1.2/2.0 MB
+Progress (2): 594/886 kB | 1.2/2.0 MB
+Progress (2): 610/886 kB | 1.2/2.0 MB
+Progress (2): 622/886 kB | 1.2/2.0 MB
+Progress (2): 639/886 kB | 1.2/2.0 MB
+Progress (2): 647/886 kB | 1.2/2.0 MB
+Progress (2): 663/886 kB | 1.2/2.0 MB
+Progress (2): 680/886 kB | 1.2/2.0 MB
+Progress (2): 688/886 kB | 1.2/2.0 MB
+Progress (2): 704/886 kB | 1.2/2.0 MB
+Progress (2): 721/886 kB | 1.2/2.0 MB
+Progress (2): 724/886 kB | 1.2/2.0 MB
+Progress (2): 741/886 kB | 1.2/2.0 MB
+Progress (2): 757/886 kB | 1.2/2.0 MB
+Progress (2): 774/886 kB | 1.2/2.0 MB
+Progress (2): 778/886 kB | 1.2/2.0 MB
+Progress (2): 794/886 kB | 1.2/2.0 MB
+Progress (2): 810/886 kB | 1.2/2.0 MB
+Progress (2): 827/886 kB | 1.2/2.0 MB
+Progress (2): 843/886 kB | 1.2/2.0 MB
+Progress (2): 860/886 kB | 1.2/2.0 MB
+Progress (2): 860/886 kB | 1.2/2.0 MB
+Progress (2): 876/886 kB | 1.2/2.0 MB
+Progress (2): 886 kB | 1.2/2.0 MB    
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.2.7/spring-beans-6.2.7.jar (886 kB at 1.4 MB/s)
+#12 930.6 Progress (1): 1.2/2.0 MB
+Progress (1): 1.3/2.0 MB
+Progress (1): 1.3/2.0 MB
+Progress (1): 1.3/2.0 MB
+Progress (1): 1.3/2.0 MB
+Progress (1): 1.3/2.0 MB
+Progress (1): 1.3/2.0 MB
+Progress (1): 1.3/2.0 MB
+Progress (1): 1.3/2.0 MB
+Progress (1): 1.4/2.0 MB
+Progress (1): 1.4/2.0 MB
+Progress (1): 1.4/2.0 MB
+Progress (1): 1.4/2.0 MB
+Progress (1): 1.4/2.0 MB
+Progress (1): 1.4/2.0 MB
+Progress (1): 1.5/2.0 MB
+Progress (1): 1.5/2.0 MB
+Progress (1): 1.5/2.0 MB
+Progress (1): 1.5/2.0 MB
+Progress (1): 1.5/2.0 MB
+Progress (1): 1.5/2.0 MB
+Progress (1): 1.5/2.0 MB
+Progress (1): 1.6/2.0 MB
+Progress (1): 1.6/2.0 MB
+Progress (1): 1.6/2.0 MB
+Progress (1): 1.6/2.0 MB
+Progress (1): 1.6/2.0 MB
+Progress (1): 1.6/2.0 MB
+Progress (1): 1.6/2.0 MB
+Progress (1): 1.7/2.0 MB
+Progress (1): 1.7/2.0 MB
+Progress (1): 1.7/2.0 MB
+Progress (1): 1.7/2.0 MB
+Progress (1): 1.7/2.0 MB
+Progress (1): 1.7/2.0 MB
+Progress (1): 1.7/2.0 MB
+Progress (1): 1.8/2.0 MB
+Progress (1): 1.8/2.0 MB
+Progress (1): 1.8/2.0 MB
+Progress (1): 1.8/2.0 MB
+Progress (1): 1.8/2.0 MB
+Progress (1): 1.8/2.0 MB
+Progress (1): 1.9/2.0 MB
+Progress (1): 1.9/2.0 MB
+Progress (1): 1.9/2.0 MB
+Progress (1): 1.9/2.0 MB
+Progress (1): 1.9/2.0 MB
+Progress (1): 1.9/2.0 MB
+Progress (1): 1.9/2.0 MB
+Progress (1): 2.0/2.0 MB
+Progress (1): 2.0 MB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.2.7/spring-core-6.2.7.jar (2.0 MB at 1.7 MB/s)
+#12 930.9 [INFO] ------------------------------------------------------------------------
+#12 930.9 [INFO] Reactor Summary for Feign (Parent) 13.7-SNAPSHOT:
+#12 930.9 [INFO] 
+#12 930.9 [INFO] Feign (Parent) ..................................... SUCCESS [11:22 min]
+#12 930.9 [INFO] Feign Core ......................................... SUCCESS [ 18.484 s]
+#12 930.9 [INFO] Feign Gson ......................................... SUCCESS [  1.685 s]
+#12 930.9 [INFO] Feign JAX-RS ....................................... SUCCESS [  5.613 s]
+#12 930.9 [INFO] Feign Apache HttpClient ............................ SUCCESS [  1.740 s]
+#12 930.9 [INFO] Feign JAX-RS 2 ..................................... SUCCESS [  2.016 s]
+#12 930.9 [INFO] Feign Apache HttpComponents Client 5 ............... SUCCESS [  2.640 s]
+#12 930.9 [INFO] Feign Hystrix ...................................... SUCCESS [  3.318 s]
+#12 930.9 [INFO] Feign Jackson ...................................... SUCCESS [  1.951 s]
+#12 930.9 [INFO] Feign Jackson JAXB ................................. SUCCESS [  3.023 s]
+#12 930.9 [INFO] Feign Jackson Jr ................................... SUCCESS [  1.815 s]
+#12 930.9 [INFO] Feign JAXB ......................................... SUCCESS [  1.925 s]
+#12 930.9 [INFO] Feign JAXB Jakarta ................................. SUCCESS [  2.878 s]
+#12 930.9 [INFO] Feign JAXRS 3 ...................................... SUCCESS [ 13.863 s]
+#12 930.9 [INFO] Feign JAXRS 4 ...................................... SUCCESS [ 14.150 s]
+#12 930.9 [INFO] Feign Java 11 ...................................... SUCCESS [  2.373 s]
+#12 930.9 [INFO] Feign Jakarta ...................................... SUCCESS [  0.743 s]
+#12 930.9 [INFO] Feign Mock ......................................... SUCCESS [  1.892 s]
+#12 930.9 [INFO] Feign JSON-java .................................... SUCCESS [  1.650 s]
+#12 930.9 [INFO] Feign OkHttp ....................................... SUCCESS [  2.086 s]
+#12 930.9 [INFO] Feign Google HTTP Client ........................... SUCCESS [  7.669 s]
+#12 930.9 [INFO] Feign Ribbon ....................................... SUCCESS [  3.665 s]
+#12 930.9 [INFO] Feign SAX .......................................... SUCCESS [  1.529 s]
+#12 930.9 [INFO] Feign SLF4J ........................................ SUCCESS [  1.267 s]
+#12 930.9 [INFO] Feign Spring ....................................... SUCCESS [  2.778 s]
+#12 930.9 [INFO] Feign Spring4 ...................................... SUCCESS [  0.152 s]
+#12 930.9 [INFO] Feign SOAP ......................................... SUCCESS [  2.419 s]
+#12 930.9 [INFO] Feign SOAP Jakarta ................................. SUCCESS [  5.009 s]
+#12 930.9 [INFO] Feign Reactive Wrappers ............................ SUCCESS [  2.346 s]
+#12 930.9 [INFO] Feign Micrometer ................................... SUCCESS [  6.570 s]
+#12 930.9 [INFO] Feign Dropwizard Metrics4 .......................... SUCCESS [  1.602 s]
+#12 930.9 [INFO] Feign Dropwizard Metrics5 .......................... SUCCESS [  1.615 s]
+#12 930.9 [INFO] Feign Kotlin ....................................... SUCCESS [ 27.314 s]
+#12 930.9 [INFO] GitHub Example ..................................... SUCCESS [  6.665 s]
+#12 930.9 [INFO] Feign APT test generator ........................... SUCCESS [  7.529 s]
+#12 930.9 [INFO] Feign Annotation Error Decoder ..................... SUCCESS [  1.894 s]
+#12 930.9 [INFO] GitHub Example With Coroutine ...................... SUCCESS [  2.241 s]
+#12 930.9 [INFO] Wikipedia Example .................................. SUCCESS [  1.599 s]
+#12 930.9 [INFO] Feign Forms Core ................................... SUCCESS [ 10.875 s]
+#12 930.9 [INFO] Wikipedia Example with Spring Boot ................. FAILURE [  4.065 s]
+#12 930.9 [INFO] Feign Benchmark (JMH) .............................. SKIPPED
+#12 930.9 [INFO] Feign Moshi ........................................ SKIPPED
+#12 930.9 [INFO] Feign Fastjson2 .................................... SKIPPED
+#12 930.9 [INFO] Feign Forms Extension for Spring ................... SKIPPED
+#12 930.9 [INFO] feign-vertx-parent ................................. SKIPPED
+#12 930.9 [INFO] Feign Vertx ........................................ SKIPPED
+#12 930.9 [INFO] Feign Vertx (tests with Vertx 4.x) ................. SKIPPED
+#12 930.9 [INFO] Feign Vertx (tests with Vertx 5.x) ................. SKIPPED
+#12 930.9 [INFO] feign-coverage ..................................... SKIPPED
+#12 930.9 [INFO] ------------------------------------------------------------------------
+#12 930.9 [INFO] BUILD FAILURE
+#12 930.9 [INFO] ------------------------------------------------------------------------
+#12 930.9 [INFO] Total time:  15:19 min
+#12 930.9 [INFO] Finished at: 2025-10-26T11:12:19Z
+#12 930.9 [INFO] ------------------------------------------------------------------------
+#12 930.9 [WARNING] 
+#12 930.9 [WARNING] Plugin validation issues were detected in 6 plugin(s)
+#12 930.9 [WARNING] 
+#12 930.9 [WARNING]  * org.eclipse.transformer:org.eclipse.transformer.maven:0.2.0
+#12 930.9 [WARNING]  * org.apache.maven.plugins:maven-site-plugin:3.12.1
+#12 930.9 [WARNING]  * org.apache.felix:maven-bundle-plugin:6.0.0
+#12 930.9 [WARNING]  * org.apache.maven.plugins:maven-dependency-plugin:2.8
+#12 930.9 [WARNING]  * org.apache.maven.plugins:maven-resources-plugin:3.3.0
+#12 930.9 [WARNING]  * io.sundr:sundr-maven-plugin:0.230.1
+#12 930.9 [WARNING] 
+#12 930.9 [WARNING] For more or less details, use 'maven.plugin.validation' property with one of the values (case insensitive): [BRIEF, DEFAULT, VERBOSE]
+#12 930.9 [WARNING] 
+#12 930.9 [INFO] 609 goals, 609 executed
+#12 931.0 [ERROR] Failed to execute goal on project feign-example-wikipedia-with-springboot: Could not resolve dependencies for project io.github.openfeign:feign-example-wikipedia-with-springboot:jar:13.7-SNAPSHOT: The following artifacts could not be resolved: io.github.openfeign:feign-form-spring:jar:13.7-SNAPSHOT (absent): io.github.openfeign:feign-form-spring:jar:13.7-SNAPSHOT was not found in https://oss.sonatype.org/content/repositories/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of ossrh has elapsed or updates are forced -> [Help 1]
+#12 931.0 [ERROR] 
+#12 931.0 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+#12 931.0 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+#12 931.0 [ERROR] 
+#12 931.0 [ERROR] For more information about the errors and possible solutions, please read the following articles:
+#12 931.0 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+#12 931.0 [ERROR] 
+#12 931.0 [ERROR] After correcting the problems, you can resume the build with the command
+#12 931.0 [ERROR]   mvn <args> -rf :feign-example-wikipedia-with-springboot
+#12 ERROR: process "/bin/sh -c $MVN --settings $SRC/settings.xml clean package -Dmaven.javadoc.skip=true         -DskipTests=true -Dpmd.skip=true -Dencoding=UTF-8         -Dmaven.antrun.skip=true -Dcheckstyle.skip=true -Denforcer.fail=false         dependency:copy-dependencies" did not complete successfully: exit code: 1
+------
+ > [8/8] RUN /src/maven/apache-maven-3.9.2/bin/mvn --settings /src/settings.xml clean package -Dmaven.javadoc.skip=true         -DskipTests=true -Dpmd.skip=true -Dencoding=UTF-8         -Dmaven.antrun.skip=true -Dcheckstyle.skip=true -Denforcer.fail=false         dependency:copy-dependencies:
+931.0 [ERROR] Failed to execute goal on project feign-example-wikipedia-with-springboot: Could not resolve dependencies for project io.github.openfeign:feign-example-wikipedia-with-springboot:jar:13.7-SNAPSHOT: The following artifacts could not be resolved: io.github.openfeign:feign-form-spring:jar:13.7-SNAPSHOT (absent): io.github.openfeign:feign-form-spring:jar:13.7-SNAPSHOT was not found in https://oss.sonatype.org/content/repositories/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of ossrh has elapsed or updates are forced -> [Help 1]
+931.0 [ERROR] 
+931.0 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+931.0 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+931.0 [ERROR] 
+931.0 [ERROR] For more information about the errors and possible solutions, please read the following articles:
+931.0 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+931.0 [ERROR] 
+931.0 [ERROR] After correcting the problems, you can resume the build with the command
+931.0 [ERROR]   mvn <args> -rf :feign-example-wikipedia-with-springboot
+------
+Dockerfile:32
+--------------------
+  31 |     # Use the Maven settings file to resolve dependencies
+  32 | >>> RUN $MVN --settings $SRC/settings.xml clean package -Dmaven.javadoc.skip=true \
+  33 | >>>         -DskipTests=true -Dpmd.skip=true -Dencoding=UTF-8 \
+  34 | >>>         -Dmaven.antrun.skip=true -Dcheckstyle.skip=true -Denforcer.fail=false \
+  35 | >>>         dependency:copy-dependencies
+  36 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c $MVN --settings $SRC/settings.xml clean package -Dmaven.javadoc.skip=true         -DskipTests=true -Dpmd.skip=true -Dencoding=UTF-8         -Dmaven.antrun.skip=true -Dcheckstyle.skip=true -Denforcer.fail=false         dependency:copy-dependencies" did not complete successfully: exit code: 1
+ERROR:__main__:Docker build failed.

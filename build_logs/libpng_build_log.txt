@@ -1,0 +1,143 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/libpng --file /root/reproduce_note_fuzz/oss-fuzz/projects/libpng/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/libpng.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.01kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder:latest
+#2 DONE 1.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM gcr.io/oss-fuzz-base/base-builder:latest@sha256:f84cdff7792efb5147fe8c74089ed21e3cce127a45fddcc3a9c87d1d482744d1
+#4 CACHED
+
+#5 [2/6] RUN apt-get update &&     apt-get install -y make autoconf automake libtool zlib1g-dev
+#5 0.958 Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+#5 0.958 Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+#5 1.288 Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+#5 2.046 Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+#5 2.254 Fetched 383 kB in 2s (187 kB/s)
+#5 2.254 Reading package lists...
+#5 3.568 Reading package lists...
+#5 4.822 Building dependency tree...
+#5 5.074 Reading state information...
+#5 5.337 make is already the newest version (4.2.1-1.2).
+#5 5.337 make set to manually installed.
+#5 5.337 The following additional packages will be installed:
+#5 5.338   file libltdl-dev libltdl7 libmagic-mgc libmagic1
+#5 5.339 Suggested packages:
+#5 5.339   autoconf-archive gnu-standards autoconf-doc gettext libtool-doc gfortran
+#5 5.339   | fortran95-compiler gcj-jdk
+#5 5.392 The following NEW packages will be installed:
+#5 5.396   autoconf automake file libltdl-dev libltdl7 libmagic-mgc libmagic1 libtool
+#5 5.396   zlib1g-dev
+#5 5.918 0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
+#5 5.918 Need to get 1677 kB of archives.
+#5 5.918 After this operation, 12.9 MB of additional disk space will be used.
+#5 5.918 Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+#5 6.785 Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+#5 6.833 Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+#5 6.850 Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+#5 7.099 Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+#5 7.399 Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+#5 7.413 Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+#5 7.506 Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+#5 7.553 Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.5 [155 kB]
+#5 7.733 debconf: delaying package configuration, since apt-utils is not installed
+#5 7.781 Fetched 1677 kB in 2s (764 kB/s)
+#5 7.804 Selecting previously unselected package libmagic-mgc.
+#5 7.804 (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 17483 files and directories currently installed.)
+#5 7.816 Preparing to unpack .../0-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+#5 7.818 Unpacking libmagic-mgc (1:5.38-4) ...
+#5 7.878 Selecting previously unselected package libmagic1:amd64.
+#5 7.879 Preparing to unpack .../1-libmagic1_1%3a5.38-4_amd64.deb ...
+#5 7.883 Unpacking libmagic1:amd64 (1:5.38-4) ...
+#5 7.906 Selecting previously unselected package file.
+#5 7.907 Preparing to unpack .../2-file_1%3a5.38-4_amd64.deb ...
+#5 7.910 Unpacking file (1:5.38-4) ...
+#5 7.932 Selecting previously unselected package autoconf.
+#5 7.933 Preparing to unpack .../3-autoconf_2.69-11.1_all.deb ...
+#5 7.935 Unpacking autoconf (2.69-11.1) ...
+#5 7.983 Selecting previously unselected package automake.
+#5 7.984 Preparing to unpack .../4-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+#5 7.988 Unpacking automake (1:1.16.1-4ubuntu6) ...
+#5 8.044 Selecting previously unselected package libltdl7:amd64.
+#5 8.046 Preparing to unpack .../5-libltdl7_2.4.6-14_amd64.deb ...
+#5 8.048 Unpacking libltdl7:amd64 (2.4.6-14) ...
+#5 8.074 Selecting previously unselected package libltdl-dev:amd64.
+#5 8.076 Preparing to unpack .../6-libltdl-dev_2.4.6-14_amd64.deb ...
+#5 8.080 Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+#5 8.112 Selecting previously unselected package libtool.
+#5 8.114 Preparing to unpack .../7-libtool_2.4.6-14_all.deb ...
+#5 8.116 Unpacking libtool (2.4.6-14) ...
+#5 8.144 Selecting previously unselected package zlib1g-dev:amd64.
+#5 8.146 Preparing to unpack .../8-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu1.5_amd64.deb ...
+#5 8.148 Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+#5 8.193 Setting up libmagic-mgc (1:5.38-4) ...
+#5 8.200 Setting up libmagic1:amd64 (1:5.38-4) ...
+#5 8.210 Setting up file (1:5.38-4) ...
+#5 8.216 Setting up libltdl7:amd64 (2.4.6-14) ...
+#5 8.222 Setting up autoconf (2.69-11.1) ...
+#5 8.229 Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+#5 8.235 Setting up automake (1:1.16.1-4ubuntu6) ...
+#5 8.242 update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+#5 8.246 update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+#5 8.246 update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+#5 8.253 Setting up libtool (2.4.6-14) ...
+#5 8.261 Setting up libltdl-dev:amd64 (2.4.6-14) ...
+#5 8.267 Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+#5 DONE 8.4s
+
+#6 [3/6] RUN git clone --depth 1 https://github.com/madler/zlib.git
+#6 0.164 Cloning into 'zlib'...
+#6 DONE 2.1s
+
+#7 [4/6] RUN git clone --depth 1 https://github.com/pnggroup/libpng.git
+#7 0.176 Cloning into 'libpng'...
+#7 DONE 2.1s
+
+#8 [5/6] RUN cp libpng/contrib/oss-fuzz/build.sh /src
+#8 0.205 cp: cannot stat 'libpng/contrib/oss-fuzz/build.sh': No such file or directory
+#8 ERROR: process "/bin/sh -c cp libpng/contrib/oss-fuzz/build.sh $SRC" did not complete successfully: exit code: 1
+------
+ > [5/6] RUN cp libpng/contrib/oss-fuzz/build.sh /src:
+0.205 cp: cannot stat 'libpng/contrib/oss-fuzz/build.sh': No such file or directory
+------
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - WorkdirRelativePath: Relative workdir "libpng" can have unexpected results if the base image changes (line 24)
+Dockerfile:23
+--------------------
+  21 |     RUN git clone --depth 1 https://github.com/madler/zlib.git
+  22 |     RUN git clone --depth 1 https://github.com/pnggroup/libpng.git
+  23 | >>> RUN cp libpng/contrib/oss-fuzz/build.sh $SRC
+  24 |     WORKDIR libpng
+  25 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c cp libpng/contrib/oss-fuzz/build.sh $SRC" did not complete successfully: exit code: 1
+ERROR:__main__:Docker build failed.

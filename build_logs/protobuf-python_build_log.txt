@@ -1,0 +1,86 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/protobuf-python --file /root/reproduce_note_fuzz/oss-fuzz/projects/protobuf-python/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/protobuf-python.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.06kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-python:latest
+#2 DONE 0.7s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM gcr.io/oss-fuzz-base/base-builder-python:latest@sha256:948f62bfc98055613391a7b364fe2df040a3733947b87b8c03dfd6bf1b10f076
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 2.85kB done
+#5 DONE 0.0s
+
+#6 [2/5] RUN curl -L -O https://raw.githubusercontent.com/protobuf-c/protobuf-c/39cd58f5ff06048574ed5ce17ee602dc84006162/t/test-full.proto
+#6 0.141   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#6 0.141                                  Dload  Upload   Total   Spent    Left  Speed
+#6 0.141 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 12287  100 12287    0     0  22098      0 --:--:-- --:--:-- --:--:-- 22059
+#6 DONE 0.7s
+
+#7 [3/5] RUN git clone https://github.com/protocolbuffers/protobuf.git
+#7 0.155 Cloning into 'protobuf'...
+#7 DONE 38.2s
+
+#8 [4/5] RUN cd protobuf && bazel build --nobuild //:protoc //python/dist:binary_wheel --noenable_bzlmod
+#8 0.181 2025/10/28 20:54:19 Downloading https://releases.bazel.build/7.6.1/release/bazel-7.6.1-linux-x86_64...
+#8 6.856 Extracting Bazel installation...
+#8 8.214 Starting local Bazel server and connecting to it...
+#8 9.527 Computing main repo mapping: 
+#8 10.53 Computing main repo mapping: 
+#8 11.53 Computing main repo mapping: 
+#8 12.53 Computing main repo mapping: 
+#8 13.56 Computing main repo mapping: 
+#8 14.63 Computing main repo mapping: 
+#8 15.63 Computing main repo mapping: 
+#8 16.32 DEBUG: /root/.cache/bazel/_bazel_root/cba616a844745ccb91ae32efb4a28085/external/rules_java/java/repositories.bzl:367:10: DEPRECATED: use rules_java_dependencies() from rules_java_deps.bzl
+#8 16.66 Computing main repo mapping: 
+#8 18.00 Computing main repo mapping: 
+#8 19.26 Computing main repo mapping: 
+#8 20.53 Computing main repo mapping: 
+#8 21.62 Computing main repo mapping: 
+#8 22.65 Computing main repo mapping: 
+#8 24.33 Computing main repo mapping: 
+#8 25.53 Computing main repo mapping: 
+#8 26.53 Computing main repo mapping: 
+#8 27.86 Computing main repo mapping: 
+#8 29.06 Computing main repo mapping: 
+#8 30.21 Computing main repo mapping: 
+#8 31.53 Computing main repo mapping: 
+#8 31.92 WARNING: Target pattern parsing failed.
+#8 31.92 ERROR: Skipping '@rules_rust//rust/settings:experimental_use_cc_common_link': no such package '@@rules_rust//rust/settings': The repository '@@rules_rust' could not be resolved: Repository '@@rules_rust' is not defined
+#8 31.93 ERROR: @rules_rust//rust/settings:experimental_use_cc_common_link :: Error loading option @rules_rust//rust/settings:experimental_use_cc_common_link: no such package '@@rules_rust//rust/settings': The repository '@@rules_rust' could not be resolved: Repository '@@rules_rust' is not defined
+#8 ERROR: process "/bin/sh -c cd protobuf && bazel build --nobuild //:protoc //python/dist:binary_wheel --noenable_bzlmod" did not complete successfully: exit code: 2
+------
+ > [4/5] RUN cd protobuf && bazel build --nobuild //:protoc //python/dist:binary_wheel --noenable_bzlmod:
+24.33 Computing main repo mapping: 
+25.53 Computing main repo mapping: 
+26.53 Computing main repo mapping: 
+27.86 Computing main repo mapping: 
+29.06 Computing main repo mapping: 
+30.21 Computing main repo mapping: 
+31.53 Computing main repo mapping: 
+31.92 WARNING: Target pattern parsing failed.
+31.92 ERROR: Skipping '@rules_rust//rust/settings:experimental_use_cc_common_link': no such package '@@rules_rust//rust/settings': The repository '@@rules_rust' could not be resolved: Repository '@@rules_rust' is not defined
+31.93 ERROR: @rules_rust//rust/settings:experimental_use_cc_common_link :: Error loading option @rules_rust//rust/settings:experimental_use_cc_common_link: no such package '@@rules_rust//rust/settings': The repository '@@rules_rust' could not be resolved: Repository '@@rules_rust' is not defined
+------
+Dockerfile:20
+--------------------
+  18 |     RUN curl -L -O https://raw.githubusercontent.com/protobuf-c/protobuf-c/39cd58f5ff06048574ed5ce17ee602dc84006162/t/test-full.proto
+  19 |     RUN git clone https://github.com/protocolbuffers/protobuf.git
+  20 | >>> RUN cd protobuf && bazel build --nobuild //:protoc //python/dist:binary_wheel --noenable_bzlmod
+  21 |     COPY build.sh fuzz_* $SRC/
+  22 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c cd protobuf && bazel build --nobuild //:protoc //python/dist:binary_wheel --noenable_bzlmod" did not complete successfully: exit code: 2
+ERROR:__main__:Docker build failed.

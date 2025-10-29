@@ -1,0 +1,280 @@
+                    
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom[90m (3.7 kB at 16 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/codehaus/plexus/plexus/18/plexus-18.pom
+Progress (1): 691 B
+Progress (1): 2.5 kB
+Progress (1): 6.4 kB
+Progress (1): 8.9 kB
+Progress (1): 11 kB 
+Progress (1): 14 kB
+Progress (1): 18 kB
+Progress (1): 21 kB
+Progress (1): 25 kB
+Progress (1): 29 kB
+                   
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/codehaus/plexus/plexus/18/plexus-18.pom[90m (29 kB at 97 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/enforcer/enforcer-api/3.6.2/enforcer-api-3.6.2.pom
+Progress (1): 835 B
+Progress (1): 2.6 kB
+Progress (1): 3.8 kB
+                    
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/enforcer/enforcer-api/3.6.2/enforcer-api-3.6.2.pom[90m (3.8 kB at 12 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/enforcer/enforcer-rules/3.6.2/enforcer-rules-3.6.2.pom
+Progress (1): 836 B
+Progress (1): 4.2 kB
+Progress (1): 5.2 kB
+                    
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/enforcer/enforcer-rules/3.6.2/enforcer-rules-3.6.2.pom[90m (5.2 kB at 17 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/resolver/maven-resolver-util/1.9.23/maven-resolver-util-1.9.23.pom
+Progress (1): 834 B
+Progress (1): 2.2 kB
+                    
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/resolver/maven-resolver-util/1.9.23/maven-resolver-util-1.9.23.pom[90m (2.2 kB at 9.6 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/resolver/maven-resolver/1.9.23/maven-resolver-1.9.23.pom
+Progress (1): 742 B
+Progress (1): 2.3 kB
+Progress (1): 4.0 kB
+Progress (1): 9.2 kB
+Progress (1): 12 kB 
+Progress (1): 16 kB
+Progress (1): 19 kB
+Progress (1): 22 kB
+Progress (1): 23 kB
+                   
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/resolver/maven-resolver/1.9.23/maven-resolver-1.9.23.pom[90m (23 kB at 89 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/resolver/maven-resolver-api/1.9.23/maven-resolver-api-1.9.23.pom
+Progress (1): 830 B
+Progress (1): 2.2 kB
+                    
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/resolver/maven-resolver-api/1.9.23/maven-resolver-api-1.9.23.pom[90m (2.2 kB at 7.4 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/commons/commons-lang3/3.19.0/commons-lang3-3.19.0.pom
+Progress (1): 747 B
+Progress (1): 1.8 kB
+Progress (1): 4.2 kB
+Progress (1): 5.6 kB
+Progress (1): 7.5 kB
+Progress (1): 9.7 kB
+Progress (1): 12 kB 
+Progress (1): 16 kB
+Progress (1): 19 kB
+Progress (1): 22 kB
+Progress (1): 25 kB
+Progress (1): 29 kB
+Progress (1): 32 kB
+Progress (1): 32 kB
+                   
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/commons/commons-lang3/3.19.0/commons-lang3-3.19.0.pom[90m (32 kB at 105 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/commons/commons-parent/88/commons-parent-88.pom
+Progress (1): 721 B
+Progress (1): 1.9 kB
+Progress (1): 3.2 kB
+Progress (1): 4.7 kB
+Progress (1): 6.7 kB
+Progress (1): 9.4 kB
+Progress (1): 11 kB 
+Progress (1): 14 kB
+Progress (1): 16 kB
+Progress (1): 19 kB
+Progress (1): 21 kB
+Progress (1): 23 kB
+Progress (1): 25 kB
+Progress (1): 29 kB
+Progress (1): 32 kB
+Progress (1): 36 kB
+Progress (1): 41 kB
+Progress (1): 44 kB
+Progress (1): 47 kB
+Progress (1): 50 kB
+Progress (1): 52 kB
+Progress (1): 56 kB
+Progress (1): 58 kB
+Progress (1): 61 kB
+Progress (1): 64 kB
+Progress (1): 68 kB
+Progress (1): 71 kB
+Progress (1): 74 kB
+Progress (1): 76 kB
+Progress (1): 78 kB
+Progress (1): 80 kB
+                   
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/commons/commons-parent/88/commons-parent-88.pom[90m (80 kB at 263 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.pom
+Progress (1): 866 B
+Progress (1): 2.2 kB
+Progress (1): 4.9 kB
+Progress (1): 5.0 kB
+                    
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.pom[90m (5.0 kB at 17 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar
+Progress (1): 7.7/193 kB
+Progress (1): 16/193 kB 
+Progress (1): 32/193 kB
+Progress (1): 49/193 kB
+Progress (1): 57/193 kB
+Progress (1): 74/193 kB
+Progress (1): 90/193 kB
+Progress (1): 106/193 kB
+Progress (1): 123/193 kB
+Progress (1): 139/193 kB
+Progress (1): 156/193 kB
+Progress (1): 172/193 kB
+Progress (1): 188/193 kB
+Progress (1): 193 kB    
+                    
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar[90m (193 kB at 585 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/enforcer/enforcer-api/3.6.2/enforcer-api-3.6.2.jar
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/enforcer/enforcer-rules/3.6.2/enforcer-rules-3.6.2.jar
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/resolver/maven-resolver-util/1.9.23/maven-resolver-util-1.9.23.jar
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/commons/commons-lang3/3.19.0/commons-lang3-3.19.0.jar
+Progress (1): 7.7/94 kB
+Progress (2): 7.7/94 kB | 7.7/15 kB
+Progress (2): 11/94 kB | 7.7/15 kB 
+Progress (2): 11/94 kB | 15 kB    
+Progress (2): 28/94 kB | 15 kB
+Progress (2): 44/94 kB | 15 kB
+Progress (2): 61/94 kB | 15 kB
+                              
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/enforcer/enforcer-api/3.6.2/enforcer-api-3.6.2.jar[90m (15 kB at 51 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar
+Progress (1): 77/94 kB
+Progress (1): 93/94 kB
+Progress (1): 94 kB   
+Progress (2): 94 kB | 7.7/152 kB
+Progress (2): 94 kB | 16/152 kB 
+Progress (2): 94 kB | 25/152 kB
+Progress (3): 94 kB | 25/152 kB | 8.2/196 kB
+                                            
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar[90m (94 kB at 326 kB/s)[0m
+Progress (2): 41/152 kB | 8.2/196 kB
+Progress (2): 57/152 kB | 8.2/196 kB
+Progress (2): 74/152 kB | 8.2/196 kB
+Progress (3): 74/152 kB | 8.2/196 kB | 3.7/709 kB
+Progress (3): 90/152 kB | 8.2/196 kB | 3.7/709 kB
+Progress (3): 90/152 kB | 8.2/196 kB | 20/709 kB 
+Progress (3): 90/152 kB | 8.2/196 kB | 36/709 kB
+Progress (3): 106/152 kB | 8.2/196 kB | 36/709 kB
+Progress (3): 106/152 kB | 8.2/196 kB | 53/709 kB
+Progress (3): 106/152 kB | 8.2/196 kB | 69/709 kB
+Progress (3): 123/152 kB | 8.2/196 kB | 69/709 kB
+Progress (3): 123/152 kB | 25/196 kB | 69/709 kB 
+Progress (3): 123/152 kB | 25/196 kB | 86/709 kB
+Progress (3): 139/152 kB | 25/196 kB | 86/709 kB
+Progress (3): 139/152 kB | 25/196 kB | 102/709 kB
+Progress (3): 139/152 kB | 41/196 kB | 102/709 kB
+Progress (3): 139/152 kB | 57/196 kB | 102/709 kB
+Progress (3): 152 kB | 57/196 kB | 102/709 kB    
+Progress (3): 152 kB | 57/196 kB | 118/709 kB
+                                             
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/enforcer/enforcer-rules/3.6.2/enforcer-rules-3.6.2.jar[90m (152 kB at 486 kB/s)[0m
+Progress (2): 57/196 kB | 129/709 kB
+Progress (2): 57/196 kB | 137/709 kB
+Progress (2): 74/196 kB | 137/709 kB
+Progress (2): 90/196 kB | 137/709 kB
+Progress (2): 90/196 kB | 154/709 kB
+Progress (2): 106/196 kB | 154/709 kB
+Progress (2): 106/196 kB | 170/709 kB
+Progress (2): 106/196 kB | 186/709 kB
+Progress (2): 123/196 kB | 186/709 kB
+Progress (2): 139/196 kB | 186/709 kB
+Progress (2): 139/196 kB | 203/709 kB
+Progress (2): 156/196 kB | 203/709 kB
+Progress (2): 156/196 kB | 211/709 kB
+Progress (2): 156/196 kB | 219/709 kB
+Progress (2): 172/196 kB | 219/709 kB
+Progress (2): 172/196 kB | 236/709 kB
+Progress (2): 183/196 kB | 236/709 kB
+Progress (2): 183/196 kB | 244/709 kB
+Progress (2): 196 kB | 244/709 kB    
+Progress (2): 196 kB | 252/709 kB
+Progress (2): 196 kB | 260/709 kB
+Progress (2): 196 kB | 277/709 kB
+Progress (2): 196 kB | 293/709 kB
+                                 
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/resolver/maven-resolver-util/1.9.23/maven-resolver-util-1.9.23.jar[90m (196 kB at 583 kB/s)[0m
+Progress (1): 301/709 kB
+Progress (1): 309/709 kB
+Progress (1): 326/709 kB
+Progress (1): 342/709 kB
+Progress (1): 358/709 kB
+Progress (1): 370/709 kB
+Progress (1): 386/709 kB
+Progress (1): 394/709 kB
+Progress (1): 411/709 kB
+Progress (1): 419/709 kB
+Progress (1): 427/709 kB
+Progress (1): 435/709 kB
+Progress (1): 452/709 kB
+Progress (1): 460/709 kB
+Progress (1): 468/709 kB
+Progress (1): 484/709 kB
+Progress (1): 493/709 kB
+Progress (1): 501/709 kB
+Progress (1): 517/709 kB
+Progress (1): 525/709 kB
+Progress (1): 534/709 kB
+Progress (1): 550/709 kB
+Progress (1): 558/709 kB
+Progress (1): 566/709 kB
+Progress (1): 583/709 kB
+Progress (1): 599/709 kB
+Progress (1): 616/709 kB
+Progress (1): 624/709 kB
+Progress (1): 640/709 kB
+Progress (1): 657/709 kB
+Progress (1): 673/709 kB
+Progress (1): 689/709 kB
+Progress (1): 706/709 kB
+Progress (1): 709 kB    
+                    
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/commons/commons-lang3/3.19.0/commons-lang3-3.19.0.jar[90m (709 kB at 1.9 MB/s)[0m
+Progress (1): 7.7/389 kB
+Progress (1): 16/389 kB 
+Progress (1): 25/389 kB
+Progress (1): 41/389 kB
+Progress (1): 57/389 kB
+Progress (1): 74/389 kB
+Progress (1): 90/389 kB
+Progress (1): 106/389 kB
+Progress (1): 123/389 kB
+Progress (1): 139/389 kB
+Progress (1): 156/389 kB
+Progress (1): 172/389 kB
+Progress (1): 188/389 kB
+Progress (1): 205/389 kB
+Progress (1): 221/389 kB
+Progress (1): 238/389 kB
+Progress (1): 254/389 kB
+Progress (1): 270/389 kB
+Progress (1): 287/389 kB
+Progress (1): 303/389 kB
+Progress (1): 319/389 kB
+Progress (1): 336/389 kB
+Progress (1): 352/389 kB
+Progress (1): 369/389 kB
+Progress (1): 385/389 kB
+Progress (1): 389 kB    
+                    
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar[90m (389 kB at 707 kB/s)[0m
+[[1;34mINFO[m] Rule 1: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[[1;34mINFO[m] Rule 2: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
+[[1;34mINFO[m] Rule 3: org.apache.maven.enforcer.rules.BanDuplicatePomDependencyVersions passed
+[[1;34mINFO[m] Rule 4: org.apache.maven.enforcer.rules.ReactorModuleConvergence passed
+[[1;34mINFO[m] Rule 5: org.apache.maven.enforcer.rules.dependency.RequireUpperBoundDeps passed
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  49.198 s
+[[1;34mINFO[m] Finished at: 2025-10-27T10:35:10Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-enforcer-plugin:3.6.2:enforce[m [1m(enforce-java)[m on project [36mjsch[m: [1;31m[m
+[[1;31mERROR[m] [1;31mRule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion failed with message:[m
+[[1;31mERROR[m] [1;31mDetected JDK /root/.sdkman/candidates/java/24.0.1-open is version 24.0.1 which is not in the allowed range [25,).[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[0m[0mERROR:__main__:Building fuzzers failed.

@@ -69,6 +69,7 @@ build_fuzzer_agent = LlmAgent(
         parse_error_log,
         find_sha_for_timestamp,
         checkout_oss_fuzz_commit,
+        mark_log_as_processed_by_rename,
         run_fuzz_build_streaming
     ],
     output_key="build_attempt_result",

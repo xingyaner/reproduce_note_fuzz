@@ -1,0 +1,117 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/libidn2 --file /root/reproduce_note_fuzz/oss-fuzz/projects/libidn2/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/libidn2.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 989B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder:latest
+#2 DONE 0.7s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM gcr.io/oss-fuzz-base/base-builder:latest@sha256:f84cdff7792efb5147fe8c74089ed21e3cce127a45fddcc3a9c87d1d482744d1
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 2.24kB done
+#5 DONE 0.0s
+
+#6 [2/5] RUN apt-get update && apt-get install -y make autoconf automake gettext libtool autopoint pkg-config gengetopt curl gperf rsync wget
+#6 20.76 Err:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+#6 20.76   Connection failed [IP: 198.18.0.56 80]
+#6 37.25 Err:2 http://archive.ubuntu.com/ubuntu focal InRelease
+#6 37.25   Connection failed [IP: 198.18.0.40 80]
+#6 57.83 Err:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+#6 57.83   Connection failed [IP: 198.18.0.40 80]
+#6 78.31 Err:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+#6 78.31   Connection failed [IP: 198.18.0.40 80]
+#6 78.32 Reading package lists...
+#6 79.47 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/focal/InRelease  Connection failed [IP: 198.18.0.40 80]
+#6 79.47 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/focal-updates/InRelease  Connection failed [IP: 198.18.0.40 80]
+#6 79.47 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/focal-backports/InRelease  Connection failed [IP: 198.18.0.40 80]
+#6 79.47 W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/focal-security/InRelease  Connection failed [IP: 198.18.0.56 80]
+#6 79.47 W: Some index files failed to download. They have been ignored, or old ones used instead.
+#6 79.51 Reading package lists...
+#6 80.63 Building dependency tree...
+#6 80.83 Reading state information...
+#6 80.98 make is already the newest version (4.2.1-1.2).
+#6 80.98 make set to manually installed.
+#6 80.98 curl is already the newest version (7.68.0-1ubuntu2.25).
+#6 80.98 rsync is already the newest version (3.1.3-8ubuntu0.9).
+#6 80.98 wget is already the newest version (1.20.3-1ubuntu2.1).
+#6 80.98 The following additional packages will be installed:
+#6 80.98   file gettext-base libcroco3 libglib2.0-0 libglib2.0-data libicu66
+#6 80.98   libltdl-dev libltdl7 libmagic-mgc libmagic1 libxml2 shared-mime-info
+#6 80.98   xdg-user-dirs
+#6 80.99 Suggested packages:
+#6 80.99   autoconf-archive gnu-standards autoconf-doc gettext-doc libasprintf-dev
+#6 80.99   libgettextpo-dev libtool-doc gfortran | fortran95-compiler gcj-jdk
+#6 81.03 The following NEW packages will be installed:
+#6 81.03   autoconf automake autopoint file gengetopt gettext gettext-base gperf
+#6 81.03   libcroco3 libglib2.0-0 libglib2.0-data libicu66 libltdl-dev libltdl7
+#6 81.03   libmagic-mgc libmagic1 libtool libxml2 pkg-config shared-mime-info
+#6 81.03   xdg-user-dirs
+#6 101.6 0 upgraded, 21 newly installed, 0 to remove and 0 not upgraded.
+#6 101.6 Need to get 14.2 MB of archives.
+#6 101.6 After this operation, 61.3 MB of additional disk space will be used.
+#6 101.6 Err:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4
+#6 101.6   Connection failed [IP: 198.18.0.40 80]
+#6 122.2 Err:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4
+#6 122.2   Connection failed [IP: 198.18.0.40 80]
+#6 136.9 Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+#6 138.0 Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+#6 142.3 Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+#6 142.7 Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+#6 180.2 Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+#6 198.9 Err:8 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1
+#6 198.9   Connection failed [IP: 198.18.0.40 80]
+#6 239.3 Err:9 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1
+#6 239.3   Connection failed [IP: 198.18.0.40 80]
+#6 261.7 Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 gettext-base amd64 0.19.8.1-10build1 [50.2 kB]
+#6 263.1 Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+#6 265.1 Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+#6 266.3 Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 autopoint all 0.19.8.1-10build1 [412 kB]
+#6 267.2 Get:14 http://archive.ubuntu.com/ubuntu focal/universe amd64 gengetopt amd64 2.23+dfsg1-1 [159 kB]
+#6 268.0 Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcroco3 amd64 0.6.13-1ubuntu0.1 [82.4 kB]
+#6 268.7 Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 gettext amd64 0.19.8.1-10build1 [895 kB]
+#6 269.6 Get:17 http://archive.ubuntu.com/ubuntu focal/universe amd64 gperf amd64 3.1-1build1 [103 kB]
+#6 270.2 Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+#6 270.6 Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+#6 271.0 Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+#6 271.6 Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 pkg-config amd64 0.29.1-0ubuntu4 [45.5 kB]
+#6 271.7 Fetched 13.4 MB in 3min 11s (70.4 kB/s)
+#6 271.7 E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/f/file/libmagic-mgc_5.38-4_amd64.deb  Connection failed [IP: 198.18.0.40 80]
+#6 271.7 E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/f/file/libmagic1_5.38-4_amd64.deb  Connection failed [IP: 198.18.0.40 80]
+#6 271.7 E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.15-1_amd64.deb  Connection failed [IP: 198.18.0.40 80]
+#6 271.7 E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xdg-user-dirs/xdg-user-dirs_0.17-2ubuntu1_amd64.deb  Connection failed [IP: 198.18.0.40 80]
+#6 271.7 E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+#6 ERROR: process "/bin/sh -c apt-get update && apt-get install -y make autoconf automake gettext libtool autopoint pkg-config gengetopt curl gperf rsync wget" did not complete successfully: exit code: 100
+------
+ > [2/5] RUN apt-get update && apt-get install -y make autoconf automake gettext libtool autopoint pkg-config gengetopt curl gperf rsync wget:
+270.2 Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+270.6 Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+271.0 Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+271.6 Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 pkg-config amd64 0.29.1-0ubuntu4 [45.5 kB]
+271.7 Fetched 13.4 MB in 3min 11s (70.4 kB/s)
+271.7 E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/f/file/libmagic-mgc_5.38-4_amd64.deb  Connection failed [IP: 198.18.0.40 80]
+271.7 E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/f/file/libmagic1_5.38-4_amd64.deb  Connection failed [IP: 198.18.0.40 80]
+271.7 E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.15-1_amd64.deb  Connection failed [IP: 198.18.0.40 80]
+271.7 E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xdg-user-dirs/xdg-user-dirs_0.17-2ubuntu1_amd64.deb  Connection failed [IP: 198.18.0.40 80]
+271.7 E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+------
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - WorkdirRelativePath: Relative workdir "libidn2" can have unexpected results if the base image changes (line 22)
+Dockerfile:18
+--------------------
+  16 |     
+  17 |     FROM gcr.io/oss-fuzz-base/base-builder
+  18 | >>> RUN apt-get update && apt-get install -y make autoconf automake gettext libtool autopoint pkg-config gengetopt curl gperf rsync wget
+  19 |     
+  20 |     RUN git clone --recursive https://gitlab.com/libidn/libidn2.git
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c apt-get update && apt-get install -y make autoconf automake gettext libtool autopoint pkg-config gengetopt curl gperf rsync wget" did not complete successfully: exit code: 100
+ERROR:__main__:Docker build failed.

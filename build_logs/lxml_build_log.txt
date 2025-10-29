@@ -1,0 +1,56 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/lxml --file /root/reproduce_note_fuzz/oss-fuzz/projects/lxml/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/lxml.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.73kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-python:latest
+#2 DONE 2.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 12.99kB done
+#4 DONE 0.0s
+
+#5 [1/8] FROM gcr.io/oss-fuzz-base/base-builder-python:latest@sha256:948f62bfc98055613391a7b364fe2df040a3733947b87b8c03dfd6bf1b10f076
+#5 resolve gcr.io/oss-fuzz-base/base-builder-python:latest@sha256:948f62bfc98055613391a7b364fe2df040a3733947b87b8c03dfd6bf1b10f076 done
+#5 sha256:948f62bfc98055613391a7b364fe2df040a3733947b87b8c03dfd6bf1b10f076 8.51kB / 8.51kB done
+#5 sha256:8f907533460e199138fdb7897182dc3e00e68cccd19d99bd9e6f37599ee53601 27.41kB / 27.41kB done
+#5 sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 0B / 39.36MB 0.2s
+#5 sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 2.10MB / 39.36MB 1.7s
+#5 sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 4.19MB / 39.36MB 2.3s
+#5 sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 7.34MB / 39.36MB 2.7s
+#5 sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 12.58MB / 39.36MB 2.9s
+#5 sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 14.68MB / 39.36MB 3.3s
+#5 sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 19.92MB / 39.36MB 3.6s
+#5 sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 26.21MB / 39.36MB 4.9s
+#5 sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 31.46MB / 39.36MB 5.9s
+#5 sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 33.55MB / 39.36MB 6.3s
+#5 extracting sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e
+#5 sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 39.36MB / 39.36MB 6.9s done
+#5 extracting sha256:65750d2c3da9b30140482aee143df648f79fd90cee19a59b29133fb55d96519e 1.6s done
+#5 DONE 8.5s
+
+#6 [2/8] RUN git clone --depth 1 https://github.com/lxml/lxml /src/lxml
+#6 0.124 Cloning into '/src/lxml'...
+#6 134.9 fatal: unable to access 'https://github.com/lxml/lxml/': Failed to connect to github.com port 443: Connection timed out
+#6 ERROR: process "/bin/sh -c git clone --depth 1 https://github.com/lxml/lxml $SRC/lxml" did not complete successfully: exit code: 128
+------
+ > [2/8] RUN git clone --depth 1 https://github.com/lxml/lxml /src/lxml:
+0.124 Cloning into '/src/lxml'...
+134.9 fatal: unable to access 'https://github.com/lxml/lxml/': Failed to connect to github.com port 443: Connection timed out
+------
+Dockerfile:18
+--------------------
+  16 |     
+  17 |     FROM gcr.io/oss-fuzz-base/base-builder-python
+  18 | >>> RUN git clone --depth 1 https://github.com/lxml/lxml $SRC/lxml
+  19 |     RUN apt-get update && apt-get install -y zlib1g-dev make autoconf automake libtool pkg-config rsync
+  20 |     RUN python3 -m pip install --upgrade pip \
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c git clone --depth 1 https://github.com/lxml/lxml $SRC/lxml" did not complete successfully: exit code: 128
+ERROR:__main__:Docker build failed.

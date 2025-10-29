@@ -1,0 +1,50 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/libtasn1 --file /root/reproduce_note_fuzz/oss-fuzz/projects/libtasn1/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/libtasn1.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.03kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder:latest
+#2 DONE 0.7s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM gcr.io/oss-fuzz-base/base-builder:latest@sha256:2e588719d119d0ae712ba5695839e07955516ad9470db27dd3b803c9b8c5b1f1
+#4 DONE 0.0s
+
+#5 [2/6] RUN apt-get update && apt-get install -y make autoconf automake libtool bison
+#5 CACHED
+
+#6 [internal] load build context
+#6 transferring context: 30B done
+#6 DONE 0.0s
+
+#7 [3/6] RUN git clone git://git.savannah.gnu.org/gnulib.git
+#7 0.142 Cloning into 'gnulib'...
+#7 301.2 fatal: the remote end hung up unexpectedly
+#7 301.2 fatal: early EOF
+#7 301.2 fatal: index-pack failed
+#7 ERROR: process "/bin/sh -c git clone git://git.savannah.gnu.org/gnulib.git" did not complete successfully: exit code: 128
+------
+ > [3/6] RUN git clone git://git.savannah.gnu.org/gnulib.git:
+0.142 Cloning into 'gnulib'...
+301.2 fatal: the remote end hung up unexpectedly
+301.2 fatal: early EOF
+301.2 fatal: index-pack failed
+------
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - WorkdirRelativePath: Relative workdir "libtasn1" can have unexpected results if the base image changes (line 26)
+Dockerfile:20
+--------------------
+  18 |     RUN apt-get update && apt-get install -y make autoconf automake libtool bison
+  19 |     
+  20 | >>> RUN git clone git://git.savannah.gnu.org/gnulib.git
+  21 |     ENV GNULIB_TOOL=$SRC/gnulib/gnulib-tool
+  22 |     ENV GNULIB_SRCDIR=$SRC/gnulib
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c git clone git://git.savannah.gnu.org/gnulib.git" did not complete successfully: exit code: 128
+ERROR:__main__:Docker build failed.

@@ -1,0 +1,280 @@
+[ 59%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-jrpc/CMakeFiles/lws-api-test-jrpc.dir/main.c.o[0m
+[ 59%] [32m[1mLinking C executable ../../../bin/lws-minimal-ss-sink-hello_world[0m
+[ 59%] Built target lws-minimal-ss-server-hello_world
+[ 59%] Built target lws-minimal-ss-hello_world
+[ 59%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-lhp/CMakeFiles/lws-api-test-lhp.dir/main.c.o[0m
+[ 59%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-lejp/CMakeFiles/lws-api-test-lejp.dir/main.c.o[0m
+[ 59%] [32m[1mLinking C executable ../../../bin/lws-api-test-jpeg[0m
+[ 59%] Built target lws-minimal-ss-http-post
+[ 59%] Built target lws-minimal-ss-ws-echo
+[ 59%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-lhp-dlo/CMakeFiles/lws-api-test-lhp-dlo.dir/main.c.o[0m
+[ 59%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-lws_cache/CMakeFiles/lws-api-test-lws_cache.dir/main.c.o[0m
+[ 60%] [32m[1mLinking C executable ../../../bin/lws-api-test-jrpc[0m
+[ 60%] Built target lws-minimal-ss-hello_world-policy
+[ 61%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-lws_map/CMakeFiles/lws-api-test-lws_map.dir/main.c.o[0m
+[ 61%] Built target lws-minimal-ss-sink-hello_world
+[ 61%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-lws_smd/CMakeFiles/lws-api-test-lws_smd.dir/main.c.o[0m
+[ 62%] [32m[1mLinking C executable ../../../bin/lws-api-test-lhp[0m
+[ 62%] [32m[1mLinking C executable ../../../bin/lws-api-test-lejp[0m
+[ 62%] [32m[1mLinking C executable ../../../bin/lws-api-test-lws_cache[0m
+[ 62%] [32m[1mLinking C executable ../../../bin/lws-api-test-lws_map[0m
+[ 62%] Built target lws-api-test-jpeg
+[ 63%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-lws_tokenize/CMakeFiles/lws-api-test-lws_tokenize.dir/main.c.o[0m
+[ 63%] [32m[1mLinking C executable ../../../bin/lws-api-test-lhp-dlo[0m
+[ 63%] Built target lws-api-test-jrpc
+[ 63%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-lwsac/CMakeFiles/lws-api-test-lwsac.dir/main.c.o[0m
+[ 63%] [32m[1mLinking C executable ../../../bin/lws-api-test-lws_smd[0m
+[ 63%] [32m[1mLinking C executable ../../../bin/lws-api-test-lwsac[0m
+[ 63%] Built target lws-api-test-lhp
+[ 63%] Built target lws-api-test-lejp
+[ 64%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-secure-streams/CMakeFiles/lws-api-test-secure-streams.dir/main.c.o[0m
+[ 64%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-ssjpeg/CMakeFiles/lws-api-test-ssjpeg.dir/main.c.o[0m
+[ 64%] Built target lws-api-test-lws_cache
+[ 64%] [32mBuilding C object minimal-examples-lowlevel/api-tests/api-test-upng/CMakeFiles/lws-api-test-upng.dir/main.c.o[0m
+[ 64%] Built target lws-api-test-lws_map
+[ 64%] [32mBuilding C object minimal-examples-lowlevel/client-server/minimal-ws-proxy/CMakeFiles/lws-minimal-ws-proxy.dir/minimal-ws-proxy.c.o[0m
+[ 64%] [32m[1mLinking C executable ../../../bin/lws-api-test-lws_tokenize[0m
+[ 64%] Built target lws-api-test-lhp-dlo
+[ 64%] [32mBuilding C object minimal-examples-lowlevel/http-client/minimal-http-client/CMakeFiles/lws-minimal-http-client.dir/minimal-http-client.c.o[0m
+[ 64%] Built target lws-api-test-lws_smd
+[ 64%] [32mBuilding C object minimal-examples-lowlevel/http-client/minimal-http-client-attach/CMakeFiles/lws-minimal-http-client-attach.dir/minimal-http-client-attach.c.o[0m
+[ 64%] [32m[1mLinking C executable ../../../bin/lws-api-test-secure-streams[0m
+[ 64%] [32m[1mLinking C executable ../../../bin/lws-api-test-ssjpeg[0m
+[ 65%] [32m[1mLinking C executable ../../../bin/lws-api-test-upng[0m
+[ 65%] Built target lws-api-test-lwsac
+[ 65%] [32mBuilding C object minimal-examples-lowlevel/http-client/minimal-http-client-captive-portal/CMakeFiles/lws-minimal-http-client-captive-portal.dir/minimal-http-client-captive-portal.c.o[0m
+[ 65%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-proxy[0m
+[ 65%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-client[0m
+[ 66%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-client-attach[0m
+[ 66%] Built target lws-api-test-lws_tokenize
+[ 66%] [32mBuilding C object minimal-examples-lowlevel/http-client/minimal-http-client-certinfo/CMakeFiles/lws-minimal-http-client-certinfo.dir/minimal-http-client-certinfo.c.o[0m
+[ 66%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-client-captive-portal[0m
+[ 66%] Built target lws-api-test-secure-streams
+[ 66%] [32mBuilding C object minimal-examples-lowlevel/http-client/minimal-http-client-custom-headers/CMakeFiles/lws-minimal-http-client-custom-headers.dir/minimal-http-client-custom-headers.c.o[0m
+[ 66%] Built target lws-api-test-upng
+[ 66%] [32mBuilding C object minimal-examples-lowlevel/http-client/minimal-http-client-h2-rxflow/CMakeFiles/lws-minimal-http-client-h2-rxflow.dir/minimal-http-client.c.o[0m
+[ 67%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-client-certinfo[0m
+[ 67%] Built target lws-api-test-ssjpeg
+[ 67%] Built target lws-minimal-ws-proxy
+[ 68%] [32mBuilding C object minimal-examples-lowlevel/http-client/minimal-http-client-hugeurl/CMakeFiles/lws-minimal-http-client-hugeurl.dir/minimal-http-client-hugeurl.c.o[0m
+[ 68%] [32mBuilding C object minimal-examples-lowlevel/http-client/minimal-http-client-multi/CMakeFiles/lws-minimal-http-client-multi.dir/minimal-http-client-multi.c.o[0m
+[ 68%] Built target lws-minimal-http-client-attach
+[ 69%] [32mBuilding C object minimal-examples-lowlevel/http-client/minimal-http-client-post/CMakeFiles/lws-minimal-http-client-post.dir/minimal-http-client-post.c.o[0m
+[ 69%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-client-custom-headers[0m
+[ 69%] Built target lws-minimal-http-client
+[ 69%] [32mBuilding C object minimal-examples-lowlevel/http-client/minimal-http-client-post-form/CMakeFiles/lws-minimal-http-client-post-form.dir/minimal-http-client-post-form.c.o[0m
+[ 69%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-client-h2-rxflow[0m
+[ 69%] Built target lws-minimal-http-client-captive-portal
+[ 70%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server/CMakeFiles/lws-minimal-http-server.dir/minimal-http-server.c.o[0m
+[ 70%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-client-hugeurl[0m
+[ 70%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-client-post[0m
+[ 70%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-client-multi[0m
+[ 70%] Built target lws-minimal-http-client-certinfo
+[ 70%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-basicauth/CMakeFiles/lws-minimal-http-server-basicauth.dir/minimal-http-server-basicauth.c.o[0m
+[ 70%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-client-post-form[0m
+[ 70%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server[0m
+[ 70%] Built target lws-minimal-http-client-custom-headers
+[ 70%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-custom-headers/CMakeFiles/lws-minimal-http-server-custom-headers.dir/minimal-http-server-custom-headers.c.o[0m
+[ 70%] Built target lws-minimal-http-client-h2-rxflow
+[ 70%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-deaddrop/CMakeFiles/lws-minimal-http-server-deaddrop.dir/minimal-http-server-deaddrop.c.o[0m
+[ 70%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-basicauth[0m
+[ 70%] Built target lws-minimal-http-client-hugeurl
+[ 70%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-dynamic/CMakeFiles/lws-minimal-http-server-dynamic.dir/minimal-http-server-dynamic.c.o[0m
+[ 70%] Built target lws-minimal-http-client-post
+[ 70%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-eventlib/CMakeFiles/lws-minimal-http-server-eventlib.dir/minimal-http-server-eventlib.c.o[0m
+[ 70%] Built target lws-minimal-http-client-multi
+[ 71%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-custom-headers[0m
+[ 71%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-eventlib-custom/CMakeFiles/lws-minimal-http-server-eventlib-custom.dir/minimal-http-server.c.o[0m
+[ 71%] Built target lws-minimal-http-client-post-form
+[ 71%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-eventlib-demos/CMakeFiles/lws-minimal-http-server-eventlib-demos.dir/minimal-http-server-eventlib-demos.c.o[0m
+[ 71%] Built target lws-minimal-http-server
+[ 71%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-eventlib-smp/CMakeFiles/lws-minimal-http-server-eventlib-smp.dir/minimal-http-server-eventlib-smp.c.o[0m
+[ 72%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-dynamic[0m
+[ 72%] Built target lws-minimal-http-server-basicauth
+[ 73%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-form-get/CMakeFiles/lws-minimal-http-server-form-get.dir/minimal-http-server-form-get.c.o[0m
+[ 73%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-deaddrop[0m
+[ 73%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-eventlib[0m
+[ 74%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-eventlib-custom[0m
+[ 74%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-eventlib-smp[0m
+[ 74%] Built target lws-minimal-http-server-custom-headers
+[ 74%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-form-post/CMakeFiles/lws-minimal-http-server-form-post.dir/minimal-http-server-form-post.c.o[0m
+[ 74%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-eventlib-demos[0m
+[ 74%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-form-get[0m
+[ 74%] Built target lws-minimal-http-server-dynamic
+[ 75%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-form-post-file/CMakeFiles/lws-minimal-http-server-form-post-file.dir/minimal-http-server-form-post-file.c.o[0m
+[ 75%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-form-post[0m
+[ 75%] Built target lws-minimal-http-server-deaddrop
+[ 75%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-form-post-lwsac/CMakeFiles/lws-minimal-http-server-form-post-lwsac.dir/minimal-http-server-form-post.c.o[0m
+[ 75%] Built target lws-minimal-http-server-eventlib
+[ 76%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-h2-long-poll/CMakeFiles/lws-minimal-http-server-h2-long-poll.dir/minimal-http-server.c.o[0m
+[ 76%] Built target lws-minimal-http-server-eventlib-custom
+[ 76%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-mimetypes/CMakeFiles/lws-minimal-http-server-mimetypes.dir/minimal-http-server-mimetypes.c.o[0m
+[ 76%] Built target lws-minimal-http-server-eventlib-smp
+[ 76%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-multivhost/CMakeFiles/lws-minimal-http-server-multivhost.dir/minimal-http-server.c.o[0m
+[ 76%] Built target lws-minimal-http-server-eventlib-demos
+[ 76%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-form-post-file[0m
+[ 76%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-smp/CMakeFiles/lws-minimal-http-server-smp.dir/minimal-http-server-smp.c.o[0m
+[ 76%] Built target lws-minimal-http-server-form-get
+[ 76%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-sse/CMakeFiles/lws-minimal-http-server-sse.dir/minimal-http-server-sse.c.o[0m
+[ 76%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-form-post-lwsac[0m
+[ 76%] Built target lws-minimal-http-server-form-post
+[ 76%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-h2-long-poll[0m
+[ 76%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-sse-ring/CMakeFiles/lws-minimal-http-server-sse-ring.dir/minimal-http-server-sse-ring.c.o[0m
+[ 76%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-mimetypes[0m
+[ 77%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-multivhost[0m
+[ 77%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-smp[0m
+[ 78%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-sse[0m
+[ 78%] Built target lws-minimal-http-server-form-post-file
+[ 78%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-tls/CMakeFiles/lws-minimal-http-server-tls.dir/minimal-http-server-tls.c.o[0m
+[ 78%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-sse-ring[0m
+[ 78%] Built target lws-minimal-http-server-form-post-lwsac
+[ 78%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-tls-80/CMakeFiles/lws-minimal-http-server-tls-80.dir/minimal-http-server-tls-80.c.o[0m
+[ 78%] Built target lws-minimal-http-server-h2-long-poll
+[ 78%] [32mBuilding C object minimal-examples-lowlevel/http-server/minimal-http-server-tls-mem/CMakeFiles/lws-minimal-http-server-tls-mem.dir/minimal-http-server-tls-mem.c.o[0m
+[ 78%] Built target lws-minimal-http-server-mimetypes
+[ 79%] [32mBuilding C object minimal-examples-lowlevel/raw/minimal-raw-adopt-tcp/CMakeFiles/lws-minimal-raw-adopt-tcp.dir/minimal-raw-adopt-tcp.c.o[0m
+[ 79%] Built target lws-minimal-http-server-multivhost
+[ 79%] [32mBuilding C object minimal-examples-lowlevel/raw/minimal-raw-adopt-udp/CMakeFiles/lws-minimal-raw-adopt-udp.dir/minimal-raw-adopt-udp.c.o[0m
+[ 80%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-tls[0m
+[ 80%] Built target lws-minimal-http-server-smp
+[ 81%] [32mBuilding C object minimal-examples-lowlevel/raw/minimal-raw-client/CMakeFiles/lws-minimal-raw-client.dir/main.c.o[0m
+[ 81%] Built target lws-minimal-http-server-sse
+[ 81%] [32mBuilding C object minimal-examples-lowlevel/raw/minimal-raw-fallback-http-server/CMakeFiles/lws-minimal-raw-fallback-http-server.dir/minimal-raw-fallback-http-server.c.o[0m
+[ 81%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-tls-80[0m
+[ 81%] [32m[1mLinking C executable ../../../bin/lws-minimal-http-server-tls-mem[0m
+[ 81%] Built target lws-minimal-http-server-sse-ring
+[ 82%] [32mBuilding C object minimal-examples-lowlevel/raw/minimal-raw-file/CMakeFiles/lws-minimal-raw-file.dir/minimal-raw-file.c.o[0m
+[ 82%] [32m[1mLinking C executable ../../../bin/lws-minimal-raw-adopt-tcp[0m
+[ 82%] [32m[1mLinking C executable ../../../bin/lws-minimal-raw-adopt-udp[0m
+[ 82%] [32m[1mLinking C executable ../../../bin/lws-minimal-raw-client[0m
+[ 82%] [32m[1mLinking C executable ../../../bin/lws-minimal-raw-fallback-http-server[0m
+[ 82%] Built target lws-minimal-http-server-tls
+[ 82%] [32mBuilding C object minimal-examples-lowlevel/raw/minimal-raw-netcat/CMakeFiles/lws-minimal-raw-netcat.dir/minimal-raw-netcat.c.o[0m
+[ 82%] [32m[1mLinking C executable ../../../bin/lws-minimal-raw-file[0m
+[ 82%] Built target lws-minimal-http-server-tls-80
+[ 83%] [32mBuilding C object minimal-examples-lowlevel/raw/minimal-raw-serial/CMakeFiles/lws-minimal-raw-serial.dir/minimal-raw-file.c.o[0m
+[ 83%] Built target lws-minimal-http-server-tls-mem
+[ 83%] [32mBuilding C object minimal-examples-lowlevel/raw/minimal-raw-vhost/CMakeFiles/lws-minimal-raw-vhost.dir/minimal-raw-vhost.c.o[0m
+[ 83%] Built target lws-minimal-raw-adopt-tcp
+[ 83%] [32mBuilding C object minimal-examples-lowlevel/raw/minimal-raw-wol/CMakeFiles/lws-minimal-raw-wol.dir/minimal-raw-wol.c.o[0m
+[ 83%] Built target lws-minimal-raw-adopt-udp
+[ 83%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams/CMakeFiles/lws-minimal-secure-streams.dir/minimal-secure-streams.c.o[0m
+[ 83%] [32m[1mLinking C executable ../../../bin/lws-minimal-raw-netcat[0m
+[ 83%] Built target lws-minimal-raw-client
+[ 83%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-avs/CMakeFiles/lws-minimal-secure-streams-avs.dir/main.c.o[0m
+[ 83%] Built target lws-minimal-raw-fallback-http-server
+[ 83%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-blob/CMakeFiles/lws-minimal-secure-streams-blob.dir/minimal-secure-streams.c.o[0m
+[ 83%] [32m[1mLinking C executable ../../../bin/lws-minimal-raw-serial[0m
+[ 83%] Built target lws-minimal-raw-file
+[ 84%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-hugeurl/CMakeFiles/lws-minimal-secure-streams-hugeurl.dir/minimal-secure-streams.c.o[0m
+[ 84%] [32m[1mLinking C executable ../../../bin/lws-minimal-raw-vhost[0m
+[ 85%] [32m[1mLinking C executable ../../../bin/lws-minimal-raw-wol[0m
+[ 85%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams[0m
+[ 86%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-avs/CMakeFiles/lws-minimal-secure-streams-avs.dir/avs.c.o[0m
+[ 86%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-blob[0m
+[ 86%] Built target lws-minimal-raw-netcat
+[ 86%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-metadata/CMakeFiles/lws-minimal-secure-streams-metadata.dir/minimal-secure-streams.c.o[0m
+[ 86%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-hugeurl[0m
+[ 86%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-avs[0m
+[ 86%] Built target lws-minimal-raw-serial
+[ 86%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-perf/CMakeFiles/lws-minimal-secure-streams-perf.dir/minimal-secure-streams.c.o[0m
+[ 86%] Built target lws-minimal-raw-vhost
+[ 86%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-post/CMakeFiles/lws-minimal-secure-streams-post.dir/minimal-secure-streams-post.c.o[0m
+[ 86%] Built target lws-minimal-raw-wol
+[ 86%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-metadata[0m
+[ 86%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-server/CMakeFiles/lws-minimal-secure-streams-server.dir/main.c.o[0m
+[ 86%] Built target lws-minimal-secure-streams
+[ 86%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-server-raw/CMakeFiles/lws-minimal-secure-streams-server-raw.dir/main.c.o[0m
+[ 86%] Built target lws-minimal-secure-streams-blob
+[ 87%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-server-raw/CMakeFiles/lws-minimal-secure-streams-server-raw.dir/ss-server.c.o[0m
+[ 88%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-perf[0m
+[ 88%] Built target lws-minimal-secure-streams-hugeurl
+[ 88%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-smd/CMakeFiles/lws-minimal-secure-streams-smd.dir/minimal-secure-streams-smd.c.o[0m
+[ 89%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-server/CMakeFiles/lws-minimal-secure-streams-server.dir/ss-client.c.o[0m
+[ 89%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-post[0m
+[ 89%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-server/CMakeFiles/lws-minimal-secure-streams-server.dir/ss-server.c.o[0m
+[ 89%] Built target lws-minimal-secure-streams-avs
+[ 89%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-stress/CMakeFiles/lws-minimal-secure-streams-stress.dir/minimal-secure-streams.c.o[0m
+[ 89%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-server-raw[0m
+[ 89%] Built target lws-minimal-secure-streams-metadata
+[ 89%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-testsfail/CMakeFiles/lws-minimal-secure-streams-testsfail.dir/minimal-secure-streams-testsfail.c.o[0m
+[ 89%] [32mBuilding C object minimal-examples-lowlevel/secure-streams/minimal-secure-streams-threads/CMakeFiles/lws-minimal-secure-streams-threads.dir/minimal-secure-streams-threads.c.o[0m
+[ 89%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-smd[0m
+[ 89%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-server[0m
+[ 89%] Built target lws-minimal-secure-streams-perf
+[ 90%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-stress[0m
+[ 91%] [32mBuilding C object minimal-examples-lowlevel/ws-client/minimal-ws-client/CMakeFiles/lws-minimal-ws-client.dir/minimal-ws-client.c.o[0m
+[ 91%] Built target lws-minimal-secure-streams-post
+[ 91%] [32mBuilding C object minimal-examples-lowlevel/ws-client/minimal-ws-client-ping/CMakeFiles/lws-minimal-ws-client-ping.dir/minimal-ws-client-ping.c.o[0m
+[ 91%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-testsfail[0m
+[ 92%] [32m[1mLinking C executable ../../../bin/lws-minimal-secure-streams-threads[0m
+[ 92%] Built target lws-minimal-secure-streams-server-raw
+[ 93%] [32mBuilding C object minimal-examples-lowlevel/ws-client/minimal-ws-client-pmd-bulk/CMakeFiles/lws-minimal-ws-client-pmd-bulk.dir/minimal-ws-client-pmd-bulk.c.o[0m
+[ 93%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-client[0m
+[ 93%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-client-ping[0m
+[ 93%] Built target lws-minimal-secure-streams-server
+[ 93%] [32mBuilding C object minimal-examples-lowlevel/ws-client/minimal-ws-client-rx/CMakeFiles/lws-minimal-ws-client-rx.dir/minimal-ws-client.c.o[0m
+[ 93%] Built target lws-minimal-secure-streams-stress
+[ 94%] [32mBuilding C object minimal-examples-lowlevel/ws-client/minimal-ws-client-spam/CMakeFiles/lws-minimal-ws-client-spam.dir/minimal-ws-client-spam.c.o[0m
+[ 94%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-client-pmd-bulk[0m
+[ 94%] Built target lws-minimal-secure-streams-smd
+[ 94%] [32mBuilding C object minimal-examples-lowlevel/ws-client/minimal-ws-client-spam-tx-rx/CMakeFiles/lws-minimal-ws-client-spam-tx-rx.dir/minimal-ws-client.c.o[0m
+[ 94%] Built target lws-minimal-secure-streams-testsfail
+[ 94%] [32mBuilding C object minimal-examples-lowlevel/ws-client/minimal-ws-client-tx/CMakeFiles/lws-minimal-ws-client-tx.dir/minimal-ws-client.c.o[0m
+[ 94%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-client-rx[0m
+[ 94%] Built target lws-minimal-secure-streams-threads
+[ 94%] [32mBuilding C object minimal-examples-lowlevel/ws-server/minimal-ws-broker/CMakeFiles/lws-minimal-ws-broker.dir/minimal-ws-broker.c.o[0m
+[ 94%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-client-spam[0m
+[ 94%] Built target lws-minimal-ws-client-ping
+[ 94%] [32mBuilding C object minimal-examples-lowlevel/ws-server/minimal-ws-raw-proxy/CMakeFiles/lws-minimal-ws-raw-proxy.dir/minimal-ws-raw-proxy.c.o[0m
+[ 94%] Built target lws-minimal-ws-client
+[ 94%] [32mBuilding C object minimal-examples-lowlevel/ws-server/minimal-ws-server/CMakeFiles/lws-minimal-ws-server.dir/minimal-ws-server.c.o[0m
+[ 95%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-client-tx[0m
+[ 95%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-client-spam-tx-rx[0m
+[ 95%] Built target lws-minimal-ws-client-pmd-bulk
+[ 95%] [32mBuilding C object minimal-examples-lowlevel/ws-server/minimal-ws-server-pmd-bulk/CMakeFiles/lws-minimal-ws-server-pmd-bulk.dir/minimal-ws-server-pmd-bulk.c.o[0m
+[ 95%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-broker[0m
+[ 96%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-raw-proxy[0m
+[ 96%] Built target lws-minimal-ws-client-rx
+[ 96%] [32mBuilding C object minimal-examples-lowlevel/ws-server/minimal-ws-server-ring/CMakeFiles/lws-minimal-ws-server-ring.dir/minimal-ws-server-ring.c.o[0m
+[ 96%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-server[0m
+[ 96%] Built target lws-minimal-ws-client-spam
+[ 96%] [32mBuilding C object minimal-examples-lowlevel/ws-server/minimal-ws-server-threads/CMakeFiles/lws-minimal-ws-server-threads.dir/minimal-ws-server.c.o[0m
+[ 97%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-server-pmd-bulk[0m
+[ 97%] Built target lws-minimal-ws-client-tx
+[ 98%] [32mBuilding C object minimal-examples-lowlevel/ws-server/minimal-ws-server-threads-smp/CMakeFiles/lws-minimal-ws-server-threads-smp.dir/minimal-ws-server.c.o[0m
+[ 98%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-server-ring[0m
+[ 98%] Built target lws-minimal-ws-client-spam-tx-rx
+[ 98%] [32mBuilding C object minimal-examples-lowlevel/ws-server/minimal-ws-server-timer/CMakeFiles/lws-minimal-ws-server-timer.dir/minimal-ws-server.c.o[0m
+[ 98%] Built target lws-minimal-ws-raw-proxy
+[ 99%] [32mBuilding C object test-apps/CMakeFiles/test-server.dir/test-server.c.o[0m
+[ 99%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-server-threads[0m
+[ 99%] Built target lws-minimal-ws-broker
+[ 99%] [32mBuilding C object test-apps/CMakeFiles/test-server-extpoll.dir/test-server.c.o[0m
+[ 99%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-server-threads-smp[0m
+[ 99%] Built target lws-minimal-ws-server-pmd-bulk
+[ 99%] [32mBuilding C object test-apps/CMakeFiles/test-lejp.dir/test-lejp.c.o[0m
+[ 99%] Built target lws-minimal-ws-server
+[100%] [32mBuilding C object test-apps/CMakeFiles/test-client.dir/test-client.c.o[0m
+[100%] [32m[1mLinking C executable ../../../bin/lws-minimal-ws-server-timer[0m
+[100%] Built target lws-minimal-ws-server-ring
+[100%] Built target lws-minimal-ws-server-threads
+[100%] [32m[1mLinking C executable ../bin/libwebsockets-test-lejp[0m
+[100%] [32m[1mLinking C executable ../bin/libwebsockets-test-server[0m
+[100%] Built target lws-minimal-ws-server-threads-smp
+[100%] [32m[1mLinking C executable ../bin/libwebsockets-test-server-extpoll[0m
+[100%] Built target lws-minimal-ws-server-timer
+[100%] [32m[1mLinking C executable ../bin/libwebsockets-test-client[0m
+[100%] Built target test-lejp
+[100%] Built target test-server
+[100%] Built target test-server-extpoll
+[100%] Built target test-client
++ cd /src/libwebsockets/
++ clang++ -O1 -fno-omit-frame-pointer -gline-tables-only -Wno-error=incompatible-function-pointer-types -Wno-error=int-conversion -Wno-error=deprecated-declarations -Wno-error=implicit-function-declaration -Wno-error=implicit-int -Wno-error=unknown-warning-option -Wno-error=vla-cxx-extension -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fsanitize=fuzzer -I/src/libwebsockets//build/include -o /out/lws_upng_inflate_fuzzer lws_upng_inflate_fuzzer.cpp -L/src/libwebsockets//build/lib -l:libwebsockets.a -L/usr/lib/x86_64-linux-gnu/ -l:libssl.so -l:libcrypto.so
+In file included from lws_upng_inflate_fuzzer.cpp:17:
+In file included from /src/libwebsockets//build/include/libwebsockets.h:745:
+[1m/src/libwebsockets//build/include/libwebsockets/lws-write.h:238:5: [0m[0;1;31merror: [0m[1massigning to 'enum lws_write_protocol' from incompatible type 'int'[0m
+  238 |                 r |= LWS_WRITE_NO_FIN;[0m
+      | [0;1;32m                  ^  ~~~~~~~~~~~~~~~~
+[0m1 error generated.
+ERROR:__main__:Building fuzzers failed.

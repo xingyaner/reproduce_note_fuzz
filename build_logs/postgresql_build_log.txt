@@ -1,0 +1,77 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/postgresql --file /root/reproduce_note_fuzz/oss-fuzz/projects/postgresql/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/postgresql.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.08kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder:latest
+#2 DONE 0.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/8] FROM gcr.io/oss-fuzz-base/base-builder:latest@sha256:2e588719d119d0ae712ba5695839e07955516ad9470db27dd3b803c9b8c5b1f1
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 376B done
+#5 DONE 0.0s
+
+#6 [6/8] RUN mkdir bld
+#6 CACHED
+
+#7 [4/8] RUN zip postgresql_fuzzer_seed_corpus.zip postgres/src/test/regress/sql/*
+#7 CACHED
+
+#8 [5/8] WORKDIR postgres
+#8 CACHED
+
+#9 [7/8] COPY fuzzer /src/fuzzer
+#9 CACHED
+
+#10 [2/8] RUN apt-get update && apt-get install -y make libreadline-dev zlib1g-dev bison    flex pkg-config libicu-dev
+#10 CACHED
+
+#11 [3/8] RUN git clone https://github.com/postgres/postgres
+#11 CACHED
+
+#12 [8/8] COPY build.sh add_fuzzers.diff main.diff /src/
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 writing image sha256:cc89dcdbe46fd214ded7801065462a8a795ad7419a9e4638a076386b2a756ebc done
+#13 naming to gcr.io/oss-fuzz/postgresql done
+#13 DONE 0.0s
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - WorkdirRelativePath: Relative workdir "postgres" can have unexpected results if the base image changes (line 25)
+INFO:__main__:Keeping existing build artifacts as-is (if any).
+INFO:__main__:Running: docker run --privileged --shm-size=2g --platform linux/amd64 --rm -i -e FUZZING_ENGINE=libfuzzer -e SANITIZER=address -e ARCHITECTURE=x86_64 -e PROJECT_NAME=postgresql -e HELPER=True -e FUZZING_LANGUAGE=c -v /root/reproduce_note_fuzz/oss-fuzz/build/out/postgresql/:/out -v /root/reproduce_note_fuzz/oss-fuzz/build/work/postgresql:/work -t gcr.io/oss-fuzz/postgresql.
+---------------------------------------------------------------
+vm.mmap_rnd_bits = 28
+Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+---------------------------------------------------------------
+CC=clang
+CXX=clang++
+CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+---------------------------------------------------------------
++ cp -r /src/fuzzer src/backend/
++ git apply --ignore-space-change --ignore-whitespace ../add_fuzzers.diff
+../add_fuzzers.diff:38: indent with spaces.
+       if(fuzzer_first_run)
+../add_fuzzers.diff:39: indent with spaces.
+       {
+../add_fuzzers.diff:50: indent with spaces.
+        fuzzer_first_run=false;
+../add_fuzzers.diff:51: indent with spaces.
+            }
+../add_fuzzers.diff:66: space before tab in indent.
+ 	//EmitErrorReport();
+error: patch failed: src/backend/utils/error/elog.c:540
+error: src/backend/utils/error/elog.c: patch does not apply
+ERROR:__main__:Building fuzzers failed.

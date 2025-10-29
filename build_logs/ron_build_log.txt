@@ -1,0 +1,280 @@
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4530:60[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4530[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   type Value = Option<serde::__private::de::Content<'de>>;[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                                  [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4540:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4540[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::Bool(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4547:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4547[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::I8(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4554:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4554[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::I16(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4561:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4561[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::I32(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4568:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4568[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::I64(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4580:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4580[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::U8(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4587:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4587[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::U16(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4594:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4594[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::U32(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4601:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4601[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::U64(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4613:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4613[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::F32(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4620:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4620[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::F64(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4627:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4627[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::Char(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4637:56[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4637[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::String([0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4650:56[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4650[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::Str(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4661:56[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4661[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::String(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4672:56[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4672[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::ByteBuf(Vec::from([0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4685:56[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4685[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::Bytes(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4696:56[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4696[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::ByteBuf(v)))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4701:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4701[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   Ok(Some(serde::__private::de::Content::Unit))[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                      [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4706:60[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4706[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   type Value = Option<serde::__private::de::Content<'de>>;[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                                  [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4743:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4743[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   serde::__private::de::Content,[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                              [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4744:52[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4744[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   serde::__private::de::Content,[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                              [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: could not find `__private` in `serde`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4791:56[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4791[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   serde::__private::de::FlatMapDeserializer([0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                              [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcould not find `__private` in `serde`[0m
+
+[0m[1m[33mwarning[0m[0m[1m: this function depends on never type fallback being `()`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:1788:21[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m1788[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m/[0m[0m [0m[0m                    fn visit_map<A: MapAccess<'de>>([0m
+[0m[1m[38;5;12m1789[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m                        self,[0m
+[0m[1m[38;5;12m1790[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m                        mut map: A,[0m
+[0m[1m[38;5;12m1791[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m                    ) -> Result<Self::Value, A::Error> {[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|______________________________________________________^[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mwarning[0m[0m: this was previously accepted by the compiler but is being phased out; it will become a hard error in Rust 2024 and in a future release in all editions![0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/never-type-fallback.html>[0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: specify the types explicitly[0m
+[0m[1m[38;5;10mnote[0m[0m: in edition 2024, the requirement `!: Deserialize<'de>` will fail[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:1809:65[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m1809[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;10m^^^^^^^^^^[0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(dependency_on_unit_never_type_fallback)]` (part of `#[warn(rust_2024_compatibility)]`) on by default[0m
+[0m[1m[38;5;14mhelp[0m[0m: use `()` annotations to avoid fallback changes[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m1809[0m[0m [0m[0m[38;5;10m~ [0m[0m                                    collect.push(Some((key, map.next_value[0m[0m[38;5;10m::<()>[0m[0m()?)));[0m
+[0m[1m[38;5;12m1810[0m[0m [0m[0m[1m[38;5;12m|[0m[0m                                 }[0m
+[0m [0m[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m1821[0m[0m [0m[0m[1m[38;5;12m|[0m[0m                         {[0m
+[0m[1m[38;5;12m1822[0m[0m [0m[0m[38;5;10m~ [0m[0m                            collect.push(Some((key, map.next_value[0m[0m[38;5;10m::<()>[0m[0m()?)));[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+
+[0m[1m[33mwarning[0m[0m[1m: this function depends on never type fallback being `()`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:2473:41[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2473[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m/[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   fn visit_map<A: MapAccess<'de>>([0m
+[0m[1m[38;5;12m2474[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                       self,[0m
+[0m[1m[38;5;12m2475[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                       mut map: A,[0m
+[0m[1m[38;5;12m2476[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   ) -> Result<Self::Value, A::Error>[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|________________________________________________________^[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mwarning[0m[0m: this was previously accepted by the compiler but is being phased out; it will become a hard error in Rust 2024 and in a future release in all editions![0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/never-type-fallback.html>[0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: specify the types explicitly[0m
+[0m[1m[38;5;10mnote[0m[0m: in edition 2024, the requirement `!: Deserialize<'de>` will fail[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:2500:82[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2500[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   .push(Some((key, map.next_value()?)));[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                            [0m[0m[1m[38;5;10m^^^^^^^^^^[0m
+[0m[1m[38;5;14mhelp[0m[0m: use `()` annotations to avoid fallback changes[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2500[0m[0m [0m[0m[38;5;10m~ [0m[0m                                                            .push(Some((key, map.next_value[0m[0m[38;5;10m::<()>[0m[0m()?)));[0m
+[0m[1m[38;5;12m2501[0m[0m [0m[0m[1m[38;5;12m|[0m[0m                                                     }[0m
+[0m [0m[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m2512[0m[0m [0m[0m[1m[38;5;12m|[0m[0m                                             )? {[0m
+[0m[1m[38;5;12m2513[0m[0m [0m[0m[38;5;10m~ [0m[0m                                                collect.push(Some((key, map.next_value[0m[0m[38;5;10m::<()>[0m[0m()?)));[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+
+[0m[1m[33mwarning[0m[0m[1m: this function depends on never type fallback being `()`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:3045:33[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m3045[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m/[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   fn visit_map<A: MapAccess<'de>>([0m
+[0m[1m[38;5;12m3046[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                       self,[0m
+[0m[1m[38;5;12m3047[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                       mut map: A,[0m
+[0m[1m[38;5;12m3048[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   ) -> Result<Self::Value, A::Error> {[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|________________________________________________________^[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mwarning[0m[0m: this was previously accepted by the compiler but is being phased out; it will become a hard error in Rust 2024 and in a future release in all editions![0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/never-type-fallback.html>[0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: specify the types explicitly[0m
+[0m[1m[38;5;10mnote[0m[0m: in edition 2024, the requirement `!: Deserialize<'de>` will fail[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:3069:77[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m3069[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;10m^^^^^^^^^^[0m
+[0m[1m[38;5;14mhelp[0m[0m: use `()` annotations to avoid fallback changes[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m3069[0m[0m [0m[0m[38;5;10m~ [0m[0m                                                collect.push(Some((key, map.next_value[0m[0m[38;5;10m::<()>[0m[0m()?)));[0m
+[0m[1m[38;5;12m3070[0m[0m [0m[0m[1m[38;5;12m|[0m[0m                                             }[0m
+[0m [0m[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m3083[0m[0m [0m[0m[1m[38;5;12m|[0m[0m                                     {[0m
+[0m[1m[38;5;12m3084[0m[0m [0m[0m[38;5;10m~ [0m[0m                                        collect.push(Some((key, map.next_value[0m[0m[38;5;10m::<()>[0m[0m()?)));[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+
+[0m[1m[33mwarning[0m[0m[1m: this function depends on never type fallback being `()`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:3974:29[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m3974[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m/[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   fn visit_map<A: MapAccess<'de>>([0m
+[0m[1m[38;5;12m3975[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                       self,[0m
+[0m[1m[38;5;12m3976[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                       mut map: A,[0m
+[0m[1m[38;5;12m3977[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   ) -> Result<Self::Value, A::Error> {[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|________________________________________________________^[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mwarning[0m[0m: this was previously accepted by the compiler but is being phased out; it will become a hard error in Rust 2024 and in a future release in all editions![0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/never-type-fallback.html>[0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: specify the types explicitly[0m
+[0m[1m[38;5;10mnote[0m[0m: in edition 2024, the requirement `!: Deserialize<'de>` will fail[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:3998:73[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m3998[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;10m^^^^^^^^^^[0m
+[0m[1m[38;5;14mhelp[0m[0m: use `()` annotations to avoid fallback changes[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m3998[0m[0m [0m[0m[38;5;10m~ [0m[0m                                            collect.push(Some((key, map.next_value[0m[0m[38;5;10m::<()>[0m[0m()?)));[0m
+[0m[1m[38;5;12m3999[0m[0m [0m[0m[1m[38;5;12m|[0m[0m                                         }[0m
+[0m [0m[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m4012[0m[0m [0m[0m[1m[38;5;12m|[0m[0m                                 {[0m
+[0m[1m[38;5;12m4013[0m[0m [0m[0m[38;5;10m~ [0m[0m                                    collect.push(Some((key, map.next_value[0m[0m[38;5;10m::<()>[0m[0m()?)));[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+
+[0m[1m[33mwarning[0m[0m[1m: this function depends on never type fallback being `()`[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4737:33[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4737[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m/[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   fn visit_map<A: MapAccess<'de>>([0m
+[0m[1m[38;5;12m4738[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                       self,[0m
+[0m[1m[38;5;12m4739[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                       mut map: A,[0m
+[0m[1m[38;5;12m4740[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   ) -> Result<Self::Value, A::Error> {[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[33m|________________________________________________________^[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mwarning[0m[0m: this was previously accepted by the compiler but is being phased out; it will become a hard error in Rust 2024 and in a future release in all editions![0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/never-type-fallback.html>[0m
+[0m     [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: specify the types explicitly[0m
+[0m[1m[38;5;10mnote[0m[0m: in edition 2024, the requirement `!: Deserialize<'de>` will fail[0m
+[0m    [0m[0m[1m[38;5;12m--> [0m[0mfuzz_targets/bench/lib.rs:4761:77[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4761[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m...[0m[0m                   collect.push(Some((key, map.next_value()?)));[0m
+[0m     [0m[0m[1m[38;5;12m|[0m[0m                                                   [0m[0m[1m[38;5;10m^^^^^^^^^^[0m
+[0m[1m[38;5;14mhelp[0m[0m: use `()` annotations to avoid fallback changes[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4761[0m[0m [0m[0m[38;5;10m~ [0m[0m                                                collect.push(Some((key, map.next_value[0m[0m[38;5;10m::<()>[0m[0m()?)));[0m
+[0m[1m[38;5;12m4762[0m[0m [0m[0m[1m[38;5;12m|[0m[0m                                             }[0m
+[0m [0m[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m4775[0m[0m [0m[0m[1m[38;5;12m|[0m[0m                                     {[0m
+[0m[1m[38;5;12m4776[0m[0m [0m[0m[38;5;10m~ [0m[0m                                        collect.push(Some((key, map.next_value[0m[0m[38;5;10m::<()>[0m[0m()?)));[0m
+[0m     [0m[0m[1m[38;5;12m|[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0433`.[0m
+[1m[33mwarning[0m[1m:[0m `ron-fuzz` (bin "arbitrary") generated 5 warnings
+[1m[31merror[0m[1m:[0m could not compile `ron-fuzz` (bin "arbitrary") due to 154 previous errors; 10 warnings emitted
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+Error: failed to build fuzz script: ASAN_OPTIONS="detect_odr_violation=0" RUSTFLAGS=" -Cpasses=sancov-module -Cllvm-args=-sanitizer-coverage-level=4 -Cllvm-args=-sanitizer-coverage-inline-8bit-counters -Cllvm-args=-sanitizer-coverage-pc-table -Cllvm-args=-sanitizer-coverage-trace-compares --cfg fuzzing -Cllvm-args=-simplifycfg-branch-fold-threshold=0 -Zsanitizer=address -Cllvm-args=-sanitizer-coverage-stack-depth -Ccodegen-units=1 --cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers" "cargo" "build" "--manifest-path" "/src/ron/fuzz/Cargo.toml" "--target" "x86_64-unknown-linux-gnu" "--release" "--config" "profile.release.debug=\"line-tables-only\"" "--bins"
+ERROR:__main__:Building fuzzers failed.

@@ -1,0 +1,280 @@
+Progress (1): 20 kB
+Progress (1): 25 kB
+Progress (1): 29 kB
+Progress (1): 29 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/20/plexus-20.pom (29 kB at 47 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.11.4/junit-bom-5.11.4.pom
+Progress (1): 4.1 kB
+Progress (1): 5.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.11.4/junit-bom-5.11.4.pom (5.6 kB at 9.3 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.pom
+Progress (1): 4.1 kB
+Progress (1): 8.2 kB
+Progress (1): 12 kB 
+Progress (1): 16 kB
+Progress (1): 18 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.pom (18 kB at 29 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.pom
+Progress (1): 1.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.pom (1.4 kB at 2.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.15.0/plexus-compiler-2.15.0.pom
+Progress (1): 4.1 kB
+Progress (1): 7.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.15.0/plexus-compiler-2.15.0.pom (7.6 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.pom
+Progress (1): 1.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.pom (1.3 kB at 2.2 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.pom
+Progress (1): 1.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.pom (1.3 kB at 2.1 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.15.0/plexus-compilers-2.15.0.pom
+Progress (1): 1.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.15.0/plexus-compilers-2.15.0.pom (1.6 kB at 2.6 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9/asm-9.9.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.5.0/plexus-java-1.5.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.jar
+Progress (1): 3.8/353 kB
+Progress (1): 7.9/353 kB
+Progress (1): 12/353 kB 
+Progress (1): 16/353 kB
+Progress (1): 20/353 kB
+Progress (1): 24/353 kB
+Progress (1): 28/353 kB
+Progress (1): 32/353 kB
+Progress (1): 37/353 kB
+Progress (2): 37/353 kB | 4.1/57 kB
+Progress (2): 37/353 kB | 7.7/57 kB
+Progress (2): 41/353 kB | 7.7/57 kB
+Progress (2): 41/353 kB | 12/57 kB 
+Progress (2): 45/353 kB | 12/57 kB
+Progress (2): 45/353 kB | 16/57 kB
+Progress (2): 49/353 kB | 16/57 kB
+Progress (2): 49/353 kB | 20/57 kB
+Progress (2): 53/353 kB | 20/57 kB
+Progress (2): 53/353 kB | 24/57 kB
+Progress (2): 57/353 kB | 24/57 kB
+Progress (2): 61/353 kB | 24/57 kB
+Progress (2): 65/353 kB | 24/57 kB
+Progress (2): 69/353 kB | 24/57 kB
+Progress (2): 69/353 kB | 28/57 kB
+Progress (2): 73/353 kB | 28/57 kB
+Progress (2): 73/353 kB | 32/57 kB
+Progress (2): 77/353 kB | 32/57 kB
+Progress (2): 77/353 kB | 36/57 kB
+Progress (2): 82/353 kB | 36/57 kB
+Progress (2): 82/353 kB | 41/57 kB
+Progress (2): 86/353 kB | 41/57 kB
+Progress (2): 86/353 kB | 45/57 kB
+Progress (2): 90/353 kB | 45/57 kB
+Progress (2): 90/353 kB | 49/57 kB
+Progress (2): 94/353 kB | 49/57 kB
+Progress (2): 94/353 kB | 53/57 kB
+Progress (2): 98/353 kB | 53/57 kB
+Progress (2): 98/353 kB | 57/57 kB
+Progress (2): 102/353 kB | 57/57 kB
+Progress (2): 102/353 kB | 57 kB   
+Progress (2): 106/353 kB | 57 kB
+Progress (2): 110/353 kB | 57 kB
+Progress (2): 114/353 kB | 57 kB
+Progress (2): 118/353 kB | 57 kB
+Progress (3): 118/353 kB | 57 kB | 3.8/14 kB
+Progress (3): 123/353 kB | 57 kB | 3.8/14 kB
+Progress (3): 127/353 kB | 57 kB | 3.8/14 kB
+Progress (3): 131/353 kB | 57 kB | 3.8/14 kB
+Progress (3): 131/353 kB | 57 kB | 7.9/14 kB
+Progress (3): 135/353 kB | 57 kB | 7.9/14 kB
+Progress (3): 135/353 kB | 57 kB | 12/14 kB 
+Progress (3): 139/353 kB | 57 kB | 12/14 kB
+Progress (3): 139/353 kB | 57 kB | 14 kB   
+Progress (3): 143/353 kB | 57 kB | 14 kB
+Progress (3): 147/353 kB | 57 kB | 14 kB
+Progress (3): 151/353 kB | 57 kB | 14 kB
+Progress (4): 151/353 kB | 57 kB | 14 kB | 4.1/151 kB
+Progress (4): 155/353 kB | 57 kB | 14 kB | 4.1/151 kB
+Progress (4): 155/353 kB | 57 kB | 14 kB | 7.7/151 kB
+Progress (4): 159/353 kB | 57 kB | 14 kB | 7.7/151 kB
+Progress (4): 159/353 kB | 57 kB | 14 kB | 12/151 kB 
+Progress (4): 164/353 kB | 57 kB | 14 kB | 12/151 kB
+Progress (4): 164/353 kB | 57 kB | 14 kB | 16/151 kB
+Progress (4): 168/353 kB | 57 kB | 14 kB | 16/151 kB
+Progress (4): 168/353 kB | 57 kB | 14 kB | 20/151 kB
+Progress (4): 172/353 kB | 57 kB | 14 kB | 20/151 kB
+Progress (4): 172/353 kB | 57 kB | 14 kB | 24/151 kB
+Progress (4): 176/353 kB | 57 kB | 14 kB | 24/151 kB
+Progress (4): 176/353 kB | 57 kB | 14 kB | 28/151 kB
+Progress (4): 180/353 kB | 57 kB | 14 kB | 28/151 kB
+Progress (4): 180/353 kB | 57 kB | 14 kB | 32/151 kB
+Progress (4): 184/353 kB | 57 kB | 14 kB | 32/151 kB
+Progress (4): 184/353 kB | 57 kB | 14 kB | 36/151 kB
+Progress (4): 184/353 kB | 57 kB | 14 kB | 41/151 kB
+Progress (4): 188/353 kB | 57 kB | 14 kB | 41/151 kB
+Progress (4): 188/353 kB | 57 kB | 14 kB | 45/151 kB
+Progress (4): 192/353 kB | 57 kB | 14 kB | 45/151 kB
+Progress (4): 192/353 kB | 57 kB | 14 kB | 49/151 kB
+Progress (4): 196/353 kB | 57 kB | 14 kB | 49/151 kB
+Progress (4): 196/353 kB | 57 kB | 14 kB | 53/151 kB
+Progress (4): 200/353 kB | 57 kB | 14 kB | 53/151 kB
+Progress (4): 200/353 kB | 57 kB | 14 kB | 57/151 kB
+Progress (4): 204/353 kB | 57 kB | 14 kB | 57/151 kB
+Progress (5): 204/353 kB | 57 kB | 14 kB | 57/151 kB | 4.1/126 kB
+Progress (5): 209/353 kB | 57 kB | 14 kB | 57/151 kB | 4.1/126 kB
+Progress (5): 209/353 kB | 57 kB | 14 kB | 61/151 kB | 4.1/126 kB
+Progress (5): 213/353 kB | 57 kB | 14 kB | 61/151 kB | 4.1/126 kB
+Progress (5): 213/353 kB | 57 kB | 14 kB | 61/151 kB | 7.7/126 kB
+Progress (5): 217/353 kB | 57 kB | 14 kB | 61/151 kB | 7.7/126 kB
+Progress (5): 217/353 kB | 57 kB | 14 kB | 65/151 kB | 7.7/126 kB
+Progress (5): 221/353 kB | 57 kB | 14 kB | 65/151 kB | 7.7/126 kB
+Progress (5): 221/353 kB | 57 kB | 14 kB | 65/151 kB | 12/126 kB 
+Progress (5): 225/353 kB | 57 kB | 14 kB | 65/151 kB | 12/126 kB
+Progress (5): 225/353 kB | 57 kB | 14 kB | 69/151 kB | 12/126 kB
+Progress (5): 229/353 kB | 57 kB | 14 kB | 69/151 kB | 12/126 kB
+Progress (5): 229/353 kB | 57 kB | 14 kB | 69/151 kB | 16/126 kB
+Progress (5): 233/353 kB | 57 kB | 14 kB | 69/151 kB | 16/126 kB
+Progress (5): 233/353 kB | 57 kB | 14 kB | 73/151 kB | 16/126 kB
+Progress (5): 233/353 kB | 57 kB | 14 kB | 73/151 kB | 20/126 kB
+Progress (5): 233/353 kB | 57 kB | 14 kB | 73/151 kB | 24/126 kB
+Progress (5): 233/353 kB | 57 kB | 14 kB | 73/151 kB | 28/126 kB
+Progress (5): 233/353 kB | 57 kB | 14 kB | 73/151 kB | 32/126 kB
+Progress (5): 233/353 kB | 57 kB | 14 kB | 73/151 kB | 36/126 kB
+Progress (5): 237/353 kB | 57 kB | 14 kB | 73/151 kB | 36/126 kB
+Progress (5): 237/353 kB | 57 kB | 14 kB | 77/151 kB | 36/126 kB
+Progress (5): 237/353 kB | 57 kB | 14 kB | 77/151 kB | 41/126 kB
+Progress (5): 241/353 kB | 57 kB | 14 kB | 77/151 kB | 41/126 kB
+Progress (5): 241/353 kB | 57 kB | 14 kB | 77/151 kB | 45/126 kB
+Progress (5): 241/353 kB | 57 kB | 14 kB | 81/151 kB | 45/126 kB
+Progress (5): 241/353 kB | 57 kB | 14 kB | 81/151 kB | 49/126 kB
+Progress (5): 245/353 kB | 57 kB | 14 kB | 81/151 kB | 49/126 kB
+Progress (5): 245/353 kB | 57 kB | 14 kB | 81/151 kB | 53/126 kB
+Progress (5): 245/353 kB | 57 kB | 14 kB | 86/151 kB | 53/126 kB
+Progress (5): 245/353 kB | 57 kB | 14 kB | 86/151 kB | 57/126 kB
+Progress (5): 250/353 kB | 57 kB | 14 kB | 86/151 kB | 57/126 kB
+Progress (5): 250/353 kB | 57 kB | 14 kB | 86/151 kB | 61/126 kB
+Progress (5): 250/353 kB | 57 kB | 14 kB | 90/151 kB | 61/126 kB
+Progress (5): 250/353 kB | 57 kB | 14 kB | 90/151 kB | 65/126 kB
+Progress (5): 254/353 kB | 57 kB | 14 kB | 90/151 kB | 65/126 kB
+Progress (5): 254/353 kB | 57 kB | 14 kB | 90/151 kB | 69/126 kB
+Progress (5): 258/353 kB | 57 kB | 14 kB | 90/151 kB | 69/126 kB
+Progress (5): 262/353 kB | 57 kB | 14 kB | 90/151 kB | 69/126 kB
+Progress (5): 266/353 kB | 57 kB | 14 kB | 90/151 kB | 69/126 kB
+Progress (5): 266/353 kB | 57 kB | 14 kB | 94/151 kB | 69/126 kB
+Progress (5): 266/353 kB | 57 kB | 14 kB | 98/151 kB | 69/126 kB
+Progress (5): 266/353 kB | 57 kB | 14 kB | 98/151 kB | 73/126 kB
+Progress (5): 270/353 kB | 57 kB | 14 kB | 98/151 kB | 73/126 kB
+Progress (5): 270/353 kB | 57 kB | 14 kB | 98/151 kB | 77/126 kB
+Progress (5): 270/353 kB | 57 kB | 14 kB | 102/151 kB | 77/126 kB
+Progress (5): 270/353 kB | 57 kB | 14 kB | 102/151 kB | 81/126 kB
+Progress (5): 274/353 kB | 57 kB | 14 kB | 102/151 kB | 81/126 kB
+Progress (5): 274/353 kB | 57 kB | 14 kB | 102/151 kB | 86/126 kB
+Progress (5): 274/353 kB | 57 kB | 14 kB | 106/151 kB | 86/126 kB
+Progress (5): 278/353 kB | 57 kB | 14 kB | 106/151 kB | 86/126 kB
+Progress (5): 278/353 kB | 57 kB | 14 kB | 110/151 kB | 86/126 kB
+Progress (5): 282/353 kB | 57 kB | 14 kB | 110/151 kB | 86/126 kB
+Progress (5): 282/353 kB | 57 kB | 14 kB | 114/151 kB | 86/126 kB
+Progress (5): 282/353 kB | 57 kB | 14 kB | 118/151 kB | 86/126 kB
+Progress (5): 282/353 kB | 57 kB | 14 kB | 122/151 kB | 86/126 kB
+Progress (5): 282/353 kB | 57 kB | 14 kB | 127/151 kB | 86/126 kB
+Progress (5): 286/353 kB | 57 kB | 14 kB | 127/151 kB | 86/126 kB
+Progress (5): 286/353 kB | 57 kB | 14 kB | 127/151 kB | 90/126 kB
+Progress (5): 290/353 kB | 57 kB | 14 kB | 127/151 kB | 90/126 kB
+Progress (5): 290/353 kB | 57 kB | 14 kB | 131/151 kB | 90/126 kB
+Progress (5): 295/353 kB | 57 kB | 14 kB | 131/151 kB | 90/126 kB
+Progress (5): 295/353 kB | 57 kB | 14 kB | 131/151 kB | 94/126 kB
+Progress (5): 299/353 kB | 57 kB | 14 kB | 131/151 kB | 94/126 kB
+Progress (5): 299/353 kB | 57 kB | 14 kB | 135/151 kB | 94/126 kB
+Progress (5): 303/353 kB | 57 kB | 14 kB | 135/151 kB | 94/126 kB
+Progress (5): 303/353 kB | 57 kB | 14 kB | 135/151 kB | 98/126 kB
+Progress (5): 307/353 kB | 57 kB | 14 kB | 135/151 kB | 98/126 kB
+Progress (5): 307/353 kB | 57 kB | 14 kB | 139/151 kB | 98/126 kB
+Progress (5): 311/353 kB | 57 kB | 14 kB | 139/151 kB | 98/126 kB
+Progress (5): 311/353 kB | 57 kB | 14 kB | 139/151 kB | 102/126 kB
+Progress (5): 315/353 kB | 57 kB | 14 kB | 139/151 kB | 102/126 kB
+Progress (5): 315/353 kB | 57 kB | 14 kB | 143/151 kB | 102/126 kB
+Progress (5): 315/353 kB | 57 kB | 14 kB | 147/151 kB | 102/126 kB
+Progress (5): 315/353 kB | 57 kB | 14 kB | 151 kB | 102/126 kB    
+Progress (5): 315/353 kB | 57 kB | 14 kB | 151 kB | 106/126 kB
+Progress (5): 319/353 kB | 57 kB | 14 kB | 151 kB | 106/126 kB
+Progress (5): 319/353 kB | 57 kB | 14 kB | 151 kB | 110/126 kB
+Progress (5): 323/353 kB | 57 kB | 14 kB | 151 kB | 110/126 kB
+Progress (5): 323/353 kB | 57 kB | 14 kB | 151 kB | 114/126 kB
+Progress (5): 327/353 kB | 57 kB | 14 kB | 151 kB | 114/126 kB
+Progress (5): 327/353 kB | 57 kB | 14 kB | 151 kB | 118/126 kB
+Progress (5): 331/353 kB | 57 kB | 14 kB | 151 kB | 118/126 kB
+Progress (5): 331/353 kB | 57 kB | 14 kB | 151 kB | 122/126 kB
+Progress (5): 336/353 kB | 57 kB | 14 kB | 151 kB | 122/126 kB
+Progress (5): 336/353 kB | 57 kB | 14 kB | 151 kB | 126 kB    
+Progress (5): 340/353 kB | 57 kB | 14 kB | 151 kB | 126 kB
+Progress (5): 344/353 kB | 57 kB | 14 kB | 151 kB | 126 kB
+Progress (5): 348/353 kB | 57 kB | 14 kB | 151 kB | 126 kB
+Progress (5): 352/353 kB | 57 kB | 14 kB | 151 kB | 126 kB
+Progress (5): 353 kB | 57 kB | 14 kB | 151 kB | 126 kB    
+                                                      
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.5.0/plexus-java-1.5.0.jar (57 kB at 93 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.jar (353 kB at 568 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.jar (151 kB at 243 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9/asm-9.9.jar (126 kB at 202 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar (14 kB at 19 kB/s)
+Progress (1): 4.1/26 kB
+Progress (2): 4.1/26 kB | 4.1/5.2 kB
+Progress (2): 7.7/26 kB | 4.1/5.2 kB
+Progress (3): 7.7/26 kB | 4.1/5.2 kB | 4.1/29 kB
+Progress (3): 12/26 kB | 4.1/5.2 kB | 4.1/29 kB 
+Progress (3): 12/26 kB | 5.2 kB | 4.1/29 kB    
+Progress (3): 16/26 kB | 5.2 kB | 4.1/29 kB
+Progress (3): 16/26 kB | 5.2 kB | 7.7/29 kB
+Progress (3): 20/26 kB | 5.2 kB | 7.7/29 kB
+Progress (3): 20/26 kB | 5.2 kB | 12/29 kB 
+Progress (3): 24/26 kB | 5.2 kB | 12/29 kB
+Progress (3): 24/26 kB | 5.2 kB | 16/29 kB
+Progress (3): 26 kB | 5.2 kB | 16/29 kB   
+Progress (3): 26 kB | 5.2 kB | 20/29 kB
+Progress (3): 26 kB | 5.2 kB | 24/29 kB
+Progress (3): 26 kB | 5.2 kB | 28/29 kB
+Progress (3): 26 kB | 5.2 kB | 29 kB   
+                                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.jar (29 kB at 24 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.jar (26 kB at 21 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.jar (5.2 kB at 4.3 kB/s)
+[[1;34mINFO[m] Recompiling the module because of [1mchanged dependency[m.
+[[1;34mINFO[m] Compiling 49 source files with javac [debug:lines,source,vars deprecation target 15 module-path] to target/classes
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;33mWARNING[m] COMPILATION WARNING : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;33mWARNING[m] system modules path not set in conjunction with -source 15
+[[1;34mINFO[m] 1 warning
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] /src/jackson-dataformat-xml/src/main/java/module-info.java:[8,27] module not found: tools.jackson.core
+[[1;34mINFO[m] 1 error
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  05:16 min
+[[1;34mINFO[m] Finished at: 2025-10-27T06:43:14Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile[m [1m(default-compile)[m on project [36mjackson-dataformat-xml[m: [1;31mCompilation failure[m
+[[1;31mERROR[m] [1;31m/src/jackson-dataformat-xml/src/main/java/module-info.java:[8,27] module not found: tools.jackson.core[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+ERROR:__main__:Building fuzzers failed.
