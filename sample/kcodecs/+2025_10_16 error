@@ -1,289 +1,0 @@
-starting build "20e000ea-eb07-4d46-938e-eb7fc3c6e531"
-
-FETCHSOURCE
-BUILD
-Starting Step #0
-Step #0: Already have image (with digest): gcr.io/cloud-builders/git
-Step #0: Cloning into 'oss-fuzz'...
-Finished Step #0
-Starting Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc"
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Sending build context to Docker daemon  3.584kB
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Step 1/5 : FROM gcr.io/oss-fuzz-base/base-builder@sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": gcr.io/oss-fuzz-base/base-builder@sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0: Pulling from oss-fuzz-base/base-builder
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": b549f31133a9: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": dd951afe29d9: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e375f16f47e1: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": d4cb766c0ca5: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1f7c92883fdd: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 43fab1956036: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": edcb6c4ab22d: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": d723b97a8b23: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 572c9069a0b3: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1fcefc1b0875: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 06953686bfeb: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 6d8d5683bf98: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 65b2c2456957: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": f09a01ebcab8: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 751d59f16429: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 215525518037: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 185f4228e62b: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": cac66a6f7419: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e4ac8c28adba: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a8bbd0316451: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a1203169359e: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a31b9d48a57e: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": f7154a177a60: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": b23f140c9f04: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 2db3c3c22ba5: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 5e52d96d289b: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 2ad5622f02d1: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 491315b3c37d: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 748b6eedca98: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 5c7f852fd40b: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 69150bb81b54: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 79ada44f8b23: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 52c04df9aba6: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": bdfd1fcd190e: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 97a2daa2ba61: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a6ea2d9647c7: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e4f39cb01e44: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1bac9eb98018: Pulling fs layer
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 185f4228e62b: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": cac66a6f7419: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1f7c92883fdd: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e4ac8c28adba: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": b23f140c9f04: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1fcefc1b0875: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a8bbd0316451: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a31b9d48a57e: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 2db3c3c22ba5: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a1203169359e: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 06953686bfeb: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": d4cb766c0ca5: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": f09a01ebcab8: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 43fab1956036: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 5e52d96d289b: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 65b2c2456957: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 6d8d5683bf98: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": edcb6c4ab22d: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 2ad5622f02d1: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": f7154a177a60: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 751d59f16429: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 491315b3c37d: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 215525518037: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 69150bb81b54: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": bdfd1fcd190e: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 748b6eedca98: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 79ada44f8b23: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1bac9eb98018: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 5c7f852fd40b: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 52c04df9aba6: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 97a2daa2ba61: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 572c9069a0b3: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a6ea2d9647c7: Waiting
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e375f16f47e1: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e375f16f47e1: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": b549f31133a9: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": b549f31133a9: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1f7c92883fdd: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1f7c92883fdd: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": d4cb766c0ca5: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": d4cb766c0ca5: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 43fab1956036: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": d723b97a8b23: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": d723b97a8b23: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": dd951afe29d9: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": dd951afe29d9: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 572c9069a0b3: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": b549f31133a9: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 06953686bfeb: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 06953686bfeb: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 6d8d5683bf98: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 6d8d5683bf98: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 65b2c2456957: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 65b2c2456957: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1fcefc1b0875: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1fcefc1b0875: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": f09a01ebcab8: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": f09a01ebcab8: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 751d59f16429: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 751d59f16429: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 215525518037: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 185f4228e62b: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 185f4228e62b: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": cac66a6f7419: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": cac66a6f7419: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e4ac8c28adba: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e4ac8c28adba: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a8bbd0316451: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a8bbd0316451: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a1203169359e: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a1203169359e: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": edcb6c4ab22d: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": edcb6c4ab22d: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a31b9d48a57e: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a31b9d48a57e: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": b23f140c9f04: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": b23f140c9f04: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": f7154a177a60: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": f7154a177a60: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 2db3c3c22ba5: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 2db3c3c22ba5: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 5e52d96d289b: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 2ad5622f02d1: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 491315b3c37d: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 491315b3c37d: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": dd951afe29d9: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 5c7f852fd40b: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 5c7f852fd40b: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e375f16f47e1: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 748b6eedca98: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 748b6eedca98: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 69150bb81b54: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 69150bb81b54: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 79ada44f8b23: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 79ada44f8b23: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": bdfd1fcd190e: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": bdfd1fcd190e: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 97a2daa2ba61: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 97a2daa2ba61: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 52c04df9aba6: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 52c04df9aba6: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a6ea2d9647c7: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a6ea2d9647c7: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e4f39cb01e44: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e4f39cb01e44: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1bac9eb98018: Verifying Checksum
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1bac9eb98018: Download complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": d4cb766c0ca5: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1f7c92883fdd: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 43fab1956036: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": edcb6c4ab22d: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": d723b97a8b23: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 572c9069a0b3: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1fcefc1b0875: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 06953686bfeb: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 6d8d5683bf98: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 65b2c2456957: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": f09a01ebcab8: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 751d59f16429: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 215525518037: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 185f4228e62b: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": cac66a6f7419: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e4ac8c28adba: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a8bbd0316451: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a1203169359e: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a31b9d48a57e: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": f7154a177a60: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": b23f140c9f04: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 2db3c3c22ba5: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 5e52d96d289b: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 2ad5622f02d1: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 491315b3c37d: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 748b6eedca98: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 5c7f852fd40b: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 69150bb81b54: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 79ada44f8b23: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 52c04df9aba6: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": bdfd1fcd190e: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 97a2daa2ba61: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": a6ea2d9647c7: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": e4f39cb01e44: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 1bac9eb98018: Pull complete
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Digest: sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder@sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc":  ---> 376fbc54347a
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Step 2/5 : RUN git clone --depth 1 -b master https://invent.kde.org/frameworks/kcodecs.git
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc":  ---> Running in b25cf32c7143
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": [91mCloning into 'kcodecs'...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": [0mRemoving intermediate container b25cf32c7143
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc":  ---> 0415c0118328
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Step 3/5 : RUN $SRC/kcodecs/autotests/ossfuzz/prepare_build.sh
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc":  ---> Running in d23e28b3ef4b
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [1023 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [4920 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [1377 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:8 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1599 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Fetched 9302 kB in 2s (4838 kB/s)
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Reading package lists...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Reading package lists...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Building dependency tree...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Reading state information...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": The following packages were automatically installed and are no longer required:
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc":   autotools-dev libsigsegv2 m4
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Use 'apt autoremove' to remove them.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": The following additional packages will be installed:
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc":   cmake-data libarchive13 libicu66 libjsoncpp1 librhash0 libuv1 libxml2
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Suggested packages:
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc":   cmake-doc lrzip python3
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": The following NEW packages will be installed:
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc":   cmake cmake-data libarchive13 libicu66 libjsoncpp1 librhash0 libuv1 libxml2
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc":   ninja-build
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": 0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Need to get 15.1 MB of archives.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": After this operation, 65.3 MB of additional disk space will be used.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.5 [80.9 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake-data all 3.16.3-1ubuntu1.20.04.1 [1613 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libarchive13 amd64 3.4.0-2ubuntu1.5 [327 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libjsoncpp1 amd64 1.7.4-3.1ubuntu2 [75.6 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 librhash0 amd64 1.3.9-1 [113 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake amd64 3.16.3-1ubuntu1.20.04.1 [3668 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 ninja-build amd64 1.10.0-1build1 [107 kB]
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": [91mdebconf: delaying package configuration, since apt-utils is not installed
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": [0mFetched 15.1 MB in 2s (9181 kB/s)
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Selecting previously unselected package libicu66:amd64.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Preparing to unpack .../0-libicu66_66.1-2ubuntu2.1_amd64.deb ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Selecting previously unselected package libxml2:amd64.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Preparing to unpack .../1-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Selecting previously unselected package libuv1:amd64.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Preparing to unpack .../2-libuv1_1.34.2-1ubuntu1.5_amd64.deb ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Unpacking libuv1:amd64 (1.34.2-1ubuntu1.5) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Selecting previously unselected package cmake-data.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Preparing to unpack .../3-cmake-data_3.16.3-1ubuntu1.20.04.1_all.deb ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Unpacking cmake-data (3.16.3-1ubuntu1.20.04.1) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Selecting previously unselected package libarchive13:amd64.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Preparing to unpack .../4-libarchive13_3.4.0-2ubuntu1.5_amd64.deb ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Unpacking libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Selecting previously unselected package libjsoncpp1:amd64.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Preparing to unpack .../5-libjsoncpp1_1.7.4-3.1ubuntu2_amd64.deb ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Unpacking libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Selecting previously unselected package librhash0:amd64.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Preparing to unpack .../6-librhash0_1.3.9-1_amd64.deb ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Unpacking librhash0:amd64 (1.3.9-1) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Selecting previously unselected package cmake.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Preparing to unpack .../7-cmake_3.16.3-1ubuntu1.20.04.1_amd64.deb ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Unpacking cmake (3.16.3-1ubuntu1.20.04.1) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Selecting previously unselected package ninja-build.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Preparing to unpack .../8-ninja-build_1.10.0-1build1_amd64.deb ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Unpacking ninja-build (1.10.0-1build1) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Setting up ninja-build (1.10.0-1build1) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Setting up libuv1:amd64 (1.34.2-1ubuntu1.5) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Setting up librhash0:amd64 (1.3.9-1) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Setting up cmake-data (3.16.3-1ubuntu1.20.04.1) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Setting up libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Setting up libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Setting up cmake (3.16.3-1ubuntu1.20.04.1) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": [91mCloning into 'qtbase'...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": [0m[91mUpdating files:  42% (9762/23022)[0m[91mUpdating files:  43% (9900/23022)[0m[91mUpdating files:  44% (10130/23022)[0m[91mUpdating files:  45% (10360/23022)[0m[91mUpdating files:  46% (10591/23022)[0m[91mUpdating files:  47% (10821/23022)[0m[91mUpdating files:  48% (11051/23022)[0m[91mUpdating files:  49% (11281/23022)[0m[91mUpdating files:  50% (11511/23022)[0m[91mUpdating files:  51% (11742/23022)[0m[91mUpdating files:  52% (11972/23022)[0m[91mUpdating files:  53% (12202/23022)[0m[91mUpdating files:  54% (12432/23022)[0m[91mUpdating files:  55% (12663/23022)[0m[91mUpdating files:  56% (12893/23022)[0m[91mUpdating files:  57% (13123/23022)[0m[91mUpdating files:  58% (13353/23022)[0m[91mUpdating files:  59% (13583/23022)[0m[91mUpdating files:  60% (13814/23022)[0m[91mUpdating files:  61% (14044/23022)[0m[91mUpdating files:  62% (14274/23022)[0m[91mUpdating files:  63% (14504/23022)[0m[91mUpdating files:  64% (14735/23022)[0m[91mUpdating files:  65% (14965/23022)[0m[91mUpdating files:  66% (15195/23022)[0m[91mUpdating files:  67% (15425/23022)[0m[91mUpdating files:  68% (15655/23022)[0m[91mUpdating files:  69% (15886/23022)[0m[91mUpdating files:  70% (16116/23022)[0m[91mUpdating files:  71% (16346/23022)[0m[91mUpdating files:  72% (16576/23022)[0m[91mUpdating files:  73% (16807/23022)[0m[91mUpdating files:  74% (17037/23022)[0m[91mUpdating files:  75% (17267/23022)[0m[91mUpdating files:  76% (17497/23022)[0m[91mUpdating files:  77% (17727/23022)[0m[91mUpdating files:  78% (17958/23022)[0m[91mUpdating files:  79% (18188/23022)[0m[91mUpdating files:  80% (18418/23022)[0m[91mUpdating files:  81% (18648/23022)[0m[91mUpdating files:  82% (18879/23022)[0m[91mUpdating files:  83% (19109/23022)[0m[91mUpdating files:  84% (19339/23022)[0m[91mUpdating files:  85% (19569/23022)[0m[91mUpdating files:  86% (19799/23022)[0m[91mUpdating files:  87% (20030/23022)[0m[91mUpdating files:  88% (20260/23022)[0m[91mUpdating files:  89% (20490/23022)[0m[91mUpdating files:  90% (20720/23022)[0m[91mUpdating files:  91% (20951/23022)[0m[91mUpdating files:  92% (21181/23022)[0m[91mUpdating files:  93% (21411/23022)[0m[91mUpdating files:  94% (21641/23022)[0m[91mUpdating files:  95% (21871/23022)[0m[91mUpdating files:  95% (22066/23022)[0m[91mUpdating files:  96% (22102/23022)[0m[91mUpdating files:  97% (22332/23022)[0m[91mUpdating files:  98% (22562/23022)[0m[91mUpdating files:  99% (22792/23022)[0m[91mUpdating files: 100% (23022/23022)Updating files: 100% (23022/23022), done.
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": [0m[91mCloning into 'extra-cmake-modules'...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": [0m[91mCloning into 'uchardet'...
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": [0m[91mremote: Internal Server Error
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": fatal: unable to access 'https://gitlab.freedesktop.org/uchardet/uchardet.git/': The requested URL returned error: 500
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": The command '/bin/sh -c $SRC/kcodecs/autotests/ossfuzz/prepare_build.sh' returned a non-zero code: 128
-Finished Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc"
-ERROR
-ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 128
-Step #1 - "build-1a4ecb64-581a-4132-a910-73b637551cbc": [0m

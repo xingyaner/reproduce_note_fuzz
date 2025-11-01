@@ -1,1033 +1,0 @@
-starting build "683c8359-62fd-4cb6-a5e1-b788646ff243"
-
-FETCHSOURCE
-BUILD
-Starting Step #0
-Step #0: Already have image (with digest): gcr.io/cloud-builders/git
-Step #0: Cloning into 'oss-fuzz'...
-Finished Step #0
-Starting Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145"
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Sending build context to Docker daemon  33.28kB
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 1/20 : FROM gcr.io/oss-fuzz-base/base-builder-jvm
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": latest: Pulling from oss-fuzz-base/base-builder-jvm
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": b549f31133a9: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1b3d0e2e09a6: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2af237d09d06: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": e030144f5bdc: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 142f5a2dbf08: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1c16285a1849: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1515aaa3fbbb: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 4ea1d2d1b8b8: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 37a51565b33d: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 541474f4691a: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 7a96573caa47: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2c9b79a4bc81: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": b75afec53ae7: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1c25add5762c: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 07c873137d0a: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 6389b1e68e9e: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 405530f1ac5f: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 891db846ac7a: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 0991e2d7ef33: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": c3198232e580: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f7b77cda7d16: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dc388553dfd7: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": cd9915f07747: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2635be149363: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f2bc515c52af: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 61f63dedfb00: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 562cd2fbd637: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 37a51565b33d: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 3ceb4443184c: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 784394cee7ca: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 541474f4691a: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": b75afec53ae7: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": bc474305956e: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": cc0e1c34b384: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1c25add5762c: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 5a683b8b9438: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 7a96573caa47: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": be7ae4c2d598: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2c9b79a4bc81: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": edafe80d7050: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 6389b1e68e9e: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": e6476ae5bb2d: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 891db846ac7a: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f7b77cda7d16: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dcbd208efcac: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 405530f1ac5f: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": c3198232e580: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 7d3d8def9d1a: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dc388553dfd7: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 072960598fc6: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 562cd2fbd637: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 308120e7291e: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f2bc515c52af: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": ff9777c13e7a: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 61f63dedfb00: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f96a1ea060e1: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": cd9915f07747: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dec1a6c4319c: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f059ccdaf9d5: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2635be149363: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 3ceb4443184c: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dcbd208efcac: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 45b0e3c80464: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 784394cee7ca: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 5a683b8b9438: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 072960598fc6: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 7d3d8def9d1a: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dec1a6c4319c: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 308120e7291e: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": be7ae4c2d598: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": e6476ae5bb2d: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": ff9777c13e7a: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": edafe80d7050: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f96a1ea060e1: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 0991e2d7ef33: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f059ccdaf9d5: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": bd52567af8fc: Pulling fs layer
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": bc474305956e: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 4ea1d2d1b8b8: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1c16285a1849: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": e030144f5bdc: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": cc0e1c34b384: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 45b0e3c80464: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": bd52567af8fc: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 142f5a2dbf08: Waiting
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2af237d09d06: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2af237d09d06: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": b549f31133a9: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": b549f31133a9: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 142f5a2dbf08: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 142f5a2dbf08: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": e030144f5bdc: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": e030144f5bdc: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1515aaa3fbbb: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1b3d0e2e09a6: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1b3d0e2e09a6: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 4ea1d2d1b8b8: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 4ea1d2d1b8b8: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": b549f31133a9: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 37a51565b33d: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 37a51565b33d: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 7a96573caa47: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 7a96573caa47: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2c9b79a4bc81: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2c9b79a4bc81: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 541474f4691a: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 541474f4691a: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1c25add5762c: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1c25add5762c: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": b75afec53ae7: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": b75afec53ae7: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 6389b1e68e9e: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 6389b1e68e9e: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 07c873137d0a: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 07c873137d0a: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 891db846ac7a: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 891db846ac7a: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 405530f1ac5f: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 405530f1ac5f: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": c3198232e580: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": c3198232e580: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 0991e2d7ef33: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 0991e2d7ef33: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1b3d0e2e09a6: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f7b77cda7d16: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f7b77cda7d16: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dc388553dfd7: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dc388553dfd7: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2af237d09d06: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2635be149363: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2635be149363: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": cd9915f07747: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": cd9915f07747: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f2bc515c52af: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f2bc515c52af: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1c16285a1849: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1c16285a1849: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 61f63dedfb00: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 562cd2fbd637: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 3ceb4443184c: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 3ceb4443184c: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 784394cee7ca: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 784394cee7ca: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": cc0e1c34b384: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": cc0e1c34b384: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 5a683b8b9438: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 5a683b8b9438: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": bc474305956e: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": bc474305956e: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": be7ae4c2d598: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": be7ae4c2d598: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": edafe80d7050: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": edafe80d7050: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": e6476ae5bb2d: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": e6476ae5bb2d: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dcbd208efcac: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dcbd208efcac: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": e030144f5bdc: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 142f5a2dbf08: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 072960598fc6: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 072960598fc6: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 7d3d8def9d1a: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 7d3d8def9d1a: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": ff9777c13e7a: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": ff9777c13e7a: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dec1a6c4319c: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f059ccdaf9d5: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f059ccdaf9d5: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 45b0e3c80464: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 45b0e3c80464: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f96a1ea060e1: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f96a1ea060e1: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": bd52567af8fc: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 308120e7291e: Verifying Checksum
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 308120e7291e: Download complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1c16285a1849: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1515aaa3fbbb: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 4ea1d2d1b8b8: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 37a51565b33d: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 541474f4691a: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 7a96573caa47: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2c9b79a4bc81: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": b75afec53ae7: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 1c25add5762c: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 07c873137d0a: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 6389b1e68e9e: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 405530f1ac5f: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 891db846ac7a: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 0991e2d7ef33: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": c3198232e580: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f7b77cda7d16: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dc388553dfd7: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": cd9915f07747: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 2635be149363: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f2bc515c52af: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 61f63dedfb00: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 562cd2fbd637: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 3ceb4443184c: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 784394cee7ca: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": bc474305956e: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": cc0e1c34b384: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 5a683b8b9438: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": be7ae4c2d598: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": edafe80d7050: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": e6476ae5bb2d: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dcbd208efcac: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 7d3d8def9d1a: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 072960598fc6: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 308120e7291e: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": ff9777c13e7a: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f96a1ea060e1: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": dec1a6c4319c: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": f059ccdaf9d5: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": 45b0e3c80464: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": bd52567af8fc: Pull complete
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Digest: sha256:2107b628774b7f5d1ba0aae65bcae98f4967c9e09f19215d0fdb5b2de26a473b
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-jvm:latest
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 861be27f4c38
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 2/20 : RUN curl -L https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip -o maven.zip &&     unzip maven.zip -d $SRC/maven &&     rm -f maven.zip
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 884ac7bf6c1b
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": [91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":                                  Dload  Upload   Total   Spent    Left  Speed
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   0     0    0     0    0     0      0      0 --:--:-- --:--:-- [0m[91m--:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m  0 9377k    0 71946    0     0  64352      0  0:02:29  0:00:01  0:02:28 64294[0m[91m  4 9377k    4  382k    0     0   180k      0  0:00:51  0:00:02  0:00:49  180k[0m[91m  6 9377k    6  617k    0     0   197k      0  0:00:47  0:00:03  0:00:44  197k[0m[91m  9 9377k    9  859k    0     0   208k      0  0:00:44  0:00:04  0:00:40  208k[0m[91m 11 9377k   11 1085k    0     0   212k      0  0:00:44  0:00:05  0:00:39  219k[0m[91m 14 9377k   14 1320k    0     0   215k      0  0:00:43  0:00:06  0:00:37  250k[0m[91m 16 9377k   16 1554k    0     0   218k      0  0:00:42  0:00:07  0:00:35  234k[0m[91m 19 9377k   19 1789k    0     0   220k      0  0:00:42  0:00:08  0:00:34  234k[0m[91m 21 9377k   21 2031k    0     0   222k      0  0:00:42  0:00:09  0:00:33  234k[0m[91m 24 9377k   24 2296k    0     0   226k      0  0:00:41  0:00:10  0:00:31  241k[0m[91m 26 9377k   26 2531k    0     0   227k      0  0:00:41  0:00:11  0:00:30  242k[0m[91m 29 9377k   29 2765k    0     0   228k      0  0:00:41  0:00:12  0:00:29  241k[0m[91m 31 9377k   31 2999k    0     0   228k      0  0:00:41  0:00:13  0:00:28  242k[0m[91m 34 9377k   34 3257k    0     0   230k      0  0:00:40  0:00:14  0:00:26  245k[0m[91m 37 9377k   37 3476k    0     0   229k      0  0:00:40  0:00:15  0:00:25  236k[0m[91m 39 9377k   39 3718k    0     0   230k      0  0:00:40  0:00:16  0:00:24  235k[0m[91m 42 9377k   42 3968k    0     0   231k      0  0:00:40  0:00:17  0:00:23  241k[0m[91m 44 9377k   44 4203k    0     0   231k      0  0:00:40  0:00:18  0:00:22  240k[0m[91m 47 9377k   47 4453k    0     0   232k      0  0:00:40  0:00:19  0:00:21  238k[0m[91m 49 9377k   49 4679k    0     0   232k      0  0:00:40  0:00:20  0:00:20  240k[0m[91m 52 9377k   52 4914k    0     0   232k      0  0:00:40  0:00:21  0:00:19  239k[0m[91m 55 9377k   55 5171k    0     0   233k      0  0:00:40  0:00:22  0:00:18  240k[0m[91m 57 9377k   57 5414k    0     0   234k      0  0:00:40  0:00:23  0:00:17  242k[0m[91m 60 9377k   60 5656k    0     0   234k      0  0:00:39  0:00:24  0:00:15  240k[0m[91m 62 9377k   62 5874k    0     0   233k      0  0:00:40  0:00:25  0:00:15  239k[0m[91m 65 9377k   65 6117k    0     0   234k      0  0:00:40  0:00:26  0:00:14  241k[0m[91m 67 9377k   67 6351k    0     0   234k      0  0:00:40  0:00:27  0:00:13  235k[0m[91m 70 9377k   70 6601k    0     0   234k      0  0:00:39  0:00:28  0:00:11  237k[0m[91m 72 9377k   72 6828k    0     0   234k      0  0:00:39  0:00:29  0:00:10  234k[0m[91m 75 9377k   75 7078k    0     0   235k      0  0:00:39  0:00:30  0:00:09  240k[0m[91m 77 9377k   77 7312k    0     0   234k      0  0:00:39  0:00:31  0:00:08  238k[0m[91m 80 9377k   80 7546k    0     0   234k      0  0:00:39  0:00:32  0:00:07  238k[0m[91m 82 9377k   82 7765k    0     0   234k      0  0:00:39  0:00:33  0:00:06  232k[0m[91m 85 9377k   85 8007k    0     0   234k      0  0:00:39  0:00:34  0:00:05  236k[0m[91m 87 9377k   87 8242k    0     0   234k      0  0:00:39  0:00:35  0:00:04  232k[0m[91m 90 9377k   90 8507k    0     0   235k      0  0:00:39  0:00:36  0:00:03  239k[0m[91m 93 9377k   93 8749k    0     0   235k      0  0:00:39  0:00:37  0:00:02  240k[0m[91m 96 9377k   96 9007k    0     0   236k      0  0:00:39  0:00:38  0:00:01  248k[0m[91m 98 9377k   98 9210k    0     0   235k      0  0:00:39  0:00:39 --:--:--  240k[0m[91m 99 9377k   99 9359k    0     0   233k      0  0:00:40  0:00:40 --:--:--  223k[0m[91m100 9377k  100 9377k    0     0   232k      0  0:00:40  0:00:40 --:--:--  209k
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": [0mArchive:  maven.zip
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/lib/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/boot/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd32/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd64/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux32/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux64/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/osx/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows32/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows64/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/bin/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/conf/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/conf/logging/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":    creating: /src/maven/apache-maven-3.6.3/lib/ext/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/README.txt  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/LICENSE  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/NOTICE  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/cdi-api.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-cli.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-io.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-lang3.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/guava.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/guice.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/javax.inject.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jcl-over-slf4j.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jsoup.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jsr250-api.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.inject.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.plexus.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-cipher.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-component-annotations.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-interpolation.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-sec-dispatcher.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-utils.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/slf4j-api.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/boot/plexus-classworlds.license  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd32/libjansi.so  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd64/libjansi.so  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux32/libjansi.so  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux64/libjansi.so  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/osx/libjansi.jnilib  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows32/jansi.dll  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows64/jansi.dll  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/bin/m2.conf  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/bin/mvn.cmd  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/bin/mvnDebug.cmd  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/bin/mvn  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/bin/mvnDebug  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/bin/mvnyjp  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/conf/logging/simplelogger.properties  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/conf/settings.xml  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/conf/toolchains.xml  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/ext/README.txt  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/README.txt  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-embedder-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-settings-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-settings-builder-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-plugin-api-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-model-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-model-builder-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-builder-support-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-api-1.4.1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-util-1.4.1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-shared-utils-3.2.1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-io-2.5.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/guice-4.2.1-no_aop.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/guava-25.1-android.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/javax.inject-1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jsr250-api-1.0.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-utils-3.2.1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-sec-dispatcher-1.4.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-cipher-1.7.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/slf4j-api-1.7.29.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-lang3-3.8.1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-core-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-repository-metadata-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-artifact-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-provider-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-impl-1.4.1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-spi-1.4.1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.inject-0.3.4.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-component-annotations-2.1.0.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-compat-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-interpolation-1.25.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/wagon-provider-api-3.3.4.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.plexus-0.3.4.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/cdi-api-1.0.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-cli-1.4.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/wagon-http-3.3.4-shaded.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jsoup-1.12.1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jcl-over-slf4j-1.7.29.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/wagon-file-3.3.4.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-connector-basic-1.4.1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-transport-wagon-1.4.1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-slf4j-provider-3.6.3.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-1.17.1.jar  
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container 884ac7bf6c1b
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 6502330237b1
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 3/20 : ENV MVN $SRC/maven/apache-maven-3.6.3/bin/mvn
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 7e081ce0afad
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container 7e081ce0afad
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 13d03f91015f
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 4/20 : ENV TARGET_PACKAGE_PREFIX org.apache.commons.configuration2.*
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 88043d1da0db
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container 88043d1da0db
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 9f91ee865f15
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 5/20 : RUN git clone --depth=1 "https://gitbox.apache.org/repos/asf/commons-configuration.git" commons-configuration
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 0e1c252490ff
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": [91mCloning into 'commons-configuration'...
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": [0mRemoving intermediate container 0e1c252490ff
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 5ce7a7e72fdb
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 6/20 : RUN git clone --depth=1 "https://github.com/google/fuzzing" fuzzing
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 36eeade7546e
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": [91mCloning into 'fuzzing'...
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": [0mRemoving intermediate container 36eeade7546e
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> b1579c7cee99
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 7/20 : RUN cp fuzzing/dictionaries/xml.dict $SRC/XMLConfigurationLoadFuzzer.dict
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in ca550bcff074
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container ca550bcff074
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> fe68664f28fd
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 8/20 : RUN cp fuzzing/dictionaries/yaml.dict $SRC/YAMLConfigurationReadFuzzer.dict
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 942b7d9d6d4b
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container 942b7d9d6d4b
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> c04b265cf74d
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 9/20 : RUN cp $SRC/YAMLConfigurationReadFuzzer.dict $SRC/YAMLConfigurationWriteFuzzer.dict
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 48b3a11d80bc
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container 48b3a11d80bc
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> a41145017680
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 10/20 : RUN cp fuzzing/dictionaries/json.dict $SRC/JSONConfigurationReadFuzzer.dict
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 5e2df3e7a2a6
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container 5e2df3e7a2a6
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> bc634ee2609a
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 11/20 : RUN cp $SRC/JSONConfigurationReadFuzzer.dict $SRC/JSONConfigurationWriteFuzzer.dict
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in f9d4d0634107
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container f9d4d0634107
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> bb87ea984d22
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 12/20 : COPY ini.dict $SRC/INIConfigurationReadFuzzer.dict
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> cd3d5bc593aa
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 13/20 : RUN cp $SRC/INIConfigurationReadFuzzer.dict $SRC/INIConfigurationWriteFuzzer.dict
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 04f0e0ae4deb
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container 04f0e0ae4deb
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 4f02fddb9664
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 14/20 : RUN git clone --depth=1 "https://github.com/dvyukov/go-fuzz-corpus" corpora
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 5fc46a2a4468
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": [91mCloning into 'corpora'...
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": [0m[91mUpdating files:  36% (22150/60861)[0m[91mUpdating files:  37% (22519/60861)[0m[91mUpdating files:  38% (23128/60861)[0m[91mUpdating files:  39% (23736/60861)[0m[91mUpdating files:  40% (24345/60861)[0m[91mUpdating files:  41% (24954/60861)[0m[91mUpdating files:  42% (25562/60861)[0m[91mUpdating files:  43% (26171/60861)[0m[91mUpdating files:  44% (26779/60861)[0m[91mUpdating files:  45% (27388/60861)[0m[91mUpdating files:  46% (27997/60861)[0m[91mUpdating files:  47% (28605/60861)[0m[91mUpdating files:  48% (29214/60861)[0m[91mUpdating files:  49% (29822/60861)[0m[91mUpdating files:  50% (30431/60861)[0m[91mUpdating files:  51% (31040/60861)[0m[91mUpdating files:  52% (31648/60861)[0m[91mUpdating files:  53% (32257/60861)[0m[91mUpdating files:  54% (32865/60861)[0m[91mUpdating files:  55% (33474/60861)[0m[91mUpdating files:  56% (34083/60861)[0m[91mUpdating files:  57% (34691/60861)[0m[91mUpdating files:  58% (35300/60861)[0m[91mUpdating files:  59% (35908/60861)[0m[91mUpdating files:  60% (36517/60861)[0m[91mUpdating files:  61% (37126/60861)[0m[91mUpdating files:  62% (37734/60861)[0m[91mUpdating files:  63% (38343/60861)[0m[91mUpdating files:  64% (38952/60861)[0m[91mUpdating files:  65% (39560/60861)[0m[91mUpdating files:  66% (40169/60861)[0m[91mUpdating files:  67% (40777/60861)[0m[91mUpdating files:  68% (41386/60861)[0m[91mUpdating files:  69% (41995/60861)[0m[91mUpdating files:  70% (42603/60861)[0m[91mUpdating files:  71% (43212/60861)[0m[91mUpdating files:  71% (43575/60861)[0m[91mUpdating files:  72% (43820/60861)[0m[91mUpdating files:  73% (44429/60861)[0m[91mUpdating files:  74% (45038/60861)[0m[91mUpdating files:  75% (45646/60861)[0m[91mUpdating files:  76% (46255/60861)[0m[91mUpdating files:  77% (46863/60861)[0m[91mUpdating files:  78% (47472/60861)[0m[91mUpdating files:  79% (48081/60861)[0m[91mUpdating files:  80% (48689/60861)[0m[91mUpdating files:  81% (49298/60861)[0m[91mUpdating files:  82% (49907/60861)[0m[91mUpdating files:  83% (50515/60861)[0m[91mUpdating files:  84% (51124/60861)[0m[91mUpdating files:  85% (51732/60861)[0m[91mUpdating files:  86% (52341/60861)[0m[91mUpdating files:  87% (52950/60861)[0m[91mUpdating files:  88% (53558/60861)[0m[91mUpdating files:  89% (54167/60861)[0m[91mUpdating files:  90% (54775/60861)[0m[91mUpdating files:  91% (55384/60861)[0m[91mUpdating files:  92% (55993/60861)[0m[91mUpdating files:  93% (56601/60861)[0m[91mUpdating files:  94% (57210/60861)[0m[91mUpdating files:  95% (57818/60861)[0m[91mUpdating files:  96% (58427/60861)[0m[91mUpdating files:  97% (59036/60861)[0m[91mUpdating files:  98% (59644/60861)[0m[91mUpdating files:  99% (60253/60861)[0m[91mUpdating files: 100% (60861/60861)Updating files: 100% (60861/60861), done.
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": [0mRemoving intermediate container 5fc46a2a4468
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> a99dd214f25a
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 15/20 : RUN zip -q $SRC/XMLConfigurationLoadFuzzer_seed_corpus.zip corpora/xml/corpus/*
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 66803210d710
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container 66803210d710
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 9ab420053d07
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 16/20 : RUN zip -q $SRC/JSONConfigurationReadFuzzer_seed_corpus.zip corpora/json/corpus/*
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in cfdeab15b8f1
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container cfdeab15b8f1
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 97be8bff3684
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 17/20 : RUN cp $SRC/JSONConfigurationReadFuzzer_seed_corpus.zip $SRC/JSONConfigurationWriteFuzzer_seed_corpus.zip
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in e9513e63f7ce
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container e9513e63f7ce
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 848ac4d81061
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 18/20 : COPY build.sh $SRC/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 33a0ae4deb22
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 19/20 : COPY *Fuzzer.java $SRC/
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 38f5d7b0f555
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Step 20/20 : WORKDIR $SRC/commons-configuration
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> Running in 3cb30f015954
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Removing intermediate container 3cb30f015954
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145":  ---> 3486810ea680
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Successfully built 3486810ea680
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Successfully tagged gcr.io/oss-fuzz/apache-commons-configuration:latest
-Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/apache-commons-configuration:latest
-Finished Step #1 - "build-b94bf26e-2af0-4e90-9534-91821500b145"
-Starting Step #2 - "srcmap"
-Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/apache-commons-configuration
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + SRCMAP=/tmp/fileG49YXO
-Step #2 - "srcmap": + echo '{}'
-Step #2 - "srcmap": + PATHS_TO_SCAN=/src
-Step #2 - "srcmap": + [[ jvm == \g\o ]]
-Step #2 - "srcmap": ++ find /src -name .git -type d
-Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
-Step #2 - "srcmap": ++ dirname /src/corpora/.git
-Step #2 - "srcmap": + GIT_DIR=/src/corpora
-Step #2 - "srcmap": + cd /src/corpora
-Step #2 - "srcmap": ++ git config --get remote.origin.url
-Step #2 - "srcmap": + GIT_URL=https://github.com/dvyukov/go-fuzz-corpus
-Step #2 - "srcmap": ++ git rev-parse HEAD
-Step #2 - "srcmap": + GIT_REV=c42c1b2914c7503500996ee15927d3ab3d2ba968
-Step #2 - "srcmap": + jq_inplace /tmp/fileG49YXO '."/src/corpora" = { type: "git", url: "https://github.com/dvyukov/go-fuzz-corpus", rev: "c42c1b2914c7503500996ee15927d3ab3d2ba968" }'
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + F=/tmp/file2j2jW9
-Step #2 - "srcmap": + cat /tmp/fileG49YXO
-Step #2 - "srcmap": + jq '."/src/corpora" = { type: "git", url: "https://github.com/dvyukov/go-fuzz-corpus", rev: "c42c1b2914c7503500996ee15927d3ab3d2ba968" }'
-Step #2 - "srcmap": + mv /tmp/file2j2jW9 /tmp/fileG49YXO
-Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
-Step #2 - "srcmap": ++ dirname /src/fuzzing/.git
-Step #2 - "srcmap": + GIT_DIR=/src/fuzzing
-Step #2 - "srcmap": + cd /src/fuzzing
-Step #2 - "srcmap": ++ git config --get remote.origin.url
-Step #2 - "srcmap": + GIT_URL=https://github.com/google/fuzzing
-Step #2 - "srcmap": ++ git rev-parse HEAD
-Step #2 - "srcmap": + GIT_REV=734e55f3cfed1adbb51bf6cb5c65b4c1197b7089
-Step #2 - "srcmap": + jq_inplace /tmp/fileG49YXO '."/src/fuzzing" = { type: "git", url: "https://github.com/google/fuzzing", rev: "734e55f3cfed1adbb51bf6cb5c65b4c1197b7089" }'
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + F=/tmp/fileuv3w1F
-Step #2 - "srcmap": + cat /tmp/fileG49YXO
-Step #2 - "srcmap": + jq '."/src/fuzzing" = { type: "git", url: "https://github.com/google/fuzzing", rev: "734e55f3cfed1adbb51bf6cb5c65b4c1197b7089" }'
-Step #2 - "srcmap": + mv /tmp/fileuv3w1F /tmp/fileG49YXO
-Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
-Step #2 - "srcmap": ++ dirname /src/commons-configuration/.git
-Step #2 - "srcmap": + GIT_DIR=/src/commons-configuration
-Step #2 - "srcmap": + cd /src/commons-configuration
-Step #2 - "srcmap": ++ git config --get remote.origin.url
-Step #2 - "srcmap": + GIT_URL=https://gitbox.apache.org/repos/asf/commons-configuration.git
-Step #2 - "srcmap": ++ git rev-parse HEAD
-Step #2 - "srcmap": + GIT_REV=dfb8029a3a68e2eea9e73cf6fdcda7ea72b4cf0b
-Step #2 - "srcmap": + jq_inplace /tmp/fileG49YXO '."/src/commons-configuration" = { type: "git", url: "https://gitbox.apache.org/repos/asf/commons-configuration.git", rev: "dfb8029a3a68e2eea9e73cf6fdcda7ea72b4cf0b" }'
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + F=/tmp/fileedEnme
-Step #2 - "srcmap": + cat /tmp/fileG49YXO
-Step #2 - "srcmap": + jq '."/src/commons-configuration" = { type: "git", url: "https://gitbox.apache.org/repos/asf/commons-configuration.git", rev: "dfb8029a3a68e2eea9e73cf6fdcda7ea72b4cf0b" }'
-Step #2 - "srcmap": + mv /tmp/fileedEnme /tmp/fileG49YXO
-Step #2 - "srcmap": ++ find /src -name .svn -type d
-Step #2 - "srcmap": ++ find /src -name .hg -type d
-Step #2 - "srcmap": + '[' '' '!=' '' ']'
-Step #2 - "srcmap": + cat /tmp/fileG49YXO
-Step #2 - "srcmap": + rm /tmp/fileG49YXO
-Step #2 - "srcmap": {
-Step #2 - "srcmap":   "/src/corpora": {
-Step #2 - "srcmap":     "type": "git",
-Step #2 - "srcmap":     "url": "https://github.com/dvyukov/go-fuzz-corpus",
-Step #2 - "srcmap":     "rev": "c42c1b2914c7503500996ee15927d3ab3d2ba968"
-Step #2 - "srcmap":   },
-Step #2 - "srcmap":   "/src/fuzzing": {
-Step #2 - "srcmap":     "type": "git",
-Step #2 - "srcmap":     "url": "https://github.com/google/fuzzing",
-Step #2 - "srcmap":     "rev": "734e55f3cfed1adbb51bf6cb5c65b4c1197b7089"
-Step #2 - "srcmap":   },
-Step #2 - "srcmap":   "/src/commons-configuration": {
-Step #2 - "srcmap":     "type": "git",
-Step #2 - "srcmap":     "url": "https://gitbox.apache.org/repos/asf/commons-configuration.git",
-Step #2 - "srcmap":     "rev": "dfb8029a3a68e2eea9e73cf6fdcda7ea72b4cf0b"
-Step #2 - "srcmap":   }
-Step #2 - "srcmap": }
-Finished Step #2 - "srcmap"
-Starting Step #3 - "compile-libfuzzer-address-x86_64"
-Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
-Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
-Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
-Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=leak
-Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=leak
-Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
-Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-libfuzzer-address-x86_64": + mv /src/JSONConfigurationReadFuzzer_seed_corpus.zip /src/JSONConfigurationWriteFuzzer_seed_corpus.zip /src/XMLConfigurationLoadFuzzer_seed_corpus.zip /src/INIConfigurationReadFuzzer.dict /src/INIConfigurationWriteFuzzer.dict /src/JSONConfigurationReadFuzzer.dict /src/JSONConfigurationWriteFuzzer.dict /src/XMLConfigurationLoadFuzzer.dict /src/YAMLConfigurationReadFuzzer.dict /src/YAMLConfigurationWriteFuzzer.dict /workspace/out/libfuzzer-address-x86_64
-Step #3 - "compile-libfuzzer-address-x86_64": + MAVEN_ARGS='--no-transfer-progress -Dmaven.test.skip=true -Djavac.src.version=15 -Djavac.target.version=15 -Djdk.version=15'
-Step #3 - "compile-libfuzzer-address-x86_64": ++ /src/maven/apache-maven-3.6.3/bin/mvn org.apache.maven.plugins:maven-help-plugin:3.2.0:evaluate -Dexpression=project.version -q -DforceStdout
-Step #3 - "compile-libfuzzer-address-x86_64": + CURRENT_VERSION=2.13.0-SNAPSHOT
-Step #3 - "compile-libfuzzer-address-x86_64": + /src/maven/apache-maven-3.6.3/bin/mvn clean package org.apache.maven.plugins:maven-shade-plugin:3.2.4:shade --no-transfer-progress -Dmaven.test.skip=true -Djavac.src.version=15 -Djavac.target.version=15 -Djdk.version=15
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Scanning for projects...
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m-------------< [0;36morg.apache.commons:commons-configuration2[0;1m >--------------[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1mBuilding Apache Commons Configuration 2.13.0-SNAPSHOT[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] The artifact org.slf4j:slf4j-log4j12:jar:2.0.17 has been relocated to org.slf4j:slf4j-reload4j:jar:2.0.17
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.5.0:clean[m [1m(default-clean)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.5.0:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.5.0:enforce[m [1m(enforce-java-version)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.16.1:check[m [1m(rat-check)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Rat check: Summary over all files. Unapproved: 0, unknown: 0, generated: 2, approved: 673 licenses.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-artifact-plugin:3.6.0:check-buildplan[m [1m(check-buildplan)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] No known issue in 24 plugins
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:3.6.1:parse-version[m [1m(parse-version)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:3.1.0:run[m [1m(javadoc.resources)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Executing tasks
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m]      [copy] Copying 2 files to /src/commons-configuration/target/apidocs/META-INF
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Executed tasks
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mjavacc-maven-plugin:2.6:javacc[m [1m(javacc)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": Java Compiler Compiler Version 5.0 (Parser Generator)
-Step #3 - "compile-libfuzzer-address-x86_64": (type "javacc" with no arguments for help)
-Step #3 - "compile-libfuzzer-address-x86_64": Reading from file /src/commons-configuration/src/main/javacc/PropertyListParser.jj . . .
-Step #3 - "compile-libfuzzer-address-x86_64": File "TokenMgrError.java" does not exist.  Will create one.
-Step #3 - "compile-libfuzzer-address-x86_64": File "ParseException.java" does not exist.  Will create one.
-Step #3 - "compile-libfuzzer-address-x86_64": File "Token.java" does not exist.  Will create one.
-Step #3 - "compile-libfuzzer-address-x86_64": File "SimpleCharStream.java" does not exist.  Will create one.
-Step #3 - "compile-libfuzzer-address-x86_64": Parser generated successfully.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Processed 1 grammar
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:3.3.0:process[m [1m(process-resource-bundles)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Skipping remote resources execution.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.2.1:create[m [1m(default)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Executing: /bin/sh -c cd '/src/commons-configuration' && 'git' 'log' '-1' '--no-merges' '--format=format:%H %aI %aE %aN'
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Working directory: /src/commons-configuration
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Storing buildNumber: null at timestamp: 1758694057875
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Executing: /bin/sh -c cd '/src/commons-configuration' && 'git' 'symbolic-ref' 'HEAD'
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Working directory: /src/commons-configuration
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Storing scmBranch: master
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:resources[m [1m(default-resources)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Copying 2 resources from src/main/resources to target/classes
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Copying 2 resources from  to target/classes/META-INF
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.14.0:compile[m [1m(default-compile)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Recompiling the module because of [1mchanged dependency[m.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Compiling 272 source files with javac [debug release 8] to target/classes
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] /src/commons-configuration/src/main/java/org/apache/commons/configuration2/AbstractConfiguration.java: Some input files use or override a deprecated API.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] /src/commons-configuration/src/main/java/org/apache/commons/configuration2/AbstractConfiguration.java: Recompile with -Xlint:deprecation for details.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] /src/commons-configuration/src/main/java/org/apache/commons/configuration2/AbstractYAMLBasedConfiguration.java: Some input files use unchecked or unsafe operations.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] /src/commons-configuration/src/main/java/org/apache/commons/configuration2/AbstractYAMLBasedConfiguration.java: Recompile with -Xlint:unchecked for details.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:6.0.0:manifest[m [1m(bundle-manifest)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] No MANIFEST.MF file found, generating manifest.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Writing manifest: /src/commons-configuration/target/osgi/MANIFEST.MF
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:testResources[m [1m(default-testResources)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Not copying test resources
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.14.0:testCompile[m [1m(default-testCompile)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Not compiling test sources
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.13:prepare-agent[m [1m(prepare-agent)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.13/org.jacoco.agent-0.8.13-runtime.jar=destfile=/src/commons-configuration/target/jacoco.exec
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.5.4:test[m [1m(default-test)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Tests are skipped.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.4.2:jar[m [1m(default-jar)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Building jar: /src/commons-configuration/target/commons-configuration2-2.13.0-SNAPSHOT.jar
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.4.2:test-jar[m [1m(default)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Skipping packaging of the test-jar
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-source-plugin:3.2.1:jar-no-fork[m [1m(create-source-jar)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Building jar: /src/commons-configuration/target/commons-configuration2-2.13.0-SNAPSHOT-sources.jar
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-source-plugin:3.2.1:test-jar-no-fork[m [1m(create-source-jar)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Building jar: /src/commons-configuration/target/commons-configuration2-2.13.0-SNAPSHOT-test-sources.jar
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mcyclonedx-maven-plugin:2.9.1:makeAggregateBom[m [1m(build-sbom-cyclonedx)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] CycloneDX: Resolving Dependencies
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] CycloneDX: Creating BOM version 1.6 with 24 component(s)
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] CycloneDX: Writing and validating BOM (XML): /src/commons-configuration/target/commons-configuration2-2.13.0-SNAPSHOT-bom.xml
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m]            attaching as commons-configuration2-2.13.0-SNAPSHOT-cyclonedx.xml
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] CycloneDX: Writing and validating BOM (JSON): /src/commons-configuration/target/commons-configuration2-2.13.0-SNAPSHOT-bom.json
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] Unknown keyword meta:enum - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] Unknown keyword deprecated - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m]            attaching as commons-configuration2-2.13.0-SNAPSHOT-cyclonedx.json
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mspdx-maven-plugin:1.0.3:createSPDX[m [1m(build-sbom-spdx)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] spdx file type = .json
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Creating SPDX File /src/commons-configuration/target/site/org.apache.commons_commons-configuration2-2.13.0-SNAPSHOT.spdx.json
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] The artifact org.slf4j:slf4j-log4j12:jar:2.0.17 has been relocated to org.slf4j:slf4j-reload4j:jar:2.0.17
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] The following errors were found in the SPDX file:
-Step #3 - "compile-libfuzzer-address-x86_64":  Relationship error: Relationship error: Relationship error: GPL-2.0-with-classpath-exception is deprecated. in javax.transaction API in Apache Commons DBCP in Apache Commons DBCP in Apache Commons Configuration in Apache Commons Configuration in Apache Commons Configuration
-Step #3 - "compile-libfuzzer-address-x86_64":  Relationship error: Relationship error: GPL-2.0-with-classpath-exception is deprecated. in Jakarta Servlet in Apache Commons Configuration in Apache Commons Configuration in Apache Commons Configuration
-Step #3 - "compile-libfuzzer-address-x86_64":  Relationship error: Relationship error: GPL-2.0-with-classpath-exception is deprecated. in Jakarta Mail API (no providers) in Apache Commons Configuration in Apache Commons Configuration in Apache Commons Configuration
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmoditect-maven-plugin:1.3.0.Final:add-module-info[m [1m(add-module-infos)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Running jdeps --generate-module-info /src/commons-configuration/target/moditect --add-modules org.apache.log4j,com.fasterxml.jackson.annotation,org.apache.commons.io,spring.beans,org.apache.logging.log4j.core,org.apache.commons.jxpath,org.yaml.snakeyaml,commons.jexl,xml.resolver,org.apache.commons.vfs2,jakarta.servlet,com.fasterxml.jackson.databind,org.apache.commons.logging,org.apache.httpcomponents.httpcore,com.fasterxml.jackson.core,org.apache.httpcomponents.httpcore.nio,commons.collections,spring.core,org.apache.commons.codec,servlet.api,org.apache.logging.log4j,org.apache.commons.lang3,org.apache.commons.text,org.apache.commons.beanutils --module-path /root/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.25.1/log4j-1.2-api-2.25.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.20/jackson-annotations-2.20.jar:/root/.m2/repository/commons-io/commons-io/2.20.0/commons-io-2.20.0.jar:/root/.m2/repository/org/springframework/spring-beans/5.3.39/spring-beans-5.3.39.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-core/2.25.1/log4j-core-2.25.1.jar:/root/.m2/repository/commons-jxpath/commons-jxpath/1.4.0/commons-jxpath-1.4.0.jar:/root/.m2/repository/org/yaml/snakeyaml/2.5/snakeyaml-2.5.jar:/root/.m2/repository/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar:/root/.m2/repository/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.jar:/root/.m2/repository/org/apache/commons/commons-vfs2/2.10.0/commons-vfs2-2.10.0.jar:/root/.m2/repository/jakarta/servlet/jakarta.servlet-api/5.0.0/jakarta.servlet-api-5.0.0.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.20.0/jackson-databind-2.20.0.jar:/root/.m2/repository/commons-logging/commons-logging/1.3.5/commons-logging-1.3.5.jar:/root/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.20.0/jackson-core-2.20.0.jar:/root/.m2/repository/org/apache/httpcomponents/httpcore-nio/4.4.16/httpcore-nio-4.4.16.jar:/root/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/root/.m2/repository/org/springframework/spring-core/5.3.39/spring-core-5.3.39.jar:/root/.m2/repository/commons-codec/commons-codec/1.19.0/commons-codec-1.19.0.jar:/root/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.1/log4j-api-2.25.1.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/root/.m2/repository/org/apache/commons/commons-text/1.14.0/commons-text-1.14.0.jar:/root/.m2/repository/commons-beanutils/commons-beanutils/1.11.0/commons-beanutils-1.11.0.jar --multi-release=9 /src/commons-configuration/target/commons-configuration2-2.13.0-SNAPSHOT.jar
-Step #3 - "compile-libfuzzer-address-x86_64": writing to /src/commons-configuration/target/moditect/org.apache.commons.configuration2/versions/9/module-info.java
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Created module descriptor at /src/commons-configuration/target/moditect/generated-sources/org.apache.commons.configuration2/module-info.java
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.21.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m--- [0;32mmaven-shade-plugin:3.2.4:shade[m [1m(default-cli)[m @ [36mcommons-configuration2[0;1m ---[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.apache.commons:commons-lang3:jar:3.18.0 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.apache.commons:commons-text:jar:1.14.0 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including commons-logging:commons-logging:jar:1.3.5 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including commons-beanutils:commons-beanutils:jar:1.11.0 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including commons-collections:commons-collections:jar:3.2.2 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including commons-codec:commons-codec:jar:1.19.0 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.apache.commons:commons-jexl:jar:2.1.1 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.apache.commons:commons-vfs2:jar:2.10.0 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.apache.httpcomponents:httpcore-nio:jar:4.4.16 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.apache.httpcomponents:httpcore:jar:4.4.16 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including commons-io:commons-io:jar:2.20.0 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including commons-jxpath:commons-jxpath:jar:1.4.0 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including xml-resolver:xml-resolver:jar:1.2 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.springframework:spring-core:jar:5.3.39 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.springframework:spring-beans:jar:5.3.39 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.yaml:snakeyaml:jar:2.5 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including com.fasterxml.jackson.core:jackson-databind:jar:2.20.0 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.20 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including com.fasterxml.jackson.core:jackson-core:jar:2.20.0 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.apache.logging.log4j:log4j-1.2-api:jar:2.25.1 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.apache.logging.log4j:log4j-api:jar:2.25.1 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Including org.apache.logging.log4j:log4j-core:jar:2.25.1 in the shaded jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] Discovered module-info.class. Shading will break its strong encapsulation.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] Discovered module-info.class. Shading will break its strong encapsulation.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] Discovered module-info.class. Shading will break its strong encapsulation.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] Discovered module-info.class. Shading will break its strong encapsulation.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] commons-beanutils-1.11.0.jar, commons-codec-1.19.0.jar, commons-collections-3.2.2.jar, commons-configuration2-2.13.0-SNAPSHOT.jar, commons-io-2.20.0.jar, commons-jexl-2.1.1.jar, commons-jxpath-1.4.0.jar, commons-lang3-3.18.0.jar, commons-logging-1.3.5.jar, commons-text-1.14.0.jar, commons-vfs2-2.10.0.jar, httpcore-4.4.16.jar, httpcore-nio-4.4.16.jar, jackson-annotations-2.20.jar, jackson-core-2.20.0.jar, jackson-databind-2.20.0.jar, log4j-1.2-api-2.25.1.jar, log4j-api-2.25.1.jar, log4j-core-2.25.1.jar, snakeyaml-2.5.jar, spring-beans-5.3.39.jar, spring-core-5.3.39.jar, xml-resolver-1.2.jar define 1 overlapping resource: 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m]   - META-INF/MANIFEST.MF
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] commons-beanutils-1.11.0.jar, commons-codec-1.19.0.jar, commons-collections-3.2.2.jar, commons-configuration2-2.13.0-SNAPSHOT.jar, commons-io-2.20.0.jar, commons-jexl-2.1.1.jar, commons-jxpath-1.4.0.jar, commons-lang3-3.18.0.jar, commons-logging-1.3.5.jar, commons-text-1.14.0.jar, commons-vfs2-2.10.0.jar define 2 overlapping resources: 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m]   - META-INF/LICENSE.txt
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m]   - META-INF/NOTICE.txt
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] commons-beanutils-1.11.0.jar, commons-codec-1.19.0.jar, commons-configuration2-2.13.0-SNAPSHOT.jar, commons-io-2.20.0.jar, commons-jxpath-1.4.0.jar, commons-lang3-3.18.0.jar, commons-logging-1.3.5.jar, commons-text-1.14.0.jar, commons-vfs2-2.10.0.jar, jackson-core-2.20.0.jar, jackson-databind-2.20.0.jar, snakeyaml-2.5.jar define 1 overlapping classes: 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m]   - META-INF.versions.9.module-info
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] httpcore-4.4.16.jar, httpcore-nio-4.4.16.jar, jackson-annotations-2.20.jar, jackson-core-2.20.0.jar, jackson-databind-2.20.0.jar, log4j-1.2-api-2.25.1.jar, log4j-api-2.25.1.jar, log4j-core-2.25.1.jar define 2 overlapping resources: 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m]   - META-INF/LICENSE
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m]   - META-INF/NOTICE
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] httpcore-4.4.16.jar, httpcore-nio-4.4.16.jar, log4j-1.2-api-2.25.1.jar, log4j-api-2.25.1.jar, log4j-core-2.25.1.jar define 1 overlapping resource: 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m]   - META-INF/DEPENDENCIES
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] spring-beans-5.3.39.jar, spring-core-5.3.39.jar define 2 overlapping resources: 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m]   - META-INF/license.txt
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m]   - META-INF/notice.txt
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] log4j-1.2-api-2.25.1.jar, log4j-core-2.25.1.jar define 1 overlapping resource: 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m]   - META-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] maven-shade-plugin has detected that some class files are
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] present in two or more JARs. When this happens, only one
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] single version of the class is copied to the uber jar.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] Usually this is not harmful and you can skip these warnings,
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] otherwise try to manually exclude artifacts based on
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] mvn dependency:tree -Ddetail=true and the above output.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] See http://maven.apache.org/plugins/maven-shade-plugin/
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Replacing original artifact with shaded artifact.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Replacing /src/commons-configuration/target/commons-configuration2-2.13.0-SNAPSHOT.jar with /src/commons-configuration/target/commons-configuration2-2.13.0-SNAPSHOT-shaded.jar
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Dependency-reduced POM written at: /src/commons-configuration/dependency-reduced-pom.xml
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] The artifact org.slf4j:slf4j-log4j12:jar:2.0.17 has been relocated to org.slf4j:slf4j-reload4j:jar:2.0.17
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;33mWARNING[m] The artifact org.slf4j:slf4j-log4j12:jar:2.0.17 has been relocated to org.slf4j:slf4j-reload4j:jar:2.0.17
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Total time:  38.965 s
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Finished at: 2025-09-24T06:08:00Z
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-Step #3 - "compile-libfuzzer-address-x86_64": + cp target/commons-configuration2-2.13.0-SNAPSHOT.jar /workspace/out/libfuzzer-address-x86_64/commons-configuration.jar
-Step #3 - "compile-libfuzzer-address-x86_64": + ALL_JARS=commons-configuration.jar
-Step #3 - "compile-libfuzzer-address-x86_64": ++ echo commons-configuration.jar
-Step #3 - "compile-libfuzzer-address-x86_64": ++ xargs printf -- /workspace/out/libfuzzer-address-x86_64/%s:
-Step #3 - "compile-libfuzzer-address-x86_64": + BUILD_CLASSPATH=/workspace/out/libfuzzer-address-x86_64/commons-configuration.jar::/usr/local/lib/jazzer_api_deploy.jar
-Step #3 - "compile-libfuzzer-address-x86_64": ++ echo commons-configuration.jar
-Step #3 - "compile-libfuzzer-address-x86_64": ++ xargs printf -- '$this_dir/%s:'
-Step #3 - "compile-libfuzzer-address-x86_64": + RUNTIME_CLASSPATH='$this_dir/commons-configuration.jar::$this_dir'
-Step #3 - "compile-libfuzzer-address-x86_64": ++ find /src -iname '*Fuzzer.java'
-Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -iname '*Fuzzer.java')
-Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/INIConfigurationWriteFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=INIConfigurationWriteFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /workspace/out/libfuzzer-address-x86_64/commons-configuration.jar::/usr/local/lib/jazzer_api_deploy.jar /src/INIConfigurationWriteFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/INIConfigurationWriteFuzzer.class /workspace/out/libfuzzer-address-x86_64/
-Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
-Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
-Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
-Step #3 - "compile-libfuzzer-address-x86_64": if [[ "$@" =~ (^| )-runs=[0-9]+($| ) ]]; then
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx1900m:-Xss900k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": else
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx2048m:-Xss1024k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": fi
-Step #3 - "compile-libfuzzer-address-x86_64": LD_LIBRARY_PATH="/usr/lib/jvm/java-17-openjdk-amd64/lib/server":$this_dir $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir/commons-configuration.jar::$this_dir --target_class=INIConfigurationWriteFuzzer --jvm_args="$mem_settings:-Djava.awt.headless=true" $@'
-Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/INIConfigurationWriteFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -iname '*Fuzzer.java')
-Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/JSONConfigurationReadFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=JSONConfigurationReadFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /workspace/out/libfuzzer-address-x86_64/commons-configuration.jar::/usr/local/lib/jazzer_api_deploy.jar /src/JSONConfigurationReadFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/JSONConfigurationReadFuzzer.class /workspace/out/libfuzzer-address-x86_64/
-Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
-Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
-Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
-Step #3 - "compile-libfuzzer-address-x86_64": if [[ "$@" =~ (^| )-runs=[0-9]+($| ) ]]; then
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx1900m:-Xss900k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": else
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx2048m:-Xss1024k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": fi
-Step #3 - "compile-libfuzzer-address-x86_64": LD_LIBRARY_PATH="/usr/lib/jvm/java-17-openjdk-amd64/lib/server":$this_dir $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir/commons-configuration.jar::$this_dir --target_class=JSONConfigurationReadFuzzer --jvm_args="$mem_settings:-Djava.awt.headless=true" $@'
-Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/JSONConfigurationReadFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -iname '*Fuzzer.java')
-Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/YAMLConfigurationReadFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=YAMLConfigurationReadFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /workspace/out/libfuzzer-address-x86_64/commons-configuration.jar::/usr/local/lib/jazzer_api_deploy.jar /src/YAMLConfigurationReadFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/YAMLConfigurationReadFuzzer.class /workspace/out/libfuzzer-address-x86_64/
-Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
-Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
-Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
-Step #3 - "compile-libfuzzer-address-x86_64": if [[ "$@" =~ (^| )-runs=[0-9]+($| ) ]]; then
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx1900m:-Xss900k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": else
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx2048m:-Xss1024k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": fi
-Step #3 - "compile-libfuzzer-address-x86_64": LD_LIBRARY_PATH="/usr/lib/jvm/java-17-openjdk-amd64/lib/server":$this_dir $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir/commons-configuration.jar::$this_dir --target_class=YAMLConfigurationReadFuzzer --jvm_args="$mem_settings:-Djava.awt.headless=true" $@'
-Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/YAMLConfigurationReadFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -iname '*Fuzzer.java')
-Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/YAMLConfigurationWriteFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=YAMLConfigurationWriteFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /workspace/out/libfuzzer-address-x86_64/commons-configuration.jar::/usr/local/lib/jazzer_api_deploy.jar /src/YAMLConfigurationWriteFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/YAMLConfigurationWriteFuzzer.class /workspace/out/libfuzzer-address-x86_64/
-Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
-Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
-Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
-Step #3 - "compile-libfuzzer-address-x86_64": if [[ "$@" =~ (^| )-runs=[0-9]+($| ) ]]; then
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx1900m:-Xss900k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": else
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx2048m:-Xss1024k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": fi
-Step #3 - "compile-libfuzzer-address-x86_64": LD_LIBRARY_PATH="/usr/lib/jvm/java-17-openjdk-amd64/lib/server":$this_dir $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir/commons-configuration.jar::$this_dir --target_class=YAMLConfigurationWriteFuzzer --jvm_args="$mem_settings:-Djava.awt.headless=true" $@'
-Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/YAMLConfigurationWriteFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -iname '*Fuzzer.java')
-Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/JSONConfigurationWriteFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=JSONConfigurationWriteFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /workspace/out/libfuzzer-address-x86_64/commons-configuration.jar::/usr/local/lib/jazzer_api_deploy.jar /src/JSONConfigurationWriteFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/JSONConfigurationWriteFuzzer.class /workspace/out/libfuzzer-address-x86_64/
-Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
-Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
-Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
-Step #3 - "compile-libfuzzer-address-x86_64": if [[ "$@" =~ (^| )-runs=[0-9]+($| ) ]]; then
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx1900m:-Xss900k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": else
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx2048m:-Xss1024k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": fi
-Step #3 - "compile-libfuzzer-address-x86_64": LD_LIBRARY_PATH="/usr/lib/jvm/java-17-openjdk-amd64/lib/server":$this_dir $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir/commons-configuration.jar::$this_dir --target_class=JSONConfigurationWriteFuzzer --jvm_args="$mem_settings:-Djava.awt.headless=true" $@'
-Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/JSONConfigurationWriteFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -iname '*Fuzzer.java')
-Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/XMLConfigurationLoadFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=XMLConfigurationLoadFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /workspace/out/libfuzzer-address-x86_64/commons-configuration.jar::/usr/local/lib/jazzer_api_deploy.jar /src/XMLConfigurationLoadFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/XMLConfigurationLoadFuzzer.class /workspace/out/libfuzzer-address-x86_64/
-Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
-Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
-Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
-Step #3 - "compile-libfuzzer-address-x86_64": if [[ "$@" =~ (^| )-runs=[0-9]+($| ) ]]; then
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx1900m:-Xss900k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": else
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx2048m:-Xss1024k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": fi
-Step #3 - "compile-libfuzzer-address-x86_64": LD_LIBRARY_PATH="/usr/lib/jvm/java-17-openjdk-amd64/lib/server":$this_dir $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir/commons-configuration.jar::$this_dir --target_class=XMLConfigurationLoadFuzzer --jvm_args="$mem_settings:-Djava.awt.headless=true" $@'
-Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/XMLConfigurationLoadFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -iname '*Fuzzer.java')
-Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/XMLConfigurationWriteFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=XMLConfigurationWriteFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /workspace/out/libfuzzer-address-x86_64/commons-configuration.jar::/usr/local/lib/jazzer_api_deploy.jar /src/XMLConfigurationWriteFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/XMLConfigurationWriteFuzzer.class /workspace/out/libfuzzer-address-x86_64/
-Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
-Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
-Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
-Step #3 - "compile-libfuzzer-address-x86_64": if [[ "$@" =~ (^| )-runs=[0-9]+($| ) ]]; then
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx1900m:-Xss900k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": else
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx2048m:-Xss1024k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": fi
-Step #3 - "compile-libfuzzer-address-x86_64": LD_LIBRARY_PATH="/usr/lib/jvm/java-17-openjdk-amd64/lib/server":$this_dir $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir/commons-configuration.jar::$this_dir --target_class=XMLConfigurationWriteFuzzer --jvm_args="$mem_settings:-Djava.awt.headless=true" $@'
-Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/XMLConfigurationWriteFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + for fuzzer in $(find $SRC -iname '*Fuzzer.java')
-Step #3 - "compile-libfuzzer-address-x86_64": ++ basename -s .java /src/INIConfigurationReadFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + fuzzer_basename=INIConfigurationReadFuzzer
-Step #3 - "compile-libfuzzer-address-x86_64": + javac -cp /workspace/out/libfuzzer-address-x86_64/commons-configuration.jar::/usr/local/lib/jazzer_api_deploy.jar /src/INIConfigurationReadFuzzer.java
-Step #3 - "compile-libfuzzer-address-x86_64": + cp /src/INIConfigurationReadFuzzer.class /workspace/out/libfuzzer-address-x86_64/
-Step #3 - "compile-libfuzzer-address-x86_64": + echo '#!/bin/bash
-Step #3 - "compile-libfuzzer-address-x86_64": # LLVMFuzzerTestOneInput for fuzzer detection.
-Step #3 - "compile-libfuzzer-address-x86_64": this_dir=$(dirname "$0")
-Step #3 - "compile-libfuzzer-address-x86_64": if [[ "$@" =~ (^| )-runs=[0-9]+($| ) ]]; then
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx1900m:-Xss900k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": else
-Step #3 - "compile-libfuzzer-address-x86_64":   mem_settings='\''-Xmx2048m:-Xss1024k'\''
-Step #3 - "compile-libfuzzer-address-x86_64": fi
-Step #3 - "compile-libfuzzer-address-x86_64": LD_LIBRARY_PATH="/usr/lib/jvm/java-17-openjdk-amd64/lib/server":$this_dir $this_dir/jazzer_driver --agent_path=$this_dir/jazzer_agent_deploy.jar --cp=$this_dir/commons-configuration.jar::$this_dir --target_class=INIConfigurationReadFuzzer --jvm_args="$mem_settings:-Djava.awt.headless=true" $@'
-Step #3 - "compile-libfuzzer-address-x86_64": + chmod +x /workspace/out/libfuzzer-address-x86_64/INIConfigurationReadFuzzer
-Finished Step #3 - "compile-libfuzzer-address-x86_64"
-Starting Step #4 - "build-check-libfuzzer-address-x86_64"
-Step #4 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #4 - "build-check-libfuzzer-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
-Step #4 - "build-check-libfuzzer-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
-Step #4 - "build-check-libfuzzer-address-x86_64": b549f31133a9: Already exists
-Step #4 - "build-check-libfuzzer-address-x86_64": 1b3d0e2e09a6: Already exists
-Step #4 - "build-check-libfuzzer-address-x86_64": 2af237d09d06: Already exists
-Step #4 - "build-check-libfuzzer-address-x86_64": 4efa9c1bdd62: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": a26f86109ca5: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 97aaad12a0f7: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": ab59fd74cb42: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": c747cbfaef1d: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 26a178b1a487: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": eb41d0658cee: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 5eaea35f415c: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": ffb2217ebeb4: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": f0d1e43b9395: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": b8594bb984b6: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 47d956ecab02: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 27408b9a47e8: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": a8e6959bb852: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 1ef730b8b47a: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": ae1ff2abe40c: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 9b9fce1977ac: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 520e0a4b3b4c: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": adecd06dc687: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 48f03657f7fe: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": be43b5abfbc4: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 65e3b0136a76: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 7401ced0c502: Pulling fs layer
-Step #4 - "build-check-libfuzzer-address-x86_64": 27408b9a47e8: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": a8e6959bb852: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": 1ef730b8b47a: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": ae1ff2abe40c: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": 9b9fce1977ac: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": 520e0a4b3b4c: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": 7401ced0c502: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": adecd06dc687: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": 48f03657f7fe: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": ab59fd74cb42: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": c747cbfaef1d: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": be43b5abfbc4: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": 65e3b0136a76: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": 26a178b1a487: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": 5eaea35f415c: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": f0d1e43b9395: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": ffb2217ebeb4: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": b8594bb984b6: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": 47d956ecab02: Waiting
-Step #4 - "build-check-libfuzzer-address-x86_64": 97aaad12a0f7: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 4efa9c1bdd62: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": c747cbfaef1d: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": c747cbfaef1d: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 4efa9c1bdd62: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": ab59fd74cb42: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": ab59fd74cb42: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": a26f86109ca5: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": a26f86109ca5: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": eb41d0658cee: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 5eaea35f415c: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": 5eaea35f415c: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": a26f86109ca5: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 97aaad12a0f7: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": ffb2217ebeb4: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": ffb2217ebeb4: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": ab59fd74cb42: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 26a178b1a487: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": b8594bb984b6: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": b8594bb984b6: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 47d956ecab02: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": 47d956ecab02: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": c747cbfaef1d: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 27408b9a47e8: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": 27408b9a47e8: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": f0d1e43b9395: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 1ef730b8b47a: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": 1ef730b8b47a: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 9b9fce1977ac: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": 9b9fce1977ac: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 520e0a4b3b4c: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": 520e0a4b3b4c: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": a8e6959bb852: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": a8e6959bb852: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": adecd06dc687: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": adecd06dc687: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 48f03657f7fe: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": 48f03657f7fe: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": be43b5abfbc4: Verifying Checksum
-Step #4 - "build-check-libfuzzer-address-x86_64": be43b5abfbc4: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 65e3b0136a76: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 7401ced0c502: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 26a178b1a487: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": eb41d0658cee: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": ae1ff2abe40c: Download complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 5eaea35f415c: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": ffb2217ebeb4: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": f0d1e43b9395: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": b8594bb984b6: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 47d956ecab02: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 27408b9a47e8: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": a8e6959bb852: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 1ef730b8b47a: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": ae1ff2abe40c: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 9b9fce1977ac: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 520e0a4b3b4c: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": adecd06dc687: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 48f03657f7fe: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": be43b5abfbc4: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 65e3b0136a76: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": 7401ced0c502: Pull complete
-Step #4 - "build-check-libfuzzer-address-x86_64": Digest: sha256:974a636285e21c9b9f30a0664b9854a13e5c2eefbf7d376c74067bf16cab2435
-Step #4 - "build-check-libfuzzer-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
-Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpy_6nfluf/JSONConfigurationReadFuzzer
-Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpy_6nfluf/JSONConfigurationWriteFuzzer
-Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpy_6nfluf/XMLConfigurationWriteFuzzer
-Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpy_6nfluf/INIConfigurationReadFuzzer
-Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpy_6nfluf/INIConfigurationWriteFuzzer
-Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpy_6nfluf/YAMLConfigurationReadFuzzer
-Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpy_6nfluf/YAMLConfigurationWriteFuzzer
-Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpy_6nfluf/XMLConfigurationLoadFuzzer
-Finished Step #4 - "build-check-libfuzzer-address-x86_64"
-Starting Step #5
-Step #5: Already have image (with digest): gcr.io/oss-fuzz-base/base-runner
-Finished Step #5
-Starting Step #6
-Step #6: Already have image: gcr.io/oss-fuzz/apache-commons-configuration
-Step #6:   adding: INIConfigurationReadFuzzer (deflated 33%)
-Step #6:   adding: INIConfigurationReadFuzzer.class (deflated 41%)
-Step #6:   adding: INIConfigurationReadFuzzer.dict (deflated 46%)
-Step #6:   adding: INIConfigurationWriteFuzzer (deflated 32%)
-Step #6:   adding: INIConfigurationWriteFuzzer.class (deflated 42%)
-Step #6:   adding: INIConfigurationWriteFuzzer.dict (deflated 46%)
-Step #6:   adding: JSONConfigurationReadFuzzer (deflated 33%)
-Step #6:   adding: JSONConfigurationReadFuzzer.class (deflated 41%)
-Step #6:   adding: JSONConfigurationReadFuzzer.dict (deflated 46%)
-Step #6:   adding: JSONConfigurationReadFuzzer_seed_corpus.zip (stored 0%)
-Step #6:   adding: JSONConfigurationWriteFuzzer (deflated 32%)
-Step #6:   adding: JSONConfigurationWriteFuzzer.class (deflated 42%)
-Step #6:   adding: JSONConfigurationWriteFuzzer.dict (deflated 46%)
-Step #6:   adding: JSONConfigurationWriteFuzzer_seed_corpus.zip (stored 0%)
-Step #6:   adding: XMLConfigurationLoadFuzzer (deflated 33%)
-Step #6:   adding: XMLConfigurationLoadFuzzer.class (deflated 44%)
-Step #6:   adding: XMLConfigurationLoadFuzzer.dict (deflated 56%)
-Step #6:   adding: XMLConfigurationLoadFuzzer_seed_corpus.zip (stored 0%)
-Step #6:   adding: XMLConfigurationWriteFuzzer (deflated 33%)
-Step #6:   adding: XMLConfigurationWriteFuzzer.class (deflated 45%)
-Step #6:   adding: YAMLConfigurationReadFuzzer (deflated 33%)
-Step #6:   adding: YAMLConfigurationReadFuzzer.class (deflated 46%)
-Step #6:   adding: YAMLConfigurationReadFuzzer.dict (deflated 48%)
-Step #6:   adding: YAMLConfigurationWriteFuzzer (deflated 33%)
-Step #6:   adding: YAMLConfigurationWriteFuzzer.class (deflated 46%)
-Step #6:   adding: YAMLConfigurationWriteFuzzer.dict (deflated 48%)
-Step #6:   adding: commons-configuration.jar (deflated 11%)
-Step #6:   adding: jazzer_agent_deploy.jar (deflated 6%)
-Step #6:   adding: jazzer_driver (deflated 69%)
-Step #6:   adding: jazzer_driver_with_sanitizer (deflated 9%)
-Step #6:   adding: jazzer_junit.jar (deflated 9%)
-Step #6:   adding: llvm-symbolizer (deflated 65%)
-Finished Step #6
-Starting Step #7
-Step #7: Pulling image: gcr.io/oss-fuzz-base/uploader
-Step #7: Using default tag: latest
-Step #7: latest: Pulling from oss-fuzz-base/uploader
-Step #7: c62795f78da9: Pulling fs layer
-Step #7: d4fceeeb758e: Pulling fs layer
-Step #7: 5c9125a401ae: Pulling fs layer
-Step #7: 0062f774e994: Pulling fs layer
-Step #7: 6b33fd031fac: Pulling fs layer
-Step #7: 7eb39101e508: Pulling fs layer
-Step #7: 89257482f398: Pulling fs layer
-Step #7: 0062f774e994: Waiting
-Step #7: 6b33fd031fac: Waiting
-Step #7: 7eb39101e508: Waiting
-Step #7: 89257482f398: Waiting
-Step #7: d4fceeeb758e: Verifying Checksum
-Step #7: 5c9125a401ae: Verifying Checksum
-Step #7: 5c9125a401ae: Download complete
-Step #7: 0062f774e994: Download complete
-Step #7: 6b33fd031fac: Verifying Checksum
-Step #7: 6b33fd031fac: Download complete
-Step #7: c62795f78da9: Verifying Checksum
-Step #7: c62795f78da9: Download complete
-Step #7: 89257482f398: Verifying Checksum
-Step #7: 89257482f398: Download complete
-Step #7: 7eb39101e508: Verifying Checksum
-Step #7: 7eb39101e508: Download complete
-Step #7: c62795f78da9: Pull complete
-Step #7: d4fceeeb758e: Pull complete
-Step #7: 5c9125a401ae: Pull complete
-Step #7: 0062f774e994: Pull complete
-Step #7: 6b33fd031fac: Pull complete
-Step #7: 7eb39101e508: Pull complete
-Step #7: 89257482f398: Pull complete
-Step #7: Digest: sha256:5717ba63d13b5515063e2a6ccad09fb5bf32a86c8e0798a363d81c2be522e411
-Step #7: Status: Downloaded newer image for gcr.io/oss-fuzz-base/uploader:latest
-Step #7: gcr.io/oss-fuzz-base/uploader:latest
-Step #7:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-Step #7:                                  Dload  Upload   Total   Spent    Left  Speed
-Step #7:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   491    0     0  100   491      0   2556 --:--:-- --:--:-- --:--:--  2570
-Finished Step #7
-Starting Step #8
-Step #8: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
-Step #8:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-Step #8:                                  Dload  Upload   Total   Spent    Left  Speed
-Step #8:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 21.2M    0     0  100 21.2M      0  47.5M --:--:-- --:--:-- --:--:-- 47.5M
-Finished Step #8
-Starting Step #9
-Step #9: Already have image (with digest): gcr.io/oss-fuzz-base/uploader
-Step #9:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-Step #9:                                  Dload  Upload   Total   Spent    Left  Speed
-Step #9:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   224    0     0  100   224      0    870 --:--:-- --:--:-- --:--:--   871
-Finished Step #9
-Starting Step #10
-Step #10: Already have image (with digest): gcr.io/cloud-builders/curl
-Step #10:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-Step #10:                                  Dload  Upload   Total   Spent    Left  Speed
-Step #10:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    53    0     0  100    53      0    253 --:--:-- --:--:-- --:--:--   254
-Finished Step #10
-Starting Step #11
-Step #11: Already have image: gcr.io/oss-fuzz/apache-commons-configuration
-Finished Step #11
-PUSH
-DONE

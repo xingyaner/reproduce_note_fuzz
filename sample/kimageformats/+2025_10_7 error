@@ -1,636 +1,0 @@
-starting build "fd8d6f64-8dc2-448d-87e2-2f2efc8bd9f9"
-
-FETCHSOURCE
-BUILD
-Starting Step #0
-Step #0: Already have image (with digest): gcr.io/cloud-builders/git
-Step #0: Cloning into 'oss-fuzz'...
-Finished Step #0
-Starting Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e"
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Sending build context to Docker daemon  16.38kB
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 1/22 : FROM gcr.io/oss-fuzz-base/base-builder@sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": gcr.io/oss-fuzz-base/base-builder@sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0: Pulling from oss-fuzz-base/base-builder
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": b549f31133a9: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": dd951afe29d9: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e375f16f47e1: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": d4cb766c0ca5: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1f7c92883fdd: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 43fab1956036: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": edcb6c4ab22d: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": d723b97a8b23: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 572c9069a0b3: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1fcefc1b0875: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 06953686bfeb: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 6d8d5683bf98: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 65b2c2456957: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": f09a01ebcab8: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 751d59f16429: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 215525518037: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 185f4228e62b: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": cac66a6f7419: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e4ac8c28adba: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a8bbd0316451: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a1203169359e: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a31b9d48a57e: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": f7154a177a60: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": b23f140c9f04: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 2db3c3c22ba5: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 5e52d96d289b: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 2ad5622f02d1: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 491315b3c37d: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 748b6eedca98: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 5c7f852fd40b: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 69150bb81b54: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 79ada44f8b23: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 52c04df9aba6: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": bdfd1fcd190e: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 97a2daa2ba61: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a6ea2d9647c7: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": d4cb766c0ca5: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e4f39cb01e44: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1bac9eb98018: Pulling fs layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1f7c92883fdd: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 43fab1956036: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": edcb6c4ab22d: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 2ad5622f02d1: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": d723b97a8b23: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 572c9069a0b3: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": bdfd1fcd190e: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1fcefc1b0875: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 97a2daa2ba61: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": cac66a6f7419: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 06953686bfeb: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 69150bb81b54: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e4ac8c28adba: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a6ea2d9647c7: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 491315b3c37d: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 6d8d5683bf98: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e4f39cb01e44: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 748b6eedca98: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 65b2c2456957: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a8bbd0316451: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 79ada44f8b23: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1bac9eb98018: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 5c7f852fd40b: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 52c04df9aba6: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": f09a01ebcab8: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a1203169359e: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": b23f140c9f04: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 751d59f16429: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": f7154a177a60: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 215525518037: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a31b9d48a57e: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 185f4228e62b: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 5e52d96d289b: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 2db3c3c22ba5: Waiting
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e375f16f47e1: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e375f16f47e1: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": b549f31133a9: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": b549f31133a9: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1f7c92883fdd: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1f7c92883fdd: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": d4cb766c0ca5: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": d4cb766c0ca5: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 43fab1956036: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 43fab1956036: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": d723b97a8b23: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 572c9069a0b3: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 572c9069a0b3: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": dd951afe29d9: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": dd951afe29d9: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": b549f31133a9: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 06953686bfeb: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 06953686bfeb: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 6d8d5683bf98: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 6d8d5683bf98: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 65b2c2456957: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 65b2c2456957: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1fcefc1b0875: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1fcefc1b0875: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": f09a01ebcab8: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": f09a01ebcab8: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 751d59f16429: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 751d59f16429: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 215525518037: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 215525518037: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 185f4228e62b: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 185f4228e62b: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": cac66a6f7419: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": cac66a6f7419: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e4ac8c28adba: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e4ac8c28adba: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": edcb6c4ab22d: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": edcb6c4ab22d: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a8bbd0316451: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a8bbd0316451: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a1203169359e: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a1203169359e: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": f7154a177a60: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": f7154a177a60: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a31b9d48a57e: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": b23f140c9f04: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": b23f140c9f04: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": dd951afe29d9: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 5e52d96d289b: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 5e52d96d289b: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e375f16f47e1: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 2db3c3c22ba5: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 2db3c3c22ba5: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 2ad5622f02d1: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 491315b3c37d: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 491315b3c37d: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 748b6eedca98: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 748b6eedca98: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 5c7f852fd40b: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 5c7f852fd40b: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 79ada44f8b23: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 69150bb81b54: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 52c04df9aba6: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 52c04df9aba6: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": bdfd1fcd190e: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 97a2daa2ba61: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 97a2daa2ba61: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a6ea2d9647c7: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a6ea2d9647c7: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e4f39cb01e44: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e4f39cb01e44: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1bac9eb98018: Verifying Checksum
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1bac9eb98018: Download complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": d4cb766c0ca5: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1f7c92883fdd: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 43fab1956036: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": edcb6c4ab22d: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": d723b97a8b23: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 572c9069a0b3: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1fcefc1b0875: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 06953686bfeb: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 6d8d5683bf98: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 65b2c2456957: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": f09a01ebcab8: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 751d59f16429: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 215525518037: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 185f4228e62b: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": cac66a6f7419: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e4ac8c28adba: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a8bbd0316451: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a1203169359e: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a31b9d48a57e: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": f7154a177a60: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": b23f140c9f04: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 2db3c3c22ba5: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 5e52d96d289b: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 2ad5622f02d1: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 491315b3c37d: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 748b6eedca98: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 5c7f852fd40b: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 69150bb81b54: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 79ada44f8b23: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 52c04df9aba6: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": bdfd1fcd190e: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 97a2daa2ba61: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": a6ea2d9647c7: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": e4f39cb01e44: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 1bac9eb98018: Pull complete
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Digest: sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder@sha256:d34b94e3cf868e49d2928c76ddba41fd4154907a1a381b3a263fafffb7c3dce0
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 376fbc54347a
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 2/22 : RUN apt-get update && apt-get install --yes cmake make autoconf automake autopoint libtool wget po4a ninja-build pkgconf
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in 8e067cbb31be
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [1023 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1599 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [4920 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [1377 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Fetched 9302 kB in 2s (4811 kB/s)
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Reading package lists...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Reading package lists...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Building dependency tree...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Reading state information...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": make is already the newest version (4.2.1-1.2).
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": make set to manually installed.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": wget is already the newest version (1.20.3-1ubuntu2.1).
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": The following additional packages will be installed:
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   cmake-data file gettext gettext-base libarchive13 libcroco3 libdatrie1
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libglib2.0-0 libglib2.0-data libicu66 libjsoncpp1 libltdl-dev libltdl7
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libmagic-mgc libmagic1 libmime-charset-perl libosp5 libpkgconf3 librhash0
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libsgmls-perl libsombok3 libterm-readkey-perl libtext-charwidth-perl
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libtext-wrapi18n-perl libthai-data libthai0 libunicode-linebreak-perl libuv1
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libxml2 libyaml-tiny-perl opensp sgml-base shared-mime-info xdg-user-dirs
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Suggested packages:
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   autoconf-archive gnu-standards autoconf-doc cmake-doc gettext-doc
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libasprintf-dev libgettextpo-dev lrzip libtool-doc libencode-hanextra-perl
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libpod2-base-perl sgmlspl sgmls-doc gfortran | fortran95-compiler gcj-jdk
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   python3 doc-base sgml-data sgml-base-doc
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": The following NEW packages will be installed:
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   autoconf automake autopoint cmake cmake-data file gettext gettext-base
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libarchive13 libcroco3 libdatrie1 libglib2.0-0 libglib2.0-data libicu66
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libjsoncpp1 libltdl-dev libltdl7 libmagic-mgc libmagic1 libmime-charset-perl
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libosp5 libpkgconf3 librhash0 libsgmls-perl libsombok3 libterm-readkey-perl
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libtext-charwidth-perl libtext-wrapi18n-perl libthai-data libthai0 libtool
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   libunicode-linebreak-perl libuv1 libxml2 libyaml-tiny-perl ninja-build
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   opensp pkgconf po4a sgml-base shared-mime-info xdg-user-dirs
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 0 upgraded, 42 newly installed, 0 to remove and 0 not upgraded.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Need to get 22.7 MB of archives.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": After this operation, 98.1 MB of additional disk space will be used.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 sgml-base all 1.29.1 [12.4 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libtext-charwidth-perl amd64 0.04-10 [9872 B]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libtext-wrapi18n-perl all 0.06-9 [8264 B]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 gettext-base amd64 0.19.8.1-10build1 [50.2 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.5 [80.9 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 autopoint all 0.19.8.1-10build1 [412 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake-data all 3.16.3-1ubuntu1.20.04.1 [1613 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libarchive13 amd64 3.4.0-2ubuntu1.5 [327 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 libjsoncpp1 amd64 1.7.4-3.1ubuntu2 [75.6 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 librhash0 amd64 1.3.9-1 [113 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake amd64 3.16.3-1ubuntu1.20.04.1 [3668 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcroco3 amd64 0.6.13-1ubuntu0.1 [82.4 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:24 http://archive.ubuntu.com/ubuntu focal/main amd64 gettext amd64 0.19.8.1-10build1 [895 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 libdatrie1 amd64 0.2.12-3 [18.7 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:26 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:27 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:28 http://archive.ubuntu.com/ubuntu focal/universe amd64 libmime-charset-perl all 1.012.2-1 [30.9 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:29 http://archive.ubuntu.com/ubuntu focal/universe amd64 libosp5 amd64 1.5.2-13ubuntu3 [652 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:30 http://archive.ubuntu.com/ubuntu focal/universe amd64 libpkgconf3 amd64 1.6.3-5 [28.5 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:31 http://archive.ubuntu.com/ubuntu focal/universe amd64 libsgmls-perl all 1.03ii-36 [23.1 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:32 http://archive.ubuntu.com/ubuntu focal/main amd64 libthai-data all 0.1.28-3 [134 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:33 http://archive.ubuntu.com/ubuntu focal/main amd64 libthai0 amd64 0.1.28-3 [18.1 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:34 http://archive.ubuntu.com/ubuntu focal/universe amd64 libsombok3 amd64 2.4.0-2 [26.9 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:35 http://archive.ubuntu.com/ubuntu focal/main amd64 libterm-readkey-perl amd64 2.38-1build1 [24.6 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:36 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:37 http://archive.ubuntu.com/ubuntu focal/universe amd64 libunicode-linebreak-perl amd64 0.0.20190101-1build1 [96.9 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:38 http://archive.ubuntu.com/ubuntu focal/main amd64 libyaml-tiny-perl all 1.73-1 [25.2 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:39 http://archive.ubuntu.com/ubuntu focal/universe amd64 ninja-build amd64 1.10.0-1build1 [107 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:40 http://archive.ubuntu.com/ubuntu focal/universe amd64 opensp amd64 1.5.2-13ubuntu3 [145 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:41 http://archive.ubuntu.com/ubuntu focal/universe amd64 pkgconf amd64 1.6.3-5 [33.4 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Get:42 http://archive.ubuntu.com/ubuntu focal/universe amd64 po4a all 0.57-2 [1508 kB]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mdebconf: delaying package configuration, since apt-utils is not installed
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mFetched 22.7 MB in 2s (10.6 MB/s)
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package sgml-base.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../00-sgml-base_1.29.1_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking sgml-base (1.29.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libmagic-mgc.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../01-libmagic-mgc_1%3a5.38-4_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libmagic-mgc (1:5.38-4) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libmagic1:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../02-libmagic1_1%3a5.38-4_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libmagic1:amd64 (1:5.38-4) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package file.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../03-file_1%3a5.38-4_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking file (1:5.38-4) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libglib2.0-0:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../04-libglib2.0-0_2.64.6-1~ubuntu20.04.9_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libglib2.0-data.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../05-libglib2.0-data_2.64.6-1~ubuntu20.04.9_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libicu66:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../06-libicu66_66.1-2ubuntu2.1_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libtext-charwidth-perl.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../07-libtext-charwidth-perl_0.04-10_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libtext-charwidth-perl (0.04-10) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libtext-wrapi18n-perl.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../08-libtext-wrapi18n-perl_0.06-9_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libtext-wrapi18n-perl (0.06-9) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libxml2:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../09-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package shared-mime-info.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../10-shared-mime-info_1.15-1_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking shared-mime-info (1.15-1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package xdg-user-dirs.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../11-xdg-user-dirs_0.17-2ubuntu1_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking xdg-user-dirs (0.17-2ubuntu1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package gettext-base.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../12-gettext-base_0.19.8.1-10build1_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking gettext-base (0.19.8.1-10build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libuv1:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../13-libuv1_1.34.2-1ubuntu1.5_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libuv1:amd64 (1.34.2-1ubuntu1.5) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package autoconf.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../14-autoconf_2.69-11.1_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking autoconf (2.69-11.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package automake.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../15-automake_1%3a1.16.1-4ubuntu6_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking automake (1:1.16.1-4ubuntu6) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package autopoint.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../16-autopoint_0.19.8.1-10build1_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking autopoint (0.19.8.1-10build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package cmake-data.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../17-cmake-data_3.16.3-1ubuntu1.20.04.1_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking cmake-data (3.16.3-1ubuntu1.20.04.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libarchive13:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../18-libarchive13_3.4.0-2ubuntu1.5_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libjsoncpp1:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../19-libjsoncpp1_1.7.4-3.1ubuntu2_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package librhash0:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../20-librhash0_1.3.9-1_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking librhash0:amd64 (1.3.9-1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package cmake.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../21-cmake_3.16.3-1ubuntu1.20.04.1_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking cmake (3.16.3-1ubuntu1.20.04.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libcroco3:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../22-libcroco3_0.6.13-1ubuntu0.1_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libcroco3:amd64 (0.6.13-1ubuntu0.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package gettext.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../23-gettext_0.19.8.1-10build1_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking gettext (0.19.8.1-10build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libdatrie1:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../24-libdatrie1_0.2.12-3_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libdatrie1:amd64 (0.2.12-3) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libltdl7:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../25-libltdl7_2.4.6-14_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libltdl7:amd64 (2.4.6-14) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libltdl-dev:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../26-libltdl-dev_2.4.6-14_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libmime-charset-perl.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../27-libmime-charset-perl_1.012.2-1_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libmime-charset-perl (1.012.2-1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libosp5.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../28-libosp5_1.5.2-13ubuntu3_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libosp5 (1.5.2-13ubuntu3) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libpkgconf3:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../29-libpkgconf3_1.6.3-5_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libpkgconf3:amd64 (1.6.3-5) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libsgmls-perl.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../30-libsgmls-perl_1.03ii-36_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libsgmls-perl (1.03ii-36) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libthai-data.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../31-libthai-data_0.1.28-3_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libthai-data (0.1.28-3) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libthai0:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../32-libthai0_0.1.28-3_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libthai0:amd64 (0.1.28-3) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libsombok3:amd64.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../33-libsombok3_2.4.0-2_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libsombok3:amd64 (2.4.0-2) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libterm-readkey-perl.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../34-libterm-readkey-perl_2.38-1build1_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libterm-readkey-perl (2.38-1build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libtool.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../35-libtool_2.4.6-14_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libtool (2.4.6-14) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libunicode-linebreak-perl.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../36-libunicode-linebreak-perl_0.0.20190101-1build1_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libunicode-linebreak-perl (0.0.20190101-1build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package libyaml-tiny-perl.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../37-libyaml-tiny-perl_1.73-1_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking libyaml-tiny-perl (1.73-1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package ninja-build.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../38-ninja-build_1.10.0-1build1_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking ninja-build (1.10.0-1build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package opensp.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../39-opensp_1.5.2-13ubuntu3_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking opensp (1.5.2-13ubuntu3) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package pkgconf.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../40-pkgconf_1.6.3-5_amd64.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Adding 'diversion of /usr/bin/pkg-config to /usr/bin/pkg-config.real by pkgconf'
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Adding 'diversion of /usr/share/aclocal/pkg.m4 to /usr/share/aclocal/pkg.real.m4 by pkgconf'
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Adding 'diversion of /usr/share/man/man1/pkg-config.1.gz to /usr/share/man/man1/pkg-config.real.1.gz by pkgconf'
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Adding 'diversion of /usr/share/pkg-config-crosswrapper to /usr/share/pkg-config-crosswrapper.real by pkgconf'
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking pkgconf (1.6.3-5) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Selecting previously unselected package po4a.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Preparing to unpack .../41-po4a_0.57-2_all.deb ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Unpacking po4a (0.57-2) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libtext-charwidth-perl (0.04-10) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libsgmls-perl (1.03ii-36) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libdatrie1:amd64 (0.2.12-3) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up xdg-user-dirs (0.17-2ubuntu1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libmagic-mgc (1:5.38-4) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": No schema files found: doing nothing.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libmagic1:amd64 (1:5.38-4) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up gettext-base (0.19.8.1-10build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up file (1:5.38-4) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libyaml-tiny-perl (1.73-1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libtext-wrapi18n-perl (0.06-9) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up ninja-build (1.10.0-1build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libosp5 (1.5.2-13ubuntu3) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libpkgconf3:amd64 (1.6.3-5) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libuv1:amd64 (1.34.2-1ubuntu1.5) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up autopoint (0.19.8.1-10build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libltdl7:amd64 (2.4.6-14) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up autoconf (2.69-11.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libmime-charset-perl (1.012.2-1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up librhash0:amd64 (1.3.9-1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libthai-data (0.1.28-3) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up sgml-base (1.29.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up cmake-data (3.16.3-1ubuntu1.20.04.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libterm-readkey-perl (2.38-1build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up automake (1:1.16.1-4ubuntu6) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libtool (2.4.6-14) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up opensp (1.5.2-13ubuntu3) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up pkgconf (1.6.3-5) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libltdl-dev:amd64 (2.4.6-14) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libthai0:amd64 (0.1.28-3) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up shared-mime-info (1.15-1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libcroco3:amd64 (0.6.13-1ubuntu0.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up cmake (3.16.3-1ubuntu1.20.04.1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up gettext (0.19.8.1-10build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up po4a (0.57-2) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libsombok3:amd64 (2.4.0-2) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Setting up libunicode-linebreak-perl (0.0.20190101-1build1) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Removing intermediate container 8e067cbb31be
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 5c41971d99d8
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 3/22 : RUN git clone --depth 1 https://github.com/madler/zlib.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in 8b1698a6dd08
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'zlib'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container 8b1698a6dd08
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 3c68468995e1
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 4/22 : RUN git clone --depth 1 -b v1.5.7 https://github.com/facebook/zstd.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in 62e6734a59ec
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'zstd'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0m[91mNote: switching to 'f8745da6ff1ad1e7bab384bd1f9d742439278e99'.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": You are in 'detached HEAD' state. You can look around, make experimental
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": changes and commit them, and you can discard any commits you make in this
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": state without impacting any branches by switching back to a branch.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": If you want to create a new branch to retain commits you create, you may
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": do so (now or later) by using -c with the switch command. Example:
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   git switch -c <new-branch-name>
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Or undo this operation with:
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   git switch -
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Turn off this advice by setting config variable advice.detachedHead to false
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container 62e6734a59ec
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 4b078bf2360d
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 5/22 : RUN wget https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in e21bfd18b62b
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91m--2025-10-07 07:09:50--  https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0m[91mResolving sourceware.org (sourceware.org)... [0m[91m8.43.85.97, 2620:52:3:1:0:246e:9693:128c
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Connecting to sourceware.org (sourceware.org)|8.43.85.97|:443... [0m[91mconnected.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0m[91mHTTP request sent, awaiting response... [0m[91m200 OK
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Length: 810029 (791K) [application/x-gzip]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0m[91mSaving to: 'bzip2-1.0.8.tar.gz'
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":      0K .......[0m[91m... .......... ..........[0m[91m .......... ..........  6%  590K 1s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":     50K .......... ..[0m[91m........ .......[0m[91m... .....[0m[91m..... .......... 12% 1.16M 1s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    100K .........[0m[91m. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........ ....[0m[91m...... 18% 28.1M 1s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    150K .....[0m[91m..... ...[0m[91m....... .[0m[91m........[0m[91m. .......[0m[91m... .......... 25% 1.20M 1s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    200K .......... .......... ......[0m[91m.... ....[0m[91m...... .........[0m[91m. 31%  108M 0s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    250K .......[0m[91m... .......... ...[0m[91m.......[0m[91m ........[0m[91m.. ......[0m[91m.... 37% 41.8M 0s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    300K ....[0m[91m...... ..[0m[91m.......[0m[91m. .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 44%  114M 0s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    350K .[0m[91m........[0m[91m. ......[0m[91m.... ....[0m[91m...... ..[0m[91m........[0m[91m ........[0m[91m.. 50% 1.21M 0s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    400K .....[0m[91m..... ...[0m[91m....... .[0m[91m........[0m[91m. .......[0m[91m... .......... 56%  111M 0s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    450K [0m[91m..[0m[91m........[0m[91m ........[0m[91m.. ......[0m[91m.... ....[0m[91m...... .[0m[91m........[0m[91m. 63%  155M 0s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    500K .......[0m[91m... .......... ...[0m[91m......[0m[91m.[0m[91m ........[0m[91m.. ......[0m[91m.... 69%  145M 0s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    550K ....[0m[91m..[0m[91m.... ..[0m[91m.......[0m[91m. .......[0m[91m... .....[0m[91m..... ...[0m[91m....... 75%  134M 0s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    600K .[0m[91m........[0m[91m. ......[0m[91m.... ....[0m[91m...... ..........[0m[91m ........[0m[91m.. 82%  138M 0s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    650K .....[0m[91m..... ...[0m[91m..[0m[91m..... .[0m[91m........[0m[91m. .......[0m[91m... ....[0m[91m...... 88% 77.4M 0s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    700K ...[0m[91m....... ........[0m[91m.. ......[0m[91m.... ....[0m[91m...... .[0m[91m.[0m[91m.......[0m[91m. 94%  128M 0s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":    750K .......[0m[91m.[0m[91m.. .....[0m[91m..... ...[0m[91m.......[0m[91m ........[0m[91m.. .         100%[0m[91m  181M=0.2s
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0m[91m2025-10-07 07:09:51 (3.59 MB/s) - 'bzip2-1.0.8.tar.gz' saved [810029/810029]
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container e21bfd18b62b
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 3baba080229f
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 6/22 : RUN git clone https://github.com/tukaani-project/xz.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in f6ec48adf0da
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'xz'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container f6ec48adf0da
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 0ee8d70590a1
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 7/22 : RUN git clone --depth 1 --branch=RB-3.3 https://github.com/AcademySoftwareFoundation/openexr.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in d09c0c758963
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'openexr'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container d09c0c758963
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 526fc00b1c5e
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 8/22 : RUN git clone --depth 1 -b master https://invent.kde.org/frameworks/extra-cmake-modules.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in a9bf3b1e2f2c
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'extra-cmake-modules'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container a9bf3b1e2f2c
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 6dd47705fb15
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 9/22 : RUN git clone --depth 1 --branch=dev git://code.qt.io/qt/qtbase.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in c47fc26e1268
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'qtbase'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0m[91mUpdating files:  41% (9651/23006)[0m[91mUpdating files:  42% (9663/23006)[0m[91mUpdating files:  43% (9893/23006)[0m[91mUpdating files:  44% (10123/23006)[0m[91mUpdating files:  45% (10353/23006)[0m[91mUpdating files:  46% (10583/23006)[0m[91mUpdating files:  47% (10813/23006)[0m[91mUpdating files:  48% (11043/23006)[0m[91mUpdating files:  49% (11273/23006)[0m[91mUpdating files:  50% (11503/23006)[0m[91mUpdating files:  51% (11734/23006)[0m[91mUpdating files:  52% (11964/23006)[0m[91mUpdating files:  53% (12194/23006)[0m[91mUpdating files:  54% (12424/23006)[0m[91mUpdating files:  55% (12654/23006)[0m[91mUpdating files:  56% (12884/23006)[0m[91mUpdating files:  57% (13114/23006)[0m[91mUpdating files:  58% (13344/23006)[0m[91mUpdating files:  59% (13574/23006)[0m[91mUpdating files:  60% (13804/23006)[0m[91mUpdating files:  61% (14034/23006)[0m[91mUpdating files:  62% (14264/23006)[0m[91mUpdating files:  63% (14494/23006)[0m[91mUpdating files:  64% (14724/23006)[0m[91mUpdating files:  65% (14954/23006)[0m[91mUpdating files:  66% (15184/23006)[0m[91mUpdating files:  67% (15415/23006)[0m[91mUpdating files:  68% (15645/23006)[0m[91mUpdating files:  69% (15875/23006)[0m[91mUpdating files:  70% (16105/23006)[0m[91mUpdating files:  71% (16335/23006)[0m[91mUpdating files:  72% (16565/23006)[0m[91mUpdating files:  73% (16795/23006)[0m[91mUpdating files:  74% (17025/23006)[0m[91mUpdating files:  75% (17255/23006)[0m[91mUpdating files:  76% (17485/23006)[0m[91mUpdating files:  77% (17715/23006)[0m[91mUpdating files:  78% (17945/23006)[0m[91mUpdating files:  79% (18175/23006)[0m[91mUpdating files:  80% (18405/23006)[0m[91mUpdating files:  81% (18635/23006)[0m[91mUpdating files:  82% (18865/23006)[0m[91mUpdating files:  83% (19095/23006)[0m[91mUpdating files:  84% (19326/23006)[0m[91mUpdating files:  85% (19556/23006)[0m[91mUpdating files:  86% (19786/23006)[0m[91mUpdating files:  87% (20016/23006)[0m[91mUpdating files:  88% (20246/23006)[0m[91mUpdating files:  89% (20476/23006)[0m[91mUpdating files:  90% (20706/23006)[0m[91mUpdating files:  91% (20936/23006)[0m[91mUpdating files:  92% (21166/23006)[0m[91mUpdating files:  92% (21322/23006)[0m[91mUpdating files:  93% (21396/23006)[0m[91mUpdating files:  94% (21626/23006)[0m[91mUpdating files:  95% (21856/23006)[0m[91mUpdating files:  96% (22086/23006)[0m[91mUpdating files:  97% (22316/23006)[0m[91mUpdating files:  98% (22546/23006)[0m[91mUpdating files:  99% (22776/23006)[0m[91mUpdating files: 100% (23006/23006)[0m[91mUpdating files: 100% (23006/23006), done.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container c47fc26e1268
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> be6c2f90581a
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 10/22 : RUN git clone --depth 1 -b master https://invent.kde.org/frameworks/karchive.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in 54db0738aca1
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'karchive'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container 54db0738aca1
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 2a07ca8ae308
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 11/22 : RUN git clone --depth 1 -b master https://invent.kde.org/frameworks/kimageformats.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in 498fa0ffaae4
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'kimageformats'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container 498fa0ffaae4
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> f2eb437b6414
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 12/22 : RUN git clone --depth 1 -b v3.12.1 https://aomedia.googlesource.com/aom
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in 188008cc18ac
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'aom'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0m[91mNote: switching to '10aece4157eb79315da205f39e19bf6ab3ee30d0'.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": You are in 'detached HEAD' state. You can look around, make experimental
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": changes and commit them, and you can discard any commits you make in this
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": state without impacting any branches by switching back to a branch.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": If you want to create a new branch to retain commits you create, you may
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": do so (now or later) by using -c with the switch command. Example:
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   git switch -c <new-branch-name>
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Or undo this operation with:
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   git switch -
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Turn off this advice by setting config variable advice.detachedHead to false
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container 188008cc18ac
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 3917261ae9ad
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 13/22 : RUN git clone --depth 1 -b v1.3.0 https://github.com/AOMediaCodec/libavif.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in f97e80059cb5
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'libavif'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0m[91mNote: switching to '1aadfad932c98c069a1204261b1856f81f3bc199'.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": You are in 'detached HEAD' state. You can look around, make experimental
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": changes and commit them, and you can discard any commits you make in this
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": state without impacting any branches by switching back to a branch.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": If you want to create a new branch to retain commits you create, you may
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": do so (now or later) by using -c with the switch command. Example:
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   git switch -c <new-branch-name>
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Or undo this operation with:
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   git switch -
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Turn off this advice by setting config variable advice.detachedHead to false
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container f97e80059cb5
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 4e3295f84496
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 14/22 : RUN git clone --depth 1 https://github.com/strukturag/libde265.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in 0b9303f20b75
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'libde265'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container 0b9303f20b75
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> 95817669b316
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 15/22 : RUN git clone --depth 1 -b v2.5.3 https://github.com/uclouvain/openjpeg.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in c0e7e1f52937
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'openjpeg'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0m[91mNote: switching to '210a8a5690d0da66f02d49420d7176a21ef409dc'.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": You are in 'detached HEAD' state. You can look around, make experimental
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": changes and commit them, and you can discard any commits you make in this
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": state without impacting any branches by switching back to a branch.
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": If you want to create a new branch to retain commits you create, you may
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": do so (now or later) by using -c with the switch command. Example:
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   git switch -c <new-branch-name>
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Or undo this operation with:
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":   git switch -
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Turn off this advice by setting config variable advice.detachedHead to false
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": 
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container c0e7e1f52937
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> b12306733ed9
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 16/22 : RUN git clone --depth 1 https://github.com/strukturag/libheif.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in 242d8241485e
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'libheif'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0mRemoving intermediate container 242d8241485e
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> da1561630fe9
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": Step 17/22 : RUN git clone --depth=1 --branch v0.11.x --recursive --shallow-submodules https://github.com/libjxl/libjxl.git
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e":  ---> Running in 64200555b390
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [91mCloning into 'libjxl'...
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0m[91merror: RPC failed; curl 16 Error in the HTTP2 framing layer
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": fatal: the remote end hung up unexpectedly
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": The command '/bin/sh -c git clone --depth=1 --branch v0.11.x --recursive --shallow-submodules https://github.com/libjxl/libjxl.git' returned a non-zero code: 128
-Finished Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e"
-ERROR
-ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 128
-Step #1 - "build-42c47435-559d-48fc-94e3-2be697c3956e": [0m

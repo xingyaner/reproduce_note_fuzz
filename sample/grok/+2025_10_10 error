@@ -1,601 +1,0 @@
-starting build "0f53999c-0206-46ec-8a86-0f9b37aa3b77"
-
-FETCHSOURCE
-BUILD
-Starting Step #0
-Step #0: Already have image (with digest): gcr.io/cloud-builders/git
-Step #0: Cloning into 'oss-fuzz'...
-Finished Step #0
-Starting Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee"
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Sending build context to Docker daemon   5.12kB
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Step 1/5 : FROM gcr.io/oss-fuzz-base/base-builder
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": latest: Pulling from oss-fuzz-base/base-builder
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": b549f31133a9: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": cd18e4a30c2a: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": b58b73ab52e9: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5f76a6ebf1bf: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c410c19de21d: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 3a07cafcfd5f: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": ede70edf103d: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": fb348cfde8ea: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 0b808471114d: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": f8434df993c2: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 1f95da7dd7ed: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c7b891ded878: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d1392738daa4: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 82f0a273a9b6: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 4b0f4899efd5: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5ee0d3c2a1f3: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 650456f64a40: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 62d60654b975: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2bcbcd0e0178: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2a366f1f9403: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": fdff76ca8d6c: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 87a33d77c44e: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": af9cc40b9546: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8c7ef36dc00d: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5b05ba1c4354: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8c0a4d97aee8: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5e51812eca81: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 9cc98e6b642d: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": f8fe7269232f: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 244fc348710a: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d3ac5db83125: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2edaf31238fc: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d024fd452146: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8aab5be69487: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 40ba1b2bfbbb: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": cb4068c83396: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2679f3eb2425: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c321bf99c319: Pulling fs layer
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 1f95da7dd7ed: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c7b891ded878: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d1392738daa4: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 82f0a273a9b6: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8aab5be69487: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 40ba1b2bfbbb: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": cb4068c83396: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 4b0f4899efd5: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2679f3eb2425: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5e51812eca81: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5ee0d3c2a1f3: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c321bf99c319: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 650456f64a40: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 9cc98e6b642d: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 62d60654b975: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": f8fe7269232f: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": ede70edf103d: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2bcbcd0e0178: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": fb348cfde8ea: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 244fc348710a: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2a366f1f9403: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d3ac5db83125: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": fdff76ca8d6c: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": af9cc40b9546: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 0b808471114d: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c410c19de21d: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5f76a6ebf1bf: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 3a07cafcfd5f: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5b05ba1c4354: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d024fd452146: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 87a33d77c44e: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": f8434df993c2: Waiting
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": b58b73ab52e9: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": b549f31133a9: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": b549f31133a9: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c410c19de21d: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c410c19de21d: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5f76a6ebf1bf: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5f76a6ebf1bf: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": ede70edf103d: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": cd18e4a30c2a: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": cd18e4a30c2a: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": fb348cfde8ea: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": fb348cfde8ea: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": b549f31133a9: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": f8434df993c2: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": f8434df993c2: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 1f95da7dd7ed: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 1f95da7dd7ed: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c7b891ded878: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c7b891ded878: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d1392738daa4: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d1392738daa4: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 0b808471114d: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 0b808471114d: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 82f0a273a9b6: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 82f0a273a9b6: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 4b0f4899efd5: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 4b0f4899efd5: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5ee0d3c2a1f3: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5ee0d3c2a1f3: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 650456f64a40: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 650456f64a40: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 62d60654b975: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 62d60654b975: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2bcbcd0e0178: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2a366f1f9403: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2a366f1f9403: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": fdff76ca8d6c: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": fdff76ca8d6c: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 87a33d77c44e: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 87a33d77c44e: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": af9cc40b9546: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": af9cc40b9546: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8c7ef36dc00d: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8c7ef36dc00d: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5b05ba1c4354: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5b05ba1c4354: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8c0a4d97aee8: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5e51812eca81: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": cd18e4a30c2a: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": b58b73ab52e9: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 9cc98e6b642d: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 9cc98e6b642d: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 3a07cafcfd5f: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 3a07cafcfd5f: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": f8fe7269232f: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": f8fe7269232f: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d3ac5db83125: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d3ac5db83125: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 244fc348710a: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 244fc348710a: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2edaf31238fc: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2edaf31238fc: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8aab5be69487: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8aab5be69487: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d024fd452146: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d024fd452146: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 40ba1b2bfbbb: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": cb4068c83396: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": cb4068c83396: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2679f3eb2425: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2679f3eb2425: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c321bf99c319: Verifying Checksum
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c321bf99c319: Download complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5f76a6ebf1bf: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c410c19de21d: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 3a07cafcfd5f: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": ede70edf103d: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": fb348cfde8ea: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 0b808471114d: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": f8434df993c2: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 1f95da7dd7ed: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c7b891ded878: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d1392738daa4: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 82f0a273a9b6: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 4b0f4899efd5: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5ee0d3c2a1f3: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 650456f64a40: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 62d60654b975: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2bcbcd0e0178: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2a366f1f9403: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": fdff76ca8d6c: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 87a33d77c44e: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": af9cc40b9546: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8c7ef36dc00d: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5b05ba1c4354: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8c0a4d97aee8: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 5e51812eca81: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 9cc98e6b642d: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": f8fe7269232f: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 244fc348710a: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d3ac5db83125: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2edaf31238fc: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": d024fd452146: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 8aab5be69487: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 40ba1b2bfbbb: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": cb4068c83396: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": 2679f3eb2425: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": c321bf99c319: Pull complete
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Digest: sha256:b79d3707eeffb6c75a530689b5ade9038bd005628f44d30c62680f4b810c3900
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee":  ---> 6c7513e4cb7a
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Step 2/5 : RUN git clone --depth 1 https://github.com/GrokImageCompression/grok.git grok
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee":  ---> Running in 8b3d7691d7d6
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": [91mCloning into 'grok'...
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": [0mRemoving intermediate container 8b3d7691d7d6
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee":  ---> e3e57ac7ed76
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Step 3/5 : RUN git clone --depth 1 https://github.com/GrokImageCompression/grok-test-data.git grok-data
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee":  ---> Running in 550e0abe2b47
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": [91mCloning into 'grok-data'...
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": [0m[91mUpdating files:  15% (195/1291)[0m[91mUpdating files:  16% (207/1291)[0m[91mUpdating files:  17% (220/1291)[0m[91mUpdating files:  18% (233/1291)[0m[91mUpdating files:  19% (246/1291)[0m[91mUpdating files:  20% (259/1291)[0m[91mUpdating files:  21% (272/1291)[0m[91mUpdating files:  22% (285/1291)[0m[91mUpdating files:  23% (297/1291)[0m[91mUpdating files:  24% (310/1291)[0m[91mUpdating files:  25% (323/1291)[0m[91mUpdating files:  26% (336/1291)[0m[91mUpdating files:  27% (349/1291)[0m[91mUpdating files:  28% (362/1291)[0m[91mUpdating files:  29% (375/1291)[0m[91mUpdating files:  30% (388/1291)[0m[91mUpdating files:  31% (401/1291)[0m[91mUpdating files:  32% (414/1291)[0m[91mUpdating files:  33% (427/1291)[0m[91mUpdating files:  34% (439/1291)[0m[91mUpdating files:  35% (452/1291)[0m[91mUpdating files:  36% (465/1291)[0m[91mUpdating files:  37% (478/1291)[0m[91mUpdating files:  38% (491/1291)[0m[91mUpdating files:  39% (504/1291)[0m[91mUpdating files:  40% (517/1291)[0m[91mUpdating files:  41% (530/1291)[0m[91mUpdating files:  42% (543/1291)[0m[91mUpdating files:  43% (556/1291)[0m[91mUpdating files:  44% (569/1291)[0m[91mUpdating files:  45% (581/1291)[0m[91mUpdating files:  46% (594/1291)[0m[91mUpdating files:  47% (607/1291)[0m[91mUpdating files:  48% (620/1291)[0m[91mUpdating files:  49% (633/1291)[0m[91mUpdating files:  50% (646/1291)[0m[91mUpdating files:  51% (659/1291)[0m[91mUpdating files:  52% (672/1291)[0m[91mUpdating files:  53% (685/1291)[0m[91mUpdating files:  54% (698/1291)[0m[91mUpdating files:  55% (711/1291)[0m[91mUpdating files:  56% (723/1291)[0m[91mUpdating files:  57% (736/1291)[0m[91mUpdating files:  58% (749/1291)[0m[91mUpdating files:  59% (762/1291)[0m[91mUpdating files:  60% (775/1291)[0m[91mUpdating files:  61% (788/1291)[0m[91mUpdating files:  62% (801/1291)[0m[91mUpdating files:  63% (814/1291)[0m[91mUpdating files:  63% (825/1291)Updating files:  64% (827/1291)[0m[91mUpdating files:  65% (840/1291)[0m[91mUpdating files:  66% (853/1291)[0m[91mUpdating files:  67% (865/1291)[0m[91mUpdating files:  68% (878/1291)[0m[91mUpdating files:  69% (891/1291)[0m[91mUpdating files:  70% (904/1291)[0m[91mUpdating files:  71% (917/1291)[0m[91mUpdating files:  72% (930/1291)[0m[91mUpdating files:  73% (943/1291)[0m[91mUpdating files:  74% (956/1291)[0m[91mUpdating files:  75% (969/1291)[0m[91mUpdating files:  76% (982/1291)[0m[91mUpdating files:  77% (995/1291)[0m[91mUpdating files:  78% (1007/1291)[0m[91mUpdating files:  79% (1020/1291)[0m[91mUpdating files:  80% (1033/1291)[0m[91mUpdating files:  80% (1038/1291)[0m[91mUpdating files:  81% (1046/1291)[0m[91mUpdating files:  82% (1059/1291)[0m[91mUpdating files:  83% (1072/1291)[0m[91mUpdating files:  84% (1085/1291)[0m[91mUpdating files:  85% (1098/1291)[0m[91mUpdating files:  86% (1111/1291)[0m[91mUpdating files:  87% (1124/1291)[0m[91mUpdating files:  88% (1137/1291)[0m[91mUpdating files:  89% (1149/1291)[0m[91mUpdating files:  90% (1162/1291)[0m[91mUpdating files:  91% (1175/1291)[0m[91mUpdating files:  92% (1188/1291)[0m[91mUpdating files:  93% (1201/1291)[0m[91mUpdating files:  94% (1214/1291)[0m[91mUpdating files:  95% (1227/1291)[0m[91mUpdating files:  96% (1240/1291)[0m[91mUpdating files:  97% (1253/1291)[0m[91mUpdating files:  98% (1266/1291)[0m[91mUpdating files:  99% (1279/1291)[0m[91mUpdating files: 100% (1291/1291)[0m[91mUpdating files: 100% (1291/1291), done.
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": [0mRemoving intermediate container 550e0abe2b47
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee":  ---> e3c4ebb36a39
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Step 4/5 : WORKDIR grok
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee":  ---> Running in 0f16f114c884
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Removing intermediate container 0f16f114c884
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee":  ---> 39ffef746939
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Step 5/5 : COPY build.sh $SRC/
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee":  ---> dd06383fa1d2
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Successfully built dd06383fa1d2
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Successfully tagged gcr.io/oss-fuzz/grok:latest
-Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/grok:latest
-Finished Step #1 - "build-cc973aa4-88de-4e8d-9a44-1cd032998bee"
-Starting Step #2 - "srcmap"
-Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/grok
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + SRCMAP=/tmp/fileCVKfiN
-Step #2 - "srcmap": + echo '{}'
-Step #2 - "srcmap": + PATHS_TO_SCAN=/src
-Step #2 - "srcmap": + [[ c++ == \g\o ]]
-Step #2 - "srcmap": ++ find /src -name .git -type d
-Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
-Step #2 - "srcmap": ++ dirname /src/grok-data/.git
-Step #2 - "srcmap": + GIT_DIR=/src/grok-data
-Step #2 - "srcmap": + cd /src/grok-data
-Step #2 - "srcmap": ++ git config --get remote.origin.url
-Step #2 - "srcmap": + GIT_URL=https://github.com/GrokImageCompression/grok-test-data.git
-Step #2 - "srcmap": ++ git rev-parse HEAD
-Step #2 - "srcmap": + GIT_REV=a0043aee10c907a613d6d558d10e088a1a50774f
-Step #2 - "srcmap": + jq_inplace /tmp/fileCVKfiN '."/src/grok-data" = { type: "git", url: "https://github.com/GrokImageCompression/grok-test-data.git", rev: "a0043aee10c907a613d6d558d10e088a1a50774f" }'
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + F=/tmp/filecyYUpd
-Step #2 - "srcmap": + cat /tmp/fileCVKfiN
-Step #2 - "srcmap": + jq '."/src/grok-data" = { type: "git", url: "https://github.com/GrokImageCompression/grok-test-data.git", rev: "a0043aee10c907a613d6d558d10e088a1a50774f" }'
-Step #2 - "srcmap": + mv /tmp/filecyYUpd /tmp/fileCVKfiN
-Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
-Step #2 - "srcmap": ++ dirname /src/grok/.git
-Step #2 - "srcmap": + GIT_DIR=/src/grok
-Step #2 - "srcmap": + cd /src/grok
-Step #2 - "srcmap": ++ git config --get remote.origin.url
-Step #2 - "srcmap": + GIT_URL=https://github.com/GrokImageCompression/grok.git
-Step #2 - "srcmap": ++ git rev-parse HEAD
-Step #2 - "srcmap": + GIT_REV=bf73f35412bfbc9e3fb250594ea3bbb20da4c9dd
-Step #2 - "srcmap": + jq_inplace /tmp/fileCVKfiN '."/src/grok" = { type: "git", url: "https://github.com/GrokImageCompression/grok.git", rev: "bf73f35412bfbc9e3fb250594ea3bbb20da4c9dd" }'
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + F=/tmp/fileVDUyGJ
-Step #2 - "srcmap": + cat /tmp/fileCVKfiN
-Step #2 - "srcmap": + jq '."/src/grok" = { type: "git", url: "https://github.com/GrokImageCompression/grok.git", rev: "bf73f35412bfbc9e3fb250594ea3bbb20da4c9dd" }'
-Step #2 - "srcmap": + mv /tmp/fileVDUyGJ /tmp/fileCVKfiN
-Step #2 - "srcmap": ++ find /src -name .svn -type d
-Step #2 - "srcmap": ++ find /src -name .hg -type d
-Step #2 - "srcmap": + '[' '' '!=' '' ']'
-Step #2 - "srcmap": + cat /tmp/fileCVKfiN
-Step #2 - "srcmap": + rm /tmp/fileCVKfiN
-Step #2 - "srcmap": {
-Step #2 - "srcmap":   "/src/grok-data": {
-Step #2 - "srcmap":     "type": "git",
-Step #2 - "srcmap":     "url": "https://github.com/GrokImageCompression/grok-test-data.git",
-Step #2 - "srcmap":     "rev": "a0043aee10c907a613d6d558d10e088a1a50774f"
-Step #2 - "srcmap":   },
-Step #2 - "srcmap":   "/src/grok": {
-Step #2 - "srcmap":     "type": "git",
-Step #2 - "srcmap":     "url": "https://github.com/GrokImageCompression/grok.git",
-Step #2 - "srcmap":     "rev": "bf73f35412bfbc9e3fb250594ea3bbb20da4c9dd"
-Step #2 - "srcmap":   }
-Step #2 - "srcmap": }
-Finished Step #2 - "srcmap"
-Starting Step #3 - "compile-afl-address-x86_64"
-Step #3 - "compile-afl-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-afl-address-x86_64": vm.mmap_rnd_bits = 28
-Step #3 - "compile-afl-address-x86_64": Copying precompiled AFL++
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64": AFL++ target compilation setup:
-Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
-Step #3 - "compile-afl-address-x86_64": AFL_QUIET=1
-Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64":  done.
-Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-afl-address-x86_64": CC=/src/aflplusplus/afl-clang-fast
-Step #3 - "compile-afl-address-x86_64": CXX=/src/aflplusplus/afl-clang-fast++
-Step #3 - "compile-afl-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope 
-Step #3 - "compile-afl-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope  -stdlib=libc++
-Step #3 - "compile-afl-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
-Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-afl-address-x86_64": + mkdir build
-Step #3 - "compile-afl-address-x86_64": + cd build
-Step #3 - "compile-afl-address-x86_64": + cmake .. -DGRK_BUILD_CODEC=OFF -DBUILD_SHARED_LIBS=OFF -DGRK_BUILD_THIRDPARY=ON
-Step #3 - "compile-afl-address-x86_64": -- The C compiler identification is Clang 22.0.0
-Step #3 - "compile-afl-address-x86_64": -- The CXX compiler identification is Clang 22.0.0
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info - done
-Step #3 - "compile-afl-address-x86_64": -- Check for working C compiler: /src/aflplusplus/afl-clang-fast - skipped
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features - done
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info - done
-Step #3 - "compile-afl-address-x86_64": -- Check for working CXX compiler: /src/aflplusplus/afl-clang-fast++ - skipped
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features - done
-Step #3 - "compile-afl-address-x86_64": -- Architecture: x86_64
-Step #3 - "compile-afl-address-x86_64": -- Setting build type to 'Release' as none was specified.
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
-Step #3 - "compile-afl-address-x86_64": -- zlib will be built.
-Step #3 - "compile-afl-address-x86_64": -- Using CMake version 3.29.2
-Step #3 - "compile-afl-address-x86_64": -- ZLIB_HEADER_VERSION: 1.3.1
-Step #3 - "compile-afl-address-x86_64": -- ZLIBNG_HEADER_VERSION: 2.1.6
-Step #3 - "compile-afl-address-x86_64": -- Arch detected: 'x86_64'
-Step #3 - "compile-afl-address-x86_64": -- Basearch of 'x86_64' has been detected as: 'x86'
-Step #3 - "compile-afl-address-x86_64": -- Performing Test FNO_LTO_AVAILABLE
-Step #3 - "compile-afl-address-x86_64": -- Performing Test FNO_LTO_AVAILABLE - Success
-Step #3 - "compile-afl-address-x86_64": -- Looking for arm_acle.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for arm_acle.h - not found
-Step #3 - "compile-afl-address-x86_64": -- Looking for sys/auxv.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for sys/auxv.h - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for sys/sdt.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for sys/sdt.h - not found
-Step #3 - "compile-afl-address-x86_64": -- Looking for unistd.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for unistd.h - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for linux/auxvec.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for linux/auxvec.h - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for sys/types.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for sys/types.h - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for stdint.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for stdint.h - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for stddef.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for stddef.h - found
-Step #3 - "compile-afl-address-x86_64": -- Check size of off64_t
-Step #3 - "compile-afl-address-x86_64": -- Check size of off64_t - done
-Step #3 - "compile-afl-address-x86_64": -- Looking for fseeko
-Step #3 - "compile-afl-address-x86_64": -- Looking for fseeko - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for strerror
-Step #3 - "compile-afl-address-x86_64": -- Looking for strerror - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for posix_memalign
-Step #3 - "compile-afl-address-x86_64": -- Looking for posix_memalign - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for aligned_alloc
-Step #3 - "compile-afl-address-x86_64": -- Looking for aligned_alloc - found
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_NO_INTERPOSITION
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_NO_INTERPOSITION - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_ATTRIBUTE_VISIBILITY_HIDDEN
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_ATTRIBUTE_VISIBILITY_HIDDEN - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_ATTRIBUTE_VISIBILITY_INTERNAL
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_ATTRIBUTE_VISIBILITY_INTERNAL - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_ATTRIBUTE_ALIGNED
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_ATTRIBUTE_ALIGNED - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_BUILTIN_CTZ
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_BUILTIN_CTZ - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_BUILTIN_CTZLL
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_BUILTIN_CTZLL - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_PTRDIFF_T
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_PTRDIFF_T - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_XSAVE_INTRIN
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_XSAVE_INTRIN - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_SSE2_INTRIN
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_SSE2_INTRIN - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_SSSE3_INTRIN
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_SSSE3_INTRIN - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_SSE42_INTRIN
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_SSE42_INTRIN - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_PCLMULQDQ_INTRIN
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_PCLMULQDQ_INTRIN - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_AVX2_INTRIN
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_AVX2_INTRIN - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_CASCADE_LAKE
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_CASCADE_LAKE - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_AVX512_INTRIN
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_AVX512_INTRIN - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_AVX512VNNI_INTRIN
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_AVX512VNNI_INTRIN - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_VPCLMULQDQ_INTRIN
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_VPCLMULQDQ_INTRIN - Success
-Step #3 - "compile-afl-address-x86_64": -- Architecture-specific source files: arch/x86/x86_features.c;arch/x86/chunkset_sse2.c;arch/x86/compare256_sse2.c;arch/x86/slide_hash_sse2.c;arch/x86/adler32_ssse3.c;arch/x86/chunkset_ssse3.c;arch/x86/adler32_sse42.c;arch/x86/crc32_pclmulqdq.c;arch/x86/slide_hash_avx2.c;arch/x86/chunkset_avx2.c;arch/x86/compare256_avx2.c;arch/x86/adler32_avx2.c;arch/x86/adler32_avx512.c;arch/x86/adler32_avx512_vnni.c;arch/x86/crc32_vpclmulqdq.c
-Step #3 - "compile-afl-address-x86_64": -- The following features have been enabled:
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64":  * CMAKE_BUILD_TYPE, Build type: Release (selected)
-Step #3 - "compile-afl-address-x86_64":  * XSAVE, Support XSAVE intrinsics using "-mxsave"
-Step #3 - "compile-afl-address-x86_64":  * SSSE3_ADLER32, Support SSSE3-accelerated adler32, using "-mssse3"
-Step #3 - "compile-afl-address-x86_64":  * SSE42_CRC, Support SSE4.2 optimized adler32 hash generation, using "-msse4.2"
-Step #3 - "compile-afl-address-x86_64":  * PCLMUL_CRC, Support CRC hash generation using PCLMULQDQ, using "-msse4.2 -mpclmul"
-Step #3 - "compile-afl-address-x86_64":  * AVX2_SLIDEHASH, Support AVX2 optimized slide_hash, using "-mavx2"
-Step #3 - "compile-afl-address-x86_64":  * AVX2_CHUNKSET, Support AVX2 optimized chunkset, using "-mavx2"
-Step #3 - "compile-afl-address-x86_64":  * AVX2_COMPARE256, Support AVX2 optimized compare256, using "-mavx2"
-Step #3 - "compile-afl-address-x86_64":  * AVX2_ADLER32, Support AVX2-accelerated adler32, using "-mavx2"
-Step #3 - "compile-afl-address-x86_64":  * AVX512_ADLER32, Support AVX512-accelerated adler32, using "-mavx512f -mavx512dq -mavx512bw -mavx512vl -mtune=cascadelake"
-Step #3 - "compile-afl-address-x86_64":  * AVX512VNNI_ADLER32, Support AVX512VNNI adler32, using "-mavx512f -mavx512dq -mavx512bw -mavx512vl -mavx512vnni -mtune=cascadelake"
-Step #3 - "compile-afl-address-x86_64":  * VPCLMUL_CRC, Support CRC hash generation using VPCLMULQDQ, using "-mpclmul -mvpclmulqdq -mavx512f -mavx512f -mavx512dq -mavx512bw -mavx512vl -mtune=cascadelake"
-Step #3 - "compile-afl-address-x86_64":  * WITH_GZFILEOP, Compile with support for gzFile related functions
-Step #3 - "compile-afl-address-x86_64":  * ZLIB_COMPAT, Compile with zlib compatible API
-Step #3 - "compile-afl-address-x86_64":  * ZLIBNG_ENABLE_TESTS, Test zlib-ng specific API
-Step #3 - "compile-afl-address-x86_64":  * WITH_SANITIZER, Enable sanitizer support
-Step #3 - "compile-afl-address-x86_64":  * WITH_GTEST, Build gtest_zlib
-Step #3 - "compile-afl-address-x86_64":  * WITH_OPTIM, Build with optimisation
-Step #3 - "compile-afl-address-x86_64":  * WITH_NEW_STRATEGIES, Use new strategies
-Step #3 - "compile-afl-address-x86_64":  * WITH_RUNTIME_CPU_DETECTION, Build with runtime CPU detection
-Step #3 - "compile-afl-address-x86_64":  * WITH_AVX2, Build with AVX2
-Step #3 - "compile-afl-address-x86_64":  * WITH_AVX512, Build with AVX512
-Step #3 - "compile-afl-address-x86_64":  * WITH_AVX512VNNI, Build with AVX512 VNNI
-Step #3 - "compile-afl-address-x86_64":  * WITH_SSE2, Build with SSE2
-Step #3 - "compile-afl-address-x86_64":  * WITH_SSSE3, Build with SSSE3
-Step #3 - "compile-afl-address-x86_64":  * WITH_SSE42, Build with SSE42
-Step #3 - "compile-afl-address-x86_64":  * WITH_PCLMULQDQ, Build with PCLMULQDQ
-Step #3 - "compile-afl-address-x86_64":  * WITH_VPCLMULQDQ, Build with VPCLMULQDQ
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64": -- The following features have been disabled:
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64":  * ZLIB_SYMBOL_PREFIX, Publicly exported symbols DO NOT have a custom prefix
-Step #3 - "compile-afl-address-x86_64":  * ZLIB_ENABLE_TESTS, Build test binaries
-Step #3 - "compile-afl-address-x86_64":  * WITH_FUZZERS, Build test/fuzz
-Step #3 - "compile-afl-address-x86_64":  * WITH_BENCHMARKS, Build test/benchmarks
-Step #3 - "compile-afl-address-x86_64":  * WITH_BENCHMARK_APPS, Build application benchmarks
-Step #3 - "compile-afl-address-x86_64":  * WITH_NATIVE_INSTRUCTIONS, Instruct the compiler to use the full instruction set on this host (gcc/clang -march=native)
-Step #3 - "compile-afl-address-x86_64":  * WITH_MAINTAINER_WARNINGS, Build with project maintainer warnings
-Step #3 - "compile-afl-address-x86_64":  * WITH_CODE_COVERAGE, Enable code coverage reporting
-Step #3 - "compile-afl-address-x86_64":  * WITH_INFLATE_STRICT, Build with strict inflate distance checking
-Step #3 - "compile-afl-address-x86_64":  * WITH_INFLATE_ALLOW_INVALID_DIST, Build with zero fill for inflate invalid distances
-Step #3 - "compile-afl-address-x86_64":  * INSTALL_UTILS, Copy minigzip and minideflate during install
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64": -- We will build libjpeg-turbo library
-Step #3 - "compile-afl-address-x86_64": -- libpng will be built
-Step #3 - "compile-afl-address-x86_64": [0mCMake Deprecation Warning at thirdparty/libpng/CMakeLists.txt:5 (cmake_policy):
-Step #3 - "compile-afl-address-x86_64":   The OLD behavior for policy CMP0115 will be removed from a future version
-Step #3 - "compile-afl-address-x86_64":   of CMake.
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64":   The cmake-policies(7) manual explains that the OLD behaviors of all
-Step #3 - "compile-afl-address-x86_64":   policies are deprecated and that a policy should be set to OLD only under
-Step #3 - "compile-afl-address-x86_64":   specific short-term circumstances.  Projects should be ported to the NEW
-Step #3 - "compile-afl-address-x86_64":   behavior and not rely on setting a policy to OLD.
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64": [0m
-Step #3 - "compile-afl-address-x86_64": -- libtiff will be built to support TIFF files.
-Step #3 - "compile-afl-address-x86_64": -- Building tiff version 4.7.1
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Wall
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Wall - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Winline
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Winline - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Wformat_security
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Wformat_security - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Wpointer_arith
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Wpointer_arith - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Wdisabled_optimization
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Wdisabled_optimization - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Wno_unknown_pragmas
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_Wno_unknown_pragmas - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_fstrict_aliasing
-Step #3 - "compile-afl-address-x86_64": -- Performing Test C_FLAG_fstrict_aliasing - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_LD_VERSION_SCRIPT
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_LD_VERSION_SCRIPT - Success
-Step #3 - "compile-afl-address-x86_64": -- Looking for assert.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for assert.h - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for fcntl.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for fcntl.h - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for io.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for io.h - not found
-Step #3 - "compile-afl-address-x86_64": -- Looking for strings.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for strings.h - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for sys/time.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for sys/time.h - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for getopt
-Step #3 - "compile-afl-address-x86_64": -- Looking for getopt - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for optarg
-Step #3 - "compile-afl-address-x86_64": -- Looking for optarg - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for mmap
-Step #3 - "compile-afl-address-x86_64": -- Looking for mmap - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for setmode
-Step #3 - "compile-afl-address-x86_64": -- Looking for setmode - not found
-Step #3 - "compile-afl-address-x86_64": -- Check size of size_t
-Step #3 - "compile-afl-address-x86_64": -- Check size of size_t - done
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find Deflate (missing: Deflate_LIBRARY Deflate_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find JPEG (missing: JPEG_LIBRARY JPEG_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find JBIG (missing: JBIG_LIBRARY JBIG_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find LERC (missing: LERC_LIBRARY LERC_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find liblzma (missing: LIBLZMA_LIBRARY LIBLZMA_INCLUDE_DIR LIBLZMA_HAS_AUTO_DECODER LIBLZMA_HAS_EASY_ENCODER LIBLZMA_HAS_LZMA_PRESET) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find ZSTD (missing: ZSTD_LIBRARY ZSTD_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find WebP (missing: WebP_LIBRARY WebP_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find OpenGL (missing: OPENGL_opengl_LIBRARY OPENGL_INCLUDE_DIR OpenGL) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find GLUT (missing: GLUT_glut_LIBRARY GLUT_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- Looking for GL/gl.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for GL/gl.h - not found
-Step #3 - "compile-afl-address-x86_64": -- Looking for GL/glu.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for GL/glu.h - not found
-Step #3 - "compile-afl-address-x86_64": -- Looking for GL/glut.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for GL/glut.h - not found
-Step #3 - "compile-afl-address-x86_64": -- Looking for GLUT/glut.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for GLUT/glut.h - not found
-Step #3 - "compile-afl-address-x86_64": -- Looking for OpenGL/gl.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for OpenGL/gl.h - not found
-Step #3 - "compile-afl-address-x86_64": -- Looking for OpenGL/glu.h
-Step #3 - "compile-afl-address-x86_64": -- Looking for OpenGL/glu.h - not found
-Step #3 - "compile-afl-address-x86_64": -- Looking for pow
-Step #3 - "compile-afl-address-x86_64": -- Looking for pow - found
-Step #3 - "compile-afl-address-x86_64": -- Found CMath: TRUE
-Step #3 - "compile-afl-address-x86_64": -- Found Python3: /usr/local/bin/python3.11 (found version "3.11.13") found components: Interpreter
-Step #3 - "compile-afl-address-x86_64": -- Looking for sphinx-build - not found
-Step #3 - "compile-afl-address-x86_64": [33mCMake Warning at thirdparty/libtiff/doc/CMakeLists.txt:143 (message):
-Step #3 - "compile-afl-address-x86_64":   Manual pages and HTML manual will not be generated or installed
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64": [0m
-Step #3 - "compile-afl-address-x86_64": -- 
-Step #3 - "compile-afl-address-x86_64": -- Libtiff is now configured for Linux-5.10.0-32-cloud-amd64
-Step #3 - "compile-afl-address-x86_64": -- 
-Step #3 - "compile-afl-address-x86_64": --   Libtiff release version       is not equal to build version!
-Step #3 - "compile-afl-address-x86_64": --   Libtiff build version:       4.7.1
-Step #3 - "compile-afl-address-x86_64": --   Libtiff library version:     6.2.0
-Step #3 - "compile-afl-address-x86_64": --   Libtiff release date:        20250911
-Step #3 - "compile-afl-address-x86_64": -- 
-Step #3 - "compile-afl-address-x86_64": --   Installation directory:             /usr/local
-Step #3 - "compile-afl-address-x86_64": --   Documentation directory:            share/doc/GROK
-Step #3 - "compile-afl-address-x86_64": --   C compiler:                         /src/aflplusplus/afl-clang-fast
-Step #3 - "compile-afl-address-x86_64": --   C++ compiler:                       /src/aflplusplus/afl-clang-fast++
-Step #3 - "compile-afl-address-x86_64": --   Build shared libraries:             OFF
-Step #3 - "compile-afl-address-x86_64": --   Build tools:                        ON
-Step #3 - "compile-afl-address-x86_64": --   Build tests:                        ON
-Step #3 - "compile-afl-address-x86_64": --   Build contrib:                      ON
-Step #3 - "compile-afl-address-x86_64": --   Build docs:                         ON
-Step #3 - "compile-afl-address-x86_64": --   Build deprecated features:          OFF
-Step #3 - "compile-afl-address-x86_64": --   Enable linker symbol versioning:    TRUE
-Step #3 - "compile-afl-address-x86_64": --   Support Microsoft Document Imaging: ON
-Step #3 - "compile-afl-address-x86_64": --   Use win32 IO:                       OFF
-Step #3 - "compile-afl-address-x86_64": -- 
-Step #3 - "compile-afl-address-x86_64": --  Support for internal codecs:
-Step #3 - "compile-afl-address-x86_64": --   CCITT Group 3 & 4 algorithms:       ON
-Step #3 - "compile-afl-address-x86_64": --   Macintosh PackBits algorithm:       ON
-Step #3 - "compile-afl-address-x86_64": --   LZW algorithm:                      ON
-Step #3 - "compile-afl-address-x86_64": --   ThunderScan 4-bit RLE algorithm:    ON
-Step #3 - "compile-afl-address-x86_64": --   NeXT 2-bit RLE algorithm:           ON
-Step #3 - "compile-afl-address-x86_64": --   LogLuv high dynamic range encoding: ON
-Step #3 - "compile-afl-address-x86_64": -- 
-Step #3 - "compile-afl-address-x86_64": --  Support for external codecs:
-Step #3 - "compile-afl-address-x86_64": --   ZLIB support:                       Requested:OFF Availability:FALSE Support:FALSE
-Step #3 - "compile-afl-address-x86_64": --   libdeflate support:                 Requested:OFF Availability:FALSE Support:FALSE (Depends on ZLIB Support)
-Step #3 - "compile-afl-address-x86_64": --   Pixar log-format algorithm:         Requested:OFF Availability:FALSE Support:FALSE (Depends on ZLIB Support)
-Step #3 - "compile-afl-address-x86_64": --   JPEG support:                       Requested:OFF Availability:FALSE Support:FALSE
-Step #3 - "compile-afl-address-x86_64": --   Old JPEG support:                   Requested:OFF Availability:FALSE Support:FALSE (Depends on JPEG Support)
-Step #3 - "compile-afl-address-x86_64": --   JPEG 8/12 bit dual mode:            Requested:OFF Availability:FALSE Support:FALSE
-Step #3 - "compile-afl-address-x86_64": --   ISO JBIG support:                   Requested:OFF Availability:FALSE Support:FALSE
-Step #3 - "compile-afl-address-x86_64": --   LERC support:                       Requested:OFF Availability:FALSE Support:FALSE (Depends on ZLIB Support)
-Step #3 - "compile-afl-address-x86_64": --   LZMA2 support:                      Requested:OFF Availability:FALSE Support:FALSE
-Step #3 - "compile-afl-address-x86_64": --   ZSTD support:                       Requested:OFF Availability:FALSE Support:FALSE
-Step #3 - "compile-afl-address-x86_64": --   WEBP support:                       Requested:OFF Availability:FALSE Support:FALSE
-Step #3 - "compile-afl-address-x86_64": -- 
-Step #3 - "compile-afl-address-x86_64": --   C++ support:                        ON (requested) TRUE (availability)
-Step #3 - "compile-afl-address-x86_64": -- 
-Step #3 - "compile-afl-address-x86_64": --   OpenGL support:                     Requested:OFF Availability:FALSE Support:FALSE
-Step #3 - "compile-afl-address-x86_64": -- 
-Step #3 - "compile-afl-address-x86_64": -- We will build LCMS2 library
-Step #3 - "compile-afl-address-x86_64": -- System libcurl not found or GRK_BUILD_CURL is ON. Building from Git...
-Step #3 - "compile-afl-address-x86_64": -- Using CMake version 3.29.2
-Step #3 - "compile-afl-address-x86_64": -- curl version=[8.12.1-DEV]
-Step #3 - "compile-afl-address-x86_64": -- CMake platform flags: UNIX
-Step #3 - "compile-afl-address-x86_64": -- Picky compiler options: -Werror-implicit-function-declaration -Wextra -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wshift-sign-overflow -Wshorten-64-to-32 -Wformat=2 -Wlanguage-extension-token -Wdouble-promotion -Wenum-conversion -Wheader-guard -Wpragmas -Wsometimes-uninitialized -Wunused-const-variable -Wcomma -Wmissing-variable-declarations -Wassign-enum -Wextra-semi-stmt -Wimplicit-fallthrough
-Step #3 - "compile-afl-address-x86_64": -- Found Perl: /usr/bin/perl (found version "5.30.0")
-Step #3 - "compile-afl-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-Step #3 - "compile-afl-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
-Step #3 - "compile-afl-address-x86_64": -- Found Threads: TRUE
-Step #3 - "compile-afl-address-x86_64": -- Looking for connect in socket
-Step #3 - "compile-afl-address-x86_64": -- Looking for connect in socket - not found
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_SOCKADDR_IN6_SIN6_ADDR
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_SOCKADDR_IN6_SIN6_ADDR - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID
-Step #3 - "compile-afl-address-x86_64": -- Performing Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID - Success
-Step #3 - "compile-afl-address-x86_64": -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")
-Step #3 - "compile-afl-address-x86_64": -- Looking for OPENSSL_IS_BORINGSSL
-Step #3 - "compile-afl-address-x86_64": -- Looking for OPENSSL_IS_BORINGSSL - not found
-Step #3 - "compile-afl-address-x86_64": -- Looking for OPENSSL_IS_AWSLC
-Step #3 - "compile-afl-address-x86_64": -- Looking for OPENSSL_IS_AWSLC - not found
-Step #3 - "compile-afl-address-x86_64": -- Looking for LIBRESSL_VERSION_NUMBER
-Step #3 - "compile-afl-address-x86_64": -- Looking for LIBRESSL_VERSION_NUMBER - not found
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find Brotli (missing: BROTLI_INCLUDE_DIR BROTLIDEC_LIBRARY BROTLICOMMON_LIBRARY) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find Zstd (missing: ZSTD_INCLUDE_DIR ZSTD_LIBRARY) 
-Step #3 - "compile-afl-address-x86_64": -- Looking for SSL_set0_wbio
-Step #3 - "compile-afl-address-x86_64": -- Looking for SSL_set0_wbio - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for SSL_CTX_set_srp_username
-Step #3 - "compile-afl-address-x86_64": -- Looking for SSL_CTX_set_srp_username - found
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find NGHTTP2 (missing: NGHTTP2_INCLUDE_DIR NGHTTP2_LIBRARY) 
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find LDAP (missing: LDAP_INCLUDE_DIR LDAP_LIBRARY LDAP_LBER_LIBRARY) 
-Step #3 - "compile-afl-address-x86_64": -- LDAP not found. CURL_DISABLE_LDAP set ON
-Step #3 - "compile-afl-address-x86_64": -- LDAP needs to be enabled to support LDAPS
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find Libidn2 (missing: LIBIDN2_INCLUDE_DIR LIBIDN2_LIBRARY) 
-Step #3 - "compile-afl-address-x86_64": [31mCMake Error at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
-Step #3 - "compile-afl-address-x86_64":   Could NOT find Libpsl (missing: LIBPSL_INCLUDE_DIR LIBPSL_LIBRARY)
-Step #3 - "compile-afl-address-x86_64": Call Stack (most recent call first):
-Step #3 - "compile-afl-address-x86_64":   /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:600 (_FPHSA_FAILURE_MESSAGE)
-Step #3 - "compile-afl-address-x86_64":   build/_deps/curl-src/CMake/FindLibpsl.cmake:69 (find_package_handle_standard_args)
-Step #3 - "compile-afl-address-x86_64":   build/_deps/curl-src/CMakeLists.txt:1295 (find_package)
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64": [0m
-Step #3 - "compile-afl-address-x86_64": -- Configuring incomplete, errors occurred!
-Step #3 - "compile-afl-address-x86_64": ********************************************************************************
-Step #3 - "compile-afl-address-x86_64": Failed to build.
-Step #3 - "compile-afl-address-x86_64": To reproduce, run:
-Step #3 - "compile-afl-address-x86_64": python infra/helper.py build_image grok
-Step #3 - "compile-afl-address-x86_64": python infra/helper.py build_fuzzers --sanitizer address --engine afl --architecture x86_64 grok
-Step #3 - "compile-afl-address-x86_64": ********************************************************************************
-Finished Step #3 - "compile-afl-address-x86_64"
-ERROR
-ERROR: build step 3 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

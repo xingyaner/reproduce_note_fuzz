@@ -1,528 +1,0 @@
-starting build "ed688e96-b45b-4101-b062-8ed375294061"
-
-FETCHSOURCE
-BUILD
-Starting Step #0
-Step #0: Already have image (with digest): gcr.io/cloud-builders/git
-Step #0: Cloning into 'oss-fuzz'...
-Finished Step #0
-Starting Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b"
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Sending build context to Docker daemon  13.82kB
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Step 1/8 : FROM gcr.io/oss-fuzz-base/base-builder
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": latest: Pulling from oss-fuzz-base/base-builder
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b549f31133a9: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 61c87a8f53ed: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": dbb156ca5ae5: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 252ebe4668e7: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 66abab02c98f: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 632f6ee605ca: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": a58d2908dc1f: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": f9f73e06f82c: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c3c989c3f6f9: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 8795331bc9fb: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0fcbdfb77910: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": ca0130ec3c0a: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0a994d0b6a8f: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0a86bfa68d7e: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 37501485030b: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 60267cc39b60: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b6738b929a8f: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 692910073136: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 285f2607afec: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 252ebe4668e7: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": baa634edb812: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": d0e0690cc9a9: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 14ae6d092f6d: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 841702bff6b9: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 00d9e9a06cda: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 66abab02c98f: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 29a21922d686: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b4420e0cc7a1: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": de1a9889ec9c: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": fcb0a2265748: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": ee54430eea80: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 632f6ee605ca: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 25f7f410fa90: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 07ff84378430: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 39f19e79ecf9: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": a58d2908dc1f: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": dd4e86a17bce: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": f9f73e06f82c: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c5b765123f5f: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 63600f034007: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 4c2248f752fd: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c3c989c3f6f9: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c55b989aef9e: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": f0dd648081f5: Pulling fs layer
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 37501485030b: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 8795331bc9fb: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 60267cc39b60: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0fcbdfb77910: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 285f2607afec: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": ca0130ec3c0a: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b6738b929a8f: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": baa634edb812: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0a994d0b6a8f: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 692910073136: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0a86bfa68d7e: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": d0e0690cc9a9: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 14ae6d092f6d: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 841702bff6b9: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 39f19e79ecf9: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 00d9e9a06cda: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 29a21922d686: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c55b989aef9e: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": dd4e86a17bce: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": f0dd648081f5: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": ee54430eea80: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": de1a9889ec9c: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 4c2248f752fd: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 63600f034007: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": fcb0a2265748: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 25f7f410fa90: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 07ff84378430: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b4420e0cc7a1: Waiting
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": dbb156ca5ae5: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": dbb156ca5ae5: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 252ebe4668e7: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 252ebe4668e7: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 66abab02c98f: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 61c87a8f53ed: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 61c87a8f53ed: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": a58d2908dc1f: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": a58d2908dc1f: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": f9f73e06f82c: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": f9f73e06f82c: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b549f31133a9: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b549f31133a9: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b549f31133a9: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 8795331bc9fb: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 8795331bc9fb: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0fcbdfb77910: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0fcbdfb77910: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": ca0130ec3c0a: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": ca0130ec3c0a: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c3c989c3f6f9: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c3c989c3f6f9: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0a994d0b6a8f: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0a994d0b6a8f: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0a86bfa68d7e: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 37501485030b: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 37501485030b: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 60267cc39b60: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 60267cc39b60: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b6738b929a8f: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b6738b929a8f: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 692910073136: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 692910073136: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 285f2607afec: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 285f2607afec: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": baa634edb812: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": baa634edb812: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": d0e0690cc9a9: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 14ae6d092f6d: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 14ae6d092f6d: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 00d9e9a06cda: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 00d9e9a06cda: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 841702bff6b9: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 841702bff6b9: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 29a21922d686: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 29a21922d686: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b4420e0cc7a1: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b4420e0cc7a1: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": de1a9889ec9c: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 61c87a8f53ed: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": fcb0a2265748: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": fcb0a2265748: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": ee54430eea80: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": ee54430eea80: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": dbb156ca5ae5: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 07ff84378430: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 07ff84378430: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 25f7f410fa90: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 25f7f410fa90: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 39f19e79ecf9: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 39f19e79ecf9: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": dd4e86a17bce: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": dd4e86a17bce: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c5b765123f5f: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c5b765123f5f: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 63600f034007: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 4c2248f752fd: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 4c2248f752fd: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": f0dd648081f5: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": f0dd648081f5: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c55b989aef9e: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c55b989aef9e: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 252ebe4668e7: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 66abab02c98f: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 632f6ee605ca: Verifying Checksum
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 632f6ee605ca: Download complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 632f6ee605ca: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": a58d2908dc1f: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": f9f73e06f82c: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c3c989c3f6f9: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 8795331bc9fb: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0fcbdfb77910: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": ca0130ec3c0a: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0a994d0b6a8f: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 0a86bfa68d7e: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 37501485030b: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 60267cc39b60: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b6738b929a8f: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 692910073136: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 285f2607afec: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": baa634edb812: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": d0e0690cc9a9: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 14ae6d092f6d: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 841702bff6b9: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 00d9e9a06cda: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 29a21922d686: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": b4420e0cc7a1: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": de1a9889ec9c: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": fcb0a2265748: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": ee54430eea80: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 25f7f410fa90: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 07ff84378430: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 39f19e79ecf9: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": dd4e86a17bce: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c5b765123f5f: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 63600f034007: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": 4c2248f752fd: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": c55b989aef9e: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": f0dd648081f5: Pull complete
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Digest: sha256:0c36b21136c3b4c843d2fefc9cc2da0fb5441d26c92fc686a7011f69744f0ce7
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> 14adb96c91d8
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Step 2/8 : RUN git clone https://github.com/ligurio/lua-c-api-tests testdir
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> Running in 6d9cf7228fd8
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": [91mCloning into 'testdir'...
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": [0mRemoving intermediate container 6d9cf7228fd8
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> 7b17b7036eb8
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Step 3/8 : WORKDIR testdir
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> Running in 82b08839654f
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Removing intermediate container 82b08839654f
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> 16b3efbdc605
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Step 4/8 : RUN git clone --depth 1 --jobs $(nproc) https://github.com/ligurio/lua-c-api-corpus corpus_dir
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> Running in ac1fe7cae199
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": [91mCloning into 'corpus_dir'...
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": [0m[91mUpdating files:   6% (22149/363938)[0m[91mUpdating files:   7% (25476/363938)[0m[91mUpdating files:   8% (29116/363938)[0m[91mUpdating files:   8% (32402/363938)[0m[91mUpdating files:   9% (32755/363938)[0m[91mUpdating files:  10% (36394/363938)[0m[91mUpdating files:  11% (40034/363938)[0m[91mUpdating files:  11% (42630/363938)[0m[91mUpdating files:  12% (43673/363938)[0m[91mUpdating files:  13% (47312/363938)[0m[91mUpdating files:  14% (50952/363938)[0m[91mUpdating files:  15% (54591/363938)[0m[91mUpdating files:  16% (58231/363938)[0m[91mUpdating files:  16% (58709/363938)[0m[91mUpdating files:  17% (61870/363938)[0m[91mUpdating files:  18% (65509/363938)[0m[91mUpdating files:  19% (69149/363938)[0m[91mUpdating files:  19% (72524/363938)[0m[91mUpdating files:  20% (72788/363938)[0m[91mUpdating files:  21% (76427/363938)[0m[91mUpdating files:  21% (79433/363938)[0m[91mUpdating files:  22% (80067/363938)[0m[91mUpdating files:  23% (83706/363938)[0m[91mUpdating files:  23% (86423/363938)[0m[91mUpdating files:  24% (87346/363938)[0m[91mUpdating files:  25% (90985/363938)[0m[91mUpdating files:  25% (93448/363938)[0m[91mUpdating files:  26% (94624/363938)[0m[91mUpdating files:  27% (98264/363938)[0m[91mUpdating files:  27% (100504/363938)[0m[91mUpdating files:  28% (101903/363938)[0m[91mUpdating files:  29% (105543/363938)[0m[91mUpdating files:  29% (107448/363938)[0m[91mUpdating files:  30% (109182/363938)[0m[91mUpdating files:  31% (112821/363938)[0m[91mUpdating files:  31% (114290/363938)[0m[91mUpdating files:  32% (116461/363938)[0m[91mUpdating files:  33% (120100/363938)[0m[91mUpdating files:  33% (121271/363938)[0m[91mUpdating files:  34% (123739/363938)[0m[91mUpdating files:  35% (127379/363938)[0m[91mUpdating files:  35% (128068/363938)[0m[91mUpdating files:  36% (131018/363938)[0m[91mUpdating files:  36% (134261/363938)[0m[91mUpdating files:  37% (134658/363938)[0m[91mUpdating files:  38% (138297/363938)[0m[91mUpdating files:  38% (140358/363938)[0m[91mUpdating files:  39% (141936/363938)[0m[91mUpdating files:  40% (145576/363938)[0m[91mUpdating files:  40% (146665/363938)[0m[91mUpdating files:  41% (149215/363938)[0m[91mUpdating files:  42% (152854/363938)[0m[91mUpdating files:  42% (153120/363938)[0m[91mUpdating files:  43% (156494/363938)[0m[91mUpdating files:  43% (159455/363938)[0m[91mUpdating files:  44% (160133/363938)[0m[91mUpdating files:  45% (163773/363938)[0m[91mUpdating files:  45% (165538/363938)[0m[91mUpdating files:  46% (167412/363938)[0m[91mUpdating files:  47% (171051/363938)[0m[91mUpdating files:  47% (171852/363938)[0m[91mUpdating files:  48% (174691/363938)[0m[91mUpdating files:  48% (178012/363938)[0m[91mUpdating files:  49% (178330/363938)[0m[91mUpdating files:  50% (181969/363938)[0m[91mUpdating files:  50% (184128/363938)[0m[91mUpdating files:  51% (185609/363938)[0m[91mUpdating files:  52% (189248/363938)[0m[91mUpdating files:  52% (190402/363938)[0m[91mUpdating files:  53% (192888/363938)[0m[91mUpdating files:  53% (196466/363938)[0m[91mUpdating files:  54% (196527/363938)[0m[91mUpdating files:  55% (200166/363938)[0m[91mUpdating files:  55% (202729/363938)[0m[91mUpdating files:  56% (203806/363938)[0m[91mUpdating files:  57% (207445/363938)[0m[91mUpdating files:  57% (208949/363938)[0m[91mUpdating files:  58% (211085/363938)[0m[91mUpdating files:  59% (214724/363938)[0m[91mUpdating files:  59% (214949/363938)[0m[91mUpdating files:  60% (218363/363938)[0m[91mUpdating files:  60% (220998/363938)[0m[91mUpdating files:  61% (222003/363938)[0m[91mUpdating files:  62% (225642/363938)[0m[91mUpdating files:  62% (226811/363938)[0m[91mUpdating files:  63% (229281/363938)[0m[91mUpdating files:  63% (232728/363938)[0m[91mUpdating files:  64% (232921/363938)[0m[91mUpdating files:  65% (236560/363938)[0m[91mUpdating files:  66% (240200/363938)[0m[91mUpdating files:  67% (243839/363938)[0m[91mUpdating files:  67% (244740/363938)[0m[91mUpdating files:  68% (247478/363938)[0m[91mUpdating files:  69% (251118/363938)[0m[91mUpdating files:  70% (254757/363938)[0m[91mUpdating files:  70% (257366/363938)[0m[91mUpdating files:  71% (258396/363938)[0m[91mUpdating files:  72% (262036/363938)[0m[91mUpdating files:  73% (265675/363938)[0m[91mUpdating files:  74% (269315/363938)[0m[91mUpdating files:  74% (270400/363938)[0m[91mUpdating files:  75% (272954/363938)[0m[91mUpdating files:  76% (276593/363938)[0m[91mUpdating files:  77% (280233/363938)[0m[91mUpdating files:  78% (283872/363938)[0m[91mUpdating files:  78% (285195/363938)[0m[91mUpdating files:  79% (287512/363938)[0m[91mUpdating files:  80% (291151/363938)[0m[91mUpdating files:  81% (294790/363938)[0m[91mUpdating files:  82% (298430/363938)[0m[91mUpdating files:  83% (302069/363938)[0m[91mUpdating files:  83% (304926/363938)[0m[91mUpdating files:  84% (305708/363938)[0m[91mUpdating files:  85% (309348/363938)[0m[91mUpdating files:  86% (312987/363938)[0m[91mUpdating files:  87% (316627/363938)[0m[91mUpdating files:  88% (320266/363938)[0m[91mUpdating files:  88% (322588/363938)[0m[91mUpdating files:  89% (323905/363938)[0m[91mUpdating files:  90% (327545/363938)[0m[91mUpdating files:  91% (331184/363938)[0m[91mUpdating files:  92% (334823/363938)[0m[91mUpdating files:  92% (337620/363938)[0m[91mUpdating files:  93% (338463/363938)[0m[91mUpdating files:  94% (342102/363938)[0m[91mUpdating files:  95% (345742/363938)[0m[91mUpdating files:  96% (349381/363938)[0m[91mUpdating files:  97% (353020/363938)[0m[91mUpdating files:  97% (353370/363938)[0m[91mUpdating files:  98% (356660/363938)[0m[91mUpdating files:  99% (360299/363938)[0m[91mUpdating files: 100% (363938/363938)Updating files: 100% (363938/363938), done.
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": [0mRemoving intermediate container ac1fe7cae199
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> 33b9f5628c23
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Step 5/8 : COPY build.sh testdir/
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> 2b05e7f2297a
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Step 6/8 : WORKDIR $SRC
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> Running in af2ca2ff43ca
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Removing intermediate container af2ca2ff43ca
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> c4deee43d171
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Step 7/8 : COPY build.sh $SRC/
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> f27b71be5342
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Step 8/8 : COPY fuzz_lua.c $SRC/
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b":  ---> 02dd07b72c18
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Successfully built 02dd07b72c18
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Successfully tagged gcr.io/oss-fuzz/lua:latest
-Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/lua:latest
-Finished Step #1 - "build-1e830390-53f8-4d25-a09f-b5b74a0c037b"
-Starting Step #2 - "srcmap"
-Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/lua
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + SRCMAP=/tmp/fileCYiIzO
-Step #2 - "srcmap": + echo '{}'
-Step #2 - "srcmap": + PATHS_TO_SCAN=/src
-Step #2 - "srcmap": + [[ c == \g\o ]]
-Step #2 - "srcmap": ++ find /src -name .git -type d
-Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
-Step #2 - "srcmap": ++ dirname /src/testdir/.git
-Step #2 - "srcmap": + GIT_DIR=/src/testdir
-Step #2 - "srcmap": + cd /src/testdir
-Step #2 - "srcmap": ++ git config --get remote.origin.url
-Step #2 - "srcmap": + GIT_URL=https://github.com/ligurio/lua-c-api-tests
-Step #2 - "srcmap": ++ git rev-parse HEAD
-Step #2 - "srcmap": + GIT_REV=db2091f5ff131916e06ba509f418f1e0c32d1d10
-Step #2 - "srcmap": + jq_inplace /tmp/fileCYiIzO '."/src/testdir" = { type: "git", url: "https://github.com/ligurio/lua-c-api-tests", rev: "db2091f5ff131916e06ba509f418f1e0c32d1d10" }'
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + F=/tmp/file31Pq2b
-Step #2 - "srcmap": + cat /tmp/fileCYiIzO
-Step #2 - "srcmap": + jq '."/src/testdir" = { type: "git", url: "https://github.com/ligurio/lua-c-api-tests", rev: "db2091f5ff131916e06ba509f418f1e0c32d1d10" }'
-Step #2 - "srcmap": + mv /tmp/file31Pq2b /tmp/fileCYiIzO
-Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
-Step #2 - "srcmap": ++ dirname /src/testdir/corpus_dir/.git
-Step #2 - "srcmap": + GIT_DIR=/src/testdir/corpus_dir
-Step #2 - "srcmap": + cd /src/testdir/corpus_dir
-Step #2 - "srcmap": ++ git config --get remote.origin.url
-Step #2 - "srcmap": + GIT_URL=https://github.com/ligurio/lua-c-api-corpus
-Step #2 - "srcmap": ++ git rev-parse HEAD
-Step #2 - "srcmap": + GIT_REV=f560274a0cf6dbb090ee098c73de8ab615d5a131
-Step #2 - "srcmap": + jq_inplace /tmp/fileCYiIzO '."/src/testdir/corpus_dir" = { type: "git", url: "https://github.com/ligurio/lua-c-api-corpus", rev: "f560274a0cf6dbb090ee098c73de8ab615d5a131" }'
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + F=/tmp/fileNSlT0F
-Step #2 - "srcmap": + cat /tmp/fileCYiIzO
-Step #2 - "srcmap": + jq '."/src/testdir/corpus_dir" = { type: "git", url: "https://github.com/ligurio/lua-c-api-corpus", rev: "f560274a0cf6dbb090ee098c73de8ab615d5a131" }'
-Step #2 - "srcmap": + mv /tmp/fileNSlT0F /tmp/fileCYiIzO
-Step #2 - "srcmap": ++ find /src -name .svn -type d
-Step #2 - "srcmap": ++ find /src -name .hg -type d
-Step #2 - "srcmap": + '[' '' '!=' '' ']'
-Step #2 - "srcmap": + cat /tmp/fileCYiIzO
-Step #2 - "srcmap": + rm /tmp/fileCYiIzO
-Step #2 - "srcmap": {
-Step #2 - "srcmap":   "/src/testdir": {
-Step #2 - "srcmap":     "type": "git",
-Step #2 - "srcmap":     "url": "https://github.com/ligurio/lua-c-api-tests",
-Step #2 - "srcmap":     "rev": "db2091f5ff131916e06ba509f418f1e0c32d1d10"
-Step #2 - "srcmap":   },
-Step #2 - "srcmap":   "/src/testdir/corpus_dir": {
-Step #2 - "srcmap":     "type": "git",
-Step #2 - "srcmap":     "url": "https://github.com/ligurio/lua-c-api-corpus",
-Step #2 - "srcmap":     "rev": "f560274a0cf6dbb090ee098c73de8ab615d5a131"
-Step #2 - "srcmap":   }
-Step #2 - "srcmap": }
-Finished Step #2 - "srcmap"
-Starting Step #3 - "compile-afl-address-x86_64"
-Step #3 - "compile-afl-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-afl-address-x86_64": vm.mmap_rnd_bits = 28
-Step #3 - "compile-afl-address-x86_64": Copying precompiled AFL++
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64": AFL++ target compilation setup:
-Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_UNKNOWN_ENVS=1
-Step #3 - "compile-afl-address-x86_64": AFL_QUIET=1
-Step #3 - "compile-afl-address-x86_64": AFL_IGNORE_PROBLEMS=1
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64":  done.
-Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-afl-address-x86_64": CC=/src/aflplusplus/afl-clang-fast
-Step #3 - "compile-afl-address-x86_64": CXX=/src/aflplusplus/afl-clang-fast++
-Step #3 - "compile-afl-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope 
-Step #3 - "compile-afl-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope  -stdlib=libc++
-Step #3 - "compile-afl-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
-Step #3 - "compile-afl-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-afl-address-x86_64": + '[' address == introspector ']'
-Step #3 - "compile-afl-address-x86_64": + PACKAGES='build-essential ninja-build cmake make'
-Step #3 - "compile-afl-address-x86_64": + '[' x86_64 = i386 ']'
-Step #3 - "compile-afl-address-x86_64": + '[' x86_64 = aarch64 ']'
-Step #3 - "compile-afl-address-x86_64": + PACKAGES='build-essential ninja-build cmake make zlib1g-dev libreadline-dev libunwind-dev'
-Step #3 - "compile-afl-address-x86_64": + apt-get update
-Step #3 - "compile-afl-address-x86_64": 0% [Working]            Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
-Step #3 - "compile-afl-address-x86_64": 0% [Waiting for headers] [1 InRelease 14.2 kB/128 kB 11%]                                                         Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
-Step #3 - "compile-afl-address-x86_64":                                                          0% [1 InRelease 14.2 kB/128 kB 11%]                                   Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
-Step #3 - "compile-afl-address-x86_64": 0% [3 InRelease 12.7 kB/128 kB 10%] [1 InRelease 17.1 kB/128 kB 13%]0% [3 InRelease 15.6 kB/128 kB 12%] [1 InRelease 25.8 kB/128 kB 20%]                                                                    0% [3 InRelease 67.7 kB/128 kB 53%]                                   0% [Working]0% [Waiting for headers]                        Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
-Step #3 - "compile-afl-address-x86_64": 0% [4 InRelease 2588 B/128 kB 2%]0% [4 InRelease 18.5 kB/128 kB 14%]                                   0% [Working]100% [Working]              Fetched 383 kB in 1s (388 kB/s)
-Step #3 - "compile-afl-address-x86_64": Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 2%Reading package lists... 2%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 28%Reading package lists... 28%Reading package lists... 41%Reading package lists... 41%Reading package lists... 41%Reading package lists... 41%Reading package lists... 42%Reading package lists... 42%Reading package lists... 50%Reading package lists... 52%Reading package lists... 52%Reading package lists... 55%Reading package lists... 55%Reading package lists... 66%Reading package lists... 66%Reading package lists... 66%Reading package lists... 66%Reading package lists... 69%Reading package lists... 69%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 82%Reading package lists... 82%Reading package lists... 84%Reading package lists... 84%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-Step #3 - "compile-afl-address-x86_64": + apt-get install -y build-essential ninja-build cmake make zlib1g-dev libreadline-dev libunwind-dev
-Step #3 - "compile-afl-address-x86_64": Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 2%Reading package lists... 2%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 28%Reading package lists... 28%Reading package lists... 41%Reading package lists... 41%Reading package lists... 41%Reading package lists... 41%Reading package lists... 42%Reading package lists... 42%Reading package lists... 52%Reading package lists... 52%Reading package lists... 52%Reading package lists... 55%Reading package lists... 55%Reading package lists... 66%Reading package lists... 66%Reading package lists... 66%Reading package lists... 66%Reading package lists... 69%Reading package lists... 69%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 82%Reading package lists... 82%Reading package lists... 84%Reading package lists... 84%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-Step #3 - "compile-afl-address-x86_64": Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 91%Building dependency tree       
-Step #3 - "compile-afl-address-x86_64": Reading state information... 0%Reading state information... 0%Reading state information... Done
-Step #3 - "compile-afl-address-x86_64": make is already the newest version (4.2.1-1.2).
-Step #3 - "compile-afl-address-x86_64": make set to manually installed.
-Step #3 - "compile-afl-address-x86_64": build-essential is already the newest version (12.8ubuntu1.1).
-Step #3 - "compile-afl-address-x86_64": The following packages were automatically installed and are no longer required:
-Step #3 - "compile-afl-address-x86_64":   autotools-dev libsigsegv2 m4
-Step #3 - "compile-afl-address-x86_64": Use 'apt autoremove' to remove them.
-Step #3 - "compile-afl-address-x86_64": The following additional packages will be installed:
-Step #3 - "compile-afl-address-x86_64":   cmake-data libarchive13 libicu66 libjsoncpp1 liblzma-dev libncurses-dev
-Step #3 - "compile-afl-address-x86_64":   librhash0 libunwind8 libuv1 libxml2
-Step #3 - "compile-afl-address-x86_64": Suggested packages:
-Step #3 - "compile-afl-address-x86_64":   cmake-doc lrzip liblzma-doc ncurses-doc readline-doc python3
-Step #3 - "compile-afl-address-x86_64": The following NEW packages will be installed:
-Step #3 - "compile-afl-address-x86_64":   cmake cmake-data libarchive13 libicu66 libjsoncpp1 liblzma-dev
-Step #3 - "compile-afl-address-x86_64":   libncurses-dev libreadline-dev librhash0 libunwind-dev libunwind8 libuv1
-Step #3 - "compile-afl-address-x86_64":   libxml2 ninja-build zlib1g-dev
-Step #3 - "compile-afl-address-x86_64": 0 upgraded, 15 newly installed, 0 to remove and 0 not upgraded.
-Step #3 - "compile-afl-address-x86_64": Need to get 16.4 MB of archives.
-Step #3 - "compile-afl-address-x86_64": After this operation, 74.1 MB of additional disk space will be used.
-Step #3 - "compile-afl-address-x86_64": 0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
-Step #3 - "compile-afl-address-x86_64": 0% [1 libicu66 12.7 kB/8515 kB 0%]                                  1% [1 libicu66 281 kB/8515 kB 3%]32% [1 libicu66 6598 kB/8515 kB 77%]                                    43% [Working]             Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
-Step #3 - "compile-afl-address-x86_64": 43% [2 libxml2 48.9 kB/640 kB 8%]                                 47% [Waiting for headers]                         Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.5 [80.9 kB]
-Step #3 - "compile-afl-address-x86_64": 47% [3 libuv1 36.9 kB/80.9 kB 46%]                                  49% [Waiting for headers]                         Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake-data all 3.16.3-1ubuntu1.20.04.1 [1613 kB]
-Step #3 - "compile-afl-address-x86_64": 49% [4 cmake-data 45.1 kB/1613 kB 3%]                                     58% [Waiting for headers]                         Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libarchive13 amd64 3.4.0-2ubuntu1.5 [327 kB]
-Step #3 - "compile-afl-address-x86_64": 58% [5 libarchive13 28.7 kB/327 kB 9%]                                      61% [Waiting for headers]                         Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libjsoncpp1 amd64 1.7.4-3.1ubuntu2 [75.6 kB]
-Step #3 - "compile-afl-address-x86_64": 61% [6 libjsoncpp1 20.7 kB/75.6 kB 27%]                                       63% [Waiting for headers]                         Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 librhash0 amd64 1.3.9-1 [113 kB]
-Step #3 - "compile-afl-address-x86_64": 63% [7 librhash0 4096 B/113 kB 4%]                                  65% [Waiting for headers]                         Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cmake amd64 3.16.3-1ubuntu1.20.04.1 [3668 kB]
-Step #3 - "compile-afl-address-x86_64": 65% [8 cmake 16.4 kB/3668 kB 0%]                                84% [Waiting for headers]                         Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libncurses-dev amd64 6.2-0ubuntu2.1 [340 kB]
-Step #3 - "compile-afl-address-x86_64": 84% [9 libncurses-dev 37.7 kB/340 kB 11%]                                         87% [Waiting for headers]                         Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 libreadline-dev amd64 8.0-4 [141 kB]
-Step #3 - "compile-afl-address-x86_64": 87% [10 libreadline-dev 28.7 kB/141 kB 20%]                                           89% [Waiting for headers]                         Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libunwind8 amd64 1.2.1-9ubuntu0.1 [47.7 kB]
-Step #3 - "compile-afl-address-x86_64": 89% [11 libunwind8 15.0 kB/47.7 kB 31%]                                       90% [Working]             Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 liblzma-dev amd64 5.2.4-1ubuntu1.1 [147 kB]
-Step #3 - "compile-afl-address-x86_64": 90% [12 liblzma-dev 14.2 kB/147 kB 10%]                                       92% [Working]             Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libunwind-dev amd64 1.2.1-9ubuntu0.1 [472 kB]
-Step #3 - "compile-afl-address-x86_64": 92% [13 libunwind-dev 2613 B/472 kB 1%]                                       96% [Waiting for headers]                         Get:14 http://archive.ubuntu.com/ubuntu focal/universe amd64 ninja-build amd64 1.10.0-1build1 [107 kB]
-Step #3 - "compile-afl-address-x86_64": 96% [14 ninja-build 794 B/107 kB 1%]                                    98% [Waiting for headers]                         Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.5 [155 kB]
-Step #3 - "compile-afl-address-x86_64": 98% [15 zlib1g-dev 1981 B/155 kB 1%]                                    100% [Working]              Fetched 16.4 MB in 3s (5330 kB/s)
-Step #3 - "compile-afl-address-x86_64": debconf: delaying package configuration, since apt-utils is not installed
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package libicu66:amd64.
-Step #3 - "compile-afl-address-x86_64": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../00-libicu66_66.1-2ubuntu2.1_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package libxml2:amd64.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../01-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package libuv1:amd64.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../02-libuv1_1.34.2-1ubuntu1.5_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking libuv1:amd64 (1.34.2-1ubuntu1.5) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package cmake-data.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../03-cmake-data_3.16.3-1ubuntu1.20.04.1_all.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking cmake-data (3.16.3-1ubuntu1.20.04.1) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package libarchive13:amd64.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../04-libarchive13_3.4.0-2ubuntu1.5_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package libjsoncpp1:amd64.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../05-libjsoncpp1_1.7.4-3.1ubuntu2_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package librhash0:amd64.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../06-librhash0_1.3.9-1_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking librhash0:amd64 (1.3.9-1) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package cmake.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../07-cmake_3.16.3-1ubuntu1.20.04.1_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking cmake (3.16.3-1ubuntu1.20.04.1) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package libncurses-dev:amd64.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../08-libncurses-dev_6.2-0ubuntu2.1_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking libncurses-dev:amd64 (6.2-0ubuntu2.1) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package libreadline-dev:amd64.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../09-libreadline-dev_8.0-4_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking libreadline-dev:amd64 (8.0-4) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package libunwind8:amd64.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../10-libunwind8_1.2.1-9ubuntu0.1_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking libunwind8:amd64 (1.2.1-9ubuntu0.1) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package liblzma-dev:amd64.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../11-liblzma-dev_5.2.4-1ubuntu1.1_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking liblzma-dev:amd64 (5.2.4-1ubuntu1.1) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package libunwind-dev:amd64.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../12-libunwind-dev_1.2.1-9ubuntu0.1_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking libunwind-dev:amd64 (1.2.1-9ubuntu0.1) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package ninja-build.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../13-ninja-build_1.10.0-1build1_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking ninja-build (1.10.0-1build1) ...
-Step #3 - "compile-afl-address-x86_64": Selecting previously unselected package zlib1g-dev:amd64.
-Step #3 - "compile-afl-address-x86_64": Preparing to unpack .../14-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu1.5_amd64.deb ...
-Step #3 - "compile-afl-address-x86_64": Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
-Step #3 - "compile-afl-address-x86_64": Setting up libncurses-dev:amd64 (6.2-0ubuntu2.1) ...
-Step #3 - "compile-afl-address-x86_64": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
-Step #3 - "compile-afl-address-x86_64": Setting up libreadline-dev:amd64 (8.0-4) ...
-Step #3 - "compile-afl-address-x86_64": Setting up libunwind8:amd64 (1.2.1-9ubuntu0.1) ...
-Step #3 - "compile-afl-address-x86_64": Setting up ninja-build (1.10.0-1build1) ...
-Step #3 - "compile-afl-address-x86_64": Setting up libuv1:amd64 (1.34.2-1ubuntu1.5) ...
-Step #3 - "compile-afl-address-x86_64": Setting up liblzma-dev:amd64 (5.2.4-1ubuntu1.1) ...
-Step #3 - "compile-afl-address-x86_64": Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
-Step #3 - "compile-afl-address-x86_64": Setting up librhash0:amd64 (1.3.9-1) ...
-Step #3 - "compile-afl-address-x86_64": Setting up cmake-data (3.16.3-1ubuntu1.20.04.1) ...
-Step #3 - "compile-afl-address-x86_64": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
-Step #3 - "compile-afl-address-x86_64": Setting up libjsoncpp1:amd64 (1.7.4-3.1ubuntu2) ...
-Step #3 - "compile-afl-address-x86_64": Setting up libunwind-dev:amd64 (1.2.1-9ubuntu0.1) ...
-Step #3 - "compile-afl-address-x86_64": Setting up libarchive13:amd64 (3.4.0-2ubuntu1.5) ...
-Step #3 - "compile-afl-address-x86_64": Setting up cmake (3.16.3-1ubuntu1.20.04.1) ...
-Step #3 - "compile-afl-address-x86_64": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
-Step #3 - "compile-afl-address-x86_64": + export FUZZ_INTROSPECTOR_CONFIG=/src/fuzz_introspector_exclusion.config
-Step #3 - "compile-afl-address-x86_64": + FUZZ_INTROSPECTOR_CONFIG=/src/fuzz_introspector_exclusion.config
-Step #3 - "compile-afl-address-x86_64": + cat
-Step #3 - "compile-afl-address-x86_64": + cd /src/testdir
-Step #3 - "compile-afl-address-x86_64": + [[ afl == centipede ]]
-Step #3 - "compile-afl-address-x86_64": + [[ -e /src/testdir/build ]]
-Step #3 - "compile-afl-address-x86_64": + case $SANITIZER in
-Step #3 - "compile-afl-address-x86_64": + SANITIZERS_ARGS=-DENABLE_ASAN=ON
-Step #3 - "compile-afl-address-x86_64": + export LSAN_OPTIONS=verbosity=1:log_threads=1
-Step #3 - "compile-afl-address-x86_64": + LSAN_OPTIONS=verbosity=1:log_threads=1
-Step #3 - "compile-afl-address-x86_64": + '[' x86_64 = aarch64 ']'
-Step #3 - "compile-afl-address-x86_64": + : /src/aflplusplus/afl-clang-fast++
-Step #3 - "compile-afl-address-x86_64": + : -O1 -fno-omit-frame-pointer -gline-tables-only -Wno-error=incompatible-function-pointer-types -Wno-error=int-conversion -Wno-error=deprecated-declarations -Wno-error=implicit-function-declaration -Wno-error=implicit-int -Wno-error=unknown-warning-option -Wno-error=vla-cxx-extension -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -stdlib=libc++
-Step #3 - "compile-afl-address-x86_64": + cmake_args=(-DUSE_LUA=ON -DOSS_FUZZ=ON $SANITIZERS_ARGS -DCMAKE_C_COMPILER="${CC}" -DCMAKE_C_FLAGS="${CFLAGS}" -DCMAKE_CXX_COMPILER="${CXX}" -DCMAKE_CXX_FLAGS="${CXXFLAGS}" -DCMAKE_LINKER="${LD}" -DCMAKE_EXE_LINKER_FLAGS="${LDFLAGS}" -DCMAKE_MODULE_LINKER_FLAGS="${LDFLAGS}" -DCMAKE_SHARED_LINKER_FLAGS="${LDFLAGS}")
-Step #3 - "compile-afl-address-x86_64": + git config --global --add safe.directory '*'
-Step #3 - "compile-afl-address-x86_64": + [[ -e build ]]
-Step #3 - "compile-afl-address-x86_64": + cmake -DUSE_LUA=ON -DOSS_FUZZ=ON -DENABLE_ASAN=ON -DCMAKE_C_COMPILER=/src/aflplusplus/afl-clang-fast '-DCMAKE_C_FLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope ' -DCMAKE_CXX_COMPILER=/src/aflplusplus/afl-clang-fast++ '-DCMAKE_CXX_FLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope  -stdlib=libc++' -DCMAKE_LINKER=/src/aflplusplus/afl-clang-fast++ '-DCMAKE_EXE_LINKER_FLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope  -stdlib=libc++' '-DCMAKE_MODULE_LINKER_FLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope  -stdlib=libc++' '-DCMAKE_SHARED_LINKER_FLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope  -stdlib=libc++' -S . -B build -G Ninja
-Step #3 - "compile-afl-address-x86_64": -- The C compiler identification is Clang 22.0.0
-Step #3 - "compile-afl-address-x86_64": -- The CXX compiler identification is Clang 22.0.0
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info - done
-Step #3 - "compile-afl-address-x86_64": -- Check for working C compiler: /src/aflplusplus/afl-clang-fast - skipped
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features - done
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info - done
-Step #3 - "compile-afl-address-x86_64": -- Check for working CXX compiler: /src/aflplusplus/afl-clang-fast++ - skipped
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features - done
-Step #3 - "compile-afl-address-x86_64": -- Found PUC Rio Lua master
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find Protobuf (missing: Protobuf_LIBRARIES Protobuf_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- [SetBuildParallelLevel] CMAKE_BUILD_PARALLEL_LEVEL is 32
-Step #3 - "compile-afl-address-x86_64": -- Add Lua C API test suite
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find Protobuf (missing: Protobuf_LIBRARIES Protobuf_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- Build Protobuf library automatically
-Step #3 - "compile-afl-address-x86_64": -- Configuring done (1.4s)
-Step #3 - "compile-afl-address-x86_64": -- Generating done (0.0s)
-Step #3 - "compile-afl-address-x86_64": -- Build files have been written to: /src/testdir/build
-Step #3 - "compile-afl-address-x86_64": + cmake --build build --parallel --verbose
-Step #3 - "compile-afl-address-x86_64": Change Dir: '/src/testdir/build'
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64": Run Build Command(s): /usr/bin/ninja -v
-Step #3 - "compile-afl-address-x86_64": [1/58] cd /src/testdir/build && /usr/local/bin/cmake -Dcfgdir= -P /src/testdir/build/lua-master/work/tmp/patched-lua-master-mkdirs.cmake && /usr/local/bin/cmake -E touch /src/testdir/build/lua-master/work/stamp/patched-lua-master-mkdir
-Step #3 - "compile-afl-address-x86_64": [2/58] cd /src/testdir/build/tests/capi && /usr/local/bin/cmake -Dcfgdir= -P /src/testdir/build/tests/capi/external.protobuf_mutator/tmp/external.protobuf_mutator-mkdirs.cmake && /usr/local/bin/cmake -E touch /src/testdir/build/tests/capi/external.protobuf_mutator/src/external.protobuf_mutator-stamp/external.protobuf_mutator-mkdir
-Step #3 - "compile-afl-address-x86_64": [3/58] /src/aflplusplus/afl-clang-fast   -O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -MD -MT extra/CMakeFiles/txt2c.dir/txt2c.c.o -MF extra/CMakeFiles/txt2c.dir/txt2c.c.o.d -o extra/CMakeFiles/txt2c.dir/txt2c.c.o -c /src/testdir/extra/txt2c.c
-Step #3 - "compile-afl-address-x86_64": [4/58] : && /src/aflplusplus/afl-clang-fast -O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope  -stdlib=libc++ extra/CMakeFiles/txt2c.dir/txt2c.c.o -o extra/txt2c   && :
-Step #3 - "compile-afl-address-x86_64": [5/58] cd /src/testdir/build/tests/capi/external.protobuf_mutator/src && /usr/local/bin/cmake -P /src/testdir/build/tests/capi/external.protobuf_mutator/tmp/external.protobuf_mutator-gitclone.cmake && /usr/local/bin/cmake -E touch /src/testdir/build/tests/capi/external.protobuf_mutator/src/external.protobuf_mutator-stamp/external.protobuf_mutator-download
-Step #3 - "compile-afl-address-x86_64": Cloning into 'external.protobuf_mutator'...
-Step #3 - "compile-afl-address-x86_64": HEAD is now at 212a7be Use Protobuf_LIBRARIES
-Step #3 - "compile-afl-address-x86_64": [6/58] cd /src/testdir/build/tests/capi/external.protobuf_mutator/src/external.protobuf_mutator && /usr/local/bin/cmake -E echo_append && /usr/local/bin/cmake -E touch /src/testdir/build/tests/capi/external.protobuf_mutator/src/external.protobuf_mutator-stamp/external.protobuf_mutator-update
-Step #3 - "compile-afl-address-x86_64": [7/58] cd /src/testdir/build/tests/capi && /usr/local/bin/cmake -E echo_append && /usr/local/bin/cmake -E touch /src/testdir/build/tests/capi/external.protobuf_mutator/src/external.protobuf_mutator-stamp/external.protobuf_mutator-patch
-Step #3 - "compile-afl-address-x86_64": [8/58] cd /src/testdir/build/lua-master && /usr/local/bin/cmake -P /src/testdir/build/lua-master/work/tmp/patched-lua-master-gitclone.cmake && /usr/local/bin/cmake -E touch /src/testdir/build/lua-master/work/stamp/patched-lua-master-download
-Step #3 - "compile-afl-address-x86_64": Cloning into 'source'...
-Step #3 - "compile-afl-address-x86_64": remote: Enumerating objects: 27576, done.        
-Step #3 - "compile-afl-address-x86_64": remote: Counting objects:   0% (1/253)        remote: Counting objects:   1% (3/253)        remote: Counting objects:   2% (6/253)        remote: Counting objects:   3% (8/253)        remote: Counting objects:   4% (11/253)        remote: Counting objects:   5% (13/253)        remote: Counting objects:   6% (16/253)        remote: Counting objects:   7% (18/253)        remote: Counting objects:   8% (21/253)        remote: Counting objects:   9% (23/253)        remote: Counting objects:  10% (26/253)        remote: Counting objects:  11% (28/253)        remote: Counting objects:  12% (31/253)        remote: Counting objects:  13% (33/253)        remote: Counting objects:  14% (36/253)        remote: Counting objects:  15% (38/253)        remote: Counting objects:  16% (41/253)        remote: Counting objects:  17% (44/253)        remote: Counting objects:  18% (46/253)        remote: Counting objects:  19% (49/253)        remote: Counting objects:  20% (51/253)        remote: Counting objects:  21% (54/253)        remote: Counting objects:  22% (56/253)        remote: Counting objects:  23% (59/253)        remote: Counting objects:  24% (61/253)        remote: Counting objects:  25% (64/253)        remote: Counting objects:  26% (66/253)        remote: Counting objects:  27% (69/253)        remote: Counting objects:  28% (71/253)        remote: Counting objects:  29% (74/253)        remote: Counting objects:  30% (76/253)        remote: Counting objects:  31% (79/253)        remote: Counting objects:  32% (81/253)        remote: Counting objects:  33% (84/253)        remote: Counting objects:  34% (87/253)        remote: Counting objects:  35% (89/253)        remote: Counting objects:  36% (92/253)        remote: Counting objects:  37% (94/253)        remote: Counting objects:  38% (97/253)        remote: Counting objects:  39% (99/253)        remote: Counting objects:  40% (102/253)        remote: Counting objects:  41% (104/253)        remote: Counting objects:  42% (107/253)        remote: Counting objects:  43% (109/253)        remote: Counting objects:  44% (112/253)        remote: Counting objects:  45% (114/253)        remote: Counting objects:  46% (117/253)        remote: Counting objects:  47% (119/253)        remote: Counting objects:  48% (122/253)        remote: Counting objects:  49% (124/253)        remote: Counting objects:  50% (127/253)        remote: Counting objects:  51% (130/253)        remote: Counting objects:  52% (132/253)        remote: Counting objects:  53% (135/253)        remote: Counting objects:  54% (137/253)        remote: Counting objects:  55% (140/253)        remote: Counting objects:  56% (142/253)        remote: Counting objects:  57% (145/253)        remote: Counting objects:  58% (147/253)        remote: Counting objects:  59% (150/253)        remote: Counting objects:  60% (152/253)        remote: Counting objects:  61% (155/253)        remote: Counting objects:  62% (157/253)        remote: Counting objects:  63% (160/253)        remote: Counting objects:  64% (162/253)        remote: Counting objects:  65% (165/253)        remote: Counting objects:  66% (167/253)        remote: Counting objects:  67% (170/253)        remote: Counting objects:  68% (173/253)        remote: Counting objects:  69% (175/253)        remote: Counting objects:  70% (178/253)        remote: Counting objects:  71% (180/253)        remote: Counting objects:  72% (183/253)        remote: Counting objects:  73% (185/253)        remote: Counting objects:  74% (188/253)        remote: Counting objects:  75% (190/253)        remote: Counting objects:  76% (193/253)        remote: Counting objects:  77% (195/253)        remote: Counting objects:  78% (198/253)        remote: Counting objects:  79% (200/253)        remote: Counting objects:  80% (203/253)        remote: Counting objects:  81% (205/253)        remote: Counting objects:  82% (208/253)        remote: Counting objects:  83% (210/253)        remote: Counting objects:  84% (213/253)        remote: Counting objects:  85% (216/253)        remote: Counting objects:  86% (218/253)        remote: Counting objects:  87% (221/253)        remote: Counting objects:  88% (223/253)        remote: Counting objects:  89% (226/253)        remote: Counting objects:  90% (228/253)        remote: Counting objects:  91% (231/253)        remote: Counting objects:  92% (233/253)        remote: Counting objects:  93% (236/253)        remote: Counting objects:  94% (238/253)        remote: Counting objects:  95% (241/253)        remote: Counting objects:  96% (243/253)        remote: Counting objects:  97% (246/253)        remote: Counting objects:  98% (248/253)        remote: Counting objects:  99% (251/253)        remote: Counting objects: 100% (253/253)        remote: Counting objects: 100% (253/253), done.        
-Step #3 - "compile-afl-address-x86_64": remote: Compressing objects:   0% (1/139)        remote: Compressing objects:   1% (2/139)        remote: Compressing objects:   2% (3/139)        remote: Compressing objects:   3% (5/139)        remote: Compressing objects:   4% (6/139)        remote: Compressing objects:   5% (7/139)        remote: Compressing objects:   6% (9/139)        remote: Compressing objects:   7% (10/139)        remote: Compressing objects:   8% (12/139)        remote: Compressing objects:   9% (13/139)        remote: Compressing objects:  10% (14/139)        remote: Compressing objects:  11% (16/139)        remote: Compressing objects:  12% (17/139)        remote: Compressing objects:  13% (19/139)        remote: Compressing objects:  14% (20/139)        remote: Compressing objects:  15% (21/139)        remote: Compressing objects:  16% (23/139)        remote: Compressing objects:  17% (24/139)        remote: Compressing objects:  18% (26/139)        remote: Compressing objects:  19% (27/139)        remote: Compressing objects:  20% (28/139)        remote: Compressing objects:  21% (30/139)        remote: Compressing objects:  22% (31/139)        remote: Compressing objects:  23% (32/139)        remote: Compressing objects:  24% (34/139)        remote: Compressing objects:  25% (35/139)        remote: Compressing objects:  26% (37/139)        remote: Compressing objects:  27% (38/139)        remote: Compressing objects:  28% (39/139)        remote: Compressing objects:  29% (41/139)        remote: Compressing objects:  30% (42/139)        remote: Compressing objects:  31% (44/139)        remote: Compressing objects:  32% (45/139)        remote: Compressing objects:  33% (46/139)        remote: Compressing objects:  34% (48/139)        remote: Compressing objects:  35% (49/139)        remote: Compressing objects:  36% (51/139)        remote: Compressing objects:  37% (52/139)        remote: Compressing objects:  38% (53/139)        remote: Compressing objects:  39% (55/139)        remote: Compressing objects:  40% (56/139)        remote: Compressing objects:  41% (57/139)        remote: Compressing objects:  42% (59/139)        remote: Compressing objects:  43% (60/139)        remote: Compressing objects:  44% (62/139)        remote: Compressing objects:  45% (63/139)        remote: Compressing objects:  46% (64/139)        remote: Compressing objects:  47% (66/139)        remote: Compressing objects:  48% (67/139)        remote: Compressing objects:  49% (69/139)        remote: Compressing objects:  50% (70/139)        remote: Compressing objects:  51% (71/139)        remote: Compressing objects:  52% (73/139)        remote: Compressing objects:  53% (74/139)        remote: Compressing objects:  54% (76/139)        remote: Compressing objects:  55% (77/139)        remote: Compressing objects:  56% (78/139)        remote: Compressing objects:  57% (80/139)        remote: Compressing objects:  58% (81/139)        remote: Compressing objects:  59% (83/139)        remote: Compressing objects:  60% (84/139)        remote: Compressing objects:  61% (85/139)        remote: Compressing objects:  62% (87/139)        remote: Compressing objects:  63% (88/139)        remote: Compressing objects:  64% (89/139)        remote: Compressing objects:  65% (91/139)        remote: Compressing objects:  66% (92/139)        remote: Compressing objects:  67% (94/139)        remote: Compressing objects:  68% (95/139)        remote: Compressing objects:  69% (96/139)        remote: Compressing objects:  70% (98/139)        remote: Compressing objects:  71% (99/139)        remote: Compressing objects:  72% (101/139)        remote: Compressing objects:  73% (102/139)        remote: Compressing objects:  74% (103/139)        remote: Compressing objects:  75% (105/139)        remote: Compressing objects:  76% (106/139)        remote: Compressing objects:  77% (108/139)        remote: Compressing objects:  78% (109/139)        remote: Compressing objects:  79% (110/139)        remote: Compressing objects:  80% (112/139)        remote: Compressing objects:  81% (113/139)        remote: Compressing objects:  82% (114/139)        remote: Compressing objects:  83% (116/139)        remote: Compressing objects:  84% (117/139)        remote: Compressing objects:  85% (119/139)        remote: Compressing objects:  86% (120/139)        remote: Compressing objects:  87% (121/139)        remote: Compressing objects:  88% (123/139)        remote: Compressing objects:  89% (124/139)        remote: Compressing objects:  90% (126/139)        remote: Compressing objects:  91% (127/139)        remote: Compressing objects:  92% (128/139)        remote: Compressing objects:  93% (130/139)        remote: Compressing objects:  94% (131/139)        remote: Compressing objects:  95% (133/139)        remote: Compressing objects:  96% (134/139)        remote: Compressing objects:  97% (135/139)        remote: Compressing objects:  98% (137/139)        remote: Compressing objects:  99% (138/139)        remote: Compressing objects: 100% (139/139)        remote: Compressing objects: 100% (139/139), done.        
-Step #3 - "compile-afl-address-x86_64": Receiving objects:   0% (1/27576)Receiving objects:   1% (276/27576)Receiving objects:   2% (552/27576)Receiving objects:   3% (828/27576)Receiving objects:   4% (1104/27576)Receiving objects:   5% (1379/27576)Receiving objects:   6% (1655/27576)Receiving objects:   7% (1931/27576)Receiving objects:   8% (2207/27576)Receiving objects:   9% (2482/27576)Receiving objects:  10% (2758/27576)Receiving objects:  11% (3034/27576)Receiving objects:  12% (3310/27576)Receiving objects:  13% (3585/27576)Receiving objects:  14% (3861/27576)Receiving objects:  15% (4137/27576)Receiving objects:  16% (4413/27576)Receiving objects:  17% (4688/27576)Receiving objects:  18% (4964/27576)Receiving objects:  19% (5240/27576)Receiving objects:  20% (5516/27576)Receiving objects:  21% (5791/27576)Receiving objects:  22% (6067/27576)Receiving objects:  23% (6343/27576)Receiving objects:  24% (6619/27576)Receiving objects:  25% (6894/27576)Receiving objects:  26% (7170/27576)Receiving objects:  27% (7446/27576)Receiving objects:  28% (7722/27576)Receiving objects:  29% (7998/27576)Receiving objects:  30% (8273/27576)Receiving objects:  31% (8549/27576)Receiving objects:  32% (8825/27576)Receiving objects:  33% (9101/27576)Receiving objects:  34% (9376/27576)Receiving objects:  35% (9652/27576)Receiving objects:  36% (9928/27576)Receiving objects:  37% (10204/27576)Receiving objects:  38% (10479/27576)Receiving objects:  39% (10755/27576)Receiving objects:  40% (11031/27576)Receiving objects:  41% (11307/27576)Receiving objects:  42% (11582/27576)Receiving objects:  43% (11858/27576)Receiving objects:  44% (12134/27576)Receiving objects:  45% (12410/27576)Receiving objects:  46% (12685/27576)Receiving objects:  47% (12961/27576)Receiving objects:  48% (13237/27576)Receiving objects:  49% (13513/27576)Receiving objects:  50% (13788/27576)Receiving objects:  51% (14064/27576)Receiving objects:  52% (14340/27576)Receiving objects:  53% (14616/27576)Receiving objects:  54% (14892/27576)Receiving objects:  55% (15167/27576)Receiving objects:  56% (15443/27576)Receiving objects:  57% (15719/27576)Receiving objects:  58% (15995/27576)Receiving objects:  59% (16270/27576)Receiving objects:  60% (16546/27576)Receiving objects:  61% (16822/27576)Receiving objects:  62% (17098/27576)Receiving objects:  63% (17373/27576)Receiving objects:  64% (17649/27576)Receiving objects:  65% (17925/27576)Receiving objects:  66% (18201/27576)Receiving objects:  67% (18476/27576)Receiving objects:  68% (18752/27576)Receiving objects:  69% (19028/27576)Receiving objects:  70% (19304/27576)Receiving objects:  71% (19579/27576)Receiving objects:  72% (19855/27576)Receiving objects:  73% (20131/27576)Receiving objects:  74% (20407/27576)Receiving objects:  75% (20682/27576)Receiving objects:  76% (20958/27576)Receiving objects:  77% (21234/27576)Receiving objects:  78% (21510/27576)Receiving objects:  79% (21786/27576)Receiving objects:  80% (22061/27576)Receiving objects:  81% (22337/27576)Receiving objects:  82% (22613/27576)Receiving objects:  83% (22889/27576)Receiving objects:  84% (23164/27576)Receiving objects:  85% (23440/27576)Receiving objects:  86% (23716/27576)Receiving objects:  87% (23992/27576)Receiving objects:  88% (24267/27576)Receiving objects:  89% (24543/27576)Receiving objects:  90% (24819/27576)Receiving objects:  91% (25095/27576)Receiving objects:  92% (25370/27576)Receiving objects:  93% (25646/27576)Receiving objects:  94% (25922/27576)Receiving objects:  95% (26198/27576)Receiving objects:  96% (26473/27576)Receiving objects:  97% (26749/27576)Receiving objects:  98% (27025/27576)Receiving objects:  99% (27301/27576)remote: Total 27576 (delta 151), reused 114 (delta 114), pack-reused 27323 (from 3)        
-Step #3 - "compile-afl-address-x86_64": Receiving objects: 100% (27576/27576)Receiving objects: 100% (27576/27576), 12.12 MiB | 35.05 MiB/s, done.
-Step #3 - "compile-afl-address-x86_64": Resolving deltas:   0% (0/20660)Resolving deltas:   1% (220/20660)Resolving deltas:   2% (478/20660)Resolving deltas:   3% (763/20660)Resolving deltas:   4% (913/20660)Resolving deltas:   5% (1061/20660)Resolving deltas:   6% (1302/20660)Resolving deltas:   7% (1449/20660)Resolving deltas:   8% (1687/20660)Resolving deltas:   9% (1871/20660)Resolving deltas:  10% (2078/20660)Resolving deltas:  11% (2290/20660)Resolving deltas:  12% (2507/20660)Resolving deltas:  13% (2891/20660)Resolving deltas:  14% (2930/20660)Resolving deltas:  15% (3105/20660)Resolving deltas:  16% (3489/20660)Resolving deltas:  17% (3563/20660)Resolving deltas:  18% (3814/20660)Resolving deltas:  19% (3931/20660)Resolving deltas:  20% (4261/20660)Resolving deltas:  21% (4386/20660)Resolving deltas:  22% (4556/20660)Resolving deltas:  23% (4760/20660)Resolving deltas:  24% (5010/20660)Resolving deltas:  25% (5169/20660)Resolving deltas:  26% (5376/20660)Resolving deltas:  27% (5650/20660)Resolving deltas:  28% (5822/20660)Resolving deltas:  29% (6006/20660)Resolving deltas:  30% (6199/20660)Resolving deltas:  31% (6422/20660)Resolving deltas:  32% (6624/20660)Resolving deltas:  33% (6846/20660)Resolving deltas:  34% (7075/20660)Resolving deltas:  35% (7324/20660)Resolving deltas:  36% (7451/20660)Resolving deltas:  38% (7887/20660)Resolving deltas:  39% (8090/20660)Resolving deltas:  40% (8291/20660)Resolving deltas:  41% (8500/20660)Resolving deltas:  42% (8737/20660)Resolving deltas:  43% (8912/20660)Resolving deltas:  44% (9267/20660)Resolving deltas:  45% (9324/20660)Resolving deltas:  46% (9506/20660)Resolving deltas:  47% (9747/20660)Resolving deltas:  48% (9920/20660)Resolving deltas:  49% (10138/20660)Resolving deltas:  50% (10339/20660)Resolving deltas:  51% (10632/20660)Resolving deltas:  52% (10754/20660)Resolving deltas:  53% (11061/20660)Resolving deltas:  54% (11246/20660)Resolving deltas:  55% (11363/20660)Resolving deltas:  56% (11628/20660)Resolving deltas:  57% (11807/20660)Resolving deltas:  58% (11992/20660)Resolving deltas:  59% (12203/20660)Resolving deltas:  60% (12411/20660)Resolving deltas:  61% (12613/20660)Resolving deltas:  62% (12811/20660)Resolving deltas:  63% (13024/20660)Resolving deltas:  64% (13325/20660)Resolving deltas:  65% (13558/20660)Resolving deltas:  66% (13723/20660)Resolving deltas:  67% (13858/20660)Resolving deltas:  68% (14070/20660)Resolving deltas:  69% (14277/20660)Resolving deltas:  70% (14541/20660)Resolving deltas:  71% (14692/20660)Resolving deltas:  72% (14878/20660)Resolving deltas:  73% (15095/20660)Resolving deltas:  74% (15295/20660)Resolving deltas:  75% (15549/20660)Resolving deltas:  76% (15714/20660)Resolving deltas:  77% (15953/20660)Resolving deltas:  78% (16141/20660)Resolving deltas:  79% (16326/20660)Resolving deltas:  80% (16635/20660)Resolving deltas:  81% (16742/20660)Resolving deltas:  82% (16951/20660)Resolving deltas:  83% (17195/20660)Resolving deltas:  84% (17379/20660)Resolving deltas:  85% (17586/20660)Resolving deltas:  86% (17810/20660)Resolving deltas:  87% (18015/20660)Resolving deltas:  88% (18221/20660)Resolving deltas:  89% (18425/20660)Resolving deltas:  90% (18615/20660)Resolving deltas:  91% (18830/20660)Resolving deltas:  92% (19055/20660)Resolving deltas:  93% (19234/20660)Resolving deltas:  94% (19475/20660)Resolving deltas:  95% (19709/20660)Resolving deltas:  96% (19859/20660)Resolving deltas:  97% (20072/20660)Resolving deltas:  98% (20256/20660)Resolving deltas:  99% (20462/20660)Resolving deltas: 100% (20660/20660)Resolving deltas: 100% (20660/20660), done.
-Step #3 - "compile-afl-address-x86_64": Already on 'master'
-Step #3 - "compile-afl-address-x86_64": Your branch is up to date with 'origin/master'.
-Step #3 - "compile-afl-address-x86_64": [9/58] cd /src/testdir/build/lua-master/source && /usr/local/bin/cmake -Dcan_fetch=YES -P /src/testdir/build/lua-master/work/tmp/patched-lua-master-gitupdate.cmake
-Step #3 - "compile-afl-address-x86_64": [10/58] cd /src/testdir/build/lua-master/source && git reset --hard && cd /src/testdir/build/lua-master/source && patch -p1 -i /src/testdir/patches/puc-rio-lua.patch && /usr/local/bin/cmake -E touch /src/testdir/build/lua-master/work/stamp/patched-lua-master-patch
-Step #3 - "compile-afl-address-x86_64": [31mFAILED: [0mlua-master/work/stamp/patched-lua-master-patch /src/testdir/build/lua-master/work/stamp/patched-lua-master-patch 
-Step #3 - "compile-afl-address-x86_64": cd /src/testdir/build/lua-master/source && git reset --hard && cd /src/testdir/build/lua-master/source && patch -p1 -i /src/testdir/patches/puc-rio-lua.patch && /usr/local/bin/cmake -E touch /src/testdir/build/lua-master/work/stamp/patched-lua-master-patch
-Step #3 - "compile-afl-address-x86_64": HEAD is now at fca97448 Small change in 'trymt'
-Step #3 - "compile-afl-address-x86_64": patching file makefile
-Step #3 - "compile-afl-address-x86_64": Hunk #1 succeeded at 39 (offset -1 lines).
-Step #3 - "compile-afl-address-x86_64": Hunk #2 FAILED at 72.
-Step #3 - "compile-afl-address-x86_64": 1 out of 2 hunks FAILED -- saving rejects to file makefile.rej
-Step #3 - "compile-afl-address-x86_64": [11/58] cd /src/testdir/build/tests/capi/external.protobuf_mutator/src/external.protobuf_mutator-build && /usr/local/bin/cmake /src/testdir/build/tests/capi/external.protobuf_mutator/src/external.protobuf_mutator -GNinja -DCMAKE_INSTALL_PREFIX=/src/testdir/build/tests/capi/external.protobuf_mutator -DCMAKE_BUILD_TYPE=Debug -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_C_COMPILER:FILEPATH=/src/aflplusplus/afl-clang-fast -DCMAKE_CXX_COMPILER:FILEPATH=/src/aflplusplus/afl-clang-fast++ -DLIB_PROTO_MUTATOR_DOWNLOAD_PROTOBUF=ON -DLIB_PROTO_MUTATOR_TESTING=OFF -DLIB_PROTO_MUTATOR_WITH_ASAN=ON && /usr/local/bin/cmake -E touch /src/testdir/build/tests/capi/external.protobuf_mutator/src/external.protobuf_mutator-stamp/external.protobuf_mutator-configure
-Step #3 - "compile-afl-address-x86_64": -- The CXX compiler identification is Clang 22.0.0
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compiler ABI info - done
-Step #3 - "compile-afl-address-x86_64": -- Check for working CXX compiler: /src/aflplusplus/afl-clang-fast++ - skipped
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features
-Step #3 - "compile-afl-address-x86_64": -- Detecting CXX compile features - done
-Step #3 - "compile-afl-address-x86_64": -- The C compiler identification is Clang 22.0.0
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compiler ABI info - done
-Step #3 - "compile-afl-address-x86_64": -- Check for working C compiler: /src/aflplusplus/afl-clang-fast - skipped
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features
-Step #3 - "compile-afl-address-x86_64": -- Detecting C compile features - done
-Step #3 - "compile-afl-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
-Step #3 - "compile-afl-address-x86_64": -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
-Step #3 - "compile-afl-address-x86_64": -- Found Threads: TRUE
-Step #3 - "compile-afl-address-x86_64": -- Looking for lzma_auto_decoder in /usr/lib/x86_64-linux-gnu/liblzma.so
-Step #3 - "compile-afl-address-x86_64": -- Looking for lzma_auto_decoder in /usr/lib/x86_64-linux-gnu/liblzma.so - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for lzma_easy_encoder in /usr/lib/x86_64-linux-gnu/liblzma.so
-Step #3 - "compile-afl-address-x86_64": -- Looking for lzma_easy_encoder in /usr/lib/x86_64-linux-gnu/liblzma.so - found
-Step #3 - "compile-afl-address-x86_64": -- Looking for lzma_lzma_preset in /usr/lib/x86_64-linux-gnu/liblzma.so
-Step #3 - "compile-afl-address-x86_64": -- Looking for lzma_lzma_preset in /usr/lib/x86_64-linux-gnu/liblzma.so - found
-Step #3 - "compile-afl-address-x86_64": -- Found LibLZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.4")
-Step #3 - "compile-afl-address-x86_64": -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11")
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_SANITIZE_ADDRESS
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_SANITIZE_ADDRESS - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_SANITIZE_SCOPE
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_SANITIZE_SCOPE - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_NO_COVERAGE
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_NO_COVERAGE - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_SANITIZE_FUZZER
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_SANITIZE_FUZZER - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_NO_SANITIZE_FUZZER
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_NO_SANITIZE_FUZZER - Success
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_WSTRING_CONVERSION
-Step #3 - "compile-afl-address-x86_64": -- Performing Test LIB_PROTO_MUTATOR_HAS_WSTRING_CONVERSION - Success
-Step #3 - "compile-afl-address-x86_64": -- Could NOT find Protobuf (missing: Protobuf_LIBRARIES Protobuf_INCLUDE_DIR) 
-Step #3 - "compile-afl-address-x86_64": -- Configuring done (3.0s)
-Step #3 - "compile-afl-address-x86_64": -- Generating done (0.0s)
-Step #3 - "compile-afl-address-x86_64": -- Build files have been written to: /src/testdir/build/tests/capi/external.protobuf_mutator/src/external.protobuf_mutator-build
-Step #3 - "compile-afl-address-x86_64": ninja: build stopped: subcommand failed.
-Step #3 - "compile-afl-address-x86_64": 
-Step #3 - "compile-afl-address-x86_64": ********************************************************************************\nFailed to build.\nTo reproduce, run:\npython infra/helper.py build_image lua\npython infra/helper.py build_fuzzers --sanitizer address --engine afl --architecture x86_64 lua\n********************************************************************************
-Finished Step #3 - "compile-afl-address-x86_64"
-ERROR
-ERROR: build step 3 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

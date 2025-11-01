@@ -1,891 +1,0 @@
-starting build "29438625-bbb9-4ef6-ab77-cd409ae48809"
-
-FETCHSOURCE
-BUILD
-Starting Step #0
-Step #0: Already have image (with digest): gcr.io/cloud-builders/git
-Step #0: Cloning into 'oss-fuzz'...
-Finished Step #0
-Starting Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f"
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Sending build context to Docker daemon  9.728kB
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Step 1/9 : FROM gcr.io/oss-fuzz-base/base-builder-jvm
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": latest: Pulling from oss-fuzz-base/base-builder-jvm
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": b549f31133a9: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 1f6d64c5d9e3: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 37910743e6c9: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 249fd738df73: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 877bc6daf7ff: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": c954e3a1628d: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 90b67e5f3d5d: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 607e5f9ff9b7: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 01b6b52ab58d: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": dc196883e826: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 39c315fa3e62: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": b128bb74f491: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 342a47195bee: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 80b0a48a62d6: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 292fd52b5e7b: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 6e5f267ab26d: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": cb37ac0c0f76: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 97510fefe804: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": c7c97ce1f4ee: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 2f785f2ba55b: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": e8ccfa4bf60b: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 18848b6b3b2d: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": d58603dd1459: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 09ffd541f975: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": f3103754af8a: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 56dbf4eb0319: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 4f9dee976b6c: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": e41bf5356a29: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": abe24445fcb1: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 2b2b1b3a3f33: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 831e926d8edb: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 55839d0a4df0: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 11c32f7fa0a0: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 249fd738df73: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 877bc6daf7ff: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": d843b7d23d4f: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": c954e3a1628d: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": ab63b404ef05: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 90b67e5f3d5d: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 5807097b165b: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 870bf89a9fc6: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 607e5f9ff9b7: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 01b6b52ab58d: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": a90bcc532245: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": faf1da46a017: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 39c315fa3e62: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": cee83559dcdc: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 39b51158e4d8: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": b128bb74f491: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 76f4eeca8b2b: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 019a21a2a99a: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": ab5c2ac82c06: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": c7c97ce1f4ee: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": fc0caa350877: Pulling fs layer
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 342a47195bee: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 2f785f2ba55b: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 831e926d8edb: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": e8ccfa4bf60b: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 80b0a48a62d6: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": f3103754af8a: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 18848b6b3b2d: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 55839d0a4df0: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": d58603dd1459: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 292fd52b5e7b: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 56dbf4eb0319: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 11c32f7fa0a0: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 09ffd541f975: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": d843b7d23d4f: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 4f9dee976b6c: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 97510fefe804: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": ab63b404ef05: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 6e5f267ab26d: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 5807097b165b: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": cb37ac0c0f76: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 870bf89a9fc6: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": e41bf5356a29: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": a90bcc532245: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": faf1da46a017: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": dc196883e826: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": abe24445fcb1: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 2b2b1b3a3f33: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": cee83559dcdc: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": ab5c2ac82c06: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 39b51158e4d8: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 019a21a2a99a: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": fc0caa350877: Waiting
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 37910743e6c9: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 37910743e6c9: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": b549f31133a9: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": b549f31133a9: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 877bc6daf7ff: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 877bc6daf7ff: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 249fd738df73: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 249fd738df73: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 90b67e5f3d5d: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 90b67e5f3d5d: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 1f6d64c5d9e3: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 1f6d64c5d9e3: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 607e5f9ff9b7: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 607e5f9ff9b7: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": b549f31133a9: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": dc196883e826: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": dc196883e826: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 39c315fa3e62: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 39c315fa3e62: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": b128bb74f491: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": b128bb74f491: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 342a47195bee: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 342a47195bee: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 80b0a48a62d6: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 80b0a48a62d6: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 292fd52b5e7b: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 292fd52b5e7b: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 6e5f267ab26d: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 6e5f267ab26d: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 01b6b52ab58d: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 01b6b52ab58d: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": cb37ac0c0f76: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": cb37ac0c0f76: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 97510fefe804: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 97510fefe804: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": c7c97ce1f4ee: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": e8ccfa4bf60b: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": e8ccfa4bf60b: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 2f785f2ba55b: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 2f785f2ba55b: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 18848b6b3b2d: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": d58603dd1459: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": d58603dd1459: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 09ffd541f975: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": f3103754af8a: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": f3103754af8a: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 1f6d64c5d9e3: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": c954e3a1628d: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": c954e3a1628d: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 56dbf4eb0319: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 56dbf4eb0319: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 37910743e6c9: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 4f9dee976b6c: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 4f9dee976b6c: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": abe24445fcb1: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": abe24445fcb1: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 2b2b1b3a3f33: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 2b2b1b3a3f33: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": e41bf5356a29: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": e41bf5356a29: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 831e926d8edb: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 55839d0a4df0: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": d843b7d23d4f: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 11c32f7fa0a0: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 11c32f7fa0a0: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": ab63b404ef05: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": ab63b404ef05: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 5807097b165b: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 5807097b165b: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 870bf89a9fc6: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 870bf89a9fc6: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": a90bcc532245: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": a90bcc532245: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": cee83559dcdc: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": cee83559dcdc: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 249fd738df73: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 76f4eeca8b2b: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 76f4eeca8b2b: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 39b51158e4d8: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 39b51158e4d8: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 877bc6daf7ff: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 019a21a2a99a: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": ab5c2ac82c06: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": ab5c2ac82c06: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": fc0caa350877: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": fc0caa350877: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": faf1da46a017: Verifying Checksum
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": faf1da46a017: Download complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": c954e3a1628d: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 90b67e5f3d5d: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 607e5f9ff9b7: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 01b6b52ab58d: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": dc196883e826: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 39c315fa3e62: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": b128bb74f491: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 342a47195bee: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 80b0a48a62d6: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 292fd52b5e7b: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 6e5f267ab26d: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": cb37ac0c0f76: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 97510fefe804: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": c7c97ce1f4ee: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 2f785f2ba55b: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": e8ccfa4bf60b: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 18848b6b3b2d: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": d58603dd1459: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 09ffd541f975: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": f3103754af8a: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 56dbf4eb0319: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 4f9dee976b6c: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": e41bf5356a29: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": abe24445fcb1: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 2b2b1b3a3f33: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 831e926d8edb: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 55839d0a4df0: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 11c32f7fa0a0: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": d843b7d23d4f: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": ab63b404ef05: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 5807097b165b: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 870bf89a9fc6: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": a90bcc532245: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": faf1da46a017: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": cee83559dcdc: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 39b51158e4d8: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 76f4eeca8b2b: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": 019a21a2a99a: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": ab5c2ac82c06: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": fc0caa350877: Pull complete
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Digest: sha256:edf21bc7dc9a12a6f2486ede48562faf6e208100b79d4390dc1f8e3b4f300358
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-jvm:latest
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> 72792b1755e0
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Step 2/9 : RUN curl -L https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip -o maven.zip &&     unzip maven.zip -d $SRC/maven &&     rm -rf maven.zip
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> Running in 48d7cc69841f
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": [91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":                                  Dload  Upload   Tot[0m[91mal   Spent    Left  Speed
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   0     0[0m[91m    0     [0m[91m0  [0m[91m  0  [0m[91m   0   [0m[91m   0      0 --:-[0m[91m-:-- --:[0m[91m--:-- --:--:[0m[91m--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m  2 9377k    2  242k    0     0   205k      0  0:00:45  0:00:01  0:00:44  205k[0m[91m  8 9377k    8  765k    0     0   352k      0  0:00:26  0:00:02  0:00:24  351k[0m[91m 12 9377k   12 1164k    0     0   367k      0  0:00:25  0:00:03  0:00:22  366k[0m[91m 16 9377k   16 1562k    0     0   374k      0  0:00:25  0:00:04  0:00:21  374k[0m[91m 21 9377k   21 1984k    0     0   383k      0  0:00:24  0:00:05  0:00:19  399k[0m[91m 25 9377k   25 2437k    0     0   394k      0  0:00:23  0:00:06  0:00:17  439k[0m[91m 30 9377k   30 2851k    0     0   397k      0  0:00:23  0:00:07  0:00:16  416k[0m[91m 35 9377k   35 3296k    0     0   403k      0  0:00:23  0:00:08  0:00:15  426k[0m[91m 39 9377k   39 3742k    0     0   407k      0  0:00:22  0:00:09  0:00:13  436k[0m[91m 44 9377k   44 4171k    0     0   410k      0  0:00:22  0:00:10  0:00:12  437k[0m[91m 49 9377k   49 4664k    0     0   417k      0  0:00:22  0:00:11  0:00:11  444k[0m[91m 54 9377k   54 5156k    0     0   423k      0  0:00:22  0:00:12  0:00:10  461k[0m[91m 60 9377k   60 5648k    0     0   428k      0  0:00:21  0:00:13  0:00:08  470k[0m[91m 64 9377k   64 6070k    0     0   428k      0  0:00:21  0:00:14  0:00:07  465k[0m[91m 70 9377k   70 6570k    0     0   432k      0  0:00:21  0:00:15  0:00:06  479k[0m[91m 74 9377k   74 7031k    0     0   434k      0  0:00:21  0:00:16  0:00:05  473k[0m[91m 79 9377k   79 7484k    0     0   435k      0  0:00:21  0:00:17  0:00:04  465k[0m[91m 85 9377k   85 7992k    0     0   439k      0  0:00:21  0:00:18  0:00:03  468k[0m[91m 90 9377k   90 8515k    0     0   444k      0  0:00:21  0:00:19  0:00:02  489k[0m[91m 96 9377k   96 9039k    0     0   448k      0  0:00:20  0:00:20 --:--:--  493k[0m[91m100 9377k  100 9377k    0     0   450k      0  0:00:20  0:00:20 --:--:--  503k
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": [0mArchive:  maven.zip
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/lib/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/boot/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd32/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd64/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux32/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux64/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/osx/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows32/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows64/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/bin/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/conf/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/conf/logging/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":    creating: /src/maven/apache-maven-3.6.3/lib/ext/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/README.txt  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/LICENSE  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/NOTICE  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/cdi-api.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-cli.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-io.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-lang3.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/guava.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/guice.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/javax.inject.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jcl-over-slf4j.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jsoup.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jsr250-api.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.inject.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.plexus.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-cipher.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-component-annotations.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-interpolation.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-sec-dispatcher.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-utils.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/slf4j-api.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/boot/plexus-classworlds.license  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd32/libjansi.so  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/freebsd64/libjansi.so  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux32/libjansi.so  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/linux64/libjansi.so  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/osx/libjansi.jnilib  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows32/jansi.dll  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/windows64/jansi.dll  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/bin/m2.conf  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/bin/mvn.cmd  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/bin/mvnDebug.cmd  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/bin/mvn  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/bin/mvnDebug  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/bin/mvnyjp  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/conf/logging/simplelogger.properties  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/conf/settings.xml  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/conf/toolchains.xml  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/ext/README.txt  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-native/README.txt  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-embedder-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-settings-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-settings-builder-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-plugin-api-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-model-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-model-builder-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-builder-support-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-api-1.4.1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-util-1.4.1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-shared-utils-3.2.1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-io-2.5.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/guice-4.2.1-no_aop.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/guava-25.1-android.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/javax.inject-1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jsr250-api-1.0.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-utils-3.2.1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-sec-dispatcher-1.4.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-cipher-1.7.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/slf4j-api-1.7.29.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-lang3-3.8.1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-core-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-repository-metadata-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-artifact-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-provider-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-impl-1.4.1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-spi-1.4.1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.inject-0.3.4.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-component-annotations-2.1.0.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-compat-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/plexus-interpolation-1.25.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/wagon-provider-api-3.3.4.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/org.eclipse.sisu.plexus-0.3.4.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/cdi-api-1.0.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/commons-cli-1.4.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/wagon-http-3.3.4-shaded.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jsoup-1.12.1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jcl-over-slf4j-1.7.29.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/wagon-file-3.3.4.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-connector-basic-1.4.1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-resolver-transport-wagon-1.4.1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/maven-slf4j-provider-3.6.3.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   inflating: /src/maven/apache-maven-3.6.3/lib/jansi-1.17.1.jar  
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Removing intermediate container 48d7cc69841f
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> 17cdca801f8a
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Step 3/9 : RUN curl -L https://download.java.net/openjdk/jdk11.0.0.1/ri/openjdk-11.0.0.1_linux-x64_bin.tar.gz -o jdk.tar.gz &&     tar zxf jdk.tar.gz &&     rm -rf jdk.tar.gz
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> Running in 54503a0272e7
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": [91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":                                  Dload  Upload [0m[91m  Total   Spent    Left  Speed
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m 33  178M   33 59.8M    0     0   108M      0  0:00:01 --:--:--  0:00:01  108M[0m[91m100  178M  100  178M    0     0   149M      0  0:00:01  0:00:01 --:--:--  149M
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": [0mRemoving intermediate container 54503a0272e7
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> e0b470ffcfa6
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Step 4/9 : ENV MVN $SRC/maven/apache-maven-3.6.3/bin/mvn
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> Running in 72ccde619f30
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Removing intermediate container 72ccde619f30
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> bfd0d97efbc7
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Step 5/9 : ENV JAVA_HOME="$SRC/jdk-11.0.0.1"
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> Running in d073be8981de
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Removing intermediate container d073be8981de
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> e54f480f8a94
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Step 6/9 : ENV PATH="$JAVA_HOME/bin:$PATH"
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> Running in 2322e47b9e51
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Removing intermediate container 2322e47b9e51
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> 9ded8f17331d
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Step 7/9 : RUN git clone --depth 1 https://github.com/locationtech/spatial4j spatial4j
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> Running in f2a9b295c498
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": [91mCloning into 'spatial4j'...
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": [0mRemoving intermediate container f2a9b295c498
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> f5a6a3642599
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Step 8/9 : COPY *.sh *.java $SRC/
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> 9d1f9d2a2693
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Step 9/9 : WORKDIR $SRC/spatial4j
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> Running in cc18ab5876e4
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Removing intermediate container cc18ab5876e4
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f":  ---> a01460769142
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Successfully built a01460769142
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Successfully tagged gcr.io/oss-fuzz/spatial4j:latest
-Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/spatial4j:latest
-Finished Step #1 - "build-461c6300-0371-4c0a-a956-f12ffe61133f"
-Starting Step #2 - "srcmap"
-Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/spatial4j
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + SRCMAP=/tmp/fileF9jT8L
-Step #2 - "srcmap": + echo '{}'
-Step #2 - "srcmap": + PATHS_TO_SCAN=/src
-Step #2 - "srcmap": + [[ jvm == \g\o ]]
-Step #2 - "srcmap": ++ find /src -name .git -type d
-Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
-Step #2 - "srcmap": ++ dirname /src/spatial4j/.git
-Step #2 - "srcmap": + GIT_DIR=/src/spatial4j
-Step #2 - "srcmap": + cd /src/spatial4j
-Step #2 - "srcmap": ++ git config --get remote.origin.url
-Step #2 - "srcmap": + GIT_URL=https://github.com/locationtech/spatial4j
-Step #2 - "srcmap": ++ git rev-parse HEAD
-Step #2 - "srcmap": + GIT_REV=f0d545dbb92ab560dea0aeb2b3d3a7ec53677ced
-Step #2 - "srcmap": + jq_inplace /tmp/fileF9jT8L '."/src/spatial4j" = { type: "git", url: "https://github.com/locationtech/spatial4j", rev: "f0d545dbb92ab560dea0aeb2b3d3a7ec53677ced" }'
-Step #2 - "srcmap": ++ tempfile
-Step #2 - "srcmap": + F=/tmp/file3hsQU9
-Step #2 - "srcmap": + cat /tmp/fileF9jT8L
-Step #2 - "srcmap": + jq '."/src/spatial4j" = { type: "git", url: "https://github.com/locationtech/spatial4j", rev: "f0d545dbb92ab560dea0aeb2b3d3a7ec53677ced" }'
-Step #2 - "srcmap": + mv /tmp/file3hsQU9 /tmp/fileF9jT8L
-Step #2 - "srcmap": ++ find /src -name .svn -type d
-Step #2 - "srcmap": ++ find /src -name .hg -type d
-Step #2 - "srcmap": + '[' '' '!=' '' ']'
-Step #2 - "srcmap": + cat /tmp/fileF9jT8L
-Step #2 - "srcmap": + rm /tmp/fileF9jT8L
-Step #2 - "srcmap": {
-Step #2 - "srcmap":   "/src/spatial4j": {
-Step #2 - "srcmap":     "type": "git",
-Step #2 - "srcmap":     "url": "https://github.com/locationtech/spatial4j",
-Step #2 - "srcmap":     "rev": "f0d545dbb92ab560dea0aeb2b3d3a7ec53677ced"
-Step #2 - "srcmap":   }
-Step #2 - "srcmap": }
-Finished Step #2 - "srcmap"
-Starting Step #3 - "compile-libfuzzer-address-x86_64"
-Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
-Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
-Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
-Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -fno-sanitize=leak
-Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++ -fno-sanitize=leak
-Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
-Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
-Step #3 - "compile-libfuzzer-address-x86_64": + /src/maven/apache-maven-3.6.3/bin/mvn clean package -Dmaven.javadoc.skip=true -DskipTests=true -Dpmd.skip=true -Dencoding=UTF-8 -Dmaven.antrun.skip=true -Dcheckstyle.skip=true -DperformRelease=True org.apache.maven.plugins:maven-shade-plugin:3.2.4:shade
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;34mINFO[m] Scanning for projects...
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/felix/maven-bundle-plugin/5.1.1/maven-bundle-plugin-5.1.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/felix/maven-bundle-plugin/5.1.1/maven-bundle-plugin-5.1.1.pom (11 kB at 33 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/felix/felix-parent/6/felix-parent-6.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 22 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/felix/felix-parent/6/felix-parent-6.pom (22 kB at 162 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/21/apache-21.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 17 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/21/apache-21.pom (17 kB at 131 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.pom (1.1 kB at 9.2 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/5.1.1/biz.aQute.bndlib-5.1.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/5.1.1/biz.aQute.bndlib-5.1.1.pom (4.1 kB at 35 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom (3.8 kB at 29 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom (14 kB at 107 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/felix/org.apache.felix.bundlerepository/1.6.6/org.apache.felix.bundlerepository-1.6.6.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 5.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/felix/org.apache.felix.bundlerepository/1.6.6/org.apache.felix.bundlerepository-1.6.6.pom (5.9 kB at 42 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/felix/felix-parent/2.1/felix-parent-2.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 9.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/felix/felix-parent/2.1/felix-parent-2.1.pom (9.7 kB at 88 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom (15 kB at 130 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.core/4.1.0/org.osgi.core-4.1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 193 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.core/4.1.0/org.osgi.core-4.1.0.pom (193 B at 1.4 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/easymock/easymock/2.4/easymock-2.4.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 5.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/easymock/easymock/2.4/easymock-2.4.pom (5.3 kB at 43 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.pom (3.3 kB at 23 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/4.2.0/org.osgi.compendium-4.2.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 463 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/4.2.0/org.osgi.compendium-4.2.0.pom (463 B at 3.6 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 8.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom (8.3 kB at 72 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 24 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom (24 kB at 196 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/27/maven-parent-27.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 41 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/27/maven-parent-27.pom (41 kB at 328 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/17/apache-17.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/17/apache-17.pom (16 kB at 124 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom (4.0 kB at 34 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom (3.8 kB at 34 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom (20 kB at 164 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 6.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom (6.8 kB at 46 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom (14 kB at 105 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 22 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom (22 kB at 188 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 41 kBProgress (1): 45 kBProgress (1): 49 kBProgress (1): 53 kBProgress (1): 57 kBProgress (1): 61 kBProgress (1): 63 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom (63 kB at 513 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom (15 kB at 122 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom (1.8 kB at 15 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom (2.6 kB at 22 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom (1.7 kB at 14 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom (1.5 kB at 11 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom (3.1 kB at 26 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 748 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom (748 B at 6.7 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom (3.8 kB at 32 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 22 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom (22 kB at 182 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom (3.0 kB at 24 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 6.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom (6.8 kB at 61 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 8.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom (8.4 kB at 77 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 5.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom (5.1 kB at 35 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 9.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom (9.0 kB at 77 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom (2.1 kB at 16 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom (1.9 kB at 15 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom (2.1 kB at 19 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom (2.7 kB at 21 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom (4.2 kB at 35 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom (14 kB at 90 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 6.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom (6.6 kB at 53 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.pom (1.4 kB at 12 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-parent/1.0/weld-api-parent-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-parent/1.0/weld-api-parent-1.0.pom (2.4 kB at 19 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-bom/1.0/weld-api-bom-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 7.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-bom/1.0/weld-api-bom-1.0.pom (7.9 kB at 65 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/6/weld-parent-6.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 21 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/6/weld-parent-6.pom (21 kB at 188 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom (1.0 kB at 7.9 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 612 B                   Downloaded from central: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom (612 B at 5.2 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom (2.6 kB at 24 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom (14 kB at 127 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 815 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom (815 B at 6.7 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom (4.2 kB at 31 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 17 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom (17 kB at 148 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 7.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.pom (7.3 kB at 58 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.17/plexus-utils-3.0.17.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.17/plexus-utils-3.0.17.pom (3.4 kB at 29 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom (3.1 kB at 28 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 5.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom (5.7 kB at 46 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 7.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom (7.7 kB at 58 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom (4.8 kB at 38 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom (4.0 kB at 35 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom (1.8 kB at 16 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 29 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom (29 kB at 262 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom (2.0 kB at 16 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom (2.1 kB at 19 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom (3.4 kB at 29 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0.pom (11 kB at 84 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice-parent/4.0/guice-parent-4.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice-parent/4.0/guice-parent-4.0.pom (15 kB at 116 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/com/google/google/5/google-5.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/com/google/google/5/google-5.pom (2.5 kB at 21 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 363 B                   Downloaded from central: https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom (363 B at 3.0 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 6.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom (6.1 kB at 56 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 7.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom (7.3 kB at 59 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.3.9/maven-compat-3.3.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.3.9/maven-compat-3.3.9.pom (3.8 kB at 32 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.10/wagon-provider-api-2.10.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.10/wagon-provider-api-2.10.pom (1.7 kB at 14 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/2.10/wagon-2.10.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 21 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/2.10/wagon-2.10.pom (21 kB at 170 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 40 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom (40 kB at 358 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom (3.1 kB at 23 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom (2.4 kB at 18 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 9.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom (9.3 kB at 77 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 23 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom (23 kB at 191 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom (14 kB at 123 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.pom (1.4 kB at 11 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0/doxia-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 9.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0/doxia-1.0.pom (9.6 kB at 74 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/10/maven-parent-10.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 32 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/10/maven-parent-10.pom (32 kB at 253 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom (4.5 kB at 34 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.5.0/maven-archiver-3.5.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.5.0/maven-archiver-3.5.0.pom (4.5 kB at 38 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/33/maven-shared-components-33.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 5.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/33/maven-shared-components-33.pom (5.1 kB at 44 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/33/maven-parent-33.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 41 kBProgress (1): 44 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/33/maven-parent-33.pom (44 kB at 359 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom (1.9 kB at 13 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0/maven-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 22 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0/maven-3.0.pom (22 kB at 184 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/15/maven-parent-15.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 24 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/15/maven-parent-15.pom (24 kB at 185 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 13 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom (13 kB at 101 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom (3.3 kB at 27 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 17 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom (17 kB at 136 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0/maven-model-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0/maven-model-3.0.pom (3.9 kB at 30 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 6.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.pom (6.6 kB at 55 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom (1.9 kB at 15 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom (2.2 kB at 18 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 910 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom (910 B at 7.6 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 5.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom (5.4 kB at 48 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom (1.9 kB at 16 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom (2.3 kB at 17 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 5.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom (5.4 kB at 46 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom (3.1 kB at 28 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom (2.6 kB at 21 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom (1.2 kB at 7.9 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 7.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom (7.8 kB at 64 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/6/forge-parent-6.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/6/forge-parent-6.pom (11 kB at 89 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.4/plexus-component-annotations-1.5.4.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 815 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.4/plexus-component-annotations-1.5.4.pom (815 B at 7.1 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.4/plexus-containers-1.5.4.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.4/plexus-containers-1.5.4.pom (4.2 kB at 37 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.5/plexus-2.0.5.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 17 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.5/plexus-2.0.5.pom (17 kB at 155 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom (4.0 kB at 33 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom (3.3 kB at 26 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 5.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom (5.5 kB at 43 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom (11 kB at 82 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom (2.2 kB at 19 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom (2.5 kB at 21 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom (1.7 kB at 15 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 7.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom (7.7 kB at 63 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom (2.1 kB at 17 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom (3.7 kB at 31 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom (1.7 kB at 15 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.pom (5.6 kB at 46 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom (4.6 kB at 37 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/30/maven-parent-30.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 41 kBProgress (1): 41 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/30/maven-parent-30.pom (41 kB at 339 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/18/apache-18.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/18/apache-18.pom (16 kB at 128 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 13 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.pom (13 kB at 101 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/39/commons-parent-39.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 41 kBProgress (1): 45 kBProgress (1): 49 kBProgress (1): 53 kBProgress (1): 57 kBProgress (1): 61 kBProgress (1): 62 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/39/commons-parent-39.pom (62 kB at 470 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.2.0/plexus-archiver-4.2.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.2.0/plexus-archiver-4.2.0.pom (4.8 kB at 40 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/5.1/plexus-5.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 23 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/5.1/plexus-5.1.pom (23 kB at 186 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 5.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.pom (5.2 kB at 44 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.2.0/plexus-io-3.2.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.2.0/plexus-io-3.2.0.pom (4.5 kB at 37 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.pom (14 kB at 121 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/42/commons-parent-42.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 41 kBProgress (1): 45 kBProgress (1): 49 kBProgress (1): 53 kBProgress (1): 57 kBProgress (1): 61 kBProgress (1): 66 kBProgress (1): 68 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/42/commons-parent-42.pom (68 kB at 548 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.19/commons-compress-1.19.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 18 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.19/commons-compress-1.19.pom (18 kB at 96 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/48/commons-parent-48.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 41 kBProgress (1): 45 kBProgress (1): 49 kBProgress (1): 53 kBProgress (1): 57 kBProgress (1): 61 kBProgress (1): 66 kBProgress (1): 70 kBProgress (1): 72 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/48/commons-parent-48.pom (72 kB at 504 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.pom (15 kB at 132 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.8/xz-1.8.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.8/xz-1.8.pom (1.9 kB at 18 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.25/plexus-interpolation-1.25.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.25/plexus-interpolation-1.25.pom (2.6 kB at 25 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.0/maven-dependency-tree-3.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 7.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.0/maven-dependency-tree-3.0.pom (7.4 kB at 66 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 5.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom (5.1 kB at 44 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/25/maven-parent-25.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 37 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/25/maven-parent-25.pom (37 kB at 334 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/15/apache-15.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/15/apache-15.pom (15 kB at 137 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom (2.0 kB at 18 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 28 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom (28 kB at 265 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.pom (3.2 kB at 26 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 8.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom (8.4 kB at 73 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 8.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (8.4 kB at 73 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom (8.1 kB at 74 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom (12 kB at 73 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0/doxia-site-renderer-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0/doxia-site-renderer-1.0.pom (4.4 kB at 40 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.0/doxia-sitetools-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 9.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.0/doxia-sitetools-1.0.pom (9.6 kB at 92 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/11/maven-parent-11.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 32 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/11/maven-parent-11.pom (32 kB at 287 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/5/apache-5.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 4.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/5/apache-5.pom (4.1 kB at 38 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0/doxia-core-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0/doxia-core-1.0.pom (2.4 kB at 22 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.7/plexus-utils-1.5.7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.7/plexus-utils-1.5.7.pom (8.1 kB at 73 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom (3.5 kB at 28 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom (1.9 kB at 18 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom (2.3 kB at 20 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom (3.2 kB at 28 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 8.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom (8.2 kB at 73 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 998 B                   Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom (998 B at 8.8 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.pom (1.1 kB at 7.7 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.12/plexus-components-1.1.12.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.12/plexus-components-1.1.12.pom (3.0 kB at 29 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom (1.9 kB at 18 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.pom (2.0 kB at 19 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-20/plexus-container-default-1.0-alpha-20.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-20/plexus-container-default-1.0-alpha-20.pom (3.0 kB at 26 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0-alpha-20/plexus-containers-1.0-alpha-20.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0-alpha-20/plexus-containers-1.0-alpha-20.pom (1.9 kB at 17 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.3/plexus-utils-1.3.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.3/plexus-utils-1.3.pom (1.0 kB at 8.5 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 7.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom (7.2 kB at 65 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/1.2-alpha-7/plexus-classworlds-1.2-alpha-7.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/1.2-alpha-7/plexus-classworlds-1.2-alpha-7.pom (2.4 kB at 22 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.9/plexus-1.0.9.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 7.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.9/plexus-1.0.9.pom (7.7 kB at 69 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity/1.5/velocity-1.5.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 7.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity/1.5/velocity-1.5.pom (7.8 kB at 53 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.1/commons-collections-3.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 6.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.1/commons-collections-3.1.pom (6.1 kB at 57 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 9.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom (9.9 kB at 86 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/oro/oro/2.0.8/oro-2.0.8.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 140 B                   Downloaded from central: https://repo.maven.apache.org/maven2/oro/oro/2.0.8/oro-2.0.8.pom (140 B at 1.3 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 3.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.pom (3.2 kB at 29 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2/commons-collections-3.2.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2/commons-collections-3.2.pom (11 kB at 94 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-apt/1.0/doxia-module-apt-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-apt/1.0/doxia-module-apt-1.0.pom (2.3 kB at 20 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-modules/1.0/doxia-modules-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-modules/1.0/doxia-modules-1.0.pom (2.4 kB at 22 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-fml/1.0/doxia-module-fml-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-fml/1.0/doxia-module-fml-1.0.pom (2.7 kB at 23 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xdoc/1.0/doxia-module-xdoc-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xdoc/1.0/doxia-module-xdoc-1.0.pom (2.2 kB at 19 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml/1.0/doxia-module-xhtml-1.0.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml/1.0/doxia-module-xhtml-1.0.pom (1.6 kB at 14 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.pom
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.pom (2.2 kB at 20 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/felix/maven-bundle-plugin/5.1.1/maven-bundle-plugin-5.1.1.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/felix/org.apache.felix.bundlerepository/1.6.6/org.apache.felix.bundlerepository-1.6.6.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/5.1.1/biz.aQute.bndlib-5.1.1.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1/213 kBProgress (1): 7.7/213 kBProgress (1): 12/213 kB Progress (1): 16/213 kBProgress (1): 20/213 kBProgress (1): 24/213 kBProgress (1): 28/213 kBProgress (1): 32/213 kBProgress (1): 36/213 kBProgress (1): 40/213 kBProgress (1): 45/213 kBProgress (1): 49/213 kBProgress (1): 53/213 kBProgress (1): 57/213 kBProgress (1): 61/213 kBProgress (1): 65/213 kBProgress (1): 69/213 kBProgress (1): 73/213 kBProgress (1): 77/213 kBProgress (1): 81/213 kBProgress (1): 86/213 kBProgress (1): 90/213 kBProgress (1): 94/213 kBProgress (1): 98/213 kBProgress (1): 102/213 kBProgress (1): 106/213 kBProgress (1): 110/213 kB                        Downloading from central: https://repo.maven.apache.org/maven2/org/easymock/easymock/2.4/easymock-2.4.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/4.2.0/org.osgi.compendium-4.2.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 114/213 kBProgress (1): 118/213 kBProgress (1): 122/213 kBProgress (1): 127/213 kBProgress (1): 131/213 kBProgress (1): 135/213 kBProgress (1): 139/213 kBProgress (1): 143/213 kBProgress (1): 147/213 kBProgress (1): 151/213 kBProgress (1): 155/213 kBProgress (1): 159/213 kBProgress (1): 163/213 kBProgress (1): 167/213 kBProgress (1): 172/213 kBProgress (1): 176/213 kBProgress (1): 180/213 kBProgress (1): 184/213 kBProgress (1): 188/213 kBProgress (1): 192/213 kBProgress (1): 196/213 kBProgress (1): 200/213 kBProgress (1): 204/213 kBProgress (1): 208/213 kBProgress (1): 213/213 kBProgress (1): 213 kB                        Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/felix/maven-bundle-plugin/5.1.1/maven-bundle-plugin-5.1.1.jar (213 kB at 1.6 MB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 0/2.3 MBProgress (1): 0/2.3 MBProgress (1): 0/2.3 MBProgress (1): 0.1/2.3 MBProgress (1): 0.1/2.3 MBProgress (1): 0.1/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 0.1/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 0.1/2.3 MBProgress (1): 0.1/2.3 MBProgress (1): 0.2/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 0.2/2.3 MBProgress (1): 0.2/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 0.2/2.3 MBProgress (1): 0.2/2.3 MBProgress (1): 0.2/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.3/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.4/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.5/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.6/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.7/2.3 MBProgress (1): 0.7/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 0.8/2.3 MBProgress (1): 0.8/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 0.8/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 0.8/2.3 MBProgress (1): 0.8/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 0.8/2.3 MBProgress (1): 0.8/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 0.9/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.0/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.1/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.2/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.3/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.4/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.5/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.6/2.3 MBProgress (1): 1.7/2.3 MBProgress (1): 1.7/2.3 MBProgress (1): 1.7/2.3 MBProgress (1): 1.7/2.3 MBProgress (1): 1.7/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.7/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.8/2.3 MB                        Progress (1): 1.8/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.8/2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 1.8/2.3 MBProgress (1): 1.8/2.3 MBProgress (1): 1.8/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 1.9/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.0/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.1/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.2/2.3 MBProgress (1): 2.3/2.3 MBProgress (1): 2.3 MB                        Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.3.9/maven-compat-3.3.9.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.10/wagon-provider-api-2.10.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.5.0/maven-archiver-3.5.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.2.0/plexus-archiver-4.2.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.2.0/plexus-io-3.2.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar (2.3 MB at 7.2 MB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.8/xz-1.8.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.0/maven-dependency-tree-3.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1/109 kBProgress (1): 7.7/109 kBProgress (1): 12/109 kB Progress (1): 16/109 kBProgress (1): 20/109 kBProgress (1): 24/109 kBProgress (1): 28/109 kBProgress (1): 32/109 kBProgress (1): 36/109 kBProgress (1): 40/109 kBProgress (1): 45/109 kBProgress (1): 49/109 kBProgress (1): 53/109 kBProgress (1): 57/109 kBProgress (1): 61/109 kBProgress (1): 65/109 kBProgress (1): 69/109 kBProgress (1): 73/109 kBProgress (1): 77/109 kBProgress (1): 81/109 kBProgress (1): 86/109 kBProgress (1): 90/109 kBProgress (1): 94/109 kBProgress (1): 98/109 kBProgress (1): 102/109 kBProgress (1): 106/109 kBProgress (1): 109 kB                        Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0/doxia-site-renderer-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0/doxia-core-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity/1.5/velocity-1.5.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/oro/oro/2.0.8/oro-2.0.8.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2/commons-collections-3.2.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloaded from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.8/xz-1.8.jar (109 kB at 256 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-apt/1.0/doxia-module-apt-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-fml/1.0/doxia-module-fml-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xdoc/1.0/doxia-module-xdoc-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml/1.0/doxia-module-xhtml-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1/49 kBProgress (1): 7.7/49 kBProgress (1): 12/49 kB                       Progress (1): 16/49 kBProgress (1): 20/49 kBProgress (1): 24/49 kBProgress (1): 28/49 kBProgress (1): 32/49 kBProgress (1): 36/49 kBProgress (1): 40/49 kBProgress (1): 45/49 kBProgress (1): 49/49 kBProgress (1): 49 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.jar (49 kB at 92 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": Downloading from repository.jboss.org: http://repository.jboss.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar
-Step #3 - "compile-libfuzzer-address-x86_64": Progress (1): 4.1/5.8 kBProgress (1): 5.8 kB                        Downloaded from repository.jboss.org: http://repository.jboss.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar (5.8 kB at 15 kB/s)
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m] [ERROR] Some problems were encountered while processing the POMs:
-Step #3 - "compile-libfuzzer-address-x86_64": [ERROR] Unresolveable build extension: Plugin org.apache.felix:maven-bundle-plugin:5.1.1 or one of its dependencies could not be resolved: The following artifacts could not be resolved: org.osgi:org.osgi.core:jar:6.0.0, biz.aQute.bnd:biz.aQute.bndlib:jar:5.1.1, org.slf4j:slf4j-api:jar:1.7.25, org.apache.felix:org.apache.felix.bundlerepository:jar:1.6.6, org.easymock:easymock:jar:2.4, org.apache.felix:org.apache.felix.utils:jar:1.6.0, org.osgi:org.osgi.compendium:jar:4.2.0, org.apache.maven:maven-core:jar:3.3.9, org.apache.maven:maven-model:jar:3.3.9, org.apache.maven:maven-settings:jar:3.3.9, org.apache.maven:maven-settings-builder:jar:3.3.9, org.apache.maven:maven-builder-support:jar:3.3.9, org.apache.maven:maven-repository-metadata:jar:3.3.9, org.apache.maven:maven-artifact:jar:3.3.9, org.apache.maven:maven-plugin-api:jar:3.3.9, org.apache.maven:maven-model-builder:jar:3.3.9, org.apache.maven:maven-aether-provider:jar:3.3.9, org.eclipse.aether:aether-spi:jar:1.0.2.v20150114, org.eclipse.aether:aether-impl:jar:1.0.2.v20150114, org.eclipse.aether:aether-api:jar:1.0.2.v20150114, org.eclipse.aether:aether-util:jar:1.0.2.v20150114, org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.2, javax.enterprise:cdi-api:jar:1.0, org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.2, com.google.inject:guice:jar:no_aop:4.0, javax.inject:javax.inject:jar:1, aopalliance:aopalliance:jar:1.0, org.codehaus.plexus:plexus-interpolation:jar:1.21, org.codehaus.plexus:plexus-classworlds:jar:2.5.2, org.codehaus.plexus:plexus-component-annotations:jar:1.6, org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3, org.sonatype.plexus:plexus-cipher:jar:1.4, org.apache.commons:commons-lang3:jar:3.4, org.apache.maven:maven-compat:jar:3.3.9, org.apache.maven.wagon:wagon-provider-api:jar:2.10, org.apache.maven.reporting:maven-reporting-api:jar:3.0, org.apache.maven:maven-archiver:jar:3.5.0, org.apache.maven.shared:maven-shared-utils:jar:3.2.1, commons-io:commons-io:jar:2.5, org.codehaus.plexus:plexus-archiver:jar:4.2.0, org.codehaus.plexus:plexus-io:jar:3.2.0, org.apache.commons:commons-compress:jar:1.19, org.iq80.snappy:snappy:jar:0.4, org.apache.maven.shared:maven-dependency-tree:jar:3.0, org.codehaus.plexus:plexus-utils:jar:3.3.0, org.sonatype.plexus:plexus-build-api:jar:0.0.7, org.apache.maven.doxia:doxia-sink-api:jar:1.0, org.apache.maven.doxia:doxia-site-renderer:jar:1.0, org.apache.maven.doxia:doxia-core:jar:1.0, org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7, org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-30, junit:junit:jar:3.8.1, org.codehaus.plexus:plexus-velocity:jar:1.1.7, org.apache.velocity:velocity:jar:1.5, commons-lang:commons-lang:jar:2.1, oro:oro:jar:2.0.8, commons-collections:commons-collections:jar:3.2, org.apache.maven.doxia:doxia-module-apt:jar:1.0, org.apache.maven.doxia:doxia-module-fml:jar:1.0, org.apache.maven.doxia:doxia-module-xdoc:jar:1.0, org.apache.maven.doxia:doxia-module-xhtml:jar:1.0, org.jdom:jdom:jar:1.1: Could not transfer artifact org.osgi:org.osgi.core:jar:6.0.0 from/to central (https://repo.maven.apache.org/maven2): Transfer failed for https://repo.maven.apache.org/maven2/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar @ 
-Step #3 - "compile-libfuzzer-address-x86_64": [ERROR] Unknown packaging: bundle @ line 14, column 14
-Step #3 - "compile-libfuzzer-address-x86_64":  @ 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m] The build could not read 1 project -> [1m[Help 1][m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m]   
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m]   The project org.locationtech.spatial4j:spatial4j:0.9-SNAPSHOT (/src/spatial4j/pom.xml) has 2 errors
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m]     Unresolveable build extension: Plugin org.apache.felix:maven-bundle-plugin:5.1.1 or one of its dependencies could not be resolved: The following artifacts could not be resolved: org.osgi:org.osgi.core:jar:6.0.0, biz.aQute.bnd:biz.aQute.bndlib:jar:5.1.1, org.slf4j:slf4j-api:jar:1.7.25, org.apache.felix:org.apache.felix.bundlerepository:jar:1.6.6, org.easymock:easymock:jar:2.4, org.apache.felix:org.apache.felix.utils:jar:1.6.0, org.osgi:org.osgi.compendium:jar:4.2.0, org.apache.maven:maven-core:jar:3.3.9, org.apache.maven:maven-model:jar:3.3.9, org.apache.maven:maven-settings:jar:3.3.9, org.apache.maven:maven-settings-builder:jar:3.3.9, org.apache.maven:maven-builder-support:jar:3.3.9, org.apache.maven:maven-repository-metadata:jar:3.3.9, org.apache.maven:maven-artifact:jar:3.3.9, org.apache.maven:maven-plugin-api:jar:3.3.9, org.apache.maven:maven-model-builder:jar:3.3.9, org.apache.maven:maven-aether-provider:jar:3.3.9, org.eclipse.aether:aether-spi:jar:1.0.2.v20150114, org.eclipse.aether:aether-impl:jar:1.0.2.v20150114, org.eclipse.aether:aether-api:jar:1.0.2.v20150114, org.eclipse.aether:aether-util:jar:1.0.2.v20150114, org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.2, javax.enterprise:cdi-api:jar:1.0, org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.2, com.google.inject:guice:jar:no_aop:4.0, javax.inject:javax.inject:jar:1, aopalliance:aopalliance:jar:1.0, org.codehaus.plexus:plexus-interpolation:jar:1.21, org.codehaus.plexus:plexus-classworlds:jar:2.5.2, org.codehaus.plexus:plexus-component-annotations:jar:1.6, org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3, org.sonatype.plexus:plexus-cipher:jar:1.4, org.apache.commons:commons-lang3:jar:3.4, org.apache.maven:maven-compat:jar:3.3.9, org.apache.maven.wagon:wagon-provider-api:jar:2.10, org.apache.maven.reporting:maven-reporting-api:jar:3.0, org.apache.maven:maven-archiver:jar:3.5.0, org.apache.maven.shared:maven-shared-utils:jar:3.2.1, commons-io:commons-io:jar:2.5, org.codehaus.plexus:plexus-archiver:jar:4.2.0, org.codehaus.plexus:plexus-io:jar:3.2.0, org.apache.commons:commons-compress:jar:1.19, org.iq80.snappy:snappy:jar:0.4, org.apache.maven.shared:maven-dependency-tree:jar:3.0, org.codehaus.plexus:plexus-utils:jar:3.3.0, org.sonatype.plexus:plexus-build-api:jar:0.0.7, org.apache.maven.doxia:doxia-sink-api:jar:1.0, org.apache.maven.doxia:doxia-site-renderer:jar:1.0, org.apache.maven.doxia:doxia-core:jar:1.0, org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7, org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-30, junit:junit:jar:3.8.1, org.codehaus.plexus:plexus-velocity:jar:1.1.7, org.apache.velocity:velocity:jar:1.5, commons-lang:commons-lang:jar:2.1, oro:oro:jar:2.0.8, commons-collections:commons-collections:jar:3.2, org.apache.maven.doxia:doxia-module-apt:jar:1.0, org.apache.maven.doxia:doxia-module-fml:jar:1.0, org.apache.maven.doxia:doxia-module-xdoc:jar:1.0, org.apache.maven.doxia:doxia-module-xhtml:jar:1.0, org.jdom:jdom:jar:1.1: Could not transfer artifact org.osgi:org.osgi.core:jar:6.0.0 from/to central (https://repo.maven.apache.org/maven2): Transfer failed for https://repo.maven.apache.org/maven2/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar: Received fatal alert: handshake_failure -> [1m[Help 2][m
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m]     Unknown packaging: bundle @ line 14, column 14
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m] 
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
-Step #3 - "compile-libfuzzer-address-x86_64": [[1;31mERROR[m] [1m[Help 2][m http://cwiki.apache.org/confluence/display/MAVEN/PluginManagerException
-Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
-Step #3 - "compile-libfuzzer-address-x86_64": Failed to build.
-Step #3 - "compile-libfuzzer-address-x86_64": To reproduce, run:
-Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_image spatial4j
-Step #3 - "compile-libfuzzer-address-x86_64": python infra/helper.py build_fuzzers --sanitizer address --engine libfuzzer --architecture x86_64 spatial4j
-Step #3 - "compile-libfuzzer-address-x86_64": ********************************************************************************
-Finished Step #3 - "compile-libfuzzer-address-x86_64"
-ERROR
-ERROR: build step 3 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

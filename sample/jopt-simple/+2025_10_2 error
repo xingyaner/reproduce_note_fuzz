@@ -1,239 +1,0 @@
-starting build "723e3d30-0915-4f94-9e25-0856fcb7f6c2"
-
-FETCHSOURCE
-BUILD
-Starting Step #0
-Step #0: Already have image (with digest): gcr.io/cloud-builders/git
-Step #0: Cloning into 'oss-fuzz'...
-Finished Step #0
-Starting Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a"
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": Already have image (with digest): gcr.io/cloud-builders/docker
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": Sending build context to Docker daemon  17.41kB
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": Step 1/9 : FROM gcr.io/oss-fuzz-base/base-builder-jvm
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": latest: Pulling from oss-fuzz-base/base-builder-jvm
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b549f31133a9: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": f902dcb2c452: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b96a3ee92563: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 79d32170ccec: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 6ee90e19cd9c: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c3e6adb72e0c: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": fab86c6c3424: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 7b0e3f58fc04: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b9438328c831: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 81b84f0c96e3: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 170eb5da4377: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": eddf06c463f2: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 0e5b7c3079bb: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 4830da2e4635: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 06acda231297: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 961dfab508d8: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 5a12c3a2ed08: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3aca20a4a787: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 7b0e3f58fc04: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 98f79320a850: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 0b1c3cbe7734: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b9438328c831: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3e56728204c1: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 81b84f0c96e3: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 6134384fed17: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 170eb5da4377: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 382d2b100069: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 69f84a8cf9f5: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": eddf06c463f2: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c6c4c842caf9: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 0e5b7c3079bb: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ff5833ff55bb: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 4830da2e4635: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ffaac41201fd: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 06acda231297: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 961dfab508d8: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 2ff31941802d: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 5a12c3a2ed08: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 1cda0edabc71: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 6134384fed17: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3aca20a4a787: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 7819a2b3f0e3: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 76903adbb826: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 98f79320a850: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c9ee201624c1: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 576def9df37b: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 79d32170ccec: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 382d2b100069: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 0b1c3cbe7734: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b976cacb8b98: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 69f84a8cf9f5: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c3e6adb72e0c: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 6ee90e19cd9c: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3e56728204c1: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b73b515d3165: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ba1389cc3414: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ffaac41201fd: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 91645af8fc67: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 85032a5424f4: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 2ff31941802d: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c6c4c842caf9: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": fab86c6c3424: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 828de72537db: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 1cda0edabc71: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ff5833ff55bb: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3117daacef02: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 76903adbb826: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 7819a2b3f0e3: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 17422fabf4aa: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 576def9df37b: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 8914cdbdcacd: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 828de72537db: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": f2dd88dd0689: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b976cacb8b98: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 91645af8fc67: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 934543f10c37: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ba1389cc3414: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3117daacef02: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b73b515d3165: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 77b41d239098: Pulling fs layer
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 85032a5424f4: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": f2dd88dd0689: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 17422fabf4aa: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 934543f10c37: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 77b41d239098: Waiting
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b96a3ee92563: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b96a3ee92563: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b549f31133a9: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b549f31133a9: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 6ee90e19cd9c: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 79d32170ccec: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 79d32170ccec: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": fab86c6c3424: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 7b0e3f58fc04: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": f902dcb2c452: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": f902dcb2c452: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b549f31133a9: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 81b84f0c96e3: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 81b84f0c96e3: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 170eb5da4377: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 170eb5da4377: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": eddf06c463f2: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": eddf06c463f2: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 0e5b7c3079bb: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 0e5b7c3079bb: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 4830da2e4635: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 4830da2e4635: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 06acda231297: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 06acda231297: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 961dfab508d8: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 961dfab508d8: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b9438328c831: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b9438328c831: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3aca20a4a787: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3aca20a4a787: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 5a12c3a2ed08: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 5a12c3a2ed08: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 98f79320a850: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 98f79320a850: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 0b1c3cbe7734: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 0b1c3cbe7734: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3e56728204c1: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3e56728204c1: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 6134384fed17: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 6134384fed17: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 69f84a8cf9f5: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 69f84a8cf9f5: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 382d2b100069: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 382d2b100069: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c6c4c842caf9: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c6c4c842caf9: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ff5833ff55bb: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ff5833ff55bb: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ffaac41201fd: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 2ff31941802d: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 2ff31941802d: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 1cda0edabc71: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 1cda0edabc71: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 76903adbb826: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 7819a2b3f0e3: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 7819a2b3f0e3: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c3e6adb72e0c: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c3e6adb72e0c: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": f902dcb2c452: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c9ee201624c1: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c9ee201624c1: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 576def9df37b: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b96a3ee92563: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b976cacb8b98: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b73b515d3165: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ba1389cc3414: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ba1389cc3414: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 91645af8fc67: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 91645af8fc67: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 85032a5424f4: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 85032a5424f4: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3117daacef02: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3117daacef02: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 8914cdbdcacd: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 8914cdbdcacd: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 17422fabf4aa: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 17422fabf4aa: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": f2dd88dd0689: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": f2dd88dd0689: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 934543f10c37: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 934543f10c37: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 77b41d239098: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 77b41d239098: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 79d32170ccec: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 6ee90e19cd9c: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 828de72537db: Verifying Checksum
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 828de72537db: Download complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c3e6adb72e0c: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": fab86c6c3424: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 7b0e3f58fc04: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b9438328c831: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 81b84f0c96e3: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 170eb5da4377: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": eddf06c463f2: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 0e5b7c3079bb: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 4830da2e4635: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 06acda231297: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 961dfab508d8: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 5a12c3a2ed08: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3aca20a4a787: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 98f79320a850: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 0b1c3cbe7734: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3e56728204c1: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 6134384fed17: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 382d2b100069: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 69f84a8cf9f5: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c6c4c842caf9: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ff5833ff55bb: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ffaac41201fd: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 2ff31941802d: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 1cda0edabc71: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 7819a2b3f0e3: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 76903adbb826: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": c9ee201624c1: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 576def9df37b: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b976cacb8b98: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": b73b515d3165: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": ba1389cc3414: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 91645af8fc67: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 85032a5424f4: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 828de72537db: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 3117daacef02: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 17422fabf4aa: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 8914cdbdcacd: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": f2dd88dd0689: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 934543f10c37: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": 77b41d239098: Pull complete
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": Digest: sha256:3014c45d4bad5d5be7d5e1e4264e7a8447c8ac2131426899ad30457005986de5
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-jvm:latest
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a":  ---> 7b69dbcde4e6
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": Step 2/9 : RUN curl -L https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip -o maven.zip && unzip maven.zip -d $SRC/maven-3.6.3 && rm -rf maven.zip
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a":  ---> Running in ba3b430cfffe
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": [91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a":               [0m[91m                   Dload[0m[91m  Upload  [0m[91m Total   [0m[91mSpent    Lef[0m[91mt  Speed
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": [0m[91m  0     0[0m[91m  [0m[91m  0  [0m[91m  [0m[91m 0   [0m[91m 0[0m[91m     [0m[91m0 [0m[91m   [0m[91m  0[0m[91m    [0m[91m  0[0m[91m -[0m[91m-:--:[0m[91m-- [0m[91m--:[0m[91m--:-- --:--:--  [0m[91m   0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:11 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:12 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:13 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:14 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:15 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:16 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:17 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:18 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:19 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:20 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:21 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:22 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:23 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:24 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:25 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:26 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:27 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:28 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:29 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:30 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:31 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:32 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:33 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:34 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:35 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:36 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:37 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:38 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:39 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:40 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:41 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:42 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:43 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:44 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:45 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:46 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:47 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:48 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:49 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:50 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:51 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:52 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:53 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:54 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:55 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:56 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:57 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:58 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:00:59 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:00 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:01 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:02 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:03 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:04 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:05 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:06 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:07 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:08 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:09 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:10 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:11 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:12 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:13 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:14 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:15 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:16 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:17 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:18 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:19 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:20 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:21 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:22 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:23 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:24 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:25 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:26 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:27 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:28 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:29 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:30 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:31 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:32 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:33 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:34 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:35 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:36 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:37 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:38 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:39 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:40 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:41 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:42 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:43 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:44 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:45 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:46 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:47 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:48 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:49 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:50 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:51 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:52 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:53 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:54 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:55 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:56 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:57 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:58 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:01:59 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:02:00 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:02:01 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:02:02 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:02:03 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:02:04 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:02:05 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:02:06 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:02:07 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:02:08 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:02:09 --:--:--     0[0m[91m  0     0    0     0    0     0      0      0 --:--:--  0:02:10 --:--:--     0
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": curl: (7) Failed to connect to archive.apache[0m[91m.org port 443: Connection timed out
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": The command '/bin/sh -c curl -L https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip -o maven.zip && unzip maven.zip -d $SRC/maven-3.6.3 && rm -rf maven.zip' returned a non-zero code: 7
-Finished Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a"
-ERROR
-ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 7
-Step #1 - "build-9203fbf5-10ab-4244-8db2-251fa41f471a": [0m
