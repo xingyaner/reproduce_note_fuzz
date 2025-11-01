@@ -1,0 +1,378 @@
+starting build "6dc07dc1-6666-42fc-ae57-3f7280dac6cb"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4"
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Sending build context to Docker daemon  6.656kB
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Step 1/7 : FROM gcr.io/oss-fuzz-base/base-builder
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": latest: Pulling from oss-fuzz-base/base-builder
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b549f31133a9: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 7116a92c01de: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b11f5ad22a40: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": a6da84ec78ca: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 1b52e907a28a: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b66e9cd0f971: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 06cfddc50eb4: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f8746400158b: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 4347830c1951: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 86e78d89b166: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": bd4bd96fe257: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0991c68827f7: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e8fc5e6a7d33: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f322a6e64378: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": a9e5f87a9757: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": c8f59c9f73d5: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 65d7af5531b2: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": efc3995c7887: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 55c0197e7ca1: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 7f1a477b641f: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 2727aca0fc62: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 1b52e907a28a: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": c45c1b77dfa3: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 858441124890: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b66e9cd0f971: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 47f832a8bc7c: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0e3a5ff90069: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f5b796d891a7: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 06cfddc50eb4: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 42ccf6e2b063: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0531ed1b8681: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 86e78d89b166: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f9fef266841d: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f8746400158b: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b95c3f8c0036: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 4347830c1951: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 6766f385176f: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": bd4bd96fe257: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": a6da84ec78ca: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": c8f59c9f73d5: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 6748833f8d46: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0991c68827f7: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 2727aca0fc62: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 20d3a0d4b01e: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 65d7af5531b2: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e5e954537764: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": d262fc4eee92: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": c45c1b77dfa3: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e8fc5e6a7d33: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e6e07c50b02a: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": efc3995c7887: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 23606678b4e3: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 858441124890: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": ed1a63cde6d6: Pulling fs layer
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 47f832a8bc7c: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": a9e5f87a9757: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 55c0197e7ca1: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0e3a5ff90069: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 7f1a477b641f: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f5b796d891a7: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f322a6e64378: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 20d3a0d4b01e: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 42ccf6e2b063: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 6748833f8d46: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 6766f385176f: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b95c3f8c0036: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e5e954537764: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 23606678b4e3: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": ed1a63cde6d6: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e6e07c50b02a: Waiting
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b11f5ad22a40: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b549f31133a9: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b549f31133a9: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 1b52e907a28a: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 1b52e907a28a: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": a6da84ec78ca: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": a6da84ec78ca: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 06cfddc50eb4: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f8746400158b: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 7116a92c01de: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 7116a92c01de: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b549f31133a9: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 86e78d89b166: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 86e78d89b166: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": bd4bd96fe257: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": bd4bd96fe257: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0991c68827f7: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0991c68827f7: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e8fc5e6a7d33: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e8fc5e6a7d33: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f322a6e64378: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f322a6e64378: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": a9e5f87a9757: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": a9e5f87a9757: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 4347830c1951: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 4347830c1951: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": c8f59c9f73d5: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 65d7af5531b2: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 65d7af5531b2: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": efc3995c7887: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": efc3995c7887: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 55c0197e7ca1: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 55c0197e7ca1: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 7f1a477b641f: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 7f1a477b641f: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 2727aca0fc62: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 2727aca0fc62: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": c45c1b77dfa3: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": c45c1b77dfa3: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 858441124890: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 858441124890: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 47f832a8bc7c: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 47f832a8bc7c: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0e3a5ff90069: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0e3a5ff90069: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f5b796d891a7: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0531ed1b8681: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0531ed1b8681: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 42ccf6e2b063: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f9fef266841d: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f9fef266841d: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b95c3f8c0036: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b95c3f8c0036: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 6766f385176f: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 6766f385176f: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 6748833f8d46: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 6748833f8d46: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 20d3a0d4b01e: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 20d3a0d4b01e: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e5e954537764: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": d262fc4eee92: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": d262fc4eee92: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b66e9cd0f971: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b66e9cd0f971: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e6e07c50b02a: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e6e07c50b02a: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 7116a92c01de: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b11f5ad22a40: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 23606678b4e3: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 23606678b4e3: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": ed1a63cde6d6: Verifying Checksum
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": ed1a63cde6d6: Download complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": a6da84ec78ca: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 1b52e907a28a: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b66e9cd0f971: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 06cfddc50eb4: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f8746400158b: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 4347830c1951: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 86e78d89b166: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": bd4bd96fe257: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0991c68827f7: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e8fc5e6a7d33: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f322a6e64378: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": a9e5f87a9757: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": c8f59c9f73d5: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 65d7af5531b2: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": efc3995c7887: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 55c0197e7ca1: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 7f1a477b641f: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 2727aca0fc62: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": c45c1b77dfa3: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 858441124890: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 47f832a8bc7c: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0e3a5ff90069: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f5b796d891a7: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 42ccf6e2b063: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0531ed1b8681: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": f9fef266841d: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": b95c3f8c0036: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 6766f385176f: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 6748833f8d46: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 20d3a0d4b01e: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e5e954537764: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": d262fc4eee92: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": e6e07c50b02a: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 23606678b4e3: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": ed1a63cde6d6: Pull complete
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Digest: sha256:f0cf57facf9669c56ff588ba336026d769e1e9b5f6d12b865c5ed58bb9de055a
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder:latest
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":  ---> b09e37f7dac6
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Step 2/7 : RUN apt-get update && apt-get install -y make autoconf automake libtool bsdmainutils pkg-config libwebsockets-dev
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":  ---> Running in 23e184764762
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Hit:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Reading package lists...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Reading package lists...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Building dependency tree...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Reading state information...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": make is already the newest version (4.2.1-1.2).
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": make set to manually installed.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": The following additional packages will be installed:
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":   file libcap-dev libcap2 libev-dev libev4 libglib2.0-0 libglib2.0-data
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":   libicu66 libltdl-dev libltdl7 libmagic-mgc libmagic1 libuv1 libuv1-dev
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":   libwebsockets15 libxml2 shared-mime-info xdg-user-dirs zlib1g-dev
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Suggested packages:
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":   autoconf-archive gnu-standards autoconf-doc gettext wamerican | wordlist
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":   whois vacation libtool-doc gfortran | fortran95-compiler gcj-jdk
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": The following NEW packages will be installed:
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":   autoconf automake bsdmainutils file libcap-dev libcap2 libev-dev libev4
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":   libglib2.0-0 libglib2.0-data libicu66 libltdl-dev libltdl7 libmagic-mgc
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":   libmagic1 libtool libuv1 libuv1-dev libwebsockets-dev libwebsockets15
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":   libxml2 pkg-config shared-mime-info xdg-user-dirs zlib1g-dev
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": 0 upgraded, 25 newly installed, 0 to remove and 0 not upgraded.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Need to get 13.7 MB of archives.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": After this operation, 59.9 MB of additional disk space will be used.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic-mgc amd64 1:5.38-4 [218 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libmagic1 amd64 1:5.38-4 [75.9 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 file amd64 1:5.38-4 [23.3 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcap2 amd64 1:2.32-1ubuntu0.2 [15.7 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-0 amd64 2.64.6-1~ubuntu20.04.9 [1290 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglib2.0-data all 2.64.6-1~ubuntu20.04.9 [5836 B]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.10 [640 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 shared-mime-info amd64 1.15-1 [430 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 xdg-user-dirs amd64 0.17-2ubuntu1 [48.3 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 bsdmainutils amd64 11.1.2ubuntu3 [181 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.5 [80.9 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcap-dev amd64 1:2.32-1ubuntu0.2 [33.2 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl7 amd64 2.4.6-14 [38.5 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1-dev amd64 1.34.2-1ubuntu1.5 [103 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:20 http://archive.ubuntu.com/ubuntu focal/universe amd64 libev4 amd64 1:4.31-1 [31.2 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:21 http://archive.ubuntu.com/ubuntu focal/universe amd64 libwebsockets15 amd64 3.2.1-3 [152 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:22 http://archive.ubuntu.com/ubuntu focal/universe amd64 libev-dev amd64 1:4.31-1 [124 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1.5 [155 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:24 http://archive.ubuntu.com/ubuntu focal/universe amd64 libwebsockets-dev amd64 3.2.1-3 [365 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 pkg-config amd64 0.29.1-0ubuntu4 [45.5 kB]
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": [91mdebconf: delaying package configuration, since apt-utils is not installed
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": [0mFetched 13.7 MB in 4s (3794 kB/s)
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libmagic-mgc.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17483 files and directories currently installed.)
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../00-libmagic-mgc_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libmagic1:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../01-libmagic1_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package file.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../02-file_1%3a5.38-4_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking file (1:5.38-4) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libcap2:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../03-libcap2_1%3a2.32-1ubuntu0.2_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libcap2:amd64 (1:2.32-1ubuntu0.2) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libglib2.0-0:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../04-libglib2.0-0_2.64.6-1~ubuntu20.04.9_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libglib2.0-data.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../05-libglib2.0-data_2.64.6-1~ubuntu20.04.9_all.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libicu66:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../06-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libxml2:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../07-libxml2_2.9.10+dfsg-5ubuntu0.20.04.10_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package shared-mime-info.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../08-shared-mime-info_1.15-1_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking shared-mime-info (1.15-1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package xdg-user-dirs.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../09-xdg-user-dirs_0.17-2ubuntu1_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package bsdmainutils.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../10-bsdmainutils_11.1.2ubuntu3_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking bsdmainutils (11.1.2ubuntu3) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libuv1:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../11-libuv1_1.34.2-1ubuntu1.5_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package autoconf.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../12-autoconf_2.69-11.1_all.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking autoconf (2.69-11.1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package automake.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../13-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libcap-dev:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../14-libcap-dev_1%3a2.32-1ubuntu0.2_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libcap-dev:amd64 (1:2.32-1ubuntu0.2) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libltdl7:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../15-libltdl7_2.4.6-14_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libltdl-dev:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../16-libltdl-dev_2.4.6-14_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libtool.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../17-libtool_2.4.6-14_all.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libtool (2.4.6-14) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libuv1-dev:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../18-libuv1-dev_1.34.2-1ubuntu1.5_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libuv1-dev:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libev4:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../19-libev4_1%3a4.31-1_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libev4:amd64 (1:4.31-1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libwebsockets15:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../20-libwebsockets15_3.2.1-3_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libwebsockets15:amd64 (3.2.1-3) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libev-dev:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../21-libev-dev_1%3a4.31-1_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libev-dev:amd64 (1:4.31-1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package zlib1g-dev:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../22-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu1.5_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package libwebsockets-dev:amd64.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../23-libwebsockets-dev_3.2.1-3_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking libwebsockets-dev:amd64 (3.2.1-3) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Selecting previously unselected package pkg-config.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Preparing to unpack .../24-pkg-config_0.29.1-0ubuntu4_amd64.deb ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Unpacking pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up xdg-user-dirs (0.17-2ubuntu1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libmagic-mgc (1:5.38-4) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libglib2.0-0:amd64 (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": No schema files found: doing nothing.
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libev4:amd64 (1:4.31-1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libmagic1:amd64 (1:5.38-4) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up file (1:5.38-4) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libcap2:amd64 (1:2.32-1ubuntu0.2) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libglib2.0-data (2.64.6-1~ubuntu20.04.9) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libuv1:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up bsdmainutils (11.1.2ubuntu3) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": update-alternatives: warning: skip creation of /usr/share/man/man1/write.1.gz because associated file /usr/share/man/man1/bsd-write.1.gz (of link group write) doesn't exist
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": update-alternatives: warning: skip creation of /usr/share/man/man1/from.1.gz because associated file /usr/share/man/man1/bsd-from.1.gz (of link group from) doesn't exist
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up pkg-config (0.29.1-0ubuntu4) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libltdl7:amd64 (2.4.6-14) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up autoconf (2.69-11.1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1.5) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libev-dev:amd64 (1:4.31-1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libcap-dev:amd64 (1:2.32-1ubuntu0.2) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.10) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up automake (1:1.16.1-4ubuntu6) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.16.1.gz (of link group automake) doesn't exist
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libuv1-dev:amd64 (1.34.2-1ubuntu1.5) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libtool (2.4.6-14) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libwebsockets15:amd64 (3.2.1-3) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up shared-mime-info (1.15-1) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Setting up libwebsockets-dev:amd64 (3.2.1-3) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Removing intermediate container 23e184764762
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":  ---> 99760ff28051
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Step 3/7 : RUN git clone --depth 1 https://github.com/wolfSSL/wolfssl.git
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":  ---> Running in a1a13adc45d1
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": [91mCloning into 'wolfssl'...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": [0mRemoving intermediate container a1a13adc45d1
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":  ---> ad72aa40882c
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Step 4/7 : RUN git clone --depth 1 https://github.com/wolfSSL/wolfMQTT.git wolfmqtt
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":  ---> Running in 7bd9ef415573
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": [91mCloning into 'wolfmqtt'...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": [0mRemoving intermediate container 7bd9ef415573
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":  ---> b51ce528691e
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": Step 5/7 : RUN git clone --depth 1 https://github.com/guidovranken/wolfmqtt-fuzzers.git
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4":  ---> Running in ec949669524b
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": [91mCloning into 'wolfmqtt-fuzzers'...
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": [0m[91mfatal: could not read Username for 'https://github.com': No such device or address
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": The command '/bin/sh -c git clone --depth 1 https://github.com/guidovranken/wolfmqtt-fuzzers.git' returned a non-zero code: 128
+Finished Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4"
+ERROR
+ERROR: build step 1 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 128
+Step #1 - "build-3e0581bd-0c4c-4aa5-a274-affa97653dc4": [0m

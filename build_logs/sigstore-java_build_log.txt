@@ -1,0 +1,22 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/sigstore-java --file /root/reproduce_note_fuzz/oss-fuzz/projects/sigstore-java/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/sigstore-java.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 856B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-jvm:latest
+#2 ERROR: failed to do request: Head "https://gcr.io/v2/oss-fuzz-base/base-builder-jvm/manifests/latest": dial tcp [2404:6800:4008:c03::52]:443: i/o timeout
+------
+ > [internal] load metadata for gcr.io/oss-fuzz-base/base-builder-jvm:latest:
+------
+Dockerfile:17
+--------------------
+  15 |     ################################################################################
+  16 |     
+  17 | >>> FROM gcr.io/oss-fuzz-base/base-builder-jvm
+  18 |     
+  19 |     RUN git clone --depth 1 https://github.com/sigstore/sigstore-java
+--------------------
+ERROR: failed to build: failed to solve: DeadlineExceeded: gcr.io/oss-fuzz-base/base-builder-jvm: failed to resolve source metadata for gcr.io/oss-fuzz-base/base-builder-jvm:latest: failed to do request: Head "https://gcr.io/v2/oss-fuzz-base/base-builder-jvm/manifests/latest": dial tcp [2404:6800:4008:c03::52]:443: i/o timeout
+ERROR:__main__:Docker build failed.

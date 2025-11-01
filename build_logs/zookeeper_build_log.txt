@@ -1,0 +1,280 @@
+[[1;34mINFO[m] [1m--- [0;32menforcer:3.0.0-M3:enforce[m [1m(banned-commons-lang)[m @ [36mzookeeper-compatibility-tests-curator[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32menforcer:3.0.0-M3:enforce[m [1m(banned-commons-lang3)[m @ [36mzookeeper-compatibility-tests-curator[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32menforcer:3.0.0-M3:enforce[m [1m(banned-json-simple)[m @ [36mzookeeper-compatibility-tests-curator[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32msource:3.2.1:jar[m [1m(attach-sources)[0;1m < [0;1mgenerate-sources[m @ [36mzookeeper-compatibility-tests-curator[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msource:3.2.1:jar[m [1m(attach-sources)[m @ [36mzookeeper-compatibility-tests-curator[0;1m ---[m
+[[1;34mINFO[m] No sources in project. Archive not created.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjavadoc:3.1.1:jar[m [1m(attach-javadocs)[m @ [36mzookeeper-compatibility-tests-curator[0;1m ---[m
+[[1;34mINFO[m] Skipping javadoc generation
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msite:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mzookeeper-compatibility-tests-curator[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mcyclonedx:2.7.9:makeBom[m [1m(default)[m @ [36mzookeeper-compatibility-tests-curator[0;1m ---[m
+[[1;34mINFO[m] CycloneDX: Resolving Dependencies
+[[1;34mINFO[m] CycloneDX: Creating BOM version 1.4 with 21 component(s)
+[[1;34mINFO[m] CycloneDX: Writing and validating BOM (XML): /src/zookeeper/zookeeper-compatibility-tests/zookeeper-compatibility-tests-curator/target/bom.xml
+[[1;34mINFO[m]            attaching as zookeeper-compatibility-tests-curator-3.10.0-SNAPSHOT-cyclonedx.xml
+[[1;34mINFO[m] CycloneDX: Writing and validating BOM (JSON): /src/zookeeper/zookeeper-compatibility-tests/zookeeper-compatibility-tests-curator/target/bom.json
+[[1;34mINFO[m]            attaching as zookeeper-compatibility-tests-curator-3.10.0-SNAPSHOT-cyclonedx.json
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mshade:3.2.4:shade[m [1m(default-cli)[m @ [36mzookeeper-compatibility-tests-curator[0;1m ---[m
+[[1;34mINFO[m] Including org.apache.zookeeper:zookeeper:jar:3.10.0-SNAPSHOT in the shaded jar.
+[[1;34mINFO[m] Including org.apache.zookeeper:zookeeper-jute:jar:3.10.0-SNAPSHOT in the shaded jar.
+[[1;34mINFO[m] Including org.apache.yetus:audience-annotations:jar:0.12.0 in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-handler:jar:4.1.127.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-common:jar:4.1.127.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-resolver:jar:4.1.127.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-buffer:jar:4.1.127.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-transport:jar:4.1.127.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-transport-native-unix-common:jar:4.1.127.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-codec:jar:4.1.127.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.127.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-transport-classes-epoll:jar:4.1.127.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-tcnative-boringssl-static:jar:2.0.73.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-tcnative-classes:jar:2.0.73.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-tcnative-boringssl-static:jar:linux-x86_64:2.0.73.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-tcnative-boringssl-static:jar:linux-aarch_64:2.0.73.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-tcnative-boringssl-static:jar:osx-x86_64:2.0.73.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-tcnative-boringssl-static:jar:osx-aarch_64:2.0.73.Final in the shaded jar.
+[[1;34mINFO[m] Including io.netty:netty-tcnative-boringssl-static:jar:windows-x86_64:2.0.73.Final in the shaded jar.
+[[1;34mINFO[m] Including org.slf4j:slf4j-api:jar:2.0.13 in the shaded jar.
+[[1;34mINFO[m] Including commons-io:commons-io:jar:2.17.0 in the shaded jar.
+[[1;33mWARNING[m] audience-annotations-0.12.0.jar, commons-io-2.17.0.jar, netty-buffer-4.1.127.Final.jar, netty-codec-4.1.127.Final.jar, netty-common-4.1.127.Final.jar, netty-handler-4.1.127.Final.jar, netty-resolver-4.1.127.Final.jar, netty-tcnative-boringssl-static-2.0.73.Final-linux-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-linux-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-windows-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final.jar, netty-tcnative-classes-2.0.73.Final.jar, netty-transport-4.1.127.Final.jar, netty-transport-classes-epoll-4.1.127.Final.jar, netty-transport-native-epoll-4.1.127.Final-linux-x86_64.jar, netty-transport-native-unix-common-4.1.127.Final.jar, slf4j-api-2.0.13.jar, zookeeper-3.10.0-SNAPSHOT.jar, zookeeper-compatibility-tests-curator-3.10.0-SNAPSHOT.jar, zookeeper-jute-3.10.0-SNAPSHOT.jar define 1 overlapping resource: 
+[[1;33mWARNING[m]   - META-INF/MANIFEST.MF
+[[1;33mWARNING[m] zookeeper-3.10.0-SNAPSHOT.jar, zookeeper-jute-3.10.0-SNAPSHOT.jar define 112 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/org.apache.zookeeper/zookeeper-jute/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/org.apache.zookeeper/zookeeper-jute/pom.xml
+[[1;33mWARNING[m]   - org.apache.jute.BinaryInputArchive
+[[1;33mWARNING[m]   - org.apache.jute.BinaryInputArchive$BinaryIndex
+[[1;33mWARNING[m]   - org.apache.jute.BinaryOutputArchive
+[[1;33mWARNING[m]   - org.apache.jute.Index
+[[1;33mWARNING[m]   - org.apache.jute.InputArchive
+[[1;33mWARNING[m]   - org.apache.jute.OutputArchive
+[[1;33mWARNING[m]   - org.apache.jute.Record
+[[1;33mWARNING[m]   - org.apache.jute.ToStringOutputArchive
+[[1;33mWARNING[m]   - 102 more...
+[[1;33mWARNING[m] audience-annotations-0.12.0.jar, zookeeper-3.10.0-SNAPSHOT.jar, zookeeper-jute-3.10.0-SNAPSHOT.jar define 18 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/DEPENDENCIES
+[[1;33mWARNING[m]   - META-INF/LICENSE
+[[1;33mWARNING[m]   - META-INF/NOTICE
+[[1;33mWARNING[m]   - META-INF/maven/org.apache.yetus/audience-annotations/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/org.apache.yetus/audience-annotations/pom.xml
+[[1;33mWARNING[m]   - org.apache.yetus.audience.InterfaceAudience
+[[1;33mWARNING[m]   - org.apache.yetus.audience.InterfaceAudience$LimitedPrivate
+[[1;33mWARNING[m]   - org.apache.yetus.audience.InterfaceAudience$Private
+[[1;33mWARNING[m]   - org.apache.yetus.audience.InterfaceAudience$Public
+[[1;33mWARNING[m]   - org.apache.yetus.audience.InterfaceStability
+[[1;33mWARNING[m]   - 8 more...
+[[1;33mWARNING[m] netty-buffer-4.1.127.Final.jar, netty-codec-4.1.127.Final.jar, netty-common-4.1.127.Final.jar, netty-handler-4.1.127.Final.jar, netty-resolver-4.1.127.Final.jar, netty-transport-4.1.127.Final.jar, netty-transport-classes-epoll-4.1.127.Final.jar, netty-transport-native-epoll-4.1.127.Final-linux-x86_64.jar, netty-transport-native-unix-common-4.1.127.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 1 overlapping resource: 
+[[1;33mWARNING[m]   - META-INF/io.netty.versions.properties
+[[1;33mWARNING[m] netty-handler-4.1.127.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 365 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-handler/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-handler/pom.xml
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-handler/generated/handlers/reflect-config.json
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-handler/native-image.properties
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-handler/reflect-config.json
+[[1;33mWARNING[m]   - io.netty.handler.address.DynamicAddressConnectHandler
+[[1;33mWARNING[m]   - io.netty.handler.address.DynamicAddressConnectHandler$1
+[[1;33mWARNING[m]   - io.netty.handler.address.ResolveAddressHandler
+[[1;33mWARNING[m]   - io.netty.handler.address.ResolveAddressHandler$1
+[[1;33mWARNING[m]   - io.netty.handler.flow.FlowControlHandler
+[[1;33mWARNING[m]   - 355 more...
+[[1;33mWARNING[m] netty-common-4.1.127.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 546 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-common/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-common/pom.xml
+[[1;33mWARNING[m]   - META-INF/maven/org.jctools/jctools-core/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/org.jctools/jctools-core/pom.xml
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-common/native-image.properties
+[[1;33mWARNING[m]   - META-INF/services/reactor.blockhound.integration.BlockHoundIntegration
+[[1;33mWARNING[m]   - io.netty.util.AbstractConstant
+[[1;33mWARNING[m]   - io.netty.util.AbstractReferenceCounted
+[[1;33mWARNING[m]   - io.netty.util.AbstractReferenceCounted$1
+[[1;33mWARNING[m]   - io.netty.util.AsciiString
+[[1;33mWARNING[m]   - 536 more...
+[[1;33mWARNING[m] netty-resolver-4.1.127.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 31 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-resolver/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-resolver/pom.xml
+[[1;33mWARNING[m]   - io.netty.resolver.AbstractAddressResolver
+[[1;33mWARNING[m]   - io.netty.resolver.AddressResolver
+[[1;33mWARNING[m]   - io.netty.resolver.AddressResolverGroup
+[[1;33mWARNING[m]   - io.netty.resolver.AddressResolverGroup$1
+[[1;33mWARNING[m]   - io.netty.resolver.CompositeNameResolver
+[[1;33mWARNING[m]   - io.netty.resolver.CompositeNameResolver$1
+[[1;33mWARNING[m]   - io.netty.resolver.CompositeNameResolver$2
+[[1;33mWARNING[m]   - io.netty.resolver.DefaultAddressResolverGroup
+[[1;33mWARNING[m]   - 21 more...
+[[1;33mWARNING[m] netty-buffer-4.1.127.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 168 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-buffer/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-buffer/pom.xml
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-buffer/native-image.properties
+[[1;33mWARNING[m]   - io.netty.buffer.AbstractByteBuf
+[[1;33mWARNING[m]   - io.netty.buffer.AbstractByteBufAllocator
+[[1;33mWARNING[m]   - io.netty.buffer.AbstractByteBufAllocator$1
+[[1;33mWARNING[m]   - io.netty.buffer.AbstractDerivedByteBuf
+[[1;33mWARNING[m]   - io.netty.buffer.AbstractPooledDerivedByteBuf
+[[1;33mWARNING[m]   - io.netty.buffer.AbstractPooledDerivedByteBuf$PooledNonRetainedDuplicateByteBuf
+[[1;33mWARNING[m]   - io.netty.buffer.AbstractPooledDerivedByteBuf$PooledNonRetainedSlicedByteBuf
+[[1;33mWARNING[m]   - 158 more...
+[[1;33mWARNING[m] netty-transport-4.1.127.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 390 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-transport/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-transport/pom.xml
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-transport/generated/handlers/reflect-config.json
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-transport/reflect-config.json
+[[1;33mWARNING[m]   - io.netty.bootstrap.AbstractBootstrap
+[[1;33mWARNING[m]   - io.netty.bootstrap.AbstractBootstrap$1
+[[1;33mWARNING[m]   - io.netty.bootstrap.AbstractBootstrap$2
+[[1;33mWARNING[m]   - io.netty.bootstrap.AbstractBootstrap$PendingRegistrationPromise
+[[1;33mWARNING[m]   - io.netty.bootstrap.AbstractBootstrapConfig
+[[1;33mWARNING[m]   - io.netty.bootstrap.Bootstrap
+[[1;33mWARNING[m]   - 380 more...
+[[1;33mWARNING[m] netty-transport-native-unix-common-4.1.127.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 34 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-transport-native-unix-common/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-transport-native-unix-common/pom.xml
+[[1;33mWARNING[m]   - io.netty.channel.unix.Buffer
+[[1;33mWARNING[m]   - io.netty.channel.unix.DatagramSocketAddress
+[[1;33mWARNING[m]   - io.netty.channel.unix.DomainDatagramChannel
+[[1;33mWARNING[m]   - io.netty.channel.unix.DomainDatagramChannelConfig
+[[1;33mWARNING[m]   - io.netty.channel.unix.DomainDatagramPacket
+[[1;33mWARNING[m]   - io.netty.channel.unix.DomainDatagramSocketAddress
+[[1;33mWARNING[m]   - io.netty.channel.unix.DomainSocketAddress
+[[1;33mWARNING[m]   - io.netty.channel.unix.DomainSocketChannel
+[[1;33mWARNING[m]   - 24 more...
+[[1;33mWARNING[m] netty-codec-4.1.127.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 225 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-codec/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-codec/pom.xml
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-codec/generated/handlers/reflect-config.json
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-codec/native-image.properties
+[[1;33mWARNING[m]   - io.netty.handler.codec.AsciiHeadersEncoder
+[[1;33mWARNING[m]   - io.netty.handler.codec.AsciiHeadersEncoder$1
+[[1;33mWARNING[m]   - io.netty.handler.codec.AsciiHeadersEncoder$NewlineType
+[[1;33mWARNING[m]   - io.netty.handler.codec.AsciiHeadersEncoder$SeparatorType
+[[1;33mWARNING[m]   - io.netty.handler.codec.ByteToMessageCodec
+[[1;33mWARNING[m]   - io.netty.handler.codec.ByteToMessageCodec$1
+[[1;33mWARNING[m]   - 215 more...
+[[1;33mWARNING[m] netty-transport-native-epoll-4.1.127.Final-linux-x86_64.jar, zookeeper-3.10.0-SNAPSHOT.jar define 3 overlapping resources: 
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-transport-native-epoll/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-transport-native-epoll/pom.xml
+[[1;33mWARNING[m]   - META-INF/native/libnetty_transport_native_epoll_x86_64.so
+[[1;33mWARNING[m] netty-transport-classes-epoll-4.1.127.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 73 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-transport-classes-epoll/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-transport-classes-epoll/pom.xml
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-transport-classes-epoll/jni-config.json
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-transport-classes-epoll/native-image.properties
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-transport-classes-epoll/reflect-config.json
+[[1;33mWARNING[m]   - META-INF/native-image/io.netty/netty-transport-classes-epoll/resource-config.json
+[[1;33mWARNING[m]   - io.netty.channel.epoll.AbstractEpollChannel
+[[1;33mWARNING[m]   - io.netty.channel.epoll.AbstractEpollChannel$1
+[[1;33mWARNING[m]   - io.netty.channel.epoll.AbstractEpollChannel$2
+[[1;33mWARNING[m]   - io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe
+[[1;33mWARNING[m]   - 63 more...
+[[1;33mWARNING[m] netty-tcnative-boringssl-static-2.0.73.Final-linux-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-linux-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-windows-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final.jar, netty-tcnative-classes-2.0.73.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 1 overlapping classes: 
+[[1;33mWARNING[m]   - META-INF.versions.11.module-info
+[[1;33mWARNING[m] netty-tcnative-boringssl-static-2.0.73.Final-linux-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-linux-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-windows-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 2 overlapping resources: 
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-tcnative-boringssl-static/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-tcnative-boringssl-static/pom.xml
+[[1;33mWARNING[m] netty-tcnative-classes-2.0.73.Final.jar, zookeeper-3.10.0-SNAPSHOT.jar define 32 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-tcnative-classes/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/io.netty/netty-tcnative-classes/pom.xml
+[[1;33mWARNING[m]   - io.netty.internal.tcnative.AsyncSSLPrivateKeyMethod
+[[1;33mWARNING[m]   - io.netty.internal.tcnative.AsyncSSLPrivateKeyMethodAdapter
+[[1;33mWARNING[m]   - io.netty.internal.tcnative.AsyncTask
+[[1;33mWARNING[m]   - io.netty.internal.tcnative.Buffer
+[[1;33mWARNING[m]   - io.netty.internal.tcnative.CertificateCallback
+[[1;33mWARNING[m]   - io.netty.internal.tcnative.CertificateCallbackTask
+[[1;33mWARNING[m]   - io.netty.internal.tcnative.CertificateCompressionAlgo
+[[1;33mWARNING[m]   - io.netty.internal.tcnative.CertificateRequestedCallback
+[[1;33mWARNING[m]   - 22 more...
+[[1;33mWARNING[m] commons-io-2.17.0.jar, netty-tcnative-boringssl-static-2.0.73.Final-linux-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-linux-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-windows-x86_64.jar, slf4j-api-2.0.13.jar, zookeeper-3.10.0-SNAPSHOT.jar define 1 overlapping resource: 
+[[1;33mWARNING[m]   - META-INF/LICENSE.txt
+[[1;33mWARNING[m] commons-io-2.17.0.jar, netty-tcnative-boringssl-static-2.0.73.Final-linux-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-linux-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-windows-x86_64.jar, zookeeper-3.10.0-SNAPSHOT.jar define 1 overlapping resource: 
+[[1;33mWARNING[m]   - META-INF/NOTICE.txt
+[[1;33mWARNING[m] netty-tcnative-boringssl-static-2.0.73.Final-linux-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-linux-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-aarch_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-osx-x86_64.jar, netty-tcnative-boringssl-static-2.0.73.Final-windows-x86_64.jar, zookeeper-3.10.0-SNAPSHOT.jar define 4 overlapping resources: 
+[[1;33mWARNING[m]   - META-INF/license/LICENSE.aix-netbsd.txt
+[[1;33mWARNING[m]   - META-INF/license/LICENSE.boringssl.txt
+[[1;33mWARNING[m]   - META-INF/license/LICENSE.mvn-wrapper.txt
+[[1;33mWARNING[m]   - META-INF/license/LICENSE.tomcat-native.txt
+[[1;33mWARNING[m] netty-tcnative-boringssl-static-2.0.73.Final-linux-x86_64.jar, zookeeper-3.10.0-SNAPSHOT.jar define 1 overlapping resource: 
+[[1;33mWARNING[m]   - META-INF/native/libnetty_tcnative_linux_x86_64.so
+[[1;33mWARNING[m] netty-tcnative-boringssl-static-2.0.73.Final-linux-aarch_64.jar, zookeeper-3.10.0-SNAPSHOT.jar define 1 overlapping resource: 
+[[1;33mWARNING[m]   - META-INF/native/libnetty_tcnative_linux_aarch_64.so
+[[1;33mWARNING[m] netty-tcnative-boringssl-static-2.0.73.Final-osx-x86_64.jar, zookeeper-3.10.0-SNAPSHOT.jar define 1 overlapping resource: 
+[[1;33mWARNING[m]   - META-INF/native/libnetty_tcnative_osx_x86_64.jnilib
+[[1;33mWARNING[m] netty-tcnative-boringssl-static-2.0.73.Final-osx-aarch_64.jar, zookeeper-3.10.0-SNAPSHOT.jar define 1 overlapping resource: 
+[[1;33mWARNING[m]   - META-INF/native/libnetty_tcnative_osx_aarch_64.jnilib
+[[1;33mWARNING[m] netty-tcnative-boringssl-static-2.0.73.Final-windows-x86_64.jar, zookeeper-3.10.0-SNAPSHOT.jar define 1 overlapping resource: 
+[[1;33mWARNING[m]   - META-INF/native/netty_tcnative_windows_x86_64.dll
+[[1;33mWARNING[m] slf4j-api-2.0.13.jar, zookeeper-3.10.0-SNAPSHOT.jar define 56 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/org.slf4j/slf4j-api/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/org.slf4j/slf4j-api/pom.xml
+[[1;33mWARNING[m]   - org.slf4j.ILoggerFactory
+[[1;33mWARNING[m]   - org.slf4j.IMarkerFactory
+[[1;33mWARNING[m]   - org.slf4j.Logger
+[[1;33mWARNING[m]   - org.slf4j.LoggerFactory
+[[1;33mWARNING[m]   - org.slf4j.LoggerFactoryFriend
+[[1;33mWARNING[m]   - org.slf4j.MDC
+[[1;33mWARNING[m]   - org.slf4j.MDC$1
+[[1;33mWARNING[m]   - org.slf4j.MDC$MDCCloseable
+[[1;33mWARNING[m]   - 46 more...
+[[1;33mWARNING[m] commons-io-2.17.0.jar, slf4j-api-2.0.13.jar, zookeeper-3.10.0-SNAPSHOT.jar define 1 overlapping classes: 
+[[1;33mWARNING[m]   - META-INF.versions.9.module-info
+[[1;33mWARNING[m] commons-io-2.17.0.jar, zookeeper-3.10.0-SNAPSHOT.jar define 352 overlapping classes and resources: 
+[[1;33mWARNING[m]   - META-INF/maven/commons-io/commons-io/pom.properties
+[[1;33mWARNING[m]   - META-INF/maven/commons-io/commons-io/pom.xml
+[[1;33mWARNING[m]   - org.apache.commons.io.ByteOrderMark
+[[1;33mWARNING[m]   - org.apache.commons.io.ByteOrderParser
+[[1;33mWARNING[m]   - org.apache.commons.io.Charsets
+[[1;33mWARNING[m]   - org.apache.commons.io.CloseableURLConnection
+[[1;33mWARNING[m]   - org.apache.commons.io.CopyUtils
+[[1;33mWARNING[m]   - org.apache.commons.io.DirectoryWalker
+[[1;33mWARNING[m]   - org.apache.commons.io.DirectoryWalker$CancelException
+[[1;33mWARNING[m]   - org.apache.commons.io.EndianUtils
+[[1;33mWARNING[m]   - 342 more...
+[[1;33mWARNING[m] maven-shade-plugin has detected that some class files are
+[[1;33mWARNING[m] present in two or more JARs. When this happens, only one
+[[1;33mWARNING[m] single version of the class is copied to the uber jar.
+[[1;33mWARNING[m] Usually this is not harmful and you can skip these warnings,
+[[1;33mWARNING[m] otherwise try to manually exclude artifacts based on
+[[1;33mWARNING[m] mvn dependency:tree -Ddetail=true and the above output.
+[[1;33mWARNING[m] See http://maven.apache.org/plugins/maven-shade-plugin/
+[[1;34mINFO[m] Replacing original artifact with shaded artifact.
+[[1;34mINFO[m] Replacing /src/zookeeper/zookeeper-compatibility-tests/zookeeper-compatibility-tests-curator/target/zookeeper-compatibility-tests-curator-3.10.0-SNAPSHOT.jar with /src/zookeeper/zookeeper-compatibility-tests/zookeeper-compatibility-tests-curator/target/zookeeper-compatibility-tests-curator-3.10.0-SNAPSHOT-shaded.jar
+[[1;34mINFO[m] Dependency-reduced POM written at: /src/zookeeper/zookeeper-compatibility-tests/zookeeper-compatibility-tests-curator/dependency-reduced-pom.xml
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for Apache ZooKeeper 3.10.0-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Apache ZooKeeper ................................... [1;32mSUCCESS[m [03:03 min]
+[[1;34mINFO[m] Apache ZooKeeper - Documentation ................... [1;32mSUCCESS[m [ 13.578 s]
+[[1;34mINFO[m] Apache ZooKeeper - Jute ............................ [1;32mSUCCESS[m [01:10 min]
+[[1;34mINFO[m] Apache ZooKeeper - Server .......................... [1;32mSUCCESS[m [01:17 min]
+[[1;34mINFO[m] Apache ZooKeeper - Metrics Providers ............... [1;32mSUCCESS[m [  0.133 s]
+[[1;34mINFO[m] Apache ZooKeeper - Prometheus.io Metrics Provider .. [1;32mSUCCESS[m [  4.333 s]
+[[1;34mINFO[m] Apache ZooKeeper - Client .......................... [1;32mSUCCESS[m [  0.124 s]
+[[1;34mINFO[m] Apache ZooKeeper - Recipes ......................... [1;32mSUCCESS[m [  1.955 s]
+[[1;34mINFO[m] Apache ZooKeeper - Recipes - Election .............. [1;32mSUCCESS[m [  2.023 s]
+[[1;34mINFO[m] Apache ZooKeeper - Recipes - Lock .................. [1;32mSUCCESS[m [  2.076 s]
+[[1;34mINFO[m] Apache ZooKeeper - Recipes - Queue ................. [1;32mSUCCESS[m [  1.956 s]
+[[1;34mINFO[m] Apache ZooKeeper - Assembly ........................ [1;32mSUCCESS[m [ 12.419 s]
+[[1;34mINFO[m] Apache ZooKeeper - Compatibility Tests ............. [1;32mSUCCESS[m [  0.107 s]
+[[1;34mINFO[m] Apache ZooKeeper - Compatibility Tests - Curator ... [1;32mSUCCESS[m [  8.428 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  06:21 min
+[[1;34mINFO[m] Finished at: 2025-10-29T16:50:17Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[0m[0m++ /src/maven/apache-maven-3.9.5/bin/mvn org.apache.maven.plugins:maven-help-plugin:3.2.0:evaluate -Dexpression=project.version -q -DforceStdout
+[0m+ CURRENT_VERSION='[ERROR] Plugin org.apache.maven.plugins:maven-help-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-help-plugin:jar:3.2.0: The following artifacts could not be resolved: org.apache.maven.plugins:maven-help-plugin:pom:3.2.0 (absent): Could not transfer artifact org.apache.maven.plugins:maven-help-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect to repo.maven.apache.org:443 [repo.maven.apache.org/198.18.0.21] failed: Connect timed out -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException'
+ERROR:__main__:Building fuzzers failed.

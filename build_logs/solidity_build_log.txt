@@ -1,0 +1,22 @@
+INFO:__main__:Running: docker build -t gcr.io/oss-fuzz/solidity --file /root/reproduce_note_fuzz/oss-fuzz/projects/solidity/Dockerfile /root/reproduce_note_fuzz/oss-fuzz/projects/solidity.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 4.30kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for gcr.io/oss-fuzz-base/base-builder@sha256:19782f7fe8092843368894dbc471ce9b30dd6a2813946071a36e8b05f5b1e27e
+#2 ERROR: failed to do request: Head "https://gcr.io/v2/oss-fuzz-base/base-builder/manifests/sha256:19782f7fe8092843368894dbc471ce9b30dd6a2813946071a36e8b05f5b1e27e": dial tcp [2404:6800:4008:c13::52]:443: connect: no route to host
+------
+ > [internal] load metadata for gcr.io/oss-fuzz-base/base-builder@sha256:19782f7fe8092843368894dbc471ce9b30dd6a2813946071a36e8b05f5b1e27e:
+------
+Dockerfile:17
+--------------------
+  15 |     ################################################################################
+  16 |     
+  17 | >>> FROM gcr.io/oss-fuzz-base/base-builder@sha256:19782f7fe8092843368894dbc471ce9b30dd6a2813946071a36e8b05f5b1e27e
+  18 |     # ! This project was pinned after a clang bump. Please remove the pin, Try to fix any build warnings and errors, as well as runtime errors
+  19 |     RUN apt-get update && apt-get install -y make autoconf automake libtool \
+--------------------
+ERROR: failed to build: failed to solve: gcr.io/oss-fuzz-base/base-builder@sha256:19782f7fe8092843368894dbc471ce9b30dd6a2813946071a36e8b05f5b1e27e: failed to resolve source metadata for gcr.io/oss-fuzz-base/base-builder@sha256:19782f7fe8092843368894dbc471ce9b30dd6a2813946071a36e8b05f5b1e27e: failed to do request: Head "https://gcr.io/v2/oss-fuzz-base/base-builder/manifests/sha256:19782f7fe8092843368894dbc471ce9b30dd6a2813946071a36e8b05f5b1e27e": dial tcp [2404:6800:4008:c13::52]:443: connect: no route to host
+ERROR:__main__:Docker build failed.

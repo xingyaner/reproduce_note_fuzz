@@ -1,0 +1,280 @@
+Progress (1): 159/523 kB
+Progress (1): 163/523 kB
+Progress (1): 167/523 kB
+Progress (1): 172/523 kB
+Progress (1): 176/523 kB
+Progress (1): 180/523 kB
+Progress (1): 184/523 kB
+Progress (1): 188/523 kB
+Progress (1): 192/523 kB
+Progress (1): 196/523 kB
+Progress (1): 200/523 kB
+Progress (1): 204/523 kB
+Progress (1): 208/523 kB
+Progress (1): 213/523 kB
+Progress (1): 217/523 kB
+Progress (1): 221/523 kB
+Progress (1): 225/523 kB
+Progress (1): 229/523 kB
+Progress (1): 233/523 kB
+Progress (1): 237/523 kB
+Progress (1): 241/523 kB
+Progress (1): 245/523 kB
+Progress (1): 249/523 kB
+Progress (1): 254/523 kB
+Progress (1): 258/523 kB
+Progress (1): 262/523 kB
+Progress (1): 266/523 kB
+Progress (1): 270/523 kB
+Progress (1): 274/523 kB
+Progress (1): 278/523 kB
+Progress (1): 282/523 kB
+Progress (1): 286/523 kB
+Progress (1): 290/523 kB
+Progress (1): 294/523 kB
+Progress (1): 299/523 kB
+Progress (1): 303/523 kB
+Progress (1): 307/523 kB
+Progress (1): 311/523 kB
+Progress (1): 315/523 kB
+Progress (1): 319/523 kB
+Progress (1): 323/523 kB
+Progress (1): 327/523 kB
+Progress (1): 331/523 kB
+Progress (1): 335/523 kB
+Progress (1): 340/523 kB
+Progress (1): 344/523 kB
+Progress (1): 348/523 kB
+Progress (1): 352/523 kB
+Progress (1): 356/523 kB
+Progress (1): 360/523 kB
+Progress (1): 364/523 kB
+Progress (1): 368/523 kB
+Progress (1): 372/523 kB
+Progress (1): 376/523 kB
+Progress (1): 380/523 kB
+Progress (1): 385/523 kB
+Progress (1): 389/523 kB
+Progress (1): 393/523 kB
+Progress (1): 397/523 kB
+Progress (1): 401/523 kB
+Progress (1): 405/523 kB
+Progress (1): 409/523 kB
+Progress (1): 413/523 kB
+Progress (1): 417/523 kB
+Progress (1): 421/523 kB
+Progress (1): 426/523 kB
+Progress (1): 430/523 kB
+Progress (1): 434/523 kB
+Progress (1): 438/523 kB
+Progress (1): 442/523 kB
+Progress (1): 446/523 kB
+Progress (1): 450/523 kB
+Progress (1): 454/523 kB
+Progress (1): 458/523 kB
+Progress (1): 462/523 kB
+Progress (1): 466/523 kB
+Progress (1): 471/523 kB
+Progress (1): 475/523 kB
+Progress (1): 479/523 kB
+Progress (1): 483/523 kB
+Progress (1): 487/523 kB
+Progress (1): 491/523 kB
+Progress (1): 495/523 kB
+Progress (1): 499/523 kB
+Progress (1): 503/523 kB
+Progress (1): 507/523 kB
+Progress (1): 512/523 kB
+Progress (1): 516/523 kB
+Progress (1): 520/523 kB
+Progress (1): 523 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/3.4.1/maven-javadoc-plugin-3.4.1.jar (523 kB at 738 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.2.1/maven-source-plugin-3.2.1.pom
+Progress (1): 4.1 kB
+Progress (1): 6.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.2.1/maven-source-plugin-3.2.1.pom (6.9 kB at 12 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/33/maven-plugins-33.pom
+Progress (1): 4.1 kB
+Progress (1): 8.2 kB
+Progress (1): 11 kB 
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/33/maven-plugins-33.pom (11 kB at 17 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/33/maven-parent-33.pom
+Progress (1): 4.1 kB
+Progress (1): 8.2 kB
+Progress (1): 12 kB 
+Progress (1): 16 kB
+Progress (1): 20 kB
+Progress (1): 25 kB
+Progress (1): 29 kB
+Progress (1): 33 kB
+Progress (1): 37 kB
+Progress (1): 41 kB
+Progress (1): 44 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/33/maven-parent-33.pom (44 kB at 79 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/21/apache-21.pom
+Progress (1): 4.1 kB
+Progress (1): 8.2 kB
+Progress (1): 12 kB 
+Progress (1): 16 kB
+Progress (1): 17 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/21/apache-21.pom (17 kB at 36 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.2.1/maven-source-plugin-3.2.1.jar
+Progress (1): 4.1/32 kB
+Progress (1): 7.7/32 kB
+Progress (1): 12/32 kB 
+Progress (1): 16/32 kB
+Progress (1): 20/32 kB
+Progress (1): 24/32 kB
+Progress (1): 28/32 kB
+Progress (1): 32 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.2.1/maven-source-plugin-3.2.1.jar (32 kB at 54 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/testng/testng/6.8.21/testng-6.8.21.pom
+Progress (1): 4.1 kB
+Progress (1): 7.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/testng/testng/6.8.21/testng-6.8.21.pom (7.3 kB at 12 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/3/oss-parent-3.pom
+Progress (1): 3.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/3/oss-parent-3.pom (3.4 kB at 6.5 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/beust/jcommander/1.27/jcommander-1.27.pom
+Progress (1): 4.1 kB
+Progress (1): 7.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/com/beust/jcommander/1.27/jcommander-1.27.pom (7.2 kB at 15 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/testng/testng/6.8.21/testng-6.8.21.jar
+Downloading from central: https://repo.maven.apache.org/maven2/com/beust/jcommander/1.27/jcommander-1.27.jar
+Progress (1): 8.2/837 kB
+Progress (1): 16/837 kB 
+Progress (1): 25/837 kB
+Progress (1): 33/837 kB
+Progress (1): 41/837 kB
+Progress (1): 49/837 kB
+Progress (1): 57/837 kB
+Progress (1): 66/837 kB
+Progress (1): 74/837 kB
+Progress (1): 78/837 kB
+Progress (1): 86/837 kB
+Progress (1): 94/837 kB
+Progress (1): 102/837 kB
+Progress (1): 111/837 kB
+Progress (1): 115/837 kB
+Progress (1): 119/837 kB
+Progress (1): 127/837 kB
+Progress (1): 135/837 kB
+Progress (1): 143/837 kB
+Progress (1): 147/837 kB
+Progress (1): 156/837 kB
+Progress (1): 164/837 kB
+Progress (1): 172/837 kB
+Progress (1): 180/837 kB
+Progress (1): 188/837 kB
+Progress (1): 197/837 kB
+Progress (1): 201/837 kB
+Progress (1): 209/837 kB
+Progress (1): 213/837 kB
+                        
+Progress (1): 221/837 kB
+Progress (1): 229/837 kB
+Progress (1): 238/837 kB
+Progress (1): 246/837 kB
+Progress (1): 254/837 kB
+Progress (1): 262/837 kB
+Progress (1): 270/837 kB
+Progress (1): 279/837 kB
+Progress (1): 287/837 kB
+Progress (1): 295/837 kB
+Progress (1): 299/837 kB
+Progress (1): 307/837 kB
+Progress (1): 311/837 kB
+Progress (1): 319/837 kB
+Progress (1): 324/837 kB
+Progress (1): 332/837 kB
+Progress (1): 340/837 kB
+Progress (1): 344/837 kB
+Progress (1): 352/837 kB
+Progress (1): 360/837 kB
+Progress (1): 369/837 kB
+Progress (1): 377/837 kB
+Progress (1): 381/837 kB
+Progress (1): 389/837 kB
+Progress (1): 397/837 kB
+Progress (1): 401/837 kB
+Progress (1): 410/837 kB
+Progress (1): 418/837 kB
+Progress (1): 426/837 kB
+Progress (1): 434/837 kB
+Progress (1): 442/837 kB
+Progress (1): 446/837 kB
+Progress (1): 455/837 kB
+Progress (1): 459/837 kB
+Progress (1): 467/837 kB
+Progress (1): 475/837 kB
+Progress (1): 483/837 kB
+Progress (1): 492/837 kB
+Progress (1): 500/837 kB
+Progress (1): 508/837 kB
+Progress (1): 516/837 kB
+Progress (1): 520/837 kB
+Progress (1): 524/837 kB
+Progress (1): 532/837 kB
+Progress (1): 541/837 kB
+Progress (1): 549/837 kB
+Progress (1): 557/837 kB
+Progress (1): 565/837 kB
+Progress (1): 573/837 kB
+Progress (1): 582/837 kB
+Progress (1): 590/837 kB
+Progress (1): 598/837 kB
+Progress (1): 606/837 kB
+Progress (1): 614/837 kB
+Progress (1): 623/837 kB
+Progress (1): 631/837 kB
+Progress (1): 639/837 kB
+Progress (1): 647/837 kB
+Progress (1): 655/837 kB
+Progress (1): 664/837 kB
+Progress (1): 672/837 kB
+Progress (1): 680/837 kB
+Progress (1): 688/837 kB
+Progress (1): 696/837 kB
+Progress (1): 705/837 kB
+Progress (1): 713/837 kB
+Progress (1): 721/837 kB
+Progress (1): 729/837 kB
+Progress (1): 737/837 kB
+Progress (1): 745/837 kB
+Progress (1): 754/837 kB
+Progress (1): 762/837 kB
+Progress (1): 770/837 kB
+Progress (1): 778/837 kB
+Progress (1): 786/837 kB
+Progress (1): 795/837 kB
+Progress (1): 803/837 kB
+Progress (1): 811/837 kB
+Progress (1): 819/837 kB
+Progress (1): 827/837 kB
+Progress (1): 836/837 kB
+Progress (1): 837 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/testng/testng/6.8.21/testng-6.8.21.jar (837 kB at 1.0 MB/s)
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  25.942 s
+[[1;34mINFO[m] Finished at: 2025-10-29T14:03:33Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal on project [36mthreetenbp[m: [1;31mCould not resolve dependencies for project org.threeten:threetenbp:jar:1.7.3-SNAPSHOT: Could not transfer artifact com.beust:jcommander:jar:1.27 from/to central (https://repo.maven.apache.org/maven2): Transfer failed for https://repo.maven.apache.org/maven2/com/beust/jcommander/1.27/jcommander-1.27.jar[m: Received fatal alert: handshake_failure -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+ERROR:__main__:Building fuzzers failed.

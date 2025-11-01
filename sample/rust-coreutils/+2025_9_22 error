@@ -1,0 +1,960 @@
+starting build "ab5a32cd-83eb-49a2-8a5f-a542cf2294a2"
+
+FETCHSOURCE
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/git
+Step #0: Cloning into 'oss-fuzz'...
+Finished Step #0
+Starting Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c"
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Sending build context to Docker daemon   5.12kB
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Step 1/4 : FROM gcr.io/oss-fuzz-base/base-builder-rust
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": latest: Pulling from oss-fuzz-base/base-builder-rust
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b549f31133a9: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 434ea960668c: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 868f576a1a60: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": d2b7fac4fa91: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e7df5d4b7fe9: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": abe9120609af: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 4912b874168a: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 220d818e8d56: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 7e71ad9e90dc: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 9c93ab725cd0: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 1c5487e81b8a: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 14b97fd07233: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 6d3e7d7d13d1: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e2fa7baf7482: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 9ba30d4ad6d9: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": ea8cc11d148d: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": d2b7fac4fa91: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": fb3e0ebed05c: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": a901b1da50ac: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e7df5d4b7fe9: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 59e4be53efa2: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 5e93e2a1ffd7: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": abe9120609af: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b0176b5e2b47: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": a6320af92a2e: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 4912b874168a: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e3e9238e3106: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 220d818e8d56: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 786a103563fc: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 1c5487e81b8a: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": f91541548774: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 7e71ad9e90dc: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": c520c89dd6f0: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 885b00c53a72: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 14b97fd07233: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 9c93ab725cd0: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 6d3e7d7d13d1: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e2fa7baf7482: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 59e4be53efa2: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 9ba30d4ad6d9: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": ea8cc11d148d: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": fb3e0ebed05c: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": a901b1da50ac: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e3e9238e3106: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": f91541548774: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 5e93e2a1ffd7: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": ccbd52fb1553: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 4344b11fc156: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b3ec0a72fa98: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b5c5f999d55c: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 953986c847fa: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": a6320af92a2e: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 579741777197: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 0f69490f99cd: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b0176b5e2b47: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 26e21c65feb0: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 0d17d40502b9: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 22de810cc064: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b3ec0a72fa98: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": ccbd52fb1553: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 579741777197: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 91c6318ab85f: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": d83f0714f84e: Pulling fs layer
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 953986c847fa: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 786a103563fc: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 885b00c53a72: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": c520c89dd6f0: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 4344b11fc156: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": d83f0714f84e: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 91c6318ab85f: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 26e21c65feb0: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 0f69490f99cd: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 0d17d40502b9: Waiting
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 868f576a1a60: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 868f576a1a60: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b549f31133a9: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b549f31133a9: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e7df5d4b7fe9: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e7df5d4b7fe9: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": d2b7fac4fa91: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": d2b7fac4fa91: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 4912b874168a: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 220d818e8d56: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 220d818e8d56: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 434ea960668c: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 434ea960668c: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b549f31133a9: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 9c93ab725cd0: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 1c5487e81b8a: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 1c5487e81b8a: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 14b97fd07233: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 14b97fd07233: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 6d3e7d7d13d1: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 6d3e7d7d13d1: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e2fa7baf7482: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e2fa7baf7482: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 7e71ad9e90dc: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 7e71ad9e90dc: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 9ba30d4ad6d9: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 9ba30d4ad6d9: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": ea8cc11d148d: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": fb3e0ebed05c: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": fb3e0ebed05c: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": a901b1da50ac: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": a901b1da50ac: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 59e4be53efa2: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 59e4be53efa2: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 5e93e2a1ffd7: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 5e93e2a1ffd7: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b0176b5e2b47: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b0176b5e2b47: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": a6320af92a2e: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e3e9238e3106: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e3e9238e3106: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 786a103563fc: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 786a103563fc: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": f91541548774: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": f91541548774: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": c520c89dd6f0: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 885b00c53a72: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": ccbd52fb1553: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": ccbd52fb1553: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 4344b11fc156: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 4344b11fc156: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b5c5f999d55c: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b3ec0a72fa98: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b3ec0a72fa98: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 953986c847fa: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": abe9120609af: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": abe9120609af: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 579741777197: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 579741777197: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 0f69490f99cd: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 434ea960668c: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 0d17d40502b9: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 0d17d40502b9: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 26e21c65feb0: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 868f576a1a60: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 91c6318ab85f: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 91c6318ab85f: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 22de810cc064: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 22de810cc064: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": d2b7fac4fa91: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e7df5d4b7fe9: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": d83f0714f84e: Verifying Checksum
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": d83f0714f84e: Download complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": abe9120609af: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 4912b874168a: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 220d818e8d56: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 7e71ad9e90dc: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 9c93ab725cd0: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 1c5487e81b8a: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 14b97fd07233: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 6d3e7d7d13d1: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e2fa7baf7482: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 9ba30d4ad6d9: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": ea8cc11d148d: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": fb3e0ebed05c: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": a901b1da50ac: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 59e4be53efa2: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 5e93e2a1ffd7: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b0176b5e2b47: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": a6320af92a2e: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": e3e9238e3106: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 786a103563fc: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": f91541548774: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": c520c89dd6f0: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 885b00c53a72: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": ccbd52fb1553: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 4344b11fc156: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b3ec0a72fa98: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": b5c5f999d55c: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 953986c847fa: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 579741777197: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 0f69490f99cd: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 26e21c65feb0: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 0d17d40502b9: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 22de810cc064: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": 91c6318ab85f: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": d83f0714f84e: Pull complete
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Digest: sha256:900164157b66bdfaf0c32f3213e366e4b4e1110cce8288487cdd8de615c35f39
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-builder-rust:latest
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c":  ---> 62e9985ef551
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Step 2/4 : RUN git clone --depth 1 https://github.com/uutils/coreutils rust-coreutils
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c":  ---> Running in 877aeb4bafa9
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": [91mCloning into 'rust-coreutils'...
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": [0mRemoving intermediate container 877aeb4bafa9
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c":  ---> 5f5067668150
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Step 3/4 : WORKDIR $SRC
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c":  ---> Running in 15065f23ccff
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Removing intermediate container 15065f23ccff
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c":  ---> 2a0b30e1c92e
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Step 4/4 : COPY build.sh $SRC/
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c":  ---> de8805e56f96
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Successfully built de8805e56f96
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Successfully tagged gcr.io/oss-fuzz/rust-coreutils:latest
+Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c": Successfully tagged us-central1-docker.pkg.dev/oss-fuzz/unsafe/rust-coreutils:latest
+Finished Step #1 - "build-9bb5f12d-0aa9-487e-bf42-ec6d0ce3714c"
+Starting Step #2 - "srcmap"
+Step #2 - "srcmap": Already have image: gcr.io/oss-fuzz/rust-coreutils
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + SRCMAP=/tmp/file17v4uO
+Step #2 - "srcmap": + echo '{}'
+Step #2 - "srcmap": + PATHS_TO_SCAN=/src
+Step #2 - "srcmap": + [[ rust == \g\o ]]
+Step #2 - "srcmap": ++ find /src -name .git -type d
+Step #2 - "srcmap": + for DOT_GIT_DIR in $(find $PATHS_TO_SCAN -name ".git" -type d)
+Step #2 - "srcmap": ++ dirname /src/rust-coreutils/.git
+Step #2 - "srcmap": + GIT_DIR=/src/rust-coreutils
+Step #2 - "srcmap": + cd /src/rust-coreutils
+Step #2 - "srcmap": ++ git config --get remote.origin.url
+Step #2 - "srcmap": + GIT_URL=https://github.com/uutils/coreutils
+Step #2 - "srcmap": ++ git rev-parse HEAD
+Step #2 - "srcmap": + GIT_REV=dbc542529e8ef7299e49c40e8aa09d3b43b3dbd5
+Step #2 - "srcmap": + jq_inplace /tmp/file17v4uO '."/src/rust-coreutils" = { type: "git", url: "https://github.com/uutils/coreutils", rev: "dbc542529e8ef7299e49c40e8aa09d3b43b3dbd5" }'
+Step #2 - "srcmap": ++ tempfile
+Step #2 - "srcmap": + F=/tmp/filerz3qda
+Step #2 - "srcmap": + cat /tmp/file17v4uO
+Step #2 - "srcmap": + jq '."/src/rust-coreutils" = { type: "git", url: "https://github.com/uutils/coreutils", rev: "dbc542529e8ef7299e49c40e8aa09d3b43b3dbd5" }'
+Step #2 - "srcmap": + mv /tmp/filerz3qda /tmp/file17v4uO
+Step #2 - "srcmap": ++ find /src -name .svn -type d
+Step #2 - "srcmap": ++ find /src -name .hg -type d
+Step #2 - "srcmap": + '[' '' '!=' '' ']'
+Step #2 - "srcmap": + cat /tmp/file17v4uO
+Step #2 - "srcmap": + rm /tmp/file17v4uO
+Step #2 - "srcmap": {
+Step #2 - "srcmap":   "/src/rust-coreutils": {
+Step #2 - "srcmap":     "type": "git",
+Step #2 - "srcmap":     "url": "https://github.com/uutils/coreutils",
+Step #2 - "srcmap":     "rev": "dbc542529e8ef7299e49c40e8aa09d3b43b3dbd5"
+Step #2 - "srcmap":   }
+Step #2 - "srcmap": }
+Finished Step #2 - "srcmap"
+Starting Step #3 - "compile-libfuzzer-address-x86_64"
+Step #3 - "compile-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #3 - "compile-libfuzzer-address-x86_64": Compiling libFuzzer to /usr/lib/libFuzzingEngine.a...  done.
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": CC=clang
+Step #3 - "compile-libfuzzer-address-x86_64": CXX=clang++
+Step #3 - "compile-libfuzzer-address-x86_64": CFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link
+Step #3 - "compile-libfuzzer-address-x86_64": CXXFLAGS=-O1   -fno-omit-frame-pointer   -gline-tables-only   -Wno-error=incompatible-function-pointer-types   -Wno-error=int-conversion   -Wno-error=deprecated-declarations   -Wno-error=implicit-function-declaration   -Wno-error=implicit-int   -Wno-error=unknown-warning-option   -Wno-error=vla-cxx-extension   -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION -fsanitize=address -fsanitize-address-use-after-scope -fsanitize=fuzzer-no-link -stdlib=libc++
+Step #3 - "compile-libfuzzer-address-x86_64": RUSTFLAGS=--cfg fuzzing -Zsanitizer=address -Cdebuginfo=1 -Cforce-frame-pointers
+Step #3 - "compile-libfuzzer-address-x86_64": ---------------------------------------------------------------
+Step #3 - "compile-libfuzzer-address-x86_64": + cd /src/rust-coreutils
+Step #3 - "compile-libfuzzer-address-x86_64": + cargo fuzz build -O
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m    Updating[0m crates.io index
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m Downloading[0m crates ...
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m arrayref v0.3.9
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m anstyle-parse v0.2.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m autocfg v1.4.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m arbitrary v1.4.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m anstyle-query v1.1.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m anstyle v1.0.11
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m arrayvec v0.7.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m anstream v0.6.19
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m potential_utf v0.1.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m pkg-config v0.3.32
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m os_display v0.1.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m keccak v0.1.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m generic-array v0.14.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m dunce v1.0.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m constant_time_eq v0.3.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m proc-macro2 v1.0.95
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m md-5 v0.10.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m rand_chacha v0.9.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m stable_deref_trait v1.2.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m rustversion v1.0.21
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m trim-in-place v0.1.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m zerofrom v0.1.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m wild v2.2.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m zerofrom-derive v0.1.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m z85 v3.0.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m zerovec-derive v0.11.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m tiny-keccak v2.0.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m zerotrie v0.2.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m typenum v1.18.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m serde v1.0.219
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m zerovec v0.11.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m onig_sys v69.9.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m unic-langid-impl v0.9.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m winnow v0.7.12
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m rayon v1.10.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m libm v0.2.15
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m icu_normalizer_data v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m zerocopy v0.8.25
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m regex v1.11.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m unicode-width v0.2.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m syn v2.0.103
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m num-bigint v0.4.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m hashbrown v0.14.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m crc-fast v1.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m regex-syntax v0.8.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m chrono v0.4.41
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m nom v8.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m rustix v1.0.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m icu_collator_data v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m nix v0.30.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m memchr v2.7.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m itertools v0.14.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m icu_properties_data v2.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m icu_locale_core v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m bigdecimal v0.4.8
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m linux-raw-sys v0.9.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m rayon-core v1.12.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m icu_locale_data v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m bstr v1.12.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m blake3 v1.8.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m regex-automata v0.4.9
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m unicode-ident v1.0.18
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m tempfile v3.22.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m jiff v0.2.15
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m smallvec v1.15.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m thiserror v2.0.12
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m sha3 v0.10.8
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m sha2 v0.10.9
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m libc v0.2.175
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m icu_provider v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m icu_properties v2.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m crossbeam-utils v0.8.21
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m crossbeam-epoch v0.9.18
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m clap v4.5.40
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m cc v1.2.27
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m writeable v0.6.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m tinystr v0.8.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m similar v2.7.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m icu_collator v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m rust-ini v0.21.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m parse_datetime v0.11.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m onig v6.5.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m num-traits v0.2.19
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m litemap v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m libfuzzer-sys v0.4.10
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m jobserver v0.1.33
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m is_terminal_polyfill v1.70.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m icu_collections v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m iana-time-zone v0.1.63
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m displaydoc v0.2.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m version_check v0.9.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m utf8parse v0.2.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m terminal_size v0.4.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m self_cell v1.2.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m once_cell v1.21.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m crossbeam-deque v0.8.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m cpufeatures v0.2.17
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m binary-heap-plus v0.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m unic-langid v0.9.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m type-map v0.5.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m thiserror-impl v2.0.12
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m strsim v0.11.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m vsimd v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m utf8_iter v1.0.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m shlex v1.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m sha1 v0.10.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m rustc-hash v2.1.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m outref v0.5.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m digest v0.10.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m data-encoding v2.9.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m ctrlc v3.4.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m crc32fast v1.4.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m crc v3.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m clap_lex v0.7.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m blake2b_simd v1.0.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m base64-simd v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m yoke-derive v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m yoke v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m utf16_iter v1.0.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m sm3 v0.4.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m ordered-multimap v0.7.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m number_prefix v0.4.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m num-integer v0.1.46
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m fluent v0.17.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m errno v0.3.12
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m data-encoding-macro-internal v0.1.16
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m data-encoding-macro v0.1.18
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m crypto-common v0.1.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m const-random v0.1.18
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m bitflags v2.9.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m synstructure v0.13.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m log v0.4.27
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m hex v0.4.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m getrandom v0.3.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m getrandom v0.2.16
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m fluent-syntax v0.12.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m fastrand v2.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m either v1.15.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m crunchy v0.2.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m const-random-macro v0.1.16
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m rand_core v0.9.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m fnv v1.0.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m cfg_aliases v0.2.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m rand v0.9.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m quote v1.0.40
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m icu_normalizer v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m glob v0.3.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m ppv-lite86 v0.2.21
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m intl-memoizer v0.5.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m fluent-langneg v0.13.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m fluent-bundle v0.16.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m dlv-list v0.5.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m crc-catalog v2.4.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m console v0.16.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m colorchoice v1.0.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m cfg-if v1.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m intl_pluralrules v7.0.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m icu_locale v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m bytecount v0.6.9
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m compare v0.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m block-buffer v0.10.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m clap_builder v4.5.40
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m  Downloaded[0m aho-corasick v1.1.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m proc-macro2 v1.0.95
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m unicode-ident v1.0.18
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m libc v0.2.175
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m stable_deref_trait v1.2.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m cfg-if v1.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m version_check v0.9.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m typenum v1.18.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m shlex v1.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m memchr v2.7.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m autocfg v1.4.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m bitflags v2.9.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m getrandom v0.3.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m writeable v0.6.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m rustix v1.0.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m litemap v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m zerocopy v0.8.25
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m regex-syntax v0.8.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m thiserror v2.0.12
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m linux-raw-sys v0.9.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m cfg_aliases v0.2.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m icu_locale_data v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m rustc-hash v2.1.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m utf8parse v0.2.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m icu_normalizer_data v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m smallvec v1.15.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m is_terminal_polyfill v1.70.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m anstyle v1.0.11
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m rustversion v1.0.21
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m colorchoice v1.0.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m anstyle-query v1.1.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m libm v0.2.15
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m icu_collator_data v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m crc-catalog v2.4.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m either v1.15.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m nix v0.30.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m arrayvec v0.7.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m type-map v0.5.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m anstyle-parse v0.2.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m self_cell v1.2.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m unicode-width v0.2.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m constant_time_eq v0.3.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m arrayref v0.3.9
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m data-encoding v2.9.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m cpufeatures v0.2.17
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m clap_lex v0.7.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m strsim v0.11.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m anstream v0.6.19
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m crc v3.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m utf8_iter v1.0.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m utf16_iter v1.0.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m vsimd v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m generic-array v0.14.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m outref v0.5.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m keccak v0.1.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uucore v0.2.2 (/src/rust-coreutils/src/uucore)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m os_display v0.1.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m blake2b_simd v1.0.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m itertools v0.14.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m num-traits v0.2.19
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m bigdecimal v0.4.8
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m crc32fast v1.4.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m number_prefix v0.4.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m hex v0.4.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m glob v0.3.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m wild v2.2.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m z85 v3.0.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m dunce v1.0.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m aho-corasick v1.1.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m crunchy v0.2.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m tiny-keccak v2.0.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m crossbeam-utils v0.8.21
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m once_cell v1.21.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m pkg-config v0.3.32
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m rayon-core v1.12.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m hashbrown v0.14.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m fastrand v2.3.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m iana-time-zone v0.1.63
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m base64-simd v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m quote v1.0.40
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m winnow v0.7.12
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m compare v0.1.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m bytecount v0.6.9
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m trim-in-place v0.1.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m nom v8.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m binary-heap-plus v0.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m arbitrary v1.4.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m syn v2.0.103
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m similar v2.7.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m jiff v0.2.15
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m fnv v1.0.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uucore_procs v0.2.2 (/src/rust-coreutils/src/uucore_procs)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m jobserver v0.1.33
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m getrandom v0.2.16
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m const-random-macro v0.1.16
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m crossbeam-epoch v0.9.18
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m cc v1.2.27
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m num-integer v0.1.46
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m chrono v0.4.41
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m block-buffer v0.10.4
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m crypto-common v0.1.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m crossbeam-deque v0.8.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m digest v0.10.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m const-random v0.1.18
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m dlv-list v0.5.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m num-bigint v0.4.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m md-5 v0.10.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m sha3 v0.10.8
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m sm3 v0.4.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m sha2 v0.10.9
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m sha1 v0.10.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m ordered-multimap v0.7.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m console v0.16.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m regex-automata v0.4.9
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m rust-ini v0.21.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m rand_core v0.9.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m rayon v1.10.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m ppv-lite86 v0.2.21
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m blake3 v1.8.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m onig_sys v69.9.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m libfuzzer-sys v0.4.10
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m rand_chacha v0.9.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m terminal_size v0.4.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m tempfile v3.22.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m clap_builder v4.5.40
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m rand v0.9.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m synstructure v0.13.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m ctrlc v3.4.7
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m zerofrom-derive v0.1.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m yoke-derive v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m zerovec-derive v0.11.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m displaydoc v0.2.5
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m thiserror-impl v2.0.12
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m data-encoding-macro-internal v0.1.16
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m data-encoding-macro v0.1.18
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m zerofrom v0.1.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m yoke v0.8.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m regex v1.11.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m bstr v1.12.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m zerovec v0.11.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m zerotrie v0.2.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m fluent-syntax v0.12.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m clap v4.5.40
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m parse_datetime v0.11.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m tinystr v0.8.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m potential_utf v0.1.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m icu_collections v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m unic-langid-impl v0.9.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m icu_locale_core v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m unic-langid v0.9.6
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m intl_pluralrules v7.0.2
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m intl-memoizer v0.5.3
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m fluent-langneg v0.13.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m fluent-bundle v0.16.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m fluent v0.17.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m icu_provider v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m icu_locale v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m icu_normalizer v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m icu_properties v2.0.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m onig v6.5.1
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m icu_collator v2.0.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m crc-fast v1.5.0
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uufuzz v0.2.2 (/src/rust-coreutils/fuzz/uufuzz)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_wc v0.2.2 (/src/rust-coreutils/src/uu/wc)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_env v0.2.2 (/src/rust-coreutils/src/uu/env)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_test v0.2.2 (/src/rust-coreutils/src/uu/test)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_date v0.2.2 (/src/rust-coreutils/src/uu/date)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_expr v0.2.2 (/src/rust-coreutils/src/uu/expr)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_split v0.2.2 (/src/rust-coreutils/src/uu/split)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_echo v0.2.2 (/src/rust-coreutils/src/uu/echo)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_printf v0.2.2 (/src/rust-coreutils/src/uu/printf)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_cut v0.2.2 (/src/rust-coreutils/src/uu/cut)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_tr v0.2.2 (/src/rust-coreutils/src/uu/tr)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_seq v0.2.2 (/src/rust-coreutils/src/uu/seq)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_sort v0.2.2 (/src/rust-coreutils/src/uu/sort)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uu_cksum v0.2.2 (/src/rust-coreutils/src/uu/cksum)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m   Compiling[0m uucore-fuzz v0.0.0 (/src/rust-coreutils/fuzz)
+Step #3 - "compile-libfuzzer-address-x86_64": [1m[32m    Finished[0m `release` profile [optimized + debuginfo] target(s) in 57.59s
+Step #3 - "compile-libfuzzer-address-x86_64": ++ grep 'name =' fuzz/Cargo.toml
+Step #3 - "compile-libfuzzer-address-x86_64": ++ cut '-d"' -f2
+Step #3 - "compile-libfuzzer-address-x86_64": ++ grep -v uucore-fuzz
+Step #3 - "compile-libfuzzer-address-x86_64": + PROG='fuzz_date
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_printf
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_echo
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_seq
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_sort
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_split
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_cut
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_wc
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_expr
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_test
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_seq_parse_number
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_parse_glob
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_parse_size
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_parse_time
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_tr
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_env
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_cksum
+Step #3 - "compile-libfuzzer-address-x86_64": fuzz_non_utf8_paths'
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_date /workspace/out/libfuzzer-address-x86_64/fuzz_date
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_printf /workspace/out/libfuzzer-address-x86_64/fuzz_printf
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_echo /workspace/out/libfuzzer-address-x86_64/fuzz_echo
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_seq /workspace/out/libfuzzer-address-x86_64/fuzz_seq
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_sort /workspace/out/libfuzzer-address-x86_64/fuzz_sort
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_split /workspace/out/libfuzzer-address-x86_64/fuzz_split
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_cut /workspace/out/libfuzzer-address-x86_64/fuzz_cut
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_wc /workspace/out/libfuzzer-address-x86_64/fuzz_wc
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_expr /workspace/out/libfuzzer-address-x86_64/fuzz_expr
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_test /workspace/out/libfuzzer-address-x86_64/fuzz_test
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_seq_parse_number /workspace/out/libfuzzer-address-x86_64/fuzz_seq_parse_number
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_parse_glob /workspace/out/libfuzzer-address-x86_64/fuzz_parse_glob
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_parse_size /workspace/out/libfuzzer-address-x86_64/fuzz_parse_size
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_parse_time /workspace/out/libfuzzer-address-x86_64/fuzz_parse_time
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_tr /workspace/out/libfuzzer-address-x86_64/fuzz_tr
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_env /workspace/out/libfuzzer-address-x86_64/fuzz_env
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_cksum /workspace/out/libfuzzer-address-x86_64/fuzz_cksum
+Step #3 - "compile-libfuzzer-address-x86_64": + for p in $PROG
+Step #3 - "compile-libfuzzer-address-x86_64": + cp fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_non_utf8_paths /workspace/out/libfuzzer-address-x86_64/fuzz_non_utf8_paths
+Finished Step #3 - "compile-libfuzzer-address-x86_64"
+Starting Step #4 - "build-check-libfuzzer-address-x86_64"
+Step #4 - "build-check-libfuzzer-address-x86_64": Already have image (with digest): gcr.io/cloud-builders/docker
+Step #4 - "build-check-libfuzzer-address-x86_64": Unable to find image 'gcr.io/oss-fuzz-base/base-runner:latest' locally
+Step #4 - "build-check-libfuzzer-address-x86_64": latest: Pulling from oss-fuzz-base/base-runner
+Step #4 - "build-check-libfuzzer-address-x86_64": b549f31133a9: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 434ea960668c: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 868f576a1a60: Already exists
+Step #4 - "build-check-libfuzzer-address-x86_64": 52d57361a962: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 187a01408bb5: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 80c936f89900: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c98a56127533: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": dd91e4983e19: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 3d75d882c50b: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": d5da759f81c1: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 160794a02975: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 5c6b4358750d: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": a44804674ea2: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 6730ec0a7d76: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 984dd2bf1f0f: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 3e01e349e869: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 8bd6e7ba6b27: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f4e50686e2d6: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 8796332d3193: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 7e5324cb0b9d: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c954a16ab1f0: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": c02f2f2da570: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": ff6cdffaa2a4: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": b494a8b76974: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 86ee10cb98f8: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": f95269eed73e: Pulling fs layer
+Step #4 - "build-check-libfuzzer-address-x86_64": 3d75d882c50b: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 984dd2bf1f0f: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": d5da759f81c1: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 3e01e349e869: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 160794a02975: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 8bd6e7ba6b27: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 5c6b4358750d: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": f4e50686e2d6: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": a44804674ea2: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 6730ec0a7d76: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": c98a56127533: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 8796332d3193: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": ff6cdffaa2a4: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 7e5324cb0b9d: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 86ee10cb98f8: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": b494a8b76974: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": f95269eed73e: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": dd91e4983e19: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": c954a16ab1f0: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": c02f2f2da570: Waiting
+Step #4 - "build-check-libfuzzer-address-x86_64": 80c936f89900: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 80c936f89900: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 52d57361a962: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 187a01408bb5: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 187a01408bb5: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": dd91e4983e19: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": dd91e4983e19: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 52d57361a962: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c98a56127533: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": c98a56127533: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d5da759f81c1: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": d5da759f81c1: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 160794a02975: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5c6b4358750d: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 187a01408bb5: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 80c936f89900: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6730ec0a7d76: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 6730ec0a7d76: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 984dd2bf1f0f: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 984dd2bf1f0f: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3d75d882c50b: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 3d75d882c50b: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3e01e349e869: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c98a56127533: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f4e50686e2d6: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": f4e50686e2d6: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": dd91e4983e19: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a44804674ea2: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 7e5324cb0b9d: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 7e5324cb0b9d: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c954a16ab1f0: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": c954a16ab1f0: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8bd6e7ba6b27: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 8bd6e7ba6b27: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c02f2f2da570: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": c02f2f2da570: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ff6cdffaa2a4: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": ff6cdffaa2a4: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8796332d3193: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": 8796332d3193: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 86ee10cb98f8: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": b494a8b76974: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": b494a8b76974: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f95269eed73e: Verifying Checksum
+Step #4 - "build-check-libfuzzer-address-x86_64": f95269eed73e: Download complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3d75d882c50b: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": d5da759f81c1: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 160794a02975: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 5c6b4358750d: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": a44804674ea2: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 6730ec0a7d76: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 984dd2bf1f0f: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 3e01e349e869: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8bd6e7ba6b27: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f4e50686e2d6: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 8796332d3193: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 7e5324cb0b9d: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c954a16ab1f0: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": c02f2f2da570: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": ff6cdffaa2a4: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": b494a8b76974: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": 86ee10cb98f8: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": f95269eed73e: Pull complete
+Step #4 - "build-check-libfuzzer-address-x86_64": Digest: sha256:a354553e4cee59c15406982377682e45870c84b9c0ffa23f2037bfb54a4102a0
+Step #4 - "build-check-libfuzzer-address-x86_64": Status: Downloaded newer image for gcr.io/oss-fuzz-base/base-runner:latest
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_printf
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_echo
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_seq_parse_number
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_cksum
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_sort
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_parse_glob
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_env
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_split
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_parse_size
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_cut
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_seq
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_non_utf8_paths
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_tr
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_parse_time
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_wc
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_date
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_expr
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_test
+Step #4 - "build-check-libfuzzer-address-x86_64": Retrying failed fuzz targets sequentially 2
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_env
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: performing bad build checks for /tmp/not-out/tmpxlbx4vqj/fuzz_wc
+Step #4 - "build-check-libfuzzer-address-x86_64": Broken fuzz targets 2
+Step #4 - "build-check-libfuzzer-address-x86_64": ('/tmp/not-out/tmpxlbx4vqj/fuzz_env', CompletedProcess(args=['bad_build_check', '/tmp/not-out/tmpxlbx4vqj/fuzz_env'], returncode=1, stdout=b'BAD BUILD: /tmp/not-out/tmpxlbx4vqj/fuzz_env seems to have either startup crash or exit:\nvm.mmap_rnd_bits = 28\n/tmp/not-out/tmpxlbx4vqj/fuzz_env -- -rss_limit_mb=2560 -timeout=25 -seed=1337 -runs=4 < /dev/null\nINFO: libFuzzer ignores flags that start with \'--\'\nINFO: Running with entropic power schedule (0xFF, 100).\nINFO: Seed: 1337\nINFO: Loaded 1 modules   (59590 inline 8-bit counters): 59590 [0x5570266aca70, 0x5570266bb336), \nINFO: Loaded 1 PC tables (59590 PCs): 59590 [0x5570266bb338,0x5570267a3f98), \nINFO: -max_len is not provided; libFuzzer will not generate inputs larger than 4096 bytes\nRunning test ["env", "-i", "-u="]\n=== Compare result for: env ["-i", "-u="]\nRust stderr:\nenv-error-cannot-unset\nGNU stderr:\n(empty)\n--- START diff\n-env-error-cannot-unset\n--- END diff\n\nDifferent exit code: (Rust: 125, GNU: 0)\nDiscrepancies detected: stderr differs, exit code differs\n===  KO  Test failed and will panic for: env ["-i", "-u="]\n\nthread \'<unnamed>\' (787) panicked at uufuzz/src/lib.rs:378:13:\nTest failed for: env ["-i", "-u="]\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nAddressSanitizer:DEADLYSIGNAL\n=================================================================\n==787==ERROR: AddressSanitizer: ABRT on unknown address 0x000000000313 (pc 0x7f52d0b6c00b bp 0x7fff4fc63960 sp 0x7fff4fc63710 T0)\nSCARINESS: 10 (signal)\n    #0 0x7f52d0b6c00b in raise (/lib/x86_64-linux-gnu/libc.so.6+0x4300b) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d)\n    #1 0x7f52d0b4b858 in abort (/lib/x86_64-linux-gnu/libc.so.6+0x22858) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d)\n    #2 0x557026138419 in std::sys::pal::unix::abort_internal::h775c77a12e7e21df /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/sys/pal/unix/mod.rs:369:14\n    #3 0x557026139418 in std::process::abort::h678874c9ae819d74 /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/process.rs:2500:5\n    #4 0x557026137ad4 in libfuzzer_sys::initialize::_$u7b$$u7b$closure$u7d$$u7d$::hc8ed3dd6eea1dcde /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:94:9\n    #5 0x55702651832e in _$LT$alloc..boxed..Box$LT$F$C$A$GT$$u20$as$u20$core..ops..function..Fn$LT$Args$GT$$GT$::call::he1cbe815da50eb91 /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/alloc/src/boxed.rs:1999:9\n    #6 0x55702651832e in std::panicking::panic_with_hook::h3c36b03f585679af /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/panicking.rs:842:13\n    #7 0x557026518189 in std::panicking::panic_handler::_$u7b$$u7b$closure$u7d$$u7d$::h2fd03e9e60a01d9a /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/panicking.rs:707:13\n    #8 0x557026514ff8 in std::sys::backtrace::__rust_end_short_backtrace::hf6317f3b75300dce /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/sys/backtrace.rs:174:18\n    #9 0x5570264feaac in __rustc::rust_begin_unwind /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/panicking.rs:698:5\n    #10 0x55702613e6cf in core::panicking::panic_fmt::h39b160f6d6d70c8b /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/core/src/panicking.rs:75:14\n    #11 0x557026236937 in uufuzz::compare_result::h5b63cf5b7072aac8 /src/rust-coreutils/fuzz/uufuzz/src/lib.rs:378:13\n    #12 0x557026221797 in fuzz_env::_::__libfuzzer_sys_run::hbbcc9ccedf801ba5 /src/rust-coreutils/fuzz/fuzz_targets/fuzz_env.rs:88:5\n    #13 0x557026223d7f in rust_fuzzer_test_input /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:276:60\n    #14 0x55702649d7b8 in libfuzzer_sys::test_input_wrap::_$u7b$$u7b$closure$u7d$$u7d$::h359c1bc73c420ed2 /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:62:9\n    #15 0x55702649d7b8 in std::panicking::catch_unwind::do_call::h62cec68f5ff69afe /rust/rustup/toolchains/nightly-2025-09-05-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/panicking.rs:590:40\n    #16 0x55702649e078 in __rust_try libfuzzer_sys.31f21d1878445c9-cgu.0\n    #17 0x55702649d0cd in std::panicking::catch_unwind::h17ac39bdee85651d /rust/rustup/toolchains/nightly-2025-09-05-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/panicking.rs:553:19\n    #18 0x55702649d0cd in std::panic::catch_unwind::h415180314685596d /rust/rustup/toolchains/nightly-2025-09-05-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/panic.rs:359:14\n    #19 0x55702649d0cd in LLVMFuzzerTestOneInput /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:60:22\n    #20 0x5570264b9b2d in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:619:13\n    #21 0x5570264bb091 in fuzzer::Fuzzer::ReadAndExecuteSeedCorpora(std::__Fuzzer::vector<fuzzer::SizedFile, std::__Fuzzer::allocator<fuzzer::SizedFile>>&) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:812:3\n    #22 0x5570264bb608 in fuzzer::Fuzzer::Loop(std::__Fuzzer::vector<fuzzer::SizedFile, std::__Fuzzer::allocator<fuzzer::SizedFile>>&) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:872:3\n    #23 0x5570264aa775 in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerDriver.cpp:917:6\n    #24 0x5570264d5182 in main /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerMain.cpp:20:10\n    #25 0x7f52d0b4d082 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x24082) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d)\n    #26 0x55702613f7dd in _start (/tmp/not-out/tmpxlbx4vqj/fuzz_env+0x1c87dd)\n\nDEDUP_TOKEN: raise--abort--std::sys::pal::unix::abort_internal::h775c77a12e7e21df\n==787==Register values:\nrax = 0x0000000000000000  rbx = 0x00007f52d0b28680  rcx = 0x00007f52d0b6c00b  rdx = 0x0000000000000000  \nrdi = 0x0000000000000002  rsi = 0x00007fff4fc63710  rbp = 0x00007fff4fc63960  rsp = 0x00007fff4fc63710  \n r8 = 0x0000000000000000   r9 = 0x00007fff4fc63710  r10 = 0x0000000000000008  r11 = 0x0000000000000246  \nr12 = 0x0000000000000000  r13 = 0x0000557026d0ce60  r14 = 0x0000557026519820  r15 = 0x0000000000000001  \nAddressSanitizer can not provide additional info.\nSUMMARY: AddressSanitizer: ABRT (/lib/x86_64-linux-gnu/libc.so.6+0x4300b) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d) in raise\n==787==ABORTING\nMS: 0 ; base unit: 0000000000000000000000000000000000000000\n\n\nartifact_prefix=\'./\'; Test unit written to ./crash-da39a3ee5e6b4b0d3255bfef95601890afd80709\nBase64: \n', stderr=b''))
+Step #4 - "build-check-libfuzzer-address-x86_64": /usr/local/bin/bad_build_check: line 89: Binary: unbound variable
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": ('/tmp/not-out/tmpxlbx4vqj/fuzz_wc', CompletedProcess(args=['bad_build_check', '/tmp/not-out/tmpxlbx4vqj/fuzz_wc'], returncode=1, stdout=b'BAD BUILD: /tmp/not-out/tmpxlbx4vqj/fuzz_wc seems to have either startup crash or exit:\nvm.mmap_rnd_bits = 28\n/tmp/not-out/tmpxlbx4vqj/fuzz_wc -- -rss_limit_mb=2560 -timeout=25 -seed=1337 -runs=4 < /dev/null\nINFO: libFuzzer ignores flags that start with \'--\'\nINFO: Running with entropic power schedule (0xFF, 100).\nINFO: Seed: 1337\nINFO: Loaded 1 modules   (59562 inline 8-bit counters): 59562 [0x55ad6cd71710, 0x55ad6cd7ffba), \nINFO: Loaded 1 PC tables (59562 PCs): 59562 [0x55ad6cd7ffc0,0x55ad6ce68a60), \nINFO: -max_len is not provided; libFuzzer will not generate inputs larger than 4096 bytes\nRunning test ["wc", "-c"]\n=== Compare result for: wc ["-c"]\nPipe: GzNaw\xf0\x9f\xa7\xb0PB(k8kJX\xef\xb8\x8fZ\xc3\x83KCGnZD\xf0\x9f\xa7\xb03\xf0\x9f\x94\x97VIIb\xef\xb8\x8f\xf0\x9f\xa7\xb0\xf0\x9f\xaa\x9bGPc3\xf0\x9f\xa7\xb0i\xc3\x83r(Udiv7wNGMvn5u(SDuITo((PUi(DaXhvkAWj\xe2\x9a\x99Tfj0q\xf0\x9f\xa7\xb0pQdSgg4AM6RsrG\xf0\x9f\xa7\xb0b4gGQmxkZsC1QOrzgOUNUhoAahJN\xf0\x9f\xaa\x9bJ1qeS(jJjbc\xe2\x9a\x99g8VIVF6\xc3\x83L7(WEiM9K4\xc3\x83(LUT0uQ0cFyKFTAtmwZswf\xc3\x83Ky\xf0\x9f\x94\xa9YYu\xf0\x9f\xaa\x93Inb((DopeNE\xc3\x83\xef\xb8\x8fW\xc3\x83\xc3\x83(HlUt1ZZuhhO\xf0\x9f\xaa\x9b\nM\nPq\nSi(Q\xe2\x9a\x99LD4\n\xf0\x9f\x94\x97r\xc3\x83rduXBp\xf0\x9f\xaa\x9bw7\xc3\x83U\xc3\x83\nc7(Ncu\n8o\n\nf\n(aaC\xef\xb8\x8f3Q\xc3\x83\n===  OK  Same behavior\n\nINFO: A corpus is not provided, starting from an empty corpus\nRunning test ["wc", "-L", "--files0-from", "VvO", "--files0-from", "P\xc3\x83P\xf0\x9f\xaa\x9bKCqgnvdKCdPgN8("]\n=== Compare result for: wc ["-L", "--files0-from", "VvO", "--files0-from", "P\xc3\x83P\xf0\x9f\xaa\x9bKCqgnvdKCdPgN8("]\nPipe: \xf0\x9f\xaa\x9bys\n\xc3\x83EJZ\xc3\x83\xf0\x9f\xa7\xb0N\xe2\x9a\x99j\nmug\n\xc3\x83\nGUZNuXDIZtYwER2C1NdczRu\xf0\x9f\x94\xa9n(\xf0\x9f\xaa\x93\xe2\x9a\x999kUr27(D\xf0\x9f\xaa\x93R\xf0\x9f\x94\x9763(y(5a\xc3\x83SFI\xf0\x9f\x94\x97a8w\xc3\x83ts\xc3\x832aI(seJ0v\xef\xb8\x8fm2yCk(\xf0\x9f\x94\x97b\xe2\x9a\x99W\xc3\x83\xf0\x9f\x94\xa9C\xf0\x9f\xa7\xb0OQUCn\xef\xb8\x8fZBXc0\xc3\x83EI76v\xc3\x83R80y5(W\xf0\x9f\xaa\x93mdjjC\xc3\x83I7fpbI(cXgb\xf0\x9f\xaa\x9bC\xf0\x9f\xaa\x9bYbTc0x4HmnTDInB((Z6HeMffYvedZ68u\xef\xb8\x8f\xe2\x9a\x99Me3ISv\xc3\x83zA\xc3\x83\xc3\x83\xc3\x83(S3kylZ6NPBJ\xf0\x9f\x94\x97oJKdSnKCu0\xc3\x83Kf\xef\xb8\x8f\xe2\x9a\x99PRpkZ(Dxv\xc3\x83uhzhSsZ2((ts8(Qt5HNB\xf0\x9f\x94\xa9AsZKqO\xf0\x9f\xaa\x9bdGkqKZZxbvssz\xe2\x9a\x99ClNXz9AKNFwS\xef\xb8\x8fcAu9ZGhx6\xef\xb8\x8fMHU4haMR(LLQWU(w(M5nNfAMZJ9NlO0VK\xe2\x9a\x99PVP5sf(vXX(\xf0\x9f\xaa\x93(((2CPw(XK1Ulxd\xf0\x9f\x94\xa9\xf0\x9f\x94\xa9GK\xf0\x9f\x94\x97KPE\xc3\x838wu(\xf0\x9f\xa7\xb0wgSd(u(XSTvr2Wyv(\xe2\x9a\x990\xc3\x836tst\xf0\x9f\xa7\xb0(Z3SPL68ZtD4Gqw10Fn(P6\xef\xb8\x8f\xf0\x9f\x94\x975O3cmjqI8WM2\xf0\x9f\x94\xa9F9e\xe2\x9a\x99\xf0\x9f\xaa\x93(PyuqYLgDjE\xef\xb8\x8fE2j((SJ66(\xf0\x9f\xa7\xb0hu\xf0\x9f\xaa\x931cEkxqdAFJNRcTlLy2Ypxzmg3\xf0\x9f\x94\x97\xf0\x9f\xaa\x93\xe2\x9a\x99LIzd4sR\xc3\x83q\xc3\x83u(CA7DN\xc3\x83Xo0GoU\xc3\x83k\xf0\x9f\x94\xa9VpRteu0suf\xc3\x832EBBUFbnt\xe2\x9a\x99(n8eyb\xe2\x9a\x99J\xf0\x9f\xaa\x93s(HyDc\xc3\x83af4fKA\xc3\x83LGr9\xf0\x9f\x94\x977azC\xf0\x9f\xaa\x9b9F\xf0\x9f\xaa\x9b0cQFdo8c5y(xrI\xc3\x83k(4np03wXFy\xc3\x83NSVb2\xef\xb8\x8f\xc3\x83qVAJxQx(\xef\xb8\x8fB(EB7\xf0\x9f\xaa\x93cDAGoYhT\xf0\x9f\xaa\x93\xc3\x83plTbv4dtxx9e\xc3\x83W\xc3\x83wALd9(MM5to2E7M3XAn(6KH2\xf0\x9f\x94\x97nhzu\xc3\x83B3wYcls\xf0\x9f\xaa\x93PK1\xf0\x9f\x94\x97\xc3\x83\xef\xb8\x8f7p\xf0\x9f\xa7\xb0SkjSd\xe2\x9a\x99s((Z(8Ilmp(G\xc3\x83D9V5mQg\xf0\x9f\xaa\x9b\xc3\x83xieRBEXdQ\xe2\x9a\x99qagxs3Uu4ra\xe2\x9a\x99(21NUz\xf0\x9f\x94\x97vwO\xc3\x830T\xef\xb8\x8fUTQy(\xe2\x9a\x99JzeTn6t\xef\xb8\x8fUrjO\xc3\x83yp5U\xc3\x83BeiED(7iV1ATkymZuR(4\xf0\x9f\xaa\x9bt\xf0\x9f\xaa\x9bilWBbEe(3SnJ36h(1XEYETzs3V\xc3\x83WXOBTQSl6\xf0\x9f\xaa\x9br\xc3\x835A\xef\xb8\x8ff\xc3\x83\xef\xb8\x8ft6yE3tLQzueru\xe2\x9a\x99kZHDeqL9DhTUpUkUZCXF(6\xf0\x9f\x94\xa9Gzh\xc3\x83dfQ\xf0\x9f\xa7\xb0Eqt\xc3\x83\xe2\x9a\x99Jz\xc3\x83sCt9SLGP\xf0\x9f\x94\x97c(2\xc3\x83M0s1D\xf0\x9f\x94\x97D1pByF(Q7(d3xIBE\xf0\x9f\xaa\x93(1tdt\xc3\x83\xf0\x9f\x94\xa9(Ed(ijrS4(\xf0\x9f\x94\x97(00KSRat\xc3\x83wu0XK3\xef\xb8\x8fi(Y8aYd\xc3\x83F\xe2\x9a\x99sp0\xc3\x83yyYZ4N\xe2\x9a\x99\xf0\x9f\xaa\x93JEzg(HyYhki\xc3\x83nZ8aH\xf0\x9f\x94\x97sKE(gUAcvCxrS0\xe2\x9a\x99\xf0\x9f\x94\xa9p\xc3\x83V\xc3\x838GRlJ07J3IH0\xf0\x9f\xa7\xb0wi\xf0\x9f\x94\xa9wLTRwpZDO4rRsf06\xf0\x9f\x94\xa9\xf0\x9f\xa7\xb0I\xc3\x839cZAQ1ea0V\xe2\x9a\x99(cA\xf0\x9f\xaa\x9b(TbWd\xf0\x9f\xa7\xb018lcsLN\xf0\x9f\xa7\xb0pcMOE\xc3\x833aIj3Vz(pMmiRV2Kna2\xf0\x9f\x94\x97U44RcE\xc3\x83Ids\xf0\x9f\xa7\xb0\xf0\x9f\xa7\xb0WAl\xf0\x9f\x94\xa9\xe2\x9a\x99\xf0\x9f\x94\xa9aJcW9ao\xe2\x9a\x997\xf0\x9f\x94\x97VPRTMUU9\xf0\x9f\x94\xa9v\xc3\x837\xc3\x83L\xc3\x83wT45D(6m5\xf0\x9f\xaa\x93JB43h\xc3\x83\xc3\x83bAbB3gMfWdczC\xf0\x9f\x94\x97Cl8UfbzIKJ\xf0\x9f\xaa\x9b\xc3\x83aU(JdkseCm\xf0\x9f\xaa\x93eiMuO\xc3\x83oTt6Ig\xe2\x9a\x99vgu\xe2\x9a\x99S7ETj\xc3\x83gJ\xf0\x9f\xaa\x9bH\xef\xb8\x8fJ\xef\xb8\x8fsMY1e6yz\xf0\x9f\x94\xa9YBksEt\xf0\x9f\xaa\x93e\xc3\x83TY\xf0\x9f\xaa\x9bb19rnm\xc3\x83\xf0\x9f\x94\xa9H(R\xf0\x9f\x94\xa9AfGG\xc3\x83Z((xV\xe2\x9a\x99\xf0\x9f\x94\x97\xf0\x9f\xa7\xb0n4\xef\xb8\x8fLv1u1A\xc3\x83MEg\xc3\x83\xf0\x9f\x94\x97(V0kwz\xc3\x83bCIqQ(wIj787bmG(CwE\xf0\x9f\xa7\xb0(rcyEw8Yt5(F\xef\xb8\x8fn1nr\xf0\x9f\xa7\xb0YvYfJo4\xc3\x83Fe\xc3\x83vid\xc3\x834(MoxwEe\xf0\x9f\xaa\x93nNJetf\xf0\x9f\xaa\x9b\xc3\x83Ba\xc3\x83A2fbZ\xc3\x83\xf0\x9f\xaa\x93Gp\xc3\x83CH\xc3\x83dd\xe2\x9a\x99te\xef\xb8\x8fH3\xe2\x9a\x99q\xc3\x83(\xf0\x9f\xaa\x9bKh\xf0\x9f\xaa\x9b\xc3\x83\xc3\x83(Tb5bdsZgo1K8Zyyb78Qf4BMOBNmLjI(c(vbtohpb\xf0\x9f\xaa\x9by31GZ\xf0\x9f\xa7\xb06F\xef\xb8\x8fF\xc3\x835gs\xc3\x83(eklK\xe2\x9a\x99(Y\xf0\x9f\xaa\x9325f(LaaMnYb(Vs7\xf0\x9f\xaa\x9bj8g\xc3\x830QQWSp4R8q(b\xf0\x9f\x94\xa9h73j\xc3\x83uu0\xf0\x9f\x94\xa9u7\xf0\x9f\x94\x97tZc5o(9QP\xef\xb8\x8fhQhOCs\xc3\x83\xf0\x9f\x94\x97D8\xf0\x9f\x94\x97DayB\xf0\x9f\xaa\x9brV9(\xf0\x9f\xaa\x93pMnfaMnw1\xc3\x83\xf0\x9f\x94\xa9NUlNvM4k\xc3\x835F0vrI7Y(9s1Ah7\xf0\x9f\x94\xa9\xf0\x9f\xaa\x9bKNps6Q2h7\xf0\x9f\xaa\x93sZB59(xw\xc3\x837TyzkAhuAvkVp\nRl\xf0\x9f\x94\xa9Q7yS\xf0\x9f\x94\x97Sd9\xf0\x9f\x94\xa9mhBSMC\n8WEwCoWYX\nx7Cj6GK\nv(5b\nrA\xf0\x9f\xaa\x93JD42\xf0\x9f\x94\x97((GiYczF(4v\xf0\x9f\xaa\x9bz(kxMayyQOzYdzHvo\xe2\x9a\x99KogQ\xf0\x9f\x94\x974(nKExb(AGbqIK2iUoJYcG\xf0\x9f\xa7\xb0Qzj1\xf0\x9f\x94\xa9(\xc3\x83(9R\xc3\x83\xc3\x83cQMWEz(\xe2\x9a\x99L\xf0\x9f\x94\x97Xp3p44THP5\xf0\x9f\xa7\xb0(xueP\xc3\x83GX5\xf0\x9f\x94\xa9(J\xf0\x9f\xaa\x9bi6aJ\xf0\x9f\x94\xa9(K(\xf0\x9f\xa7\xb0zYT\xe2\x9a\x99hEcF\xc3\x83m5\xc3\x83hsJddGF\xc3\x83MtW(ka\xf0\x9f\x94\xa9(XRvZS\xc3\x83IO(FLoBDFhKARzqQdJdL0Plc(OGEVX8c\xf0\x9f\x94\x97Lk\xc3\x83nR\xf0\x9f\x94\xa9qp\xef\xb8\x8fsxMRy43s6o2GgD1bJ\xc3\x83En(G\xc3\x83G(2bGhHng\xc3\x83\xc3\x83Ul\xf0\x9f\xa7\xb0eskoJUW5JdSvCOYD\xf0\x9f\xaa\x93W\xc3\x833irutbQAI(O1V\xef\xb8\x8fnX(\xc3\x83\xc3\x83nGJp2MKr4hWA7(oz\xf0\x9f\xaa\x93g(q1u(\xc3\x83uE\xc3\x83\xf0\x9f\x94\xa9PeH6WnWnQBk(zh3j\xc3\x835(mwWurmitcVQiSAo(8PQ\xef\xb8\x8fiXSgTHpjGj(nG\xe2\x9a\x99IFdWVT1zG(1NQZ\xc3\x83\xc3\x83t6g0\xf0\x9f\x94\xa9V4\xf0\x9f\xa7\xb0AEqOZv6w8H\xef\xb8\x8fuWWvj\xc3\x833X\xc3\x83(fjW1Lr3\xc3\x83O3\xc3\x83T\xc3\x83Ir6(V8bLNBkWp6a\xc3\x83kJ4Evx8\xc3\x830XYz9\xc3\x83KS\xf0\x9f\x94\xa9b(RBcHQ(V\xf0\x9f\xaa\x93PJAJ\xe2\x9a\x99M2\xf0\x9f\xaa\x9b\xf0\x9f\x94\x973emy7xdoE31\xf0\x9f\x94\x978kATsMR(((Bzq\xef\xb8\x8fD(W8s\xe2\x9a\x99\xf0\x9f\x94\x97A\xf0\x9f\x94\x9799wN(glcc\xf0\x9f\x94\x973qcHdKIwkU\xc3\x83dAa43XhkZ\xf0\x9f\xaa\x9bDbnycL1k\xef\xb8\x8fjnQ(mrk(oPkz\xc3\x83TLCiP\xe2\x9a\x99IWMHfJjwvr\xc3\x83GT5RFfm\xf0\x9f\xa7\xb0K\xe2\x9a\x99BHH\xf0\x9f\xa7\xb0l(SwYH(8pa\xc3\x83PoqAJ4q(xtn4KAlOOSP(8\xc3\x83XbZUOhrYE\xf0\x9f\xa7\xb02H\xf0\x9f\x94\x97Tjb3E\xf0\x9f\x94\xa90\xf0\x9f\x94\x97\xf0\x9f\x94\xa9KLuEz(wmVzWdJ1N3WSlMXpUQp0KFTHbnPFx\xc3\x838(B(y\xf0\x9f\xaa\x93fi\xf0\x9f\x94\x97P\xf0\x9f\x94\x97ymZP(z0\xef\xb8\x8fQIC9kWS3dh(Bw03h85ydIC1\xf0\x9f\xa7\xb0\xe2\x9a\x99kii7mt((Y26jNGo9\xc3\x8383wpi(ibL(\xf0\x9f\x94\x97M\xf0\x9f\xaa\x93BQGyj\xe2\x9a\x99P2\xe2\x9a\x99pd5hWDnJ(RmVOPudU6NpAD1Qf\xc3\x83olb0IBMO\xf0\x9f\xa7\xb0yPCdavP7rfl6CbLn\xf0\x9f\xa7\xb03pL0o4yP\xe2\x9a\x99\xc3\x83\xf0\x9f\xaa\x9bqXNOGtHYQhG\xc3\x83gNtWGFnVJxihBa\xf0\x9f\xaa\x93YA(F\xf0\x9f\xaa\x9b7LY(Mt6vP5\xc3\x83Rj2jKZVqnVlQ25K\xe2\x9a\x99HbLU\xef\xb8\x8fW\xc3\x83UTfl\xf0\x9f\xaa\x9byj\xef\xb8\x8fK7p1mJITS5\xf0\x9f\x94\x97\xc3\x83DxxZ0r2k\xc3\x83mO(4G6\xc3\x83CAhw\xc3\x83l1d((oUeRA\xf0\x9f\x94\xa9zsIs2YCBEEQx2j\xf0\x9f\x94\x977si\xc3\x838T\xe2\x9a\x99K(zPzkj(3\xc3\x83(e\xf0\x9f\xa7\xb0XI\xc3\x83d(ggHMvprI\xe2\x9a\x99I\xef\xb8\x8fN\xe2\x9a\x99\xc3\x83udMFI\xef\xb8\x8fbB\xc3\x83UFDI08Zv\xf0\x9f\xaa\x93dJnEBL\xf0\x9f\xa7\xb0zjHnztSpH7Rnkqu8pEqWbwfBr9uuW\xf0\x9f\xaa\x9b3\xf0\x9f\xaa\x93D(K8Z\xf0\x9f\xaa\x9bUJcwGaYTViQ\xe2\x9a\x99(nEMe3w\xc3\x83lW\xc3\x83M0\xf0\x9f\x94\x97XWlUO(rk\xf0\x9f\xa7\xb0JHP\xf0\x9f\x94\x97OzR(iZ98R(l0BBme\xef\xb8\x8fGMk3BCFnUj\xf0\x9f\x94\xa9(R\xc3\x83\xc3\x83S4R\xf0\x9f\xaa\x93\xe2\x9a\x99\xc3\x83Pk4oTF\xf0\x9f\xaa\x9b(B\xc3\x83D\xef\xb8\x8fH6\xf0\x9f\xaa\x9bk6wlM\xe2\x9a\x99E7(O\xc3\x83O(\xe2\x9a\x99Zk5R9ZCZKkyXdf34(FTBkyZp\xf0\x9f\xa7\xb0ttNj6I\xf0\x9f\xaa\x93vwD6U\xc3\x83UL(atzTbt\xf0\x9f\xaa\x9b2HIUeB\xc3\x83TLE6Wx5\xf0\x9f\xa7\xb01i5QtEc\xf0\x9f\xa7\xb0c(Sd1rZ(\xf0\x9f\x94\x9719\xf0\x9f\xaa\x9bAGYt\xc3\x83O37ZaiG\xe2\x9a\x99\xc3\x83hXB1CD(T5(MT\xe2\x9a\x997\xf0\x9f\xaa\x9b\xc3\x83W76OywT4b9os\xf0\x9f\x94\xa9HhAYYzQu(\xef\xb8\x8f7Bhz(x0uQ\xe2\x9a\x99LFNVZDaDxA\xf0\x9f\x94\x977(L(sIbDBYqtN0\xe2\x9a\x99\xef\xb8\x8fRiGbkhZi\xc3\x83XJ7TKhvHRV30Jg\xe2\x9a\x99xMAQs\xc3\x83\xf0\x9f\xaa\x93(8ysE\xf0\x9f\xa7\xb0L(a\xe2\x9a\x99f\xc3\x83Tz\xe2\x9a\x992NP\xc3\x83ldddYZqVyo7Bg\xc3\x83\xf0\x9f\x94\x97Tq(R\xc3\x83yJP\xe2\x9a\x99M\xf0\x9f\xaa\x9b6v8q\xc3\x83CMq3Vrp\xef\xb8\x8fP8\xf0\x9f\x94\xa9AhVLY1OoXGSaW25\xf0\x9f\x94\x97D2fdsbMA\xc3\x83\xf0\x9f\xaa\x9bgCsxXgL4jlpeI\xc3\x83\xf0\x9f\x94\x97Yu(TxeD\xe2\x9a\x99(248js(a7Qn\xf0\x9f\x94\xa9JMb\xc3\x839D4O\xef\xb8\x8fJxdy84T\xf0\x9f\x94\x97kGHlj\xf0\x9f\xaa\x93(\xc3\x83uQIX\xef\xb8\x8f8H\xe2\x9a\x99jkBOid1LZ2ZGg0Ond\xc3\x83(\xf0\x9f\xaa\x9bm\xf0\x9f\x94\xa9gC9IktKnBeDXRX3u\xc3\x83KBMJI\xc3\x83r7VC((C6wjaxL(Yvm9yH\xe2\x9a\x99Zdilrk3e7e\xc3\x83FuJQjs56h\xc3\x838Lc\xef\xb8\x8fpMEhIg5\xf0\x9f\xaa\x93rNQji\xc3\x83BS\xe2\x9a\x99kZgLG\xf0\x9f\xaa\x9bI(\xe2\x9a\x99\xf0\x9f\xaa\x9bUfN4U\xf0\x9f\xaa\x93h\xc3\x83\xef\xb8\x8fs8iI50qpvpXVd\xf0\x9f\x94\x97ZT\xf0\x9f\xaa\x93zV\xf0\x9f\x94\xa9l\xc3\x83Mz7Ys\xc3\x83cVs\xe2\x9a\x99CKC(SG\xf0\x9f\xaa\x9bTo(\xc3\x83r\xf0\x9f\xa7\xb0e6SA\xf0\x9f\xaa\x93VNDr\xc3\x83GY\xf0\x9f\xa7\xb0V\xc3\x83E9eVjs0IMM(\xc3\x83(\xf0\x9f\x94\xa9Rv\xf0\x9f\xaa\x93(pM5(QEOTvsHfma(d\xf0\x9f\xa7\xb0OH\xe2\x9a\x99U\xf0\x9f\x94\x97hhXhNshnV\xef\xb8\x8fJ\xf0\x9f\xa7\xb0h(I4Os\xc3\x83l\xf0\x9f\xaa\x9bwm\xc3\x83fb\xc3\x83kqr\xf0\x9f\xaa\x93\xf0\x9f\xaa\x9bggbtsW\xf0\x9f\xa7\xb0f(Uq9\xf0\x9f\xaa\x9bQXDkr2TY4(CE9X4zfwQc\xf0\x9f\xa7\xb0bvuXAjXXsx83UCgjOAwB\xf0\x9f\xa7\xb0Aisdc\xf0\x9f\xa7\xb0\xc3\x83GF\xc3\x83Irv(ASHT\xf0\x9f\x94\xa9n(T(\xf0\x9f\xaa\x935E3WYYynHUa\xef\xb8\x8fPndy(S5dfbgAU6p\xc3\x83(\xc3\x83eSP2M\xc3\x83kiOEmvkMm\xf0\x9f\xaa\x93Vbq0h(GZE9\xc3\x83CXiVNM4m(tt\xc3\x83vbPYW0fp5O\xc3\x83WJqyvb0e(Z\xc3\x83\xc3\x834b5Y\xf0\x9f\x94\x97CW3zTFjY\xf0\x9f\x94\xa9\xf0\x9f\xa7\xb0QOtlcS(\xc3\x83\xc3\x83N\xf0\x9f\xaa\x93\xc3\x83iLnQ94c01aV\xef\xb8\x8f(g5Z\xe2\x9a\x99tyxOby8YzvNh50M(m\xc3\x83cs\xc3\x8391AyKma\xc3\x83\xc3\x83frKrM4i\xef\xb8\x8f97(\xc3\x837lu\xf0\x9f\xa7\xb0U\xf0\x9f\x94\xa9iSj\xc3\x83w\xe2\x9a\x99\xf0\x9f\xaa\x93egdQeVySPKyaw\xe2\x9a\x99l\xc3\x832FhSq9PIus2qt7GQY\xe2\x9a\x99qddpQSDE2\xf0\x9f\x94\xa9\xf0\x9f\xaa\x9b\xc3\x83pF\xf0\x9f\xaa\x9b09aFkJ\xf0\x9f\xaa\x9bAILjKwp\xf0\x9f\xaa\x93Jtb0(Sp(NOM2rGZ(\xc3\x83\xf0\x9f\xaa\x9bHT6m4Cx0\xc3\x83MF2h\xc3\x8304\xf0\x9f\xa7\xb0Va\xf0\x9f\xaa\x93Px\xef\xb8\x8fRp26eNmPQY\xf0\x9f\xaa\x93fu\xf0\x9f\xaa\x93NQ2lygM(Uj\xf0\x9f\xa7\xb0eZXOItNPGGu9S\xe2\x9a\x992p\xf0\x9f\x94\x97u1(e8BBWDJb\xc3\x83LnTSN(q(3Yt\xf0\x9f\x94\xa9gVHYTKJn04X7X\xf0\x9f\xa7\xb0Ft5C\xf0\x9f\xaa\x9b89fb1\xc3\x83\xe2\x9a\x99\xc3\x83Vj\xc3\x834j\xf0\x9f\xaa\x93(0cDb\xf0\x9f\xaa\x9b\xf0\x9f\xaa\x9358IZUzxkzB\xf0\x9f\xa7\xb0Zs\xf0\x9f\x94\xa9(6oo7vkEc\xf0\x9f\x94\x97RqjJ\xc3\x83EmQ5QepM\xc3\x83U\xef\xb8\x8f(EEvdKu9j87E\xf0\x9f\x94\x97\xc3\x83vA9\xc3\x83AdS8688g\xf0\x9f\xaa\x9bBS9bQ\xf0\x9f\x94\x97G\xf0\x9f\xa7\xb0f\xf0\x9f\xa7\xb0vrh(7\xc3\x83d\xe2\x9a\x99yOEfB3q(w\xe2\x9a\x99OxFE(jnf\xc3\x83xTTk\xf0\x9f\xa7\xb0QCtl\xf0\x9f\x94\xa9d\xc3\x83yKIhoY3(mC\xf0\x9f\xaa\x93nGQIaSlcF\xf0\x9f\xaa\x9b(lvxNRj5gnf\xf0\x9f\x94\xa9wYeL82o\xc3\x83M\xf0\x9f\xaa\x93\xc3\x83\xf0\x9f\x94\xa9jSh4IYGk(UiKD(CFQ\xe2\x9a\x99z\xef\xb8\x8fTWWF\nRust stderr:\nwc-error-cannot-open-for-reading: No such file or directory\nGNU stderr:\ncannot open \'P\'$\'\\303\\203\'\'P\'$\'\\360\\237\\252\\233\'\'KCqgnvdKCdPgN8(\' for reading: No such file or directory\n--- START diff\n-wc-error-cannot-open-for-reading: No such file or directory\n+cannot open \'P\'$\'\\303\\203\'\'P\'$\'\\360\\237\\252\\233\'\'KCqgnvdKCdPgN8(\' for reading: No such file or directory\n--- END diff\n\nDiscrepancies detected: stderr differs\n===  KO  Test completed with discrepancies for: wc ["-L", "--files0-from", "VvO", "--files0-from", "P\xc3\x83P\xf0\x9f\xaa\x9bKCqgnvdKCdPgN8("]\n\n#2\tINITED cov: 2512 ft: 2513 corp: 1/1b exec/s: 0 rss: 43Mb\nRunning test ["wc", "-m", "-w", "-m", "-w"]\n=== Compare result for: wc ["-m", "-w", "-m", "-w"]\nPipe: \xe2\x9a\x99\xc3\x83X\nr\xc3\x83Qa(U\nf1M9cwja\n2\xc3\x83\nGD\xf0\x9f\xaa\x9bb8HW\ncBxqT0JP8\xf0\x9f\x94\x97v((E(kDwT3(sBJcd11x0k\xe2\x9a\x99TuZiPGJ\xc3\x83Y6\xf0\x9f\x94\x97GPwTmf9\xc3\x83\xc3\x83rfri\xc3\x83\xef\xb8\x8fTC\xc3\x83\xf0\x9f\xaa\x93hysIaoR\xf0\x9f\x94\xa9yX\xf0\x9f\xaa\x93Un7u\xc3\x83YxUQiyp6gKPTn\xc3\x83\xc3\x83F\xef\xb8\x8ff0h\xc3\x83b12yh\xef\xb8\x8fsf6sxagu\xc3\x83(UnUpDL\xc3\x83pEQlGVw\xf0\x9f\x94\x974Dd\xc3\x83\xf0\x9f\xa7\xb0kEL5M(ibKEZYb7l\xf0\x9f\x94\x97Col0AljCuhBbp\xc3\x83r\xf0\x9f\x94\x97(xc3kpsCG3\xef\xb8\x8f\xe2\x9a\x99\xf0\x9f\xa7\xb0\xf0\x9f\xa7\xb0LffQsOpzIagNdLVi\xc3\x83cYcNi\xc3\x83G9kqg\xf0\x9f\xaa\x9b\xef\xb8\x8fFMmAzf8zVA(\xf0\x9f\x94\xa9IY6sgYk\xc3\x83\xc3\x83QrlBE\xf0\x9f\x94\x975n(EbY\xc3\x83faX6Ctf26bZ\xef\xb8\x8f7\xe2\x9a\x99tFLh(uBC(ppYbLjyF7\xf0\x9f\xa7\xb0enFPS3Y\xe2\x9a\x995R\xf0\x9f\x94\xa9\xc3\x83SXooLhP(DC1bIFOJqE\xf0\x9f\x94\x97\xe2\x9a\x99WAdDOtjAP(e1YlfS\xe2\x9a\x99(CD7X7q6\xc3\x83t\xc3\x83\xf0\x9f\xaa\x9b\xef\xb8\x8fCm1E\xc3\x83AFcnfsqNhSWi\xf0\x9f\xa7\xb0BT(KNZ6TNg\xef\xb8\x8fTY0NQt8R7\xf0\x9f\x94\x978(jWtg\xe2\x9a\x99EAg3yV2wQnXGHY\xf0\x9f\xaa\x93pVuJW83wYu(leHzVOT\xf0\x9f\x94\xa9CQB(KmxHE6i\xc3\x835\xf0\x9f\xa7\xb0\xf0\x9f\x94\x97yXdh0hHnp6GtEQL(VmMz\xe2\x9a\x99\xc3\x83XI5EDPB(\xc3\x83y\xf0\x9f\xaa\x93G\xe2\x9a\x99ewSQq\xe2\x9a\x99wKr6\xf0\x9f\xa7\xb0\xf0\x9f\x94\x97\xc3\x83YWQIO(\xc3\x8363E13\xf0\x9f\xa7\xb0O2R1\xc3\x83cwbv0ATFxjY\xf0\x9f\x94\x97s1\xef\xb8\x8fJVWZ(G7M\xc3\x83BzT\xf0\x9f\xa7\xb0\xf0\x9f\x94\x97\xf0\x9f\xaa\x9bsb\xc3\x835bF\xf0\x9f\x94\x97\xf0\x9f\xaa\x9b\xf0\x9f\x94\x9760HkUwUD(W\xc3\x83o\xc3\x83P7Wx\xf0\x9f\xaa\x93EJVWU6YRjdR\xf0\x9f\x94\xa9d9rE7s(n8\xc3\x83\xc3\x8374mfN0xHOCmk(g\xf0\x9f\x94\x97demZ((56m\n\xf0\x9f\xa7\xb0H\nusTB(O\n\nVv\nRust stdout:\n      9     650\n\nGNU stdout:\n      9     847\n\n--- START diff\n-      9     650\n+      9     847\n--- END diff\n\nDiscrepancies detected: stdout differs\n===  KO  Test failed and will panic for: wc ["-m", "-w", "-m", "-w"]\n\nthread \'<unnamed>\' (783) panicked at uufuzz/src/lib.rs:378:13:\nTest failed for: wc ["-m", "-w", "-m", "-w"]\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nAddressSanitizer:DEADLYSIGNAL\n=================================================================\n==783==ERROR: AddressSanitizer: ABRT on unknown address 0x00000000030f (pc 0x7f06014d600b bp 0x7ffcca029160 sp 0x7ffcca028f10 T0)\nSCARINESS: 10 (signal)\n    #0 0x7f06014d600b in raise (/lib/x86_64-linux-gnu/libc.so.6+0x4300b) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d)\n    #1 0x7f06014b5858 in abort (/lib/x86_64-linux-gnu/libc.so.6+0x22858) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d)\n    #2 0x55ad6c808589 in std::sys::pal::unix::abort_internal::h775c77a12e7e21df /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/sys/pal/unix/mod.rs:369:14\n    #3 0x55ad6c8094f8 in std::process::abort::h678874c9ae819d74 /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/process.rs:2500:5\n    #4 0x55ad6c807c44 in libfuzzer_sys::initialize::_$u7b$$u7b$closure$u7d$$u7d$::hc8ed3dd6eea1dcde /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:94:9\n    #5 0x55ad6cbe78ee in _$LT$alloc..boxed..Box$LT$F$C$A$GT$$u20$as$u20$core..ops..function..Fn$LT$Args$GT$$GT$::call::he1cbe815da50eb91 /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/alloc/src/boxed.rs:1999:9\n    #6 0x55ad6cbe78ee in std::panicking::panic_with_hook::h3c36b03f585679af /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/panicking.rs:842:13\n    #7 0x55ad6cbe7749 in std::panicking::panic_handler::_$u7b$$u7b$closure$u7d$$u7d$::h2fd03e9e60a01d9a /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/panicking.rs:707:13\n    #8 0x55ad6cbe45b8 in std::sys::backtrace::__rust_end_short_backtrace::hf6317f3b75300dce /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/sys/backtrace.rs:174:18\n    #9 0x55ad6cbce8ac in __rustc::rust_begin_unwind /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/panicking.rs:698:5\n    #10 0x55ad6c80e7af in core::panicking::panic_fmt::h39b160f6d6d70c8b /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/core/src/panicking.rs:75:14\n    #11 0x55ad6c8fb717 in uufuzz::compare_result::h5b63cf5b7072aac8 /src/rust-coreutils/fuzz/uufuzz/src/lib.rs:378:13\n    #12 0x55ad6c8e65d3 in fuzz_wc::_::__libfuzzer_sys_run::h576757926af7d0bd /src/rust-coreutils/fuzz/fuzz_targets/fuzz_wc.rs:90:5\n    #13 0x55ad6c8e8b5f in rust_fuzzer_test_input /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:276:60\n    #14 0x55ad6cb6d5b8 in libfuzzer_sys::test_input_wrap::_$u7b$$u7b$closure$u7d$$u7d$::h359c1bc73c420ed2 /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:62:9\n    #15 0x55ad6cb6d5b8 in std::panicking::catch_unwind::do_call::h62cec68f5ff69afe /rust/rustup/toolchains/nightly-2025-09-05-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/panicking.rs:590:40\n    #16 0x55ad6cb6de78 in __rust_try libfuzzer_sys.31f21d1878445c9-cgu.0\n    #17 0x55ad6cb6cecd in std::panicking::catch_unwind::h17ac39bdee85651d /rust/rustup/toolchains/nightly-2025-09-05-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/panicking.rs:553:19\n    #18 0x55ad6cb6cecd in std::panic::catch_unwind::h415180314685596d /rust/rustup/toolchains/nightly-2025-09-05-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/panic.rs:359:14\n    #19 0x55ad6cb6cecd in LLVMFuzzerTestOneInput /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:60:22\n    #20 0x55ad6cb8992d in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:619:13\n    #21 0x55ad6cb88f65 in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool, bool*) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:516:7\n    #22 0x55ad6cb8ab15 in fuzzer::Fuzzer::MutateAndTestOne() /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:765:19\n    #23 0x55ad6cb8b6f5 in fuzzer::Fuzzer::Loop(std::__Fuzzer::vector<fuzzer::SizedFile, std::__Fuzzer::allocator<fuzzer::SizedFile>>&) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:910:5\n    #24 0x55ad6cb7a575 in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerDriver.cpp:917:6\n    #25 0x55ad6cba4f82 in main /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerMain.cpp:20:10\n    #26 0x7f06014b7082 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x24082) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d)\n    #27 0x55ad6c80f8bd in _start (/tmp/not-out/tmpxlbx4vqj/fuzz_wc+0x1bb8bd)\n\nDEDUP_TOKEN: raise--abort--std::sys::pal::unix::abort_internal::h775c77a12e7e21df\n==783==Register values:\nrax = 0x0000000000000000  rbx = 0x00007f0601492680  rcx = 0x00007f06014d600b  rdx = 0x0000000000000000  \nrdi = 0x0000000000000002  rsi = 0x00007ffcca028f10  rbp = 0x00007ffcca029160  rsp = 0x00007ffcca028f10  \n r8 = 0x0000000000000000   r9 = 0x00007ffcca028f10  r10 = 0x0000000000000008  r11 = 0x0000000000000246  \nr12 = 0x0000000000000000  r13 = 0x000055ad6d3d1a60  r14 = 0x000055ad6cbe8e30  r15 = 0x0000000000000001  \nAddressSanitizer can not provide additional info.\nSUMMARY: AddressSanitizer: ABRT (/lib/x86_64-linux-gnu/libc.so.6+0x4300b) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d) in raise\n==783==ABORTING\nMS: 1 ChangeBit-; base unit: adc83b19e793491b1c6ea0fd8b46cd9f32e592fc\n0x2a,\n*\nartifact_prefix=\'./\'; Test unit written to ./crash-df58248c414f342c81e056b40bee12d17a08bf61\nBase64: Kg==\n', stderr=b''))
+Step #4 - "build-check-libfuzzer-address-x86_64": BAD BUILD: /tmp/not-out/tmpxlbx4vqj/fuzz_wc seems to have either startup crash or exit:
+Step #4 - "build-check-libfuzzer-address-x86_64": vm.mmap_rnd_bits = 28
+Step #4 - "build-check-libfuzzer-address-x86_64": /tmp/not-out/tmpxlbx4vqj/fuzz_wc -- -rss_limit_mb=2560 -timeout=25 -seed=1337 -runs=4 < /dev/null
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: libFuzzer ignores flags that start with '--'
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: Running with entropic power schedule (0xFF, 100).
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: Seed: 1337
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: Loaded 1 modules   (59562 inline 8-bit counters): 59562 [0x55e570966710, 0x55e570974fba), 
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: Loaded 1 PC tables (59562 PCs): 59562 [0x55e570974fc0,0x55e570a5da60), 
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 4096 bytes
+Step #4 - "build-check-libfuzzer-address-x86_64": Running test ["wc", "-c", "-L", "-w", "--files0-from", "PMmoÃS🪛WimT1a🧰R6yw4z"]
+Step #4 - "build-check-libfuzzer-address-x86_64": === Compare result for: wc ["-c", "-L", "-w", "--files0-from", "PMmoÃS🪛WimT1a🧰R6yw4z"]
+Step #4 - "build-check-libfuzzer-address-x86_64": Pipe: 🧰wÃbzz
+Step #4 - "build-check-libfuzzer-address-x86_64": usÃA5w4ÃÃB
+Step #4 - "build-check-libfuzzer-address-x86_64": (
+Step #4 - "build-check-libfuzzer-address-x86_64": Ã(Rzrq
+Step #4 - "build-check-libfuzzer-address-x86_64": 1eZ
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": Lg1i3H⚙V((Gl3l
+Step #4 - "build-check-libfuzzer-address-x86_64": Ãh
+Step #4 - "build-check-libfuzzer-address-x86_64": p🧰🪓️PfoG️
+Step #4 - "build-check-libfuzzer-address-x86_64": QcxVQ(P
+Step #4 - "build-check-libfuzzer-address-x86_64": Rust stderr:
+Step #4 - "build-check-libfuzzer-address-x86_64": wc-error-cannot-open-for-reading: No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": GNU stderr:
+Step #4 - "build-check-libfuzzer-address-x86_64": cannot open 'PMmo'$'\303\203''S'$'\360\237\252\233''WimT1a'$'\360\237\247\260''R6yw4z' for reading: No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": --- START diff
+Step #4 - "build-check-libfuzzer-address-x86_64": -wc-error-cannot-open-for-reading: No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": +cannot open 'PMmo'$'\303\203''S'$'\360\237\252\233''WimT1a'$'\360\237\247\260''R6yw4z' for reading: No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": --- END diff
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": Discrepancies detected: stderr differs
+Step #4 - "build-check-libfuzzer-address-x86_64": ===  KO  Test completed with discrepancies for: wc ["-c", "-L", "-w", "--files0-from", "PMmoÃS🪛WimT1a🧰R6yw4z"]
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": INFO: A corpus is not provided, starting from an empty corpus
+Step #4 - "build-check-libfuzzer-address-x86_64": Running test ["wc", "-w", "-m", "--files0-from", "🔗8qF(ÃPI9AGS9lioVi⚙453", "-l"]
+Step #4 - "build-check-libfuzzer-address-x86_64": === Compare result for: wc ["-w", "-m", "--files0-from", "🔗8qF(ÃPI9AGS9lioVi⚙453", "-l"]
+Step #4 - "build-check-libfuzzer-address-x86_64": Pipe: j8B2D
+Step #4 - "build-check-libfuzzer-address-x86_64": u
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": 🪓ÃNic21FPÃPqx
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": bVddzNtkt(hfRDWRTezp🔗4🔩⚙krxbPh🪓x⚙QofKnz️I2🪛OSqLRxkOT7⚙XPnRielG🪓WÃPFbjLPc🧰4🪛(6BiyK9r(g2eMrT7COiot️dL2uNieEB8CTASQBm️duOF🪛🪛mjÃRÃz⚙️ÃfcoXyYfo96NÃCSnlxz8🪛pW️EKoHpzP7(mYx🧰🪛🔗⚙QMÃj(lUCL1C️hÃA7TGfheM️6O2IaeqoIXÃbIvOHÃIRE6c(mMbJÃDQ6AmRÃc(BP3🪓yL28R(pu️4EW🔩mIPQ4guL(zz🔩iqRUFgDbxRCEe7J0EpQGÃ(A(⚙(6x3v🪛ÃT4V1Y🪛🪛c0IgcV🔗s2🔩8XA🔗🧰s️4sC6🔗️1w🔗🪛K🧰SE(0gB57zE((hGDs(🪛8m🔩Dmzz5CUSS2W98IpuRqPEx((dVU42s4bQ30XhAE02(6🪛Y2ÃSil1wqAv2VF8GCMRfTG8a(4m🪛cIIQJeEQ9🪛(eC32t(MJF6ghZ9sHYMh⚙((DoL⚙SIFwJ🪓j⚙(ÃnE️MkGuE5o️⚙Brpk(eB2faattQXjJnvQdUNNp2qÃ5ivJr🔗(2ap🔩o9UgOH🔗ÃdPJ5IctI(7((R⚙79(Vs⚙ek🪛s2uFwO(mYnG(wa️zEr7ÃÃIqfipiCt⚙y9I(d🪓(l5Fc8tYKAÃojUÃycyK🪛6X2mSHhQÃÃ0v12(V🧰🔗(dX66Wu4q5QmCoUIUA(hdfPSi0Jj(🪛luXw🔗IHZ🪛vBGQMÃÃY🔩syBkPHyuEnNYnuQnqF5🧰pPUkvs(0KCujQcNJTIhX8YqRkCÃuÃÃSÃjdn🔩JYAs🔩Ãzt56v🧰🔩ÃL🪓PcAZoXm(8MX(N0AmkbÃq(ÃmEIÃeR🧰🪓yfFhUÃP️GRr4OtU⚙sVÃ(pdOvQ️NoZÃ🔗3m1X(Rhk0MO0lcAJ⚙hkXRw🔩DwF5Dw6Vr1F79m9uT(JMkXkLAyjscvKFxjI🔗9LMSo🪛uSt4WeokAz0(2VQ(w(J1YF🔩Y1w️RW9Tyl2gVD🧰H9IbsgE🧰tiur2h🧰Q83kpÃÃb8dqD5SlX🔩1ÃO🔗VIpQ76FUd(Y1rT⚙MKXQ8mHGY9wYt🪓u️⚙16wwCXÃxsyTHc(rDEaWÃHÃePqnzSEd787(KF17r8QÃ36qa(inrijxf🧰X7(J0H🪛X(K(w🪓m(mYoaptW(Ãc7KuWkd(PWdSGPfIBa🧰TrEBOi⚙Ã8🔩kW1w🧰6c🧰5🔗qDe6e(QPfzsoOmNJRw0BYpÃ4(y🧰YQeÃT(oÃW74A🔩pEU(2v4YIR6Bmir⚙ÃKimEwsBMttqhf7OchwhJXI️c52l2️vMKiDkm8Co🔗3sS2yWbH(EE(W0zdyYfDa6DF2🧰LPkwOABoIXÃU9d8K(Egb🪓LI8X01o((iVewJ(WBtdFuR2G(Ã⚙x4q1Kn3hIrLPa0Z8J8WvFq🔩x8Tbz(47w9MNSj73🔩🧰5F3rtdWpk4sÃjjiw🪓tve🪛0ÃX5DDt(YGcBÃyic8E8ArAF5IWFA3TX0🔗NÃqKN407grO(jO🔩Uak🔩ÃGxRmvuhX🪛ÃHAxTrCQ(SGfA⚙zlAXÃzu0OuQe️️adFEPJAÃ🔗m️Ã2(vb3Juw(CZ⚙OXD(ÃNKÃ(p0S3🔗UfICB90d🔩a(ciSkxkcODuDy7Dn3l9Qqt(vrH1EQÃLtO(j⚙GE4l🔗zsÃrbVJ🪓Ã3oxÃ🔩5PC1kdqR8u🪛BÃLRKnn4b0vRIvF🔗Z️ÃAÃ🧰(vBÃ(58NjvHk(hw🔗rF7oNÃVj🔩QÃl🪓Uh6Ncl1iF7s🪓ÃExetFZTlpnwg5xQ5DmÃc️84FÃnN🪓h9C9nN14tQGj🧰6QBC2AO🧰cÃKDscyÃb️8a2O0Ws6jÃ️(efJko5Ktf🪓p9L4🪓QcÃGW⚙g🪓GHyKeÃHfnh8GhduQXT1HGiajMjfoeho9NNRhuIel🪓(aÃkRc(ÃbOkWnP(((dp🧰MZgNzLSe⚙NH5ÃmTaX(mdjXiJm(️Aw🧰(avVI🧰Sdt(8Ã(EiDWR️🪛Ã9W🔗qN9tZ🪓aEDqÃSUhW🧰AAhxHEXIr️MrZqL6Ã(H🧰e80NursQa🔗A🪛rrkVHXlf🔗wMÃ️m🔗9Ã9nYAD47🔗ZA🪓Ãu(gT️rY️mPNIMDTvx6X(bBJC0(YoJR🪓ggzueMÃOas(sW3p(dNH🧰Qs🔗jhDhJ🪓pH7tÃJwyRZÃhvÃ🪓AClS🔩zQ🔩qp(kSJXM((J6CGPLHhÃePÃrl🪛vsPHÃsG37k2jK🔗SlzwkWTHSg⚙L🔗din6Ip9VxoR2p️P5eJA(A1tqXmw7egFsk🪛🔩f🧰CYKUq🔗FÃA30IH(gm((kvEGfHWzxn6CAHÃz2🧰e⚙🪛dhÃ5uAb🪓(mqsW⚙(LC3KX71cXuZUHDcyCw🪓I0qnqDIS(️🪛OYxc1a️️DSG5kPOv5ÃFE(jPitDSF(YUEhSJAvQF🪛1fuUfVTÃ7j🪛zEHgGC(P🪛m5npbTop1lUu(🔩Ã5XY0MwMkivCBZoo0ZVN3O39yw(6z3u338NSabks8Fe8🪓e0N(a2b(KjHL(M⚙UQjkbZoxf9u🧰🔩a(Yzld🪛EZOÃeUABQ1(1n🪛🪓Hn🔗🧰HÃco6KOKCyr0faÃ🪛vK9PuuuhVl2iyCrq3R3((Ty(EN2arNrJn1shjlNLsyFwQ️5uqfOÃH(🔩McSmhVRaSq🔩CÃÃkfRezk0((Ij️Feh0XL9yUG🔗4CkHgu️vri🧰QigH🪓wfF9yRII3🧰HgPeJEx3Tx0🪛xvvvOV️️Ã(xwL🔩SSb8Z5PÃK0afQdp(UyE5Z🪓9pK(🧰xC5KOY98i🔗9Ãyq5zQb3🔩(s2fUHap1WynFJpJÃ3IrTyLByKCy🧰fRtEqz🔗M3🔗PAo4qP️YyPf🔗(ÃNAÃOga️K3DÃnL🪓kQYM🔩zdg⚙ÃhR(WQIi🔗xMGGzF5ÃrDSCFQVFBdPpwam(Y81G1s8CGVrVgNs(⚙EnMÃlLCNPkdzL2🪛(g6sja4🧰RIrU8(WÃMuFFwI⚙wcFjMYÃzÃif(f(I(8kwGR(GÃ2oGUl4FyFwrv0t(️FOcBUi🪛Y(🔩z9KYWTQ🪓Gp3X3GbkÃO79lKM7x2W2d⚙uLNÃLNbfns99⚙🔩Ãd(F(HBÃt87OOB(wRQnF(oMgT(Ha3NfxZF🔩b8ÃwekQ4PlkCP6BqMQ(c1️GOKÃQw🪓r🪓zUPJ(xMs(elu️SWFo1x⚙NRP(jX49🧰YjCAfCOAzLd7Crew️w((cRqJbcGv(B2(iwnÃBxQ5ULZRNxryL9kQ️JjÃLec️(4(🪛🪛yfQSrhPIhf🔗k7d5(5qBSARVnCS️️fL90Thk6ÃKrPqVÃYAQH6tyM(mSC9V🔩9ltmXXcDÃ(JvkE6JJ🪛PrP8K⚙GXo(DqM🪛🪓cYyKÃd2YZ5ytÃwDniNDfKK(dHq8XGj((5R🔩OWwEC🪛Ã🔩iYvnzO🔩P🔗PLeM8VEBt4ÃÃWtzQ🔩OKzÃS2gzBp0oo3F0IghczDZrwqGT6JOGed6GG1ndy14(kQ️TNV9IhK️m62W8b️yAq59🪓(iU7PxzDT1Ãbc🪛F🔩gbH(️ChRqERCuTNc(6COVT🧰⚙️kP🧰Rixy⚙fXBÃN🪛gz2🔩pZÃPOiKDm5ÃTZI6Ly5l️V0J1🔗nykMOgxM3🪓wÃFn️gXJEÃÃRYGoo(RIÃ2tÃHÃZUC2Xu(⚙H89fuqgBX0woeÃÃT2804KL1fw1PCÃql0nikyÃnoci0ÃWZ3QiwC8X️u⚙🪓cxVÃAhOzeZgukxVrqe(tovkÃFqKeeYxq9UlCgySLS🪛kzÃ8🔗V(🔩vhDk8🔩🪓0JgO🔩ql️iY️mcNNTcvgkItCxypMÃXvQ🔗H0️kbH(mnIL8ÃnhKAxMcIIZR0🪛trTSRGhv(S🪓CMUk0iWC9(IB(PZYm(gMAÃz1U0lVr🔗Ã3wtb7ClJ7SPSt🔩lPCwb33e🔩v6PXrÃBÃUUmY(GUkjqa7nm1uPdjÃÃ⚙9🪓🪓NMOhsMEnCÃoW️PIg6Jig️PKMk6c🪓RQOa🧰⚙o🪛CÃ3nPm19U1hHv⚙GjEÃ91MHS9hye(7L5IOYzyLui4AY(⚙🔗QKmTGbÃ32satsHÃaHaq7xMmkKv⚙hE1Ã🔩bÃH0️dAa0t6hK🧰Vu🔩QMzÃo9GMwhÃdvsu4Ã022(4f6zhcÃlII8⚙dp🔩(ztKkrfd0UFWs0DQ9n🪓5(tCY️Ã(🔩AZubSeÃg4TQwvBjOB5U⚙Se6(🧰BS74sOBxfoNGZtxFm🧰9mtJJDu🔩v2c1H9QHGHpJz🧰U2Az(Q️CwPE(ow🔗Ã🔗HDN🪛xHÃ⚙C🧰pve7DÃr4asÃEGsq5️xSslImÃneu(VOÃvHÃ6M9C🪛KRXORu9k🔗OpVaA🪓ÃVÃgfu7tlWcCK5OBU7pSufDWNMOS((d🔩O0QhnXrÃyXX9XC1🔩ZjyscIu(xpS🔩le(b⚙hPXJsvRQyÃZWYP74H(aC9F93KSz(4hYaPGo87r7ÃCr🔗Ã(Lu⚙r0oÃtahIpWtpÃÃeKg⚙LÃoGNvRNVe4Ã⚙W️DdIz4xC5fKQnkEblDGQQmm2dwEsxM🧰NU⚙lipGSfb🔩Q🪛Krs5tHd🔗ERKDcuSrWJÃvBM(ÃÃ🪓LMPl4(JgSrwUNGgOW(T🔗pd6Jm🧰aKv(nMÃ🔩b2Zewond(3pQ🪛🪓B🔩🔩PZDsfm4k🪛zGM🔩a⚙AZbItZf🪛Eh🔩Ãa🧰pd4sVA9ÃmIhFzSOUfi⚙j5oq(1G6(fupqp️fgx⚙zOVxgp🪛ddQj🪓NdsDu(8hb4🔩6🔗(F🔗4⚙OJsl🔩((8🪓🧰ult8LÃtÃLuS94OL️Ã((j️njO🔩XBLQ7(YcyQe6XÃRe5z🔩XnrF4CBNVmLvrkH(6mGwC🧰oUz2TUe️bKXu(E🪛🪛(AfmuBW🪛NTMe(mÃ(FGMqtgi(🪓🪛QMFJhBQ️BU🔗⚙XzÃ9sBpZjzA8U🔩qÃ4UCR9cÃZu(EsdcdioopHl🔩CDv(Cmm7🔗NXSlcVY
+Step #4 - "build-check-libfuzzer-address-x86_64": FfMY⚙
+Step #4 - "build-check-libfuzzer-address-x86_64": 8UD0🔩BZRnYY️
+Step #4 - "build-check-libfuzzer-address-x86_64": nY
+Step #4 - "build-check-libfuzzer-address-x86_64": 3Ce🧰c
+Step #4 - "build-check-libfuzzer-address-x86_64": Rust stderr:
+Step #4 - "build-check-libfuzzer-address-x86_64": wc-error-cannot-open-for-reading: No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": GNU stderr:
+Step #4 - "build-check-libfuzzer-address-x86_64": cannot open ''$'\360\237\224\227''8qF('$'\303\203''PI9AGS9lioVi'$'\342\232\231''453' for reading: No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": --- START diff
+Step #4 - "build-check-libfuzzer-address-x86_64": -wc-error-cannot-open-for-reading: No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": +cannot open ''$'\360\237\224\227''8qF('$'\303\203''PI9AGS9lioVi'$'\342\232\231''453' for reading: No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": --- END diff
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": Discrepancies detected: stderr differs
+Step #4 - "build-check-libfuzzer-address-x86_64": ===  KO  Test completed with discrepancies for: wc ["-w", "-m", "--files0-from", "🔗8qF(ÃPI9AGS9lioVi⚙453", "-l"]
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": #2	INITED cov: 2495 ft: 2496 corp: 1/1b exec/s: 0 rss: 42Mb
+Step #4 - "build-check-libfuzzer-address-x86_64": Running test ["wc", "-c", "-w", "nyUH0wb(IWuJEzhÃ7c", "kZ🪓P🪛ULKw"]
+Step #4 - "build-check-libfuzzer-address-x86_64": === Compare result for: wc ["-c", "-w", "nyUH0wb(IWuJEzhÃ7c", "kZ🪓P🪛ULKw"]
+Step #4 - "build-check-libfuzzer-address-x86_64": Pipe: R
+Step #4 - "build-check-libfuzzer-address-x86_64": 6
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": dG🔩EjdzBhXApjidHSÃ0k🪛hddwa🪓fJ(i️4️(ICD73Ac🧰zhdkz8ÃB(🔗Ã(QZgp3otm6VahKZp🔩SmÃFzgsCr6RxvZbp98ÃKfAJEzTsoPrk🪛DbÃb🔗0(2IZnNÃ(🪓2CYJ(🪛V4mwgg🪛oF2r️mlvCYd🪛mI1j🔗L⚙vimel4yGÃhc⚙5🔗BOWAIlqQMKÃhd🔗51aÃidJ4rrVY2DQusCOwtFPRi9🔗TVlizRo3tÃZ⚙🔩PQ1y(8o(aAt0CajhZ9O(🪓(Rx46f🧰kexlÃulWBRFWMRffÃ🔗🔩Yx(⚙6nwÃV(((Wq9QbqpetZp8h4E(MgOHyj🧰R7⚙🔗bX8MrR🔩Z782🔩FHuÃmMeMUB(️dVTQIF🔩i️ÃC🧰r🔗Lf6mÃBbYzXlhDxyyn🪓ÃIÃbÃkb🪓r🪛geZyAfr9🪛Y8CY(NuF4XvpQutmEqfTz🔗19tN5(7j((K0FaTPPk🪛⚙🪛ck9hc🪛Ã🧰(uxShÃVUx1jacL9bi4(ZCcKEDJUH7h28G(🪓SQkjjkCpU🔗E(IsJNrK🪓m8🧰G6V0iQÃyZL(OC🧰eo🔩ÃTiÃaDCTe🪛️(KÃzcF🪛0nru(C🪛AQLA9DrerxqO🧰TvL7(W🔗h5nw🔩2AgTH8BfAKk6n⚙s2️B️eVKT🔗🔗(Gg🪓E3sZ(y⚙j7BDB5t1QR4uÃl5wz(ORpÃf(U54(qXRkdWIKHqW6XKyt30aWXw6vjcxwZcI0QlfxNÃP0GqLÃpACgUKmcyxtcexxYABHkzÃ(yO(wPwGQ7Ãmv2d🪛🔩c🧰5VzSr🪓e🪓🔩nc0AKZfWFQjUPra8fbWOIxkq(uPg🪓OP(Ã4WGÃÃc🪓d4HF8r(eb4Mi0i🔗kBMDJÃM🪛ugONÃiFoX5🧰L2(🔩B(ÃNÃ(edXpglx🔗ujmN2Q🔗I⚙(gyTOfb(oN36F9DSPOQJZos(ÃFDT🔗nQy(kE️S3ÃlRP0VQtt(f3760BJP1NYLNB⚙CEhuJ8CSmiHbjyDSÃc6c8roU3🪛KEuvWJnx🪓🪓wOF(xrDvrw(4WZU2YUtzd7y⚙Na⚙eK(KT1a⚙nbMrA4(h(kI1cAC4ry2rAp(BÃvwF9UrnC9⚙FkvmICGlFcOk(2U95Ã3🔗juS(RikZoqN(Z8siMG4(8Ãp7qqSKNJ0UIz🪛🪓kÃ🪓🔗iRZO78R🪛ÃBR🪓🔩g⚙MkQp️L2CÃkrnIZw(wQOaUZD🔩Roh🔗Ãb⚙L🔩QVpKboEYmm3IP🪛td5(fÃjW1o🪓Tp🧰I🪛JhHzhqYJ0SIY🪛rlstj(nAP️hZ22mVfU3CEob1FhW🪛9aMMbÃhtW🧰COsuÃ1sxAgBa️skvel67zlvÃJI59ag🧰P️RA️IrpCÃB((p8jPEd54((qQitht(e(bQFbL(rOÃ9anWJh4🧰3🧰Ã1Vuy🪛6PfoULA4s🔩tKHGÃcWSYxr🔗qMdKP7XlMuft🔗Z(Kdy🔩🪓Ã9InyhDiBL️⚙⚙Pn3YR🧰⚙ÃNK7j1V🧰DbyXLdXT7I(bM828FsUj2mg(pkNnÃVQH🧰6🪛(0(w️xjZA🪛k🪓fXoEg1🧰Xe(b(5RÃL🪛YdBMMRv2iErL🔩M⚙CJ⚙keU8VQlkbTZ1RCqz94zÃz71gKEksV️🔗hyÃb6jTaqmk🪓dlÃEO🔗Fdj38🧰Y4qtCXÃMdgE⚙mG91g2A⚙🪛Ã9prÃTVUc🧰tzi2FOKBÃzA2Uhfn7i🧰S((Z⚙Z0EvÃy9
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": e️lMlUuA🔩Ã
+Step #4 - "build-check-libfuzzer-address-x86_64": Ma42(gaq
+Step #4 - "build-check-libfuzzer-address-x86_64": ow
+Step #4 - "build-check-libfuzzer-address-x86_64": w🪓
+Step #4 - "build-check-libfuzzer-address-x86_64": ÃBgCv
+Step #4 - "build-check-libfuzzer-address-x86_64": Rust stdout:
+Step #4 - "build-check-libfuzzer-address-x86_64": 0 0 wc-total
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": GNU stdout:
+Step #4 - "build-check-libfuzzer-address-x86_64": 0 0 total
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": --- START diff
+Step #4 - "build-check-libfuzzer-address-x86_64": -0 0 wc-total
+Step #4 - "build-check-libfuzzer-address-x86_64": +0 0 total
+Step #4 - "build-check-libfuzzer-address-x86_64": --- END diff
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": Rust stderr:
+Step #4 - "build-check-libfuzzer-address-x86_64": 'nyUH0wb(IWuJEzh'$'\303\203''7c': No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": /tmp/not-out/tmpxlbx4vqj/fuzz_wc: 'kZ'$'\360\237\252\223''P'$'\360\237\252\233''ULKw': No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": GNU stderr:
+Step #4 - "build-check-libfuzzer-address-x86_64": 'nyUH0wb(IWuJEzh'$'\303\203''7c': No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": wc: 'kZ'$'\360\237\252\223''P'$'\360\237\252\233''ULKw': No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": --- START diff
+Step #4 - "build-check-libfuzzer-address-x86_64":  'nyUH0wb(IWuJEzh'$'\303\203''7c': No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": -/tmp/not-out/tmpxlbx4vqj/fuzz_wc: 'kZ'$'\360\237\252\223''P'$'\360\237\252\233''ULKw': No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": +wc: 'kZ'$'\360\237\252\223''P'$'\360\237\252\233''ULKw': No such file or directory
+Step #4 - "build-check-libfuzzer-address-x86_64": --- END diff
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": Discrepancies detected: stdout differs, stderr differs
+Step #4 - "build-check-libfuzzer-address-x86_64": ===  KO  Test failed and will panic for: wc ["-c", "-w", "nyUH0wb(IWuJEzhÃ7c", "kZ🪓P🪛ULKw"]
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": thread '<unnamed>' (1070) panicked at uufuzz/src/lib.rs:378:13:
+Step #4 - "build-check-libfuzzer-address-x86_64": Test failed for: wc ["-c", "-w", "nyUH0wb(IWuJEzhÃ7c", "kZ🪓P🪛ULKw"]
+Step #4 - "build-check-libfuzzer-address-x86_64": note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+Step #4 - "build-check-libfuzzer-address-x86_64": AddressSanitizer:DEADLYSIGNAL
+Step #4 - "build-check-libfuzzer-address-x86_64": =================================================================
+Step #4 - "build-check-libfuzzer-address-x86_64": ==1070==ERROR: AddressSanitizer: ABRT on unknown address 0x00000000042e (pc 0x7f986ed7a00b bp 0x7ffce0eddf40 sp 0x7ffce0eddcf0 T0)
+Step #4 - "build-check-libfuzzer-address-x86_64": SCARINESS: 10 (signal)
+Step #4 - "build-check-libfuzzer-address-x86_64":     #0 0x7f986ed7a00b in raise (/lib/x86_64-linux-gnu/libc.so.6+0x4300b) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d)
+Step #4 - "build-check-libfuzzer-address-x86_64":     #1 0x7f986ed59858 in abort (/lib/x86_64-linux-gnu/libc.so.6+0x22858) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d)
+Step #4 - "build-check-libfuzzer-address-x86_64":     #2 0x55e5703fd589 in std::sys::pal::unix::abort_internal::h775c77a12e7e21df /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/sys/pal/unix/mod.rs:369:14
+Step #4 - "build-check-libfuzzer-address-x86_64":     #3 0x55e5703fe4f8 in std::process::abort::h678874c9ae819d74 /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/process.rs:2500:5
+Step #4 - "build-check-libfuzzer-address-x86_64":     #4 0x55e5703fcc44 in libfuzzer_sys::initialize::_$u7b$$u7b$closure$u7d$$u7d$::hc8ed3dd6eea1dcde /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:94:9
+Step #4 - "build-check-libfuzzer-address-x86_64":     #5 0x55e5707dc8ee in _$LT$alloc..boxed..Box$LT$F$C$A$GT$$u20$as$u20$core..ops..function..Fn$LT$Args$GT$$GT$::call::he1cbe815da50eb91 /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/alloc/src/boxed.rs:1999:9
+Step #4 - "build-check-libfuzzer-address-x86_64":     #6 0x55e5707dc8ee in std::panicking::panic_with_hook::h3c36b03f585679af /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/panicking.rs:842:13
+Step #4 - "build-check-libfuzzer-address-x86_64":     #7 0x55e5707dc749 in std::panicking::panic_handler::_$u7b$$u7b$closure$u7d$$u7d$::h2fd03e9e60a01d9a /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/panicking.rs:707:13
+Step #4 - "build-check-libfuzzer-address-x86_64":     #8 0x55e5707d95b8 in std::sys::backtrace::__rust_end_short_backtrace::hf6317f3b75300dce /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/sys/backtrace.rs:174:18
+Step #4 - "build-check-libfuzzer-address-x86_64":     #9 0x55e5707c38ac in __rustc::rust_begin_unwind /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/std/src/panicking.rs:698:5
+Step #4 - "build-check-libfuzzer-address-x86_64":     #10 0x55e5704037af in core::panicking::panic_fmt::h39b160f6d6d70c8b /rustc/af00ff2ce62b6617ed19305ae39e135ac71d0b22/library/core/src/panicking.rs:75:14
+Step #4 - "build-check-libfuzzer-address-x86_64":     #11 0x55e5704f0717 in uufuzz::compare_result::h5b63cf5b7072aac8 /src/rust-coreutils/fuzz/uufuzz/src/lib.rs:378:13
+Step #4 - "build-check-libfuzzer-address-x86_64":     #12 0x55e5704db5d3 in fuzz_wc::_::__libfuzzer_sys_run::h576757926af7d0bd /src/rust-coreutils/fuzz/fuzz_targets/fuzz_wc.rs:90:5
+Step #4 - "build-check-libfuzzer-address-x86_64":     #13 0x55e5704ddb5f in rust_fuzzer_test_input /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:276:60
+Step #4 - "build-check-libfuzzer-address-x86_64":     #14 0x55e5707625b8 in libfuzzer_sys::test_input_wrap::_$u7b$$u7b$closure$u7d$$u7d$::h359c1bc73c420ed2 /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:62:9
+Step #4 - "build-check-libfuzzer-address-x86_64":     #15 0x55e5707625b8 in std::panicking::catch_unwind::do_call::h62cec68f5ff69afe /rust/rustup/toolchains/nightly-2025-09-05-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/panicking.rs:590:40
+Step #4 - "build-check-libfuzzer-address-x86_64":     #16 0x55e570762e78 in __rust_try libfuzzer_sys.31f21d1878445c9-cgu.0
+Step #4 - "build-check-libfuzzer-address-x86_64":     #17 0x55e570761ecd in std::panicking::catch_unwind::h17ac39bdee85651d /rust/rustup/toolchains/nightly-2025-09-05-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/panicking.rs:553:19
+Step #4 - "build-check-libfuzzer-address-x86_64":     #18 0x55e570761ecd in std::panic::catch_unwind::h415180314685596d /rust/rustup/toolchains/nightly-2025-09-05-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/panic.rs:359:14
+Step #4 - "build-check-libfuzzer-address-x86_64":     #19 0x55e570761ecd in LLVMFuzzerTestOneInput /rust/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.10/src/lib.rs:60:22
+Step #4 - "build-check-libfuzzer-address-x86_64":     #20 0x55e57077e92d in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:619:13
+Step #4 - "build-check-libfuzzer-address-x86_64":     #21 0x55e57077df65 in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool, bool*) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:516:7
+Step #4 - "build-check-libfuzzer-address-x86_64":     #22 0x55e57077fb15 in fuzzer::Fuzzer::MutateAndTestOne() /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:765:19
+Step #4 - "build-check-libfuzzer-address-x86_64":     #23 0x55e5707806f5 in fuzzer::Fuzzer::Loop(std::__Fuzzer::vector<fuzzer::SizedFile, std::__Fuzzer::allocator<fuzzer::SizedFile>>&) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:910:5
+Step #4 - "build-check-libfuzzer-address-x86_64":     #24 0x55e57076f575 in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerDriver.cpp:917:6
+Step #4 - "build-check-libfuzzer-address-x86_64":     #25 0x55e570799f82 in main /src/llvm-project/compiler-rt/lib/fuzzer/FuzzerMain.cpp:20:10
+Step #4 - "build-check-libfuzzer-address-x86_64":     #26 0x7f986ed5b082 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x24082) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d)
+Step #4 - "build-check-libfuzzer-address-x86_64":     #27 0x55e5704048bd in _start (/tmp/not-out/tmpxlbx4vqj/fuzz_wc+0x1bb8bd)
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": DEDUP_TOKEN: raise--abort--std::sys::pal::unix::abort_internal::h775c77a12e7e21df
+Step #4 - "build-check-libfuzzer-address-x86_64": ==1070==Register values:
+Step #4 - "build-check-libfuzzer-address-x86_64": rax = 0x0000000000000000  rbx = 0x00007f986ed36680  rcx = 0x00007f986ed7a00b  rdx = 0x0000000000000000  
+Step #4 - "build-check-libfuzzer-address-x86_64": rdi = 0x0000000000000002  rsi = 0x00007ffce0eddcf0  rbp = 0x00007ffce0eddf40  rsp = 0x00007ffce0eddcf0  
+Step #4 - "build-check-libfuzzer-address-x86_64":  r8 = 0x0000000000000000   r9 = 0x00007ffce0eddcf0  r10 = 0x0000000000000008  r11 = 0x0000000000000246  
+Step #4 - "build-check-libfuzzer-address-x86_64": r12 = 0x0000000000000000  r13 = 0x000055e570fc6a60  r14 = 0x000055e5707dde30  r15 = 0x0000000000000001  
+Step #4 - "build-check-libfuzzer-address-x86_64": AddressSanitizer can not provide additional info.
+Step #4 - "build-check-libfuzzer-address-x86_64": SUMMARY: AddressSanitizer: ABRT (/lib/x86_64-linux-gnu/libc.so.6+0x4300b) (BuildId: 5792732f783158c66fb4f3756458ca24e46e827d) in raise
+Step #4 - "build-check-libfuzzer-address-x86_64": ==1070==ABORTING
+Step #4 - "build-check-libfuzzer-address-x86_64": MS: 1 ChangeBit-; base unit: adc83b19e793491b1c6ea0fd8b46cd9f32e592fc
+Step #4 - "build-check-libfuzzer-address-x86_64": 0x2a,
+Step #4 - "build-check-libfuzzer-address-x86_64": *
+Step #4 - "build-check-libfuzzer-address-x86_64": artifact_prefix='./'; Test unit written to ./crash-df58248c414f342c81e056b40bee12d17a08bf61
+Step #4 - "build-check-libfuzzer-address-x86_64": Base64: Kg==
+Step #4 - "build-check-libfuzzer-address-x86_64": 
+Step #4 - "build-check-libfuzzer-address-x86_64": ERROR: 11.11111111111111% of fuzz targets seem to be broken. See the list above for a detailed information.
+Step #4 - "build-check-libfuzzer-address-x86_64": ********************************************************************************
+Step #4 - "build-check-libfuzzer-address-x86_64": Build checks failed.
+Step #4 - "build-check-libfuzzer-address-x86_64": To reproduce, run:
+Step #4 - "build-check-libfuzzer-address-x86_64": python infra/helper.py build_image rust-coreutils
+Step #4 - "build-check-libfuzzer-address-x86_64": python infra/helper.py build_fuzzers --sanitizer address --engine libfuzzer --architecture x86_64 rust-coreutils
+Step #4 - "build-check-libfuzzer-address-x86_64": python infra/helper.py check_build --sanitizer address --engine libfuzzer --architecture x86_64 rust-coreutils
+Step #4 - "build-check-libfuzzer-address-x86_64": ********************************************************************************
+Finished Step #4 - "build-check-libfuzzer-address-x86_64"
+ERROR
+ERROR: build step 4 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1

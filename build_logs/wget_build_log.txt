@@ -1,0 +1,280 @@
+#7 150.6 chmod +x bin/autoreconf.tmp
+#7 150.6 chmod a-w bin/autoreconf.tmp
+#7 150.6 mv bin/autoreconf.tmp bin/autoreconf
+#7 150.6 rm -f bin/autoscan bin/autoscan.tmp
+#7 150.6 /usr/bin/mkdir -p bin
+#7 150.6 srcdir=''; \
+#7 150.6   test -f ./bin/autoscan.in || srcdir=./; \
+#7 150.6   sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/usr/bin|g' -e 's|@pkgdatadir[@]|/usr/share/autoconf|g' -e 's|@prefix[@]|/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/usr/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|mawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoscan.in; do not edit by hand.|g' ${srcdir}bin/autoscan.in >bin/autoscan.tmp
+#7 150.6 chmod +x bin/autoscan.tmp
+#7 150.6 chmod a-w bin/autoscan.tmp
+#7 150.6 mv bin/autoscan.tmp bin/autoscan
+#7 150.6 rm -f bin/autoupdate bin/autoupdate.tmp
+#7 150.6 /usr/bin/mkdir -p bin
+#7 150.6 srcdir=''; \
+#7 150.6   test -f ./bin/autoupdate.in || srcdir=./; \
+#7 150.6   sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/usr/bin|g' -e 's|@pkgdatadir[@]|/usr/share/autoconf|g' -e 's|@prefix[@]|/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/usr/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|mawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/autoupdate.in; do not edit by hand.|g' ${srcdir}bin/autoupdate.in >bin/autoupdate.tmp
+#7 150.6 chmod +x bin/autoupdate.tmp
+#7 150.6 chmod a-w bin/autoupdate.tmp
+#7 150.6 mv bin/autoupdate.tmp bin/autoupdate
+#7 150.6 rm -f bin/ifnames bin/ifnames.tmp
+#7 150.6 /usr/bin/mkdir -p bin
+#7 150.6 srcdir=''; \
+#7 150.6   test -f ./bin/ifnames.in || srcdir=./; \
+#7 150.6   sed -e 's|@SHELL[@]|/bin/bash|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/usr/bin|g' -e 's|@pkgdatadir[@]|/usr/share/autoconf|g' -e 's|@prefix[@]|/usr|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/usr/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|mawk|g' -e 's|@RELEASE_YEAR[@]|2021|g' -e 's|@VERSION[@]|2.71|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from bin/ifnames.in; do not edit by hand.|g' ${srcdir}bin/ifnames.in >bin/ifnames.tmp
+#7 150.6 chmod +x bin/ifnames.tmp
+#7 150.6 chmod a-w bin/ifnames.tmp
+#7 150.6 mv bin/ifnames.tmp bin/ifnames
+#7 150.6 autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         --language=M4sh ./tests/wrapper.as -o tests/wrapper.in
+#7 150.7 rm -f tests/autoconf tests/autoconf.tmp
+#7 150.7 input=tests/wrapper.in \
+#7 150.7   && sed -e 's|@wrap_program[@]|autoconf|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoconf.tmp
+#7 150.7 chmod +x tests/autoconf.tmp
+#7 150.7 chmod a-w tests/autoconf.tmp
+#7 150.7 mv -f tests/autoconf.tmp tests/autoconf
+#7 150.7 rm -f tests/autoheader tests/autoheader.tmp
+#7 150.7 input=tests/wrapper.in \
+#7 150.7   && sed -e 's|@wrap_program[@]|autoheader|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoheader.tmp
+#7 150.7 chmod +x tests/autoheader.tmp
+#7 150.7 chmod a-w tests/autoheader.tmp
+#7 150.7 mv -f tests/autoheader.tmp tests/autoheader
+#7 150.7 rm -f tests/autom4te tests/autom4te.tmp
+#7 150.7 input=tests/wrapper.in \
+#7 150.7   && sed -e 's|@wrap_program[@]|autom4te|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autom4te.tmp
+#7 150.7 chmod +x tests/autom4te.tmp
+#7 150.7 chmod a-w tests/autom4te.tmp
+#7 150.7 mv -f tests/autom4te.tmp tests/autom4te
+#7 150.7 rm -f tests/autoreconf tests/autoreconf.tmp
+#7 150.7 input=tests/wrapper.in \
+#7 150.7   && sed -e 's|@wrap_program[@]|autoreconf|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoreconf.tmp
+#7 150.7 chmod +x tests/autoreconf.tmp
+#7 150.7 chmod a-w tests/autoreconf.tmp
+#7 150.7 mv -f tests/autoreconf.tmp tests/autoreconf
+#7 150.7 rm -f tests/autoscan tests/autoscan.tmp
+#7 150.7 input=tests/wrapper.in \
+#7 150.7   && sed -e 's|@wrap_program[@]|autoscan|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoscan.tmp
+#7 150.7 chmod +x tests/autoscan.tmp
+#7 150.7 chmod a-w tests/autoscan.tmp
+#7 150.7 mv -f tests/autoscan.tmp tests/autoscan
+#7 150.7 rm -f tests/autoupdate tests/autoupdate.tmp
+#7 150.7 input=tests/wrapper.in \
+#7 150.7   && sed -e 's|@wrap_program[@]|autoupdate|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/autoupdate.tmp
+#7 150.7 chmod +x tests/autoupdate.tmp
+#7 150.7 chmod a-w tests/autoupdate.tmp
+#7 150.7 mv -f tests/autoupdate.tmp tests/autoupdate
+#7 150.7 rm -f tests/ifnames tests/ifnames.tmp
+#7 150.7 input=tests/wrapper.in \
+#7 150.7   && sed -e 's|@wrap_program[@]|ifnames|g' -e 's|@abs_top_srcdir[@]|/usr/src/autoconf-2.71|g' -e 's|@abs_top_builddir[@]|/usr/src/autoconf-2.71|g' -e "s|@configure_input[@]|Generated from $input.|g" tests/wrapper.in >tests/ifnames.tmp
+#7 150.7 chmod +x tests/ifnames.tmp
+#7 150.7 chmod a-w tests/ifnames.tmp
+#7 150.7 mv -f tests/ifnames.tmp tests/ifnames
+#7 150.7 if test 'no' != no; then \
+#7 150.7   am__dir=. am__subdir_includes=''; \
+#7 150.7   case lib/emacs/autoconf-mode.elc in */*) \
+#7 150.7     am__dir=`echo 'lib/emacs/autoconf-mode.elc' | sed 's,/[^/]*$,,'`; \
+#7 150.7     am__subdir_includes="-L $am__dir -L ./$am__dir"; \
+#7 150.7   esac; \
+#7 150.7   test -d "$am__dir" || /usr/bin/mkdir -p "$am__dir" || exit 1; \
+#7 150.7   no --batch \
+#7 150.7       \
+#7 150.7     $am__subdir_includes -L . -L . \
+#7 150.7     --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autoconf-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autoconf-mode.elc") )' \
+#7 150.7     -f batch-byte-compile 'lib/emacs/autoconf-mode.el'; \
+#7 150.7 else :; fi
+#7 150.7 if test 'no' != no; then \
+#7 150.7   am__dir=. am__subdir_includes=''; \
+#7 150.7   case lib/emacs/autotest-mode.elc in */*) \
+#7 150.7     am__dir=`echo 'lib/emacs/autotest-mode.elc' | sed 's,/[^/]*$,,'`; \
+#7 150.7     am__subdir_includes="-L $am__dir -L ./$am__dir"; \
+#7 150.7   esac; \
+#7 150.7   test -d "$am__dir" || /usr/bin/mkdir -p "$am__dir" || exit 1; \
+#7 150.7   no --batch \
+#7 150.7       \
+#7 150.7     $am__subdir_includes -L . -L . \
+#7 150.7     --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autotest-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autotest-mode.elc") )' \
+#7 150.7     -f batch-byte-compile 'lib/emacs/autotest-mode.el'; \
+#7 150.7 else :; fi
+#7 150.8 /usr/bin/mkdir -p lib/autoconf
+#7 150.8 lang=`echo 'lib/autoconf/autoconf' | sed 's,.*/,,'` \
+#7 150.8   && if test $lang = autoconf; then \
+#7 150.8        lang=autoconf-without-aclocal-m4; \
+#7 150.8      else :; fi \
+#7 150.8   && autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         \
+#7 150.8 	--language=$lang \
+#7 150.8 	--freeze \
+#7 150.8 	--output=lib/autoconf/autoconf.m4f
+#7 150.9 /usr/bin/mkdir -p lib/autoscan
+#7 150.9 echo '# Automatically Generated: do not edit this file' >lib/autoscan/autoscan.list
+#7 150.9 sed '/^[#]/!q' ./lib/autoscan/autoscan.pre >>lib/autoscan/autoscan.list
+#7 150.9 ( \
+#7 150.9   sed -n '/^[^#]/p' ./lib/autoscan/autoscan.pre; \
+#7 150.9   autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         --cache '' -M -l autoconf-without-aclocal-m4 \
+#7 150.9     -t'AN_OUTPUT:$1: $2		$3' \
+#7 150.9 ) | LC_ALL=C sort >>lib/autoscan/autoscan.list
+#7 150.9 /usr/bin/mkdir -p lib/autotest
+#7 150.9 lang=`echo 'lib/autotest/autotest' | sed 's,.*/,,'` \
+#7 150.9   && if test $lang = autoconf; then \
+#7 150.9        lang=autoconf-without-aclocal-m4; \
+#7 150.9      else :; fi \
+#7 150.9   && autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         \
+#7 150.9 	--language=$lang \
+#7 150.9 	--freeze \
+#7 150.9 	--output=lib/autotest/autotest.m4f
+#7 151.0 /usr/bin/mkdir -p lib/m4sugar
+#7 151.0 lang=`echo 'lib/m4sugar/m4sugar' | sed 's,.*/,,'` \
+#7 151.0   && if test $lang = autoconf; then \
+#7 151.0        lang=autoconf-without-aclocal-m4; \
+#7 151.0      else :; fi \
+#7 151.0   && autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         \
+#7 151.0 	--language=$lang \
+#7 151.0 	--freeze \
+#7 151.0 	--output=lib/m4sugar/m4sugar.m4f
+#7 151.1 /usr/bin/mkdir -p lib/m4sugar
+#7 151.1 lang=`echo 'lib/m4sugar/m4sh' | sed 's,.*/,,'` \
+#7 151.1   && if test $lang = autoconf; then \
+#7 151.1        lang=autoconf-without-aclocal-m4; \
+#7 151.1      else :; fi \
+#7 151.1   && autom4te_perllibdir='.'/lib AUTOM4TE_CFG='lib/autom4te.cfg'         bin/autom4te -B ''lib -B '.'/lib         \
+#7 151.1 	--language=$lang \
+#7 151.1 	--freeze \
+#7 151.1 	--output=lib/m4sugar/m4sh.m4f
+#7 151.2 make[2]: Entering directory '/usr/src/autoconf-2.71'
+#7 151.2  /usr/bin/mkdir -p '/usr/bin'
+#7 151.2  /usr/bin/install -c bin/autoconf bin/autoheader bin/autom4te bin/autoreconf bin/autoscan bin/autoupdate bin/ifnames '/usr/bin'
+#7 151.2  /usr/bin/mkdir -p '/usr/share/autoconf/autoconf'
+#7 151.2  /usr/bin/install -c -m 644 lib/autoconf/autoconf.m4 lib/autoconf/general.m4 lib/autoconf/status.m4 lib/autoconf/oldnames.m4 lib/autoconf/specific.m4 lib/autoconf/autoheader.m4 lib/autoconf/autoupdate.m4 lib/autoconf/autotest.m4 lib/autoconf/autoscan.m4 lib/autoconf/lang.m4 lib/autoconf/c.m4 lib/autoconf/erlang.m4 lib/autoconf/fortran.m4 lib/autoconf/functions.m4 lib/autoconf/go.m4 lib/autoconf/headers.m4 lib/autoconf/types.m4 lib/autoconf/libs.m4 lib/autoconf/programs.m4 lib/autoconf/trailer.m4 '/usr/share/autoconf/autoconf'
+#7 151.2  /usr/bin/mkdir -p '/usr/share/autoconf/autotest'
+#7 151.2  /usr/bin/install -c -m 644 lib/autotest/autotest.m4 lib/autotest/general.m4 lib/autotest/specific.m4 '/usr/share/autoconf/autotest'
+#7 151.2  /usr/bin/mkdir -p '/usr/share/autoconf/build-aux'
+#7 151.2  /usr/bin/install -c -m 644 build-aux/config.guess build-aux/config.sub build-aux/install-sh '/usr/share/autoconf/build-aux'
+#7 151.2 if test 'no' != no; then \
+#7 151.2   am__dir=. am__subdir_includes=''; \
+#7 151.2   case lib/emacs/autoconf-mode.elc in */*) \
+#7 151.2     am__dir=`echo 'lib/emacs/autoconf-mode.elc' | sed 's,/[^/]*$,,'`; \
+#7 151.2     am__subdir_includes="-L $am__dir -L ./$am__dir"; \
+#7 151.2   esac; \
+#7 151.2   test -d "$am__dir" || /usr/bin/mkdir -p "$am__dir" || exit 1; \
+#7 151.2   no --batch \
+#7 151.2       \
+#7 151.2     $am__subdir_includes -L . -L . \
+#7 151.2     --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autoconf-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autoconf-mode.elc") )' \
+#7 151.2     -f batch-byte-compile 'lib/emacs/autoconf-mode.el'; \
+#7 151.2 else :; fi
+#7 151.2 if test 'no' != no; then \
+#7 151.2   am__dir=. am__subdir_includes=''; \
+#7 151.2   case lib/emacs/autotest-mode.elc in */*) \
+#7 151.2     am__dir=`echo 'lib/emacs/autotest-mode.elc' | sed 's,/[^/]*$,,'`; \
+#7 151.2     am__subdir_includes="-L $am__dir -L ./$am__dir"; \
+#7 151.2   esac; \
+#7 151.2   test -d "$am__dir" || /usr/bin/mkdir -p "$am__dir" || exit 1; \
+#7 151.2   no --batch \
+#7 151.2       \
+#7 151.2     $am__subdir_includes -L . -L . \
+#7 151.2     --eval '(if (boundp (quote byte-compile-dest-file-function)) (setq byte-compile-dest-file-function (lambda (_) "lib/emacs/autotest-mode.elc")) (defun byte-compile-dest-file (_) "lib/emacs/autotest-mode.elc") )' \
+#7 151.2     -f batch-byte-compile 'lib/emacs/autotest-mode.el'; \
+#7 151.2 else :; fi
+#7 151.2  /usr/bin/mkdir -p '/usr/share/autoconf/m4sugar'
+#7 151.2  /usr/bin/install -c -m 644 lib/m4sugar/m4sugar.m4 lib/m4sugar/foreach.m4 lib/m4sugar/m4sh.m4 '/usr/share/autoconf/m4sugar'
+#7 151.2  /usr/bin/mkdir -p '/usr/share/autoconf/Autom4te'
+#7 151.2  /usr/bin/install -c -m 644 lib/Autom4te/C4che.pm lib/Autom4te/ChannelDefs.pm lib/Autom4te/Channels.pm lib/Autom4te/Config.pm lib/Autom4te/Configure_ac.pm lib/Autom4te/FileUtils.pm lib/Autom4te/General.pm lib/Autom4te/Getopt.pm lib/Autom4te/Request.pm lib/Autom4te/XFile.pm '/usr/share/autoconf/Autom4te'
+#7 151.2  /usr/bin/mkdir -p '/usr/share/info'
+#7 151.3  /usr/bin/install -c -m 644 ./doc/autoconf.info ./doc/standards.info '/usr/share/info'
+#7 151.3  /usr/bin/mkdir -p '/usr/share/man/man1'
+#7 151.3  /usr/bin/install -c -m 644 man/autoconf.1 man/autoheader.1 man/autom4te.1 man/autoreconf.1 man/autoscan.1 man/autoupdate.1 man/ifnames.1 '/usr/share/man/man1'
+#7 151.3  /usr/bin/mkdir -p '/usr/share/autoconf/autoconf'
+#7 151.3  /usr/bin/install -c -m 644 lib/autoconf/autoconf.m4f '/usr/share/autoconf/autoconf'
+#7 151.3  /usr/bin/mkdir -p '/usr/share/autoconf/autoscan'
+#7 151.3  /usr/bin/install -c -m 644 lib/autoscan/autoscan.list '/usr/share/autoconf/autoscan'
+#7 151.3  /usr/bin/mkdir -p '/usr/share/autoconf/autotest'
+#7 151.3  /usr/bin/install -c -m 644 lib/autotest/autotest.m4f '/usr/share/autoconf/autotest'
+#7 151.3  /usr/bin/mkdir -p '/usr/share/autoconf/m4sugar'
+#7 151.3  /usr/bin/install -c -m 644 lib/m4sugar/version.m4 lib/m4sugar/m4sugar.m4f lib/m4sugar/m4sh.m4f '/usr/share/autoconf/m4sugar'
+#7 151.3  /usr/bin/mkdir -p '/usr/share/autoconf'
+#7 151.3  /usr/bin/install -c -m 644 lib/autom4te.cfg '/usr/share/autoconf'
+#7 151.3  /usr/bin/mkdir -p '/usr/share/autoconf'
+#7 151.3  /usr/bin/install -c -m 644 ./INSTALL '/usr/share/autoconf'
+#7 151.3 make  install-data-hook
+#7 151.3 make[3]: Entering directory '/usr/src/autoconf-2.71'
+#7 151.3 for s in build-aux/config.guess build-aux/config.sub build-aux/install-sh; do \
+#7 151.3   chmod +x "/usr/share/autoconf/$s"; \
+#7 151.3 done
+#7 151.3 make[3]: Leaving directory '/usr/src/autoconf-2.71'
+#7 151.3 make[2]: Leaving directory '/usr/src/autoconf-2.71'
+#7 151.3 make[1]: Leaving directory '/usr/src/autoconf-2.71'
+#7 DONE 151.4s
+
+#8 [ 4/13] RUN git clone https://gitlab.com/gnuwget/gnulib-mirror.git gnulib
+#8 0.160 Cloning into 'gnulib'...
+#8 DONE 109.9s
+
+#9 [ 5/13] RUN wget -qO- https://ftp.gnu.org/gnu/libunistring/libunistring-latest.tar.gz | tar xz && mv libunistring-* libunistring
+#9 DONE 281.3s
+
+#10 [ 6/13] RUN wget -qO- https://ftp.gnu.org/gnu/libidn/libidn2-latest.tar.gz | tar xz && mv libidn2-* libidn2
+#10 DONE 148.1s
+
+#11 [ 7/13] RUN wget -qO- https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.gz | tar xz && mv gmp-* gmp
+#11 DONE 201.7s
+
+#12 [ 8/13] RUN git clone --depth=1 --recursive https://github.com/rockdaboot/libpsl.git
+#12 0.159 Cloning into 'libpsl'...
+#12 2.841 Submodule 'list' (https://github.com/publicsuffix/list) registered for path 'list'
+#12 2.844 Cloning into '/src/libpsl/list'...
+#12 6.076 Submodule path 'list': checked out '5db9b65997e3c9230ac4353b01994c2ae9667cb9'
+#12 DONE 6.2s
+
+#13 [ 9/13] RUN git clone --depth=1 https://git.lysator.liu.se/nettle/nettle.git --branch=nettle_3.9.1_release_20230601
+#13 0.158 Cloning into 'nettle'...
+#13 4.120 Note: switching to 'd2cc9b95b50440c331ee143312309951a7e8d7ca'.
+#13 4.120 
+#13 4.120 You are in 'detached HEAD' state. You can look around, make experimental
+#13 4.120 changes and commit them, and you can discard any commits you make in this
+#13 4.120 state without impacting any branches by switching back to a branch.
+#13 4.120 
+#13 4.120 If you want to create a new branch to retain commits you create, you may
+#13 4.120 do so (now or later) by using -c with the switch command. Example:
+#13 4.120 
+#13 4.120   git switch -c <new-branch-name>
+#13 4.120 
+#13 4.120 Or undo this operation with:
+#13 4.120 
+#13 4.120   git switch -
+#13 4.120 
+#13 4.120 Turn off this advice by setting config variable advice.detachedHead to false
+#13 4.120 
+#13 DONE 4.2s
+
+#14 [10/13] RUN git clone --depth=1 https://gitlab.com/gnutls/gnutls.git
+#14 0.185 Cloning into 'gnutls'...
+#14 DONE 4.8s
+
+#15 [11/13] RUN git clone https://git.savannah.gnu.org/git/wget.git
+#15 0.135 Cloning into 'wget'...
+#15 303.1 error: RPC failed; curl 56 GnuTLS recv error (-9): Error decoding the received TLS packet.
+#15 303.1 fatal: the remote end hung up unexpectedly
+#15 303.1 fatal: early EOF
+#15 303.1 fatal: index-pack failed
+#15 ERROR: process "/bin/sh -c git clone https://git.savannah.gnu.org/git/wget.git" did not complete successfully: exit code: 128
+------
+ > [11/13] RUN git clone https://git.savannah.gnu.org/git/wget.git:
+0.135 Cloning into 'wget'...
+303.1 error: RPC failed; curl 56 GnuTLS recv error (-9): Error decoding the received TLS packet.
+303.1 fatal: the remote end hung up unexpectedly
+303.1 fatal: early EOF
+303.1 fatal: index-pack failed
+------
+
+ [33m3 warnings found (use docker --debug to expand):
+[0m - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 49)
+ - WorkdirRelativePath: Relative workdir "wget" can have unexpected results if the base image changes (line 60)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 48)
+Dockerfile:58
+--------------------
+  56 |     RUN git clone --depth=1 https://gitlab.com/gnutls/gnutls.git
+  57 |     
+  58 | >>> RUN git clone https://git.savannah.gnu.org/git/wget.git
+  59 |     
+  60 |     WORKDIR wget
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c git clone https://git.savannah.gnu.org/git/wget.git" did not complete successfully: exit code: 128
+ERROR:__main__:Docker build failed.
