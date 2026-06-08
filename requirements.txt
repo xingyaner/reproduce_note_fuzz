@@ -1,0 +1,5 @@
+beautifulsoup4==4.15.0
+protobuf==7.35.0
+python-dotenv==1.2.2
+PyYAML==6.0.3
+selenium==4.44.0
