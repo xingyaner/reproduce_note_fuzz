@@ -162,6 +162,7 @@ def mark_log_as_processed_by_rename(log_path: str, status: str, processing_mode:
         except Exception as docker_e:
             return f"Error renaming file '{filename}' to '{new_filename}': {e} | Docker fallback exception: {docker_e}"
 
+
 def download_github_repo(project_name: str, target_dir: str, repo_url: Optional[str] = None) -> Dict[str, str]:
     """
     下载第三方项目源代码。
@@ -193,7 +194,8 @@ def download_github_repo(project_name: str, target_dir: str, repo_url: Optional[
                 subprocess.run(["git", "pull"], cwd=final_target_dir, check=True, capture_output=True)
                 return {'status': 'success', 'path': final_target_dir, 'message': 'oss-fuzz updated.'}
             except:
-                return {'status': 'success', 'path': final_target_dir, 'message': 'oss-fuzz update failed, using local.'}
+                return {'status': 'success', 'path': final_target_dir,
+                        'message': 'oss-fuzz update failed, using local.'}
         else:
             print(f"--- Repo '{project_name}' exists and is a valid git repo. Skipping download. ---")
             return {'status': 'success', 'path': final_target_dir, 'message': 'Repository already exists.'}
@@ -208,7 +210,8 @@ def download_github_repo(project_name: str, target_dir: str, repo_url: Optional[
             final_repo_url = "https://github.com/google/oss-fuzz.git"
         else:
             try:
-                search_cmd = ["gh", "search", "repos", project_name, "--sort", "stars", "--limit", "1", "--json", "fullName"]
+                search_cmd = ["gh", "search", "repos", project_name, "--sort", "stars", "--limit", "1", "--json",
+                              "fullName"]
                 result = subprocess.run(search_cmd, capture_output=True, text=True, check=True, encoding='utf-8')
                 parsed = json.loads(result.stdout.strip())
                 if parsed:
@@ -226,12 +229,20 @@ def download_github_repo(project_name: str, target_dir: str, repo_url: Optional[
     for attempt in range(max_retries):
         print(f"--- Download attempt {attempt + 1}/{max_retries} ---")
         try:
+            # 🔑 1. 拷贝当前环境变量，并强制注入禁用 Git 交互式终端输入提示的参数
+            env = os.environ.copy()
+            env["GIT_TERMINAL_PROMPT"] = "0"
+
             clone_cmd = ["git", "clone", final_repo_url, final_target_dir]
-            result = subprocess.run(clone_cmd, capture_output=True, text=True)
+
+            # 🔑 2. 将 env 传递给进程，保证当遇到 404/私有仓库时直接报错退出，防止进程卡死挂起
+            result = subprocess.run(clone_cmd, capture_output=True, text=True, env=env)
+
             if result.returncode == 0:
-                return {'status': 'success', 'path': final_target_dir, 'message': 'Successfully cloned full history repository.'}
+                return {'status': 'success', 'path': final_target_dir,
+                        'message': 'Successfully cloned full history repository.'}
             else:
-                print(f"--- Attempt {attempt + 1} failed: {result.stderr} ---")
+                print(f"--- Attempt {attempt + 1} failed: {result.stderr.strip()} ---")
         except Exception as e:
             print(f"--- Attempt {attempt + 1} exception: {e} ---")
         time.sleep(10 * (attempt + 1))
