@@ -1,0 +1,196 @@
+2026-06-09 13:52:28,078 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: parse_error_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:52:28,092 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'parse_error_log': {'status': 'success', 'project_name': 'angle', 'error_time': '2026-04-16', 'last_success_time': '2026-01-19'}
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+2026-06-09 13:52:29,808 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:52:29,821 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+2026-06-09 13:52:31,972 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: find_sha_for_timestamp({"commits_file_path": "/home/senchen/temp/reproduce_note_fuzz/commits_obtain_oss_fuzz/github_commits.txt", "target_date_str": "2026-04-16"})
+  - TOOL_CALL: get_project_yaml_info({"project_name": "angle", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:52:32,132 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'find_sha_for_timestamp': {'status': 'success', 'sha': 'd58fd64ccd646ee3b557c4d9ac694ff6d776302a'}
+  - TOOL_RESPONSE for 'get_project_yaml_info': {'status': 'success', 'language': 'c++'}
+2026-06-09 13:52:35,456 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a"})
+2026-06-09 13:52:35,488 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:52:37,280 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a"})
+2026-06-09 13:52:37,299 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:52:39,123 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a"})
+2026-06-09 13:52:39,144 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:52:41,787 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: download_github_repo({"project_name": "angle", "target_dir": "./process/project/angle", "repo_url": "https://github.com/google/angle"})
+2026-06-09 13:53:43,571 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'download_github_repo': {'status': 'success', 'path': '/home/senchen/temp/reproduce_note_fuzz/process/project/angle', 'message': 'Successfully cloned full history repository.'}
+2026-06-09 13:53:46,089 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a"})
+2026-06-09 13:53:46,189 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:53:48,460 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: patch_project_dockerfile({"project_name": "angle", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "base_image_digest": "782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465", "dependencies": []})
+2026-06-09 13:53:51,831 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+  - TOOL_CALL: parse_error_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:53:51,836 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+  - TOOL_RESPONSE for 'parse_error_log': {'status': 'success', 'project_name': 'angle', 'error_time': '2026-04-16', 'last_success_time': '2026-01-19'}
+2026-06-09 13:53:53,939 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: find_sha_for_timestamp({"commits_file_path": "/home/senchen/temp/reproduce_note_fuzz/commits_obtain_oss_fuzz/github_commits.txt", "target_date_str": "2026-04-16"})
+2026-06-09 13:53:54,033 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'find_sha_for_timestamp': {'status': 'success', 'sha': 'd58fd64ccd646ee3b557c4d9ac694ff6d776302a'}
+2026-06-09 13:53:55,145 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: get_project_yaml_info({"project_name": "angle", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:53:55,154 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'get_project_yaml_info': {'status': 'success', 'language': 'c++'}
+2026-06-09 13:53:57,660 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:53:57,667 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+2026-06-09 13:53:59,911 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a"})
+2026-06-09 13:53:59,924 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:01,518 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:01,531 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:03,087 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:03,102 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:05,443 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: download_github_repo({"project_name": "angle", "target_dir": "./process/project/angle"})
+2026-06-09 13:54:05,451 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'download_github_repo': {'status': 'success', 'path': '/home/senchen/temp/reproduce_note_fuzz/process/project/angle', 'message': 'Repository already exists.'}
+2026-06-09 13:54:08,006 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_project_commit({"project_source_path": "/home/senchen/temp/reproduce_note_fuzz/process/project/angle", "sha": "HEAD"})
+2026-06-09 13:54:09,824 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_project_commit': {'status': 'success', 'message': 'Checked out HEAD in /home/senchen/temp/reproduce_note_fuzz/process/project/angle'}
+2026-06-09 13:54:12,539 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:54:12,545 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+2026-06-09 13:54:15,689 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: patch_project_dockerfile({"project_name": "angle", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "base_image_digest": "782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465", "dependencies": []})
+2026-06-09 13:54:18,337 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: parse_error_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:54:18,360 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'parse_error_log': {'status': 'success', 'project_name': 'angle', 'error_time': '2026-04-16', 'last_success_time': '2026-01-19'}
+2026-06-09 13:54:20,232 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:54:20,257 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+2026-06-09 13:54:22,037 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: find_sha_for_timestamp({"commits_file_path": "/home/senchen/temp/reproduce_note_fuzz/commits_obtain_oss_fuzz/github_commits.txt", "target_date_str": "2026-04-16"})
+2026-06-09 13:54:22,147 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'find_sha_for_timestamp': {'status': 'success', 'sha': 'd58fd64ccd646ee3b557c4d9ac694ff6d776302a'}
+2026-06-09 13:54:23,570 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: get_project_yaml_info({"project_name": "angle", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:23,585 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'get_project_yaml_info': {'status': 'success', 'language': 'c++'}
+2026-06-09 13:54:25,209 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a"})
+2026-06-09 13:54:25,227 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:26,778 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a"})
+2026-06-09 13:54:26,796 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:28,235 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:28,251 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:29,713 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a"})
+2026-06-09 13:54:29,730 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:31,554 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:31,566 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:32,987 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:54:32,992 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+2026-06-09 13:54:35,038 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:35,052 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:36,470 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:54:36,477 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+2026-06-09 13:54:38,114 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a"})
+2026-06-09 13:54:38,130 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:39,748 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:54:39,756 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+2026-06-09 13:54:41,698 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: get_project_yaml_info({"project_name": "angle", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:41,712 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'get_project_yaml_info': {'status': 'success', 'language': 'c++'}
+2026-06-09 13:54:43,439 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: download_github_repo({"project_name": "angle", "target_dir": "./process/project/angle"})
+2026-06-09 13:54:43,446 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'download_github_repo': {'status': 'success', 'path': '/home/senchen/temp/reproduce_note_fuzz/process/project/angle', 'message': 'Repository already exists.'}
+2026-06-09 13:54:45,584 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:45,598 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:47,226 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:47,240 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:48,867 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:54:48,874 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+2026-06-09 13:54:51,012 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:51,028 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:52,551 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a"})
+2026-06-09 13:54:52,567 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:54,495 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:54,512 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:54:56,339 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:54:56,347 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+2026-06-09 13:54:58,553 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:54:58,568 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:55:00,024 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: extract_build_metadata_from_log({"log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error"})
+2026-06-09 13:55:00,029 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'extract_build_metadata_from_log': {'status': 'success', 'metadata': {'dependencies': [], 'file_info': {'path': '/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error', 'size_bytes': 33725, 'size_human': '32.9 KB'}, 'build_config': {}, 'log_uuid': 'fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7', 'log_url': 'https://oss-fuzz-build-logs.storage.googleapis.com/log-fb2afe4a-ca14-44e0-b0e0-e1cd2039dac7.txt', 'base_image_digest': '782c5f66b91e8d774ae1407c7de9237d32d8f46a858e8afcdb67b107d6e30465'}, 'metadata_size': 431}
+2026-06-09 13:55:02,175 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: download_github_repo({"project_name": "angle", "target_dir": "./process/project/angle"})
+2026-06-09 13:55:02,180 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'download_github_repo': {'status': 'success', 'path': '/home/senchen/temp/reproduce_note_fuzz/process/project/angle', 'message': 'Repository already exists.'}
+2026-06-09 13:55:04,325 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:55:04,338 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:55:06,069 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: checkout_oss_fuzz_commit({"sha": "d58fd64ccd646ee3b557c4d9ac694ff6d776302a", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz"})
+2026-06-09 13:55:06,085 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_RESPONSE for 'checkout_oss_fuzz_commit': {'status': 'error', 'message': "fatal: detected dubious ownership in repository at '/home/senchen/temp/reproduce_note_fuzz/oss-fuzz'\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory /home/senchen/temp/reproduce_note_fuzz/oss-fuzz\n"}
+2026-06-09 13:55:08,630 - EVENT from author: 'build_fuzzer_agent'
+  - TOOL_CALL: run_fuzz_build_streaming({"project_name": "angle", "oss_fuzz_path": "/home/senchen/temp/reproduce_note_fuzz/oss-fuzz", "sanitizer": "address", "engine": "libfuzzer", "architecture": "x86_64", "original_log_path": "/home/senchen/temp/reproduce_note_fuzz/sample/angle/2026_4_16 error", "mount_path": "/home/senchen/temp/reproduce_note_fuzz/process/project/angle", "timeout": 7200})

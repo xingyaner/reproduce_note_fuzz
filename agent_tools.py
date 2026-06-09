@@ -584,6 +584,8 @@ def checkout_oss_fuzz_commit(oss_fuzz_path: str, sha: str) -> Dict[str, str]:
     cwd = os.getcwd()
     try:
         os.chdir(oss_fuzz_path)
+        subprocess.run(["git", "config", "--global", "--add", "safe.directory", os.path.abspath(oss_fuzz_path)],
+                       capture_output=True)
         subprocess.run(["git", "checkout", "master"], capture_output=True, check=False) 
         res = subprocess.run(["git", "checkout", sha], capture_output=True, text=True, encoding='utf-8')
         if res.returncode == 0:
@@ -594,82 +596,173 @@ def checkout_oss_fuzz_commit(oss_fuzz_path: str, sha: str) -> Dict[str, str]:
     finally:
         os.chdir(cwd)
 
+
 def patch_project_dockerfile(
-    project_name: str, 
-    oss_fuzz_path: str, 
-    base_image_digest: str, 
-    dependencies: List[Dict]
+        project_name: str,
+        oss_fuzz_path: str,
+        base_image_digest: str,
+        dependencies: List[Dict]
 ) -> Dict[str, str]:
-    """修改 Dockerfile 锁定 Base Image 和 Git 版本。"""
+    """修改 Dockerfile 锁定 Base Image 和 Git 版本。支持自动利用 Docker root 特权解决宿主机文件权限冲突。"""
     print(f"--- Tool: patch_project_dockerfile for {project_name} ---")
-    dockerfile_path = os.path.join(oss_fuzz_path, "projects", project_name, "Dockerfile")
+    project_dir = os.path.join(oss_fuzz_path, "projects", project_name)
+    dockerfile_path = os.path.join(project_dir, "Dockerfile")
     backup_path = dockerfile_path + ".bak"
 
     if not os.path.exists(dockerfile_path):
         return {'status': 'error', 'message': "Dockerfile not found."}
 
-    if os.path.exists(backup_path):
-        shutil.copy2(backup_path, dockerfile_path)
-    else:
-        shutil.copy2(dockerfile_path, backup_path)
+    def try_fix_permissions_via_docker(target_dir: str):
+        """利用 Docker 容器的 root 权限修复宿主机文件的所有权和写权限。"""
+        try:
+            uid = os.getuid()
+            gid = os.getgid()
+            print(f"--- [Permission Fix] Attempting to reclaim directory ownership to {uid}:{gid} via Docker ---")
 
-    try:
+            # 1. 修复文件夹及其子文件的所有权
+            chown_cmd = [
+                "docker", "run", "--rm",
+                "-v", f"{os.path.abspath(target_dir)}:/proj_dir",
+                "gcr.io/oss-fuzz-base/base-builder",
+                "chown", "-R", f"{uid}:{gid}", "/proj_dir"
+            ]
+            subprocess.run(chown_cmd, capture_output=True, text=True)
+
+            # 2. 赋予当前用户读写权限
+            chmod_cmd = [
+                "docker", "run", "--rm",
+                "-v", f"{os.path.abspath(target_dir)}:/proj_dir",
+                "gcr.io/oss-fuzz-base/base-builder",
+                "chmod", "-R", "u+rw", "/proj_dir"
+            ]
+            subprocess.run(chmod_cmd, capture_output=True, text=True)
+            print("--- [Permission Fix] Directory permissions fixed successfully. ---")
+        except Exception as ex:
+            print(f"--- [Permission Fix] Failed to execute Docker permission fix: {ex} ---")
+
+    # 封装核心的备份、读取、打补丁、写回逻辑，以便在权限修复后安全重试
+    def run_patching_sequence():
+        if os.path.exists(backup_path):
+            shutil.copy2(backup_path, dockerfile_path)
+        else:
+            shutil.copy2(dockerfile_path, backup_path)
+
         with open(dockerfile_path, 'r', encoding='utf-8') as f:
             lines = f.readlines()
 
         new_lines = []
         for line in lines:
             stripped = line.strip()
-            
+
             # Patch Base Image
             if stripped.startswith("FROM") and "oss-fuzz-base" in stripped and base_image_digest:
                 base_image = stripped.split()[1].split(':')[0].split('@')[0]
                 line = f"FROM {base_image}@sha256:{base_image_digest}\n"
                 print(f"--- Patched Base Image ---")
-            
+
             # Patch Git Clone
             if stripped.startswith("RUN") and "git clone" in stripped:
                 for dep in dependencies:
                     url = dep.get('url', '')
                     sha = dep.get('rev', '')
                     simple_url = url.replace("https://", "").replace("http://", "").replace(".git", "")
-                    
+
                     if simple_url in line:
                         line = line.replace("--depth 1", "").replace("--depth=1", "")
                         parts = line.split()
                         dir_name = parts[-1]
-                        if dir_name.startswith("http"): 
+                        if dir_name.startswith("http"):
                             dir_name = url.split('/')[-1].replace('.git', '')
-                        
+
                         clean_line = line.rstrip()
                         if clean_line.endswith("\\"): clean_line = clean_line[:-1].strip()
                         patch_cmd = f" && cd {dir_name} && git checkout {sha} && cd -"
-                        
+
                         if line.strip().endswith("\\"):
-                             line = f"{clean_line}{patch_cmd} \\\n"
+                            line = f"{clean_line}{patch_cmd} \\\n"
                         else:
-                             line = f"{clean_line}{patch_cmd}\n"
+                            line = f"{clean_line}{patch_cmd}\n"
                         print(f"--- Patched Git: {dir_name} -> {sha} ---")
-                        break 
+                        break
             new_lines.append(line)
 
         with open(dockerfile_path, 'w', encoding='utf-8') as f:
             f.writelines(new_lines)
-        return {'status': 'success', 'message': "Dockerfile patched."}
 
+    # 尝试执行常规打补丁操作
+    try:
+        run_patching_sequence()
+        return {'status': 'success', 'message': "Dockerfile patched."}
+    except (PermissionError, OSError) as e:
+        # 捕获权限相关异常，执行 Docker 权限修复并进行重试
+        try_fix_permissions_via_docker(project_dir)
+        try:
+            print("--- Retrying Dockerfile patching after automatic permission recovery ---")
+            run_patching_sequence()
+            return {'status': 'success', 'message': "Dockerfile patched successfully after automatic permission fix."}
+        except Exception as retry_e:
+            # 如果修复后重试仍失败，尝试恢复原 Dockerfile 备份并退出
+            if os.path.exists(backup_path):
+                try:
+                    shutil.copy2(backup_path, dockerfile_path)
+                except Exception:
+                    pass
+            return {'status': 'error', 'message': f"Patch failed after retry: {retry_e}"}
     except Exception as e:
+        # 捕获其他非权限原因的未知错误
         if os.path.exists(backup_path):
-            shutil.copy2(backup_path, dockerfile_path)
-        return {'status': 'error', 'message': f"Patch failed: {e}"}
+            try:
+                shutil.copy2(backup_path, dockerfile_path)
+            except Exception:
+                pass
+        return {'status': 'error', 'message': f"Patch failed due to general error: {e}"}
 
 
 def reset_project_environment(project_name: str, oss_fuzz_path: str) -> Dict[str, str]:
     """
     深度清理复现环境，确保下一次复现从干净的状态开始。
-    🔑 升级：增加了自动删除本地克隆的第三方项目源码仓库的机制，防止残留。
+    🔑 升级：增加了切回主干 master、强力重置并彻底清理 ignored 文件的机制。
     """
     print(f"--- Tool: reset_project_environment (Deep Clean) for {project_name} ---")
     clean_results = []
+
+    def _fix_directory_permissions_via_docker(target_path: str):
+        """利用 Docker 容器的 root 权限修复目标文件夹的所有权和读写权限，并删除残留的锁文件。"""
+        try:
+            uid = os.getuid()
+            gid = os.getgid()
+            abs_target = os.path.abspath(target_path)
+            print(f"--- [Git/Permission Fix] Restoring ownership of {abs_target} to {uid}:{gid} via Docker ---")
+
+            # 1. 修复所有权 (chown)
+            chown_cmd = [
+                "docker", "run", "--rm",
+                "-v", f"{abs_target}:/target_dir",
+                "gcr.io/oss-fuzz-base/base-builder",
+                "chown", "-R", f"{uid}:{gid}", "/target_dir"
+            ]
+            subprocess.run(chown_cmd, capture_output=True, text=True)
+
+            # 2. 赋予宿主机用户读写权限 (chmod)
+            chmod_cmd = [
+                "docker", "run", "--rm",
+                "-v", f"{abs_target}:/target_dir",
+                "gcr.io/oss-fuzz-base/base-builder",
+                "chmod", "-R", "u+rw", "/target_dir"
+            ]
+            subprocess.run(chmod_cmd, capture_output=True, text=True)
+
+            # 3. 强力清除残留的 index.lock
+            rm_lock_cmd = [
+                "docker", "run", "--rm",
+                "-v", f"{abs_target}:/target_dir",
+                "gcr.io/oss-fuzz-base/base-builder",
+                "rm", "-f", "/target_dir/.git/index.lock"
+            ]
+            subprocess.run(rm_lock_cmd, capture_output=True, text=True)
+            print("--- [Git/Permission Fix] Docker-based recovery completed. ---")
+        except Exception as ex:
+            print(f"--- [Git/Permission Fix] Failed to run Docker fallback permission fix: {ex} ---")
 
     # 1. 还原 Dockerfile
     dockerfile_path = os.path.join(oss_fuzz_path, "projects", project_name, "Dockerfile")
@@ -701,9 +794,11 @@ def reset_project_environment(project_name: str, oss_fuzz_path: str) -> Dict[str
                     if res.returncode == 0:
                         clean_results.append(f"Cleaned build/{folder}/{project_name} (via Docker fallback)")
                     else:
-                        clean_results.append(f"Folder cleanup failed ({folder}): {e} | Docker fallback failed: {res.stderr.strip()}")
+                        clean_results.append(
+                            f"Folder cleanup failed ({folder}): {e} | Docker fallback failed: {res.stderr.strip()}")
                 except Exception as docker_e:
-                    clean_results.append(f"Folder cleanup failed ({folder}): {e} | Docker fallback exception: {docker_e}")
+                    clean_results.append(
+                        f"Folder cleanup failed ({folder}): {e} | Docker fallback exception: {docker_e}")
 
     # 3. 删除生成的 Docker 镜像
     image_name = f"gcr.io/oss-fuzz/{project_name}"
@@ -715,19 +810,42 @@ def reset_project_environment(project_name: str, oss_fuzz_path: str) -> Dict[str
     except Exception as e:
         clean_results.append(f"Docker rmi failed: {e}")
 
-    # 4. Git 仓库状态重置
+    # 4. Git 仓库状态重置 (支持自动校验和权限锁死强制修复，重置回干净的 master 分支)
     cwd = os.getcwd()
     try:
         os.chdir(oss_fuzz_path)
-        subprocess.run(["git", "reset", "--hard"], capture_output=True)
-        subprocess.run(["git", "clean", "-fd"], capture_output=True)
-        clean_results.append("Git repository hard reset")
+
+        # 强制切换回主分支以修复游离指针，并清理包括忽略文件（-x）在内的所有多余产物
+        subprocess.run(["git", "checkout", "master"], capture_output=True)
+        res_reset = subprocess.run(["git", "reset", "--hard", "origin/master"], capture_output=True)
+        res_clean = subprocess.run(["git", "clean", "-xfd"], capture_output=True)
+
+        if res_reset.returncode != 0 or res_clean.returncode != 0:
+            print("--- [Git Reset Failed] Detected lock or permission issue. Initiating Docker-based fix... ---")
+            # 调用嵌套的 Docker 权限修复辅助函数
+            _fix_directory_permissions_via_docker(oss_fuzz_path)
+
+            # 重新配置信任目录并进行第二次重置尝试
+            subprocess.run(["git", "config", "--global", "--add", "safe.directory", os.path.abspath(oss_fuzz_path)],
+                           capture_output=True)
+            subprocess.run(["git", "checkout", "master"], capture_output=True)
+            res_reset_retry = subprocess.run(["git", "reset", "--hard", "origin/master"], capture_output=True)
+            res_clean_retry = subprocess.run(["git", "clean", "-xfd"], capture_output=True)
+
+            if res_reset_retry.returncode == 0 and res_clean_retry.returncode == 0:
+                clean_results.append("Git repository hard reset to master (after permission fix)")
+            else:
+                clean_results.append(
+                    f"Git reset failed post-fix (Reset code: {res_reset_retry.returncode}, Clean code: {res_clean_retry.returncode})"
+                )
+        else:
+            clean_results.append("Git repository hard reset to master")
     except Exception as e:
-        clean_results.append(f"Git reset failed: {e}")
+        clean_results.append(f"Git reset exception: {e}")
     finally:
         os.chdir(cwd)
 
-    # 🔑 5. 自动销毁本地挂载模式拉取的第三方源码仓库
+    # 5. 自动销毁本地挂载模式拉取的第三方源码仓库
     safe_name = "".join(c for c in project_name if c.isalnum() or c in ('_', '-')).rstrip()
     local_repo_dir = os.path.abspath(os.path.join(cwd, "process", "project", safe_name))
     if os.path.exists(local_repo_dir):
@@ -735,7 +853,6 @@ def reset_project_environment(project_name: str, oss_fuzz_path: str) -> Dict[str
             shutil.rmtree(local_repo_dir)
             clean_results.append(f"Cleaned local project repo: {local_repo_dir}")
         except Exception as e:
-            # 如果因为权限原因无法删除，回退到容器内使用 root 权限执行 rm
             try:
                 cmd = [
                     "docker", "run", "--rm",
@@ -747,13 +864,15 @@ def reset_project_environment(project_name: str, oss_fuzz_path: str) -> Dict[str
                 if res.returncode == 0:
                     clean_results.append(f"Cleaned local project repo (via Docker fallback): {local_repo_dir}")
                 else:
-                    clean_results.append(f"Local repo cleanup failed: {e} | Docker fallback failed: {res.stderr.strip()}")
+                    clean_results.append(
+                        f"Local repo cleanup failed: {e} | Docker fallback failed: {res.stderr.strip()}")
             except Exception as docker_e:
                 clean_results.append(f"Local repo cleanup failed: {e} | Docker fallback exception: {docker_e}")
 
     msg = " | ".join(clean_results) if clean_results else "Environment was already clean."
     print(f"--- Cleanup Summary: {msg} ---")
     return {'status': 'success', 'message': msg}
+
 
 def run_fuzz_build_streaming(
         project_name: str,

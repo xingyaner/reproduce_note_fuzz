@@ -11,7 +11,7 @@ from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.adk.models.lite_llm import LiteLlm
 from google.adk.tools.tool_context import ToolContext
-from google.adk.agents import LoopAgent, LlmAgent, SequentialAgent, BaseAgent
+from google.adk.agents import LlmAgent, SequentialAgent, BaseAgent
 from google.adk.agents.invocation_context import InvocationContext
 from google.adk.events import Event
 from google.genai import types
@@ -147,17 +147,9 @@ APP_NAME = "oss_fuzz_reproduce_app"
 OSS_FUZZ_PATH = os.path.join(BASE_DIR, "oss-fuzz")
 LOGS_DIRECTORY = os.path.join(BASE_DIR, "sample")
 
-
-# --- 工具定义：循环控制 ---
-def exit_loop(tool_context: ToolContext):
-    print(f"--- [Tool Call] exit_loop triggered by {tool_context.agent_name} ---")
-    tool_context.actions.escalate = True
-    return {"status": "Loop exit signal sent."}
-
-
 # --- Agent 定义 ---
 
-# 1. Build Fuzzer Agent
+# 1. Build Fuzzer Agent (移除了 exit_loop 与 get_next_error_log，专职接收指定路径)
 build_fuzzer_agent = LlmAgent(
     name="build_fuzzer_agent",
     model=LiteLlm(model=MODEL, api_key=DPSEEK_API_KEY, max_output_tokens=4096),
@@ -167,9 +159,9 @@ build_fuzzer_agent = LlmAgent(
     LOGS_DIRECTORY = "{LOGS_DIRECTORY}"
     CURRENT_PROCESSING_MODE = "{CURRENT_PROCESSING_MODE}"
 
-    你的任务是使用**本地挂载模式**精确复现 OSS-Fuzz 项目的构建错误。
+    你的任务是使用**本地挂载模式**精确复现指定的 OSS-Fuzz 项目构建错误。
 
-    1.  **获取日志**: 调用 `get_next_error_log`，传入 `logs_directory='{LOGS_DIRECTORY}'` 和 `processing_mode=CURRENT_PROCESSING_MODE`。如果返回 'finished'，**必须**调用 `exit_loop` 结束。
+    1.  **确认并解析日志**: 仔细确认用户在初始消息中指定的待复现日志绝对路径 `log_path`。你不需要调用任何工具获取日志，直接基于该路径开始下一步。
     2.  **提取元数据**: 调用 `extract_build_metadata_from_log` 处理该日志文件，获得主项目仓库 `software_repo_url` 与 `software_sha` 等。
     3.  **解析日志路径**: 调用 `parse_error_log` 获取项目名、错误日期和上次成功日期。
     4.  **获取OSS-Fuzz版本**: 调用 `find_sha_for_timestamp`。**必须使用文件路径 `{COMMITS_FILE_PATH}`** 和步骤3中的日期。
@@ -186,12 +178,12 @@ build_fuzzer_agent = LlmAgent(
     10. **执行本地挂载构建**: 调用 `run_fuzz_build_streaming`。
         - 必须使用步骤2提取的 Engine, Sanitizer, Architecture。
         - **关键：必须传入 `mount_path` 参数，值为步骤7中你克隆第三方源码的目标本地路径。**
-        - **关键：必须将步骤1获取的 `log_path` 作为 `original_log_path` 参数传入。**
+        - **关键：必须将本轮任务指定的 `log_path` 作为 `original_log_path` 参数传入。**
         - 设置 `timeout` 为 7200。
     11. **重置环境并自动清理第三方源码**: 无论构建成功、失败还是超时，必须调用 `reset_project_environment`。该步骤会自动清退本地克隆的第三方项目源码仓库。
 
     **绝对禁令（IMPORTANT）：**
-    - 每轮对话你**只能处理一个**日志文件。
+    - 每轮对话你**只能处理指定的这一个**日志文件。
     - 如果构建工具返回 "status": "timeout"，你仍然需要执行重置环境，并输出 JSON，但可以在 JSON 中注明超时。
     - 完成步骤 11 后，必须立即输出 JSON 字符串并结束回合。
 
@@ -208,15 +200,13 @@ build_fuzzer_agent = LlmAgent(
     - `new_build_log_path`: 步骤10生成的复现构建日志路径
     """.replace("{COMMITS_FILE_PATH}", COMMITS_FILE_PATH),
     tools=[
-        get_next_error_log,
-        exit_loop,
         parse_error_log,
         extract_build_metadata_from_log,
         find_sha_for_timestamp,
         get_project_yaml_info,
         checkout_oss_fuzz_commit,
-        download_github_repo,       # 🔑 注册工具
-        checkout_project_commit,    # 🔑 注册工具
+        download_github_repo,
+        checkout_project_commit,
         patch_project_dockerfile,
         run_fuzz_build_streaming,
         reset_project_environment
@@ -286,15 +276,10 @@ classify_agent = LlmAgent(
     ],
 )
 
+# 串联起单次工作的流程
 single_iteration_agent = SequentialAgent(
     name="single_iteration_agent",
     sub_agents=[build_fuzzer_agent, classify_agent]
-)
-
-main_loop_agent = LoopAgent(
-    name="main_loop_agent",
-    sub_agents=[single_iteration_agent],
-    max_iterations=1000
 )
 
 
@@ -313,9 +298,9 @@ async def main():
     LOGS_DIRECTORY = "{LOGS_DIRECTORY}"
     CURRENT_PROCESSING_MODE = "{CURRENT_PROCESSING_MODE}"
 
-    你的任务是使用**本地挂载模式**精确复现 OSS-Fuzz 项目的构建错误。
+    你的任务是使用**本地挂载模式**精确复现指定的 OSS-Fuzz 项目构建错误。
 
-    1.  **获取日志**: 调用 `get_next_error_log`，传入 `logs_directory='{LOGS_DIRECTORY}'` 和 `processing_mode=CURRENT_PROCESSING_MODE`。如果返回 'finished'，**必须**调用 `exit_loop` 结束。
+    1.  **确认并解析日志**: 仔细确认用户在初始消息中指定的待复现日志绝对路径 `log_path`。你不需要调用任何工具获取日志，直接基于该路径开始下一步。
     2.  **提取元数据**: 调用 `extract_build_metadata_from_log` 处理该日志文件，获得主项目仓库 `software_repo_url` 与 `software_sha` 等。
     3.  **解析日志路径**: 调用 `parse_error_log` 获取项目名、错误日期和上次成功日期。
     4.  **获取OSS-Fuzz版本**: 调用 `find_sha_for_timestamp`。**必须使用文件路径 `{COMMITS_FILE_PATH}`** 和步骤3中的日期。
@@ -332,12 +317,12 @@ async def main():
     10. **执行本地挂载构建**: 调用 `run_fuzz_build_streaming`。
         - 必须使用步骤2提取的 Engine, Sanitizer, Architecture。
         - **关键：必须传入 `mount_path` 参数，值为步骤7中你克隆第三方源码的目标本地路径。**
-        - **关键：必须将步骤1获取的 `log_path` 作为 `original_log_path` 参数传入。**
+        - **关键：必须将本轮任务指定的 `log_path` 作为 `original_log_path` 参数传入。**
         - 设置 `timeout` 为 7200。
     11. **重置环境并自动清理第三方源码**: 无论构建成功、失败还是超时，必须调用 `reset_project_environment`。该步骤会自动清退本地克隆的第三方项目源码仓库。
 
     **绝对禁令（IMPORTANT）：**
-    - 每轮对话你**只能处理一个**日志文件。
+    - 每轮对话你**只能处理指定的这一个**日志文件。
     - 如果构建工具返回 "status": "timeout"，你仍然需要执行重置环境，并输出 JSON，但可以在 JSON 中注明超时。
     - 完成步骤 11 后，必须立即输出 JSON 字符串并结束回合。
 
@@ -353,7 +338,6 @@ async def main():
     - `metadata`: 步骤2提取的所有元数据 (含 log_url, software_repo_url, software_sha, engine, sanitizer, architecture, base_image_digest, dependencies)
     - `new_build_log_path`: 步骤10生成的复现构建日志路径
     """.replace("{COMMITS_FILE_PATH}", COMMITS_FILE_PATH)
-
 
     # classify_agent 指令更新
     classify_agent.instruction = f"""
@@ -422,29 +406,52 @@ async def main():
     GLOBAL_LOGGER.set_project_context("reproduce_workflow")
 
     session_service = InMemorySessionService()
-    root_agent_with_logging = LoggingWrapperAgent(subject_agent=main_loop_agent)
+    # 💡 替换：直接包装单次迭代 Agent
+    root_agent_with_logging = LoggingWrapperAgent(subject_agent=single_iteration_agent)
     runner = Runner(agent=root_agent_with_logging, app_name=APP_NAME, session_service=session_service)
 
-    session_id = f"session_{datetime.now().strftime('%m%d_%H%M')}"
-    await session_service.create_session(app_name=APP_NAME, user_id="user", session_id=session_id)
+    print(">>> 开始执行全自动复现任务...")
 
-    print(">>> 开始执行复现任务...")
-    initial_message = types.Content(parts=[types.Part(text="开始执行复现任务。")], role='user')
+    iteration_count = 0
+    max_iterations = 1000
 
-    try:
-        # 修复后的调用位置
-        async for event in runner.run_async(user_id="user", session_id=session_id, new_message=initial_message):
-            if event.actions and event.actions.escalate:
-                print("\n>>> 收到退出信号，流程结束。")
-                break
-    except Exception as e:
-        print(f"运行时错误: {e}")
-        import traceback
-        traceback.print_exc()
-    finally:
-        # 强制等待一小段时间确保异步资源释放
-        await asyncio.sleep(0.5)
-        print(">>> 程序执行完毕。")
+    while iteration_count < max_iterations:
+        # 🔑 1. 使用 Python 在最外层获取下一个待复现日志
+        next_log_path = get_next_error_log(LOGS_DIRECTORY, CURRENT_PROCESSING_MODE)
+        if next_log_path == "finished":
+            print("\n>>> 所有待复现日志均已处理完毕。任务结束。")
+            break
+
+        project_name = os.path.basename(os.path.dirname(next_log_path))
+        print(f"\n>>> [轮次 {iteration_count + 1}] 正在启动项目 '{project_name}' 的复现流程...")
+
+        # 🔑 2. 为该项目生成全新且隔离的 Session ID，从源头上斩断上下文污染
+        timestamp = datetime.now().strftime('%m%d_%H%M%S')
+        session_id = f"session_{project_name}_{timestamp}"
+        await session_service.create_session(app_name=APP_NAME, user_id="user", session_id=session_id)
+
+        # 🔑 3. 直接通过初始消息向 Agent 传递需要复现的日志绝对路径
+        initial_message = types.Content(
+            parts=[types.Part(text=f"请启动本地挂载模式，开始处理以下日志文件：{next_log_path}")],
+            role='user'
+        )
+
+        try:
+            # 运行单次迭代
+            async for event in runner.run_async(user_id="user", session_id=session_id, new_message=initial_message):
+                if event.actions and event.actions.escalate:
+                    print("\n>>> 接收到内部中断信号。")
+                    break
+        except Exception as e:
+            print(f"执行项目 '{project_name}' 时发生错误: {e}")
+            import traceback
+            traceback.print_exc()
+
+        iteration_count += 1
+        # 强制小睡以释放资源并确保文件系统句柄刷新
+        await asyncio.sleep(1.0)
+
+    print(">>> 全自动复现工作流全部执行完毕。")
 
 
 if __name__ == "__main__":
