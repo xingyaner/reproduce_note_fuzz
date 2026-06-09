@@ -167,13 +167,16 @@ build_fuzzer_agent = LlmAgent(
     4.  **获取OSS-Fuzz版本**: 调用 `find_sha_for_timestamp`。**必须使用文件路径 `{COMMITS_FILE_PATH}`** 和步骤3中的日期。
     5.  **获取项目语言**: 调用 `get_project_yaml_info`，传入项目名。
     6.  **切换OSS-Fuzz环境**: 调用 `checkout_oss_fuzz_commit`，传入步骤4获取的 SHA。
+    
     7.  **克隆第三方源码到本地**: 调用 `download_github_repo` 工具：
         - `project_name` 传入步骤3解析出的项目名。
         - `target_dir` (强制规范) 必须传入相对路径形式的 `"./process/project/"` 后面跟项目名（例如 `"./process/project/mosquitto"`）。
         - `repo_url` 传入步骤2得到的 `software_repo_url` [1]。
+        - **🔒 异常处理紧急阻断（重要）**: 如果 `download_github_repo` 工具执行返回了 `"status": "error"` [1]（如需要认证凭证或仓库失效导致克隆失败），你**绝对禁止**尝试任何重试或调用其它寻找仓库的工具（如 gh search 等） [1]。你必须立即跳过后续所有的版本对齐、打补丁及构建步骤，**立刻调用 `reset_project_environment` 重置环境 [1]**，并在输出的 JSON 中将 `new_build_log_path` 设为 `null`，同时显式增加并设置 `"download_failed": true` 标志 [1]。
     8.  **对齐本地源码版本**: 调用 `checkout_project_commit` 工具：
         - `project_source_path` 传入步骤7克隆的本地路径。
         - `sha` 传入步骤2得到的 `software_sha`。
+        
     9.  **锁定复现环境 (Patch)**: 调用 `patch_project_dockerfile`。传入步骤2提取的 `base_image_digest` 和 `dependencies`。
     10. **执行本地挂载构建**: 调用 `run_fuzz_build_streaming`。
         - 必须使用步骤2提取的 Engine, Sanitizer, Architecture。
@@ -184,6 +187,7 @@ build_fuzzer_agent = LlmAgent(
 
     **绝对禁令（IMPORTANT）：**
     - 每轮对话你**只能处理指定的这一个**日志文件。
+    - 如果克隆项目失败（`download_github_repo` 报错），必须立即调用环境重置 [1]，并在 JSON 中标注 `"download_failed": true` 退出，严禁继续纠缠。
     - 如果构建工具返回 "status": "timeout"，你仍然需要执行重置环境，并输出 JSON，但可以在 JSON 中注明超时。
     - 完成步骤 11 后，必须立即输出 JSON 字符串并结束回合。
 
@@ -225,13 +229,20 @@ classify_agent = LlmAgent(
     你是一个严格的 OSS-Fuzz 归档专家。
 
     **第一步：检查状态**
+    - 如果 `build_context` 包含 `"download_failed": true` 或者 `build_context['new_build_log_path']` 为空/null [1]：
+        - 说明第三方项目源码下载失败（可能是因为仓库失效或由于认证被拒）[1]。
+        - 你**绝对不需要且不应该**调用 `compare_error_logs` 或 `append_to_reproduce_report` [1]。
+        - **必须直接调用** `mark_log_as_processed_by_rename`，传入 `log_path=build_context['log_path']`, `status='problem_attempt'`, 和 `processing_mode=CURRENT_PROCESSING_MODE` [1]。
+        - 这样做是为了快速关闭当前因代码源缺失而无法开展的工作。
+        - 回复：“第三方源码库下载失败，已自动归档为 problem_attempt。”即可 [1]。
+
     - 如果 `build_context` 显示构建状态为 "timeout"：
         - 你不需要调用 `compare_error_logs` 或 `append_to_reproduce_report`。
         - **必须调用** `mark_log_as_processed_by_rename`，传入 `log_path=build_context['log_path']`, `status='timeout_attempt'`, 和 `processing_mode=CURRENT_PROCESSING_MODE` [1]。
         - 这样做是为了正式关闭当前任务。
         - 回复：“项目构建超时，已跳过”即可。
 
-    - 如果状态不是超时，则继续：
+    - 如果状态既不是下载失败也不是超时，则继续：
         1. 调用 `compare_error_logs`，传入 `original_log_path=build_context['log_path']` 和 `new_log_path=build_context['new_build_log_path']`。该工具会返回：
            - `original_log_tail`: 原始下载报错日志的最后 30 行。
            - `new_log_tail`: 编译复现日志的最后 30 行。
@@ -310,6 +321,7 @@ async def main():
         - `project_name` 传入步骤3解析出的项目名。
         - `target_dir` (强制规范) 必须传入相对路径形式的 `"./process/project/"` 后面跟项目名（例如 `"./process/project/mosquitto"`）。
         - `repo_url` 传入步骤2得到的 `software_repo_url` [1]。
+        - **🔒 异常处理紧急阻断（重要）**: 如果 `download_github_repo` 工具执行返回了 `"status": "error"` [1]（如需要认证凭证或仓库失效导致克隆失败），你**绝对禁止**尝试任何重试或调用其它寻找仓库的工具（如 gh search 等） [1]。你必须立即跳过后续所有的版本对齐、打补丁及构建步骤，**立刻调用 `reset_project_environment` 重置环境 [1]**，并在输出的 JSON 中将 `new_build_log_path` 设为 `null`，同时显式增加并设置 `"download_failed": true` 标志 [1]。
     8.  **对齐本地源码版本**: 调用 `checkout_project_commit` 工具：
         - `project_source_path` 传入步骤7克隆的本地路径。
         - `sha` 传入步骤2得到的 `software_sha`。
@@ -323,6 +335,7 @@ async def main():
 
     **绝对禁令（IMPORTANT）：**
     - 每轮对话你**只能处理指定的这一个**日志文件。
+    - 如果克隆项目失败（`download_github_repo` 报错），必须立即调用环境重置 [1]，并在 JSON 中标注 `"download_failed": true` 退出，严禁继续纠缠。
     - 如果构建工具返回 "status": "timeout"，你仍然需要执行重置环境，并输出 JSON，但可以在 JSON 中注明超时。
     - 完成步骤 11 后，必须立即输出 JSON 字符串并结束回合。
 
@@ -347,13 +360,20 @@ async def main():
     你是一个严格的 OSS-Fuzz 归档专家。
 
     **第一步：检查状态**
+    - 如果 `build_context` 包含 `"download_failed": true` 或者 `build_context['new_build_log_path']` 为空/null [1]：
+        - 说明第三方项目源码下载失败（可能是因为仓库失效或由于认证被拒）[1]。
+        - 你**绝对不需要且不应该**调用 `compare_error_logs` 或 `append_to_reproduce_report` [1]。
+        - **必须直接调用** `mark_log_as_processed_by_rename`，传入 `log_path=build_context['log_path']`, `status='problem_attempt'`, 和 `processing_mode=CURRENT_PROCESSING_MODE` [1]。
+        - 这样做是为了快速关闭当前因代码源缺失而无法开展的工作。
+        - 回复：“第三方源码库下载失败，已自动归档为 problem_attempt。”即可 [1]。
+
     - 如果 `build_context` 显示构建状态为 "timeout"：
         - 你不需要调用 `compare_error_logs` 或 `append_to_reproduce_report`。
         - **必须调用** `mark_log_as_processed_by_rename`，传入 `log_path=build_context['log_path']`, `status='timeout_attempt'`, 和 `processing_mode=CURRENT_PROCESSING_MODE` [1]。
         - 这样做是为了正式关闭当前任务。
         - 回复：“项目构建超时，已跳过”即可。
 
-    - 如果状态不是超时，则继续：
+    - 如果状态既不是下载失败也不是超时，则继续：
         1. 调用 `compare_error_logs`，传入 `original_log_path=build_context['log_path']` 和 `new_log_path=build_context['new_build_log_path']`。该工具会返回：
            - `original_log_tail`: 原始下载报错日志的最后 30 行。
            - `new_log_tail`: 编译复现日志的最后 30 行。
